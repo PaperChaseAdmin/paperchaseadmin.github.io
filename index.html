@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PaperChase — Market Intelligence</title>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9PVD9YYWB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z9PVD9YYWB');
+</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:#020912;
+  background-image:
+    linear-gradient(rgba(0,255,255,0.022) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(0,255,255,0.022) 1px,transparent 1px);
+  background-size:32px 32px;
+  color:#a8d8f0;
+  font-family:'Courier New',Consolas,monospace;
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:40px 20px;
+}
+body::after{
+  content:'';position:fixed;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.06) 2px,rgba(0,0,0,0.06) 4px);
+  pointer-events:none;z-index:9999
+}
+@keyframes flicker{
+  0%,94%,100%{text-shadow:0 0 12px rgba(0,255,255,.9),0 0 28px rgba(0,255,255,.4),0 0 50px rgba(0,255,255,.15)}
+  95%{text-shadow:none;opacity:.85}
+  97%{text-shadow:0 0 12px rgba(0,255,255,.9),0 0 28px rgba(0,255,255,.4)}
+  98%{text-shadow:none;opacity:.9}
+}
+.logo{
+  font-size:42px;font-weight:700;letter-spacing:6px;text-transform:uppercase;
+  color:#00ffff;animation:flicker 8s infinite;margin-bottom:8px
+}
+.tagline{
+  font-size:13px;color:#2d5060;letter-spacing:3px;text-transform:uppercase;
+  margin-bottom:60px
+}
+.cards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.card{
+  background:#04101f;border:1px solid rgba(0,255,255,0.12);
+  border-radius:2px;padding:28px 32px;width:260px;
+  position:relative;text-decoration:none;
+  transition:box-shadow .2s, border-color .2s;
+  display:flex;flex-direction:column;gap:8px
+}
+.card::before{content:'';position:absolute;top:-1px;left:-1px;width:14px;height:14px;border-top:2px solid #00ffff;border-left:2px solid #00ffff}
+.card::after{content:'';position:absolute;bottom:-1px;right:-1px;width:14px;height:14px;border-bottom:2px solid #00ffff;border-right:2px solid #00ffff}
+.card:hover{border-color:rgba(0,255,255,0.4);box-shadow:0 0 24px rgba(0,255,255,0.1)}
+.card-tag{font-size:9px;color:#2d5060;text-transform:uppercase;letter-spacing:2px}
+.card-title{font-size:18px;font-weight:700;color:#00ffff;letter-spacing:1px;text-shadow:0 0 8px rgba(0,255,255,.4)}
+.card-desc{font-size:12px;color:#2d5060;line-height:1.5;margin-top:4px}
+.card-arrow{font-size:11px;color:#2d5060;margin-top:12px;letter-spacing:1px}
+.card:hover .card-arrow{color:#00ffff}
+.footer{margin-top:60px;font-size:10px;color:#1a3040;letter-spacing:2px;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="logo">PaperChase</div>
+<div class="tagline">// Market Intelligence Platform</div>
+
+<div class="cards">
+  <a class="card" href="/market-sentinel/">
+    <span class="card-tag">Live Dashboard</span>
+    <span class="card-title">Market Sentinel</span>
+    <span class="card-desc">Real-time crowd sentiment across crypto, stocks, Reddit, 4chan /biz/ and prediction markets.</span>
+    <span class="card-arrow">ENTER →</span>
+  </a>
+
+  <div class="card" style="opacity:.4;cursor:default">
+    <span class="card-tag">Coming Soon</span>
+    <span class="card-title">More Tools</span>
+    <span class="card-desc">Additional market intelligence tools under development.</span>
+    <span class="card-arrow">// LOCKED</span>
+  </div>
+</div>
+
+<div class="footer">paperchase.online &nbsp;·&nbsp; built with AI &nbsp;·&nbsp; spot assets only</div>
+</body>
+</html>
