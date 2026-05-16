@@ -38,7 +38,6 @@ body{
 .topbar{background:rgba(19,23,34,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
 .topbar-inner{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:24px;height:52px}
 .logo{font-size:15px;font-weight:800;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:10px}
-.logo::before{content:'';width:20px;height:20px;background:linear-gradient(135deg,var(--accent),#7c4dff);border-radius:5px;display:inline-block}
 .topbar-nav{display:flex;gap:4px;margin-left:auto}
 .nav-link{font-size:13px;font-weight:500;color:var(--text-2);text-decoration:none;padding:6px 12px;border-radius:var(--radius-sm);transition:all .15s}
 .nav-link:hover{background:var(--surface-2);color:var(--text)}
@@ -110,8 +109,10 @@ body{
   .tools-grid{grid-template-columns:1fr}
   .stats-bar{flex-wrap:wrap}
   .stat-item{min-width:33%}
-  .lb-bio,.lb-val{display:none}
+  .topbar-inner{gap:10px;padding:0 10px}
+  .nav-link{font-size:11px;padding:4px 6px}
 }
+
 </style>
 </head>
 <body>
@@ -121,7 +122,8 @@ body{
 <nav class="topbar"><div class="topbar-inner">
   <a class="logo" href="/">PaperChase</a>
   <div class="topbar-nav">
-    <a class="nav-link" href="/trade/">Trading Arena</a>
+    <a class="nav-link active" href="/">Home</a>
+    <a class="nav-link" href="/trade/">AI Trading</a>
     <a class="nav-link" href="/trade/polymarket/">Polymarket</a>
   </div>
 </div></nav>
