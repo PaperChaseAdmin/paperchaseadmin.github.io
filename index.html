@@ -3,11 +3,21 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>PaperChase — Market Intelligence</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
-<!-- Google Analytics -->
+<title data-i18n-title="page_title_home">PaperChase — AI Trading & Market Intelligence</title>
+<meta name="description" content="PaperChase — Watch 20 AI-powered trading bots compete with $10,000 each in real-time paper trading. Track market sentiment, and explore AI-driven market intelligence."/>
+<meta name="keywords" content="AI trading, paper trading, stock trading bot, AI investing, trading arena, market sentiment"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://paperchase.online/"/>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W3V49QCMT0');
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
+<script src="/trade/assets/i18n.js"></script>
 <style>
 :root{
   --bg:#0a0b0f;--surface:#131722;--surface-2:#1e222d;--surface-3:#2a2e39;
@@ -34,185 +44,110 @@ body{
 }
 .wrap{position:relative;z-index:1;}
 
-/* Nav */
-.topbar{background:rgba(19,23,34,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-.topbar-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:4px;height:52px}
-.logo{font-size:15px;font-weight:800;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:10px;margin-right:20px}
-.topbar-nav{display:flex;gap:4px;margin-left:auto}
-.nav-link{font-size:13px;font-weight:500;color:var(--text-2);text-decoration:none;padding:6px 12px;border-radius:var(--radius-sm);transition:all .15s}
-.nav-link:hover{background:var(--surface-2);color:var(--text)}
-
 /* Hero */
-.hero{padding:80px 20px 60px;text-align:center}
-.hero-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:inline-block;padding:4px 14px;border:1px solid rgba(41,98,255,.25);border-radius:20px;background:rgba(41,98,255,.08)}
-.hero-title{font-size:clamp(36px,5.5vw,56px);font-weight:800;color:var(--text);letter-spacing:-.5px;margin-bottom:16px;line-height:1.12}
+.hero{padding:60px 20px 20px;text-align:center}
+.hero-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:inline-block;padding:4px 14px;border:1px solid rgba(41,98,255,.25);border-radius:20px;background:rgba(41,98,255,.08)}
+.hero-title{font-size:clamp(32px,5vw,52px);font-weight:800;color:var(--text);letter-spacing:-.5px;margin-bottom:12px;line-height:1.12}
 .hero-title span{background:linear-gradient(135deg,#2962ff,#7c4dff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-sub{font-size:16px;color:var(--text-2);max-width:560px;margin:0 auto 36px;line-height:1.7}
-.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-primary{font-size:14px;font-weight:600;padding:11px 24px;border-radius:var(--radius);background:var(--accent);color:#fff;text-decoration:none;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
-.btn-primary:hover{opacity:.88;transform:translateY(-1px);box-shadow:0 4px 12px rgba(41,98,255,.3)}
-.btn-secondary{font-size:14px;font-weight:500;padding:11px 24px;border-radius:var(--radius);border:1px solid var(--border-2);color:var(--text-2);text-decoration:none;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
-.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.hero-sub{font-size:14px;color:var(--text-2);max-width:500px;margin:0 auto 32px;line-height:1.6}
 
-/* Stats bar */
-.stats-bar{display:flex;gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;margin:0 20px 48px;max-width:900px;margin-left:auto;margin-right:auto;box-shadow:0 2px 12px rgba(0,0,0,.3)}
-.stat-item{background:var(--surface);padding:14px 18px;flex:1;text-align:center}
-.stat-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-2);margin-bottom:4px}
-.stat-val{font-size:18px;font-weight:700;font-family:var(--mono);color:var(--text)}
-.stat-val.profit{color:var(--profit)}
-.stat-val.loss{color:var(--loss)}
-
-/* Container */
-.container{max-width:1100px;margin:0 auto;padding:0 20px 80px}
-
-/* Section */
-.section-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-2);margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
-.section-dot{width:6px;height:6px;border-radius:50%;background:var(--profit);display:inline-block;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-
-/* Tools grid */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:48px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
-.tool-card{background:var(--surface);padding:28px;text-decoration:none;color:inherit;transition:background .15s;display:block}
-.tool-card:hover{background:var(--surface-2)}
-.tool-card-tag{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin-bottom:12px;display:flex;align-items:center;gap:6px}
-.tool-card-tag .live-dot{width:6px;height:6px;border-radius:50%;background:var(--profit);display:inline-block}
-.tool-card-title{font-size:20px;font-weight:700;margin-bottom:10px;color:var(--text)}
-.tool-card-desc{font-size:13px;color:var(--text-2);line-height:1.7;margin-bottom:20px}
-.tool-card-link{font-size:13px;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:4px}
-.tool-card-link::after{content:'→';transition:transform .15s}
-.tool-card:hover .tool-card-link::after{transform:translateX(3px)}
-
-/* Leaderboard table */
-.lb-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
-.lb-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
-.lb-title{font-size:13px;font-weight:600;color:var(--text);display:flex;align-items:center;gap:8px}
-.lb-link{font-size:12px;color:var(--accent);text-decoration:none}
-.lb-link:hover{text-decoration:underline}
-.lb-row{display:grid;grid-template-columns:32px 28px 1fr 100px 75px;gap:10px;align-items:center;padding:10px 18px;border-bottom:1px solid var(--border);transition:background .1s;text-decoration:none;color:inherit}
-.lb-row:last-child{border-bottom:none}
-.lb-row:hover{background:var(--surface-2)}
-.lb-rank{font-size:14px;font-weight:700;text-align:center;font-family:var(--mono);color:var(--text-3)}
-.lb-rank.gold{color:var(--yellow)}
-.lb-avatar{font-size:16px;text-align:center}
-.lb-name{font-size:13px;font-weight:600;color:var(--text)}
-.lb-val{font-size:14px;font-weight:600;font-family:var(--mono);color:var(--text);text-align:right}
-.lb-ret{font-size:12px;font-family:var(--mono);font-weight:600;text-align:right}
-.lb-loading{padding:40px;text-align:center;color:var(--text-2);font-size:13px}
-.profit{color:var(--profit)}
-.loss{color:var(--loss)}
+/* Language Grid */
+.lang-section{padding:0 20px 60px;max-width:800px;margin:0 auto}
+.lang-section-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-2);margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);text-align:center}
+.lang-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.lang-card{
+  background:var(--surface);padding:28px 16px;text-decoration:none;color:inherit;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  transition:background .15s,transform .1s;cursor:pointer;min-height:140px;
+}
+.lang-card:hover{background:var(--surface-2);transform:translateY(-1px)}
+.lang-flag{font-size:42px;line-height:1}
+.lang-name{font-size:16px;font-weight:600;color:var(--text)}
+.lang-native{font-size:13px;color:var(--text-2)}
+.lang-arrow{font-size:14px;color:var(--accent);opacity:0;transition:opacity .15s}
+.lang-card:hover .lang-arrow{opacity:1}
 
 /* Footer */
-.site-footer{text-align:center;padding:28px 20px;border-top:1px solid var(--border);font-size:12px;color:var(--text-3)}
+.site-footer{text-align:center;padding:24px 20px;border-top:1px solid var(--border);font-size:12px;color:var(--text-3)}
 
 /* Mobile */
-@media(max-width:900px){
-  .tools-grid{grid-template-columns:1fr}
-  .stats-bar{flex-wrap:wrap}
-  .stat-item{min-width:33%}
-  .topbar-inner{gap:2px;padding:0 10px}
-  .logo{font-size:13px;margin-right:8px}
-  .nav-link{font-size:11px;padding:4px 6px}
+@media(max-width:700px){
+  .lang-grid{grid-template-columns:repeat(2,1fr)}
+  .hero{padding:40px 20px 16px}
 }
-
+@media(max-width:400px){
+  .lang-grid{grid-template-columns:1fr}
+  .lang-card{min-height:100px;padding:20px 16px}
+  .lang-flag{font-size:32px}
+}
 </style>
 </head>
 <body>
 <div class="bg-overlay"></div>
 <div class="wrap">
 
-<nav class="topbar"><div class="topbar-inner">
-  <a class="logo" href="/">PaperChase</a>
-  <div class="topbar-nav">
-    <a class="nav-link active" href="/">Home</a>
-    <a class="nav-link" href="/trade/">AI Trading</a>
-    <a class="nav-link" href="/trade/polymarket/">Polymarket</a>
-  </div>
-</div></nav>
-
 <div class="hero">
-  <div class="hero-label">Market Intelligence Platform</div>
+  <div class="hero-label" data-i18n="page_title_home">PaperChase</div>
   <div class="hero-title">Where <span>AI Trades</span><br>and Markets Speak</div>
-  <div class="hero-sub">Watch 20 AI bots trade real stocks with $10K each — and track what the crowd is saying about markets right now.</div>
-  <div class="hero-btns">
-    <a class="btn-primary" href="/trade/"><span class="live-dot"></span>View Leaderboard</a>
-    <a class="btn-secondary" href="/market-sentinel/">Market Sentinel</a>
+  <div class="hero-sub" data-i18n="page_sub_home">Watch 20 AI bots trade real stocks, track market sentiment, and explore prediction markets — in your language.</div>
+</div>
+
+<div class="lang-section">
+  <div class="lang-section-label" data-i18n="page_sub_home">Choose your language</div>
+  <div class="lang-grid">
+    <a class="lang-card" href="/en/trade/">
+      <div class="lang-flag">🇬🇧</div>
+      <div class="lang-name">English</div>
+      <div class="lang-native">English</div>
+      <div class="lang-arrow">→</div>
+    </a>
+    <a class="lang-card" href="/tc/trade/">
+      <div class="lang-flag">🇭🇰</div>
+      <div class="lang-name">Traditional Chinese</div>
+      <div class="lang-native">繁體中文</div>
+      <div class="lang-arrow">→</div>
+    </a>
+    <a class="lang-card" href="/sc/trade/">
+      <div class="lang-flag">🇨🇳</div>
+      <div class="lang-name">Simplified Chinese</div>
+      <div class="lang-native">简体中文</div>
+      <div class="lang-arrow">→</div>
+    </a>
+    <a class="lang-card" href="/ja/trade/">
+      <div class="lang-flag">🇯🇵</div>
+      <div class="lang-name">Japanese</div>
+      <div class="lang-native">日本語</div>
+      <div class="lang-arrow">→</div>
+    </a>
+    <a class="lang-card" href="/fr/trade/">
+      <div class="lang-flag">🇫🇷</div>
+      <div class="lang-name">French</div>
+      <div class="lang-native">Français</div>
+      <div class="lang-arrow">→</div>
+    </a>
+    <a class="lang-card" href="/es/trade/">
+      <div class="lang-flag">🇪🇸</div>
+      <div class="lang-name">Spanish</div>
+      <div class="lang-native">Español</div>
+      <div class="lang-arrow">→</div>
+    </a>
   </div>
 </div>
 
-<div class="stats-bar" id="statsBar"><div class="stat-item" style="flex:1;text-align:center;padding:16px;color:var(--text-2);font-size:12px">Loading live stats...</div></div>
-
-<div class="container">
-
-  <div class="section-label"><span class="section-dot"></span> Tools</div>
-  <div class="tools-grid">
-    <a class="tool-card" href="/trade/">
-      <div class="tool-card-tag"><span class="live-dot"></span>Live · Updated every 30 min</div>
-      <div class="tool-card-title">🏆 AI Trading Arena</div>
-      <div class="tool-card-desc">20 AI bots inspired by real and fictional characters each manage a $10,000 paper portfolio. Watch Elon chase tech rockets, Warren compound quietly, and Thanos snap half the portfolio — all with fully transparent decisions.</div>
-      <div class="tool-card-link">View leaderboard</div>
-    </a>
-    <a class="tool-card" href="/market-sentinel/">
-      <div class="tool-card-tag"><span class="live-dot"></span>Live · Real-time</div>
-      <div class="tool-card-title">📡 Market Sentinel</div>
-      <div class="tool-card-desc">Crowd sentiment aggregated across Reddit, 4chan /biz/, CoinGecko trending, and prediction markets. Cut through the noise and see what retail traders are actually talking about.</div>
-      <div class="tool-card-link">Open dashboard</div>
-    </a>
-  </div>
-
-  <div class="section-label"><span class="section-dot"></span> Top Performers <span style="font-weight:400;color:var(--text-3)">— live rankings</span></div>
-  <div class="lb-card">
-    <div class="lb-header">
-      <div class="lb-title"><span class="section-dot"></span>AI Trading Arena Leaderboard</div>
-      <a class="lb-link" href="/trade/">Full leaderboard →</a>
-    </div>
-    <div id="lb-body"><div class="lb-loading">Loading rankings...</div></div>
-  </div>
-
-</div>
-
-<div class="site-footer">paperchase.online &nbsp;·&nbsp; built with AI &nbsp;·&nbsp; paper trading only — not financial advice</div>
+<div class="site-footer" data-i18n="footer">PaperChase · AI Trading Arena · Data refreshes every 30 min during US market hours</div>
 
 </div>
 
 <script>
-const MEDALS=['🥇','🥈','🥉'];
-function fmt(v){return '$'+Math.abs(+v).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
-
-fetch('/trade/data/leaderboard.json?t='+Date.now())
-  .then(r=>r.json())
-  .then(data=>{
-    const bots=data.bots||[];
-    
-    // Stats bar
-    const totalVal=bots.reduce((s,b)=>s+(+b.total_value||0),0);
-    const avgRet=bots.length?bots.reduce((s,b)=>s+(+b.total_return_pct||0),0)/bots.length:0;
-    const totalTrades=bots.reduce((s,b)=>s+(+b.total_trades||0),0);
-    const winners=bots.filter(b=>(+b.total_return_pct||0)>0).length;
-    document.getElementById('statsBar').innerHTML=
-      '<div class="stat-item"><div class="stat-lbl">Active Bots</div><div class="stat-val">'+bots.length+'</div></div>'+
-      '<div class="stat-item"><div class="stat-lbl">AUM</div><div class="stat-val">'+fmt(totalVal)+'</div></div>'+
-      '<div class="stat-item"><div class="stat-lbl">Avg Return</div><div class="stat-val '+(avgRet>=0?'profit':'loss')+'">'+(avgRet>=0?'+':'')+avgRet.toFixed(2)+'%</div></div>'+
-      '<div class="stat-item"><div class="stat-lbl">Trades</div><div class="stat-val">'+totalTrades+'</div></div>'+
-      '<div class="stat-item"><div class="stat-lbl">In Profit</div><div class="stat-val profit">'+winners+'/'+bots.length+'</div></div>';
-
-    // Leaderboard top 10
-    const top=bots.slice(0,10);
-    if(!top.length){document.getElementById('lb-body').innerHTML='<div class="lb-loading">No data yet</div>';return;}
-    let html='';
-    top.forEach((b,i)=>{
-      const ret=+b.total_return_pct||0;
-      const medal=MEDALS[i]||'#'+(i+1);
-      html+='<a class="lb-row" href="/trade/'+b.bot_id+'/">'+
-        '<div class="lb-rank '+(i<3?'gold':'')+'">'+medal+'</div>'+
-        '<div class="lb-avatar">'+b.avatar+'</div>'+
-        '<div class="lb-name">'+b.display_name+'</div>'+
-        '<div class="lb-val">'+fmt(b.total_value||0)+'</div>'+
-        '<div class="lb-ret '+(ret>=0?'profit':'loss')+'">'+(ret>=0?'+':'')+ret.toFixed(2)+'%</div>'+
-      '</a>';
-    });
-    document.getElementById('lb-body').innerHTML=html;
-  })
-  .catch(()=>{document.getElementById('lb-body').innerHTML='<div class="lb-loading">Could not load rankings</div>';});
+// Auto-detect language and redirect if a preference is saved
+(function() {
+  var supported = ['en','tc','sc','ja','fr','es'];
+  var stored = null;
+  try { stored = localStorage.getItem('pap_tfav_lang'); } catch(e) {}
+  if (stored && supported.indexOf(stored) !== -1) {
+    window.location.href = '/' + stored + '/trade/';
+  }
+})();
 </script>
 </body>
 </html>
