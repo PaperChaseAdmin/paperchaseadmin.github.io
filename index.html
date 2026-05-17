@@ -155,13 +155,20 @@ body{
 </script>
 
 <script>
-// Auto-detect language and redirect if a preference is saved
+// Auto-detect language for default selection (no auto-redirect)
 (function() {
   var supported = ['en','tc','sc','ja','fr','es'];
   var stored = null;
   try { stored = localStorage.getItem('pap_tfav_lang'); } catch(e) {}
+  // Just mark the preferred language — no redirect
   if (stored && supported.indexOf(stored) !== -1) {
-    window.location.href = '/trade/';
+    var cards = document.querySelectorAll('.lang-card');
+    cards.forEach(function(c) {
+      if (c.getAttribute('data-lang') === stored) {
+        c.style.border = '2px solid #2962ff';
+        c.style.borderRadius = '6px';
+      }
+    });
   }
 })();
 </script>
