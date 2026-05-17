@@ -95,37 +95,37 @@ body{
 <div class="lang-section">
   <div class="lang-section-label" data-i18n="page_sub_home">Choose your language</div>
   <div class="lang-grid">
-    <a class="lang-card" href="/en/trade/">
+    <a class="lang-card" href="/trade/" data-lang="en">
       <div class="lang-flag">🇬🇧</div>
       <div class="lang-name">English</div>
       <div class="lang-native">English</div>
       <div class="lang-arrow">→</div>
     </a>
-    <a class="lang-card" href="/tc/trade/">
+    <a class="lang-card" href="/trade/" data-lang="tc">
       <div class="lang-flag">🇭🇰</div>
       <div class="lang-name">Traditional Chinese</div>
       <div class="lang-native">繁體中文</div>
       <div class="lang-arrow">→</div>
     </a>
-    <a class="lang-card" href="/sc/trade/">
+    <a class="lang-card" href="/trade/" data-lang="sc">
       <div class="lang-flag">🇨🇳</div>
       <div class="lang-name">Simplified Chinese</div>
       <div class="lang-native">简体中文</div>
       <div class="lang-arrow">→</div>
     </a>
-    <a class="lang-card" href="/ja/trade/">
+    <a class="lang-card" href="/trade/" data-lang="ja">
       <div class="lang-flag">🇯🇵</div>
       <div class="lang-name">Japanese</div>
       <div class="lang-native">日本語</div>
       <div class="lang-arrow">→</div>
     </a>
-    <a class="lang-card" href="/fr/trade/">
+    <a class="lang-card" href="/trade/" data-lang="fr">
       <div class="lang-flag">🇫🇷</div>
       <div class="lang-name">French</div>
       <div class="lang-native">Français</div>
       <div class="lang-arrow">→</div>
     </a>
-    <a class="lang-card" href="/es/trade/">
+    <a class="lang-card" href="/trade/" data-lang="es">
       <div class="lang-flag">🇪🇸</div>
       <div class="lang-name">Spanish</div>
       <div class="lang-native">Español</div>
@@ -139,13 +139,29 @@ body{
 </div>
 
 <script>
+// Each language button saves preference to localStorage then redirects to /trade/
+(function() {
+  var cards = document.querySelectorAll('.lang-card');
+  cards.forEach(function(card) {
+    card.addEventListener('click', function(e) {
+      var lang = this.getAttribute('data-lang');
+      if (lang) {
+        try { localStorage.setItem('pap_tfav_lang', lang); } catch(ex) {}
+      }
+      // Let the default href="/trade/" navigation proceed
+    });
+  });
+})();
+</script>
+
+<script>
 // Auto-detect language and redirect if a preference is saved
 (function() {
   var supported = ['en','tc','sc','ja','fr','es'];
   var stored = null;
   try { stored = localStorage.getItem('pap_tfav_lang'); } catch(e) {}
   if (stored && supported.indexOf(stored) !== -1) {
-    window.location.href = '/' + stored + '/trade/';
+    window.location.href = '/trade/';
   }
 })();
 </script>
