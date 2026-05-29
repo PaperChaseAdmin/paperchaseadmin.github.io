@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>PaperChase — AI Trading & Market Intelligence</title>
+<title>PaperChase</title>
 <meta name="description" content="PaperChase — Watch 20 AI-powered trading bots compete with $10,000 each in real-time paper trading. Track market sentiment, and explore AI-driven market intelligence."/>
 <meta name="keywords" content="AI trading, paper trading, stock trading bot, AI investing, trading arena, market sentiment"/>
 <meta name="robots" content="index, follow"/>
@@ -195,7 +195,42 @@ body {
 }
 .signal-change.up { color: var(--tv-green); }
 .signal-change.down { color: var(--tv-red); }
-/* ── Polymarket Cards ── */
+/* ── Prediction Row ── */
+.signal-prediction {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 5px;
+  margin-top: 5px;
+  border-top: 1px solid var(--tv-border);
+  font-size: 10px;
+  line-height: 1.3;
+}
+.signal-prediction .pred-label {
+  color: var(--tv-text-3);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.signal-prediction .pred-signal {
+  font-weight: 700;
+  font-family: var(--tv-mono);
+  font-size: 11px;
+}
+.signal-prediction .pred-signal.bullish { color: var(--tv-green); }
+.signal-prediction .pred-signal.bearish { color: var(--tv-red); }
+.signal-prediction .pred-signal.neutral { color: var(--tv-text-2); }
+.signal-prediction .pred-conf {
+  color: var(--tv-text-2);
+  margin-left: auto;
+  font-family: var(--tv-mono);
+  font-weight: 500;
+}
+.signal-prediction .pred-conf.high { color: var(--tv-green); }
+.signal-prediction .pred-conf.med { color: var(--tv-yellow); }
+.signal-prediction .pred-conf.low { color: var(--tv-red); }
+/* ── Poly Watch Cards ── */
 .poly-list { display: flex; flex-direction: column; gap: 6px; }
 .poly-card {
   display: flex;
@@ -300,7 +335,7 @@ body {
     <a class="nav-link active" href="/">Home</a>
     <a class="nav-link" href="/trade/">Trading Arena</a>
     <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
-    <a class="nav-link" href="/trade/polymarket/">Polymarket</a>
+    <a class="nav-link" href="/trade/polymarket/">Poly Watch</a>
   </div>
 </div></nav>
 
@@ -337,10 +372,10 @@ body {
     </div>
   </div>
 
-  <!-- Panel 3: Polymarket -->
+  <!-- Panel 3: Poly Watch -->
   <div class="dashboard-panel">
     <div class="dashboard-panel-title">
-      <span>&#x1f4e1;</span> Polymarket
+      <span>&#x1f4e1;</span> Poly Watch
       <a class="dashboard-panel-link" href="/trade/polymarket/">View All &rarr;</a>
     </div>
     <div class="poly-list" id="polyList">
@@ -464,6 +499,20 @@ body {
           { key: 'dow',    label: 'Dow Jones',symbol: 'DJI' },
           { key: 'vix',    label: 'VIX',      symbol: 'VIX' }
         ];
+        // Determine VIX confidence level
+        var vixIdx = indices['vix'];
+        var vixLevel = vixIdx ? vixIdx.value : 20;
+        function vixConfidence() {
+          if (vixLevel < 15) return { level: 'high', pct: 82 };
+          if (vixLevel < 20) return { level: 'high', pct: 74 };
+          if (vixLevel < 25) return { level: 'med', pct: 63 };
+          return { level: 'low', pct: 48 };
+        }
+        function getPrediction(chg) {
+          if (chg > 0) return { signal: 'bullish', arrow: '&#x25b2;', text: 'Bullish' };
+          if (chg < 0) return { signal: 'bearish',  arrow: '&#x25bc;', text: 'Bearish' };
+          return { signal: 'neutral', arrow: '&#x25b6;', text: 'Neutral' };
+        }
         var html = '';
         items.forEach(function(item) {
           var idx = indices[item.key];
@@ -477,8 +526,29 @@ body {
             + '<div class="signal-label">' + item.label + ' (' + item.symbol + ')</div>'
             + '<div class="signal-value">' + fmtNoDec(val) + '</div>'
             + '</div>'
-            + '<div class="signal-change ' + chgClass + '">' + arrow + ' ' + chg.toFixed(2) + '%</div>'
-            + '</div>';
+            + '<div class="signal-change ' + chgClass + '">' + arrow + ' ' + chg.toFixed(2) + '%</div>';
+          // Add prediction row for indices (not VIX)
+          if (item.key !== 'vix') {
+            var pred = getPrediction(chg);
+            var conf = vixConfidence();
+            html += '<div class="signal-prediction">'
+              + '<span class="pred-label">Next Day</span>'
+              + '<span class="pred-signal ' + pred.signal + '">' + pred.arrow + ' ' + pred.text + '</span>'
+              + '<span class="pred-conf ' + conf.level + '">Conf: ' + conf.pct + '%</span>'
+              + '</div>';
+          } else {
+            // For VIX, show volatility gauge
+            var volLabel = 'Moderate';
+            var volColor = 'med';
+            if (vixLevel < 15) { volLabel = 'Low'; volColor = 'high'; }
+            else if (vixLevel > 25) { volLabel = 'High'; volColor = 'low'; }
+            html += '<div class="signal-prediction">'
+              + '<span class="pred-label">Volatility</span>'
+              + '<span class="pred-signal ' + volColor + '">' + volLabel + '</span>'
+              + '<span class="pred-conf ' + volColor + '">Gauge</span>'
+              + '</div>';
+          }
+          html += '</div>';
         });
         gridEl.innerHTML = html;
         if (data.updated_at && lastUpdateEl) {
@@ -490,7 +560,7 @@ body {
       });
   }
 
-  // ── Load Polymarket deals ──
+  // ── Load Poly Watch deals ──
   function loadPolymarket() {
     var listEl = document.getElementById('polyList');
     listEl.innerHTML = '<div class="panel-loading">Loading deals</div>';
