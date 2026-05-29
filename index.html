@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title data-i18n-title="page_title_home">PaperChase — AI Trading & Market Intelligence</title>
+<title>PaperChase — AI Trading & Market Intelligence</title>
 <meta name="description" content="PaperChase — Watch 20 AI-powered trading bots compete with $10,000 each in real-time paper trading. Track market sentiment, and explore AI-driven market intelligence."/>
 <meta name="keywords" content="AI trading, paper trading, stock trading bot, AI investing, trading arena, market sentiment"/>
 <meta name="robots" content="index, follow"/>
@@ -16,160 +16,529 @@
   gtag('js', new Date());
   gtag('config', 'G-W3V49QCMT0');
 </script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
-<script src="/trade/assets/i18n.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
 <style>
-:root{
-  --bg:#0a0b0f;--surface:#131722;--surface-2:#1e222d;--surface-3:#2a2e39;
-  --border:#2a2e39;--border-2:#363a45;
-  --text:#d1d4dc;--text-2:#787b86;--text-3:#50535c;
-  --profit:#089981;--loss:#f23645;--accent:#2962ff;--yellow:#ff9800;
-  --font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-  --mono:'JetBrains Mono','Fira Code',monospace;
-  --radius:6px;--radius-sm:4px;
+:root {
+  --tv-bg: #0a0b0f;
+  --tv-surface: #131722;
+  --tv-surface-2: #1e222d;
+  --tv-surface-3: #2a2e39;
+  --tv-border: #2a2e39;
+  --tv-border-2: #363a45;
+  --tv-text: #d1d4dc;
+  --tv-text-2: #787b86;
+  --tv-text-3: #50535c;
+  --tv-green: #089981;
+  --tv-red: #f23645;
+  --tv-yellow: #ff9800;
+  --tv-blue: #2962ff;
+  --tv-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --tv-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  --tv-radius: 6px;
+  --tv-radius-sm: 4px;
 }
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
 html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--text);
-  font-family:var(--font);font-size:14px;line-height:1.6;
-  -webkit-font-smoothing:antialiased;min-height:100vh;
-  position:relative;
+body {
+  background: var(--tv-bg);
+  color: var(--tv-text);
+  font-family: var(--tv-font);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  position: relative;
 }
-.bg-overlay{
-  position:fixed;inset:0;z-index:0;pointer-events:none;
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
   background:
-    linear-gradient(180deg,rgba(10,11,15,0.85) 0%,rgba(10,11,15,0.92) 40%,rgba(10,11,15,0.97) 100%),
+    linear-gradient(180deg, rgba(10,11,15,0.88) 0%, rgba(10,11,15,0.92) 50%, rgba(10,11,15,0.97) 100%),
     url('https://images.pexels.com/photos/6770610/pexels-photo-6770610.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920') center/cover no-repeat fixed;
+  pointer-events: none;
 }
-.wrap{position:relative;z-index:1;}
-
-/* Hero */
-.hero{padding:60px 20px 20px;text-align:center}
-.hero-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:inline-block;padding:4px 14px;border:1px solid rgba(41,98,255,.25);border-radius:20px;background:rgba(41,98,255,.08)}
-.hero-title{font-size:clamp(32px,5vw,52px);font-weight:800;color:var(--text);letter-spacing:-.5px;margin-bottom:12px;line-height:1.12}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+  position: relative;
+  z-index: 1;
+}
+/* ── Topbar ── */
+.topbar{background:rgba(19,23,34,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--tv-border);position:sticky;top:0;z-index:100}
+.topbar-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:4px;height:52px}
+.logo{font-size:15px;font-weight:800;color:var(--tv-text);text-decoration:none;display:flex;align-items:center;gap:10px;margin-right:20px}
+.topbar-nav{display:flex;align-items:center;gap:0}
+.nav-link{font-size:13px;font-weight:500;color:var(--tv-text-2);text-decoration:none;padding:6px 12px;border-radius:var(--tv-radius-sm);transition:all .15s;white-space:nowrap}
+.nav-link:hover,.nav-link.active{background:var(--tv-surface-2);color:var(--tv-text)}
+/* ── Hero ── */
+.hero{padding:40px 0 28px;text-align:center}
+.hero-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--tv-blue);margin-bottom:12px;display:inline-block;padding:4px 14px;border:1px solid rgba(41,98,255,.25);border-radius:20px;background:rgba(41,98,255,.08)}
+.hero-title{font-size:clamp(28px,4.5vw,46px);font-weight:800;color:var(--tv-text);letter-spacing:-.5px;margin-bottom:8px;line-height:1.12}
 .hero-title span{background:linear-gradient(135deg,#2962ff,#7c4dff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-sub{font-size:14px;color:var(--text-2);max-width:500px;margin:0 auto 32px;line-height:1.6}
-
-/* Language Grid */
-.lang-section{padding:0 20px 60px;max-width:800px;margin:0 auto}
-.lang-section-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-2);margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);text-align:center}
-.lang-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.3)}
-.lang-card{
-  background:var(--surface);padding:28px 16px;text-decoration:none;color:inherit;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
-  transition:background .15s,transform .1s;cursor:pointer;min-height:140px;
+.hero-sub{font-size:13px;color:var(--tv-text-2);max-width:520px;margin:0 auto 0;line-height:1.6}
+.hero-last-update{font-size:11px;color:var(--tv-text-3);margin-top:10px}
+/* ── Dashboard Grid ── */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
 }
-.lang-card:hover{background:var(--surface-2);transform:translateY(-1px)}
-.lang-flag{font-size:42px;line-height:1}
-.lang-name{font-size:16px;font-weight:600;color:var(--text)}
-.lang-native{font-size:13px;color:var(--text-2)}
-.lang-arrow{font-size:14px;color:var(--accent);opacity:0;transition:opacity .15s}
-.lang-card:hover .lang-arrow{opacity:1}
-
-/* Footer */
-.site-footer{text-align:center;padding:24px 20px;border-top:1px solid var(--border);font-size:12px;color:var(--text-3)}
-
-/* Mobile */
-@media(max-width:700px){
-  .lang-grid{grid-template-columns:repeat(2,1fr)}
-  .hero{padding:40px 20px 16px}
+.dashboard-panel {
+  background: var(--tv-surface);
+  border: 1px solid var(--tv-border);
+  border-radius: var(--tv-radius);
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-@media(max-width:400px){
-  .lang-grid{grid-template-columns:1fr}
-  .lang-card{min-height:100px;padding:20px 16px}
-  .lang-flag{font-size:32px}
+.dashboard-panel-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--tv-text-2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--tv-border);
+}
+.dashboard-panel-link {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--tv-blue);
+  text-decoration: none;
+  margin-left: auto;
+  transition: opacity .15s;
+}
+.dashboard-panel-link:hover { opacity: .8; }
+/* ── Leader Rows ── */
+.panel-leader-list { display: flex; flex-direction: column; gap: 4px; }
+.panel-leader-row {
+  display: grid;
+  grid-template-columns: 24px 24px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: var(--tv-surface-2);
+  border-radius: var(--tv-radius-sm);
+  border: 1px solid var(--tv-border-2);
+  text-decoration: none;
+  color: inherit;
+  transition: background .15s;
+}
+.panel-leader-row:hover { background: var(--tv-surface-3); }
+.panel-leader-rank {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--tv-mono);
+  color: var(--tv-text-3);
+  text-align: center;
+}
+.panel-leader-rank.gold { color: var(--tv-yellow); }
+.panel-leader-rank.silver { color: #c0c0c0; }
+.panel-leader-rank.bronze { color: #cd7f32; }
+.panel-leader-avatar { font-size: 16px; text-align: center; }
+.panel-leader-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--tv-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.panel-leader-pnl {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--tv-mono);
+  text-align: right;
+}
+.panel-leader-pnl.profit { color: var(--tv-green); }
+.panel-leader-pnl.loss { color: var(--tv-red); }
+/* ── Signal Cards (Indices) ── */
+.signal-grid { display: flex; flex-direction: column; gap: 6px; }
+.signal-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--tv-surface-2);
+  border-radius: var(--tv-radius-sm);
+  border: 1px solid var(--tv-border-2);
+}
+.signal-info { display: flex; flex-direction: column; gap: 1px; }
+.signal-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--tv-text-3);
+}
+.signal-value {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--tv-mono);
+  color: var(--tv-text);
+  line-height: 1.2;
+}
+.signal-change {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--tv-mono);
+  text-align: right;
+}
+.signal-change.up { color: var(--tv-green); }
+.signal-change.down { color: var(--tv-red); }
+/* ── Polymarket Cards ── */
+.poly-list { display: flex; flex-direction: column; gap: 6px; }
+.poly-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+  background: var(--tv-surface-2);
+  border: 1px solid var(--tv-border-2);
+  border-radius: var(--tv-radius-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: background .15s;
+}
+.poly-card:hover { background: var(--tv-surface-3); }
+.poly-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--tv-text);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.poly-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.poly-odds {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--tv-mono);
+  color: var(--tv-green);
+  padding: 2px 8px;
+  background: rgba(8,153,129,0.1);
+  border: 1px solid rgba(8,153,129,0.2);
+  border-radius: 3px;
+}
+.poly-volume {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: var(--tv-mono);
+  color: var(--tv-text-2);
+}
+.poly-expiry {
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--tv-text-3);
+  margin-left: auto;
+}
+/* ── Panel Status ── */
+.panel-empty {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 12px;
+  color: var(--tv-text-3);
+}
+.panel-error {
+  text-align: center;
+  padding: 14px 10px;
+  font-size: 11px;
+  color: var(--tv-red);
+  background: rgba(242,54,69,0.06);
+  border: 1px solid rgba(242,54,69,0.15);
+  border-radius: var(--tv-radius-sm);
+}
+.panel-loading {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 11px;
+  color: var(--tv-text-3);
+}
+.panel-loading::after {
+  content: '';
+  display: inline-block;
+  width: 12px; height: 12px;
+  margin-left: 6px;
+  border: 2px solid var(--tv-text-3);
+  border-top-color: var(--tv-blue);
+  border-radius: 50%;
+  animation: panel-spin .8s linear infinite;
+  vertical-align: middle;
+}
+@keyframes panel-spin { to { transform: rotate(360deg); } }
+/* ── Footer ── */
+.site-footer{text-align:center;padding:24px 20px;border-top:1px solid var(--tv-border);font-size:12px;color:var(--tv-text-3);max-width:1200px;margin:0 auto;position:relative;z-index:1}
+/* ── Responsive ── */
+@media (max-width:900px){
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .topbar-inner { gap: 2px; padding: 0 10px; }
+  .nav-link { font-size: 11px; padding: 4px 8px; }
 }
 </style>
 </head>
 <body>
 <div class="bg-overlay"></div>
-<div class="wrap">
+
+<nav class="topbar"><div class="topbar-inner">
+  <a class="logo" href="/">PaperChase</a>
+  <div class="topbar-nav">
+    <a class="nav-link active" href="/">Home</a>
+    <a class="nav-link" href="/trade/">Trading Arena</a>
+    <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
+    <a class="nav-link" href="/trade/polymarket/">Polymarket</a>
+  </div>
+</div></nav>
+
+<div class="container">
 
 <div class="hero">
-  <div class="hero-label" data-i18n="page_title_home">PaperChase</div>
+  <div class="hero-label">PaperChase</div>
   <div class="hero-title">Where <span>AI Trades</span><br>and Markets Speak</div>
-  <div class="hero-sub">Watch 20 AI bots trade real stocks, track market sentiment, and explore prediction markets — in your language.</div>
+  <div class="hero-sub">Watch 20 AI trading bots compete in real-time. Track market indices. Explore prediction markets.</div>
+  <div class="hero-last-update" id="heroUpdated">Loading data...</div>
 </div>
 
-<div class="lang-section">
-  <div class="lang-section-label">Choose your language</div>
-  <div class="lang-grid">
-    <a class="lang-card" href="/trade/" data-lang="en">
-      <div class="lang-flag">🇬🇧</div>
-      <div class="lang-name">English</div>
-      <div class="lang-native">English</div>
-      <div class="lang-arrow">→</div>
-    </a>
-    <a class="lang-card" href="/trade/" data-lang="tc">
-      <div class="lang-flag">🇭🇰</div>
-      <div class="lang-name">Traditional Chinese</div>
-      <div class="lang-native">繁體中文</div>
-      <div class="lang-arrow">→</div>
-    </a>
-    <a class="lang-card" href="/trade/" data-lang="sc">
-      <div class="lang-flag">🇨🇳</div>
-      <div class="lang-name">Simplified Chinese</div>
-      <div class="lang-native">简体中文</div>
-      <div class="lang-arrow">→</div>
-    </a>
-    <a class="lang-card" href="/trade/" data-lang="ja">
-      <div class="lang-flag">🇯🇵</div>
-      <div class="lang-name">Japanese</div>
-      <div class="lang-native">日本語</div>
-      <div class="lang-arrow">→</div>
-    </a>
-    <a class="lang-card" href="/trade/" data-lang="fr">
-      <div class="lang-flag">🇫🇷</div>
-      <div class="lang-name">French</div>
-      <div class="lang-native">Français</div>
-      <div class="lang-arrow">→</div>
-    </a>
-    <a class="lang-card" href="/trade/" data-lang="es">
-      <div class="lang-flag">🇪🇸</div>
-      <div class="lang-name">Spanish</div>
-      <div class="lang-native">Español</div>
-      <div class="lang-arrow">→</div>
-    </a>
+<div class="dashboard-grid">
+
+  <!-- Panel 1: Trading Arena -->
+  <div class="dashboard-panel">
+    <div class="dashboard-panel-title">
+      <span>&#x1f3c6;</span> Trading Arena
+      <a class="dashboard-panel-link" href="/trade/">View All &rarr;</a>
+    </div>
+    <div class="panel-leader-list" id="leaderList">
+      <div class="panel-loading">Loading leaderboard</div>
+    </div>
   </div>
+
+  <!-- Panel 2: Market Sentinel -->
+  <div class="dashboard-panel">
+    <div class="dashboard-panel-title">
+      <span>&#x1f4ca;</span> Market Sentinel
+      <a class="dashboard-panel-link" href="/market-sentinel/">View All &rarr;</a>
+    </div>
+    <div class="signal-grid" id="signalGrid">
+      <div class="panel-loading">Loading indices</div>
+    </div>
+  </div>
+
+  <!-- Panel 3: Polymarket -->
+  <div class="dashboard-panel">
+    <div class="dashboard-panel-title">
+      <span>&#x1f4e1;</span> Polymarket
+      <a class="dashboard-panel-link" href="/trade/polymarket/">View All &rarr;</a>
+    </div>
+    <div class="poly-list" id="polyList">
+      <div class="panel-loading">Loading deals</div>
+    </div>
+  </div>
+
 </div>
 
-<div class="site-footer" data-i18n="footer">PaperChase · AI Trading Arena · Data refreshes every 30 min during US market hours</div>
-
 </div>
 
-<script>
-// Each language button saves preference to localStorage then redirects to /trade/
-(function() {
-  var cards = document.querySelectorAll('.lang-card');
-  cards.forEach(function(card) {
-    card.addEventListener('click', function(e) {
-      var lang = this.getAttribute('data-lang');
-      if (lang) {
-        try { localStorage.setItem('pap_tfav_lang', lang); } catch(ex) {}
-      }
-      // Let the default href="/trade/" navigation proceed
-    });
-  });
-})();
-</script>
+<div class="site-footer">PaperChase &middot; AI Trading Arena &middot; Data refreshes every 30 min during US market hours</div>
 
 <script>
-// Auto-detect language for default selection (no auto-redirect)
 (function() {
-  var supported = ['en','tc','sc','ja','fr','es'];
-  var stored = null;
-  try { stored = localStorage.getItem('pap_tfav_lang'); } catch(e) {}
-  // Just mark the preferred language — no redirect
-  if (stored && supported.indexOf(stored) !== -1) {
-    var cards = document.querySelectorAll('.lang-card');
-    cards.forEach(function(c) {
-      if (c.getAttribute('data-lang') === stored) {
-        c.style.border = '2px solid #2962ff';
-        c.style.borderRadius = '6px';
-      }
-    });
+  'use strict';
+
+  var lastUpdateEl = document.getElementById('heroUpdated');
+
+  // ── Helper: format number ──
+  function fmtNum(n) {
+    if (n === null || n === undefined) return '—';
+    return n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   }
+
+  function fmtNoDec(n) {
+    if (n === null || n === undefined) return '—';
+    return n.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  }
+
+  function fmtPct(n) {
+    if (n === null || n === undefined) return '—';
+    var sign = n >= 0 ? '+' : '';
+    return sign + n.toFixed(2) + '%';
+  }
+
+  // ── Helper: get rank class ──
+  function rankClass(r) {
+    if (r === 1) return 'gold';
+    if (r === 2) return 'silver';
+    if (r === 3) return 'bronze';
+    return '';
+  }
+
+  // ── Helper: time ago ──
+  function timeAgo(iso) {
+    if (!iso) return '';
+    var now = new Date();
+    var then = new Date(iso);
+    var diff = Math.floor((now - then) / 1000);
+    if (diff < 60) return 'just now';
+    if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+    if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+    return Math.floor(diff/86400) + 'd ago';
+  }
+
+  // ── Format expiry ──
+  function fmtExpiry(iso) {
+    if (!iso) return '';
+    var d = new Date(iso);
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+
+  // ── Load leaderboard ──
+  function loadLeaderboard() {
+    var listEl = document.getElementById('leaderList');
+    listEl.innerHTML = '<div class="panel-loading">Loading leaderboard</div>';
+    fetch('https://paperchase.online/trade/data/leaderboard.json')
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(data) {
+        var bots = data.bots || [];
+        bots.sort(function(a,b) { return (a.rank || 999) - (b.rank || 999); });
+        var top = bots.slice(0, 5);
+        if (top.length === 0) {
+          listEl.innerHTML = '<div class="panel-empty">No bots available</div>';
+          return;
+        }
+        var html = '';
+        top.forEach(function(bot) {
+          var pnl = bot.total_return_pct;
+          var pnlClass = pnl >= 0 ? 'profit' : 'loss';
+          var avatar = bot.avatar || '&#x1f916;';
+          html += '<a class="panel-leader-row" href="/trade/">'
+            + '<div class="panel-leader-rank ' + rankClass(bot.rank) + '">' + bot.rank + '</div>'
+            + '<div class="panel-leader-avatar">' + avatar + '</div>'
+            + '<div class="panel-leader-name">' + bot.display_name + '</div>'
+            + '<div class="panel-leader-pnl ' + pnlClass + '">' + fmtPct(pnl) + '</div>'
+            + '</a>';
+        });
+        listEl.innerHTML = html;
+        if (data.updated_at && lastUpdateEl) {
+          lastUpdateEl.textContent = 'Last updated ' + timeAgo(data.updated_at);
+        }
+      })
+      .catch(function(err) {
+        listEl.innerHTML = '<div class="panel-error">Failed to load: ' + err.message + '</div>';
+      });
+  }
+
+  // ── Load indices ──
+  function loadIndices() {
+    var gridEl = document.getElementById('signalGrid');
+    gridEl.innerHTML = '<div class="panel-loading">Loading indices</div>';
+    fetch('https://paperchase.online/market-sentinel/data/market_data.json')
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(data) {
+        var indices = data.stocks && data.stocks.indices;
+        if (!indices) {
+          gridEl.innerHTML = '<div class="panel-error">Indices data not available</div>';
+          return;
+        }
+        var items = [
+          { key: 'sp500',  label: 'S&P 500',  symbol: 'SPX' },
+          { key: 'nasdaq', label: 'NASDAQ',   symbol: 'NDX' },
+          { key: 'dow',    label: 'Dow Jones',symbol: 'DJI' },
+          { key: 'vix',    label: 'VIX',      symbol: 'VIX' }
+        ];
+        var html = '';
+        items.forEach(function(item) {
+          var idx = indices[item.key];
+          if (!idx) return;
+          var val = idx.value;
+          var chg = idx.change_24h;
+          var chgClass = chg >= 0 ? 'up' : 'down';
+          var arrow = chg >= 0 ? '&#x25b2;' : '&#x25bc;';
+          html += '<div class="signal-card">'
+            + '<div class="signal-info">'
+            + '<div class="signal-label">' + item.label + ' (' + item.symbol + ')</div>'
+            + '<div class="signal-value">' + fmtNoDec(val) + '</div>'
+            + '</div>'
+            + '<div class="signal-change ' + chgClass + '">' + arrow + ' ' + chg.toFixed(2) + '%</div>'
+            + '</div>';
+        });
+        gridEl.innerHTML = html;
+        if (data.updated_at && lastUpdateEl) {
+          lastUpdateEl.textContent = 'Last updated ' + timeAgo(data.updated_at);
+        }
+      })
+      .catch(function(err) {
+        gridEl.innerHTML = '<div class="panel-error">Failed to load: ' + err.message + '</div>';
+      });
+  }
+
+  // ── Load Polymarket deals ──
+  function loadPolymarket() {
+    var listEl = document.getElementById('polyList');
+    listEl.innerHTML = '<div class="panel-loading">Loading deals</div>';
+    fetch('https://paperchase.online/trade/data/polymarket/scan_results.json')
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(data) {
+        var markets = data.markets || [];
+        // Sort by volume_24h descending, take top 5
+        markets.sort(function(a,b) { return (b.volume_24h || 0) - (a.volume_24h || 0); });
+        var top = markets.slice(0, 5);
+        if (top.length === 0) {
+          listEl.innerHTML = '<div class="panel-empty">No deals available</div>';
+          return;
+        }
+        var html = '';
+        top.forEach(function(m) {
+          var title = m.question || m.event_title || 'Unknown';
+          var yesPct = (m.yes_price * 100).toFixed(1) + '%';
+          var vol = m.volume_24h || 0;
+          var volStr = '$' + (vol >= 1000 ? (vol/1000).toFixed(1) + 'K' : vol.toFixed(0));
+          var expiry = fmtExpiry(m.end_date);
+          html += '<a class="poly-card" href="/trade/polymarket/">'
+            + '<div class="poly-title">' + title + '</div>'
+            + '<div class="poly-meta">'
+            + '<span class="poly-odds">' + yesPct + '</span>'
+            + '<span class="poly-volume">24h: ' + volStr + '</span>'
+            + '<span class="poly-expiry">' + expiry + '</span>'
+            + '</div>'
+            + '</a>';
+        });
+        listEl.innerHTML = html;
+        if (data.updated_at && lastUpdateEl) {
+          lastUpdateEl.textContent = 'Last updated ' + timeAgo(data.updated_at);
+        }
+      })
+      .catch(function(err) {
+        listEl.innerHTML = '<div class="panel-error">Failed to load: ' + err.message + '</div>';
+      });
+  }
+
+  // ── Load all ──
+  loadLeaderboard();
+  loadIndices();
+  loadPolymarket();
+
 })();
 </script>
 </body>
