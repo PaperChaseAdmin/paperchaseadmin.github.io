@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Cathie Trade Records · PaperChase</title>
+<meta name="description" content="Complete trade history for Cathie AI trading bot on PaperChase."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://paperchase.online/trading-arena/cathie/records/"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/design-system.css">
+<style>
+:root {
+  --tv-bg: #ffffff; --tv-surface: #ffffff; --tv-surface-2: #f8fafc; --tv-surface-3: #f1f5f9;
+  --tv-border: #e2e8f0; --tv-border-2: #cbd5e1;
+  --tv-text: #061b31; --tv-text-2: #64748b; --tv-text-3: #94a3b8;
+  --tv-green: #15be53; --tv-red: #ef4444; --tv-yellow: #f59e0b; --tv-blue: #533afd;
+  --tv-font: var(--pc-font); --tv-mono: var(--pc-mono);
+  --tv-radius: var(--pc-radius); --tv-radius-sm: var(--pc-radius-sm);
+}
+.back-link{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:500;color:var(--pc-purple);text-decoration:none;margin-bottom:16px}
+.back-link:hover{text-decoration:underline}
+.profit{color:var(--pc-green)}.loss{color:var(--pc-red)}
+.stats-grid{display:grid;gap:1px;background:var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden;margin-bottom:16px;grid-template-columns:repeat(4,1fr)}
+.stat-cell{background:var(--pc-surface);padding:12px 14px;text-align:center}
+.stat-lbl{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:2px}
+.stat-val{font-size:18px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
+.filter-bar{display:flex;gap:4px;margin-bottom:12px}
+.filter-btn{font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;border:1px solid var(--pc-border);background:var(--pc-surface);color:var(--pc-text-2);cursor:pointer;font-family:var(--pc-font);transition:all .15s}
+.filter-btn:hover{background:var(--pc-surface-hover)}
+.filter-btn.active{background:var(--pc-purple);color:#fff;border-color:var(--pc-purple)}
+.records-list{display:flex;flex-direction:column;gap:1px;background:var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden}
+.record-row{display:grid;grid-template-columns:80px 80px 1fr 80px 70px;gap:6px;align-items:center;padding:8px 12px;background:var(--pc-surface);font-size:12px;border-bottom:1px solid var(--pc-border)}
+.record-row:last-child{border-bottom:none}
+.record-date{color:var(--pc-text-3);font-size:10px;font-weight:600}
+.record-action{font-weight:700;font-size:11px;padding:1px 6px;border-radius:2px;text-align:center}
+.record-sym{font-weight:600;color:var(--pc-heading);font-family:var(--pc-mono)}
+.record-qty{font-family:var(--pc-mono);color:var(--pc-text)}
+.record-price{font-family:var(--pc-mono);color:var(--pc-text);text-align:right}
+.record-reason{font-size:11px;color:var(--pc-text-2);grid-column:1/-1;padding-top:6px;border-top:1px solid var(--pc-border);display:none;margin-top:4px}
+.record-row.expanded .record-reason{display:block}
+.badge-buy{background:var(--pc-green-bg);color:var(--pc-green)}
+.badge-sell{background:var(--pc-red-bg);color:var(--pc-red)}
+</style>
+</head>
+<body>
+
+<nav class="topbar"><div class="topbar-inner">
+  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <div class="topbar-nav">
+    <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
+    <a class="nav-link" href="/crypto-pulse/">Crypto Pulse</a>
+    <a class="nav-link" href="/poly-watch/">Poly Watch</a>
+    <a class="nav-link active" href="/trading-arena/">Trading Arena</a>
+  </div>
+  <div class="topbar-spacer"></div>
+  <div class="topbar-auth">
+    <a class="btn-login" href="/login/">Log In</a>
+    <a class="btn-register" href="/register/">Register</a>
+  </div>
+</div></nav>
+<div class="wrap">
+<div class="container">
+  <a class="back-link" href="/trading-arena/cathie/">&#8592; 🔬 Cathie</a>
+  <div class="page-header" style="padding:0 0 16px">
+    <div class="page-title-wrap">
+      <div class="page-title" style="font-size:22px">🔬 Cathie — Trade Records</div>
+      <div class="page-sub">Complete history · All times UTC</div>
+    </div>
+  </div>
+  <div class="stats-grid" id="stats"></div>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="setFilter('all',this)">All</button>
+    <button class="filter-btn" onclick="setFilter('buy',this)">Buys</button>
+    <button class="filter-btn" onclick="setFilter('sell',this)">Sells</button>
+  </div>
+  <div class="records-list" id="records-list"></div>
+</div>
+</div>
+
+<script>
+  const BOT_ID='cathie',BOT_COLOR='#8b5cf6',BOT_NAME='Cathie',BOT_AVATAR='🔬';
+</script>
+<script src="/assets/records.js"></script>
+</body></html>
