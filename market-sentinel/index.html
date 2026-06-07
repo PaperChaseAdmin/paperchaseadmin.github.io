@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title data-i18n-title="page_title_sentinel">Market Sentinel — Market Intelligence Dashboard</title>
+<meta name="description" content="Real-time market sentiment — Fear & Greed, stock indices, Reddit buzz, news analysis, and AI-powered next-day predictions."/>
+<meta name="keywords" content="market sentiment, fear and greed index, stock market, reddit sentiment, predictions"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://paperchase.online/market-sentinel/"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/design-system.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+/* ── Gauge ────────────────────────────── */
+.gauge-wrap{display:flex;flex-direction:column;align-items:center}
+.gauge-svg{width:180px;height:110px}
+.gauge-value{font-size:36px;font-weight:700;margin-top:4px;font-family:var(--pc-mono);color:var(--pc-heading)}
+.gauge-label{font-size:11px;color:var(--pc-text-2);margin-top:2px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.gauge-delta{font-size:11px;margin-top:4px;font-family:var(--pc-mono)}
+
+/* ── Index grid ────────────────────────── */
+.index-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.index-item{background:var(--pc-surface-2);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:12px}
+.index-name{font-size:10px;color:var(--pc-text-3);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.index-val{font-size:18px;font-weight:700;margin-top:2px;font-family:var(--pc-mono);color:var(--pc-heading)}
+.index-chg{font-size:12px;margin-top:1px;font-family:var(--pc-mono);font-weight:600}
+
+/* ── Mood score ────────────────────────── */
+.mood-score{font-size:42px;font-weight:700;text-align:center;margin:8px 0 4px;font-family:var(--pc-mono);color:var(--pc-heading)}
+.mood-label{text-align:center;font-size:11px;color:var(--pc-text-2);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+
+/* ── Sentiment bars ────────────────────── */
+.sentiment-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.sentiment-label{font-size:11px;color:var(--pc-text-2);min-width:70px}
+.bar-track{flex:1;height:4px;background:var(--pc-surface-3);border-radius:2px}
+.bar-fill{height:4px;border-radius:2px;transition:width .4s}
+
+/* ── Prediction cards ──────────────────── */
+.pred-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:20px}
+.pred-card-title{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px}
+.pred-card-dir{font-size:28px;font-weight:700;margin-bottom:4px}
+.pred-card-conf{font-size:12px;color:var(--pc-text-2)}
+.pred-card-bar{height:4px;border-radius:2px;margin:10px 0;background:var(--pc-surface-3);overflow:hidden}
+.pred-card-fill{height:100%;border-radius:2px;transition:width .5s}
+
+/* ── Prediction 10-day ─────────────────── */
+.pred-10day{display:flex;gap:4px;align-items:flex-end;height:60px;padding-bottom:20px;position:relative}
+.pred-10day-bar{flex:1;border-radius:3px 3px 0 0;min-height:4px;position:relative;transition:height .3s}
+.pred-10day-bar.win{background:var(--pc-green)}
+.pred-10day-bar.loss{background:var(--pc-red)}
+.pred-10day-bar.pending{background:var(--pc-text-3);opacity:.3}
+.pred-10day-label{position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--pc-text-3);white-space:nowrap}
+
+/* ── Accuracies ────────────────────────── */
+.acc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.acc-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;text-align:center}
+.acc-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:4px}
+.acc-val{font-size:32px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
+.acc-sub{font-size:10px;color:var(--pc-text-2);margin-top:2px}
+
+@media(max-width:900px){
+  .index-grid{grid-template-columns:1fr}
+  .acc-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="topbar"><div class="topbar-inner">
+  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <div class="topbar-nav">
+    <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
+    <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
+    <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
+    <a class="nav-link" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
+  </div>
+  <div class="topbar-spacer"></div>
+  <div class="topbar-auth">
+    <a class="btn-login" href="/login/">Log In</a>
+    <a class="btn-register" href="/register/">Register</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+<div class="container">
+
+  <div class="page-header">
+    <div class="page-title-wrap">
+      <div class="page-title" data-i18n="page_title_sentinel">Market Sentinel</div>
+      <div class="page-sub"><span class="live"></span> <span data-i18n="page_sub_sentinel">Stock indices · Market mood · News · Next-day predictions</span></div>
+    </div>
+    <div id="countdown-wrap" class="countdown-wrap"></div>
+  </div>
+
+  <div class="tabs-wrap">
+    <button class="tab active" data-tab="stocks" onclick="switchTab('stocks',this)">📈 Stocks</button>
+    <button class="tab" data-tab="predictions" onclick="switchTab('predictions',this)">🔮 Predictions</button>
+  </div>
+
+  <!-- STOCKS -->
+  <div class="section active" id="tab-stocks">
+    <div class="loading" id="stocks-loading"><div class="spinner"></div>Fetching market data…</div>
+    <div id="stocks-content" style="display:none">
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-title">Market Indices</div>
+          <div class="index-grid" id="stock-indices"></div>
+          <div class="source-note"><strong>Source:</strong> yfinance</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Market Mood Score</div>
+          <div id="market-mood-score" class="mood-score">—</div>
+          <div id="market-mood-label" class="mood-label"></div>
+          <div style="margin-top:14px" id="stock-sentiment-bars"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Top Mentioned Stocks (Reddit)</div>
+          <div id="stock-mentions"></div>
+          <div class="source-note"><strong>Source:</strong> Reddit</div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Stock Prices (Spot)</div>
+          <div id="stock-prices"></div>
+          <div class="source-note"><strong>Source:</strong> yfinance</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🎲 Poly Watch — Finance & Economy</div>
+          <div id="stock-polymarket"></div>
+          <div class="source-note"><strong>Source:</strong> Poly Watch</div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Latest Stock & Finance News</div>
+          <div id="stock-news"></div>
+          <div class="source-note"><strong>Source:</strong> Reuters, CNBC, MarketWatch</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Reddit Activity</div>
+          <div id="stock-reddit"></div>
+          <div class="source-note"><strong>Source:</strong> Reddit</div>
+        </div>
+      </div>
+      <div class="disclaimer"><strong>⚠️ Spot Assets Only.</strong> Not financial advice.</div>
+    </div>
+  </div>
+
+  <!-- PREDICTIONS -->
+  <div class="section" id="tab-predictions">
+    <div class="loading" id="predictions-loading"><div class="spinner"></div>Analyzing prediction data…</div>
+    <div id="predictions-content" style="display:none">
+
+      <div class="section-title" style="margin-bottom:8px">NEXT SESSION FORECAST</div>
+      <div id="prediction-big-cards" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">
+        <div style="color:var(--pc-text-2);padding:12px 0;text-align:center;grid-column:1/-1">Loading forecast data…</div>
+      </div>
+
+      <div class="section-title" style="margin-bottom:8px">10-DAY PREDICTION TRACK RECORD</div>
+      <div id="prediction-10day" style="margin-bottom:20px">
+        <div style="color:var(--pc-text-2);padding:12px 0;text-align:center">Loading track record…</div>
+      </div>
+
+      <div class="section-title" style="margin-bottom:8px">ACCURACY BY INDEX</div>
+      <div id="prediction-stats" style="margin-bottom:20px">
+        <div style="color:var(--pc-text-2);padding:12px 0;text-align:center">Loading accuracy data…</div>
+      </div>
+
+      <div class="disclaimer"><strong>⚠️ Not Financial Advice.</strong> Predictions are algorithmic direction signals. Past performance does not guarantee future results.</div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/gh-pages/data/market_data.json';
+let DATA = null;
+
+function switchTab(name, el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
+}
+
+// ── Countdown ────────────────────────────
+let _cdTimer = null;
+function startCountdown(updatedAt) {
+  clearInterval(_cdTimer);
+  const updated = new Date(updatedAt);
+  const ageMs = Date.now() - updated.getTime();
+  const el = document.getElementById('countdown-wrap');
+  if (ageMs > 20 * 60 * 1000) {
+    const staleMins = Math.round(ageMs / 60000);
+    el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">data ' + staleMins + 'm old</span>';
+    _cdTimer = setTimeout(() => loadData(), 90 * 1000);
+    return;
+  }
+  const next = new Date(updated.getTime() + 10 * 60 * 1000);
+  function tick() {
+    const diff = next - Date.now();
+    if (diff <= 0) {
+      clearInterval(_cdTimer);
+      el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">Checking now…</span>';
+      loadData(); return;
+    }
+    const m = Math.floor(diff / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">' + m + ':' + String(s).padStart(2,'0') + '</span>';
+  }
+  tick();
+  _cdTimer = setInterval(tick, 1000);
+}
+
+// ── Renderers ────────────────────────────
+const fmtPrice = v => v == null ? '—' : v >= 1000 ? '$' + v.toLocaleString('en', {maximumFractionDigits:0}) : v >= 1 ? '$' + v.toFixed(2) : v >= 0.01 ? '$' + v.toFixed(4) : '$' + v.toFixed(6);
+const fmtChg = v => v == null ? '' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+const chgClass = v => v == null ? '' : v >= 0 ? 'text-green' : 'text-red';
+
+function renderStocks(d) {
+  document.getElementById('stocks-loading').style.display = 'none';
+  document.getElementById('stocks-content').style.display = 'block';
+
+  // Indices
+  if (d.indices) {
+    let html = '';
+    Object.entries(d.indices).forEach(([name, idx]) => {
+      if (!idx || idx.price == null) return;
+      html += '<div class="index-item"><div class="index-name">' + name + '</div>' +
+        '<div class="index-val">' + idx.price.toLocaleString('en',{maximumFractionDigits:2}) + '</div>' +
+        '<div class="index-chg ' + chgClass(idx.change_pct) + '">' + fmtChg(idx.change_pct) + '</div></div>';
+    });
+    document.getElementById('stock-indices').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px">No index data</div>';
+  }
+
+  // Mood
+  const mood = d.mood_score;
+  if (mood != null) {
+    document.getElementById('market-mood-score').textContent = mood + '/100';
+    document.getElementById('market-mood-label').textContent = mood >= 75 ? 'Extreme Greed' : mood >= 55 ? 'Greed' : mood >= 45 ? 'Neutral' : mood >= 25 ? 'Fear' : 'Extreme Fear';
+    document.getElementById('market-mood-score').style.color = mood >= 55 ? 'var(--pc-green)' : mood >= 45 ? 'var(--pc-yellow)' : 'var(--pc-red)';
+  }
+
+  // Sentiment bars
+  if (d.sentiment_scores) {
+    let bars = '';
+    const entries = Object.entries(d.sentiment_scores).slice(0,6);
+    entries.forEach(([label, val]) => {
+      const pct = Math.min(Math.abs((val || 0)) * 100, 100);
+      const color = val >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
+      bars += '<div class="sentiment-row"><span class="sentiment-label">' + label + '</span>' +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + color + '"></div></div></div>';
+    });
+    document.getElementById('stock-sentiment-bars').innerHTML = bars;
+  }
+
+  // Mentions
+  if (d.reddit_mentions && d.reddit_mentions.length) {
+    let html = '';
+    d.reddit_mentions.slice(0,8).forEach(m => {
+      html += '<div class="price-row"><span class="price-sym">' + m.symbol + '</span><span class="mention-count" style="font-size:11px;color:var(--pc-text-3);text-align:right">' + (m.count||0) + ' mentions</span></div>';
+    });
+    document.getElementById('stock-mentions').innerHTML = html;
+  }
+
+  // Stock prices
+  if (d.stock_prices) {
+    let html = '';
+    Object.entries(d.stock_prices).slice(0,12).forEach(([sym, s]) => {
+      if (!s || s.price == null) return;
+      html += '<div class="price-row"><span class="price-sym">' + sym + '</span><span class="price-val">' + fmtPrice(s.price) + '</span><span class="' + chgClass(s.change_pct) + '">' + fmtChg(s.change_pct) + '</span></div>';
+    });
+    document.getElementById('stock-prices').innerHTML = html;
+  }
+
+  // Poly Watch finance
+  if (d.poly_markets && d.poly_markets.length) {
+    let html = '';
+    d.poly_markets.slice(0,5).forEach(m => {
+      const pct = (m.yes_price||0)*100;
+      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;max-width:180px;white-space:normal;line-height:1.3;font-family:var(--pc-font)">' + m.question + '</span><span class="price-val" style="font-size:12px;text-align:right">' + pct.toFixed(1) + '%</span></div>';
+    });
+    document.getElementById('stock-polymarket').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px;padding:8px 0">No data</div>';
+  }
+
+  // News
+  if (d.news && d.news.length) {
+    let html = '';
+    d.news.slice(0,6).forEach(n => {
+      html += '<div class="news-item"><span class="news-source">' + (n.source||'') + '</span><a class="news-title" href="' + (n.url||'#') + '" target="_blank" rel="noopener">' + n.title + '</a></div>';
+    });
+    document.getElementById('stock-news').innerHTML = html;
+  }
+
+  // Reddit
+  if (d.reddit_activity && d.reddit_activity.length) {
+    let html = '';
+    d.reddit_activity.slice(0,5).forEach(r => {
+      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
+    });
+    document.getElementById('stock-reddit').innerHTML = html;
+  }
+}
+
+function renderPredictions(d) {
+  document.getElementById('predictions-loading').style.display = 'none';
+  document.getElementById('predictions-content').style.display = 'block';
+
+  const pr = d.predictions || {};
+  const indices = ['^GSPC', '^IXIC', '^DJI'];
+  const labels = {'^GSPC':'S&P 500','^IXIC':'NASDAQ','^DJI':'DOW'};
+
+  // Big cards
+  const bigIdx = ['^GSPC','^IXIC'];
+  let bigHtml = '';
+  bigIdx.forEach(sym => {
+    const p = pr[sym] || {};
+    const dir = (p.direction||'').toLowerCase();
+    const dirLabel = dir === 'up' ? '📈 Bullish' : dir === 'down' ? '📉 Bearish' : '➡️ Neutral';
+    const dirColor = dir === 'up' ? 'var(--pc-green)' : dir === 'down' ? 'var(--pc-red)' : 'var(--pc-text-3)';
+    const conf = p.confidence || 50;
+    bigHtml += '<div class="pred-card"><div class="pred-card-title">' + (labels[sym]||sym) + '</div>' +
+      '<div class="pred-card-dir" style="color:' + dirColor + '">' + dirLabel + '</div>' +
+      '<div class="pred-card-conf">Confidence: <strong>' + conf + '%</strong>' +
+      ' <span style="color:var(--pc-text-3)">· Signal: ' + (p.signal||'—') + '</span></div>' +
+      '<div class="pred-card-bar"><div class="pred-card-fill" style="width:' + conf + '%;background:' + dirColor + '"></div></div>' +
+      '</div>';
+  });
+  document.getElementById('prediction-big-cards').innerHTML = bigHtml;
+
+  // 10-day track record
+  let histHtml = '<div class="pred-10day">';
+  let hasData = false;
+  indices.forEach(sym => {
+    const p = pr[sym] || {};
+    const hist = p.history || [];
+    hist.forEach(h => {
+      hasData = true;
+      const isCorrect = h.result === true;
+      const pct = isCorrect ? 80 : 40;
+      const cls = isCorrect ? 'win' : (h.result === false ? 'loss' : 'pending');
+      const day = h.date ? new Date(h.date).toLocaleDateString('en',{month:'short',day:'numeric'}) : '';
+      histHtml += '<div class="pred-10day-bar ' + cls + '" style="height:' + pct + '%"><span class="pred-10day-label">' + day + '</span></div>';
+    });
+  });
+  histHtml += '</div>';
+  document.getElementById('prediction-10day').innerHTML = hasData ? histHtml : '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No prediction history yet</div>';
+
+  // Save prediction to localStorage for home page
+  const today = new Date().toISOString().slice(0,10);
+  let sentinelHist = JSON.parse(localStorage.getItem('sentinel_predictions') || '[]');
+  if (!sentinelHist.find(h => h.date === today)) {
+    const dirs = indices.map(sym => (pr[sym]||{}).direction).filter(Boolean);
+    sentinelHist.unshift({ date: today, result: null, direction: dirs.join('/') });
+    localStorage.setItem('sentinel_predictions', JSON.stringify(sentinelHist.slice(0,10)));
+  }
+
+  // Accuracy
+  const acc = pr._accuracy || {};
+  let accHtml = '';
+  indices.forEach(sym => {
+    const a = acc[sym] || {};
+    const total = (a.correct||0) + (a.wrong||0);
+    const pct = total > 0 ? Math.round((a.correct/total)*100) : '—';
+    accHtml += '<div class="acc-card"><div class="acc-label">' + (labels[sym]||sym) + '</div>' +
+      '<div class="acc-val" style="color:' + (pct === '—' ? 'var(--pc-text-3)' : pct >= 60 ? 'var(--pc-green)' : pct >= 40 ? 'var(--pc-yellow)' : 'var(--pc-red)') + '">' + (pct === '—' ? '—' : pct + '%') + '</div>' +
+      '<div class="acc-sub">' + (a.correct||0) + '✓ / ' + (a.wrong||0) + '✗</div></div>';
+  });
+  document.getElementById('prediction-stats').innerHTML = accHtml || '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No accuracy data yet</div>';
+}
+
+async function loadData() {
+  try {
+    const resp = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    DATA = await resp.json();
+    startCountdown(DATA.updated_at || DATA.timestamp || new Date().toISOString());
+    renderStocks(DATA);
+    renderPredictions(DATA);
+  } catch (e) {
+    document.querySelectorAll('.loading').forEach(el => {
+      el.innerHTML = '<div style="color:var(--pc-text-3)">⚠️ Unable to load data. Will retry…</div>';
+    });
+    setTimeout(loadData, 30000);
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Poly Watch — AI Prediction Market Scanner</title>
+<meta name="description" content="AI-powered prediction market scanner. Find high-confidence bets with heuristic scoring and AI analysis."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://paperchase.online/poly-watch/"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/design-system.css">
+<style>
+.market-grid{display:flex;flex-direction:column;gap:1px;background:var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden}
+.market-card{background:var(--pc-surface);padding:14px 16px;cursor:pointer;transition:background .1s}
+.market-card:hover{background:var(--pc-surface-hover)}
+.market-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:6px}
+.market-card-question{font-size:14px;font-weight:600;color:var(--pc-heading);flex:1;line-height:1.4}
+.market-card-badge{font-size:9px;font-weight:600;padding:2px 7px;border-radius:3px;text-transform:uppercase;white-space:nowrap;flex-shrink:0}
+.badge-yes{background:var(--pc-green-bg);color:var(--pc-green);border:1px solid rgba(21,190,83,.2)}
+.badge-review{background:var(--pc-yellow-bg);color:var(--pc-yellow);border:1px solid rgba(245,158,11,.2)}
+.badge-no{background:var(--pc-red-bg);color:var(--pc-red);border:1px solid rgba(239,68,68,.2)}
+.badge-tag{font-size:9px;padding:1px 5px;border-radius:2px;background:var(--pc-surface-3);color:var(--pc-text-3);border:1px solid var(--pc-border-2);text-transform:uppercase}
+.market-card-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.meta-item{font-size:11px;color:var(--pc-text-2)}
+.meta-item strong{color:var(--pc-heading);font-family:var(--pc-mono);font-weight:600}
+.prob-bar-wrap{height:4px;background:var(--pc-surface-3);border-radius:2px;overflow:hidden;margin-bottom:6px}
+.prob-bar-fill{height:100%;border-radius:2px;transition:width .5s}
+.market-card-ai{background:var(--pc-surface-3);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:8px 10px;margin-top:6px;font-size:12px;line-height:1.5;color:var(--pc-text-2);display:none}
+.market-card-ai.open{display:block}
+.ai-outlook{font-weight:600;margin-right:4px}
+.ai-conf{font-size:10px;color:var(--pc-text-3)}
+.top-pick-card{background:var(--pc-surface);border:2px solid var(--pc-green);border-radius:var(--pc-radius-lg);padding:20px;box-shadow:var(--pc-shadow-purple);cursor:pointer}
+.pred-row{display:grid;grid-template-columns:80px 1fr 55px 50px;gap:6px;align-items:center;padding:6px 10px;border-radius:var(--pc-radius);font-size:11px;border:1px solid var(--pc-border)}
+.pred-row.resolved-correct{background:var(--pc-green-bg)}
+.pred-row.resolved-wrong{background:var(--pc-red-bg)}
+.pred-row.pending{background:var(--pc-surface-3)}
+.pred-date{color:var(--pc-text-3);font-weight:600;font-size:10px}
+.pred-question{color:var(--pc-text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pred-bet{font-weight:700;text-align:center}
+.pred-result{font-weight:600;text-align:right;font-size:11px}
+@media(max-width:900px){.stats-bar .stat-item{min-width:50%}}
+</style>
+</head>
+<body>
+
+<nav class="topbar"><div class="topbar-inner">
+  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <div class="topbar-nav">
+    <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
+    <a class="nav-link" href="/crypto-pulse/">Crypto Pulse</a>
+    <a class="nav-link active" href="/poly-watch/">Poly Watch</a>
+    <a class="nav-link" href="/trading-arena/">Trading Arena</a>
+  </div>
+  <div class="topbar-spacer"></div>
+  <div class="topbar-auth">
+    <a class="btn-login" href="/login/">Log In</a>
+    <a class="btn-register" href="/register/">Register</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+<div class="container">
+
+  <div class="page-header">
+    <div class="page-title-wrap">
+      <div class="page-title">Poly Watch</div>
+      <div class="page-sub"><span class="live"></span> 🏆 Top pick shown first → Filter by category → Click any market for AI analysis</div>
+    </div>
+    <div id="countdown-wrap" class="countdown-wrap"></div>
+  </div>
+
+  <div class="stats-bar" id="statsBar"></div>
+
+  <div id="topPickSection" style="display:none;margin-bottom:20px">
+    <div class="section-title" style="margin-bottom:8px;display:flex;align-items:center;gap:8px">
+      <span>🏆 TODAY'S TOP PICK</span>
+      <span id="topPickDate" style="font-size:10px;color:var(--pc-text-3);font-weight:400"></span>
+    </div>
+    <div id="topPickCard" class="top-pick-card" onclick="toggleAI(this)">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
+        <div style="flex:1">
+          <div id="topPickQuestion" style="font-size:15px;font-weight:600;color:var(--pc-heading);line-height:1.4;margin-bottom:6px"></div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+            <span id="topPickAction" style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:4px;display:inline-block"></span>
+            <span id="topPickProb" style="font-size:13px;color:var(--pc-text-2)"></span>
+            <span id="topPickVol" style="font-size:12px;color:var(--pc-text-3)"></span>
+            <span id="topPickTag" style="font-size:10px;font-weight:600;padding:1px 6px;border-radius:2px;background:var(--pc-surface-3);color:var(--pc-text-3)"></span>
+          </div>
+        </div>
+        <div id="topPickScore" style="font-size:24px;font-weight:800;font-family:var(--pc-mono);color:var(--pc-green);flex-shrink:0;text-align:right"></div>
+      </div>
+      <div id="topPickAI" class="market-card-ai" style="display:none">
+        <span id="topPickAIOutlook" class="ai-outlook"></span>
+        <span id="topPickAIConf" class="ai-conf"></span>
+        <span id="topPickAIAnalysis"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="predHistSection" style="display:none;margin-bottom:20px">
+    <div class="section-title" style="margin-bottom:8px;display:flex;align-items:center;gap:8px">
+      <span>📊 10-DAY PREDICTION TRACK RECORD</span>
+      <span id="predHistAcc" style="font-size:11px;color:var(--pc-text-3);font-weight:400"></span>
+    </div>
+    <div id="predHistTable" style="display:flex;flex-direction:column;gap:4px">
+      <div style="color:var(--pc-text-2);padding:8px;font-size:12px;text-align:center">No prediction history yet — predictions recorded daily</div>
+    </div>
+  </div>
+
+  <div class="filter-bar" id="filterBar">
+    <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">All</button>
+    <button class="filter-btn" data-filter="recommended" onclick="setFilter('recommended',this)">✅ Recommended</button>
+    <button class="filter-btn" data-filter="review" onclick="setFilter('review',this)">⚠️ Review</button>
+    <button class="filter-btn" data-filter="politics" onclick="setFilter('politics',this)">Politics</button>
+    <button class="filter-btn" data-filter="crypto" onclick="setFilter('crypto',this)">Crypto</button>
+    <button class="filter-btn" data-filter="finance" onclick="setFilter('finance',this)">Finance</button>
+    <button class="filter-btn" data-filter="news" onclick="setFilter('news',this)">News</button>
+    <span class="filter-count" id="countLabel">0 markets</span>
+  </div>
+
+  <div id="marketList"><div class="loading"><div class="spinner"></div>Scanning Poly Watch…</div></div>
+
+</div>
+</div>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/trade/gh-pages/data/polymarket/scan_results.json';
+let allMarkets = [];
+let currentFilter = 'all';
+
+function fmt(v) { if (v == null) return '—'; if (v >= 1e6) return '$'+(v/1e6).toFixed(1)+'M'; if (v >= 1e3) return '$'+(v/1e3).toFixed(1)+'K'; return '$'+v.toFixed(0); }
+function setFilter(f, btn) { currentFilter = f; document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); renderMarkets(); }
+
+function renderMarkets() {
+  let filtered = allMarkets;
+  if (currentFilter === 'recommended') filtered = allMarkets.filter(m => m.heuristic && m.heuristic.score >= 15);
+  else if (currentFilter === 'review') filtered = allMarkets.filter(m => m.heuristic && m.heuristic.score < 15 && m.heuristic.score >= 5);
+  else if (currentFilter !== 'all') filtered = allMarkets.filter(m => m.tag === currentFilter);
+  document.getElementById('countLabel').textContent = filtered.length + ' markets';
+  if (!filtered.length) { document.getElementById('marketList').innerHTML = '<div class="loading" style="padding:40px">No markets found for this filter</div>'; return; }
+  let html = '<div class="market-grid">';
+  filtered.forEach(m => {
+    const h = m.heuristic || {}; const ai = m.ai || {}; const pct = (m.yes_price * 100).toFixed(1);
+    const badge = h.score >= 15 ? 'badge-yes' : h.score >= 5 ? 'badge-review' : 'badge-no';
+    const badgeText = h.score >= 15 ? '✅ Yes' : h.score >= 5 ? '⚠️ Review' : '❌ No';
+    const barColor = m.yes_price >= 0.9 ? 'var(--pc-green)' : m.yes_price >= 0.7 ? 'var(--pc-yellow)' : 'var(--pc-red)';
+    const endDate = m.end_date ? new Date(m.end_date).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : 'N/A';
+    const aiHtml = ai.ai_analysis ? '<div class="market-card-ai open"><span class="ai-outlook" style="color:'+(ai.ai_outlook==='yes'?'var(--pc-green)':'var(--pc-red)')+'">'+(ai.ai_outlook||'neutral').toUpperCase()+'</span><span class="ai-conf">('+(ai.ai_confidence||0)+'% confidence)</span> — '+(ai.ai_analysis||'')+'</div>' : '';
+    html += '<div class="market-card" onclick="toggleAI(this)"><div class="market-card-header"><div class="market-card-question">'+m.question+'</div><span class="market-card-badge '+badge+'">'+badgeText+'</span></div><div class="market-card-meta"><span class="meta-item">Yes: <strong class="'+(m.yes_price>=0.9?'text-green':m.yes_price>=0.7?'text-yellow':'')+'">'+pct+'%</strong></span><span class="meta-item">Ends: <strong>'+endDate+'</strong></span><span class="meta-item">Vol: <strong>'+fmt(m.volume)+'</strong></span><span class="badge-tag">'+(m.tag||'')+'</span>'+(h.reasons?'<span class="meta-item" style="color:var(--pc-text-3);font-size:10px">'+h.reasons+'</span>':'')+'</div><div class="prob-bar-wrap"><div class="prob-bar-fill" style="width:'+pct+'%;background:'+barColor+'"></div></div>'+aiHtml+'</div>';
+  });
+  html += '</div>';
+  document.getElementById('marketList').innerHTML = html;
+}
+
+function toggleAI(el) { const aiEl = el.querySelector('.market-card-ai'); if (aiEl) aiEl.classList.toggle('open'); }
+
+function renderTopPick(markets) {
+  const section = document.getElementById('topPickSection');
+  const scored = markets.filter(m => m.heuristic && m.heuristic.score > 0).sort((a,b)=>(b.heuristic.score||0)-(a.heuristic.score||0));
+  if (scored.length===0){section.style.display='none';return;}
+  const top=scored[0];const h=top.heuristic||{};const ai=top.ai||{};const pct=(top.yes_price*100).toFixed(1);const betYes=top.yes_price>=0.5;
+  document.getElementById('topPickDate').textContent=new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+  document.getElementById('topPickQuestion').textContent=top.question;
+  const ae=document.getElementById('topPickAction');ae.textContent=betYes?'▸ BET YES':'▸ BET NO';ae.style.background=betYes?'var(--pc-green-bg)':'var(--pc-red-bg)';ae.style.color=betYes?'var(--pc-green)':'var(--pc-red)';ae.style.border='1px solid '+(betYes?'rgba(21,190,83,0.3)':'rgba(239,68,68,0.3)');
+  document.getElementById('topPickProb').innerHTML='Yes: <strong>'+pct+'%</strong>';document.getElementById('topPickVol').textContent='Vol: '+fmt(top.volume);
+  document.getElementById('topPickTag').textContent=(top.tag||'').toUpperCase();document.getElementById('topPickScore').textContent=h.score||'';
+  if(ai.ai_analysis){document.getElementById('topPickAIOutlook').textContent=(ai.ai_outlook||'neutral').toUpperCase();document.getElementById('topPickAIOutlook').style.color=ai.ai_outlook==='yes'?'var(--pc-green)':'var(--pc-red)';document.getElementById('topPickAIConf').textContent='('+(ai.ai_confidence||0)+'% confidence)';document.getElementById('topPickAIAnalysis').textContent=' — '+ai.ai_analysis;}
+  section.style.display='block';savePrediction(top,betYes);
+}
+
+function savePrediction(market,betYes){const today=new Date().toISOString().split('T')[0];let history=JSON.parse(localStorage.getItem('polywatch_predictions')||'[]');if(history.length>0&&history[0].date===today)return;history.unshift({date:today,question:market.question,bet:betYes?'YES':'NO',prob:(market.yes_price*100).toFixed(1)+'%',tag:market.tag||'',score:(market.heuristic||{}).score||0,result:null,correct:null});history=history.slice(0,15);localStorage.setItem('polywatch_predictions',JSON.stringify(history));renderPredHist(history);}
+
+function renderPredHist(history){const section=document.getElementById('predHistSection');if(!history||history.length===0){section.style.display='none';return;}const resolved=history.filter(h=>h.correct!==null);const correct=resolved.filter(h=>h.correct).length;const total=resolved.length;const accPct=total>0?Math.round(correct/total*100):0;document.getElementById('predHistAcc').textContent=total>0?accPct+'% accuracy ('+correct+'/'+total+')':'';const tableHtml=history.slice(0,10).map(h=>{const isResolved=h.correct!==null;const cls=isResolved?(h.correct?'resolved-correct':'resolved-wrong'):'pending';const betColor=h.bet==='YES'?'var(--pc-green)':'var(--pc-red)';return'<div class="pred-row '+cls+'"><span class="pred-date">'+h.date.slice(5)+'</span><span class="pred-question">'+h.question+'</span><span class="pred-bet" style="color:'+betColor+'">'+h.bet+'</span>'+(isResolved?'<span class="pred-result" style="color:'+(h.correct?'var(--pc-green)':'var(--pc-red)')+'">'+(h.correct?'✅ CORRECT':'❌ WRONG')+'</span>':'<span class="pred-result" style="color:var(--pc-text-3)">⏳ Pending</span>')+'</div>';}).join('');document.getElementById('predHistTable').innerHTML=tableHtml;section.style.display='block';}
+
+let _cdTimer=null;
+function startCountdown(){clearInterval(_cdTimer);const el=document.getElementById('countdown-wrap');if(!el)return;function nextOpen(){const n=new Date();const d=n.getUTCDay(),h=n.getUTCHours(),m=n.getUTCMinutes();const nx=new Date(n);if(d===0||d===6||(d===5&&h>=21)){const dd=d===0?1:d===6?2:(8-d);nx.setDate(nx.getDate()+dd);nx.setUTCHours(13,30,0,0);}else if(h<13||(h===13&&m<30)){nx.setUTCHours(13,30,0,0);}else if(h>=21){nx.setDate(nx.getDate()+1);nx.setUTCHours(13,30,0,0);}else{const nh=Math.ceil((h*60+m)/30)*30;nx.setUTCHours(Math.floor(nh/60),nh%60,0,0);}return nx;}const target=nextOpen();function tick(){const diff=target-Date.now();if(diff<=0){el.innerHTML='<span class="countdown-lbl">Next Review</span><span class="countdown-num">Checking now…</span>';return;}const h=Math.floor(diff/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);if(h>=24)el.innerHTML='<span class="countdown-lbl">Next Review</span><span class="countdown-num">'+Math.floor(h/24)+'d '+(h%24)+'h '+m+'m</span>';else if(h>=1)el.innerHTML='<span class="countdown-lbl">Next Review</span><span class="countdown-num">'+h+'h '+m+'m '+s+'s</span>';else el.innerHTML='<span class="countdown-lbl">Next Review</span><span class="countdown-num">'+m+'m '+s+'s</span>';}tick();_cdTimer=setInterval(tick,1000);}
+
+async function loadData(){const today=new Date().toISOString().split('T')[0];const hist=JSON.parse(localStorage.getItem('polywatch_predictions')||'[]');localStorage.setItem('polywatch_predictions',JSON.stringify(hist.filter(h=>h.date>=today)));try{const resp=await fetch(DATA_URL+'?t='+Date.now());if(!resp.ok)throw new Error('HTTP '+resp.status);const data=await resp.json();allMarkets=data.markets||[];const total=allMarkets.length;const recommended=allMarkets.filter(m=>m.heuristic&&m.heuristic.score>=15).length;const avgYes=total?(allMarkets.reduce((s,m)=>s+m.yes_price,0)/total*100).toFixed(1):0;const totalVol=allMarkets.reduce((s,m)=>s+(m.volume||0),0);document.getElementById('statsBar').innerHTML='<div class="stat-item"><div class="stat-lbl">Markets</div><div class="stat-val">'+total+'</div></div><div class="stat-item"><div class="stat-lbl">Recommended</div><div class="stat-val" style="color:var(--pc-green)">'+recommended+'</div></div><div class="stat-item"><div class="stat-lbl">Avg Yes%</div><div class="stat-val">'+avgYes+'%</div></div><div class="stat-item"><div class="stat-lbl">Total Volume</div><div class="stat-val">'+fmt(totalVol)+'</div></div>';renderMarkets();renderTopPick(allMarkets);startCountdown();const history=JSON.parse(localStorage.getItem('polywatch_predictions')||'[]');renderPredHist(history);}catch(e){document.getElementById('marketList').innerHTML='<div class="loading" style="color:var(--pc-red)">⚠ Could not load: '+e.message+'</div>';}}
+loadData();
+</script>
+</body>
+</html>
