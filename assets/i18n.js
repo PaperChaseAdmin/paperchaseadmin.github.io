@@ -198,7 +198,7 @@
       }
     }
 
-    var url = '/trade/assets/i18n/' + lang + '.json';
+    var url = '/assets/i18n/' + lang + '.json';
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);

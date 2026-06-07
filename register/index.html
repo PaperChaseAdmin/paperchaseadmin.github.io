@@ -20,18 +20,18 @@
 <script src="/assets/i18n.js"></script>
 <script src="/assets/supabase-client.js"></script>
 <style>
+/* Override dark theme vars to match white+purple design-system.css */
 :root {
-  --tv-bg: #0a0b0f; --tv-surface: #131722; --tv-surface-2: #1e222d; --tv-surface-3: #2a2e39;
-  --tv-border: #2a2e39; --tv-border-2: #363a45;
-  --tv-text: #d1d4dc; --tv-text-2: #787b86; --tv-text-3: #50535c;
-  --tv-green: #089981; --tv-red: #f23645; --tv-yellow: #ff9800; --tv-blue: #2962ff;
-  --tv-font: 'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-  --tv-mono: 'JetBrains Mono','Fira Code',monospace;
-  --tv-radius: 6px; --tv-radius-sm: 4px;
+  --tv-bg: #ffffff; --tv-surface: #ffffff; --tv-surface-2: #f8fafc; --tv-surface-3: #f1f5f9;
+  --tv-border: #e2e8f0; --tv-border-2: #cbd5e1;
+  --tv-text: #061b31; --tv-text-2: #64748b; --tv-text-3: #94a3b8;
+  --tv-green: #15be53; --tv-red: #ef4444; --tv-yellow: #f59e0b; --tv-blue: #533afd;
+  --tv-font: var(--pc-font); --tv-mono: var(--pc-mono);
+  --tv-radius: var(--pc-radius); --tv-radius-sm: var(--pc-radius-sm);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--tv-bg);color:var(--tv-text);font-family:var(--tv-font);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
-.bg-overlay{position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(10,11,15,0.88),rgba(10,11,15,0.93),rgba(10,11,15,0.97)),url('https://images.pexels.com/photos/16594725/pexels-photo-16594725.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920') center/cover no-repeat fixed}
+body{background:var(--tv-bg);color:var(--tv-text);font-family:var(--tv-font);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}.bg-overlay{display:none}
+
 .wrap{position:relative;z-index:1}
 
 .topbar{background:rgba(19,23,34,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--tv-border);position:sticky;top:0;z-index:100}
@@ -66,7 +66,6 @@ body{background:var(--tv-bg);color:var(--tv-text);font-family:var(--tv-font);fon
 </style>
 </head>
 <body>
-<div class="bg-overlay"></div>
 <div class="wrap">
 
 <nav class="topbar"><div class="topbar-inner">
