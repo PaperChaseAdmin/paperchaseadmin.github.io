@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>PaperChase — AI Trading & Market Intelligence</title>
+<meta name="description" content="AI-powered trading bots, market sentiment analysis, prediction market intelligence, and crypto market pulse — all in one platform."/>
+<meta name="keywords" content="AI trading, paper trading, market sentiment, crypto, prediction market, poly watch"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://paperchase.online/"/>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/design-system.css">
+<script src="/assets/i18n.js"></script>
+<style>
+/* ── Hero Section ─────────────────────── */
+.hero {
+  text-align: center;
+  padding: 80px 0 56px;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--pc-purple-light), transparent);
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--pc-purple);
+  background: var(--pc-purple-bg);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--pc-heading);
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.hero h1 span { color: var(--pc-purple); }
+.hero p {
+  font-size: 18px;
+  color: var(--pc-text-2);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ── Tool Cards ────────────────────────── */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: -24px 0 48px;
+  position: relative;
+  z-index: 2;
+}
+.tool-card {
+  background: var(--pc-surface);
+  border: 1px solid var(--pc-border);
+  border-radius: var(--pc-radius-lg);
+  padding: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.tool-card:hover {
+  border-color: var(--pc-purple-light);
+  box-shadow: var(--pc-shadow-purple);
+  transform: translateY(-2px);
+}
+.tool-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--pc-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+.tool-card-icon.sentinel { background: var(--pc-blue-bg); color: var(--pc-blue); }
+.tool-card-icon.crypto { background: var(--pc-yellow-bg); color: var(--pc-yellow); }
+.tool-card-icon.poly { background: var(--pc-purple-bg); color: var(--pc-purple); }
+.tool-card-icon.trading { background: var(--pc-green-bg); color: var(--pc-green); }
+
+.tool-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--pc-heading);
+  margin-bottom: 4px;
+}
+.tool-card p {
+  font-size: 12px;
+  color: var(--pc-text-2);
+  line-height: 1.5;
+  flex: 1;
+}
+.tool-card .tool-link {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--pc-purple);
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Prediction Widgets ────────────────── */
+.widget-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.widget-card {
+  background: var(--pc-surface);
+  border: 1px solid var(--pc-border);
+  border-radius: var(--pc-radius-lg);
+  padding: 20px;
+}
+.widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.widget-header h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--pc-heading);
+}
+.widget-today {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  background: var(--pc-surface-2);
+  border: 1px solid var(--pc-border);
+  border-radius: var(--pc-radius);
+  margin-bottom: 14px;
+}
+.widget-today-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--pc-text-3);
+}
+.widget-today-val {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--pc-mono);
+  margin-left: auto;
+}
+.widget-hist {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hist-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.hist-day {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--pc-text-3);
+  min-width: 32px;
+  text-transform: uppercase;
+}
+.hist-bar-wrap {
+  flex: 1;
+  height: 6px;
+  background: var(--pc-surface-3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.hist-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s;
+}
+.hist-bar-fill.win { background: var(--pc-green); }
+.hist-bar-fill.loss { background: var(--pc-red); }
+.hist-result {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--pc-mono);
+  min-width: 30px;
+  text-align: right;
+}
+.hist-empty {
+  font-size: 11px;
+  color: var(--pc-text-3);
+  padding: 8px 0;
+  text-align: center;
+}
+
+/* ── Top Bots ──────────────────────────── */
+.top-bots-section {
+  margin-bottom: 40px;
+}
+.bot-rankings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.bot-card {
+  background: var(--pc-surface);
+  border: 1px solid var(--pc-border);
+  border-radius: var(--pc-radius-lg);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.2s;
+}
+.bot-card:hover {
+  border-color: var(--pc-purple-light);
+  box-shadow: var(--pc-shadow-md);
+}
+.bot-rank {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.bot-rank.r1 { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; }
+.bot-rank.r2 { background: var(--pc-surface-3); color: var(--pc-text-2); }
+.bot-rank.r3 { background: #d97706; color: #fff; opacity: 0.8; }
+.bot-info { flex: 1; min-width: 0; }
+.bot-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pc-heading);
+  margin-bottom: 2px;
+}
+.bot-meta {
+  font-size: 11px;
+  color: var(--pc-text-2);
+}
+.bot-pnl {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--pc-mono);
+  flex-shrink: 0;
+}
+
+/* ── Section Header ────────────────────── */
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.section-head h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--pc-heading);
+  letter-spacing: -0.3px;
+}
+.section-head a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--pc-purple);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section-head a:hover { text-decoration: underline; }
+
+/* ── Footer ────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--pc-border);
+  padding: 32px 0;
+  margin-top: 16px;
+}
+.footer-inner {
+  max-width: var(--pc-max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--pc-text-3);
+}
+.footer-links { display: flex; gap: 16px; }
+.footer-links a { color: var(--pc-text-2); text-decoration: none; }
+.footer-links a:hover { color: var(--pc-purple); }
+
+/* ── Responsive ────────────────────────── */
+@media (max-width: 900px) {
+  .hero { padding: 48px 0 40px; }
+  .hero h1 { font-size: 32px; }
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+  .widget-grid { grid-template-columns: 1fr; }
+  .bot-rankings { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 26px; }
+  .hero p { font-size: 15px; }
+  .tools-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="topbar"><div class="topbar-inner">
+  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <div class="topbar-nav">
+    <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
+    <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
+    <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
+    <a class="nav-link" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
+  </div>
+  <div class="topbar-spacer"></div>
+  <div class="topbar-auth">
+    <a class="btn-login" href="/login/" data-i18n="nav_login">Log In</a>
+    <a class="btn-register" href="/register/" data-i18n="nav_register">Register</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+
+  <!-- ── Hero ──────────────────────────── -->
+  <section class="hero">
+    <div class="hero-badge">✨ AI-Powered Market Intelligence</div>
+    <h1>Trade Smarter <span>with AI</span></h1>
+    <p>Watch 20 AI trading bots compete in real-time. Track market sentiment across stocks & crypto. Scan prediction markets for high-confidence bets.</p>
+    <div class="hero-actions">
+      <a href="/trading-arena/" class="btn btn-primary">Explore Trading Arena →</a>
+      <a href="/market-sentinel/" class="btn btn-secondary">View Market Data</a>
+    </div>
+  </section>
+
+  <!-- ── Quick Access Tools ────────────── -->
+  <div class="container">
+    <div class="tools-grid">
+      <a href="/market-sentinel/" class="tool-card">
+        <div class="tool-card-icon sentinel">📊</div>
+        <h3>Market Sentinel</h3>
+        <p>Real-time sentiment analysis — Fear & Greed, stock indices, news, aggregated market mood.</p>
+        <span class="tool-link">View Dashboard →</span>
+      </a>
+      <a href="/crypto-pulse/" class="tool-card">
+        <div class="tool-card-icon crypto">🪙</div>
+        <h3>Crypto Pulse</h3>
+        <p>Crypto-specific market data: spot prices, news sentiment, Reddit buzz, 4chan pulse & CoinGecko trends.</p>
+        <span class="tool-link">Track Crypto →</span>
+      </a>
+      <a href="/poly-watch/" class="tool-card">
+        <div class="tool-card-icon poly">🎲</div>
+        <h3>Poly Watch</h3>
+        <p>AI-scanned prediction markets. Daily top picks with heuristic scoring & AI confidence analysis.</p>
+        <span class="tool-link">Scan Markets →</span>
+      </a>
+      <a href="/trading-arena/" class="tool-card">
+        <div class="tool-card-icon trading">🤖</div>
+        <h3>Trading Arena</h3>
+        <p>20 AI bots competing with $10K each. Live leaderboard, P&L tracking, strategy transparency.</p>
+        <span class="tool-link">Watch Bots →</span>
+      </a>
+    </div>
+
+    <!-- ── Today's Predictions ──────────── -->
+    <div class="section-head">
+      <h2>Today's Predictions</h2>
+      <a href="/market-sentinel/">View All →</a>
+    </div>
+    <div class="widget-grid" id="predictionWidgets">
+      <div class="widget-card" data-tool="sentinel">
+        <div class="widget-header">
+          <h4>📊 Market Sentinel</h4>
+          <span class="badge badge-blue">Stocks</span>
+        </div>
+        <div id="sentinel-today" class="widget-today">
+          <span class="widget-today-label">Today</span>
+          <span class="widget-today-val" style="color:var(--pc-text-3)">—</span>
+        </div>
+        <div class="section-title" style="font-size:10px;margin-bottom:8px">Last 5 Days</div>
+        <div id="sentinel-hist" class="widget-hist"><div class="hist-empty">Tracking starts today</div></div>
+      </div>
+      <div class="widget-card" data-tool="crypto">
+        <div class="widget-header">
+          <h4>🪙 Crypto Pulse</h4>
+          <span class="badge badge-yellow">Crypto</span>
+        </div>
+        <div id="crypto-today" class="widget-today">
+          <span class="widget-today-label">Today</span>
+          <span class="widget-today-val" style="color:var(--pc-text-3)">—</span>
+        </div>
+        <div class="section-title" style="font-size:10px;margin-bottom:8px">Last 5 Days</div>
+        <div id="crypto-hist" class="widget-hist"><div class="hist-empty">Tracking starts today</div></div>
+      </div>
+      <div class="widget-card" data-tool="polywatch">
+        <div class="widget-header">
+          <h4>🎲 Poly Watch</h4>
+          <span class="badge badge-purple">Prediction Markets</span>
+        </div>
+        <div id="polywatch-today" class="widget-today">
+          <span class="widget-today-label">Today</span>
+          <span class="widget-today-val" style="color:var(--pc-text-3)">—</span>
+        </div>
+        <div class="section-title" style="font-size:10px;margin-bottom:8px">Last 5 Days</div>
+        <div id="polywatch-hist" class="widget-hist"><div class="hist-empty">Tracking starts today</div></div>
+      </div>
+    </div>
+
+    <!-- ── Top Bots ─────────────────────── -->
+    <div class="top-bots-section">
+      <div class="section-head">
+        <h2>🏆 Top 3 Trading Bots Today</h2>
+        <a href="/trading-arena/">Full Leaderboard →</a>
+      </div>
+      <div class="bot-rankings" id="topBots">
+        <div class="loading" style="padding:40px"><div class="spinner"></div>Loading top bots...</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── Footer ────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 PaperChase. Not financial advice.</span>
+      <div class="footer-links">
+        <a href="/market-sentinel/">Market Sentinel</a>
+        <a href="/crypto-pulse/">Crypto Pulse</a>
+<a href="/poly-watch/">Poly Watch</a>
+        <a href="/trading-arena/">Trading Arena</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+// ── Prediction History (localStorage) ────────────────────────────────
+const PRED_KEYS = {
+  sentinel: 'sentinel_predictions',
+  crypto: 'cryptopulse_predictions',
+  polywatch: 'polywatch_predictions'
+};
+
+function getHistory(key) {
+  try { return JSON.parse(localStorage.getItem(key)) || []; } catch { return []; }
+}
+
+function saveHistory(key, history) {
+  localStorage.setItem(key, JSON.stringify(history.slice(0, 10)));
+}
+
+function todayStr() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function initPredictions() {
+  const today = todayStr();
+  Object.entries(PRED_KEYS).forEach(([tool, key]) => {
+    let hist = getHistory(key);
+    // Ensure today's entry exists
+    if (!hist.find(h => h.date === today)) {
+      hist.unshift({ date: today, result: null, direction: null });
+    }
+    saveHistory(key, hist);
+    renderWidget(tool, hist);
+  });
+}
+
+function renderWidget(tool, hist) {
+  const today = hist[0];
+  const recent = hist.slice(1, 6); // last 5 completed days
+
+  // Today's prediction
+  const todayEl = document.getElementById(tool + '-today');
+  if (today.result === null) {
+    todayEl.innerHTML = '<span class="widget-today-label">Today</span><span class="widget-today-val" style="color:var(--pc-yellow)">⏳ Pending</span>';
+  } else {
+    const isCorrect = today.result === true;
+    todayEl.innerHTML = '<span class="widget-today-label">Today</span><span class="widget-today-val" style="color:' + (isCorrect ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (isCorrect ? '✅ Correct' : '❌ Wrong') + '</span>';
+  }
+
+  // History
+  const histEl = document.getElementById(tool + '-hist');
+  const completed = recent.filter(h => h.result !== null);
+  if (completed.length === 0) {
+    histEl.innerHTML = '<div class="hist-empty">No prediction history yet</div>';
+    return;
+  }
+
+  let html = '';
+  completed.forEach(h => {
+    const isCorrect = h.result === true;
+    const day = new Date(h.date);
+    const dayLabel = day.toLocaleDateString('en', { weekday: 'short' }).toUpperCase();
+    const pct = isCorrect ? 100 : 0;
+    html += '<div class="hist-row">' +
+      '<span class="hist-day">' + dayLabel + '</span>' +
+      '<div class="hist-bar-wrap"><div class="hist-bar-fill ' + (isCorrect ? 'win' : 'loss') + '" style="width:' + pct + '%"></div></div>' +
+      '<span class="hist-result ' + (isCorrect ? 'text-green' : 'text-red') + '">' + (isCorrect ? '✓' : '✗') + '</span>' +
+    '</div>';
+  });
+  histEl.innerHTML = html;
+}
+
+// ── Top Bots from Trading Arena ──────────────────────────────────────
+async function loadTopBots() {
+  const el = document.getElementById('topBots');
+  try {
+    const resp = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/trade/gh-pages/data/trading_data.json');
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    const bots = (data.bots || []).sort((a,b) => (b.pnl || 0) - (a.pnl || 0)).slice(0, 3);
+    if (bots.length === 0) throw new Error('No bots');
+
+    let html = '';
+    bots.forEach((bot, i) => {
+      const pnl = bot.pnl || 0;
+      const pnlStr = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
+      const pnlClass = pnl >= 0 ? 'text-green' : 'text-red';
+      html += '<div class="bot-card">' +
+        '<div class="bot-rank r' + (i+1) + '">#' + (i+1) + '</div>' +
+        '<div class="bot-info">' +
+          '<div class="bot-name">' + (bot.name || 'Bot ' + (i+1)) + '</div>' +
+          '<div class="bot-meta">$' + ((bot.portfolio_value||10000).toLocaleString('en', {maximumFractionDigits:0})) + ' · ' + (bot.trades||0) + ' trades</div>' +
+        '</div>' +
+        '<div class="bot-pnl ' + pnlClass + '">' + pnlStr + '</div>' +
+      '</div>';
+    });
+    el.innerHTML = html;
+  } catch (e) {
+    el.innerHTML = '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">⏳ Bot data not yet available — check back after market hours</div>';
+  }
+}
+
+// ── Init ──────────────────────────────────────────────────────────────
+initPredictions();
+loadTopBots();
+
+// Refresh every 5 minutes
+setInterval(loadTopBots, 300000);
+</script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Crypto Pulse — Crypto Market Intelligence</title>
+<meta name="description" content="Crypto market pulse — spot prices, news sentiment, Reddit buzz, CoinGecko trends, 4chan pulse, and AI-powered predictions."/>
+<meta name="keywords" content="crypto, bitcoin, ethereum, sentiment, news, reddit, coingecko, 4chan"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://paperchase.online/crypto-pulse/"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/design-system.css">
+<style>
+/* ── Gauge (same as MS) ────────────────── */
+.gauge-wrap{display:flex;flex-direction:column;align-items:center}
+.gauge-svg{width:180px;height:110px}
+.gauge-value{font-size:36px;font-weight:700;margin-top:4px;font-family:var(--pc-mono);color:var(--pc-heading)}
+.gauge-label{font-size:11px;color:var(--pc-text-2);margin-top:2px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.gauge-delta{font-size:11px;margin-top:4px;font-family:var(--pc-mono)}
+
+/* ── Mood score ────────────────────────── */
+.mood-score{font-size:32px;font-weight:700;text-align:center;margin:8px 0 4px;font-family:var(--pc-mono);color:var(--pc-heading)}
+.mood-label{text-align:center;font-size:11px;color:var(--pc-text-2);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+
+/* ── Sentiment bars ────────────────────── */
+.sentiment-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.sentiment-label{font-size:11px;color:var(--pc-text-2);min-width:70px}
+.bar-track{flex:1;height:4px;background:var(--pc-surface-3);border-radius:2px}
+.bar-fill{height:4px;border-radius:2px;transition:width .4s}
+
+/* ── Trending / 4chan ──────────────────── */
+.trending-row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--pc-border)}
+.trending-row:last-child{border-bottom:none}
+.trending-sym{font-weight:600;font-size:12px;font-family:var(--pc-mono);min-width:55px;color:var(--pc-heading)}
+.trending-name{font-size:11px;color:var(--pc-text-2);flex:1}
+
+@media(max-width:900px){
+  .gauge-svg{width:140px;height:90px}
+}
+</style>
+</head>
+<body>
+
+<nav class="topbar"><div class="topbar-inner">
+  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <div class="topbar-nav">
+    <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
+    <a class="nav-link active" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
+    <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
+    <a class="nav-link" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
+  </div>
+  <div class="topbar-spacer"></div>
+  <div class="topbar-auth">
+    <a class="btn-login" href="/login/">Log In</a>
+    <a class="btn-register" href="/register/">Register</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+<div class="container">
+
+  <div class="page-header">
+    <div class="page-title-wrap">
+      <div class="page-title">Crypto Pulse</div>
+      <div class="page-sub"><span class="live"></span> Crypto prices · Sentiment · News · Reddit · Trends · 4chan pulse</div>
+    </div>
+    <div id="countdown-wrap" class="countdown-wrap"></div>
+  </div>
+
+  <div class="loading" id="main-loading"><div class="spinner"></div>Fetching crypto data…</div>
+  <div id="main-content" style="display:none">
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">Fear & Greed Index</div>
+        <div class="gauge-wrap">
+          <svg class="gauge-svg" viewBox="0 0 200 120" id="gauge-svg">
+            <path d="M20,100 A80,80,0,0,1,60.6,43.4" stroke="#ef4444" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <path d="M60.6,43.4 A80,80,0,0,1,100,20" stroke="#f97316" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <path d="M100,20 A80,80,0,0,1,139.4,43.4" stroke="#eab308" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <path d="M139.4,43.4 A80,80,0,0,1,179.4,100" stroke="#15be53" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <line id="gauge-needle" x1="100" y1="100" x2="100" y2="30" stroke="#533afd" stroke-width="2.5" stroke-linecap="round" transform="rotate(0,100,100)"/>
+            <circle cx="100" cy="100" r="5" fill="#533afd"/>
+          </svg>
+          <div class="gauge-value" id="fg-value">—</div>
+          <div class="gauge-label" id="fg-label">Loading</div>
+          <div class="gauge-delta" id="fg-delta"></div>
+        </div>
+        <div class="source-note"><strong>Source:</strong> alternative.me</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Crypto News Sentiment</div>
+        <div style="margin-bottom:14px">
+          <div id="crypto-sentiment-score" class="mood-score">—</div>
+          <div id="crypto-sentiment-label" class="mood-label"></div>
+        </div>
+        <div id="crypto-sentiment-bars"></div>
+        <div class="source-note"><strong>Source:</strong> CoinDesk, Cointelegraph, Decrypt, CryptoSlate</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Top Mentioned Coins (Reddit)</div>
+        <div id="crypto-mentions"></div>
+        <div class="source-note"><strong>Source:</strong> Reddit</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Crypto Prices (Spot)</div>
+        <div id="crypto-prices"></div>
+        <div class="source-note"><strong>Source:</strong> CoinGecko</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🎲 Poly Watch — Crypto Topics</div>
+        <div id="crypto-polymarket"></div>
+        <div class="source-note"><strong>Source:</strong> Poly Watch</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Latest Crypto News</div>
+        <div id="crypto-news"></div>
+        <div class="source-note"><strong>Source:</strong> CoinDesk, Cointelegraph, Decrypt, CryptoSlate</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Reddit Activity</div>
+        <div id="crypto-reddit"></div>
+        <div class="source-note"><strong>Source:</strong> Reddit</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">🔥 CoinGecko Trending Searches</div>
+        <div id="crypto-cg-trending"></div>
+        <div class="source-note"><strong>Source:</strong> CoinGecko</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🐸 4chan /biz/ Community Pulse</div>
+        <div id="crypto-fourchain"></div>
+        <div class="source-note"><strong>Source:</strong> 4chan /biz/</div>
+      </div>
+    </div>
+
+    <div class="disclaimer"><strong>⚠️ Spot Assets Only.</strong> Not financial advice.</div>
+  </div>
+
+</div>
+</div>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/gh-pages/data/market_data.json';
+
+function fmtPrice(v) {
+  if (v == null) return '—';
+  if (v >= 1000) return '$' + v.toLocaleString('en', {maximumFractionDigits:0});
+  if (v >= 1) return '$' + v.toFixed(2);
+  if (v >= 0.01) return '$' + v.toFixed(4);
+  return '$' + v.toFixed(6);
+}
+
+function fmtChg(v) { return v == null ? '' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%'; }
+function chgClass(v) { return v == null ? '' : v >= 0 ? 'text-green' : 'text-red'; }
+
+// ── Countdown ────────────────────────────
+let _cdTimer = null;
+function startCountdown(updatedAt) {
+  clearInterval(_cdTimer);
+  const updated = new Date(updatedAt);
+  const ageMs = Date.now() - updated.getTime();
+  const el = document.getElementById('countdown-wrap');
+  if (ageMs > 20 * 60 * 1000) {
+    el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">data ' + Math.round(ageMs/60000) + 'm old</span>';
+    _cdTimer = setTimeout(() => loadData(), 90 * 1000);
+    return;
+  }
+  const next = new Date(updated.getTime() + 10 * 60 * 1000);
+  function tick() {
+    const diff = next - Date.now();
+    if (diff <= 0) { clearInterval(_cdTimer); loadData(); return; }
+    const m = Math.floor(diff / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">' + m + ':' + String(s).padStart(2,'0') + '</span>';
+  }
+  tick();
+  _cdTimer = setInterval(tick, 1000);
+}
+
+async function loadData() {
+  try {
+    const resp = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const d = await resp.json();
+    startCountdown(d.updated_at || d.timestamp || new Date().toISOString());
+    render(d);
+  } catch (e) {
+    document.getElementById('main-loading').innerHTML = '<div style="color:var(--pc-text-3);padding:60px">⚠️ Unable to load crypto data. <a href="javascript:location.reload()" style="color:var(--pc-purple)">Retry</a></div>';
+  }
+}
+
+function render(d) {
+  document.getElementById('main-loading').style.display = 'none';
+  document.getElementById('main-content').style.display = 'block';
+
+  // Fear & Greed
+  const fg = d.fear_greed || {};
+  const fgVal = fg.value;
+  if (fgVal != null) {
+    const angle = -90 + (fgVal / 100) * 180;
+    document.getElementById('gauge-needle').setAttribute('transform', 'rotate(' + angle + ',100,100)');
+    document.getElementById('fg-value').textContent = fgVal;
+    document.getElementById('fg-label').textContent = fg.label || (fgVal >= 75 ? 'Extreme Greed' : fgVal >= 55 ? 'Greed' : fgVal >= 45 ? 'Neutral' : fgVal >= 25 ? 'Fear' : 'Extreme Fear');
+    if (fg.change != null) {
+      const chg = fg.change;
+      document.getElementById('fg-delta').innerHTML = '<span class="' + chgClass(chg) + '">' + (chg >= 0 ? '▲' : '▼') + ' ' + Math.abs(chg) + '</span>';
+    }
+  }
+
+  // Crypto sentiment
+  const cs = d.crypto_sentiment || {};
+  if (cs.score != null) {
+    document.getElementById('crypto-sentiment-score').textContent = cs.score.toFixed(1);
+    document.getElementById('crypto-sentiment-label').textContent = cs.label || '';
+    document.getElementById('crypto-sentiment-score').style.color = cs.score > 0 ? 'var(--pc-green)' : cs.score < 0 ? 'var(--pc-red)' : 'var(--pc-text-3)';
+  }
+  if (cs.breakdown) {
+    let bars = '';
+    Object.entries(cs.breakdown).slice(0,4).forEach(([k,v]) => {
+      const pct = Math.min(Math.abs(v||0)*100, 100);
+      const color = v >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
+      bars += '<div class="sentiment-row"><span class="sentiment-label">' + k + '</span><div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + color + '"></div></div></div>';
+    });
+    document.getElementById('crypto-sentiment-bars').innerHTML = bars;
+  }
+
+  // Reddit mentions (crypto)
+  if (d.reddit_mentions && d.reddit_mentions.length) {
+    let html = '';
+    d.reddit_mentions.slice(0,8).filter(m => !['SPY','QQQ','TSLA'].includes(m.symbol)).forEach(m => {
+      html += '<div class="price-row"><span class="price-sym">' + m.symbol + '</span><span class="mention-count" style="font-size:11px;color:var(--pc-text-3);text-align:right">' + (m.count||0) + ' mentions</span></div>';
+    });
+    document.getElementById('crypto-mentions').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px;padding:8px 0">No crypto mentions</div>';
+  }
+
+  // Crypto prices
+  if (d.crypto_prices) {
+    let html = '';
+    Object.entries(d.crypto_prices).slice(0,12).forEach(([sym, c]) => {
+      if (!c || c.price == null) return;
+      html += '<div class="price-row"><span class="price-sym">' + sym + '</span><span class="price-val">' + fmtPrice(c.price) + '</span><span class="' + chgClass(c.change_pct) + '">' + fmtChg(c.change_pct) + '</span></div>';
+    });
+    document.getElementById('crypto-prices').innerHTML = html;
+  }
+
+  // Poly Watch crypto
+  if (d.poly_markets && d.poly_markets.length) {
+    let html = '';
+    d.poly_markets.filter(m => m.tag === 'crypto').slice(0,5).forEach(m => {
+      const pct = (m.yes_price||0)*100;
+      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;max-width:180px;white-space:normal;line-height:1.3;font-family:var(--pc-font)">' + m.question + '</span><span class="price-val" style="font-size:12px;text-align:right">' + pct.toFixed(1) + '%</span></div>';
+    });
+    document.getElementById('crypto-polymarket').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px;padding:8px 0">No crypto markets</div>';
+  }
+
+  // Crypto news
+  if (d.news && d.news.length) {
+    const cryptoNews = d.news.filter(n => /crypto|bitcoin|eth|defi|nft|blockchain/i.test(n.title));
+    let html = '';
+    (cryptoNews.length ? cryptoNews : d.news.slice(0,5)).forEach(n => {
+      html += '<div class="news-item"><span class="news-source">' + (n.source||'') + '</span><a class="news-title" href="' + (n.url||'#') + '" target="_blank">' + n.title + '</a></div>';
+    });
+    document.getElementById('crypto-news').innerHTML = html;
+  }
+
+  // Reddit activity
+  if (d.reddit_activity && d.reddit_activity.length) {
+    const cryptoSubs = d.reddit_activity.filter(r => /crypto|bitcoin|eth|altcoin|defi|satoshi/i.test(r.subreddit));
+    let html = '';
+    (cryptoSubs.length ? cryptoSubs : d.reddit_activity.slice(0,5)).forEach(r => {
+      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
+    });
+    document.getElementById('crypto-reddit').innerHTML = html;
+  }
+
+  // CoinGecko trending
+  if (d.cg_trending && d.cg_trending.length) {
+    let html = '';
+    d.cg_trending.slice(0,8).forEach(t => {
+      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||'') + '</span></div>';
+    });
+    document.getElementById('crypto-cg-trending').innerHTML = html;
+  } else if (d.trending_searches) {
+    let html = '';
+    d.trending_searches.slice(0,8).forEach(t => {
+      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||t.symbol||'') + '</span></div>';
+    });
+    document.getElementById('crypto-cg-trending').innerHTML = html;
+  }
+
+  // 4chan /biz/
+  if (d.fourchain && d.fourchain.length) {
+    let html = '';
+    d.fourchain.slice(0,8).forEach(t => {
+      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||'') + '</span></div>';
+    });
+    document.getElementById('crypto-fourchain').innerHTML = html;
+  }
+
+  // Save crypto prediction to localStorage for home page
+  const today = new Date().toISOString().slice(0,10);
+  let cryptoHist = JSON.parse(localStorage.getItem('cryptopulse_predictions') || '[]');
+  if (!cryptoHist.find(h => h.date === today)) {
+    cryptoHist.unshift({ date: today, result: null, direction: null });
+    localStorage.setItem('cryptopulse_predictions', JSON.stringify(cryptoHist.slice(0,10)));
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>
