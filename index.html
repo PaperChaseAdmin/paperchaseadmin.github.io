@@ -539,7 +539,7 @@ function renderWidget(tool, hist) {
 async function loadTopBots() {
   const el = document.getElementById('topBots');
   try {
-    const resp = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/trade/gh-pages/data/trading_data.json');
+    const resp = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/trading_data.json');
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const data = await resp.json();
     const bots = (data.bots || []).sort((a,b) => (b.pnl || 0) - (a.pnl || 0)).slice(0, 3);
