@@ -230,60 +230,52 @@ function renderStocks(d) {
   if (d.indices) {
     let html = '';
     Object.entries(d.indices).forEach(([name, idx]) => {
-      if (!idx || idx.price == null) return;
+      if (!idx || idx.value == null) return;
+      const p = idx.value;
+      const chg = idx.change_24h;
       html += '<div class="index-item"><div class="index-name">' + name + '</div>' +
-        '<div class="index-val">' + idx.price.toLocaleString('en',{maximumFractionDigits:2}) + '</div>' +
-        '<div class="index-chg ' + chgClass(idx.change_pct) + '">' + fmtChg(idx.change_pct) + '</div></div>';
+        '<div class="index-val">' + p.toLocaleString('en',{maximumFractionDigits:2}) + '</div>' +
+        '<div class="index-chg ' + chgClass(chg) + '">' + fmtChg(chg) + '</div></div>';
     });
     document.getElementById('stock-indices').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px">No index data</div>';
   }
 
   // Mood
-  const mood = d.mood_score;
+  const rawMood = d.market_mood || {};
+  const mood = rawMood.score != null ? Math.round(rawMood.score * 100) : null;
   if (mood != null) {
     document.getElementById('market-mood-score').textContent = mood + '/100';
     document.getElementById('market-mood-label').textContent = mood >= 75 ? 'Extreme Greed' : mood >= 55 ? 'Greed' : mood >= 45 ? 'Neutral' : mood >= 25 ? 'Fear' : 'Extreme Fear';
     document.getElementById('market-mood-score').style.color = mood >= 55 ? 'var(--pc-green)' : mood >= 45 ? 'var(--pc-yellow)' : 'var(--pc-red)';
   }
 
-  // Sentiment bars
-  if (d.sentiment_scores) {
-    let bars = '';
-    const entries = Object.entries(d.sentiment_scores).slice(0,6);
-    entries.forEach(([label, val]) => {
-      const pct = Math.min(Math.abs((val || 0)) * 100, 100);
-      const color = val >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
-      bars += '<div class="sentiment-row"><span class="sentiment-label">' + label + '</span>' +
-        '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + color + '"></div></div></div>';
-    });
-    document.getElementById('stock-sentiment-bars').innerHTML = bars;
-  }
-
-  // Mentions
-  if (d.reddit_mentions && d.reddit_mentions.length) {
+  // Reddit mentions (top_mentioned)
+  const mentions = d.top_mentioned || [];
+  if (mentions.length) {
     let html = '';
-    d.reddit_mentions.slice(0,8).forEach(m => {
+    mentions.slice(0,8).forEach(m => {
       html += '<div class="price-row"><span class="price-sym">' + m.symbol + '</span><span class="mention-count" style="font-size:11px;color:var(--pc-text-3);text-align:right">' + (m.count||0) + ' mentions</span></div>';
     });
     document.getElementById('stock-mentions').innerHTML = html;
   }
 
-  // Stock prices
-  if (d.stock_prices) {
+  // Stock prices (array format: [{symbol, price_usd, change_24h}, ...])
+  if (d.prices && d.prices.length) {
     let html = '';
-    Object.entries(d.stock_prices).slice(0,12).forEach(([sym, s]) => {
-      if (!s || s.price == null) return;
-      html += '<div class="price-row"><span class="price-sym">' + sym + '</span><span class="price-val">' + fmtPrice(s.price) + '</span><span class="' + chgClass(s.change_pct) + '">' + fmtChg(s.change_pct) + '</span></div>';
+    d.prices.slice(0,12).forEach(s => {
+      if (!s || s.price_usd == null) return;
+      html += '<div class="price-row"><span class="price-sym">' + s.symbol + '</span><span class="price-val">' + fmtPrice(s.price_usd) + '</span><span class="' + chgClass(s.change_24h) + '">' + fmtChg(s.change_24h) + '</span></div>';
     });
     document.getElementById('stock-prices').innerHTML = html;
   }
 
   // Poly Watch finance
-  if (d.poly_markets && d.poly_markets.length) {
+  const poly = d.polymarket || [];
+  if (poly.length) {
     let html = '';
-    d.poly_markets.slice(0,5).forEach(m => {
+    poly.slice(0,5).forEach(m => {
       const pct = (m.yes_price||0)*100;
-      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;max-width:180px;white-space:normal;line-height:1.3;font-family:var(--pc-font)">' + m.question + '</span><span class="price-val" style="font-size:12px;text-align:right">' + pct.toFixed(1) + '%</span></div>';
+      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;max-width:180px;white-space:normal;line-height:1.3;font-family:var(--pc-font)">' + (m.title||m.question) + '</span><span class="price-val" style="font-size:12px;text-align:right">' + pct.toFixed(1) + '%</span></div>';
     });
     document.getElementById('stock-polymarket').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px;padding:8px 0">No data</div>';
   }
@@ -298,9 +290,10 @@ function renderStocks(d) {
   }
 
   // Reddit
-  if (d.reddit_activity && d.reddit_activity.length) {
+  const reddit = d.reddit || [];
+  if (reddit.length) {
     let html = '';
-    d.reddit_activity.slice(0,5).forEach(r => {
+    reddit.slice(0,5).forEach(r => {
       html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
     });
     document.getElementById('stock-reddit').innerHTML = html;
@@ -380,8 +373,8 @@ async function loadData() {
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     DATA = await resp.json();
     startCountdown(DATA.updated_at || DATA.timestamp || new Date().toISOString());
-    renderStocks(DATA);
-    renderPredictions(DATA);
+    renderStocks(DATA.stocks || DATA);
+    renderPredictions(DATA.stocks || DATA);
   } catch (e) {
     document.querySelectorAll('.loading').forEach(el => {
       el.innerHTML = '<div style="color:var(--pc-text-3)">⚠️ Unable to load data. Will retry…</div>';

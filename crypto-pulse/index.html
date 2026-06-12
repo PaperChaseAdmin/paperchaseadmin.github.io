@@ -193,9 +193,25 @@ async function loadData() {
   try {
     const resp = await fetch(DATA_URL + '?t=' + Date.now());
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const d = await resp.json();
-    startCountdown(d.updated_at || d.timestamp || new Date().toISOString());
-    render(d);
+    const raw = await resp.json();
+    const c = raw.crypto || {};
+    const s = raw.stocks || {};
+    const data = {
+      fear_greed: c.fear_greed,
+      crypto_sentiment: {score: 0, label: ''},
+      reddit_mentions: s.top_mentioned || [],
+      crypto_prices: {},
+      poly_markets: (s.polymarket || []).map(m => ({...m, question: m.title || m.question})),
+      news: s.news || [],
+      reddit_activity: s.reddit || [],
+      cg_trending: c.cg_trending || [],
+      fourchain: c.fourchain || []
+    };
+    if (Array.isArray(c.prices)) {
+      c.prices.forEach(p => { data.crypto_prices[p.symbol] = {price: p.price_usd, change_pct: p.change_24h}; });
+    }
+    startCountdown(raw.updated_at || raw.timestamp || new Date().toISOString());
+    render(data);
   } catch (e) {
     document.getElementById('main-loading').innerHTML = '<div style="color:var(--pc-text-3);padding:60px">⚠️ Unable to load crypto data. <a href="javascript:location.reload()" style="color:var(--pc-purple)">Retry</a></div>';
   }
