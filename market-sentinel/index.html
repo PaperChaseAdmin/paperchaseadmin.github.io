@@ -192,10 +192,10 @@ function switchTab(name, el) {
 
 // ── Countdown ────────────────────────────
 let _cdTimer = null;
-function startCountdown(updatedAt) {
+function onDataLoaded(updatedAt) {
   clearInterval(_cdTimer);
   const el = document.getElementById('countdown-wrap');
-  if (!el || !window.startCountdown) return;
+  if (!el || typeof window.startCountdown !== 'function') return;
   _cdTimer = window.startCountdown(el, 'Data Refresh', 'market-sentinel', loadData);
 }
 
@@ -356,7 +356,7 @@ async function loadData() {
     const resp = await fetch(DATA_URL + '?t=' + Date.now());
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     DATA = await resp.json();
-    startCountdown(DATA.updated_at || DATA.timestamp || new Date().toISOString());
+    onDataLoaded(DATA.updated_at || DATA.timestamp || new Date().toISOString());
     renderStocks(DATA.stocks || DATA);
     loadPredictions();  // Fetch real prediction data
   } catch (e) {

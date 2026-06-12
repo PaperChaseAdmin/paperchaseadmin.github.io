@@ -252,10 +252,10 @@ function renderFavs() {
 
 // ── Countdown ────────────────────────────
 let _cdTimer = null;
-function startCountdown() {
+function onDataLoaded() {
   clearInterval(_cdTimer);
   const el = document.getElementById('countdown-wrap');
-  if (!el || !window.startCountdown) return;
+  if (!el || typeof window.startCountdown !== "function") return;
   _cdTimer = window.startCountdown(el, 'Next Update', 'trading-arena', loadData);
 }
 
@@ -312,7 +312,7 @@ async function loadData() {
       }
     });
 
-    startCountdown();
+    onDataLoaded();
   } catch (e) {
     document.getElementById('bot-loading').innerHTML = '<div style="color:var(--pc-text-3);padding:40px;text-align:center">⚠️ Bot data not yet available — check back during market hours</div>';
   }
