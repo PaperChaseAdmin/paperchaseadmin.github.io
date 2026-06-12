@@ -12,6 +12,7 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/design-system.css">
+<script src="/assets/countdown.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 /* ── Bot Rankings ───────────────────────── */
@@ -64,6 +65,7 @@
     <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
     <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
     <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
+    <a class="nav-link" href="/stock-pick/">💰 Stock Pick</a>
     <a class="nav-link active" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
   </div>
   <div class="topbar-spacer"></div>
@@ -253,41 +255,8 @@ let _cdTimer = null;
 function startCountdown() {
   clearInterval(_cdTimer);
   const el = document.getElementById('countdown-wrap');
-  if (!el) return;
-  function nextMarketOpen() {
-    const now = new Date();
-    const day = now.getUTCDay();
-    const hour = now.getUTCHours();
-    const min = now.getUTCMinutes();
-    const next = new Date(now);
-    if (day === 0 || day === 6 || (day === 5 && hour >= 21)) {
-      const d = day === 0 ? 1 : day === 6 ? 2 : (8 - day);
-      next.setDate(next.getDate() + d);
-      next.setUTCHours(13, 30, 0, 0);
-    } else if (hour < 13 || (hour === 13 && min < 30)) {
-      next.setUTCHours(13, 30, 0, 0);
-    } else if (hour >= 21) {
-      next.setDate(next.getDate() + 1);
-      next.setUTCHours(13, 30, 0, 0);
-    } else {
-      const nextHalf = Math.ceil((hour * 60 + min) / 30) * 30;
-      next.setUTCHours(Math.floor(nextHalf/60), nextHalf%60, 0, 0);
-    }
-    return next;
-  }
-  const target = nextMarketOpen();
-  function tick() {
-    const diff = target - Date.now();
-    if (diff <= 0) { el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">Checking now…</span>'; return; }
-    const h = Math.floor(diff / 3600000);
-    const m = Math.floor((diff % 3600000) / 60000);
-    const s = Math.floor((diff % 60000) / 1000);
-    if (h >= 24) el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">' + Math.floor(h/24) + 'd ' + (h%24) + 'h ' + m + 'm</span>';
-    else if (h >= 1) el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">' + h + 'h ' + m + 'm ' + s + 's</span>';
-    else el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">' + m + 'm ' + s + 's</span>';
-  }
-  tick();
-  _cdTimer = setInterval(tick, 1000);
+  if (!el || !window.startCountdown) return;
+  _cdTimer = window.startCountdown(el, 'Next Update', 'trading-arena', loadData);
 }
 
 async function loadData() {

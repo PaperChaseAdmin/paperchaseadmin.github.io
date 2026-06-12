@@ -69,7 +69,7 @@
 /* ── Tool Cards ────────────────────────── */
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
   margin: -24px 0 48px;
   position: relative;
@@ -343,6 +343,7 @@
     <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
     <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
     <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
+    <a class="nav-link" href="/stock-pick/">💰 Stock Pick</a>
     <a class="nav-link" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
   </div>
   <div class="topbar-spacer"></div>
@@ -385,6 +386,12 @@
         <h3>Poly Watch</h3>
         <p>AI-scanned prediction markets. Daily top picks with heuristic scoring & AI confidence analysis.</p>
         <span class="tool-link">Scan Markets →</span>
+      </a>
+      <a href="/stock-pick/" class="tool-card">
+        <div class="tool-card-icon sentinel" style="background:var(--pc-purple-bg);color:var(--pc-purple)">💰</div>
+        <h3>Stock Pick</h3>
+        <p>AI-powered stock screener. Top 30 mega-cap value picks ranked by composite score across technical, value, growth & quality factors.</p>
+        <span class="tool-link">View Picks →</span>
       </a>
       <a href="/trading-arena/" class="tool-card">
         <div class="tool-card-icon trading">🤖</div>
@@ -458,7 +465,8 @@
       <div class="footer-links">
         <a href="/market-sentinel/">Market Sentinel</a>
         <a href="/crypto-pulse/">Crypto Pulse</a>
-<a href="/poly-watch/">Poly Watch</a>
+        <a href="/poly-watch/">Poly Watch</a>
+        <a href="/stock-pick/">Stock Pick</a>
         <a href="/trading-arena/">Trading Arena</a>
       </div>
     </div>
