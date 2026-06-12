@@ -128,7 +128,7 @@
 </div>
 
 <script>
-const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/trading_data.json';
+const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/leaderboard.json';
 const BOT_URL_PREFIX = '/trading-arena/';
 let bots = [];
 let mainChart = null;
@@ -296,6 +296,7 @@ async function loadData() {
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const data = await resp.json();
     bots = data.bots || [];
+    const history = data.portfolio_history || [10000];
 
     renderKPI(bots);
     renderRisk(bots);
@@ -304,7 +305,6 @@ async function loadData() {
 
     // Chart
     const ctx = document.getElementById('mainChart').getContext('2d');
-    const history = data.portfolio_history || [10000];
     window._chartHistory = history;
 
     if (mainChart) mainChart.destroy();
