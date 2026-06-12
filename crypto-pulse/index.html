@@ -12,6 +12,7 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/design-system.css">
+<script src="/assets/countdown.js"></script>
 <style>
 /* ── Gauge (same as MS) ────────────────── */
 .gauge-wrap{display:flex;flex-direction:column;align-items:center}
@@ -49,6 +50,7 @@
     <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
     <a class="nav-link active" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
     <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
+    <a class="nav-link" href="/stock-pick/">💰 Stock Pick</a>
     <a class="nav-link" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
   </div>
   <div class="topbar-spacer"></div>
@@ -169,24 +171,9 @@ function chgClass(v) { return v == null ? '' : v >= 0 ? 'text-green' : 'text-red
 let _cdTimer = null;
 function startCountdown(updatedAt) {
   clearInterval(_cdTimer);
-  const updated = new Date(updatedAt);
-  const ageMs = Date.now() - updated.getTime();
   const el = document.getElementById('countdown-wrap');
-  if (ageMs > 20 * 60 * 1000) {
-    el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">data ' + Math.round(ageMs/60000) + 'm old</span>';
-    _cdTimer = setTimeout(() => loadData(), 90 * 1000);
-    return;
-  }
-  const next = new Date(updated.getTime() + 10 * 60 * 1000);
-  function tick() {
-    const diff = next - Date.now();
-    if (diff <= 0) { clearInterval(_cdTimer); loadData(); return; }
-    const m = Math.floor(diff / 60000);
-    const s = Math.floor((diff % 60000) / 1000);
-    el.innerHTML = '<span class="countdown-lbl">Next Review</span><span class="countdown-num">' + m + ':' + String(s).padStart(2,'0') + '</span>';
-  }
-  tick();
-  _cdTimer = setInterval(tick, 1000);
+  if (!el || !window.startCountdown) return;
+  _cdTimer = window.startCountdown(el, 'Next Scan', 'crypto-pulse', loadData);
 }
 
 async function loadData() {

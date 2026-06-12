@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Stock Pick — AI-Powered Stock Screener</title>
+<meta name="description" content="Daily AI-powered stock screener — top 30 picks ranked by composite score combining technical, value, growth, and quality factors."/>
+<meta name="keywords" content="stock screener, stock picks, AI stock analysis, value investing, technical analysis"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://paperchase.online/stock-pick/"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/design-system.css">
+<script src="/assets/countdown.js"></script>
+<style>
+/* ── Criteria Box ──────────────────────── */
+.criteria-box {
+  background: var(--pc-surface);
+  border: 1px solid var(--pc-border);
+  border-radius: var(--pc-radius-lg);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.criteria-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.criteria-group h4 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--pc-text-3);
+  margin-bottom: 8px;
+}
+.criteria-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.criteria-list li {
+  font-size: 13px;
+  color: var(--pc-text);
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.criteria-list li::before {
+  content: '✓';
+  color: var(--pc-green);
+  font-weight: 700;
+  font-size: 11px;
+}
+.weight-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.weight-label {
+  font-size: 12px;
+  color: var(--pc-text);
+  min-width: 90px;
+}
+.weight-track {
+  flex: 1;
+  height: 6px;
+  background: var(--pc-surface-3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.weight-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--pc-purple);
+}
+.weight-pct {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--pc-mono);
+  color: var(--pc-text-2);
+  min-width: 30px;
+  text-align: right;
+}
+
+/* ── Score badge in table ──────────────── */
+.score-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--pc-mono);
+  padding: 2px 8px;
+  border-radius: 4px;
+  min-width: 44px;
+}
+.score-high { background: var(--pc-green-bg); color: var(--pc-green); }
+.score-mid { background: var(--pc-yellow-bg); color: var(--pc-yellow); }
+.score-low { background: var(--pc-red-bg); color: var(--pc-red); }
+
+/* ── MACD badge ────────────────────────── */
+.macd-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+.macd-golden { background: var(--pc-green-bg); color: var(--pc-green); }
+.macd-none { background: var(--pc-surface-3); color: var(--pc-text-3); }
+.macd-death { background: var(--pc-red-bg); color: var(--pc-red); }
+
+/* ── Summary cell ──────────────────────── */
+.summary-cell {
+  font-size: 11px;
+  color: var(--pc-text-2);
+  line-height: 1.4;
+  max-width: 260px;
+}
+
+/* ── Stats bar tweaks ──────────────────── */
+.stats-bar .stat-val.small { font-size: 16px; }
+
+/* ── Responsive ────────────────────────── */
+@media(max-width: 900px) {
+  .criteria-grid { grid-template-columns: 1fr; }
+  .table-wrap { overflow-x: auto; }
+}
+</style>
+</head>
+<body>
+
+<nav class="topbar"><div class="topbar-inner">
+  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <div class="topbar-nav">
+    <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
+    <a class="nav-link" href="/crypto-pulse/">Crypto Pulse</a>
+    <a class="nav-link" href="/poly-watch/">Poly Watch</a>
+    <a class="nav-link active" href="/stock-pick/">Stock Pick</a>
+    <a class="nav-link" href="/trading-arena/">Trading Arena</a>
+  </div>
+  <div class="topbar-spacer"></div>
+  <div class="topbar-auth">
+    <a class="btn-login" href="/login/">Log In</a>
+    <a class="btn-register" href="/register/">Register</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+<div class="container">
+
+  <div class="page-header">
+    <div class="page-title-wrap">
+      <div class="page-title">💰 Stock Pick</div>
+      <div class="page-sub"><span class="live"></span> Top 30 picks · AI-ranked · Mega-cap value + momentum scan</div>
+    </div>
+    <div id="countdown-wrap" class="countdown-wrap"></div>
+  </div>
+
+  <!-- ── Screening Criteria Box ─────────────── -->
+  <div class="criteria-box">
+    <div class="card-title" style="margin-bottom:14px">📋 Screening Criteria</div>
+    <div class="criteria-grid">
+      <div>
+        <div class="criteria-group">
+          <h4>Hard Filters</h4>
+          <ul class="criteria-list">
+            <li>Market Cap &gt; $100B — large-cap only</li>
+            <li>P/E Ratio &lt; 50 — no excessive valuations</li>
+            <li>No MACD Death Cross — avoids bearish momentum</li>
+            <li>Universe: ~200 major US stocks (S&P 500 heavy hitters)</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="criteria-group">
+          <h4>Score Weights</h4>
+          <div class="weight-bar">
+            <span class="weight-label">📈 Technical</span>
+            <div class="weight-track"><div class="weight-fill" style="width:40%"></div></div>
+            <span class="weight-pct">40%</span>
+          </div>
+          <div class="weight-bar">
+            <span class="weight-label">💎 Value</span>
+            <div class="weight-track"><div class="weight-fill" style="width:30%"></div></div>
+            <span class="weight-pct">30%</span>
+          </div>
+          <div class="weight-bar">
+            <span class="weight-label">🚀 Growth</span>
+            <div class="weight-track"><div class="weight-fill" style="width:20%"></div></div>
+            <span class="weight-pct">20%</span>
+          </div>
+          <div class="weight-bar">
+            <span class="weight-label">🛡️ Quality</span>
+            <div class="weight-track"><div class="weight-fill" style="width:10%"></div></div>
+            <span class="weight-pct">10%</span>
+          </div>
+          <div style="margin-top:10px;font-size:11px;color:var(--pc-text-3)">
+            RSI bell curve · MACD bonus · FCF yield · Revenue growth · Low debt
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Stats Bar ──────────────────────────── -->
+  <div class="stats-bar" id="statsBar">
+    <div class="stat-item"><div class="stat-lbl">Total Scan</div><div class="stat-val small" id="stat-total">—</div></div>
+    <div class="stat-item"><div class="stat-lbl">Passing</div><div class="stat-val small" id="stat-passing">—</div></div>
+    <div class="stat-item"><div class="stat-lbl">Top Picks</div><div class="stat-val small" id="stat-picks">30</div></div>
+    <div class="stat-item"><div class="stat-lbl">Updated</div><div class="stat-val small" id="stat-updated">—</div></div>
+  </div>
+
+  <!-- ── Picks Table ────────────────────────── -->
+  <div class="loading" id="table-loading"><div class="spinner"></div>Loading stock picks…</div>
+  <div id="table-wrap" style="display:none">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:center;width:40px">#</th>
+            <th style="width:60px">Symbol</th>
+            <th>Company</th>
+            <th>Sector</th>
+            <th style="text-align:right">Price</th>
+            <th style="text-align:right">Mkt Cap</th>
+            <th style="text-align:right">P/E</th>
+            <th style="text-align:center">MACD</th>
+            <th style="text-align:center">RSI</th>
+            <th style="text-align:center">Score</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody id="picks-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="disclaimer" style="margin-top:16px"><strong>⚠️ Not Financial Advice.</strong> Algorithmic screening based on quantitative factors. Past performance does not guarantee future results.</div>
+
+</div>
+</div>
+
+<script>
+const DATA_URL = 'data/picks.json';
+let _cdTimer = 0;
+
+function fmtPrice(v) {
+  if (v == null) return '—';
+  return v >= 1 ? '$' + v.toLocaleString('en', {minimumFractionDigits:2, maximumFractionDigits:2}) : '$' + v.toFixed(4);
+}
+function fmtCap(v) {
+  if (v == null) return '—';
+  return '$' + v.toFixed(1) + 'B';
+}
+function fmtPE(v) {
+  if (v == null) return '—';
+  return v.toFixed(1);
+}
+function fmtRSI(v) {
+  if (v == null) return '—';
+  return v.toFixed(1);
+}
+
+function scoreClass(s) {
+  if (s == null) return 'score-low';
+  if (s >= 50) return 'score-high';
+  if (s >= 40) return 'score-mid';
+  return 'score-low';
+}
+
+function macdClass(s) {
+  if (s === 'golden') return 'macd-golden';
+  if (s === 'death') return 'macd-death';
+  return 'macd-none';
+}
+function macdLabel(s) {
+  if (s === 'golden') return 'Golden';
+  if (s === 'death') return 'Death';
+  return '—';
+}
+
+function renderPicks(data) {
+  const picks = data.picks || [];
+  document.getElementById('table-loading').style.display = 'none';
+  document.getElementById('table-wrap').style.display = 'block';
+
+  document.getElementById('stat-total').textContent = data.total_screened || '—';
+  document.getElementById('stat-passing').textContent = data.passing || '—';
+  const updated = data.updated_at ? new Date(data.updated_at).toLocaleDateString('en-US', {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'}) : '—';
+  document.getElementById('stat-updated').textContent = updated;
+
+  let html = '';
+  picks.forEach((p, i) => {
+    const rank = i + 1;
+    const sClass = scoreClass(p.composite_score);
+    const mClass = macdClass(p.macd_signal);
+    const mLbl = macdLabel(p.macd_signal);
+    html += '<tr>' +
+      '<td style="text-align:center;font-weight:600;color:var(--pc-text-3);font-family:var(--pc-mono)">' + rank + '</td>' +
+      '<td><strong>' + p.symbol + '</strong></td>' +
+      '<td style="font-size:12px">' + (p.company_name || '—') + '</td>' +
+      '<td style="font-size:11px;color:var(--pc-text-2)">' + (p.sector || '—') + '</td>' +
+      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">' + fmtPrice(p.price) + '</td>' +
+      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">' + fmtCap(p.market_cap) + '</td>' +
+      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">' + fmtPE(p.pe_ratio) + '</td>' +
+      '<td style="text-align:center"><span class="macd-badge ' + mClass + '">' + mLbl + '</span></td>' +
+      '<td style="text-align:center;font-family:var(--pc-mono);font-size:12px">' + fmtRSI(p.rsi) + '</td>' +
+      '<td style="text-align:center"><span class="score-badge ' + sClass + '">' + (p.composite_score != null ? p.composite_score.toFixed(1) : '—') + '</span></td>' +
+      '<td><div class="summary-cell">' + (p.summary || '') + '</div></td>' +
+      '</tr>';
+  });
+  document.getElementById('picks-body').innerHTML = html;
+}
+
+async function loadData() {
+  try {
+    const resp = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    renderPicks(data);
+    const el = document.getElementById('countdown-wrap');
+    if (window.startCountdown) {
+      clearInterval(_cdTimer);
+      _cdTimer = startCountdown(el, 'Next Pick', 'stock-pick', loadData);
+    }
+  } catch (e) {
+    document.getElementById('table-loading').innerHTML = '<div style="color:var(--pc-text-3);padding:60px;text-align:center">⚠️ Unable to load picks. <a href="javascript:location.reload()" style="color:var(--pc-purple)">Retry</a></div>';
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>
