@@ -169,10 +169,10 @@ function chgClass(v) { return v == null ? '' : v >= 0 ? 'text-green' : 'text-red
 
 // ── Countdown ────────────────────────────
 let _cdTimer = null;
-function startCountdown(updatedAt) {
+function onDataLoaded(updatedAt) {
   clearInterval(_cdTimer);
   const el = document.getElementById('countdown-wrap');
-  if (!el || !window.startCountdown) return;
+  if (!el || typeof window.startCountdown !== 'function') return;
   _cdTimer = window.startCountdown(el, 'Next Scan', 'crypto-pulse', loadData);
 }
 
@@ -197,7 +197,7 @@ async function loadData() {
     if (Array.isArray(c.prices)) {
       c.prices.forEach(p => { data.crypto_prices[p.symbol] = {price: p.price_usd, change_pct: p.change_24h}; });
     }
-    startCountdown(raw.updated_at || raw.timestamp || new Date().toISOString());
+    onDataLoaded(raw.updated_at || raw.timestamp || new Date().toISOString());
     render(data);
   } catch (e) {
     document.getElementById('main-loading').innerHTML = '<div style="color:var(--pc-text-3);padding:60px">⚠️ Unable to load crypto data. <a href="javascript:location.reload()" style="color:var(--pc-purple)">Retry</a></div>';
