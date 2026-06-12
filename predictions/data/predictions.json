@@ -1,0 +1,104 @@
+{
+  "updated_at": "2026-06-12T15:01:45Z",
+  "last_prediction_date": "2026-06-12",
+  "last_settle_date": "2026-06-12",
+  "tools": {
+    "market_sentinel": {
+      "label": "Market Sentinel",
+      "icon": "📊",
+      "color": "#3b82f6",
+      "link": "/market-sentinel/",
+      "predictions": [
+        {
+          "date": "2026-06-12",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 60,
+          "signal": "Bearish market sentiment",
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 0.64
+        },
+        {
+          "date": "2026-06-12",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 60,
+          "signal": "Bearish market sentiment",
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 0.4
+        },
+        {
+          "date": "2026-06-12",
+          "market": "DOW",
+          "prediction": "down",
+          "confidence": 60,
+          "signal": "Bearish market sentiment",
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 1.03
+        }
+      ],
+      "total": 3,
+      "correct": 0,
+      "accuracy_pct": 0.0
+    },
+    "crypto_pulse": {
+      "label": "Crypto Pulse",
+      "icon": "🪙",
+      "color": "#eab308",
+      "link": "/crypto-pulse/",
+      "predictions": [
+        {
+          "date": "2026-06-12",
+          "market": "Crypto Market",
+          "prediction": "up",
+          "confidence": 75,
+          "signal": "Extreme Fear (12) — contrarian buy signal",
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 2.09
+        }
+      ],
+      "total": 1,
+      "correct": 1,
+      "accuracy_pct": 100.0
+    },
+    "poly_watch": {
+      "label": "Poly Watch",
+      "icon": "🎲",
+      "color": "#a855f7",
+      "link": "/poly-watch/",
+      "predictions": [
+        {
+          "date": "2026-06-12",
+          "market": "Will Russia capture Sumy by March 31, 2027?",
+          "prediction": "down",
+          "confidence": 84,
+          "signal": "Yes: 16% — heuristic score: 20",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-12",
+          "market": "Will Russia capture Sumy by March 31, 2027?",
+          "prediction": "down",
+          "confidence": 84,
+          "signal": "Yes: 16% — heuristic score: 20",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        }
+      ],
+      "total": 0,
+      "correct": 0,
+      "accuracy_pct": null
+    }
+  }
+}

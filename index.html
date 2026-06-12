@@ -467,72 +467,86 @@
 </div>
 
 <script>
-// ── Prediction History (localStorage) ────────────────────────────────
-const PRED_KEYS = {
-  sentinel: 'sentinel_predictions',
-  crypto: 'cryptopulse_predictions',
-  polywatch: 'polywatch_predictions'
-};
+// ── Prediction Data (server-side) ────────────────────────────────────
+const PRED_DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/predictions/data/predictions.json';
 
-function getHistory(key) {
-  try { return JSON.parse(localStorage.getItem(key)) || []; } catch { return []; }
+const TOOL_WIDGETS = [
+  {key: 'market_sentinel', id: 'sentinel', label: '📊 Market Sentinel'},
+  {key: 'crypto_pulse', id: 'crypto', label: '🪙 Crypto Pulse'},
+  {key: 'poly_watch', id: 'polywatch', label: '🎲 Poly Watch'},
+];
+
+async function initPredictions() {
+  try {
+    const resp = await fetch(PRED_DATA_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    renderAllWidgets(data);
+  } catch (e) {
+    document.querySelectorAll('.widget-card .widget-history').forEach(el => {
+      el.innerHTML = '<div class="hist-empty">⚠️ Unable to load predictions</div>';
+    });
+  }
 }
 
-function saveHistory(key, history) {
-  localStorage.setItem(key, JSON.stringify(history.slice(0, 10)));
-}
+function renderAllWidgets(data) {
+  const tools = data.tools || {};
+  TOOL_WIDGETS.forEach(({key, id}) => {
+    const tool = tools[key] || {};
+    const preds = tool.predictions || [];
+    const today = new Date().toISOString().slice(0, 10);
 
-function todayStr() {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function initPredictions() {
-  const today = todayStr();
-  Object.entries(PRED_KEYS).forEach(([tool, key]) => {
-    let hist = getHistory(key);
-    // Ensure today's entry exists
-    if (!hist.find(h => h.date === today)) {
-      hist.unshift({ date: today, result: null, direction: null });
+    // Today's prediction
+    const todayPred = preds.filter(p => p.date === today).slice(-3);
+    const todayEl = document.getElementById(id + '-today');
+    if (todayPred.length === 0) {
+      todayEl.innerHTML = '<span class="widget-today-label">Today</span><span class="widget-today-val" style="color:var(--pc-text-3)">⏳ Pending</span>';
+    } else {
+      const settled = todayPred.filter(p => p.settled);
+      const pending = todayPred.filter(p => !p.settled);
+      let html = '';
+      settled.forEach(p => {
+        const ok = p.correct;
+        html += '<div style="font-size:11px;margin:2px 0"><span class="widget-today-label" style="font-size:9px">' + p.market + '</span><span class="widget-today-val" style="font-size:12px;color:' + (ok ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (ok ? '✅ ' : '❌ ') + p.prediction.toUpperCase() + '</span></div>';
+      });
+      pending.forEach(p => {
+        html += '<div style="font-size:11px;margin:2px 0"><span class="widget-today-label" style="font-size:9px">' + p.market + '</span><span class="widget-today-val" style="font-size:12px;color:var(--pc-yellow)">⏳ ' + p.prediction.toUpperCase() + ' (' + p.confidence + '%)</span></div>';
+      });
+      todayEl.innerHTML = html;
     }
-    saveHistory(key, hist);
-    renderWidget(tool, hist);
+
+    // History (last 10 days, settled only)
+    const histEl = document.getElementById(id + '-hist');
+    const settled = preds.filter(p => p.settled).slice(-10);
+    if (settled.length === 0) {
+      histEl.innerHTML = '<div class="hist-empty">No prediction history yet</div>';
+      return;
+    }
+
+    let html = '';
+    settled.forEach(p => {
+      const day = new Date(p.date);
+      const dayLabel = day.toLocaleDateString('en', { weekday: 'short' }).toUpperCase();
+      const isCorrect = p.correct;
+      const pct = isCorrect ? 100 : 0;
+      const dir = p.prediction.toUpperCase();
+      html += '<div class="hist-row">' +
+        '<span class="hist-day">' + dayLabel + '</span>' +
+        '<span class="hist-dir" style="font-size:10px;color:var(--pc-text-3);min-width:30px">' + dir + '</span>' +
+        '<div class="hist-bar-wrap"><div class="hist-bar-fill ' + (isCorrect ? 'win' : 'loss') + '" style="width:' + pct + '%"></div></div>' +
+        '<span class="hist-result ' + (isCorrect ? 'text-green' : 'text-red') + '">' + (isCorrect ? '✓' : '✗') + '</span>' +
+      '</div>';
+    });
+    // Show accuracy
+    const acc = tool.accuracy_pct;
+    if (acc != null) {
+      html += '<div class="hist-row" style="margin-top:6px;border-top:1px solid var(--pc-border);padding-top:6px">' +
+        '<span class="hist-day" style="font-weight:600">Accuracy</span><span></span><div></div>' +
+        '<span class="hist-result" style="font-weight:700;color:' + (acc >= 50 ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + acc + '%</span>' +
+      '</div>';
+    }
+    histEl.innerHTML = html;
   });
-}
-
-function renderWidget(tool, hist) {
-  const today = hist[0];
-  const recent = hist.slice(1, 6); // last 5 completed days
-
-  // Today's prediction
-  const todayEl = document.getElementById(tool + '-today');
-  if (today.result === null) {
-    todayEl.innerHTML = '<span class="widget-today-label">Today</span><span class="widget-today-val" style="color:var(--pc-yellow)">⏳ Pending</span>';
-  } else {
-    const isCorrect = today.result === true;
-    todayEl.innerHTML = '<span class="widget-today-label">Today</span><span class="widget-today-val" style="color:' + (isCorrect ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (isCorrect ? '✅ Correct' : '❌ Wrong') + '</span>';
-  }
-
-  // History
-  const histEl = document.getElementById(tool + '-hist');
-  const completed = recent.filter(h => h.result !== null);
-  if (completed.length === 0) {
-    histEl.innerHTML = '<div class="hist-empty">No prediction history yet</div>';
-    return;
-  }
-
-  let html = '';
-  completed.forEach(h => {
-    const isCorrect = h.result === true;
-    const day = new Date(h.date);
-    const dayLabel = day.toLocaleDateString('en', { weekday: 'short' }).toUpperCase();
-    const pct = isCorrect ? 100 : 0;
-    html += '<div class="hist-row">' +
-      '<span class="hist-day">' + dayLabel + '</span>' +
-      '<div class="hist-bar-wrap"><div class="hist-bar-fill ' + (isCorrect ? 'win' : 'loss') + '" style="width:' + pct + '%"></div></div>' +
-      '<span class="hist-result ' + (isCorrect ? 'text-green' : 'text-red') + '">' + (isCorrect ? '✓' : '✗') + '</span>' +
-    '</div>';
-  });
-  histEl.innerHTML = html;
 }
 
 // ── Top Bots from Trading Arena ──────────────────────────────────────

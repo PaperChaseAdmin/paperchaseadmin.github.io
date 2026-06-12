@@ -303,68 +303,70 @@ function renderStocks(d) {
 function renderPredictions(d) {
   document.getElementById('predictions-loading').style.display = 'none';
   document.getElementById('predictions-content').style.display = 'block';
+  // Fetch real prediction data — handled in loadData via PRED_DATA_URL
+}
 
-  const pr = d.predictions || {};
-  const indices = ['^GSPC', '^IXIC', '^DJI'];
-  const labels = {'^GSPC':'S&P 500','^IXIC':'NASDAQ','^DJI':'DOW'};
+// ── Prediction data from server (overrides mock data) ──
+const PRED_DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/predictions/data/predictions.json';
+let predDataLoaded = false;
 
-  // Big cards
-  const bigIdx = ['^GSPC','^IXIC'];
-  let bigHtml = '';
-  bigIdx.forEach(sym => {
-    const p = pr[sym] || {};
-    const dir = (p.direction||'').toLowerCase();
-    const dirLabel = dir === 'up' ? '📈 Bullish' : dir === 'down' ? '📉 Bearish' : '➡️ Neutral';
-    const dirColor = dir === 'up' ? 'var(--pc-green)' : dir === 'down' ? 'var(--pc-red)' : 'var(--pc-text-3)';
-    const conf = p.confidence || 50;
-    bigHtml += '<div class="pred-card"><div class="pred-card-title">' + (labels[sym]||sym) + '</div>' +
-      '<div class="pred-card-dir" style="color:' + dirColor + '">' + dirLabel + '</div>' +
-      '<div class="pred-card-conf">Confidence: <strong>' + conf + '%</strong>' +
-      ' <span style="color:var(--pc-text-3)">· Signal: ' + (p.signal||'—') + '</span></div>' +
-      '<div class="pred-card-bar"><div class="pred-card-fill" style="width:' + conf + '%;background:' + dirColor + '"></div></div>' +
-      '</div>';
-  });
-  document.getElementById('prediction-big-cards').innerHTML = bigHtml;
+async function loadPredictions() {
+  try {
+    const resp = await fetch(PRED_DATA_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    const tool = data.tools?.market_sentinel || {};
+    const preds = tool.predictions || [];
+    const today = new Date().toISOString().slice(0, 10);
+    const todayPred = preds.filter(p => p.date === today);
+    const labels = {'sp500':'S&P 500','nasdaq':'NASDAQ','dow':'DOW'};
 
-  // 10-day track record
-  let histHtml = '<div class="pred-10day">';
-  let hasData = false;
-  indices.forEach(sym => {
-    const p = pr[sym] || {};
-    const hist = p.history || [];
-    hist.forEach(h => {
-      hasData = true;
-      const isCorrect = h.result === true;
-      const pct = isCorrect ? 80 : 40;
-      const cls = isCorrect ? 'win' : (h.result === false ? 'loss' : 'pending');
-      const day = h.date ? new Date(h.date).toLocaleDateString('en',{month:'short',day:'numeric'}) : '';
-      histHtml += '<div class="pred-10day-bar ' + cls + '" style="height:' + pct + '%"><span class="pred-10day-label">' + day + '</span></div>';
+    // Big cards — today's predictions
+    let bigHtml = '';
+    todayPred.forEach(p => {
+      const dir = p.prediction;
+      const dirLabel = dir === 'up' ? '📈 Bullish' : dir === 'down' ? '📉 Bearish' : '➡️ Neutral';
+      const dirColor = dir === 'up' ? 'var(--pc-green)' : dir === 'down' ? 'var(--pc-red)' : 'var(--pc-text-3)';
+      const conf = p.confidence || 50;
+      bigHtml += '<div class="pred-card"><div class="pred-card-title">' + p.market + '</div>' +
+        '<div class="pred-card-dir" style="color:' + dirColor + '">' + dirLabel + '</div>' +
+        '<div class="pred-card-conf">Confidence: <strong>' + conf + '%</strong>' +
+        ' <span style="color:var(--pc-text-3)">· ' + (p.signal||'') + '</span></div>' +
+        '<div class="pred-card-bar"><div class="pred-card-fill" style="width:' + conf + '%;background:' + dirColor + '"></div></div>' +
+        '</div>';
     });
-  });
-  histHtml += '</div>';
-  document.getElementById('prediction-10day').innerHTML = hasData ? histHtml : '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No prediction history yet</div>';
+    if (!bigHtml) bigHtml = '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:30px">⏳ No prediction yet today — check back before market open</div>';
+    document.getElementById('prediction-big-cards').innerHTML = bigHtml;
 
-  // Save prediction to localStorage for home page
-  const today = new Date().toISOString().slice(0,10);
-  let sentinelHist = JSON.parse(localStorage.getItem('sentinel_predictions') || '[]');
-  if (!sentinelHist.find(h => h.date === today)) {
-    const dirs = indices.map(sym => (pr[sym]||{}).direction).filter(Boolean);
-    sentinelHist.unshift({ date: today, result: null, direction: dirs.join('/') });
-    localStorage.setItem('sentinel_predictions', JSON.stringify(sentinelHist.slice(0,10)));
+    // 10-day track record
+    const settled = preds.filter(p => p.settled).slice(-10);
+    let histHtml = '<div class="pred-10day">';
+    let hasData = false;
+    settled.forEach(p => {
+      hasData = true;
+      const isCorrect = p.correct;
+      const pct = isCorrect ? 80 : 40;
+      const cls = isCorrect ? 'win' : 'loss';
+      const day = new Date(p.date).toLocaleDateString('en',{month:'short',day:'numeric'});
+      histHtml += '<div class="pred-10day-bar ' + cls + '" style="height:' + pct + '%" title="' + p.market + ': ' + p.prediction.toUpperCase() + ' → ' + (p.actual||'?').toUpperCase() + '"><span class="pred-10day-label">' + day + '</span></div>';
+    });
+    histHtml += '</div>';
+    document.getElementById('prediction-10day').innerHTML = hasData ? histHtml : '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No prediction history yet</div>';
+
+    // Accuracy stats
+    const acc = tool.accuracy_pct;
+    let accHtml = '';
+    if (acc != null) {
+      accHtml = '<div class="acc-card"><div class="acc-label">Overall Accuracy</div>' +
+        '<div class="acc-val" style="color:' + (acc >= 60 ? 'var(--pc-green)' : acc >= 40 ? 'var(--pc-yellow)' : 'var(--pc-red)') + '">' + acc + '%</div>' +
+        '<div class="acc-sub">' + tool.correct + '✓ / ' + tool.total + ' total</div></div>';
+    }
+    document.getElementById('prediction-stats').innerHTML = accHtml || '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No accuracy data yet</div>';
+
+    predDataLoaded = true;
+  } catch (e) {
+    // Fallback silently — mock data already rendered
   }
-
-  // Accuracy
-  const acc = pr._accuracy || {};
-  let accHtml = '';
-  indices.forEach(sym => {
-    const a = acc[sym] || {};
-    const total = (a.correct||0) + (a.wrong||0);
-    const pct = total > 0 ? Math.round((a.correct/total)*100) : '—';
-    accHtml += '<div class="acc-card"><div class="acc-label">' + (labels[sym]||sym) + '</div>' +
-      '<div class="acc-val" style="color:' + (pct === '—' ? 'var(--pc-text-3)' : pct >= 60 ? 'var(--pc-green)' : pct >= 40 ? 'var(--pc-yellow)' : 'var(--pc-red)') + '">' + (pct === '—' ? '—' : pct + '%') + '</div>' +
-      '<div class="acc-sub">' + (a.correct||0) + '✓ / ' + (a.wrong||0) + '✗</div></div>';
-  });
-  document.getElementById('prediction-stats').innerHTML = accHtml || '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No accuracy data yet</div>';
 }
 
 async function loadData() {
@@ -374,7 +376,7 @@ async function loadData() {
     DATA = await resp.json();
     startCountdown(DATA.updated_at || DATA.timestamp || new Date().toISOString());
     renderStocks(DATA.stocks || DATA);
-    renderPredictions(DATA.stocks || DATA);
+    loadPredictions();  // Fetch real prediction data
   } catch (e) {
     document.querySelectorAll('.loading').forEach(el => {
       el.innerHTML = '<div style="color:var(--pc-text-3)">⚠️ Unable to load data. Will retry…</div>';

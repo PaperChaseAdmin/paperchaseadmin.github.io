@@ -1,0 +1,57 @@
+# Scheduled prediction + settlement workflow
+# Runs Mon-Fri: predict before open, settle after close
+name: Predictions
+
+on:
+  schedule:
+    # Predict: Mon-Fri 1:00 PM UTC (9:00 AM ET)
+    - cron: '0 13 * * 1-5'
+    # Settle: Mon-Fri 8:30 PM UTC (4:30 PM ET)
+    - cron: '30 20 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Determine mode (predict or settle)
+        id: mode
+        run: |
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" -eq 13 ]; then
+            echo "mode=predict" >> $GITHUB_OUTPUT
+          elif [ "$HOUR" -eq 20 ]; then
+            echo "mode=settle" >> $GITHUB_OUTPUT
+          else
+            echo "mode=predict" >> $GITHUB_OUTPUT  # manual trigger = predict
+          fi
+
+      - name: Run predictions
+        if: steps.mode.outputs.mode == 'predict'
+        run: python3 predictions/predict.py
+
+      - name: Run settlement
+        if: steps.mode.outputs.mode == 'settle'
+        run: python3 predictions/settle.py
+
+      - name: Commit results
+        run: |
+          git config user.name "PaperChase Bot"
+          git config user.email "bot@paperchase.online"
+          git add predictions/data/predictions.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "predictions: update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push
+          fi
