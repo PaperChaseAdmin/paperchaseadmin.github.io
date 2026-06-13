@@ -74,7 +74,7 @@
   <div class="loading" id="main-loading"><div class="spinner"></div>Fetching crypto data…</div>
   <div id="main-content" style="display:none">
 
-    <div class="grid-3">
+    <div class="grid-2">
       <div class="card">
         <div class="card-title">Fear & Greed Index</div>
         <div class="gauge-wrap">
@@ -101,11 +101,6 @@
         <div id="crypto-sentiment-bars"></div>
         <div class="source-note"><strong>Source:</strong> CoinDesk, Cointelegraph, Decrypt, CryptoSlate</div>
       </div>
-      <div class="card">
-        <div class="card-title">Top Mentioned Coins (Reddit)</div>
-        <div id="crypto-mentions"></div>
-        <div class="source-note"><strong>Source:</strong> Reddit</div>
-      </div>
     </div>
 
     <div class="grid-2">
@@ -128,9 +123,9 @@
         <div class="source-note"><strong>Source:</strong> CoinDesk, Cointelegraph, Decrypt, CryptoSlate</div>
       </div>
       <div class="card">
-        <div class="card-title">Reddit Activity</div>
-        <div id="crypto-reddit"></div>
-        <div class="source-note"><strong>Source:</strong> Reddit</div>
+        <div class="card-title">🐸 4chan /biz/ Community Pulse</div>
+        <div id="crypto-fourchain"></div>
+        <div class="source-note"><strong>Source:</strong> 4chan /biz/</div>
       </div>
     </div>
 
@@ -140,15 +135,6 @@
         <div id="crypto-cg-trending"></div>
         <div class="source-note"><strong>Source:</strong> CoinGecko</div>
       </div>
-      <div class="card">
-        <div class="card-title">🐸 4chan /biz/ Community Pulse</div>
-        <div id="crypto-fourchain"></div>
-        <div class="source-note"><strong>Source:</strong> 4chan /biz/</div>
-      </div>
-    </div>
-
-    <!-- ── Macro (affects crypto too) ───────── -->
-    <div class="grid-2">
       <div class="card">
         <div class="card-title">📈 Macro Indicators</div>
         <div id="crypto-macro"></div>
@@ -200,7 +186,6 @@ async function loadData() {
     const data = {
       fear_greed: c.fear_greed,
       crypto_sentiment: c.news_sentiment || {score: 0, label: ''},
-      reddit_mentions: c.top_mentioned || [],
       crypto_prices: {},
       poly_markets: c.polymarket || [],
       news: c.news || [],
@@ -255,15 +240,6 @@ function render(d) {
     document.getElementById('crypto-sentiment-bars').innerHTML = bars;
   }
 
-  // Reddit mentions (crypto)
-  if (d.reddit_mentions && d.reddit_mentions.length) {
-    let html = '';
-    d.reddit_mentions.slice(0,8).filter(m => !['SPY','QQQ','TSLA'].includes(m.symbol)).forEach(m => {
-      html += '<div class="price-row"><span class="price-sym">' + m.symbol + '</span><span class="mention-count" style="font-size:11px;color:var(--pc-text-3);text-align:right">' + (m.count||0) + ' mentions</span></div>';
-    });
-    document.getElementById('crypto-mentions').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px;padding:8px 0">No crypto mentions</div>';
-  }
-
   // Crypto prices
   if (d.crypto_prices) {
     let html = '';
@@ -291,15 +267,6 @@ function render(d) {
       html += '<div class="news-item"><span class="news-source">' + (n.source||'') + '</span><a class="news-title" href="' + (n.url||'#') + '" target="_blank">' + n.title + '</a></div>';
     });
     document.getElementById('crypto-news').innerHTML = html;
-  }
-
-  // Reddit activity
-  if (d.reddit_activity && d.reddit_activity.length) {
-    let html = '';
-    d.reddit_activity.slice(0,5).forEach(r => {
-      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
-    });
-    document.getElementById('crypto-reddit').innerHTML = html;
   }
 
   // CoinGecko trending

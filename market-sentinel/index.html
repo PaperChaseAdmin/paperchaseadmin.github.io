@@ -137,39 +137,26 @@
         <div style="margin-top:14px" id="stock-sentiment-bars"></div>
       </div>
       <div class="card">
-      <div class="card-title">Top Mentioned Stocks (Reddit)</div>
-      <div id="stock-mentions"></div>
-      <div class="source-note"><strong>Source:</strong> Reddit r/wallstreetbets, r/stocks, r/investing</div>
-      </div>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
         <div class="card-title">Stock Prices (Spot)</div>
         <div id="stock-prices"></div>
         <div class="source-note"><strong>Source:</strong> yfinance</div>
       </div>
+    </div>
+
+    <div class="grid-2">
       <div class="card">
         <div class="card-title">🎲 Poly Watch — Finance & Economy</div>
         <div id="stock-polymarket"></div>
         <div class="source-note"><strong>Source:</strong> Poly Watch</div>
       </div>
-    </div>
-
-    <div class="grid-2">
       <div class="card">
         <div class="card-title">Latest Stock & Finance News</div>
         <div id="stock-news"></div>
         <div class="source-note"><strong>Source:</strong> Reuters, CNBC, MarketWatch</div>
       </div>
-      <div class="card">
-        <div class="card-title">Reddit Activity</div>
-        <div id="stock-reddit"></div>
-        <div class="source-note"><strong>Source:</strong> Reddit · r/wallstreetbets, r/stocks, r/investing</div>
-      </div>
     </div>
 
-    <!-- ── Macro Indicators ──────────────── -->
+    <!-- ── Macro ────────────────────────────── -->
     <div class="grid-2">
       <div class="card">
         <div class="card-title">📈 Macro Indicators</div>
@@ -180,20 +167,6 @@
         <div class="card-title">🔥 Most Active Stocks</div>
         <div id="most-active"></div>
         <div class="source-note"><strong>Source:</strong> yfinance by volume</div>
-      </div>
-    </div>
-
-    <!-- ── Google Trends ────────────────── -->
-    <div class="grid-2">
-      <div class="card">
-        <div class="card-title">🔍 Google Trends — Stocks</div>
-        <div id="google-trends-stocks"></div>
-        <div class="source-note"><strong>Source:</strong> Google Trends · Search interest (0-100)</div>
-      </div>
-      <div class="card">
-        <div class="card-title">🔍 Google Trends — Crypto</div>
-        <div id="google-trends-crypto"></div>
-        <div class="source-note"><strong>Source:</strong> Google Trends</div>
       </div>
     </div>
 
@@ -435,16 +408,6 @@ function renderStocks(d) {
     document.getElementById('stock-news').innerHTML = html;
   }
 
-  // Reddit activity
-  const reddit = d.reddit || [];
-  if (reddit.length) {
-    let html = '';
-    reddit.slice(0,5).forEach(r => {
-      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
-    });
-    document.getElementById('stock-reddit').innerHTML = html;
-  }
-
   // ── Macro indicators ──
   const macro = d.macro || [];
   if (macro.length) {
@@ -464,26 +427,6 @@ function renderStocks(d) {
       h += '<div class="price-row"><span class="price-sym">' + m.symbol + '</span><span class="price-val">$' + (m.price_usd||0).toLocaleString('en',{maximumFractionDigits:2}) + '</span><span class="' + (m.change_24h >= 0 ? 'text-green' : 'text-red') + '">' + (m.change_24h >= 0 ? '+' : '') + (m.change_24h||0).toFixed(2) + '%</span></div>';
     });
     document.getElementById('most-active').innerHTML = h;
-  }
-
-  // ── Google Trends stocks ──
-  const gt = d.google_trends || {};
-  if (gt.stocks && gt.stocks.length) {
-    let h = '';
-    gt.stocks.slice(0,10).forEach(t => {
-      const bar = t.interest_score || 0;
-      h += '<div class="price-row"><span class="price-sym">' + t.symbol + '</span><div class="bar-track" style="flex:1;margin:0 8px"><div class="bar-fill" style="width:' + bar + '%;background:var(--pc-purple);height:6px;border-radius:3px"></div></div><span style="font-size:11px;font-family:var(--pc-mono);font-weight:600;min-width:24px;text-align:right">' + bar + '</span></div>';
-    });
-    document.getElementById('google-trends-stocks').innerHTML = h;
-  }
-
-  // ── Google Trends crypto ──
-  if (gt.crypto && gt.crypto.length) {
-    let h = '';
-    gt.crypto.forEach(t => {
-      h += '<div class="price-row"><span class="price-sym" style="min-width:80px;font-family:var(--pc-font)">' + t.keyword + '</span><span style="font-size:13px;font-family:var(--pc-mono);font-weight:700">' + t.interest_score + '</span></div>';
-    });
-    document.getElementById('google-trends-crypto').innerHTML = h;
   }
 }
 
