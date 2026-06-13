@@ -147,6 +147,20 @@
       </div>
     </div>
 
+    <!-- ── Macro (affects crypto too) ───────── -->
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">📈 Macro Indicators</div>
+        <div id="crypto-macro"></div>
+        <div class="source-note"><strong>Source:</strong> yfinance</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🔥 Most Active Stocks</div>
+        <div id="crypto-active"></div>
+        <div class="source-note"><strong>Source:</strong> yfinance by volume</div>
+      </div>
+    </div>
+
     <div class="disclaimer"><strong>⚠️ Spot Assets Only.</strong> Not financial advice.</div>
   </div>
 
@@ -182,6 +196,7 @@ async function loadData() {
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const raw = await resp.json();
     const c = raw.crypto || {};
+    const s = raw.stocks || {};
     const data = {
       fear_greed: c.fear_greed,
       crypto_sentiment: c.news_sentiment || {score: 0, label: ''},
@@ -191,7 +206,9 @@ async function loadData() {
       news: c.news || [],
       reddit_activity: c.reddit || [],
       cg_trending: c.cg_trending || [],
-      fourchain: c.fourchain || []
+      fourchain: c.fourchain || [],
+      macro: s.macro || [],
+      most_active: s.most_active || [],
     };
     if (Array.isArray(c.prices)) {
       c.prices.forEach(p => { data.crypto_prices[p.symbol] = {price: p.price_usd, change_pct: p.change_24h}; });
@@ -307,6 +324,25 @@ function render(d) {
       html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||'') + '</span></div>';
     });
     document.getElementById('crypto-fourchain').innerHTML = html;
+  }
+
+  // ── Macro ──
+  if (d.macro && d.macro.length) {
+    let h = '';
+    d.macro.forEach(m => {
+      const chg = m.change_24h;
+      h += '<div class="price-row"><span class="price-sym" style="min-width:100px;font-family:var(--pc-font);font-size:12px">' + (m.name||m.symbol) + '</span><span class="price-val">' + (m.value != null ? m.value : '—') + '</span><span class="' + (chg >= 0 ? 'text-green' : 'text-red') + '">' + (chg >= 0 ? '+' : '') + (chg||0).toFixed(2) + '%</span></div>';
+    });
+    document.getElementById('crypto-macro').innerHTML = h;
+  }
+
+  // ── Most Active ──
+  if (d.most_active && d.most_active.length) {
+    let h = '';
+    d.most_active.slice(0,8).forEach(m => {
+      h += '<div class="price-row"><span class="price-sym">' + m.symbol + '</span><span class="price-val">$' + (m.price_usd||0).toLocaleString('en',{maximumFractionDigits:2}) + '</span><span class="' + (m.change_24h >= 0 ? 'text-green' : 'text-red') + '">' + (m.change_24h >= 0 ? '+' : '') + (m.change_24h||0).toFixed(2) + '%</span></div>';
+    });
+    document.getElementById('crypto-active').innerHTML = h;
   }
 
   // Save crypto prediction to localStorage for home page
