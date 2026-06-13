@@ -4,8 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title data-i18n-title="page_title_sentinel">Market Sentinel — Market Intelligence Dashboard</title>
-<meta name="description" content="Real-time market sentiment — Fear & Greed, stock indices, Reddit buzz, news analysis, and AI-powered next-day predictions."/>
-<meta name="keywords" content="market sentiment, fear and greed index, stock market, reddit sentiment, predictions"/>
+<meta name="description" content="Real-time market sentiment — Fear & Greed, stock indices, news analysis, and AI-powered next-day predictions."/>
+<meta name="keywords" content="market sentiment, fear and greed index, stock market, predictions"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://paperchase.online/market-sentinel/"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
@@ -15,13 +15,6 @@
 <script src="/assets/countdown.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
-/* ── Gauge ────────────────────────────── */
-.gauge-wrap{display:flex;flex-direction:column;align-items:center}
-.gauge-svg{width:180px;height:110px}
-.gauge-value{font-size:36px;font-weight:700;margin-top:4px;font-family:var(--pc-mono);color:var(--pc-heading)}
-.gauge-label{font-size:11px;color:var(--pc-text-2);margin-top:2px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
-.gauge-delta{font-size:11px;margin-top:4px;font-family:var(--pc-mono)}
-
 /* ── Index grid ────────────────────────── */
 .index-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
 .index-item{background:var(--pc-surface-2);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:12px}
@@ -39,31 +32,45 @@
 .bar-track{flex:1;height:4px;background:var(--pc-surface-3);border-radius:2px}
 .bar-fill{height:4px;border-radius:2px;transition:width .4s}
 
-/* ── Prediction cards ──────────────────── */
-.pred-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:20px}
-.pred-card-title{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px}
-.pred-card-dir{font-size:28px;font-weight:700;margin-bottom:4px}
-.pred-card-conf{font-size:12px;color:var(--pc-text-2)}
-.pred-card-bar{height:4px;border-radius:2px;margin:10px 0;background:var(--pc-surface-3);overflow:hidden}
+/* ── Prediction section ─────────────────── */
+.pred-overview{margin-bottom:0}
+.pred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.pred-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:20px;position:relative}
+.pred-card-title{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--pc-text-3);margin-bottom:4px}
+.pred-card-index{font-size:16px;font-weight:700;color:var(--pc-heading);margin-bottom:8px}
+.pred-card-dir{font-size:22px;font-weight:700;margin-bottom:2px}
+.pred-card-conf{font-size:11px;color:var(--pc-text-2);margin-bottom:6px}
+.pred-card-bar{height:4px;border-radius:2px;background:var(--pc-surface-3);overflow:hidden}
 .pred-card-fill{height:100%;border-radius:2px;transition:width .5s}
+.pred-card-empty{color:var(--pc-text-3);font-size:12px;text-align:center;padding:24px 0;grid-column:1/-1}
 
 /* ── Prediction 10-day ─────────────────── */
-.pred-10day{display:flex;gap:4px;align-items:flex-end;height:60px;padding-bottom:20px;position:relative}
+.pred-10day{display:flex;gap:4px;align-items:flex-end;height:50px;padding-bottom:18px;position:relative}
 .pred-10day-bar{flex:1;border-radius:3px 3px 0 0;min-height:4px;position:relative;transition:height .3s}
 .pred-10day-bar.win{background:var(--pc-green)}
 .pred-10day-bar.loss{background:var(--pc-red)}
 .pred-10day-bar.pending{background:var(--pc-text-3);opacity:.3}
-.pred-10day-label{position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--pc-text-3);white-space:nowrap}
+.pred-10day-label{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:8px;color:var(--pc-text-3);white-space:nowrap}
+
+/* ── Track record grid ─────────────────── */
+.track-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.track-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px}
+.track-card-title{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:8px}
+.track-stat{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
+.track-stat-label{font-size:11px;color:var(--pc-text-2)}
+.track-stat-val{font-size:13px;font-weight:700;font-family:var(--pc-mono)}
 
 /* ── Accuracies ────────────────────────── */
-.acc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.acc-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;text-align:center}
-.acc-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:4px}
-.acc-val{font-size:32px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
+.acc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.acc-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:14px;text-align:center}
+.acc-label{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:3px}
+.acc-val{font-size:24px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
 .acc-sub{font-size:10px;color:var(--pc-text-2);margin-top:2px}
 
 @media(max-width:900px){
   .index-grid{grid-template-columns:1fr}
+  .pred-grid{grid-template-columns:1fr}
+  .track-grid{grid-template-columns:1fr}
   .acc-grid{grid-template-columns:1fr}
 }
 </style>
@@ -92,88 +99,64 @@
   <div class="page-header">
     <div class="page-title-wrap">
       <div class="page-title" data-i18n="page_title_sentinel">Market Sentinel</div>
-      <div class="page-sub"><span class="live"></span> <span data-i18n="page_sub_sentinel">Stock indices · Market mood · News · Next-day predictions</span></div>
+      <div class="page-sub"><span class="live"></span> <span data-i18n="page_sub_sentinel">Index predictions · Stock indices · Market mood · News</span></div>
     </div>
     <div id="countdown-wrap" class="countdown-wrap"></div>
   </div>
 
-  <div class="tabs-wrap">
-    <button class="tab active" data-tab="stocks" onclick="switchTab('stocks',this)">📈 Stocks</button>
-    <button class="tab" data-tab="predictions" onclick="switchTab('predictions',this)">🔮 Predictions</button>
-  </div>
+  <div class="loading" id="main-loading"><div class="spinner"></div>Loading market data…</div>
 
-  <!-- STOCKS -->
-  <div class="section active" id="tab-stocks">
-    <div class="loading" id="stocks-loading"><div class="spinner"></div>Fetching market data…</div>
-    <div id="stocks-content" style="display:none">
-      <div class="grid-3">
-        <div class="card">
-          <div class="card-title">Market Indices</div>
-          <div class="index-grid" id="stock-indices"></div>
-          <div class="source-note"><strong>Source:</strong> yfinance</div>
-        </div>
-        <div class="card">
-          <div class="card-title">Market Mood Score</div>
-          <div id="market-mood-score" class="mood-score">—</div>
-          <div id="market-mood-label" class="mood-label"></div>
-          <div style="margin-top:14px" id="stock-sentiment-bars"></div>
-        </div>
-        <div class="card">
-          <div class="card-title">Top Mentioned Stocks (Reddit)</div>
-          <div id="stock-mentions"></div>
-          <div class="source-note"><strong>Source:</strong> Reddit</div>
-        </div>
+  <div id="main-content" style="display:none">
+
+    <!-- ── PREDICTIONS (top) ────────────────── -->
+    <div class="section-title" style="margin-bottom:12px">🔮 INDEX PREDICTIONS</div>
+
+    <div class="pred-grid" id="predictionCards"></div>
+
+    <div class="acc-grid" id="accuracyGrid"></div>
+
+    <div class="track-grid" id="trackRecord"></div>
+
+    <!-- ── STOCKS ───────────────────────────── -->
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">Market Indices</div>
+        <div class="index-grid" id="stock-indices"></div>
+        <div class="source-note"><strong>Source:</strong> yfinance</div>
       </div>
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-title">Stock Prices (Spot)</div>
-          <div id="stock-prices"></div>
-          <div class="source-note"><strong>Source:</strong> yfinance</div>
-        </div>
-        <div class="card">
-          <div class="card-title">🎲 Poly Watch — Finance & Economy</div>
-          <div id="stock-polymarket"></div>
-          <div class="source-note"><strong>Source:</strong> Poly Watch</div>
-        </div>
+      <div class="card">
+        <div class="card-title">Market Mood Score</div>
+        <div id="market-mood-score" class="mood-score">—</div>
+        <div id="market-mood-label" class="mood-label"></div>
+        <div style="margin-top:14px" id="stock-sentiment-bars"></div>
       </div>
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-title">Latest Stock & Finance News</div>
-          <div id="stock-news"></div>
-          <div class="source-note"><strong>Source:</strong> Reuters, CNBC, MarketWatch</div>
-        </div>
-        <div class="card">
-          <div class="card-title">Reddit Activity</div>
-          <div id="stock-reddit"></div>
-          <div class="source-note"><strong>Source:</strong> Reddit</div>
-        </div>
+      <div class="card">
+        <div class="card-title">Top Mentioned Stocks</div>
+        <div id="stock-mentions"></div>
+        <div class="source-note"><strong>Source:</strong> Yahoo Finance</div>
       </div>
-      <div class="disclaimer"><strong>⚠️ Spot Assets Only.</strong> Not financial advice.</div>
     </div>
-  </div>
 
-  <!-- PREDICTIONS -->
-  <div class="section" id="tab-predictions">
-    <div class="loading" id="predictions-loading"><div class="spinner"></div>Analyzing prediction data…</div>
-    <div id="predictions-content" style="display:none">
-
-      <div class="section-title" style="margin-bottom:8px">NEXT SESSION FORECAST</div>
-      <div id="prediction-big-cards" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">
-        <div style="color:var(--pc-text-2);padding:12px 0;text-align:center;grid-column:1/-1">Loading forecast data…</div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Stock Prices (Spot)</div>
+        <div id="stock-prices"></div>
+        <div class="source-note"><strong>Source:</strong> yfinance</div>
       </div>
-
-      <div class="section-title" style="margin-bottom:8px">10-DAY PREDICTION TRACK RECORD</div>
-      <div id="prediction-10day" style="margin-bottom:20px">
-        <div style="color:var(--pc-text-2);padding:12px 0;text-align:center">Loading track record…</div>
+      <div class="card">
+        <div class="card-title">🎲 Poly Watch — Finance & Economy</div>
+        <div id="stock-polymarket"></div>
+        <div class="source-note"><strong>Source:</strong> Poly Watch</div>
       </div>
-
-      <div class="section-title" style="margin-bottom:8px">ACCURACY BY INDEX</div>
-      <div id="prediction-stats" style="margin-bottom:20px">
-        <div style="color:var(--pc-text-2);padding:12px 0;text-align:center">Loading accuracy data…</div>
-      </div>
-
-      <div class="disclaimer"><strong>⚠️ Not Financial Advice.</strong> Predictions are algorithmic direction signals. Past performance does not guarantee future results.</div>
     </div>
+
+    <div class="card">
+      <div class="card-title">Latest Stock & Finance News</div>
+      <div id="stock-news"></div>
+      <div class="source-note"><strong>Source:</strong> Reuters, CNBC, MarketWatch</div>
+    </div>
+
+    <div class="disclaimer"><strong>⚠️ Spot Assets Only.</strong> Predictions are algorithmic direction signals. Past performance does not guarantee future results. Not financial advice.</div>
   </div>
 
 </div>
@@ -181,16 +164,32 @@
 
 <script>
 const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json';
-let DATA = null;
+const PRED_DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/predictions/data/predictions.json';
 
-function switchTab(name, el) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  el.classList.add('active');
-  document.getElementById('tab-' + name).classList.add('active');
-}
+// ── Index display names ─────────────────────────────────────────────
+const INDEX_NAMES = {
+  'sp500':'S&P 500','spx':'S&P 500','s&p 500':'S&P 500',
+  'nasdaq':'NASDAQ','nasdaq composite':'NASDAQ',
+  'dow':'DOW','dow jones':'DOW','djia':'DOW',
+  'ftse':'FTSE 100','ftse 100':'FTSE 100',
+  'dax':'DAX 40','dax 40':'DAX 40',
+  'cac':'CAC 40','cac 40':'CAC 40',
+  'nikkei':'Nikkei 225','nikkei 225':'Nikkei 225',
+  'hsi':'HSI','hang seng':'HSI',
+  'euro stoxx':'Euro Stoxx 50','stoxx':'Euro Stoxx 50'
+};
 
-// ── Countdown ────────────────────────────
+// ── Helpers ──────────────────────────────────────────────────────────
+const fmtPrice = v => v == null ? '—' : v >= 1000 ? '$' + v.toLocaleString('en', {maximumFractionDigits:0}) : v >= 1 ? '$' + v.toFixed(2) : v >= 0.01 ? '$' + v.toFixed(4) : '$' + v.toFixed(6);
+const fmtChg = v => v == null ? '' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+const chgClass = v => v == null ? '' : v >= 0 ? 'text-green' : 'text-red';
+const normIndex = name => {
+  if (!name) return null;
+  const n = name.toLowerCase().trim().replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ');
+  return INDEX_NAMES[n] || INDEX_NAMES[name.toLowerCase().trim()] || name;
+};
+
+// ── Countdown ───────────────────────────────────────────────────────
 let _cdTimer = null;
 function onDataLoaded(updatedAt) {
   clearInterval(_cdTimer);
@@ -199,15 +198,125 @@ function onDataLoaded(updatedAt) {
   _cdTimer = window.startCountdown(el, 'Data Refresh', 'market-sentinel', loadData);
 }
 
-// ── Renderers ────────────────────────────
-const fmtPrice = v => v == null ? '—' : v >= 1000 ? '$' + v.toLocaleString('en', {maximumFractionDigits:0}) : v >= 1 ? '$' + v.toFixed(2) : v >= 0.01 ? '$' + v.toFixed(4) : '$' + v.toFixed(6);
-const fmtChg = v => v == null ? '' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
-const chgClass = v => v == null ? '' : v >= 0 ? 'text-green' : 'text-red';
+// ── Render Predictions ──────────────────────────────────────────────
+function renderPredictions(preds) {
+  if (!preds || !preds.length) {
+    document.getElementById('predictionCards').innerHTML = '<div class="pred-card-empty">⏳ No predictions yet today — check back before market open</div>';
+    document.getElementById('accuracyGrid').innerHTML = '';
+    document.getElementById('trackRecord').innerHTML = '';
+    return;
+  }
 
+  // Group by index
+  const byIndex = {};
+  preds.forEach(p => {
+    const idx = normIndex(p.market) || p.market;
+    if (!byIndex[idx]) byIndex[idx] = [];
+    byIndex[idx].push(p);
+  });
+
+  const today = new Date().toISOString().slice(0, 10);
+
+  // ── Prediction cards (today's forecast per index) ──
+  let cardHtml = '';
+  Object.entries(byIndex).forEach(([idx, items]) => {
+    const todayItems = items.filter(p => p.date === today);
+    const settled = todayItems.filter(p => p.settled);
+    const pending = todayItems.filter(p => !p.settled);
+    const entry = pending.length ? pending[0] : settled.length ? settled[0] : items[items.length-1];
+    if (!entry) return;
+    const dir = entry.prediction || 'neutral';
+    const dirLabel = dir === 'up' ? '📈 Bullish' : dir === 'down' ? '📉 Bearish' : '➡️ Neutral';
+    const dirColor = dir === 'up' ? 'var(--pc-green)' : dir === 'down' ? 'var(--pc-red)' : 'var(--pc-text-3)';
+    const conf = entry.confidence || 50;
+    const isSettled = entry.settled && entry.date === today;
+    const isCorrect = isSettled && entry.correct;
+    const resultBadge = isSettled ? (isCorrect ? '<span style="font-size:10px;color:var(--pc-green);margin-left:6px">✅</span>' : '<span style="font-size:10px;color:var(--pc-red);margin-left:6px">❌</span>') : '';
+
+    cardHtml += '<div class="pred-card">' +
+      '<div class="pred-card-title">Next Session Forecast</div>' +
+      '<div class="pred-card-index">' + idx + resultBadge + '</div>' +
+      '<div class="pred-card-dir" style="color:' + dirColor + '">' + dirLabel + '</div>' +
+      '<div class="pred-card-conf">Confidence: <strong>' + conf + '%</strong>' +
+      (entry.signal ? ' <span style="color:var(--pc-text-3)">· ' + entry.signal + '</span>' : '') +
+      (isSettled ? ' <span style="color:var(--pc-text-3)">· Settled</span>' : '') +
+      '</div>' +
+      '<div class="pred-card-bar"><div class="pred-card-fill" style="width:' + conf + '%;background:' + dirColor + '"></div></div>' +
+      '</div>';
+  });
+  if (!cardHtml) cardHtml = '<div class="pred-card-empty">⏳ No predictions yet today</div>';
+  document.getElementById('predictionCards').innerHTML = cardHtml;
+
+  // ── Accuracy per index ──
+  let accHtml = '';
+  Object.entries(byIndex).forEach(([idx, items]) => {
+    const settled = items.filter(p => p.settled);
+    if (!settled.length) return;
+    const correct = settled.filter(p => p.correct).length;
+    const total = settled.length;
+    const accPct = Math.round((correct / total) * 100);
+    accHtml += '<div class="acc-card">' +
+      '<div class="acc-label">' + idx + '</div>' +
+      '<div class="acc-val" style="color:' + (accPct >= 60 ? 'var(--pc-green)' : accPct >= 40 ? 'var(--pc-yellow)' : 'var(--pc-red)') + '">' + accPct + '%</div>' +
+      '<div class="acc-sub">' + correct + '✓ / ' + total + '</div></div>';
+  });
+  document.getElementById('accuracyGrid').innerHTML = accHtml;
+
+  // ── Track record (10-day history per index) ──
+  let trackHtml = '';
+  Object.entries(byIndex).forEach(([idx, items]) => {
+    const settled = items.filter(p => p.settled).slice(-10);
+    if (!settled.length) return;
+
+    // Bar chart
+    let bars = '<div class="pred-10day">';
+    settled.forEach(p => {
+      const isCorrect = p.correct;
+      const pct = isCorrect ? 70 : 35;
+      const cls = isCorrect ? 'win' : 'loss';
+      const day = new Date(p.date).toLocaleDateString('en',{month:'short',day:'numeric'});
+      bars += '<div class="pred-10day-bar ' + cls + '" style="height:' + pct + '%" title="' + p.prediction.toUpperCase() + ' → ' + (p.actual||'?').toUpperCase() + '"><span class="pred-10day-label">' + day + '</span></div>';
+    });
+    bars += '</div>';
+
+    // Stats
+    const correct = settled.filter(p => p.correct).length;
+    const wrong = settled.length - correct;
+    const streakMatch = [];
+    let currentStreak = 0;
+    settled.slice().reverse().forEach(p => {
+      if (p.correct) { currentStreak++; } else { currentStreak = 0; }
+    });
+    const streak = currentStreak;
+
+    trackHtml += '<div class="track-card">' +
+      '<div class="track-card-title">' + idx + ' · Last ' + settled.length + ' Sessions</div>' +
+      bars +
+      '<div style="margin-top:14px">' +
+      '<div class="track-stat"><span class="track-stat-label">Correct</span><span class="track-stat-val text-green">' + correct + '</span></div>' +
+      '<div class="track-stat"><span class="track-stat-label">Wrong</span><span class="track-stat-val text-red">' + wrong + '</span></div>' +
+      '<div class="track-stat"><span class="track-stat-label">Current Streak</span><span class="track-stat-val" style="color:' + (streak > 0 ? 'var(--pc-green)' : 'var(--pc-text-2)') + '">' + streak + '</span></div>' +
+      '</div></div>';
+  });
+  document.getElementById('trackRecord').innerHTML = trackHtml || '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No track record yet</div>';
+}
+
+// ── Load Prediction Data ────────────────────────────────────────────
+async function loadPredictions() {
+  try {
+    const resp = await fetch(PRED_DATA_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    const tool = data.tools?.market_sentinel || {};
+    const preds = tool.predictions || [];
+    renderPredictions(preds);
+  } catch (e) {
+    renderPredictions(null);
+  }
+}
+
+// ── Render Stocks ───────────────────────────────────────────────────
 function renderStocks(d) {
-  document.getElementById('stocks-loading').style.display = 'none';
-  document.getElementById('stocks-content').style.display = 'block';
-
   // Indices
   if (d.indices) {
     let html = '';
@@ -231,7 +340,19 @@ function renderStocks(d) {
     document.getElementById('market-mood-score').style.color = mood >= 55 ? 'var(--pc-green)' : mood >= 45 ? 'var(--pc-yellow)' : 'var(--pc-red)';
   }
 
-  // Reddit mentions (top_mentioned)
+  // Mood sentiment bars
+  if (rawMood.subscores) {
+    let html = '';
+    Object.entries(rawMood.subscores).forEach(([k, v]) => {
+      const pct = Math.round((v || 0) * 100);
+      html += '<div class="sentiment-row"><span class="sentiment-label">' + k.replace(/_/g,' ') + '</span>' +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + (pct >= 50 ? 'var(--pc-green)' : pct >= 35 ? 'var(--pc-yellow)' : 'var(--pc-red)') + '"></div></div>' +
+        '<span style="font-size:10px;font-weight:600;font-family:var(--pc-mono);min-width:28px;text-align:right">' + pct + '%</span></div>';
+    });
+    document.getElementById('stock-sentiment-bars').innerHTML = html;
+  }
+
+  // Top mentioned stocks
   const mentions = d.top_mentioned || [];
   if (mentions.length) {
     let html = '';
@@ -241,7 +362,7 @@ function renderStocks(d) {
     document.getElementById('stock-mentions').innerHTML = html;
   }
 
-  // Stock prices (array format: [{symbol, price_usd, change_24h}, ...])
+  // Stock prices
   if (d.prices && d.prices.length) {
     let html = '';
     d.prices.slice(0,12).forEach(s => {
@@ -265,104 +386,42 @@ function renderStocks(d) {
   // News
   if (d.news && d.news.length) {
     let html = '';
-    d.news.slice(0,6).forEach(n => {
+    d.news.slice(0,8).forEach(n => {
       html += '<div class="news-item"><span class="news-source">' + (n.source||'') + '</span><a class="news-title" href="' + (n.url||'#') + '" target="_blank" rel="noopener">' + n.title + '</a></div>';
     });
     document.getElementById('stock-news').innerHTML = html;
   }
-
-  // Reddit
-  const reddit = d.reddit || [];
-  if (reddit.length) {
-    let html = '';
-    reddit.slice(0,5).forEach(r => {
-      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
-    });
-    document.getElementById('stock-reddit').innerHTML = html;
-  }
 }
 
-function renderPredictions(d) {
-  document.getElementById('predictions-loading').style.display = 'none';
-  document.getElementById('predictions-content').style.display = 'block';
-  // Fetch real prediction data — handled in loadData via PRED_DATA_URL
-}
-
-// ── Prediction data from server (overrides mock data) ──
-const PRED_DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/predictions/data/predictions.json';
-let predDataLoaded = false;
-
-async function loadPredictions() {
-  try {
-    const resp = await fetch(PRED_DATA_URL + '?t=' + Date.now());
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const data = await resp.json();
-    const tool = data.tools?.market_sentinel || {};
-    const preds = tool.predictions || [];
-    const today = new Date().toISOString().slice(0, 10);
-    const todayPred = preds.filter(p => p.date === today);
-    const labels = {'sp500':'S&P 500','nasdaq':'NASDAQ','dow':'DOW'};
-
-    // Big cards — today's predictions
-    let bigHtml = '';
-    todayPred.forEach(p => {
-      const dir = p.prediction;
-      const dirLabel = dir === 'up' ? '📈 Bullish' : dir === 'down' ? '📉 Bearish' : '➡️ Neutral';
-      const dirColor = dir === 'up' ? 'var(--pc-green)' : dir === 'down' ? 'var(--pc-red)' : 'var(--pc-text-3)';
-      const conf = p.confidence || 50;
-      bigHtml += '<div class="pred-card"><div class="pred-card-title">' + p.market + '</div>' +
-        '<div class="pred-card-dir" style="color:' + dirColor + '">' + dirLabel + '</div>' +
-        '<div class="pred-card-conf">Confidence: <strong>' + conf + '%</strong>' +
-        ' <span style="color:var(--pc-text-3)">· ' + (p.signal||'') + '</span></div>' +
-        '<div class="pred-card-bar"><div class="pred-card-fill" style="width:' + conf + '%;background:' + dirColor + '"></div></div>' +
-        '</div>';
-    });
-    if (!bigHtml) bigHtml = '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:30px">⏳ No prediction yet today — check back before market open</div>';
-    document.getElementById('prediction-big-cards').innerHTML = bigHtml;
-
-    // 10-day track record
-    const settled = preds.filter(p => p.settled).slice(-10);
-    let histHtml = '<div class="pred-10day">';
-    let hasData = false;
-    settled.forEach(p => {
-      hasData = true;
-      const isCorrect = p.correct;
-      const pct = isCorrect ? 80 : 40;
-      const cls = isCorrect ? 'win' : 'loss';
-      const day = new Date(p.date).toLocaleDateString('en',{month:'short',day:'numeric'});
-      histHtml += '<div class="pred-10day-bar ' + cls + '" style="height:' + pct + '%" title="' + p.market + ': ' + p.prediction.toUpperCase() + ' → ' + (p.actual||'?').toUpperCase() + '"><span class="pred-10day-label">' + day + '</span></div>';
-    });
-    histHtml += '</div>';
-    document.getElementById('prediction-10day').innerHTML = hasData ? histHtml : '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No prediction history yet</div>';
-
-    // Accuracy stats
-    const acc = tool.accuracy_pct;
-    let accHtml = '';
-    if (acc != null) {
-      accHtml = '<div class="acc-card"><div class="acc-label">Overall Accuracy</div>' +
-        '<div class="acc-val" style="color:' + (acc >= 60 ? 'var(--pc-green)' : acc >= 40 ? 'var(--pc-yellow)' : 'var(--pc-red)') + '">' + acc + '%</div>' +
-        '<div class="acc-sub">' + tool.correct + '✓ / ' + tool.total + ' total</div></div>';
-    }
-    document.getElementById('prediction-stats').innerHTML = accHtml || '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">No accuracy data yet</div>';
-
-    predDataLoaded = true;
-  } catch (e) {
-    // Fallback silently — mock data already rendered
-  }
-}
-
+// ── Main Load ────────────────────────────────────────────────────────
 async function loadData() {
   try {
-    const resp = await fetch(DATA_URL + '?t=' + Date.now());
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    DATA = await resp.json();
-    onDataLoaded(DATA.updated_at || DATA.timestamp || new Date().toISOString());
-    renderStocks(DATA.stocks || DATA);
-    loadPredictions();  // Fetch real prediction data
+    const [dataResp, predResp] = await Promise.all([
+      fetch(DATA_URL + '?t=' + Date.now()),
+      fetch(PRED_DATA_URL + '?t=' + Date.now())
+    ]);
+
+    if (!dataResp.ok) throw new Error('Data HTTP ' + dataResp.status);
+    const data = await dataResp.json();
+    const stocks = data.stocks || data;
+
+    onDataLoaded(data.updated_at || data.timestamp || new Date().toISOString());
+
+    document.getElementById('main-loading').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+
+    renderStocks(stocks);
+
+    // Predictions
+    if (predResp.ok) {
+      const predData = await predResp.json();
+      const tool = predData.tools?.market_sentinel || {};
+      renderPredictions(tool.predictions || []);
+    } else {
+      renderPredictions(null);
+    }
   } catch (e) {
-    document.querySelectorAll('.loading').forEach(el => {
-      el.innerHTML = '<div style="color:var(--pc-text-3)">⚠️ Unable to load data. Will retry…</div>';
-    });
+    document.getElementById('main-loading').innerHTML = '<div style="color:var(--pc-text-3)">⚠️ Unable to load data. Will retry…</div>';
     setTimeout(loadData, 30000);
   }
 }
