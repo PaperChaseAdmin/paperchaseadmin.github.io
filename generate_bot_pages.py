@@ -73,6 +73,83 @@ DETAIL_TMPL = """<!DOCTYPE html>
 .favourite-bar{display:flex;justify-content:flex-end;padding:4px 0 8px}
 .fav-btn{background:none;border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:6px 12px;cursor:pointer;font-size:13px;color:var(--pc-text-2);transition:all .15s}
 .fav-btn:hover{background:var(--pc-surface-hover);color:var(--pc-heading)}
+
+/* ── Bot detail layout (from bot-detail.js) ── */
+.bot-hero{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:20px;margin-bottom:16px}
+.hero-row{display:flex;align-items:flex-start;gap:16px}
+.hero-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.hero-meta{flex:1}
+.hero-name{font-size:20px;font-weight:700;color:var(--pc-heading);margin-bottom:2px}
+.hero-bio{font-size:13px;color:var(--pc-text-2);margin-bottom:4px}
+.hero-strategy{font-size:11px;color:var(--pc-text-3);font-style:italic}
+.risk-meter{display:flex;align-items:center;gap:8px}
+.risk-track{flex:1;max-width:120px;height:6px;background:var(--pc-surface-3);border-radius:3px;overflow:hidden}
+.risk-fill{height:100%;border-radius:3px;transition:width .3s}
+.risk-text{font-size:10px;font-weight:700;color:var(--pc-text-3);letter-spacing:.05em}
+.metrics-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:1px;background:var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden;margin-top:16px}
+.metric{background:var(--pc-surface);padding:12px 14px;text-align:center}
+.metric-lbl{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:2px}
+.metric-val{font-size:15px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
+
+/* ── Outlook ── */
+.outlook{background:var(--pc-surface-2);border:1px solid var(--pc-border);border-left:3px solid var(--bot-color,var(--pc-purple));border-radius:var(--pc-radius);padding:12px 14px;margin-bottom:16px;font-size:13px;color:var(--pc-text);line-height:1.5}
+
+/* ── Session card ── */
+.session-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;margin-bottom:16px;border-left:3px solid var(--bot-color,var(--pc-purple))}
+.session-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.session-title{font-size:12px;font-weight:600;color:var(--pc-heading)}
+.session-time{font-size:10px;color:var(--pc-text-3)}
+.session-block{margin-bottom:12px}
+.session-block-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px}
+.condition-chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-size:11px;padding:3px 8px;border-radius:4px;background:var(--pc-surface-3);color:var(--pc-text-2);border:1px solid var(--pc-border)}
+.chip.fear{background:var(--pc-red-bg);color:var(--pc-red);border-color:rgba(239,68,68,.2)}
+.chip.greed{background:var(--pc-green-bg);color:var(--pc-green);border-color:rgba(21,190,83,.2)}
+.chip.up{background:var(--pc-green-bg);color:var(--pc-green);border-color:rgba(21,190,83,.2)}
+.chip.down{background:var(--pc-red-bg);color:var(--pc-red);border-color:rgba(239,68,68,.2)}
+.session-news{list-style:none;padding:0;margin:0}
+.session-news li{font-size:12px;color:var(--pc-text-2);padding:3px 0;padding-left:12px;position:relative;line-height:1.4}
+.session-news li::before{content:'\\2022';position:absolute;left:0;color:var(--pc-purple)}
+.decision-badge{font-size:11px;font-weight:600;padding:4px 10px;border-radius:4px;background:var(--pc-surface-3);color:var(--pc-text-2)}
+.decision-badge.traded{background:var(--pc-green-bg);color:var(--pc-green)}
+
+/* ── Specs card ── */
+.spec-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;margin-bottom:16px}
+.spec-card-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--pc-border)}
+.spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.spec-item{background:var(--pc-surface-2);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:10px 12px}
+.spec-label{font-size:10px;font-weight:600;color:var(--pc-text-3);margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
+.spec-val{font-size:14px;font-weight:700;color:var(--pc-heading)}
+.spec-sub{font-size:10px;color:var(--pc-text-3);margin-top:2px}
+.ticker-list{display:flex;flex-wrap:wrap;gap:4px}
+.ticker-chip{font-size:11px;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--pc-purple-bg);color:var(--pc-purple);text-decoration:none;transition:all .1s}
+.ticker-chip:hover{background:var(--pc-purple);color:#fff}
+
+/* ── Positions table ── */
+.table-wrap{overflow-x:auto;margin-bottom:16px}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:12px;background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden}
+.table-wrap th{background:var(--pc-surface-2);padding:8px 10px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);text-align:left;border-bottom:1px solid var(--pc-border)}
+.table-wrap td{padding:8px 10px;border-bottom:1px solid var(--pc-border);color:var(--pc-text)}
+.table-wrap tr:last-child td{border-bottom:none}
+.table-wrap tr:hover td{background:var(--pc-surface-hover)}
+.pos-expand td{background:var(--pc-surface-2)!important;padding:0!important}
+.pos-detail{padding:12px 14px}
+.pos-detail-row{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.pos-detail-row:last-child{margin-bottom:0}
+.pos-detail-lbl{font-size:10px;font-weight:600;color:var(--pc-text-3);min-width:80px;text-transform:uppercase;letter-spacing:.04em}
+.pos-detail-val{font-size:12px;font-weight:600;color:var(--pc-heading);font-family:var(--pc-mono)}
+.mono{font-family:var(--pc-mono)}
+.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--pc-green);margin-right:4px;animation:pulse-dot 2s ease-in-out infinite}
+@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* ── Signal context badges ── */
+.signal-ctx{display:flex;gap:3px;flex-wrap:wrap;margin-top:4px}
+.ctx-item{font-size:9px;font-weight:600;padding:1px 5px;border-radius:2px;background:var(--pc-surface-3);color:var(--pc-text-3)}
+.ctx-up{background:var(--pc-green-bg);color:var(--pc-green)}
+.ctx-down{background:var(--pc-red-bg);color:var(--pc-red)}
+
+/* ── Empty state ── */
+.empty{text-align:center;padding:40px;color:var(--pc-text-3);font-size:13px}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
