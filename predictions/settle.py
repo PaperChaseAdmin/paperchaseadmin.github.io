@@ -5,24 +5,33 @@ Runs AFTER market close (~4:30 PM ET / 8:30 PM UTC).
 Compares predictions with actual market performance.
 """
 import json, os, sys, urllib.request
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(BASE, "predictions", "data", "predictions.json")
 MARKET_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json"
 
-# ── US Stock Market Holidays 2026 ──
-US_HOLIDAYS_2026 = {
-    date(2026, 1, 1),   date(2026, 1, 19),  date(2026, 2, 16),
-    date(2026, 4, 3),   date(2026, 5, 25),  date(2026, 6, 19),
-    date(2026, 7, 3),   date(2026, 9, 7),   date(2026, 11, 26),
-    date(2026, 12, 25),
-}
+OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
-def is_market_holiday(today: date) -> bool:
-    if today.weekday() >= 5:
-        return True
-    return today in US_HOLIDAYS_2026
+
+def call_openrouter(prompt, max_tokens=50):
+    """Quick OpenRouter call for simple checks. Returns text or None."""
+    if not OPENROUTER_KEY:
+        return None
+    try:
+        import requests
+        for model in ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-super-120b-a12b:free"]:
+            r = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={"Authorization": f"Bearer {OPENROUTER_KEY}", "Content-Type": "application/json", "HTTP-Referer": "https://paperchase.online"},
+                json={"model": model, "messages": [{"role": "user", "content": prompt}], "max_tokens": max_tokens, "temperature": 0},
+                timeout=15,
+            )
+            if r.ok:
+                return r.json()["choices"][0]["message"]["content"].strip()
+    except:
+        pass
+    return None
 
 
 def fetch_json(url):
@@ -92,10 +101,17 @@ def main():
     print(f"📊 PaperChase Prediction Settlement — {today}")
     print("=" * 50)
 
-    # Skip on holidays/weekends
-    if is_market_holiday(today_dt.date()):
-        print("  🏝️  US market closed today (holiday/weekend). Skipping settlement.")
+    # Check if market was open today via AI
+    weekday = today_dt.strftime("%A")
+    check = call_openrouter(
+        f"Was the US stock market (NYSE/NASDAQ) open for regular trading today {today} ({weekday})? "
+        "Reply with exactly: OPEN or CLOSED.",
+        max_tokens=10
+    )
+    if check and 'CLOSED' in check.upper():
+        print(f"  🏝️  Market CLOSED today. Skipping settlement.")
         return
+    print(f"  ✅ Market was OPEN — settling predictions...\n")
 
     with open(DATA_FILE, "r") as f:
         data = json.load(f)
