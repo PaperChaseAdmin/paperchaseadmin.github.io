@@ -138,10 +138,10 @@ let mainChart = null;
 // ── KPI ──────────────────────────────────
 function renderKPI(bots) {
   const active = bots.filter(b => b.status !== 'stopped');
-  const totalAUM = bots.reduce((s,b) => s + (b.portfolio_value || 10000), 0);
-  const avgReturn = active.length ? bots.reduce((s,b) => s + (b.pnl || 0), 0) / bots.length : 0;
-  const totalTrades = bots.reduce((s,b) => s + (b.trades || 0), 0);
-  const inProfit = bots.filter(b => (b.pnl || 0) > 0).length;
+  const totalAUM = bots.reduce((s,b) => s + (b.total_value || 10000), 0);
+  const avgReturn = active.length ? bots.reduce((s,b) => s + (b.total_return_pct || 0), 0) / bots.length : 0;
+  const totalTrades = bots.reduce((s,b) => s + (b.total_trades || 0), 0);
+  const inProfit = bots.filter(b => (b.total_return_pct || 0) > 0).length;
   const todayPL = bots.reduce((s,b) => s + (b.today_pnl || 0), 0);
 
   document.getElementById('kpi-dashboard').innerHTML =
@@ -178,13 +178,13 @@ function renderRisk(bots) {
 
 // ── Top Performers ────────────────────────
 function renderTopPerf(bots) {
-  const sorted = [...bots].sort((a,b) => (b.pnl || 0) - (a.pnl || 0)).slice(0,5);
+  const sorted = [...bots].sort((a,b) => (b.total_return_pct || 0) - (a.total_return_pct || 0)).slice(0,5);
   let html = '';
   sorted.forEach((b, i) => {
-    const pnl = b.pnl || 0;
+    const pnl = b.total_return_pct || 0;
     html += '<div style="display:flex;align-items:center;gap:8px">' +
       '<span style="font-size:10px;font-weight:700;color:var(--pc-text-3);min-width:18px">#' + (i+1) + '</span>' +
-      '<span style="font-size:13px;font-weight:600;color:var(--pc-heading);flex:1">' + (b.name || 'Bot') + '</span>' +
+      '<span style="font-size:13px;font-weight:600;color:var(--pc-heading);flex:1">' + (b.display_name || 'Bot') + '</span>' +
       '<span style="font-size:12px;font-weight:700;font-family:var(--pc-mono);color:' + (pnl >= 0 ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%</span>' +
     '</div>';
   });
