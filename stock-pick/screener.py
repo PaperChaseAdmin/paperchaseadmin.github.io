@@ -237,7 +237,7 @@ Max 25 words per analysis. No markdown, no extra text.
 Stocks:
 {batch}"""
 
-    models = ["meta-llama/llama-3.3-70b-instruct:free", "nvidia/nemotron-3-nano-30b-a3b:free", "qwen/qwen3-coder:free"]
+    models = ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-26b-a4b-it:free"]
     for model in models:
         try:
             resp = requests.post(
