@@ -109,21 +109,6 @@ def ai_market_predictions(md):
             m_str = ", ".join(f"{s}({c})" for s, c in top_mentions)
             reddit_text += f"- r/{r.get('subreddit','?')}: activity {r.get('activity_score',0)} | top mentioned: {m_str}\n"
 
-    # StockTwits data (new — replaces Reddit gap)
-    stocktwits = stocks.get("stocktwits", {})
-    st_trending = stocktwits.get("trending", [])
-    st_sentiment = stocktwits.get("sentiment", [])
-    st_text = ""
-    if st_trending:
-        st_text += "StockTwits Trending:\n"
-        for t in st_trending[:5]:
-            st_text += f"- {t['symbol']} ({t.get('title','')}) — watchlist: {t.get('watchlist_count',0)}\n"
-        st_text += "\nSentiment:\n"
-        for s in st_sentiment[:5]:
-            st_text += f"- {s['symbol']}: {s.get('bullish',0)} bullish / {s.get('bearish',0)} bearish (score: {s.get('sentiment_score',0)})\n"
-    if stocktwits.get("summary"):
-        st_text += f"\nSummary: {stocktwits['summary']}\n"
-
     # Macro indicators (new)
     macro = stocks.get("macro", [])
     macro_text = "\n".join(f"- {m['name']}: {m.get('value','?')} ({m.get('change_24h',0):+.2f}%)" for m in macro) if macro else ""
@@ -170,9 +155,6 @@ Crypto:
 
 Crypto Reddit:
 {crypto_reddit_text or "No Reddit crypto data"}
-
-StockTwits Social Sentiment:
-{st_text or "No StockTwits data"}
 
 Macro Indicators:
 {macro_text or "No macro data"}
