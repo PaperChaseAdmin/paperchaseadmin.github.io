@@ -193,21 +193,21 @@ function renderTopPerf(bots) {
 
 // ── Bots List ────────────────────────────
 function renderBots(bots) {
-  const sorted = [...bots].sort((a,b) => (b.pnl || 0) - (a.pnl || 0));
+  const sorted = [...bots].sort((a,b) => (b.total_return_pct || 0) - (a.total_return_pct || 0));
   let html = '';
   sorted.forEach((b, i) => {
-    const pnl = b.pnl || 0;
+    const pnl = b.total_return_pct || 0;
     const pnlClass = pnl >= 0 ? 'text-green' : 'text-red';
-    const botSlug = (b.slug || b.id || (b.name||'').toLowerCase().replace(/\s+/g,'-'));
+    const botSlug = (b.slug || b.bot_id || (b.display_name||'').toLowerCase().replace(/\s+/g,'-'));
     const avatarColors = ['#533afd','#15be53','#f59e0b','#ef4444','#3b82f6','#8b5cf6','#ec4899','#14b8a6'];
     const color = avatarColors[i % avatarColors.length];
     html += '<a class="bot-row" href="' + BOT_URL_PREFIX + botSlug + '/">' +
       '<span class="rank">#' + (i+1) + '</span>' +
-      '<div><div class="name">' + (b.name || 'Bot ' + (i+1)) + '</div><div class="strategy">' + (b.strategy || b.style || 'AI Trader') + '</div></div>' +
-      '<span class="portfolio">$' + ((b.portfolio_value || 10000).toLocaleString('en',{maximumFractionDigits:0})) + '</span>' +
+      '<div><div class="name">' + (b.display_name || 'Bot ' + (i+1)) + '</div><div class="strategy">' + (b.strategy || 'AI Trader') + '</div></div>' +
+      '<span class="portfolio">$' + ((b.total_value || 10000).toLocaleString('en',{maximumFractionDigits:0})) + '</span>' +
       '<span class="pnl ' + pnlClass + '">' + (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%</span>' +
-      '<span class="trades">' + (b.trades || 0) + ' trades</span>' +
-      '<button class="fav" onclick="event.preventDefault();toggleFav(\'' + botSlug + '\',\'' + (b.name || 'Bot') + '\')">☆</button>' +
+      '<span class="trades">' + (b.total_trades || 0) + ' trades</span>' +
+      '<button class="fav" onclick="event.preventDefault();toggleFav(\'' + botSlug + '\',\'' + (b.display_name || 'Bot') + '\')">☆</button>' +
     '</a>';
   });
   document.getElementById('bot-list').innerHTML = html;
