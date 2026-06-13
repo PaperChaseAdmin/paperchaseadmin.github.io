@@ -340,11 +340,13 @@ function renderStocks(d) {
 
   // Mood
   const rawMood = d.market_mood || {};
-  const mood = rawMood.score != null ? Math.round(rawMood.score * 100) : null;
-  if (mood != null) {
-    document.getElementById('market-mood-score').textContent = mood + '/100';
-    document.getElementById('market-mood-label').textContent = mood >= 75 ? 'Extreme Greed' : mood >= 55 ? 'Greed' : mood >= 45 ? 'Neutral' : mood >= 25 ? 'Fear' : 'Extreme Fear';
-    document.getElementById('market-mood-score').style.color = mood >= 55 ? 'var(--pc-green)' : mood >= 45 ? 'var(--pc-yellow)' : 'var(--pc-red)';
+  const rawScore = rawMood.score;
+  if (rawScore != null) {
+    // rawScore is -1..+1, convert to 0..100
+    const mood100 = Math.round((rawScore + 1) / 2 * 100);
+    document.getElementById('market-mood-score').textContent = mood100 + '/100';
+    document.getElementById('market-mood-label').textContent = mood100 >= 75 ? 'Extreme Greed' : mood100 >= 55 ? 'Greed' : mood100 >= 45 ? 'Neutral' : mood100 >= 25 ? 'Fear' : 'Extreme Fear';
+    document.getElementById('market-mood-score').style.color = mood100 >= 55 ? 'var(--pc-green)' : mood100 >= 45 ? 'var(--pc-yellow)' : 'var(--pc-red)';
   }
 
   // Mood sentiment bars
