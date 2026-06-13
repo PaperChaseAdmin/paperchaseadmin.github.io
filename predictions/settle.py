@@ -5,11 +5,25 @@ Runs AFTER market close (~4:30 PM ET / 8:30 PM UTC).
 Compares predictions with actual market performance.
 """
 import json, os, sys, urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(BASE, "predictions", "data", "predictions.json")
 MARKET_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json"
+
+# ── US Stock Market Holidays 2026 ──
+US_HOLIDAYS_2026 = {
+    date(2026, 1, 1),   date(2026, 1, 19),  date(2026, 2, 16),
+    date(2026, 4, 3),   date(2026, 5, 25),  date(2026, 6, 19),
+    date(2026, 7, 3),   date(2026, 9, 7),   date(2026, 11, 26),
+    date(2026, 12, 25),
+}
+
+def is_market_holiday(today: date) -> bool:
+    if today.weekday() >= 5:
+        return True
+    return today in US_HOLIDAYS_2026
+
 
 def fetch_json(url):
     try:
@@ -72,10 +86,16 @@ def settle_crypto_prediction(pred, md):
     return correct, actual_dir, btc_chg
 
 def main():
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today_dt = datetime.now(timezone.utc)
+    today = today_dt.strftime("%Y-%m-%d")
 
     print(f"📊 PaperChase Prediction Settlement — {today}")
     print("=" * 50)
+
+    # Skip on holidays/weekends
+    if is_market_holiday(today_dt.date()):
+        print("  🏝️  US market closed today (holiday/weekend). Skipping settlement.")
+        return
 
     with open(DATA_FILE, "r") as f:
         data = json.load(f)
