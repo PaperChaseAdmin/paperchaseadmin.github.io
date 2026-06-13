@@ -26,7 +26,7 @@ def fetch_json(url):
         return None
 
 
-def call_openrouter(prompt, model="qwen/qwen-2.5-72b-instruct:free", max_tokens=500):
+def call_openrouter(prompt, model="meta-llama/llama-3.3-70b-instruct:free", max_tokens=500):
     """Call OpenRouter AI and return text response."""
     if not OPENROUTER_KEY:
         print("  ⚠️  OPENROUTER_API_KEY not set")
