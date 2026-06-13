@@ -4,8 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Crypto Pulse — Crypto Market Intelligence</title>
-<meta name="description" content="Crypto market pulse — spot prices, news sentiment, Reddit buzz, CoinGecko trends, 4chan pulse, and AI-powered predictions."/>
-<meta name="keywords" content="crypto, bitcoin, ethereum, sentiment, news, reddit, coingecko, 4chan"/>
+<meta name="description" content="Crypto market pulse — spot prices, news sentiment, CoinGecko trends, macro indicators, and AI-powered predictions."/>
+<meta name="keywords" content="crypto, bitcoin, ethereum, sentiment, news, coingecko, macro"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://paperchase.online/crypto-pulse/"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
@@ -36,7 +36,6 @@
 .trending-row:last-child{border-bottom:none}
 .trending-sym{font-weight:600;font-size:12px;font-family:var(--pc-mono);min-width:55px;color:var(--pc-heading)}
 .trending-name{font-size:11px;color:var(--pc-text-2);flex:1}
-
 @media(max-width:900px){
   .gauge-svg{width:140px;height:90px}
 }
@@ -66,7 +65,7 @@
   <div class="page-header">
     <div class="page-title-wrap">
       <div class="page-title">Crypto Pulse</div>
-      <div class="page-sub"><span class="live"></span> Crypto prices · Sentiment · News · Reddit · Trends · 4chan pulse</div>
+      <div class="page-sub"><span class="live"></span> Crypto prices · Sentiment · News · Trends · Macro</div>
     </div>
     <div id="countdown-wrap" class="countdown-wrap"></div>
   </div>
@@ -123,19 +122,13 @@
         <div class="source-note"><strong>Source:</strong> CoinDesk, Cointelegraph, Decrypt, CryptoSlate</div>
       </div>
       <div class="card">
-        <div class="card-title">🐸 4chan /biz/ Community Pulse</div>
-        <div id="crypto-fourchain"></div>
-        <div class="source-note"><strong>Source:</strong> 4chan /biz/</div>
-      </div>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
         <div class="card-title">🔥 CoinGecko Trending Searches</div>
         <div id="crypto-cg-trending"></div>
         <div class="source-note"><strong>Source:</strong> CoinGecko</div>
       </div>
-      <div class="card">
+    </div>
+
+    <div class="grid-2">
         <div class="card-title">📈 Macro Indicators</div>
         <div id="crypto-macro"></div>
         <div class="source-note"><strong>Source:</strong> yfinance</div>
@@ -191,7 +184,6 @@ async function loadData() {
       news: c.news || [],
       reddit_activity: c.reddit || [],
       cg_trending: c.cg_trending || [],
-      fourchain: c.fourchain || [],
       macro: s.macro || [],
       most_active: s.most_active || [],
     };
@@ -282,15 +274,6 @@ function render(d) {
       html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||t.symbol||'') + '</span></div>';
     });
     document.getElementById('crypto-cg-trending').innerHTML = html;
-  }
-
-  // 4chan /biz/
-  if (d.fourchain && d.fourchain.length) {
-    let html = '';
-    d.fourchain.slice(0,8).forEach(t => {
-      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||'') + '</span></div>';
-    });
-    document.getElementById('crypto-fourchain').innerHTML = html;
   }
 
   // ── Macro ──
