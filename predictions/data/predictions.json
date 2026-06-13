@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-13T09:11:53Z",
-  "last_prediction_date": "2026-06-13",
+  "updated_at": "",
+  "last_prediction_date": "",
   "last_settle_date": "2026-06-12",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "icon": "📊",
+      "icon": "\ud83d\udcca",
       "color": "#3b82f6",
       "link": "/market-sentinel/",
       "predictions": [
@@ -41,45 +41,15 @@
           "correct": false,
           "settled": true,
           "change_pct": 1.03
-        },
-        {
-          "date": "2026-06-13",
-          "market": "S&P 500",
-          "prediction": "neutral",
-          "confidence": 50,
-          "signal": "AI unavailable",
-          "actual": null,
-          "correct": null,
-          "settled": false
-        },
-        {
-          "date": "2026-06-13",
-          "market": "NASDAQ",
-          "prediction": "neutral",
-          "confidence": 50,
-          "signal": "AI unavailable",
-          "actual": null,
-          "correct": null,
-          "settled": false
-        },
-        {
-          "date": "2026-06-13",
-          "market": "DOW",
-          "prediction": "neutral",
-          "confidence": 50,
-          "signal": "AI unavailable",
-          "actual": null,
-          "correct": null,
-          "settled": false
         }
       ],
-      "total": 6,
+      "total": 3,
       "correct": 0,
       "accuracy_pct": 0.0
     },
     "crypto_pulse": {
       "label": "Crypto Pulse",
-      "icon": "🪙",
+      "icon": "\ud83e\ude99",
       "color": "#eab308",
       "link": "/crypto-pulse/",
       "predictions": [
@@ -88,30 +58,20 @@
           "market": "Crypto Market",
           "prediction": "up",
           "confidence": 75,
-          "signal": "Extreme Fear (12) — contrarian buy signal",
+          "signal": "Extreme Fear (12) \u2014 contrarian buy signal",
           "actual": "up",
           "correct": true,
           "settled": true,
           "change_pct": 2.09
-        },
-        {
-          "date": "2026-06-13",
-          "market": "Crypto Market",
-          "prediction": "neutral",
-          "confidence": 50,
-          "signal": "AI unavailable",
-          "actual": null,
-          "correct": null,
-          "settled": false
         }
       ],
-      "total": 2,
+      "total": 1,
       "correct": 1,
       "accuracy_pct": 100.0
     },
     "poly_watch": {
       "label": "Poly Watch",
-      "icon": "🎲",
+      "icon": "\ud83c\udfb2",
       "color": "#a855f7",
       "link": "/poly-watch/",
       "predictions": [
@@ -120,7 +80,7 @@
           "market": "Will Russia capture Sumy by March 31, 2027?",
           "prediction": "down",
           "confidence": 84,
-          "signal": "Yes: 16% — heuristic score: 20",
+          "signal": "Yes: 16% \u2014 heuristic score: 20",
           "actual": null,
           "correct": null,
           "settled": false
@@ -130,23 +90,13 @@
           "market": "Will Russia capture Sumy by March 31, 2027?",
           "prediction": "down",
           "confidence": 84,
-          "signal": "Yes: 16% — heuristic score: 20",
-          "actual": null,
-          "correct": null,
-          "settled": false
-        },
-        {
-          "date": "2026-06-13",
-          "market": "Top Prediction Market",
-          "prediction": "neutral",
-          "confidence": 50,
-          "signal": "AI unavailable",
+          "signal": "Yes: 16% \u2014 heuristic score: 20",
           "actual": null,
           "correct": null,
           "settled": false
         }
       ],
-      "total": 3,
+      "total": 2,
       "correct": 0,
       "accuracy_pct": null
     }
