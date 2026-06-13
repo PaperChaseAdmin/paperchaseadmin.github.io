@@ -1,14 +1,12 @@
 # Scheduled prediction + settlement workflow
-# Runs Mon-Fri: predict before open, settle after close
+# Runs Mon-Fri: predict + stock pick 1hr before US market open (12:30 UTC = 8:30 AM ET)
+# Settle after close (20:30 UTC = 4:30 PM ET)
 name: Predictions
 
 on:
   schedule:
-    # Stock Pick: Mon-Fri 12:30 PM UTC (8:30 AM ET, 1hr before open)
-    - cron: '30 12 * * 1-5'
-    - cron: '0 13 * * 1-5'
-    # Settle: Mon-Fri 8:30 PM UTC (4:30 PM ET)
-    - cron: '30 20 * * 1-5'
+    - cron: '30 12 * * 1-5'   # 12:30 UTC — predictions + stock pick (1hr before open)
+    - cron: '30 20 * * 1-5'   # 20:30 UTC — settlement after close
   workflow_dispatch:
 
 permissions:
@@ -31,30 +29,27 @@ jobs:
           HOUR=$(date -u +%H)
           MIN=$(date -u +%M)
           if [ "$HOUR" -eq 12 ] && [ "$MIN" -ge 30 ]; then
-            echo "mode=stockpick" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -eq 13 ]; then
-            echo "mode=predict" >> $GITHUB_OUTPUT
+            echo "mode=predict_stockpick" >> $GITHUB_OUTPUT
           elif [ "$HOUR" -eq 20 ]; then
             echo "mode=settle" >> $GITHUB_OUTPUT
           else
             echo "mode=manual" >> $GITHUB_OUTPUT
           fi
 
-      - name: Stock Pick screener
-        if: steps.mode.outputs.mode == 'stockpick' || steps.mode.outputs.mode == 'manual'
+      - name: Run predictions (AI-powered)
+        if: steps.mode.outputs.mode == 'predict_stockpick' || steps.mode.outputs.mode == 'manual'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          pip install yfinance -q
-          python3 stock-pick/screener.py 2>&1 | tail -5
-
-      - name: Run predictions
-        if: steps.mode.outputs.mode == 'predict' || steps.mode.outputs.mode == 'manual'
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: |
+          pip install requests -q
           python3 predictions/predict.py
-          pip install yfinance -q
+
+      - name: Run Stock Pick screener (yfinance + AI analysis)
+        if: steps.mode.outputs.mode == 'predict_stockpick' || steps.mode.outputs.mode == 'manual'
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          pip install yfinance requests -q
           python3 stock-pick/screener.py 2>&1 | tail -5
 
       - name: Run settlement

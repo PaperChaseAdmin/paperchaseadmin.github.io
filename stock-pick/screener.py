@@ -212,8 +212,9 @@ def generate_summary(row: dict) -> str:
 
 def ai_analysis(picks: list[dict]) -> list[dict]:
     """Use OpenRouter AI to generate a brief analysis for each pick."""
-    openrouter_key = os.environ.get("OPENROUTER_API_KEY", "")
+    openrouter_key = os.environ.get("OPENROUTER_API_KEY", "") or os.environ.get("OR_KEY", "")
     if not openrouter_key or not picks:
+        print("  [AI Analysis] No OPENROUTER_API_KEY set, skipping AI analysis")
         return picks
 
     # Batch analyze top 15 picks
