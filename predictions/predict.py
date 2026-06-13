@@ -117,6 +117,18 @@ def ai_market_predictions(md):
     most_active = stocks.get("most_active", [])
     active_text = "\n".join(f"- {m['symbol']}: ${m.get('price_usd','?')} ({m.get('change_24h',0):+.2f}%) vol:{m.get('volume',0):,}" for m in most_active[:5]) if most_active else ""
 
+    # Google Trends
+    gt = stocks.get("google_trends", {})
+    gt_stocks = gt.get("stocks", [])
+    gt_crypto = gt.get("crypto", [])
+    trends_text = ""
+    if gt_stocks:
+        trends_text += "Stock search interest (0-100):\n"
+        trends_text += "\n".join(f"- {t['symbol']}: {t['interest_score']}" for t in gt_stocks[:8])
+    if gt_crypto:
+        trends_text += "\nCrypto search interest:\n"
+        trends_text += "\n".join(f"- {t['keyword']}: {t['interest_score']}" for t in gt_crypto)
+
     # Reddit summary
     reddit_summary = stocks.get("reddit_summary", {}).get("summary", "")
     news_summary = stocks.get("news_summary", {}).get("summary", "")
@@ -161,6 +173,9 @@ Macro Indicators:
 
 Most Active Stocks (by volume):
 {active_text or "No volume data"}
+
+Google Trends Search Interest:
+{trends_text or "No trends data"}
 
 Reply ONLY with a JSON object in this EXACT format:
 {{"sp500":{{"direction":"up","confidence":75,"signal":"Bullish momentum from strong earnings and positive Reddit sentiment"}},"nasdaq":{{"direction":"up","confidence":70,"signal":"..."}},"dow":{{"direction":"neutral","confidence":50,"signal":"..."}},"crypto":{{"direction":"up","confidence":65,"signal":"..."}}}}
