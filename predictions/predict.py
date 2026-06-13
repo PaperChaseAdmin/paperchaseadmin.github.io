@@ -288,7 +288,7 @@ def main():
     for p in pw_preds:
         print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
 
-    # Save predictions
+    # Save predictions — don't overwrite settlement data
     tools = data.get("tools", {})
     for tool_key, preds in [("market_sentinel", ms_preds), ("crypto_pulse", cp_preds), ("poly_watch", pw_preds)]:
         tool = tools.get(tool_key, {})
@@ -305,7 +305,6 @@ def main():
                 "correct": None,
                 "settled": False
             })
-        tool["total"] = len(tool["predictions"])
 
     data["last_prediction_date"] = today
     data["updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
