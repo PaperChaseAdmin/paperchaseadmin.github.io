@@ -42,12 +42,16 @@ jobs:
 
       - name: Stock Pick screener
         if: steps.mode.outputs.mode == 'stockpick' || steps.mode.outputs.mode == 'manual'
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           pip install yfinance -q
           python3 stock-pick/screener.py 2>&1 | tail -5
 
       - name: Run predictions
         if: steps.mode.outputs.mode == 'predict' || steps.mode.outputs.mode == 'manual'
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           python3 predictions/predict.py
           pip install yfinance -q

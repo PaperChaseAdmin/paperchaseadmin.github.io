@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-PaperChase Prediction Generator
+PaperChase Prediction Generator (AI-powered via OpenRouter)
 Runs BEFORE market open (~9:00 AM ET / 1:00 PM UTC).
-Predicts stock index direction using pre-market data + sentiment.
+Uses OpenRouter to analyze market data, news sentiment, Reddit buzz & prediction markets.
 """
-import json, os, sys, urllib.request
+import json, os, sys, urllib.request, re
 from datetime import datetime, timezone
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,6 +12,9 @@ DATA_FILE = os.path.join(BASE, "predictions", "data", "predictions.json")
 MARKET_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json"
 TRADE_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/leaderboard.json"
 POLY_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/polymarket/scan_results.json"
+
+OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+
 
 def fetch_json(url):
     try:
@@ -22,101 +25,221 @@ def fetch_json(url):
         print(f"  ⚠️  Fetch failed: {url.split('/')[-1]}: {e}")
         return None
 
-def market_sentinel_predict(md):
-    """Predict S&P 500, NASDAQ, Dow direction using sentiment + momentum."""
-    stocks = md.get("stocks", {})
-    indices = stocks.get("indices", {})
-    mood = stocks.get("market_mood", {})
 
+def call_openrouter(prompt, model="qwen/qwen-2.5-72b-instruct:free", max_tokens=500):
+    """Call OpenRouter AI and return text response."""
+    if not OPENROUTER_KEY:
+        print("  ⚠️  OPENROUTER_API_KEY not set")
+        return None
+    try:
+        import requests
+        resp = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {OPENROUTER_KEY}",
+                "Content-Type": "application/json",
+                "HTTP-Referer": "https://paperchase.online",
+            },
+            json={
+                "model": model,
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": max_tokens,
+                "temperature": 0.2,
+            },
+            timeout=30,
+        )
+        if resp.ok:
+            return resp.json()["choices"][0]["message"]["content"].strip()
+        print(f"  ⚠️  OpenRouter HTTP {resp.status_code}: {resp.text[:200]}")
+    except Exception as e:
+        print(f"  ⚠️  OpenRouter: {e}")
+    return None
+
+
+def extract_json(text):
+    """Extract JSON array or object from AI response text."""
+    m = re.search(r'\[.*?\]', text, re.DOTALL)
+    if m:
+        try:
+            return json.loads(m.group())
+        except:
+            pass
+    m = re.search(r'\{.*\}', text, re.DOTALL)
+    if m:
+        try:
+            return json.loads(m.group())
+        except:
+            pass
+    return None
+
+
+def ai_market_predictions(md):
+    """Use OpenRouter AI to predict index directions from all available data."""
+    if not md:
+        return []
+
+    stocks = md.get("stocks", {})
+    crypto = md.get("crypto", {})
+
+    # Build context from ALL available data
+    indices_str = json.dumps(stocks.get("indices", {}), indent=2)
+    mood = stocks.get("market_mood", {})
+    mood_str = json.dumps(mood, indent=2)
+
+    # News summaries
+    news = stocks.get("news", [])
+    news_text = "\n".join(f"- [{n.get('source','?')}] {n['title']} ({n.get('sentiment','neutral')})" for n in news[:10]) if news else "No news data"
+
+    # Reddit data
+    reddit = stocks.get("reddit", [])
+    reddit_text = ""
+    if reddit:
+        for r in reddit[:5]:
+            mentions = r.get("mentions", {})
+            top_mentions = sorted(mentions.items(), key=lambda x: x[1], reverse=True)[:5]
+            m_str = ", ".join(f"{s}({c})" for s, c in top_mentions)
+            reddit_text += f"- r/{r.get('subreddit','?')}: activity {r.get('activity_score',0)} | top mentioned: {m_str}\n"
+
+    # Reddit summary
+    reddit_summary = stocks.get("reddit_summary", {}).get("summary", "")
+    news_summary = stocks.get("news_summary", {}).get("summary", "")
+
+    # Crypto data
+    fg = crypto.get("fear_greed", {})
+    btc = next((p for p in crypto.get("prices", []) if p.get("symbol") == "BTC"), {})
+    crypto_reddit = crypto.get("reddit", [])
+    crypto_reddit_text = ""
+    if crypto_reddit:
+        for r in crypto_reddit[:3]:
+            mentions = r.get("mentions", {})
+            top_m = sorted(mentions.items(), key=lambda x: x[1], reverse=True)[:3]
+            m_str = ", ".join(f"{s}({c})" for s, c in top_m)
+            crypto_reddit_text += f"- r/{r.get('subreddit','?')}: {m_str}\n"
+
+    prompt = f"""You are a professional market analyst. Based on ALL the data below, predict the direction (up/down/neutral) for each major index today.
+
+Indices:
+{indices_str}
+
+Market Mood: {mood_str}
+
+Recent News Sentiment:
+{news_text}
+
+{("AI News Summary: " + news_summary) if news_summary else ""}
+
+Reddit Stock Buzz:
+{reddit_text or "No Reddit stock data"}
+{("Reddit AI Summary: " + reddit_summary) if reddit_summary else ""}
+
+Crypto:
+- Fear & Greed: {fg.get('value', 'N/A')} ({fg.get('label', 'N/A')})
+- BTC: ${btc.get('price_usd', 'N/A')} (24h: {btc.get('change_24h', 'N/A')}%)
+
+Crypto Reddit:
+{crypto_reddit_text or "No Reddit crypto data"}
+
+Reply ONLY with a JSON object in this EXACT format:
+{{"sp500":{{"direction":"up","confidence":75,"signal":"Bullish momentum from strong earnings and positive Reddit sentiment"}},"nasdaq":{{"direction":"up","confidence":70,"signal":"..."}},"dow":{{"direction":"neutral","confidence":50,"signal":"..."}},"crypto":{{"direction":"up","confidence":65,"signal":"..."}}}}
+
+Rules:
+- direction MUST be "up", "down", or "neutral"
+- confidence: 1-100 integer reflecting how confident you are
+- signal: brief reason mentioning actual data (news, reddit, momentum, F&G, etc.)
+- Be honest — neutral + 50 is fine when signals are mixed
+- CRITICAL: Base your analysis on the actual data provided above, NOT generic knowledge"""
+
+    print("  Calling OpenRouter AI for predictions...")
+    text = call_openrouter(prompt, max_tokens=600)
+    if not text:
+        print("  ⚠️  AI call failed, falling back to neutral")
+        return None
+
+    parsed = extract_json(text)
+    if not parsed:
+        print(f"  ⚠️  Could not parse AI response: {text[:200]}")
+        return None
+
+    # Extract stock index predictions
     results = []
     for key, label in [("sp500", "S&P 500"), ("nasdaq", "NASDAQ"), ("dow", "DOW")]:
-        idx = indices.get(key, {})
-        chg = idx.get("change_24h", 0)
-        score = mood.get("score", 0.5) if mood else 0.5
-
-        # Direction: momentum + sentiment weighted
-        if chg > 0.3 and score > 0.5:
-            direction, signal, conf = "up", "Momentum + bullish sentiment", 70
-        elif chg > 0 and score > 0.4:
-            direction, signal, conf = "up", "Slight positive momentum", 55
-        elif chg < -0.3 and score < 0.5:
-            direction, signal, conf = "down", "Negative momentum + bearish sentiment", 70
-        elif chg < 0 and score < 0.6:
-            direction, signal, conf = "down", "Slight negative momentum", 55
-        elif score > 0.6:
-            direction, signal, conf = "up", "Bullish market sentiment", 60
-        elif score < 0.4:
-            direction, signal, conf = "down", "Bearish market sentiment", 60
+        p = parsed.get(key, {})
+        if isinstance(p, dict):
+            results.append({
+                "market": label,
+                "prediction": p.get("direction", "neutral"),
+                "confidence": min(100, max(1, int(p.get("confidence", 50)))),
+                "signal": p.get("signal", "AI analysis")
+            })
         else:
-            direction, signal, conf = "neutral", "Mixed signals — wait and see", 50
+            results.append({"market": label, "prediction": "neutral", "confidence": 50, "signal": "AI analysis unavailable"})
 
+    # Crypto prediction
+    cp = parsed.get("crypto", {})
+    if isinstance(cp, dict):
         results.append({
-            "market": label, "prediction": direction,
-            "confidence": conf, "signal": signal
+            "market": "Crypto Market",
+            "prediction": cp.get("direction", "neutral"),
+            "confidence": min(100, max(1, int(cp.get("confidence", 50)))),
+            "signal": cp.get("signal", "AI analysis")
         })
+    else:
+        results.append({"market": "Crypto Market", "prediction": "neutral", "confidence": 50, "signal": "AI analysis unavailable"})
+
     return results
 
-def crypto_pulse_predict(md):
-    """Predict crypto direction using Fear & Greed (contrarian)."""
-    crypto = md.get("crypto", {})
-    fg = crypto.get("fear_greed", {})
-    val = fg.get("value", 50)
-    label = fg.get("label", "Neutral")
 
-    if val <= 20:
-        direction, signal, conf = "up", f"Extreme Fear ({val}) — contrarian buy signal", 75
-    elif val <= 35:
-        direction, signal, conf = "up", f"Fear ({val}) — potential recovery", 60
-    elif val >= 80:
-        direction, signal, conf = "down", f"Extreme Greed ({val}) — contrarian sell signal", 75
-    elif val >= 65:
-        direction, signal, conf = "down", f"Greed ({val}) — potential pullback", 60
-    else:
-        # Momentum-based
-        prices = crypto.get("prices", [])
-        btc = next((p for p in prices if p.get("symbol") == "BTC"), {})
-        btc_chg = btc.get("change_24h", 0)
-        if btc_chg > 2:
-            direction, signal, conf = "up", f"BTC momentum +{btc_chg:.1f}%", 60
-        elif btc_chg < -2:
-            direction, signal, conf = "down", f"BTC selloff {btc_chg:.1f}%", 60
-        else:
-            direction, signal, conf = "neutral", F"Neutral sentiment ({label})", 50
-
-    return [{
-        "market": "Crypto Market",
-        "prediction": direction,
-        "confidence": conf,
-        "signal": signal
-    }]
-
-def poly_watch_predict(pd):
-    """Use top pick from prediction markets as the prediction."""
+def ai_poly_predict(pd):
+    """Use OpenRouter to analyze the top poly market bets."""
     if not pd:
         return [{"market": "Top Prediction Market", "prediction": "neutral", "confidence": 50, "signal": "No data available"}]
+
     markets = pd.get("markets", [])
-    scored = [m for m in markets if m.get("heuristic", {}).get("score", 0) >= 15]
-    scored.sort(key=lambda m: m.get("heuristic", {}).get("score", 0), reverse=True)
+    scored = sorted([m for m in markets if m.get("heuristic", {}).get("score", 0) >= 10],
+                    key=lambda m: m.get("heuristic", {}).get("score", 0), reverse=True)
+
     if not scored:
-        return [{"market": "Top Prediction Market", "prediction": "neutral", "confidence": 50, "signal": "No top picks today"}]
+        return [{"market": "Top Prediction Market", "prediction": "neutral", "confidence": 50, "signal": "No high-confidence markets today"}]
 
-    top = scored[0]
-    yes_pct = top.get("yes_price", 0.5) * 100
-    bet_yes = yes_pct >= 50
-    direction = "up" if bet_yes else "down"
-    question = top.get("question", "Unknown market")[:60]
+    top5 = scored[:5]
+    context = "\n".join(
+        f"- {m['question']} | Yes: {m['yes_price']*100:.0f}% | Ends: {m.get('end_date','?')[:10]} | Vol: ${m.get('volume',0):,.0f} | Heuristic: {m.get('heuristic',{}).get('score',0)}"
+        for m in top5
+    )
 
-    return [{
-        "market": question,
-        "prediction": direction,
-        "confidence": round(max(yes_pct, 100 - yes_pct)),
-        "signal": f"Yes: {yes_pct:.0f}% — heuristic score: {top['heuristic']['score']}"
-    }]
+    prompt = f"""Analyze these prediction markets. Pick the SINGLE best bet for today.
+
+Markets:
+{context}
+
+Reply with EXACTLY this JSON (no other text):
+{{"question":"exact market question","bet":"YES","confidence":80,"rationale":"why this is the best bet"}}
+- bet: "YES" or "NO" (YES = think it will happen, NO = won't happen)
+- confidence: 1-100
+- rationale: one brief sentence"""
+
+    print("  Calling OpenRouter AI for poly watch pick...")
+    text = call_openrouter(prompt, max_tokens=300)
+    if not text:
+        return [{"market": "Top Prediction Market", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"}]
+
+    parsed = extract_json(text)
+    if not parsed or not isinstance(parsed, dict):
+        return [{"market": "Top Prediction Market", "prediction": "neutral", "confidence": 50, "signal": "AI parse failed"}]
+
+    question = parsed.get("question", "Top Prediction Market")[:60]
+    bet = parsed.get("bet", "YES")
+    direction = "up" if bet == "YES" else "down"
+    conf = min(100, max(1, int(parsed.get("confidence", 50))))
+    rationale = parsed.get("rationale", "AI analysis")
+
+    return [{"market": question, "prediction": direction, "confidence": conf, "signal": rationale}]
+
 
 def main():
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    print(f"📊 PaperChase Prediction Generator — {today}")
+    print(f"📊 PaperChase AI Prediction Generator — {today}")
     print("=" * 50)
 
     # Load current predictions
@@ -131,19 +254,28 @@ def main():
     print("\n1️⃣  Fetching market data...")
     md = fetch_json(MARKET_DATA_URL)
 
-    print("\n2️⃣  Market Sentinel — Stock Index Predictions...")
-    ms_preds = market_sentinel_predict(md) if md else []
-    for p in ms_preds:
-        print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
-
-    print("\n3️⃣  Crypto Pulse — Crypto Prediction...")
-    cp_preds = crypto_pulse_predict(md) if md else []
-    for p in cp_preds:
-        print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
-
-    print("\n4️⃣  Poly Watch — Prediction Market Top Pick...")
+    print("\n2️⃣  Fetching prediction markets...")
     pd = fetch_json(POLY_DATA_URL)
-    pw_preds = poly_watch_predict(pd)
+
+    # AI-powered predictions
+    print("\n3️⃣  AI Market Predictions (OpenRouter)...")
+    all_preds = ai_market_predictions(md)
+    if not all_preds:
+        # Fallback to neutral
+        print("  Using neutral fallback")
+        all_preds = [
+            {"market": "S&P 500", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"},
+            {"market": "NASDAQ", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"},
+            {"market": "DOW", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"},
+            {"market": "Crypto Market", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"},
+        ]
+
+    # Separate by tool
+    ms_preds = [p for p in all_preds if p["market"] in ("S&P 500", "NASDAQ", "DOW")]
+    cp_preds = [p for p in all_preds if p["market"] == "Crypto Market"]
+
+    print("\n4️⃣  AI Poly Watch Pick (OpenRouter)...")
+    pw_preds = ai_poly_predict(pd)
     for p in pw_preds:
         print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
 
@@ -172,7 +304,12 @@ def main():
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✅ Predictions saved to predictions.json ({sum(len(t.get('predictions',[])) for t in tools.values())} total)")
+    print(f"\n✅ Predictions saved ({sum(len(t.get('predictions',[])) for t in tools.values())} total)")
+    for p in ms_preds:
+        print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
+    for p in cp_preds:
+        print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
+
 
 if __name__ == "__main__":
     main()

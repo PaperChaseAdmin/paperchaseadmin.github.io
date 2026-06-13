@@ -182,15 +182,14 @@ async function loadData() {
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const raw = await resp.json();
     const c = raw.crypto || {};
-    const s = raw.stocks || {};
     const data = {
       fear_greed: c.fear_greed,
-      crypto_sentiment: {score: 0, label: ''},
-      reddit_mentions: s.top_mentioned || [],
+      crypto_sentiment: c.news_sentiment || {score: 0, label: ''},
+      reddit_mentions: c.top_mentioned || [],
       crypto_prices: {},
-      poly_markets: (s.polymarket || []).map(m => ({...m, question: m.title || m.question})),
-      news: s.news || [],
-      reddit_activity: s.reddit || [],
+      poly_markets: c.polymarket || [],
+      news: c.news || [],
+      reddit_activity: c.reddit || [],
       cg_trending: c.cg_trending || [],
       fourchain: c.fourchain || []
     };
@@ -270,9 +269,8 @@ function render(d) {
 
   // Crypto news
   if (d.news && d.news.length) {
-    const cryptoNews = d.news.filter(n => /crypto|bitcoin|eth|defi|nft|blockchain/i.test(n.title));
     let html = '';
-    (cryptoNews.length ? cryptoNews : d.news.slice(0,5)).forEach(n => {
+    d.news.slice(0,6).forEach(n => {
       html += '<div class="news-item"><span class="news-source">' + (n.source||'') + '</span><a class="news-title" href="' + (n.url||'#') + '" target="_blank">' + n.title + '</a></div>';
     });
     document.getElementById('crypto-news').innerHTML = html;
@@ -280,9 +278,8 @@ function render(d) {
 
   // Reddit activity
   if (d.reddit_activity && d.reddit_activity.length) {
-    const cryptoSubs = d.reddit_activity.filter(r => /crypto|bitcoin|eth|altcoin|defi|satoshi/i.test(r.subreddit));
     let html = '';
-    (cryptoSubs.length ? cryptoSubs : d.reddit_activity.slice(0,5)).forEach(r => {
+    d.reddit_activity.slice(0,5).forEach(r => {
       html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
     });
     document.getElementById('crypto-reddit').innerHTML = html;
