@@ -73,6 +73,12 @@
   .track-grid{grid-template-columns:1fr}
   .acc-grid{grid-template-columns:1fr}
 }
+
+/* ── Trending row (StockTwits) ───────────────── */
+.trending-row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--pc-border)}
+.trending-row:last-child{border-bottom:none}
+.trending-sym{font-weight:600;font-size:12px;font-family:var(--pc-mono);min-width:55px;color:var(--pc-heading)}
+.trending-name{font-size:11px;color:var(--pc-text-2);flex:1}
 </style>
 </head>
 <body>
@@ -160,6 +166,34 @@
         <div class="card-title">Reddit Activity</div>
         <div id="stock-reddit"></div>
         <div class="source-note"><strong>Source:</strong> Reddit · r/wallstreetbets, r/stocks, r/investing</div>
+      </div>
+    </div>
+
+    <!-- ── NEW: StockTwits ─────────────────────── -->
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">📢 StockTwits — Trending Stocks</div>
+        <div id="stocktwits-trending"></div>
+        <div class="source-note"><strong>Source:</strong> StockTwits</div>
+      </div>
+      <div class="card">
+        <div class="card-title">📢 StockTwits — Sentiment</div>
+        <div id="stocktwits-sentiment"></div>
+        <div class="source-note"><strong>Source:</strong> StockTwits</div>
+      </div>
+    </div>
+
+    <!-- ── NEW: Macro Indicators ──────────────── -->
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">📈 Macro Indicators</div>
+        <div id="macro-indicators"></div>
+        <div class="source-note"><strong>Source:</strong> yfinance</div>
+      </div>
+      <div class="card">
+        <div class="card-title">🔥 Most Active Stocks</div>
+        <div id="most-active"></div>
+        <div class="source-note"><strong>Source:</strong> yfinance by volume</div>
       </div>
     </div>
 
@@ -409,6 +443,51 @@ function renderStocks(d) {
       html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
     });
     document.getElementById('stock-reddit').innerHTML = html;
+  }
+
+  // ── StockTwits trending ──
+  const st = d.stocktwits || {};
+  if (st.trending && st.trending.length) {
+    let h = '';
+    st.trending.slice(0,8).forEach(t => {
+      h += '<div class="trending-row"><span class="trending-sym">' + t.symbol + '</span><span class="trending-name">' + (t.title||'') + '</span><span style="font-size:10px;color:var(--pc-text-3);margin-left:auto">' + (t.watchlist_count||0) + ' watching</span></div>';
+    });
+    document.getElementById('stocktwits-trending').innerHTML = h;
+  }
+
+  // ── StockTwits sentiment ──
+  if (st.sentiment && st.sentiment.length) {
+    let h = '';
+    st.sentiment.slice(0,6).forEach(s => {
+      const net = (s.bullish||0) - (s.bearish||0);
+      const cls = net > 0 ? 'text-green' : net < 0 ? 'text-red' : '';
+      h += '<div class="price-row"><span class="price-sym">' + s.symbol + '</span><span style="font-size:11px;font-family:var(--pc-mono)">' + (s.bullish||0) + '🐂 ' + (s.bearish||0) + '🐻</span><span class="' + cls + '" style="font-size:11px">' + (net > 0 ? '+' : '') + net + '</span></div>';
+    });
+    if (st.summary) {
+      h += '<div style="font-size:10px;color:var(--pc-text-3);margin-top:8px;padding-top:8px;border-top:1px solid var(--pc-border)">' + st.summary + '</div>';
+    }
+    document.getElementById('stocktwits-sentiment').innerHTML = h;
+  }
+
+  // ── Macro indicators ──
+  const macro = d.macro || [];
+  if (macro.length) {
+    let h = '';
+    macro.forEach(m => {
+      const chg = m.change_24h;
+      h += '<div class="price-row"><span class="price-sym" style="min-width:100px;font-family:var(--pc-font);font-size:12px">' + (m.name||m.symbol) + '</span><span class="price-val">' + (m.value != null ? m.value : '—') + '</span><span class="' + (chg >= 0 ? 'text-green' : 'text-red') + '">' + (chg >= 0 ? '+' : '') + (chg||0).toFixed(2) + '%</span></div>';
+    });
+    document.getElementById('macro-indicators').innerHTML = h;
+  }
+
+  // ── Most active stocks ──
+  const active = d.most_active || [];
+  if (active.length) {
+    let h = '';
+    active.slice(0,8).forEach(m => {
+      h += '<div class="price-row"><span class="price-sym">' + m.symbol + '</span><span class="price-val">$' + (m.price_usd||0).toLocaleString('en',{maximumFractionDigits:2}) + '</span><span class="' + (m.change_24h >= 0 ? 'text-green' : 'text-red') + '">' + (m.change_24h >= 0 ? '+' : '') + (m.change_24h||0).toFixed(2) + '%</span></div>';
+    });
+    document.getElementById('most-active').innerHTML = h;
   }
 }
 
