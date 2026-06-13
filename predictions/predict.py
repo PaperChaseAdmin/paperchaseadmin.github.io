@@ -5,7 +5,7 @@ Runs BEFORE market open (~9:00 AM ET / 1:00 PM UTC).
 Uses OpenRouter to analyze market data, news sentiment, Reddit buzz & prediction markets.
 """
 import json, os, sys, urllib.request, re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(BASE, "predictions", "data", "predictions.json")
@@ -14,6 +14,27 @@ TRADE_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/d
 POLY_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/polymarket/scan_results.json"
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+
+# ── US Stock Market Holidays 2026 ──
+US_HOLIDAYS_2026 = {
+    date(2026, 1, 1),   # New Year's Day
+    date(2026, 1, 19),  # MLK Day
+    date(2026, 2, 16),  # Presidents' Day
+    date(2026, 4, 3),   # Good Friday
+    date(2026, 5, 25),  # Memorial Day
+    date(2026, 6, 19),  # Juneteenth
+    date(2026, 7, 3),   # Independence Day (observed)
+    date(2026, 9, 7),   # Labor Day
+    date(2026, 11, 26), # Thanksgiving
+    date(2026, 12, 25), # Christmas
+}
+
+
+def is_market_holiday(today: date) -> bool:
+    """Check if today is a US stock market holiday or weekend."""
+    if today.weekday() >= 5:  # Saturday=5, Sunday=6
+        return True
+    return today in US_HOLIDAYS_2026
 
 
 def fetch_json(url):
@@ -258,6 +279,11 @@ def main():
     # Check if already predicted today
     if data.get("last_prediction_date") == today:
         print("  Already predicted today. Skipping.")
+        return
+
+    # Check if market is closed (holiday or weekend)
+    if is_market_holiday(datetime.now(timezone.utc).date()):
+        print("  🏝️  US market closed today (holiday/weekend). Skipping predictions.")
         return
 
     print("\n1️⃣  Fetching market data...")
