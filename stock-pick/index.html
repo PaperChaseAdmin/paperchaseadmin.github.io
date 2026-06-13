@@ -236,6 +236,7 @@
             <th style="text-align:center">RSI</th>
             <th style="text-align:center">Score</th>
             <th>Summary</th>
+            <th style="width:220px">AI Analysis</th>
           </tr>
         </thead>
         <tbody id="picks-body"></tbody>
@@ -315,6 +316,7 @@ function renderPicks(data) {
       '<td style="text-align:center;font-family:var(--pc-mono);font-size:12px">' + fmtRSI(p.rsi) + '</td>' +
       '<td style="text-align:center"><span class="score-badge ' + sClass + '">' + (p.composite_score != null ? p.composite_score.toFixed(1) : '—') + '</span></td>' +
       '<td><div class="summary-cell">' + (p.summary || '') + '</div></td>' +
+      '<td><div class="summary-cell" style="color:var(--pc-purple);font-size:11px">' + (p.ai_analysis || '') + '</div></td>' +
       '</tr>';
   });
   document.getElementById('picks-body').innerHTML = html;

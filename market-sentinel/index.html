@@ -150,10 +150,17 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-title">Latest Stock & Finance News</div>
-      <div id="stock-news"></div>
-      <div class="source-note"><strong>Source:</strong> Reuters, CNBC, MarketWatch</div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Latest Stock & Finance News</div>
+        <div id="stock-news"></div>
+        <div class="source-note"><strong>Source:</strong> Reuters, CNBC, MarketWatch</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Reddit Activity</div>
+        <div id="stock-reddit"></div>
+        <div class="source-note"><strong>Source:</strong> Reddit · r/wallstreetbets, r/stocks, r/investing</div>
+      </div>
     </div>
 
     <div class="disclaimer"><strong>⚠️ Spot Assets Only.</strong> Predictions are algorithmic direction signals. Past performance does not guarantee future results. Not financial advice.</div>
@@ -390,6 +397,16 @@ function renderStocks(d) {
       html += '<div class="news-item"><span class="news-source">' + (n.source||'') + '</span><a class="news-title" href="' + (n.url||'#') + '" target="_blank" rel="noopener">' + n.title + '</a></div>';
     });
     document.getElementById('stock-news').innerHTML = html;
+  }
+
+  // Reddit activity
+  const reddit = d.reddit || [];
+  if (reddit.length) {
+    let html = '';
+    reddit.slice(0,5).forEach(r => {
+      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
+    });
+    document.getElementById('stock-reddit').innerHTML = html;
   }
 }
 

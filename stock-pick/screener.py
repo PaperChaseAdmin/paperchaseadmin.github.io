@@ -10,6 +10,8 @@ import json
 import math
 import sys
 import time
+import os
+import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from typing import Any
@@ -208,6 +210,74 @@ def generate_summary(row: dict) -> str:
     return f"{row['symbol']} — balanced fundamentals with momentum."
 
 
+def ai_analysis(picks: list[dict]) -> list[dict]:
+    """Use OpenRouter AI to generate a brief analysis for each pick."""
+    openrouter_key = os.environ.get("OPENROUTER_API_KEY", "")
+    if not openrouter_key or not picks:
+        return picks
+
+    # Batch analyze top 15 picks
+    batch = "\n".join(
+        f"{i+1}. {p['symbol']} ({p['company_name']}) | Sector: {p['sector']} | P/E: {p.get('pe_ratio','?')} | "
+        f"RSI: {p.get('rsi','?')} | MACD: {p.get('macd_signal','none')} | "
+        f"Rev Growth: {p.get('revenue_growth','?')}% | FCF Yield: {p.get('fcf_yield','?')}% | "
+        f"D/E: {p.get('debt_equity','?')} | Score: {p.get('composite_score','?')}"
+        for i, p in enumerate(picks[:15])
+    )
+
+    prompt = f"""Analyze each stock pick below. For each, give a ONE-SENTENCE investment thesis.
+
+Reply ONLY with a JSON array of objects, one per stock:
+[{{"symbol":"AAPL","analysis":"Strong buy — robust FCF yield combined with bullish MACD crossover and reasonable valuation."}},...]
+
+Be specific — mention actual metrics from the data (P/E, RSI, MACD, FCF yield, revenue growth, debt/equity).
+Max 25 words per analysis. No markdown, no extra text.
+
+Stocks:
+{batch}"""
+
+    try:
+        resp = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {openrouter_key}",
+                "Content-Type": "application/json",
+                "HTTP-Referer": "https://paperchase.online",
+            },
+            json={
+                "model": "qwen/qwen-2.5-72b-instruct:free",
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": 1024,
+                "temperature": 0.1,
+            },
+            timeout=30,
+        )
+        if not resp.ok:
+            print(f"  [AI Analysis] HTTP {resp.status_code}")
+            return picks
+
+        text = resp.json()["choices"][0]["message"]["content"].strip()
+        # Extract JSON array
+        import re
+        m = re.search(r'\[.*\]', text, re.DOTALL)
+        if not m:
+            print(f"  [AI Analysis] Could not parse response: {text[:150]}")
+            return picks
+
+        analyses = json.loads(m.group())
+        analysis_map = {a["symbol"]: a["analysis"] for a in analyses if "symbol" in a and "analysis" in a}
+
+        for p in picks:
+            if p["symbol"] in analysis_map:
+                p["ai_analysis"] = analysis_map[p["symbol"]]
+
+        print(f"  [AI Analysis] Generated for {len(analysis_map)} stocks")
+    except Exception as e:
+        print(f"  [AI Analysis] {e}")
+
+    return picks
+
+
 # ── Processor ──
 
 def process_stock(ticker: str) -> dict | None:
@@ -322,6 +392,10 @@ def main():
     # Sort by composite_score descending, take top 30
     passes.sort(key=lambda x: x["composite_score"], reverse=True)
     top_picks = passes[:30]
+
+    # AI analysis
+    print(f"\n  Running AI analysis on top {min(15, len(top_picks))} picks...")
+    top_picks = ai_analysis(top_picks)
 
     output = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
