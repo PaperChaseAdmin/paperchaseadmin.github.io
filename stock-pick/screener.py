@@ -404,8 +404,10 @@ def main():
         "picks": top_picks,
     }
 
-    output_path = "/mnt/c/Hermes/paperchase_site/stock-pick/data/picks.json"
-    with open(output_path, "w") as f:
+    output_path = "stock-pick/data/picks.json"
+    full_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), output_path)
+    os.makedirs(os.path.dirname(full_path), exist_ok=True)
+    with open(full_path, "w") as f:
         json.dump(output, f, indent=2)
 
     print(json.dumps(output, indent=2))
