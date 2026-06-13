@@ -26,33 +26,42 @@ def fetch_json(url):
         return None
 
 
-def call_openrouter(prompt, model="meta-llama/llama-3.3-70b-instruct:free", max_tokens=500):
-    """Call OpenRouter AI and return text response."""
+def call_openrouter(prompt, model=None, max_tokens=500):
+    """Call OpenRouter AI. Tries models in order until one works."""
     if not OPENROUTER_KEY:
         print("  ⚠️  OPENROUTER_API_KEY not set")
         return None
-    try:
-        import requests
-        resp = requests.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {OPENROUTER_KEY}",
-                "Content-Type": "application/json",
-                "HTTP-Referer": "https://paperchase.online",
-            },
-            json={
-                "model": model,
-                "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": max_tokens,
-                "temperature": 0.2,
-            },
-            timeout=30,
-        )
-        if resp.ok:
-            return resp.json()["choices"][0]["message"]["content"].strip()
-        print(f"  ⚠️  OpenRouter HTTP {resp.status_code}: {resp.text[:200]}")
-    except Exception as e:
-        print(f"  ⚠️  OpenRouter: {e}")
+
+    models_to_try = model or ["meta-llama/llama-3.3-70b-instruct:free", "nvidia/nemotron-3-nano-30b-a3b:free", "qwen/qwen3-coder:free"]
+
+    if isinstance(models_to_try, str):
+        models_to_try = [models_to_try]
+
+    for m in models_to_try:
+        try:
+            import requests
+            resp = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {OPENROUTER_KEY}",
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://paperchase.online",
+                },
+                json={
+                    "model": m,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": max_tokens,
+                    "temperature": 0.2,
+                },
+                timeout=30,
+            )
+            if resp.ok:
+                return resp.json()["choices"][0]["message"]["content"].strip()
+            err = resp.json().get("error", {}).get("message", "")[:80]
+            print(f"  ⚠️  {m}: {err}")
+        except Exception as e:
+            print(f"  ⚠️  {m}: {e}")
+
     return None
 
 
