@@ -18,7 +18,7 @@
 /* ── Hero Section ─────────────────────── */
 .hero {
   text-align: center;
-  padding: 80px 0 56px;
+  padding: 64px 0 48px;
   position: relative;
 }
 .hero::after {
@@ -44,7 +44,7 @@
   margin-bottom: 20px;
 }
 .hero h1 {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--pc-heading);
   letter-spacing: -1px;
@@ -53,17 +53,50 @@
 }
 .hero h1 span { color: var(--pc-purple); }
 .hero p {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--pc-text-2);
   line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto 32px;
+  max-width: 520px;
+  margin: 0 auto 0;
 }
-.hero-actions {
+
+/* ── Live Stats Bar ───────────────────── */
+.live-stats {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 32px;
+  padding: 20px 0 0;
+  margin-top: 20px;
+}
+.live-stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--pc-text-2);
+}
+.live-stat-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--pc-green);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+.live-stat-dot.purple { background: var(--pc-purple); }
+.live-stat-dot.amber { background: var(--pc-yellow); }
+.live-stat-label {
+  font-weight: 500;
+}
+.live-stat-value {
+  font-family: var(--pc-mono);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--pc-heading);
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
 }
 
 /* ── Tool Cards ────────────────────────── */
@@ -71,7 +104,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
-  margin: -24px 0 48px;
+  margin: 32px 0 48px;
   position: relative;
   z-index: 2;
 }
@@ -322,15 +355,16 @@
 
 /* ── Responsive ────────────────────────── */
 @media (max-width: 900px) {
-  .hero { padding: 48px 0 40px; }
-  .hero h1 { font-size: 32px; }
+  .hero { padding: 40px 0 32px; }
+  .hero h1 { font-size: 30px; }
+  .live-stats { flex-wrap: wrap; gap: 16px; }
   .tools-grid { grid-template-columns: repeat(2, 1fr); }
   .widget-grid { grid-template-columns: 1fr; }
   .bot-rankings { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {
-  .hero h1 { font-size: 26px; }
-  .hero p { font-size: 15px; }
+  .hero h1 { font-size: 24px; }
+  .hero p { font-size: 14px; }
   .tools-grid { grid-template-columns: 1fr; }
 }
 </style>
@@ -355,14 +389,15 @@
 
 <div class="wrap">
 
-  <!-- ── Hero ──────────────────────────── -->
+  <!-- ── Hero (CTA-free dashboard header) ── -->
   <section class="hero">
     <div class="hero-badge">✨ AI-Powered Market Intelligence</div>
-    <h1>Trade Smarter <span>with AI</span></h1>
-    <p>Watch 20 AI trading bots compete in real-time. Track market sentiment across stocks & crypto. Scan prediction markets for high-confidence bets.</p>
-    <div class="hero-actions">
-      <a href="/trading-arena/" class="btn btn-primary">Explore Trading Arena →</a>
-      <a href="/market-sentinel/" class="btn btn-secondary">View Market Data</a>
+    <h1>PaperChase <span>Dashboard</span></h1>
+    <p>Real-time sentiment, crypto pulse, prediction markets, AI stock picks &amp; trading bot leaderboard — all in one place.</p>
+    <div class="live-stats" id="liveStats">
+      <div class="live-stat"><span class="live-stat-dot"></span><span class="live-stat-label">Bots</span><span class="live-stat-value" id="liveBotCount">—</span></div>
+      <div class="live-stat"><span class="live-stat-dot purple"></span><span class="live-stat-label">Predictions Today</span><span class="live-stat-value" id="livePredCount">—</span></div>
+      <div class="live-stat"><span class="live-stat-dot amber"></span><span class="live-stat-label">Top Bot Return</span><span class="live-stat-value" id="liveTopPnl">—</span></div>
     </div>
   </section>
 
@@ -490,6 +525,7 @@ async function initPredictions() {
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const data = await resp.json();
     renderAllWidgets(data);
+    updateLiveStats(data);
   } catch (e) {
     document.querySelectorAll('.widget-card .widget-history').forEach(el => {
       el.innerHTML = '<div class="hist-empty">⚠️ Unable to load predictions</div>';
@@ -557,6 +593,18 @@ function renderAllWidgets(data) {
   });
 }
 
+function updateLiveStats(data) {
+  const tools = data.tools || {};
+  // Prediction count today
+  const today = new Date().toISOString().slice(0, 10);
+  let predCount = 0;
+  Object.values(tools).forEach(t => {
+    const preds = t.predictions || [];
+    predCount += preds.filter(p => p.date === today).length;
+  });
+  document.getElementById('livePredCount').textContent = predCount;
+}
+
 // ── Top Bots from Trading Arena ──────────────────────────────────────
 async function loadTopBots() {
   const el = document.getElementById('topBots');
@@ -566,6 +614,13 @@ async function loadTopBots() {
     const data = await resp.json();
     const bots = (data.bots || []).sort((a,b) => (b.total_return_pct || 0) - (a.total_return_pct || 0)).slice(0, 3);
     if (bots.length === 0) throw new Error('No bots');
+
+    // Update live stats
+    document.getElementById('liveBotCount').textContent = (data.bots || []).length;
+    if (bots.length > 0) {
+      const topPnl = bots[0].total_return_pct || 0;
+      document.getElementById('liveTopPnl').textContent = (topPnl >= 0 ? '+' : '') + topPnl.toFixed(1) + '%';
+    }
 
     let html = '';
     bots.forEach((bot, i) => {
