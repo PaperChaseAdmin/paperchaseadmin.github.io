@@ -253,7 +253,7 @@ function render(d) {
   // Poly Watch crypto
   if (d.poly_markets && d.poly_markets.length) {
     let html = '';
-    d.poly_markets.filter(m => m.tag === 'crypto').slice(0,5).forEach(m => {
+    d.poly_markets.slice(0,5).forEach(m => {
       const pct = (m.yes_price||0)*100;
       html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;max-width:180px;white-space:normal;line-height:1.3;font-family:var(--pc-font)">' + m.question + '</span><span class="price-val" style="font-size:12px;text-align:right">' + pct.toFixed(1) + '%</span></div>';
     });

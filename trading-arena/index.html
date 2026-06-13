@@ -155,13 +155,13 @@ function renderKPI(bots) {
 
 // ── Risk Distribution ────────────────────
 function renderRisk(bots) {
-  const riskLevels = {'low':0,'medium':0,'high':0,'extreme':0};
+  const riskLevels = {'low':0,'medium':0,'high':0,'very high':0,'very low':0};
   bots.forEach(b => {
-    const r = (b.risk || 'medium').toLowerCase();
+    const r = (b.risk_level || 'medium').toLowerCase();
     if (riskLevels[r] !== undefined) riskLevels[r]++;
   });
   const total = bots.length || 1;
-  const colors = {low:'var(--pc-green)', medium:'var(--pc-yellow)', high:'var(--pc-red)', extreme:'#7c3aed'};
+  const colors = {low:'var(--pc-green)', medium:'var(--pc-yellow)', high:'var(--pc-red)', 'very high':'#7c3aed', 'very low':'#22c55e'};
   let html = '';
   Object.entries(riskLevels).forEach(([level, count]) => {
     const pct = (count / total * 100).toFixed(0);
