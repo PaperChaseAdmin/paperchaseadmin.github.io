@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-12T15:01:45Z",
-  "last_prediction_date": "2026-06-12",
+  "updated_at": "2026-06-13T08:45:53Z",
+  "last_prediction_date": "2026-06-13",
   "last_settle_date": "2026-06-12",
   "tools": {
     "market_sentinel": {
@@ -41,9 +41,39 @@
           "correct": false,
           "settled": true,
           "change_pct": 1.03
+        },
+        {
+          "date": "2026-06-13",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-13",
+          "market": "NASDAQ",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-13",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ],
-      "total": 3,
+      "total": 6,
       "correct": 0,
       "accuracy_pct": 0.0
     },
@@ -63,9 +93,19 @@
           "correct": true,
           "settled": true,
           "change_pct": 2.09
+        },
+        {
+          "date": "2026-06-13",
+          "market": "Crypto Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ],
-      "total": 1,
+      "total": 2,
       "correct": 1,
       "accuracy_pct": 100.0
     },
@@ -94,9 +134,19 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-06-13",
+          "market": "Top Prediction Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ],
-      "total": 0,
+      "total": 3,
       "correct": 0,
       "accuracy_pct": null
     }

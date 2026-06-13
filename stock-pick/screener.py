@@ -245,7 +245,7 @@ Stocks:
                 "HTTP-Referer": "https://paperchase.online",
             },
             json={
-                "model": "qwen/qwen-2.5-72b-instruct:free",
+                "model": "meta-llama/llama-3.3-70b-instruct:free",
                 "messages": [{"role": "user", "content": prompt}],
                 "max_tokens": 1024,
                 "temperature": 0.1,
