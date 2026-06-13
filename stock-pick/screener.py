@@ -237,44 +237,43 @@ Max 25 words per analysis. No markdown, no extra text.
 Stocks:
 {batch}"""
 
-    try:
-        resp = requests.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {openrouter_key}",
-                "Content-Type": "application/json",
-                "HTTP-Referer": "https://paperchase.online",
-            },
-            json={
-                "model": "meta-llama/llama-3.3-70b-instruct:free",
-                "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": 1024,
-                "temperature": 0.1,
-            },
-            timeout=30,
-        )
-        if not resp.ok:
-            print(f"  [AI Analysis] HTTP {resp.status_code}")
-            return picks
+    models = ["meta-llama/llama-3.3-70b-instruct:free", "nvidia/nemotron-3-nano-30b-a3b:free", "qwen/qwen3-coder:free"]
+    for model in models:
+        try:
+            resp = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {openrouter_key}",
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://paperchase.online",
+                },
+                json={
+                    "model": model,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": 1024,
+                    "temperature": 0.1,
+                },
+                timeout=30,
+            )
+            if not resp.ok:
+                err = resp.json().get("error",{}).get("message","")[:60]
+                print(f"  [AI Analysis] {model}: {err}")
+                continue
 
-        text = resp.json()["choices"][0]["message"]["content"].strip()
-        # Extract JSON array
-        import re
-        m = re.search(r'\[.*\]', text, re.DOTALL)
-        if not m:
-            print(f"  [AI Analysis] Could not parse response: {text[:150]}")
-            return picks
-
-        analyses = json.loads(m.group())
-        analysis_map = {a["symbol"]: a["analysis"] for a in analyses if "symbol" in a and "analysis" in a}
-
-        for p in picks:
-            if p["symbol"] in analysis_map:
-                p["ai_analysis"] = analysis_map[p["symbol"]]
-
-        print(f"  [AI Analysis] Generated for {len(analysis_map)} stocks")
-    except Exception as e:
-        print(f"  [AI Analysis] {e}")
+            text = resp.json()["choices"][0]["message"]["content"].strip()
+            import re
+            m = re.search(r'\[.*\]', text, re.DOTALL)
+            if not m:
+                continue
+            analyses = json.loads(m.group())
+            analysis_map = {a["symbol"]: a["analysis"] for a in analyses if "symbol" in a and "analysis" in a}
+            for p in picks:
+                if p["symbol"] in analysis_map:
+                    p["ai_analysis"] = analysis_map[p["symbol"]]
+            print(f"  [AI Analysis] Generated for {len(analysis_map)} stocks via {model}")
+            break
+        except Exception as e:
+            print(f"  [AI Analysis] {model}: {e}")
 
     return picks
 
