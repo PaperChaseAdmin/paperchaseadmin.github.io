@@ -169,21 +169,7 @@
       </div>
     </div>
 
-    <!-- ── NEW: StockTwits ─────────────────────── -->
-    <div class="grid-2">
-      <div class="card">
-        <div class="card-title">📢 StockTwits — Trending Stocks</div>
-        <div id="stocktwits-trending"></div>
-        <div class="source-note"><strong>Source:</strong> StockTwits</div>
-      </div>
-      <div class="card">
-        <div class="card-title">📢 StockTwits — Sentiment</div>
-        <div id="stocktwits-sentiment"></div>
-        <div class="source-note"><strong>Source:</strong> StockTwits</div>
-      </div>
-    </div>
-
-    <!-- ── NEW: Macro Indicators ──────────────── -->
+    <!-- ── Macro Indicators ──────────────── -->
     <div class="grid-2">
       <div class="card">
         <div class="card-title">📈 Macro Indicators</div>
@@ -443,30 +429,6 @@ function renderStocks(d) {
       html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;font-family:var(--pc-font)">r/' + r.subreddit + '</span><span class="mention-count">' + (r.posts||0) + ' posts</span></div>';
     });
     document.getElementById('stock-reddit').innerHTML = html;
-  }
-
-  // ── StockTwits trending ──
-  const st = d.stocktwits || {};
-  if (st.trending && st.trending.length) {
-    let h = '';
-    st.trending.slice(0,8).forEach(t => {
-      h += '<div class="trending-row"><span class="trending-sym">' + t.symbol + '</span><span class="trending-name">' + (t.title||'') + '</span><span style="font-size:10px;color:var(--pc-text-3);margin-left:auto">' + (t.watchlist_count||0) + ' watching</span></div>';
-    });
-    document.getElementById('stocktwits-trending').innerHTML = h;
-  }
-
-  // ── StockTwits sentiment ──
-  if (st.sentiment && st.sentiment.length) {
-    let h = '';
-    st.sentiment.slice(0,6).forEach(s => {
-      const net = (s.bullish||0) - (s.bearish||0);
-      const cls = net > 0 ? 'text-green' : net < 0 ? 'text-red' : '';
-      h += '<div class="price-row"><span class="price-sym">' + s.symbol + '</span><span style="font-size:11px;font-family:var(--pc-mono)">' + (s.bullish||0) + '🐂 ' + (s.bearish||0) + '🐻</span><span class="' + cls + '" style="font-size:11px">' + (net > 0 ? '+' : '') + net + '</span></div>';
-    });
-    if (st.summary) {
-      h += '<div style="font-size:10px;color:var(--pc-text-3);margin-top:8px;padding-top:8px;border-top:1px solid var(--pc-border)">' + st.summary + '</div>';
-    }
-    document.getElementById('stocktwits-sentiment').innerHTML = h;
   }
 
   // ── Macro indicators ──
