@@ -5,7 +5,7 @@
  * Update schedules:
  *   market-sentinel: every 10 min market hours, every 30 min otherwise
  *   crypto-pulse:    every 30 min, 24/7
- *   poly-watch:      daily 9:00 AM ET (13:00 UTC) Mon-Fri
+ *   poly-watch:      every 4 hours, 24/7
  *   trading-arena:   daily 4:30 PM ET (20:30 UTC) Mon-Fri
  *   stock-pick:      daily 8:30 AM ET (12:30 UTC) Mon-Fri
  */
@@ -71,8 +71,8 @@ function nextUpdateFor(tool) {
       return nextInterval(30);
 
     case 'poly-watch':
-      // Daily at 9:00 AM ET (13:00 UTC) Mon-Fri
-      return nextWeekdayAt(13, 0);
+      // Every 4 hours, 24/7
+      return nextInterval(240);
 
     case 'trading-arena':
       // Daily at 4:30 PM ET (20:30 UTC) Mon-Fri
