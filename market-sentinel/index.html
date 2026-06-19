@@ -178,7 +178,8 @@
 </div>
 
 <script>
-const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json';
+const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/1817c313a58d62bafc5975c43c870a999c966c01/data/market_data.json';
+const DATA_FALLBACK_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json';
 const PRED_DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/predictions/data/predictions.json';
 
 // ── Index display names ─────────────────────────────────────────────
@@ -440,7 +441,17 @@ async function loadData() {
     ]);
 
     if (!dataResp.ok) throw new Error('Data HTTP ' + dataResp.status);
-    const data = await dataResp.json();
+    const raw = await dataResp.text();
+    let data;
+    try {
+      data = JSON.parse(raw);
+    } catch (parseErr) {
+      // CDN may serve stale cache — fall back to main branch URL
+      console.warn('CDN cache stale, falling back to main branch:', parseErr.message);
+      const resp2 = await fetch(DATA_FALLBACK_URL + '?t=' + Date.now());
+      if (!resp2.ok) throw new Error('Fallback HTTP ' + resp2.status);
+      data = await resp2.json();
+    }
     const stocks = data.stocks || data;
 
     onDataLoaded(data.updated_at || data.timestamp || new Date().toISOString());
