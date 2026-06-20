@@ -354,7 +354,7 @@ function renderLastSession(pf){
 
 function renderChart(pf){
   const hist=(pf.portfolio_history||[]).slice(-120);
-  if(hist.length<2){ document.querySelector('.chart-wrap canvas').style.display='none'; return; }
+  if(hist.length<2){ var ce=$('chart'); if(ce) ce.style.display='none'; return; }
   const labels=hist.map(function(h){ const d=new Date(h.timestamp); return (d.getMonth()+1)+'/'+d.getDate()+' '+String(d.getUTCHours()).padStart(2,'0')+':'+String(d.getUTCMinutes()).padStart(2,'0'); });
   const vals=hist.map(function(h){ return h.value; });
   const isUp=vals[vals.length-1]>=10000;
