@@ -139,11 +139,13 @@ def main():
         chg = idx.get("change_24h", 0)
         print(f"    {label}: {chg:+.2f}% {'📈' if chg > 0 else '📉' if chg < 0 else '➡️'}")
 
-    tools = data.get("tools", {})
+    tools = data.setdefault("tools", {})
     total_settled = 0
     total_correct = 0
 
     for tool_key, tool in tools.items():
+        if not isinstance(tool, dict):
+            continue
         preds = tool.get("predictions", [])
         today_preds = [p for p in preds if p.get("date") == today and not p.get("settled")]
 
