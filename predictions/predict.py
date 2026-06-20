@@ -331,10 +331,12 @@ def main():
     for p in pw_preds:
         print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
 
-    # Save predictions — don't overwrite settlement data
-    tools = data.get("tools", {})
+    # ═══════════════════════════════════════════
+    # FIXED: Save predictions — use setdefault instead of .get(..., {})
+    # ═══════════════════════════════════════════
+    tools = data.setdefault("tools", {})
     for tool_key, preds in [("market_sentinel", ms_preds), ("crypto_pulse", cp_preds), ("poly_watch", pw_preds)]:
-        tool = tools.get(tool_key, {})
+        tool = tools.setdefault(tool_key, {"label": tool_key.replace("_", " ").title(), "predictions": []})
         if "predictions" not in tool:
             tool["predictions"] = []
         for p in preds:
@@ -355,7 +357,8 @@ def main():
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✅ Predictions saved ({sum(len(t.get('predictions',[])) for t in tools.values())} total)")
+    total_preds = sum(len(t.get("predictions", [])) for t in data["tools"].values())
+    print(f"\n✅ Predictions saved ({total_preds} total)")
     for p in ms_preds:
         print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
     for p in cp_preds:
