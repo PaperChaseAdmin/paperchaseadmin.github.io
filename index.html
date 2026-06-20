@@ -596,13 +596,20 @@ function renderAllWidgets(data) {
 function updateLiveStats(data) {
   const tools = data.tools || {};
   // Prediction count today
-  const today = new Date().toISOString().slice(0, 10);
+  const today = new Date();
+  const day = today.getDay();
+  // ponytail: Saturday(6) or Sunday(0) — no predictions generated
+  if (day === 0 || day === 6) {
+    document.getElementById('livePredCount').textContent = '—';
+    return;
+  }
+  const todayStr = today.toISOString().slice(0, 10);
   let predCount = 0;
   Object.values(tools).forEach(t => {
     const preds = t.predictions || [];
-    predCount += preds.filter(p => p.date === today).length;
+    predCount += preds.filter(p => p.date === todayStr).length;
   });
-  document.getElementById('livePredCount').textContent = predCount;
+  document.getElementById('livePredCount').textContent = predCount || '—';
 }
 
 // ── Top Bots from Trading Arena ──────────────────────────────────────
