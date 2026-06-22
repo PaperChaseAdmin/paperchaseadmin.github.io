@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-20T00:00:00Z",
-  "last_prediction_date": "",
+  "updated_at": "2026-06-22T17:16:32Z",
+  "last_prediction_date": "2026-06-22",
   "last_settle_date": "",
   "tools": {
     "market_sentinel": {
@@ -8,21 +8,74 @@
       "total": 0,
       "correct": 0,
       "accuracy_pct": null,
-      "predictions": []
+      "predictions": [
+        {
+          "date": "2026-06-22",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 70,
+          "signal": "Bearish market mood (-0.45) and heavy losses in high-volume stocks like AMZN, PLTR, and GOOGL",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-22",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 85,
+          "signal": "Strong downward momentum (-1.26% 24h) driven by Alphabet's worst day in a year and significant drops in NVDA, PLTR, and GOOGL",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-22",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 60,
+          "signal": "Mixed signals: positive 24h change (+0.32%) contrasting with overall bearish market mood and rising 10Y Treasury yields",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        }
+      ]
     },
     "crypto_pulse": {
       "label": "Crypto Pulse",
       "total": 0,
       "correct": 0,
       "accuracy_pct": null,
-      "predictions": []
+      "predictions": [
+        {
+          "date": "2026-06-22",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 75,
+          "signal": "Extreme Fear (20) in Fear & Greed index outweighs marginal BTC gains",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        }
+      ]
     },
     "poly_watch": {
       "label": "Poly Watch",
       "total": 0,
       "correct": 0,
       "accuracy_pct": null,
-      "predictions": []
+      "predictions": [
+        {
+          "date": "2026-06-22",
+          "market": "Top Prediction Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI parse failed",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        }
+      ]
     }
   }
 }
