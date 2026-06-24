@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-23T15:36:39Z",
-  "last_prediction_date": "2026-06-23",
+  "updated_at": "2026-06-24T15:19:53Z",
+  "last_prediction_date": "2026-06-24",
   "last_settle_date": "",
   "tools": {
     "market_sentinel": {
@@ -68,6 +68,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "S&P 500",
+          "prediction": "up",
+          "confidence": 70,
+          "signal": "Positive 24h momentum (+0.66%), bullish market mood, and Treasury Secretary Bessent's 3% GDP growth forecast.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "NASDAQ",
+          "prediction": "up",
+          "confidence": 75,
+          "signal": "Strong performance from AMZN (+3.08%) and NVDA (+0.44%) combined with positive Zoox robotaxi news.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "DOW",
+          "prediction": "up",
+          "confidence": 65,
+          "signal": "Highest 24h gain among indices (+0.82%) and positive sentiment regarding Strait of Hormuz stability.",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -96,6 +126,16 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 85,
+          "signal": "Extreme Fear (17), BTC price drop (-2.31%), and zero search interest on Google Trends.",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -121,6 +161,16 @@
           "prediction": "neutral",
           "confidence": 50,
           "signal": "AI parse failed",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "Will Portugal win the 2026 FIFA World Cup?",
+          "prediction": "down",
+          "confidence": 90,
+          "signal": "The probability of any single team winning a tournament two years away is low, and Portugal's 7% odds are still too high for a high-confidence YES, making a NO bet the safest statistical play.",
           "actual": null,
           "correct": null,
           "settled": false
