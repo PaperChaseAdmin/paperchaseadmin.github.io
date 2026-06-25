@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-24T15:19:53Z",
-  "last_prediction_date": "2026-06-24",
+  "updated_at": "2026-06-25T15:26:02Z",
+  "last_prediction_date": "2026-06-25",
   "last_settle_date": "",
   "tools": {
     "market_sentinel": {
@@ -98,6 +98,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 65,
+          "signal": "Bearish market mood (-0.45) and high core inflation (3.4%) outweighing mixed corporate news",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 80,
+          "signal": "Heavy losses in mega-caps AAPL (-5.65%) and NVDA (-2.05%) combined with a -0.73% 24h change",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 60,
+          "signal": "Positive 24h momentum (+0.78%) and Bayer/GM news offset by inflation fears and Chevron warnings",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -136,6 +166,16 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 90,
+          "signal": "Extreme Fear index (12) and BTC price drop of -2.91%",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -171,6 +211,16 @@
           "prediction": "down",
           "confidence": 90,
           "signal": "The probability of any single team winning a tournament two years away is low, and Portugal's 7% odds are still too high for a high-confidence YES, making a NO bet the safest statistical play.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "Will Portugal win the 2026 FIFA World Cup?",
+          "prediction": "down",
+          "confidence": 90,
+          "signal": "The probability of any single team winning a tournament two years away is low, making a 'NO' bet on a low-probability candidate the safest statistical play.",
           "actual": null,
           "correct": null,
           "settled": false
