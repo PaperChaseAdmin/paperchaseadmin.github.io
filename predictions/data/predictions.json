@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-25T15:26:02Z",
-  "last_prediction_date": "2026-06-25",
+  "updated_at": "2026-06-26T15:13:28Z",
+  "last_prediction_date": "2026-06-26",
   "last_settle_date": "",
   "tools": {
     "market_sentinel": {
@@ -128,6 +128,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 65,
+          "signal": "Bearish market mood (-0.45) and VIX increase (+2.44%) outweigh mixed performance of active stocks",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 70,
+          "signal": "Bearish sentiment from Grantham's 'most expensive market' warning and NVDA's decline (-1.35%)",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals with slight 24h gain (+0.03%) and a weakening US Dollar Index (-0.11%)",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -176,6 +206,16 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 80,
+          "signal": "Extreme Fear index (13) and Grantham's bearish outlook outweigh slight BTC price gain",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -221,6 +261,16 @@
           "prediction": "down",
           "confidence": 90,
           "signal": "The probability of any single team winning a tournament two years away is low, making a 'NO' bet on a low-probability candidate the safest statistical play.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "Top Prediction Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI parse failed",
           "actual": null,
           "correct": null,
           "settled": false
