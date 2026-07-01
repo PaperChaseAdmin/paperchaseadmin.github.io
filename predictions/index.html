@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title data-i18n-title="page_title_predictions">Predictions — AI Market Forecasts</title>
+<meta name="description" content="AI-powered market predictions for S&P 500, NASDAQ, DOW, and crypto — accuracy tracking and full history."/>
+<link rel="canonical" href="https://paperchase.online/predictions/"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/design-system.css">
+<script src="/assets/countdown.js"></script>
+<style>
+.pred-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+.pred-stat-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;text-align:center}
+.pred-stat-val{font-size:28px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
+.pred-stat-lbl{font-size:10px;color:var(--pc-text-3);text-transform:uppercase;letter-spacing:.05em;font-weight:600;margin-top:2px}
+.pred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+.pred-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:20px}
+.pred-card-title{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--pc-text-3);margin-bottom:4px}
+.pred-card-index{font-size:16px;font-weight:700;color:var(--pc-heading);margin-bottom:8px}
+.pred-card-dir{font-size:22px;font-weight:700;margin-bottom:2px}
+.pred-card-conf{font-size:11px;color:var(--pc-text-2);margin-bottom:6px}
+.pred-card-bar{height:4px;border-radius:2px;background:var(--pc-surface-3);overflow:hidden}
+.pred-card-fill{height:100%;border-radius:2px;transition:width .5s}
+.acc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+.acc-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px}
+.acc-card-title{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px}
+.acc-pct{font-size:24px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
+.acc-count{font-size:11px;color:var(--pc-text-2)}
+.filter-bar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.filter-btn{padding:6px 14px;border:1px solid var(--pc-border);border-radius:var(--pc-radius);font-size:11px;font-weight:500;cursor:pointer;background:var(--pc-surface);color:var(--pc-text-2);transition:all .15s}
+.filter-btn.active{background:var(--pc-purple);color:#fff;border-color:var(--pc-purple)}
+.history-table{width:100%;border-collapse:collapse;font-size:11px}
+.history-table th{padding:8px 10px;text-align:left;font-weight:600;color:var(--pc-text-3);text-transform:uppercase;letter-spacing:.04em;font-size:9px;border-bottom:2px solid var(--pc-border)}
+.history-table td{padding:8px 10px;border-bottom:1px solid var(--pc-border);font-family:var(--pc-mono);font-size:10px;color:var(--pc-text)}
+td.dir-up{color:var(--pc-green);font-weight:600}
+td.dir-down{color:var(--pc-red);font-weight:600}
+td.dir-neutral{color:var(--pc-yellow);font-weight:600}
+.badge{display:inline-block;padding:1px 8px;border-radius:3px;font-size:9px;font-weight:600}
+.badge-pending{background:var(--pc-surface-3);color:var(--pc-text-3)}
+.badge-correct{background:#d1fae5;color:#065f46}
+.badge-wrong{background:#fee2e2;color:#991b1b}
+.tool-tag{display:inline-block;padding:1px 8px;border-radius:3px;font-size:9px;font-weight:500}
+.tool-MS{background:#ede9fe;color:#5b21b6}
+.tool-CP{background:#dbeafe;color:#1e40af}
+.tool-PW{background:#fef3c7;color:#92400e}
+@media(max-width:640px){.pred-stats,.pred-grid,.acc-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<nav class="nav-bar"><div class="nav-inner">
+<a class="nav-logo" href="/">PaperChase</a>
+<a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
+<a class="nav-link" href="/crypto-pulse/" data-i18n="nav_crypto">Crypto Pulse</a>
+<a class="nav-link" href="/poly-watch/" data-i18n="nav_poly">Poly Watch</a>
+<a class="nav-link" href="/stock-pick/" data-i18n="nav_pick">Stock Pick</a>
+<a class="nav-link" href="/trading-arena/" data-i18n="nav_arena">Trading Arena</a>
+<a class="nav-link nav-right" href="/login/" data-i18n="nav_login">Log In</a>
+<a class="nav-link" href="/register/" data-i18n="nav_register">Register</a>
+</div></nav>
+
+<main class="content">
+<h1 data-i18n="pred_title">AI Market Predictions</h1>
+<p class="page-desc" data-i18n="pred_desc">AI-powered daily forecasts for major indices and crypto markets — with full accuracy tracking.</p>
+
+<div id="stats-bar" class="pred-stats"></div>
+
+<h2 data-i18n="pred_today">Today's Predictions</h2>
+<div id="today-grid" class="pred-grid"></div>
+
+<h2 data-i18n="pred_accuracy">Accuracy by Tool</h2>
+<div id="acc-grid" class="acc-grid"></div>
+
+<h2 data-i18n="pred_history">Full Prediction History</h2>
+<div class="filter-bar" id="filter-bar"></div>
+<div style="overflow-x:auto"><table class="history-table">
+<thead><tr>
+<th data-i18n="h_date">Date</th><th data-i18n="h_tool">Tool</th><th data-i18n="h_market">Market</th>
+<th data-i18n="h_prediction">Prediction</th><th data-i18n="h_confidence">Conf.</th><th data-i18n="h_result">Result</th>
+</tr></thead>
+<tbody id="history-body"></tbody>
+</table></div>
+</main>
+
+<footer class="footer"><div class="footer-inner">
+<a href="/market-sentinel/">Market Sentinel</a><a href="/crypto-pulse/">Crypto Pulse</a>
+<a href="/poly-watch/">Poly Watch</a><a href="/stock-pick/">Stock Pick</a>
+<a href="/trading-arena/">Trading Arena</a>
+</div></footer>
+
+<script>
+const DATA_URL='https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/predictions/data/predictions.json?t='+Date.now();
+const DIR_EMOJI={up:'📈',down:'📉',neutral:'➡️'};
+const DIR_CLASS={up:'dir-up',down:'dir-down',neutral:'dir-neutral'};
+
+let allPredictions=[];
+let filter='all';
+let toolsTotal={};
+
+function loadData(){
+fetch(DATA_URL).then(r=>r.json()).then(d=>{
+  allPredictions=[];
+  toolsTotal={};
+  let todayPredictions=[];
+  let totalPreds=0,settledPreds=0,correctPreds=0;
+  const toolAcc={};
+
+  for(const[key,tool]of Object.entries(d.tools||{})){
+    toolsTotal[key]=tool.total||0;
+    toolAcc[key]={label:tool.label,total:tool.total||0,correct:tool.correct||0};
+    totalPreds+=tool.predictions.length;
+    for(const p of tool.predictors||[]){
+      totalPreds++;
+      if(p.settled){settledPreds++;if(p.correct)correctPreds++;}
+      allPredictions.push({...p,toolKey:key,toolLabel:tool.label});
+    }
+    for(const p of tool.predictions||[]){
+      totalPreds++;
+      if(p.settled){settledPreds++;if(p.correct)correctPreds++;}
+      const item={...p,toolKey:key,toolLabel:tool.label};
+      allPredictions.push(item);
+      if(p.date===d.last_prediction_date)todayPredictions.push(item);
+    }
+  }
+
+  renderStats(totalPreds,settledPreds,correctPreds,totalPreds);
+  renderToday(todayPredictions);
+  renderAccuracy(toolAcc);
+  renderFilters();
+  renderHistory();
+  if(window.startCountdown)startCountdown(document.getElementById('countdown')||document.querySelector('.page-desc'),'Next Prediction','predictions',loadData);
+}).catch(e=>{console.error('Predictions load error:',e);});
+}
+
+function renderStats(total,settled,correct,grand){
+  document.getElementById('stats-bar').innerHTML=
+    `<div class="pred-stat-card"><div class="pred-stat-val">${total}</div><div class="pred-stat-lbl">Total Predictions</div></div>`+
+    `<div class="pred-stat-card"><div class="pred-stat-val">${settled}</div><div class="pred-stat-lbl">Settled</div></div>`+
+    `<div class="pred-stat-card"><div class="pred-stat-val">${grand>0?Math.round(correct/grand*100):'—'}%</div><div class="pred-stat-lbl">Overall Accuracy</div></div>`+
+    `<div class="pred-stat-card"><div class="pred-stat-val">${Object.keys(toolsTotal).length}</div><div class="pred-stat-lbl">Active Tools</div></div>`;
+}
+
+function renderToday(preds){
+  const el=document.getElementById('today-grid');
+  if(!preds.length){
+    el.innerHTML='<div class="pred-card-empty" style="grid-column:1/-1;text-align:center;padding:32px;color:var(--pc-text-3)">No predictions for today. Markets may be closed.</div>';
+    return;
+  }
+  el.innerHTML=preds.map(p=>{
+    const dirClass=p.prediction==='up'?'dir-up':p.prediction==='down'?'dir-down':'dir-neutral';
+    const color=p.prediction==='up'?'var(--pc-green)':p.prediction==='down'?'var(--pc-red)':'var(--pc-yellow)';
+    return `<div class="pred-card">
+      <div class="pred-card-title">${p.market||'Market'}</div>
+      <div class="pred-card-index">${p.toolLabel||''}</div>
+      <div class="pred-card-dir" style="color:${color}">${DIR_EMOJI[p.prediction]||'➡️'} ${p.prediction?.toUpperCase()||'N/A'}</div>
+      <div class="pred-card-conf">Confidence: ${p.confidence||'?'}%</div>
+      <div class="pred-card-bar"><div class="pred-card-fill" style="width:${p.confidence||0}%;background:${color}"></div></div>
+      <div style="font-size:10px;color:var(--pc-text-3);margin-top:6px">${(p.signal||'').substring(0,80)}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderAccuracy(acc){
+  document.getElementById('acc-grid').innerHTML=Object.entries(acc).map(([k,v])=>{
+    const pct=v.total>0?Math.round(v.correct/v.total*100):'—';
+    return `<div class="acc-card"><div class="acc-card-title">${v.label||k}</div>
+      <div class="acc-pct">${pct}%</div>
+      <div class="acc-count">${v.correct}/${v.total} correct</div></div>`;
+  }).join('');
+}
+
+function renderFilters(){
+  const tools=[...new Set(allPredictions.map(p=>p.toolKey))];
+  document.getElementById('filter-bar').innerHTML=
+    `<button class="filter-btn active" onclick="setFilter('all')">All</button>`+
+    tools.map(t=>`<button class="filter-btn" onclick="setFilter('${t}')">${allPredictions.find(p=>p.toolKey===t)?.toolLabel||t}</button>`).join('');
+}
+
+function setFilter(f){filter=f;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b.textContent.toLowerCase()===f||(f==='all'&&b.textContent==='All')));
+  renderHistory();
+}
+
+function renderHistory(){
+  let items=filter==='all'?allPredictions:allPredictions.filter(p=>p.toolKey===filter);
+  items.sort((a,b)=>b.date?.localeCompare(a.date));
+  document.getElementById('history-body').innerHTML=items.slice(0,100).map(p=>{
+    const dc=DIR_CLASS[p.prediction]||'';
+    const badge=p.settled?p.correct?'<span class="badge badge-correct">✓</span>':'<span class="badge badge-wrong">✗</span>':'<span class="badge badge-pending">Pending</span>';
+    const toolTagClass=`tool-tag tool-${p.toolKey?.split('_').map(s=>s[0]?.toUpperCase()).join('')||'NA'}`;
+    return `<tr>
+      <td>${p.date||'—'}</td>
+      <td><span class="${toolTagClass}">${p.toolLabel||p.toolKey||'—'}</span></td>
+      <td>${p.market||'—'}</td>
+      <td class="${dc}">${DIR_EMOJI[p.prediction]||''} ${p.prediction?.toUpperCase()||'—'}</td>
+      <td>${p.confidence||'—'}%</td>
+      <td>${badge}</td>
+    </tr>`;
+  }).join('')||'<tr><td colspan="6" style="text-align:center;padding:24px;color:var(--pc-text-3)">No predictions found.</td></tr>';
+}
+
+loadData();
+</script>
+</body>
+</html>

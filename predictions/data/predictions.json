@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-20T00:00:00Z",
-  "last_prediction_date": "",
+  "updated_at": "2026-06-30T15:14:20Z",
+  "last_prediction_date": "2026-06-30",
   "last_settle_date": "",
   "tools": {
     "market_sentinel": {
@@ -8,21 +8,374 @@
       "total": 0,
       "correct": 0,
       "accuracy_pct": null,
-      "predictions": []
+      "predictions": [
+        {
+          "date": "2026-06-22",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 70,
+          "signal": "Bearish market mood (-0.45) and heavy losses in high-volume stocks like AMZN, PLTR, and GOOGL",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-22",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 85,
+          "signal": "Strong downward momentum (-1.26% 24h) driven by Alphabet's worst day in a year and significant drops in NVDA, PLTR, and GOOGL",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-22",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 60,
+          "signal": "Mixed signals: positive 24h change (+0.32%) contrasting with overall bearish market mood and rising 10Y Treasury yields",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-23",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-23",
+          "market": "NASDAQ",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-23",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "S&P 500",
+          "prediction": "up",
+          "confidence": 70,
+          "signal": "Positive 24h momentum (+0.66%), bullish market mood, and Treasury Secretary Bessent's 3% GDP growth forecast.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "NASDAQ",
+          "prediction": "up",
+          "confidence": 75,
+          "signal": "Strong performance from AMZN (+3.08%) and NVDA (+0.44%) combined with positive Zoox robotaxi news.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "DOW",
+          "prediction": "up",
+          "confidence": 65,
+          "signal": "Highest 24h gain among indices (+0.82%) and positive sentiment regarding Strait of Hormuz stability.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 65,
+          "signal": "Bearish market mood (-0.45) and high core inflation (3.4%) outweighing mixed corporate news",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 80,
+          "signal": "Heavy losses in mega-caps AAPL (-5.65%) and NVDA (-2.05%) combined with a -0.73% 24h change",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 60,
+          "signal": "Positive 24h momentum (+0.78%) and Bayer/GM news offset by inflation fears and Chevron warnings",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 65,
+          "signal": "Bearish market mood (-0.45) and VIX increase (+2.44%) outweigh mixed performance of active stocks",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 70,
+          "signal": "Bearish sentiment from Grantham's 'most expensive market' warning and NVDA's decline (-1.35%)",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals with slight 24h gain (+0.03%) and a weakening US Dollar Index (-0.11%)",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-29",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-29",
+          "market": "NASDAQ",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-29",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-30",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-30",
+          "market": "NASDAQ",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-30",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        }
+      ]
     },
     "crypto_pulse": {
       "label": "Crypto Pulse",
       "total": 0,
       "correct": 0,
       "accuracy_pct": null,
-      "predictions": []
+      "predictions": [
+        {
+          "date": "2026-06-22",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 75,
+          "signal": "Extreme Fear (20) in Fear & Greed index outweighs marginal BTC gains",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-23",
+          "market": "Crypto Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 85,
+          "signal": "Extreme Fear (17), BTC price drop (-2.31%), and zero search interest on Google Trends.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 90,
+          "signal": "Extreme Fear index (12) and BTC price drop of -2.91%",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 80,
+          "signal": "Extreme Fear index (13) and Grantham's bearish outlook outweigh slight BTC price gain",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-29",
+          "market": "Crypto Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-30",
+          "market": "Crypto Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        }
+      ]
     },
     "poly_watch": {
       "label": "Poly Watch",
       "total": 0,
       "correct": 0,
       "accuracy_pct": null,
-      "predictions": []
+      "predictions": [
+        {
+          "date": "2026-06-22",
+          "market": "Top Prediction Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI parse failed",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-23",
+          "market": "Top Prediction Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI parse failed",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-24",
+          "market": "Will Portugal win the 2026 FIFA World Cup?",
+          "prediction": "down",
+          "confidence": 90,
+          "signal": "The probability of any single team winning a tournament two years away is low, and Portugal's 7% odds are still too high for a high-confidence YES, making a NO bet the safest statistical play.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-25",
+          "market": "Will Portugal win the 2026 FIFA World Cup?",
+          "prediction": "down",
+          "confidence": 90,
+          "signal": "The probability of any single team winning a tournament two years away is low, making a 'NO' bet on a low-probability candidate the safest statistical play.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-26",
+          "market": "Top Prediction Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI parse failed",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-29",
+          "market": "Top Prediction Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-06-30",
+          "market": "Top Prediction Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        }
+      ]
     }
   }
 }
