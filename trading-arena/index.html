@@ -150,7 +150,7 @@ function renderKPI(bots) {
     '<div class="stat-item"><div class="stat-lbl">Avg Return</div><div class="stat-val" style="color:' + (avgReturn >= 0 ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (avgReturn >= 0 ? '+' : '') + avgReturn.toFixed(2) + '%</div></div>' +
     '<div class="stat-item"><div class="stat-lbl">Total Trades</div><div class="stat-val">' + totalTrades + '</div></div>' +
     '<div class="stat-item"><div class="stat-lbl">In Profit</div><div class="stat-val" style="color:var(--pc-green)">' + inProfit + '/' + bots.length + '</div></div>' +
-    '<div class="stat-item"><div class="stat-lbl">Today\'s P&L</div><div class="stat-val" style="color:' + (todayPL >= 0 ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (todayPL >= 0 ? '+' : '') + todayPL.toFixed(2) + '%</div></div>';
+    '<div class="stat-item"><div class="stat-lbl">Today\'s P&L</div><div class="stat-val" style="color:' + (todayPL >= 0 ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (todayPL >= 0 ? '+$' : '-$') + Math.abs(todayPL).toFixed(2)</div></div>';
 }
 
 // ── Risk Distribution ────────────────────
