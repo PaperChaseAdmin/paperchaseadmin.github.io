@@ -544,7 +544,8 @@ function renderAllWidgets(data) {
     const todayPred = preds.filter(p => p.date === today).slice(-3);
     const todayEl = document.getElementById(id + '-today');
     if (todayPred.length === 0) {
-      todayEl.innerHTML = '<span class="widget-today-label">Today</span><span class="widget-today-val" style="color:var(--pc-text-3)">⏳ Pending</span>';
+      var _d=new Date(),_w=_d.getDay()===0||_d.getDay()===6;
+      todayEl.innerHTML = '<span class="widget-today-label">Today</span><span class="widget-today-val" style="color:var(--pc-text-3)">'+(_w?'Markets Closed':'⏳ Pending')+'</span>';
     } else {
       const settled = todayPred.filter(p => p.settled);
       const pending = todayPred.filter(p => !p.settled);
