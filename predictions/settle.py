@@ -20,7 +20,7 @@ def call_openrouter(prompt, max_tokens=50):
         return None
     try:
         import requests
-        for model in ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-super-120b-a12b:free"]:
+        for model in ["nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-26b-a4b-it:free", "qwen/qwen3-coder:free"]:
             r = requests.post(
                 "https://openrouter.ai/api/v1/chat/completions",
                 headers={"Authorization": f"Bearer {OPENROUTER_KEY}", "Content-Type": "application/json", "HTTP-Referer": "https://paperchase.online"},

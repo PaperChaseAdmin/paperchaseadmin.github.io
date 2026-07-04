@@ -1,12 +1,9 @@
-# Scheduled prediction + settlement workflow
-# Runs Mon-Fri: predict + stock pick 1hr before US market open (12:30 UTC = 8:30 AM ET)
-# Settle after close (20:30 UTC = 4:30 PM ET)
-name: Predictions
+# Predictions workflow — runs 1hr before US market open
+name: Predict + Stock Pick
 
 on:
   schedule:
-    - cron: '30 12 * * 1-5'   # 12:30 UTC — predictions + stock pick (1hr before open)
-    - cron: '30 20 * * 1-5'   # 20:30 UTC — settlement after close
+    - cron: '30 12 * * 1-5'   # 12:30 UTC = 8:30 AM ET
   workflow_dispatch:
 
 permissions:
@@ -23,21 +20,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Determine mode
-        id: mode
-        run: |
-          HOUR=$(date -u +%H)
-          MIN=$(date -u +%M)
-          if [ "$HOUR" -eq 12 ] && [ "$MIN" -ge 30 ]; then
-            echo "mode=predict_stockpick" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -eq 20 ]; then
-            echo "mode=settle" >> $GITHUB_OUTPUT
-          else
-            echo "mode=manual" >> $GITHUB_OUTPUT
-          fi
-
       - name: Run predictions (AI-powered)
-        if: steps.mode.outputs.mode == 'predict_stockpick' || steps.mode.outputs.mode == 'manual'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
@@ -45,16 +28,11 @@ jobs:
           python3 predictions/predict.py
 
       - name: Run Stock Pick screener (yfinance + AI analysis)
-        if: steps.mode.outputs.mode == 'predict_stockpick' || steps.mode.outputs.mode == 'manual'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           pip install yfinance requests -q
           python3 stock-pick/screener.py 2>&1 | tail -5
-
-      - name: Run settlement
-        if: steps.mode.outputs.mode == 'settle'
-        run: python3 predictions/settle.py
 
       - name: Commit results
         run: |
