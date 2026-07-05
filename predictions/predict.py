@@ -53,7 +53,7 @@ def call_openrouter(prompt, model=None, max_tokens=500):
                     "max_tokens": max_tokens,
                     "temperature": 0.2,
                 },
-                timeout=30,
+                timeout=60,
             )
             if resp.ok:
                 return resp.json()["choices"][0]["message"]["content"].strip()
