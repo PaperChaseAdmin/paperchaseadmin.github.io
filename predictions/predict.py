@@ -77,14 +77,14 @@ def extract_json(text):
     text = re.sub(r'```(?:json)?\s*', '', text)
     text = text.strip()
     
-    # Try to find JSON array
-    m = re.search(r'\[.*?\]', text, re.DOTALL)
+    # Try to find JSON object first (poly watch, market sentinel)
+    m = re.search(r'\{.*?\}', text, re.DOTALL)
     if m:
         try:
             return json.loads(m.group())
         except:
             pass
-    # Try to find JSON object  
+    # Fallback: try JSON array  
     m = re.search(r'\{.*?\}', text, re.DOTALL)
     if m:
         try:
