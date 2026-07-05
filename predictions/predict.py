@@ -32,7 +32,7 @@ def call_openrouter(prompt, model=None, max_tokens=500):
         print("  ⚠️  OPENROUTER_API_KEY not set")
         return None
 
-    models_to_try = model or ["nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-26b-a4b-it:free", "cohere/north-mini-code:free", "liquid/lfm-2.5-1.2b-thinking:free", "qwen/qwen3-coder:free"]
+    models_to_try = model or ["openrouter/free", "nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-26b-a4b-it:free", "cohere/north-mini-code:free", "liquid/lfm-2.5-1.2b-thinking:free", "qwen/qwen3-coder:free"]
 
     if isinstance(models_to_try, str):
         models_to_try = [models_to_try]
