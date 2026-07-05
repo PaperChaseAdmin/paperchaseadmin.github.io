@@ -56,29 +56,46 @@ def call_openrouter(prompt, model=None, max_tokens=500):
                 timeout=60,
             )
             if resp.ok:
-                return resp.json()["choices"][0]["message"]["content"].strip()
+                content = resp.json()["choices"][0]["message"].get("content")
+                if content:
+                    return content.strip()
+                # content is None — model refused or can't respond
+                err = "empty content (model refusal or safety filter)"
+                print(f"  ⚠️  {m}: {err}")
+                continue
             err = resp.json().get("error", {}).get("message", "")[:80]
             print(f"  ⚠️  {m}: {err}")
         except Exception as e:
             print(f"  ⚠️  {m}: {e}")
 
     return None
-
-
 def extract_json(text):
     """Extract JSON array or object from AI response text."""
+    if not text:
+        return None
+    # Strip markdown code blocks first
+    text = re.sub(r'```(?:json)?\s*', '', text)
+    text = text.strip()
+    
+    # Try to find JSON array
     m = re.search(r'\[.*?\]', text, re.DOTALL)
     if m:
         try:
             return json.loads(m.group())
         except:
             pass
-    m = re.search(r'\{.*\}', text, re.DOTALL)
+    # Try to find JSON object  
+    m = re.search(r'\{.*?\}', text, re.DOTALL)
     if m:
         try:
             return json.loads(m.group())
         except:
             pass
+    # Last resort: try parsing the whole thing
+    try:
+        return json.loads(text)
+    except:
+        pass
     return None
 
 
