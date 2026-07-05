@@ -1,6 +1,6 @@
 {
-  "updated_at": "",
-  "last_prediction_date": "2026-07-04",
+  "updated_at": "2026-07-05T04:15:29Z",
+  "last_prediction_date": "2026-07-05",
   "last_settle_date": "",
   "tools": {
     "market_sentinel": {
@@ -218,6 +218,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-07-05",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "S&P 500 +0.00% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-05",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 59,
+          "signal": "NASDAQ -0.80% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-05",
+          "market": "DOW",
+          "prediction": "up",
+          "confidence": 63,
+          "signal": "DOW +1.14% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -296,6 +326,16 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-07-05",
+          "market": "Crypto Market",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "BTC +0.15% | Fear&Greed: 23 (Extreme Fear)",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -371,6 +411,16 @@
           "prediction": "neutral",
           "confidence": 50,
           "signal": "AI unavailable",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-05",
+          "market": "Will GPT-6 be released before GTA VI?",
+          "prediction": "up",
+          "confidence": 52,
+          "signal": "Will GPT-6 be released before GTA VI? | Yes 52% / No 48% | Vol $672,503",
           "actual": null,
           "correct": null,
           "settled": false
