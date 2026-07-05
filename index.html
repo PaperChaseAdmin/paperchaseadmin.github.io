@@ -378,7 +378,6 @@
     <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
     <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
     <a class="nav-link" href="/stock-pick/">Stock Pick</a>
-    <a class="nav-link" href="/predictions/">Predictions</a>
     <a class="nav-link" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
   </div>
   <div class="topbar-spacer"></div>
@@ -556,7 +555,8 @@ function renderAllWidgets(data) {
         html += '<div style="font-size:11px;margin:2px 0"><span class="widget-today-label" style="font-size:9px">' + p.market + '</span><span class="widget-today-val" style="font-size:12px;color:' + (ok ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (ok ? '✅ ' : '❌ ') + p.prediction.toUpperCase() + '</span></div>';
       });
       pending.forEach(p => {
-        html += '<div style="font-size:11px;margin:2px 0"><span class="widget-today-label" style="font-size:9px">' + p.market + '</span><span class="widget-today-val" style="font-size:12px;color:var(--pc-yellow)">⏳ ' + p.prediction.toUpperCase() + ' (' + p.confidence + '%)</span></div>';
+        var _c = p.prediction === 'up' ? 'var(--pc-green)' : p.prediction === 'down' ? 'var(--pc-red)' : 'var(--pc-text-3)';
+        html += '<div style="font-size:11px;margin:2px 0"><span class="widget-today-label" style="font-size:9px">' + p.market + '</span><span class="widget-today-val" style="font-size:12px;color:' + _c + '">' + (p.prediction === 'up' ? '📈 ' : p.prediction === 'down' ? '📉 ' : '➡️ ') + p.prediction.toUpperCase() + ' (' + p.confidence + '%)</span></div>';
       });
       todayEl.innerHTML = html;
     }

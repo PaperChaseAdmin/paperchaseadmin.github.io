@@ -37,7 +37,7 @@
 .history-table td{padding:8px 10px;border-bottom:1px solid var(--pc-border);font-family:var(--pc-mono);font-size:10px;color:var(--pc-text)}
 td.dir-up{color:var(--pc-green);font-weight:600}
 td.dir-down{color:var(--pc-red);font-weight:600}
-td.dir-neutral{color:var(--pc-yellow);font-weight:600}
+td.dir-neutral{color:var(--pc-text-3);font-weight:600}
 .badge{display:inline-block;padding:1px 8px;border-radius:3px;font-size:9px;font-weight:600}
 .badge-pending{background:var(--pc-surface-3);color:var(--pc-text-3)}
 .badge-correct{background:#d1fae5;color:#065f46}
@@ -55,8 +55,7 @@ td.dir-neutral{color:var(--pc-yellow);font-weight:600}
 <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
 <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_crypto">Crypto Pulse</a>
 <a class="nav-link" href="/poly-watch/" data-i18n="nav_poly">Poly Watch</a>
-<a class="nav-link" href="/stock-pick/"
-    <a class="nav-link" href="/predictions/">Predictions</a> data-i18n="nav_pick">Stock Pick</a>
+<a class="nav-link" href="/stock-pick/" data-i18n="nav_pick">Stock Pick</a>
 <a class="nav-link" href="/trading-arena/" data-i18n="nav_arena">Trading Arena</a>
 <a class="nav-link nav-right" href="/login/" data-i18n="nav_login">Log In</a>
 <a class="nav-link" href="/register/" data-i18n="nav_register">Register</a>
@@ -151,7 +150,7 @@ function renderToday(preds){
   }
   el.innerHTML=preds.map(p=>{
     const dirClass=p.prediction==='up'?'dir-up':p.prediction==='down'?'dir-down':'dir-neutral';
-    const color=p.prediction==='up'?'var(--pc-green)':p.prediction==='down'?'var(--pc-red)':'var(--pc-yellow)';
+    const color=p.prediction==='up'?'var(--pc-green)':p.prediction==='down'?'var(--pc-red)':'var(--pc-text-3)';
     return `<div class="pred-card">
       <div class="pred-card-title">${p.market||'Market'}</div>
       <div class="pred-card-index">${p.toolLabel||''}</div>
