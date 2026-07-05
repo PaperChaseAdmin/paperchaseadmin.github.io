@@ -618,9 +618,10 @@ function updateLiveStats(data) {
 async function loadTopBots() {
   const el = document.getElementById('topBots');
   try {
-    const resp = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/leaderboard.json');
+    const resp = await fetch('https://api.github.com/repos/PaperChaseAdmin/trade/contents/data/leaderboard.json', {headers:{'Accept':'application/vnd.github+json'}});
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const data = await resp.json();
+    const meta = await resp.json();
+    const data = JSON.parse(atob(meta.content));
     const bots = (data.bots || []).sort((a,b) => (b.total_return_pct || 0) - (a.total_return_pct || 0)).slice(0, 3);
     if (bots.length === 0) throw new Error('No bots');
 

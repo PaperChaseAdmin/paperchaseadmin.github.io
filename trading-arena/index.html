@@ -130,7 +130,7 @@
 </div>
 
 <script>
-const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/leaderboard.json';
+const DATA_URL = 'https://api.github.com/repos/PaperChaseAdmin/trade/contents/data/leaderboard.json';
 const BOT_URL_PREFIX = '/trading-arena/';
 let bots = [];
 let mainChart = null;
@@ -263,9 +263,10 @@ async function loadData() {
   try {
     const ctrl = new AbortController();
     setTimeout(() => ctrl.abort(), 12000);
-    const resp = await fetch(DATA_URL + '?t=' + Date.now(), {signal: ctrl.signal});
+    const resp = await fetch(DATA_URL, {signal: ctrl.signal, headers: {'Accept': 'application/vnd.github+json'}});
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const data = await resp.json();
+    const meta = await resp.json();
+    const data = JSON.parse(atob(meta.content));
     bots = data.bots || [];
     const history = data.portfolio_history || [10000];
 
