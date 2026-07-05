@@ -24,7 +24,7 @@ def call_openrouter(prompt, max_tokens=50):
             r = requests.post(
                 "https://openrouter.ai/api/v1/chat/completions",
                 headers={"Authorization": f"Bearer {OPENROUTER_KEY}", "Content-Type": "application/json", "HTTP-Referer": "https://paperchase.online"},
-                json={"model": model, "messages": [{"role": "user", "content": prompt}], "max_tokens": max_tokens, "temperature": 0},
+                json={"model": model, "messages": [{"role": "system", "content": "You are a market analyst. ALWAYS respond with valid JSON only. No explanations, no markdown."}, {"role": "user", "content": prompt}], "max_tokens": max_tokens, "temperature": 0},
                 timeout=60,
             )
             if r.ok:

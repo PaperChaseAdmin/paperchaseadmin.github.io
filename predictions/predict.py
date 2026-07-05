@@ -49,7 +49,10 @@ def call_openrouter(prompt, model=None, max_tokens=500):
                 },
                 json={
                     "model": m,
-                    "messages": [{"role": "user", "content": prompt}],
+                    "messages": [
+                        {"role": "system", "content": "You are a market analyst. ALWAYS respond with valid JSON only. No explanations, no markdown, no text outside the JSON object. Your entire response must be parseable JSON."},
+                        {"role": "user", "content": prompt}
+                    ],
                     "max_tokens": max_tokens,
                     "temperature": 0.2,
                 },
