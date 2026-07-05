@@ -165,7 +165,7 @@ def ai_market_predictions(md):
             m_str = ", ".join(f"{s}({c})" for s, c in top_m)
             crypto_reddit_text += f"- r/{r.get('subreddit','?')}: {m_str}\n"
 
-    prompt = f"""You are a professional market analyst. Based on ALL the data below, predict the direction (up/down/neutral) for each major index today.
+    prompt = f"""Respond ONLY with JSON. No text outside JSON. Format: {{"sp500":{{"direction":"up/down/neutral","confidence":50,"signal":"reason"}},...}}
 
 Indices:
 {indices_str}
@@ -265,7 +265,7 @@ def ai_poly_predict(pd):
         for m in top5
     )
 
-    prompt = f"""Analyze these prediction markets. Pick the SINGLE best bet for today.
+    prompt = f"""Respond ONLY with JSON: {{"question":"...","bet":"YES/NO","confidence":80,"rationale":"..."}}
 
 Markets:
 {context}
