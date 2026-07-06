@@ -46,9 +46,8 @@
 </style>
 </head>
 <body>
-
 <nav class="topbar"><div class="topbar-inner">
-  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <a class="logo" href="/">PaperChase<span>.</span></a>
   <div class="topbar-nav">
     <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
     <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
@@ -59,131 +58,168 @@
   <div class="topbar-spacer"></div>
   <div class="topbar-auth">
     <a class="nav-link" href="/login/" data-i18n="nav_login">Log In</a>
-    <a href="/register/" data-i18n="nav_register" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#0c0d12;text-decoration:none">Register</a>
+    <a href="/register/" data-i18n="nav_register" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none">Register</a>
   </div>
 </div></nav>
 
-<div class="wrap">
+<div class="container">
+  <!-- ── Dashboard Header ── -->
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+    <div>
+      <h1 style="font-size:22px;font-weight:700;color:var(--pc-heading);letter-spacing:-0.03em;margin:0">Dashboard</h1>
+      <p style="font-size:12px;color:var(--pc-text-2);margin-top:2px">Market overview &amp; intelligence</p>
+    </div>
+    <div class="mood-bar" id="moodBar">
+      <span style="font-size:11px;color:var(--pc-text-3)">Market Mood</span>
+      <span class="score" id="moodScore">—</span>
+      <span class="label" id="moodLabel">Loading...</span>
+      <div style="width:60px;height:4px;border-radius:2px;background:var(--pc-border);overflow:hidden">
+        <div id="moodFill" style="height:100%;border-radius:2px;background:linear-gradient(90deg,var(--pc-red),var(--pc-yellow),var(--pc-green));width:50%"></div>
+      </div>
+    </div>
+  </div>
 
-  <!-- ── Hero (CTA-free dashboard header) ── -->
-  <section class="hero" style="text-align:center">
-    <div class="hero-badge">✨ AI-POWERED MARKET INTELLIGENCE</div>
-    <h1 style="font-size:clamp(26px,3.5vw,38px);font-weight:700;color:var(--pc-heading);letter-spacing:-0.03em;line-height:1.2;margin-bottom:10px">PaperChase Dashboard</h1>
-    <p style="font-size:14px;color:var(--pc-text-2);max-width:560px;margin:0 auto;line-height:1.6">Real-time sentiment, crypto pulse, prediction markets, AI stock picks &amp; trading bot leaderboard — all in one place.</p>
-    <div class="market-mood-bar" id="moodBar" style="margin:20px auto 0;display:inline-flex;align-items:center;gap:14px;background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:10px 18px">
-        <span style="font-size:11px;color:var(--pc-text-3);font-weight:500">Market Mood</span>
-        <span id="moodScore" style="font-size:22px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)">—</span>
-        <span id="moodLabel" style="font-size:12px;font-weight:600;color:var(--pc-text-2)">Loading...</span>
-        <div style="width:80px;height:5px;border-radius:3px;background:var(--pc-border);overflow:hidden">
-          <div id="moodFill" style="height:100%;border-radius:3px;background:linear-gradient(90deg,var(--pc-red),var(--pc-yellow),var(--pc-green));width:0%"></div>
+  <!-- ── Indices Bar ── -->
+  <div class="indices-bar" id="indicesBar">
+    <div class="indice"><div class="indice-name">S&P 500</div><div class="indice-price" id="sp500Val">—</div><div class="indice-change" id="sp500Chg"></div></div>
+    <div class="indice"><div class="indice-name">NASDAQ</div><div class="indice-price" id="nasdaqVal">—</div><div class="indice-change" id="nasdaqChg"></div></div>
+    <div class="indice"><div class="indice-name">DOW</div><div class="indice-price" id="dowVal">—</div><div class="indice-change" id="dowChg"></div></div>
+    <div class="indice"><div class="indice-name">VIX</div><div class="indice-price" id="vixVal">—</div><div class="indice-change" id="vixChg"></div></div>
+  </div>
+
+  <!-- ── Two-column Dashboard ── -->
+  <div class="dash-grid" style="margin-top:20px">
+
+    <!-- Left: Financial News -->
+    <div class="news-card dash-full" style="grid-column:1">
+      <h3 style="margin-bottom:8px">📰 Financial News</h3>
+      <div id="finNewsList">
+        <div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Right: Crypto + Sentiment -->
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="news-card">
+        <h3>🪙 Crypto</h3>
+        <div id="cryptoNewsList">
+          <div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="stat-card" id="fearGreedCard">
+          <div class="label">Fear &amp; Greed</div>
+          <div class="value" id="fgValue">—</div>
+          <div style="font-size:10px;color:var(--pc-text-3);margin-top:2px" id="fgLabel">Loading...</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">BTC</div>
+          <div class="value" id="btcPrice">—</div>
+          <div style="font-size:10px;color:var(--pc-text-3);margin-top:2px" id="btcChg"></div>
         </div>
       </div>
     </div>
-    <div class="live-stats" id="liveStats">
-    </div>
-  </section>
-
-  <!-- ── Quick Access Tools ────────────── -->
-  <div class="container">
-    <div class="news-mini" style="margin-bottom:20px;background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden">
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 16px 0">
-      <h3 style="font-size:13px;font-weight:600;color:var(--pc-heading);margin:0">📰 Latest Financial News</h3>
-      <a href="/market-sentinel/" style="font-size:11px;color:var(--pc-brand);text-decoration:none;font-weight:500">View All →</a>
-    </div>
-    <div id="newsList" style="display:flex;flex-direction:column">
-      <div class="loading" style="padding:20px;text-align:center;color:var(--pc-text-3);font-size:12px">Loading news...</div>
-    </div>
-  </div>
-  <div class="tools-grid">
-      <a href="/market-sentinel/" class="tool-card">
-        <div class="tool-card-icon sentinel">📊</div>
-        <h3>Market Sentinel</h3>
-        <p>Real-time sentiment analysis — Fear & Greed, stock indices, news, aggregated market mood.</p>
-        <span class="tool-link">View Dashboard →</span>
-      </a>
-      <a href="/crypto-pulse/" class="tool-card">
-        <div class="tool-card-icon crypto">🪙</div>
-        <h3>Crypto Pulse</h3>
-        <p>Crypto-specific market data: spot prices, news sentiment, Reddit buzz, 4chan pulse & CoinGecko trends.</p>
-        <span class="tool-link">Track Crypto →</span>
-      </a>
-      <a href="/poly-watch/" class="tool-card">
-        <div class="tool-card-icon poly">🎲</div>
-        <h3>Poly Watch</h3>
-        <p>AI-scanned prediction markets. Daily top picks with heuristic scoring & AI confidence analysis.</p>
-        <span class="tool-link">Scan Markets →</span>
-      </a>
-      <a href="/stock-pick/" class="tool-card">
-        <div class="tool-card-icon sentinel" style="background:var(--pc-purple-bg);color:var(--pc-purple)">💰</div>
-        <h3>Stock Pick</h3>
-        <p>AI-powered stock screener. Top 30 mega-cap value picks ranked by composite score across technical, value, growth & quality factors.</p>
-        <span class="tool-link">View Picks →</span>
-      </a>
-      <a href="/trading-arena/" class="tool-card">
-        <div class="tool-card-icon trading">🤖</div>
-        <h3>Trading Arena</h3>
-        <p>20 AI bots competing with $10K each. Live leaderboard, P&L tracking, strategy transparency.</p>
-        <span class="tool-link">Watch Bots →</span>
-      </a>
-    </div>
-
-
 
   </div>
 
-  <!-- ── Footer ────────────────────────── -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span>© 2026 PaperChase. Not financial advice.</span>
-      <div class="footer-links">
-        <a href="/market-sentinel/">Market Sentinel</a>
-        <a href="/crypto-pulse/">Crypto Pulse</a>
-        <a href="/poly-watch/">Poly Watch</a>
-        <a href="/stock-pick/">Stock Pick</a>
-        <a href="/trading-arena/">Trading Arena</a>
-      </div>
-    </div>
-  </footer>
+  <!-- ── Tool Cards ── -->
+  <div class="tools-grid" style="margin-top:24px">
+    <a href="/market-sentinel/" class="tool-card"><div class="tool-card-icon">📊</div><h3>Market Sentinel</h3><p>Real-time sentiment analysis — Fear &amp; Greed, indices, news</p></a>
+    <a href="/crypto-pulse/" class="tool-card"><div class="tool-card-icon">🪙</div><h3>Crypto Pulse</h3><p>Crypto prices, news sentiment, Reddit buzz &amp; trends</p></a>
+    <a href="/poly-watch/" class="tool-card"><div class="tool-card-icon">🎲</div><h3>Poly Watch</h3><p>AI prediction markets — daily picks with confidence scoring</p></a>
+    <a href="/stock-pick/" class="tool-card"><div class="tool-card-icon">💰</div><h3>Stock Pick</h3><p>Top 30 value picks ranked by composite scoring</p></a>
+    <a href="/trading-arena/" class="tool-card"><div class="tool-card-icon">🤖</div><h3>Trading Arena</h3><p>20 AI bots competing with $10K each</p></a>
+  </div>
 
 </div>
 
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 PaperChase. Not financial advice.</span>
+    <div class="footer-links">
+      <a href="/market-sentinel/">Market Sentinel</a>
+      <a href="/crypto-pulse/">Crypto Pulse</a>
+      <a href="/poly-watch/">Poly Watch</a>
+      <a href="/stock-pick/">Stock Pick</a>
+      <a href="/trading-arena/">Trading Arena</a>
+    </div>
+  </div>
+</footer>
+
 <script>
-// ── Prediction Data (server-side) ────────────────────────────────────
-
-
-// Refresh every 5 minutes
-
-// ── Market Mood & News ─────────────────────────
+// ── Dashboard Data Loader ──
 (async function() {
   try {
     const r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/1817c313a58d62bafc5975c43c870a999c966c01/data/market_data.json?t='+Date.now());
     if (!r.ok) return;
     const d = await r.json();
     const st = d.stocks || {};
-    const mood = st.market_mood || {};
-    
+    const crypto = d.crypto || {};
+
+    // Indices
+    const idx = st.indices || {};
+    for (const [key, ids] of [['sp500','sp500'],['nasdaq','nasdaq'],['dow','dow'],['vix','vix']]) {
+      const data = idx[key];
+      if (data) {
+        const val = document.getElementById(ids + 'Val');
+        const chg = document.getElementById(ids + 'Chg');
+        if (val) val.textContent = key === 'vix' ? data.value : data.value?.toLocaleString('en',{minimumFractionDigits:2});
+        if (chg) {
+          const c = data.change_24h || 0;
+          chg.textContent = (c >= 0 ? '+' : '') + c.toFixed(2) + '%';
+          chg.style.color = c >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
+        }
+      }
+    }
+
     // Mood
-    const score = mood.score !== undefined ? mood.score : 0;
+    const mood = st.market_mood || {};
+    const score = mood.score !== undefined ? Math.round(mood.score * 100) : 50;
     document.getElementById('moodScore').textContent = score;
     document.getElementById('moodLabel').textContent = (mood.label || 'Neutral').toUpperCase();
     document.getElementById('moodFill').style.width = score + '%';
-    
-    // News
-    const news = (st.news || []).slice(0,6);
-    if (!news.length) return;
-    const html = news.map(n => 
-      '<a href="' + (n.url || '#') + '" target="_blank" style="display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:6px;text-decoration:none;transition:background .1s" onmouseover="this.style.background=\'var(--pc-surface-hover)\'" onmouseout="this.style.background=\'transparent\'">' +
-        '<span style="font-size:9px;font-weight:700;color:var(--pc-text-3);min-width:40px;text-transform:uppercase">' + (n.source || '?') + '</span>' +
-        '<span style="font-size:12px;color:var(--pc-heading);flex:1;line-height:1.3">' + n.title + '</span>' +
-        '<span style="font-size:10px;color:' + (n.sentiment === 'positive' ? 'var(--pc-green)' : n.sentiment === 'negative' ? 'var(--pc-red)' : 'var(--pc-text-3)') + '">' + (n.sentiment || '') + '</span>' +
-      '</a>'
-    ).join('');
-    document.getElementById('newsList').innerHTML = html;
+
+    // Financial News
+    const finNews = (st.news || []).slice(0,8);
+    if (finNews.length) {
+      document.getElementById('finNewsList').innerHTML = finNews.map(n =>
+        '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
+          '<span class="src">' + (n.source||'?') + '</span>' +
+          '<span class="title">' + n.title + '</span>' +
+          '<span class="sentiment" style="color:' + (n.sentiment==='positive'?'var(--pc-green)':n.sentiment==='negative'?'var(--pc-red)':'var(--pc-text-3)') + '">' + (n.sentiment||'') + '</span>' +
+        '</a>'
+      ).join('');
+    }
+
+    // Crypto News
+    const cryNews = (crypto.news || []).slice(0,6);
+    if (cryNews.length) {
+      document.getElementById('cryptoNewsList').innerHTML = cryNews.map(n =>
+        '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
+          '<span class="title">' + n.title + '</span>' +
+          '<span class="sentiment" style="color:' + (n.sentiment==='positive'?'var(--pc-green)':n.sentiment==='negative'?'var(--pc-red)':'var(--pc-text-3)') + '">' + (n.sentiment||'') + '</span>' +
+        '</a>'
+      ).join('');
+    }
+
+    // Fear & Greed
+    const fg = crypto.fear_greed || {};
+    document.getElementById('fgValue').textContent = fg.value || '—';
+    document.getElementById('fgLabel').textContent = fg.label || '';
+
+    // BTC
+    const btc = (crypto.prices || []).find(p => p.symbol === 'BTC');
+    if (btc) {
+      document.getElementById('btcPrice').textContent = '$' + (btc.price_usd || '').toLocaleString('en');
+      const chg = btc.change_24h || 0;
+      const el = document.getElementById('btcChg');
+      el.textContent = (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%';
+      el.style.color = chg >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
+    }
   } catch(e) {
     document.getElementById('moodLabel').textContent = 'OFFLINE';
   }
 })();
-
 </script>
 </body>
 </html>
