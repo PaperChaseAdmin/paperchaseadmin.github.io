@@ -176,19 +176,14 @@ def main():
         print("  Already predicted today. Skipping.")
         return
 
-    # Check if market is open today via AI
+    # Check if market is open today (simple weekday check, no AI dependency)
+    weekday = datetime.now(timezone.utc).weekday()
     today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    weekday = datetime.now(timezone.utc).strftime("%A")
-    print(f"\n  Checking if US markets open on {today_str} ({weekday})...")
-    market_check = call_openrouter(
-        f"Is the US stock market (NYSE/NASDAQ) open for regular trading today {today_str} ({weekday})? "
-        "Reply with exactly: OPEN or CLOSED. If weekend or US holiday, reply CLOSED.",
-        max_tokens=10
-    )
-    if market_check and 'CLOSED' in market_check.upper():
-        print(f"  🏝️  Market CLOSED today ({market_check.strip()}). Skipping predictions.")
+    print(f"\n  Checking if US markets open on {today_str} (weekday={weekday})...")
+    if weekday >= 5:
+        print(f"  🏝️  Weekend — skipping predictions.")
         return
-    print(f"  ✅ Market OPEN — generating predictions...\n")
+    print(f"  ✅ Weekday — generating predictions...\n")
 
     print("1️⃣  Fetching market data...")
     md = fetch_json(MARKET_DATA_URL)
