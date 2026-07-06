@@ -25,14 +25,14 @@ DETAIL_TMPL = """<!DOCTYPE html>
 <style>
 /* Override old tv-* CSS vars used by bot-detail.js to match white+purple design */
 :root {
-  --tv-bg: #ffffff; --tv-surface: #ffffff; --tv-surface-2: #f8fafc; --tv-surface-3: #f1f5f9;
-  --tv-border: #e2e8f0; --tv-border-2: #cbd5e1;
-  --tv-text: #061b31; --tv-text-2: #64748b; --tv-text-3: #94a3b8;
-  --tv-green: #15be53; --tv-red: #ef4444; --tv-yellow: #f59e0b; --tv-blue: #533afd; --tv-amber: #d29922;
+  --tv-bg: #0c0d12; --tv-surface: #13151c; --tv-surface-2: #1a1d27; --tv-surface-3: #22263b;
+  --tv-border: #1e2133; --tv-border-2: #2a2f45;
+  --tv-text: #9ba6b8; --tv-text-2: #6b7a8f; --tv-text-3: #4a5568;
+  --tv-green: #00d4aa; --tv-red: #f05d5e; --tv-yellow: #f0b429; --tv-blue: #4d9aff; --tv-amber: #f0b429;
   --tv-font: var(--pc-font); --tv-mono: var(--pc-mono);
   --tv-radius: var(--pc-radius); --tv-radius-sm: var(--pc-radius-sm);
-  --tv-glow-green: 0 0 20px rgba(21,190,83,0.15);
-  --tv-glow-red: 0 0 20px rgba(239,68,68,0.15);
+  --tv-glow-green: 0 0 20px rgba(0,212,170,0.15);
+  --tv-glow-red: 0 0 20px rgba(240,93,94,0.15);
 }
 /* Bot detail overrides */
 .bot-crest{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:#fff;flex-shrink:0}
