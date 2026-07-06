@@ -469,6 +469,42 @@
 <script>
 // ── Prediction Data (server-side) ────────────────────────────────────
 
+async function loadTopBots() {
+  const el = document.getElementById('topBots');
+  try {
+    const resp = await fetch('https://api.github.com/repos/PaperChaseAdmin/trade/contents/data/leaderboard.json', {headers:{'Accept':'application/vnd.github+json'}});
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const meta = await resp.json();
+    const data = JSON.parse(atob(meta.content));
+    const bots = (data.bots || []).sort((a,b) => (b.total_return_pct || 0) - (a.total_return_pct || 0)).slice(0, 3);
+    if (bots.length === 0) throw new Error('No bots');
+
+    document.getElementById('liveBotCount').textContent = (data.bots || []).length;
+    if (bots.length > 0) {
+      const topPnl = bots[0].total_return_pct || 0;
+      document.getElementById('liveTopPnl').textContent = (topPnl >= 0 ? '+' : '') + topPnl.toFixed(1) + '%';
+    }
+
+    let html = '';
+    bots.forEach((bot, i) => {
+      const pnl = bot.total_return_pct || 0;
+      const pnlStr = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
+      const pnlClass = pnl >= 0 ? 'text-green' : 'text-red';
+      html += '<div class="bot-card">' +
+        '<div class="bot-rank r' + (i+1) + '">#' + (i+1) + '</div>' +
+        '<div class="bot-info">' +
+          '<div class="bot-name">' + (bot.display_name || 'Bot ' + (i+1)) + '</div>' +
+          '<div class="bot-meta">$' + ((bot.total_value||10000).toLocaleString('en', {maximumFractionDigits:0})) + ' · ' + (bot.total_trades||0) + ' trades</div>' +
+        '</div>' +
+        '<div class="bot-pnl ' + pnlClass + '">' + pnlStr + '</div>' +
+      '</div>';
+    });
+    el.innerHTML = html;
+  } catch (e) {
+    el.innerHTML = '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">⏳ Bot data not yet available — check back after market hours</div>';
+  }
+}
+
 loadTopBots();
 
 // Refresh every 5 minutes
