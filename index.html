@@ -396,7 +396,7 @@
     <p>Real-time sentiment, crypto pulse, prediction markets, AI stock picks &amp; trading bot leaderboard — all in one place.</p>
     <div class="live-stats" id="liveStats">
       <div class="live-stat"><span class="live-stat-dot"></span><span class="live-stat-label">Bots</span><span class="live-stat-value" id="liveBotCount">—</span></div>
-      <div class="live-stat"><span class="live-stat-dot purple"></span><span class="live-stat-label">Predictions Today</span><span class="live-stat-value" id="livePredCount">—</span></div>
+      
       <div class="live-stat"><span class="live-stat-dot amber"></span><span class="live-stat-label">Top Bot Return</span><span class="live-stat-value" id="liveTopPnl">—</span></div>
     </div>
   </section>
@@ -436,49 +436,6 @@
       </a>
     </div>
 
-    <!-- ── Today's Predictions ──────────── -->
-    <div class="section-head">
-      <h2>Today's Predictions</h2>
-      <a href="/predictions/">View All →</a>
-    </div>
-    <div class="widget-grid" id="predictionWidgets">
-      <div class="widget-card" data-tool="sentinel">
-        <div class="widget-header">
-          <h4>📊 Market Sentinel</h4>
-          <span class="badge badge-blue">Stocks</span>
-        </div>
-        <div id="sentinel-today" class="widget-today">
-          <span class="widget-today-label">Today</span>
-          <span class="widget-today-val" style="color:var(--pc-text-3)">—</span>
-        </div>
-        <div class="section-title" style="font-size:10px;margin-bottom:8px">Last 5 Days</div>
-        <div id="sentinel-hist" class="widget-hist"><div class="hist-empty">Tracking starts today</div></div>
-      </div>
-      <div class="widget-card" data-tool="crypto">
-        <div class="widget-header">
-          <h4>🪙 Crypto Pulse</h4>
-          <span class="badge badge-yellow">Crypto</span>
-        </div>
-        <div id="crypto-today" class="widget-today">
-          <span class="widget-today-label">Today</span>
-          <span class="widget-today-val" style="color:var(--pc-text-3)">—</span>
-        </div>
-        <div class="section-title" style="font-size:10px;margin-bottom:8px">Last 5 Days</div>
-        <div id="crypto-hist" class="widget-hist"><div class="hist-empty">Tracking starts today</div></div>
-      </div>
-      <div class="widget-card" data-tool="polywatch">
-        <div class="widget-header">
-          <h4>🎲 Poly Watch</h4>
-          <span class="badge badge-purple">Prediction Markets</span>
-        </div>
-        <div id="polywatch-today" class="widget-today">
-          <span class="widget-today-label">Today</span>
-          <span class="widget-today-val" style="color:var(--pc-text-3)">—</span>
-        </div>
-        <div class="section-title" style="font-size:10px;margin-bottom:8px">Last 5 Days</div>
-        <div id="polywatch-hist" class="widget-hist"><div class="hist-empty">Tracking starts today</div></div>
-      </div>
-    </div>
 
     <!-- ── Top Bots ─────────────────────── -->
     <div class="top-bots-section">
@@ -511,149 +468,7 @@
 
 <script>
 // ── Prediction Data (server-side) ────────────────────────────────────
-const PRED_DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/predictions/data/predictions.json';
 
-const TOOL_WIDGETS = [
-  {key: 'market_sentinel', id: 'sentinel', label: '📊 Market Sentinel'},
-  {key: 'crypto_pulse', id: 'crypto', label: '🪙 Crypto Pulse'},
-  {key: 'poly_watch', id: 'polywatch', label: '🎲 Poly Watch'},
-];
-
-async function initPredictions() {
-  try {
-    const resp = await fetch(PRED_DATA_URL + '?t=' + Date.now());
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const data = await resp.json();
-    renderAllWidgets(data);
-    updateLiveStats(data);
-  } catch (e) {
-    document.querySelectorAll('.widget-card .widget-history').forEach(el => {
-      el.innerHTML = '<div class="hist-empty">⚠️ Unable to load predictions</div>';
-    });
-  }
-}
-
-function renderAllWidgets(data) {
-  const tools = data.tools || {};
-  TOOL_WIDGETS.forEach(({key, id}) => {
-    const tool = tools[key] || {};
-    const preds = tool.predictions || [];
-    const today = new Date().toISOString().slice(0, 10);
-
-    // Today's prediction
-    const todayPred = preds.filter(p => p.date === today).slice(-3);
-    const todayEl = document.getElementById(id + '-today');
-    if (todayPred.length === 0) {
-      var _d=new Date(),_w=_d.getDay()===0||_d.getDay()===6;
-      todayEl.innerHTML = '<span class="widget-today-label">Today</span><span class="widget-today-val" style="color:var(--pc-text-3)">'+(_w?'Markets Closed':'⏳ Pending')+'</span>';
-    } else {
-      const settled = todayPred.filter(p => p.settled);
-      const pending = todayPred.filter(p => !p.settled);
-      let html = '';
-      settled.forEach(p => {
-        const ok = p.correct;
-        html += '<div style="font-size:11px;margin:2px 0"><span class="widget-today-label" style="font-size:9px">' + p.market + '</span><span class="widget-today-val" style="font-size:12px;color:' + (ok ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + (ok ? '✅ ' : '❌ ') + p.prediction.toUpperCase() + '</span></div>';
-      });
-      pending.forEach(p => {
-        var _c = p.prediction === 'up' ? 'var(--pc-green)' : p.prediction === 'down' ? 'var(--pc-red)' : 'var(--pc-text-3)';
-        html += '<div style="font-size:11px;margin:2px 0"><span class="widget-today-label" style="font-size:9px">' + p.market + '</span><span class="widget-today-val" style="font-size:12px;color:' + _c + '">' + (p.prediction === 'up' ? '📈 ' : p.prediction === 'down' ? '📉 ' : '➡️ ') + p.prediction.toUpperCase() + ' (' + p.confidence + '%)</span></div>';
-      });
-      todayEl.innerHTML = html;
-    }
-
-    // History (last 10 days, settled only)
-    const histEl = document.getElementById(id + '-hist');
-    const settled = preds.filter(p => p.settled).slice(-10);
-    if (settled.length === 0) {
-      histEl.innerHTML = '<div class="hist-empty">No prediction history yet</div>';
-      return;
-    }
-
-    let html = '';
-    settled.forEach(p => {
-      const day = new Date(p.date);
-      const dayLabel = day.toLocaleDateString('en', { weekday: 'short' }).toUpperCase();
-      const isCorrect = p.correct;
-      const pct = isCorrect ? 100 : 0;
-      const dir = p.prediction.toUpperCase();
-      html += '<div class="hist-row">' +
-        '<span class="hist-day">' + dayLabel + '</span>' +
-        '<span class="hist-dir" style="font-size:10px;color:var(--pc-text-3);min-width:30px">' + dir + '</span>' +
-        '<div class="hist-bar-wrap"><div class="hist-bar-fill ' + (isCorrect ? 'win' : 'loss') + '" style="width:' + pct + '%"></div></div>' +
-        '<span class="hist-result ' + (isCorrect ? 'text-green' : 'text-red') + '">' + (isCorrect ? '✓' : '✗') + '</span>' +
-      '</div>';
-    });
-    // Show accuracy
-    const acc = tool.accuracy_pct;
-    if (acc != null) {
-      html += '<div class="hist-row" style="margin-top:6px;border-top:1px solid var(--pc-border);padding-top:6px">' +
-        '<span class="hist-day" style="font-weight:600">Accuracy</span><span></span><div></div>' +
-        '<span class="hist-result" style="font-weight:700;color:' + (acc >= 50 ? 'var(--pc-green)' : 'var(--pc-red)') + '">' + acc + '%</span>' +
-      '</div>';
-    }
-    histEl.innerHTML = html;
-  });
-}
-
-function updateLiveStats(data) {
-  const tools = data.tools || {};
-  // Prediction count today
-  const today = new Date();
-  const day = today.getDay();
-  // ponytail: Saturday(6) or Sunday(0) — no predictions generated
-  if (day === 0 || day === 6) {
-    document.getElementById('livePredCount').textContent = '—';
-    return;
-  }
-  const todayStr = today.toISOString().slice(0, 10);
-  let predCount = 0;
-  Object.values(tools).forEach(t => {
-    const preds = t.predictions || [];
-    predCount += preds.filter(p => p.date === todayStr).length;
-  });
-  document.getElementById('livePredCount').textContent = predCount || '—';
-}
-
-// ── Top Bots from Trading Arena ──────────────────────────────────────
-async function loadTopBots() {
-  const el = document.getElementById('topBots');
-  try {
-    const resp = await fetch('https://api.github.com/repos/PaperChaseAdmin/trade/contents/data/leaderboard.json', {headers:{'Accept':'application/vnd.github+json'}});
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const meta = await resp.json();
-    const data = JSON.parse(atob(meta.content));
-    const bots = (data.bots || []).sort((a,b) => (b.total_return_pct || 0) - (a.total_return_pct || 0)).slice(0, 3);
-    if (bots.length === 0) throw new Error('No bots');
-
-    // Update live stats
-    document.getElementById('liveBotCount').textContent = (data.bots || []).length;
-    if (bots.length > 0) {
-      const topPnl = bots[0].total_return_pct || 0;
-      document.getElementById('liveTopPnl').textContent = (topPnl >= 0 ? '+' : '') + topPnl.toFixed(1) + '%';
-    }
-
-    let html = '';
-    bots.forEach((bot, i) => {
-      const pnl = bot.total_return_pct || 0;
-      const pnlStr = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
-      const pnlClass = pnl >= 0 ? 'text-green' : 'text-red';
-      html += '<div class="bot-card">' +
-        '<div class="bot-rank r' + (i+1) + '">#' + (i+1) + '</div>' +
-        '<div class="bot-info">' +
-          '<div class="bot-name">' + (bot.display_name || 'Bot ' + (i+1)) + '</div>' +
-          '<div class="bot-meta">$' + ((bot.total_value||10000).toLocaleString('en', {maximumFractionDigits:0})) + ' · ' + (bot.total_trades||0) + ' trades</div>' +
-        '</div>' +
-        '<div class="bot-pnl ' + pnlClass + '">' + pnlStr + '</div>' +
-      '</div>';
-    });
-    el.innerHTML = html;
-  } catch (e) {
-    el.innerHTML = '<div style="color:var(--pc-text-3);font-size:12px;text-align:center;padding:20px">⏳ Bot data not yet available — check back after market hours</div>';
-  }
-}
-
-// ── Init ──────────────────────────────────────────────────────────────
-initPredictions();
 loadTopBots();
 
 // Refresh every 5 minutes
