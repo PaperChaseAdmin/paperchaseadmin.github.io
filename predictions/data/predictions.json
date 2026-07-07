@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-06T14:09:34Z",
-  "last_prediction_date": "2026-07-06",
+  "updated_at": "2026-07-07T15:27:19Z",
+  "last_prediction_date": "2026-07-07",
   "last_settle_date": "",
   "tools": {
     "market_sentinel": {
@@ -278,6 +278,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-07-07",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 58,
+          "signal": "S&P 500 -0.68% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-07",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 66,
+          "signal": "NASDAQ -1.41% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-07",
+          "market": "DOW",
+          "prediction": "down",
+          "confidence": 55,
+          "signal": "DOW -0.42% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -376,6 +406,16 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-07-07",
+          "market": "Crypto Market",
+          "prediction": "up",
+          "confidence": 74,
+          "signal": "BTC +2.03% | Fear&Greed: 27 (Fear)",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -471,6 +511,16 @@
           "prediction": "up",
           "confidence": 51,
           "signal": "Will GPT-6 be released before GTA VI? | Yes 51% / No 49% | Vol $672,612",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-07",
+          "market": "Will China invades Taiwan before GTA VI?",
+          "prediction": "up",
+          "confidence": 51,
+          "signal": "Will China invades Taiwan before GTA VI? | Yes 50% / No 50% | Vol $1,902,816",
           "actual": null,
           "correct": null,
           "settled": false
