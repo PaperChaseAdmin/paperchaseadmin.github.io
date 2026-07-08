@@ -447,7 +447,7 @@ async function loadData() {
     } catch (parseErr) {
       // CDN may serve stale cache — fall back to main branch URL
       console.warn('CDN cache stale, falling back to main branch:', parseErr.message);
-      const resp2 = await fetch(DATA_FALLBACK_URL + '?t=' + Date.now());
+      const resp2 = await fetch(DATA_URL + '?t=' + Date.now());
       if (!resp2.ok) throw new Error('Fallback HTTP ' + resp2.status);
       data = await resp2.json();
     }
