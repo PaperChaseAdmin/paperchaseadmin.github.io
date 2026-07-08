@@ -150,7 +150,7 @@
 // ── Dashboard Data Loader ──
 (async function() {
   try {
-    const r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/1817c313a58d62bafc5975c43c870a999c966c01/data/market_data.json?t='+Date.now());
+    const r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json?t='+Date.now());
     if (!r.ok) return;
     const d = await r.json();
     const st = d.stocks || {};
