@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-09T15:42:33Z",
+  "updated_at": "2026-07-09T21:53:35Z",
   "last_prediction_date": "2026-07-09",
-  "last_settle_date": "2026-07-08",
+  "last_settle_date": "2026-07-09",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 6,
-      "correct": 5,
-      "accuracy_pct": 83.3,
+      "total": 9,
+      "correct": 8,
+      "accuracy_pct": 88.9,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -351,9 +351,10 @@
           "prediction": "up",
           "confidence": 56,
           "signal": "S&P 500 +0.58% today",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.81
         },
         {
           "date": "2026-07-09",
@@ -361,9 +362,10 @@
           "prediction": "up",
           "confidence": 59,
           "signal": "NASDAQ +0.78% today",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.3
         },
         {
           "date": "2026-07-09",
@@ -371,17 +373,18 @@
           "prediction": "up",
           "confidence": 53,
           "signal": "DOW +0.31% today",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.27
         }
       ]
     },
     "crypto_pulse": {
       "label": "Crypto Pulse",
-      "total": 2,
-      "correct": 1,
-      "accuracy_pct": 50.0,
+      "total": 3,
+      "correct": 2,
+      "accuracy_pct": 66.7,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -501,9 +504,10 @@
           "prediction": "up",
           "confidence": 76,
           "signal": "BTC +2.19% | Fear&Greed: 22 (Extreme Fear)",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.78
         }
       ]
     },
