@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-08T21:37:05Z",
-  "last_prediction_date": "2026-07-08",
+  "updated_at": "2026-07-09T15:42:33Z",
+  "last_prediction_date": "2026-07-09",
   "last_settle_date": "2026-07-08",
   "tools": {
     "market_sentinel": {
@@ -344,6 +344,36 @@
           "correct": true,
           "settled": true,
           "change_pct": -1.09
+        },
+        {
+          "date": "2026-07-09",
+          "market": "S&P 500",
+          "prediction": "up",
+          "confidence": 56,
+          "signal": "S&P 500 +0.58% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-09",
+          "market": "NASDAQ",
+          "prediction": "up",
+          "confidence": 59,
+          "signal": "NASDAQ +0.78% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-09",
+          "market": "DOW",
+          "prediction": "up",
+          "confidence": 53,
+          "signal": "DOW +0.31% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -464,6 +494,16 @@
           "correct": true,
           "settled": true,
           "change_pct": -2.22
+        },
+        {
+          "date": "2026-07-09",
+          "market": "Crypto Market",
+          "prediction": "up",
+          "confidence": 76,
+          "signal": "BTC +2.19% | Fear&Greed: 22 (Extreme Fear)",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -579,6 +619,16 @@
           "prediction": "up",
           "confidence": 51,
           "signal": "Will China invades Taiwan before GTA VI? | Yes 50% / No 50% | Vol $1,903,063",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-09",
+          "market": "Will GPT-6 be released before GTA VI?",
+          "prediction": "up",
+          "confidence": 51,
+          "signal": "Will GPT-6 be released before GTA VI? | Yes 51% / No 49% | Vol $682,214",
           "actual": null,
           "correct": null,
           "settled": false
