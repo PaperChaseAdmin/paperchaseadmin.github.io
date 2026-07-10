@@ -17,30 +17,38 @@
 <link rel="stylesheet" href="/assets/design-system.css">
 <script src="/assets/i18n.js"></script>
 <style>
-.hero { padding: 48px 0 32px; }
-.hero h1 { font-size: clamp(22px, 3vw, 32px); font-weight: 700; color: var(--pc-heading); letter-spacing: -0.03em; margin-bottom: 8px; }
-.hero p { font-size: 13px; color: var(--pc-text-2); max-width: 600px; }
 .live-stats { display: flex; gap: 24px; padding: 16px 0; }
 .live-stat { display: flex; align-items: center; gap: 8px; }
 .live-stat-dot { width: 8px; height: 8px; border-radius: 50%; }
 .live-stat-label { font-size: 11px; color: var(--pc-text-2); }
 .live-stat-value { font-size: 16px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); }
-.news-mini { margin-bottom: 20px; }
-.news-mini a { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: var(--pc-radius); text-decoration: none; transition: background 0.1s; }
-.news-mini a:hover { background: var(--pc-surface-hover); }
+
+/* ── Sentiment cards ── */
+.sent-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+.sent-card { background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 14px 16px; }
+.sent-card .sc-hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px; }
+.sent-card .sc-hdr .sc-market { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 7px; border-radius: 3px; }
+.sent-card .sc-label { font-size: 10px; color: var(--pc-text-3); }
+.sent-card .sc-main { display: flex; align-items: baseline; gap: 8px; margin: 2px 0; }
+.sent-card .sc-value { font-size: 24px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); letter-spacing: -0.02em; }
+.sent-card .sc-badge { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 3px; }
+.sent-card .sc-chart { margin-top: 4px; height: 44px; }
+.sent-card .sc-chart canvas { width: 100%; height: 44px; }
+.sent-card .sc-axis { display: flex; justify-content: space-between; font-size: 8px; color: var(--pc-text-3); margin-top: 1px; }
+
+/* ── News ── */
 .news-item .ndate { font-size: 9px; color: var(--pc-text-3); white-space: nowrap; margin-left: auto; padding-left: 8px; flex-shrink: 0; }
 
-/* ── F&G 14-day history ── */
-.fg-section { margin: 16px 0; }
-.fg-card { background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 16px; }
-.fg-card .fg-hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-.fg-card .fg-hdr .fg-title { font-size: 13px; font-weight: 600; color: var(--pc-heading); }
-.fg-card .fg-hdr .fg-current { font-size: 22px; font-weight: 700; font-family: var(--pc-mono); }
-.fg-card .fg-hdr .fg-label { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 3px; margin-left: 8px; }
-.fg-card .fg-hdr .fg-label { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 3px; margin-left: 8px; }
+/* ── Countdown ── */
+.countdown { font-family: var(--pc-mono); font-size: 11px; color: var(--pc-text-2); display: flex; align-items: center; gap: 4px; }
+.countdown .num { font-weight: 700; color: var(--pc-heading); min-width: 14px; text-align: center; }
+.countdown .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--pc-green); animation: pulse-dot 2s ease-in-out infinite; }
+
+@keyframes pulse-dot { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
 
 @media (max-width: 768px) {
   .live-stats { flex-wrap: wrap; gap: 12px; }
+  .sent-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -57,28 +65,23 @@
   <div class="topbar-spacer"></div>
   <div class="topbar-auth">
     <a class="nav-link" href="/login/" data-i18n="nav_login">Log In</a>
-    <a href="/register/" data-i18n="nav_register" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none">Register</a>
+    <a href="/register/" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none">Register</a>
   </div>
 </div></nav>
 
 <div class="container">
-  <!-- ── Header ── -->
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
     <div>
       <h1 style="font-size:22px;font-weight:700;color:var(--pc-heading);letter-spacing:-0.03em;margin:0">Dashboard</h1>
-      <p style="font-size:12px;color:var(--pc-text-2);margin-top:2px">Market overview &amp; intelligence</p>
+      <p style="font-size:12px;color:var(--pc-text-2);margin-top:1px">Market overview &amp; intelligence</p>
     </div>
-    <div class="mood-bar" id="moodBar">
-      <span style="font-size:11px;color:var(--pc-text-3)" data-i18n="mood_label">Market Mood</span>
-      <span class="score" id="moodScore">&mdash;</span>
-      <span class="label" id="moodLabel">Loading...</span>
-      <div style="width:60px;height:4px;border-radius:2px;background:var(--pc-border);overflow:hidden">
-        <div id="moodFill" style="height:100%;border-radius:2px;background:linear-gradient(90deg,var(--pc-red),var(--pc-yellow),var(--pc-green));width:50%"></div>
-      </div>
+    <div class="countdown" id="countdownBox">
+      <span class="dot"></span>
+      <span>Next update in</span>
+      <span class="num" id="cdMin">0</span><span>:<span class="num" id="cdSec">00</span></span>
     </div>
   </div>
 
-  <!-- ── Indices Bar (incl. BTC) ── -->
   <div class="indices-bar" id="indicesBar">
     <div class="indice"><div class="indice-name">S&amp;P 500</div><div class="indice-price" id="sp500Val">&mdash;</div><div class="indice-change" id="sp500Chg"></div></div>
     <div class="indice"><div class="indice-name">NASDAQ</div><div class="indice-price" id="nasdaqVal">&mdash;</div><div class="indice-change" id="nasdaqChg"></div></div>
@@ -87,21 +90,34 @@
     <div class="indice" id="btcIndice"><div class="indice-name">BTC</div><div class="indice-price" id="btcPriceIdx">&mdash;</div><div class="indice-change" id="btcChgIdx"></div></div>
   </div>
 
-  <!-- ── Fear & Greed 14-Day History ── -->
-  <div class="fg-section">
-    <div class="fg-card">
-      <div class="fg-hdr">
-        <span class="fg-title">Fear &amp; Greed Index <span style="font-size:10px;color:var(--pc-text-3);font-weight:400">(14-day)</span></span>
-        <span>
-          <span class="fg-current" id="fgTodayVal">&mdash;</span>
-          <span class="fg-label" id="fgTodayLabel" style="background:var(--pc-surface-2);color:var(--pc-text-2)">Loading...</span>
-        </span>
+  <!-- ── Sentiment Row: Financial (left) + Crypto (right) ── -->
+  <div class="sent-grid">
+    <!-- Market Mood — Financial Market -->
+    <div class="sent-card" id="moodCard">
+      <div class="sc-hdr">
+        <span class="sc-market" style="background:var(--pc-blue-bg);color:var(--pc-blue)">Financial Market</span>
+        <span class="sc-label">Market Mood</span>
       </div>
-      <div style="height:48px;margin-top:4px"><canvas id="fgLineChart"></canvas></div>
-      <div style="display:flex;justify-content:space-between;font-size:8px;color:var(--pc-text-3);margin-top:2px">
-        <span id="fgOldestDay"></span>
-        <span id="fgNewestDay"></span>
+      <div class="sc-main">
+        <span class="sc-value" id="moodValue">&mdash;</span>
+        <span class="sc-badge" id="moodBadge" style="background:var(--pc-surface-2);color:var(--pc-text-2)">Loading...</span>
       </div>
+      <div class="sc-chart"><canvas id="moodChart"></canvas></div>
+      <div class="sc-axis"><span id="moodOldest"></span><span id="moodNewest"></span></div>
+    </div>
+
+    <!-- Fear & Greed — Crypto Market -->
+    <div class="sent-card">
+      <div class="sc-hdr">
+        <span class="sc-market" style="background:var(--pc-yellow-bg);color:var(--pc-yellow)">Crypto Market</span>
+        <span class="sc-label">Fear &amp; Greed Index</span>
+      </div>
+      <div class="sc-main">
+        <span class="sc-value" id="fgValue">&mdash;</span>
+        <span class="sc-badge" id="fgBadge" style="background:var(--pc-surface-2);color:var(--pc-text-2)">Loading...</span>
+      </div>
+      <div class="sc-chart"><canvas id="fgChart"></canvas></div>
+      <div class="sc-axis"><span id="fgOldest"></span><span id="fgNewest"></span></div>
     </div>
   </div>
 
@@ -109,20 +125,15 @@
   <div class="dash-grid">
     <div class="news-card dash-full" style="grid-column:1">
       <h3 style="margin-bottom:8px">Financial News</h3>
-      <div id="finNewsList">
-        <div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div>
-      </div>
+      <div id="finNewsList"><div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:16px">
       <div class="news-card">
         <h3>Crypto News</h3>
-        <div id="cryptoNewsList">
-          <div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div>
-        </div>
+        <div id="cryptoNewsList"><div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div></div>
       </div>
     </div>
   </div>
-
 </div>
 
 <footer class="footer">
@@ -142,16 +153,16 @@
 function fmtDate(pubStr) {
   if (!pubStr) return '';
   try {
-    const d = new Date(pubStr);
+    var d = new Date(pubStr);
     if (isNaN(d.getTime())) return pubStr.slice(0,10);
-    const now = new Date();
-    const diffH = (now - d) / 3600000;
+    var now = new Date();
+    var diffH = (now - d) / 3600000;
     if (diffH < 24) return Math.round(diffH) + 'h ago';
     if (diffH < 48) return '1d ago';
-    const m = d.toLocaleDateString('en',{month:'short',day:'numeric'});
-    const y = d.getFullYear() !== now.getFullYear() ? ' ' + d.getFullYear() : '';
+    var m = d.toLocaleDateString('en',{month:'short',day:'numeric'});
+    var y = d.getFullYear() !== now.getFullYear() ? ' ' + d.getFullYear() : '';
     return m + y;
-  } catch(e) { return pubStr.slice(0,10); }
+  } catch(e) { return ''; }
 }
 
 function sentColor(s) {
@@ -162,58 +173,90 @@ function sentColor(s) {
   return 'var(--pc-text-3)';
 }
 
+function drawLineChart(canvasId, vals, color, fill) {
+  var c = document.getElementById(canvasId);
+  if (!c) return;
+  var pw = c.parentElement.clientWidth || 300;
+  c.width = pw; c.height = 44;
+  var ctx = c.getContext('2d');
+  if (!vals || vals.length < 1) {
+    ctx.fillStyle = '#b0aba4'; ctx.font = '9px Inter'; ctx.textAlign = 'center';
+    ctx.fillText('accumulating data...', pw/2, 22); return;
+  }
+  var mn = Math.min(...vals), mx = Math.max(...vals), rng = mx - mn || 1;
+  var xs = (pw - 8) / Math.max(vals.length - 1, 1);
+  ctx.beginPath();
+  vals.forEach(function(v,i) {
+    var x = 4 + i*xs, y = 38 - ((v-mn)/rng)*30;
+    i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+  });
+  var lx = 4 + (vals.length-1)*xs;
+  ctx.lineTo(lx, 38); ctx.lineTo(4, 38); ctx.closePath();
+  ctx.fillStyle = fill; ctx.fill();
+  ctx.beginPath();
+  vals.forEach(function(v,i) {
+    var x = 4 + i*xs, y = 38 - ((v-mn)/rng)*30;
+    i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+  });
+  ctx.strokeStyle = color; ctx.lineWidth = 1.5; ctx.stroke();
+}
+
+// ── localStorage history ──
+var HK = 'pc_daily2';
+function loadH() { try { return JSON.parse(localStorage.getItem(HK))||[]; } catch(e){ return []; }}
+function saveH(h) { try { localStorage.setItem(HK,JSON.stringify(h)); } catch(e){} }
+function snapMood(v) {
+  var td = new Date().toISOString().slice(0,10);
+  var h = loadH();
+  if (h.length && h[h.length-1].date===td) return h;
+  h.push({date:td, mood: v});
+  if (h.length>30) h.splice(0,h.length-30);
+  saveH(h); return h;
+}
+
+// ── Countdown timer (updates every 10 min at :00/:10/:20/:30/:40/:50) ──
+function tickCountdown() {
+  var now = new Date();
+  var min = now.getMinutes();
+  var sec = now.getSeconds();
+  var next = (Math.floor(min / 10) + 1) * 10;
+  var remMin = (next - min - 1 + 60) % 60;
+  var remSec = (60 - sec) % 60;
+  if (remSec === 60) { remSec = 0; remMin++; }
+  document.getElementById('cdMin').textContent = remMin;
+  document.getElementById('cdSec').textContent = String(remSec).padStart(2,'0');
+}
+setInterval(tickCountdown, 1000);
+
 // ── Main ──
 (async function() {
   try {
-    // ── F&G 14-day history ──
-    var fgHistResp = await fetch('https://api.alternative.me/fng/?limit=14');
-    if (fgHistResp.ok) {
-      var fgData = await fgHistResp.json();
+    // ── Countdown init ──
+    tickCountdown();
+
+    // ── F&G 14-day (from API) ──
+    var fgResp = await fetch('https://api.alternative.me/fng/?limit=14');
+    if (fgResp.ok) {
+      var fgData = await fgResp.json();
       var fgItems = fgData.data || [];
       if (fgItems.length) {
-        // Latest (today)
-        var today = fgItems[0];
-        document.getElementById('fgTodayVal').textContent = today.value;
-        var lbl = document.getElementById('fgTodayLabel');
-        lbl.textContent = today.value_classification || '';
-        lbl.style.background = 'var(--pc-' + (parseInt(today.value) >= 50 ? 'green' : 'red') + '-bg)';
-        lbl.style.color = 'var(--pc-' + (parseInt(today.value) >= 50 ? 'green' : 'red') + ')';
+        var fgToday = fgItems[0];
+        document.getElementById('fgValue').textContent = fgToday.value;
+        var fgLbl = document.getElementById('fgBadge');
+        fgLbl.textContent = fgToday.value_classification || '';
+        var fgV = parseInt(fgToday.value);
+        fgLbl.style.background = 'var(--pc-' + (fgV >= 50 ? 'green' : 'red') + '-bg)';
+        fgLbl.style.color = 'var(--pc-' + (fgV >= 50 ? 'green' : 'red') + ')';
 
-        // 14-day line chart (reversed so oldest on left)
-        var vals = [];
-        var days = [];
+        var fgVals = [], fgDays = [];
         for (var i = fgItems.length - 1; i >= 0; i--) {
-          vals.push(parseInt(fgItems[i].value));
+          fgVals.push(parseInt(fgItems[i].value));
           var d = new Date(parseInt(fgItems[i].timestamp) * 1000);
-          days.push(d.toLocaleDateString('en',{month:'short',day:'numeric'}));
+          fgDays.push(d.toLocaleDateString('en',{month:'short',day:'numeric'}));
         }
-        document.getElementById('fgOldestDay').textContent = days[0] || '';
-        document.getElementById('fgNewestDay').textContent = days[days.length-1] || '';
-
-        var lc = document.getElementById('fgLineChart');
-        if (lc) {
-          var pw = lc.parentElement.clientWidth || 600;
-          lc.width = pw; lc.height = 48;
-          var cx = lc.getContext('2d');
-          var mn = Math.min(...vals), mx = Math.max(...vals), rng = mx - mn || 1;
-          var xs = (pw - 8) / Math.max(vals.length - 1, 1);
-          // Fill
-          cx.beginPath();
-          vals.forEach(function(v,i) {
-            var x = 4 + i*xs, y = 42 - ((v-mn)/rng)*34;
-            i===0 ? cx.moveTo(x,y) : cx.lineTo(x,y);
-          });
-          var lx = 4 + (vals.length-1)*xs;
-          cx.lineTo(lx, 42); cx.lineTo(4, 42); cx.closePath();
-          cx.fillStyle = 'rgba(200,149,78,0.08)'; cx.fill();
-          // Line
-          cx.beginPath();
-          vals.forEach(function(v,i) {
-            var x = 4 + i*xs, y = 42 - ((v-mn)/rng)*34;
-            i===0 ? cx.moveTo(x,y) : cx.lineTo(x,y);
-          });
-          cx.strokeStyle = '#c8954e'; cx.lineWidth = 1.5; cx.stroke();
-        }
+        document.getElementById('fgOldest').textContent = fgDays[0] || '';
+        document.getElementById('fgNewest').textContent = fgDays[fgDays.length-1] || '';
+        drawLineChart('fgChart', fgVals, '#c8954e', 'rgba(200,149,78,0.08)');
       }
     }
 
@@ -226,9 +269,9 @@ function sentColor(s) {
 
     // Indices
     var idx = st.indices || {};
-    var idxMap = [['sp500','sp500'],['nasdaq','nasdaq'],['dow','dow'],['vix','vix']];
-    for (var j = 0; j < idxMap.length; j++) {
-      var key = idxMap[j][0], ids = idxMap[j][1];
+    var imap = [['sp500','sp500'],['nasdaq','nasdaq'],['dow','dow'],['vix','vix']];
+    for (var j = 0; j < imap.length; j++) {
+      var key = imap[j][0], ids = imap[j][1];
       var data = idx[key];
       if (data) {
         var valEl = document.getElementById(ids + 'Val');
@@ -242,7 +285,7 @@ function sentColor(s) {
       }
     }
 
-    // BTC in indices row
+    // BTC
     var btc = (crypto.prices || []).find(function(p) { return p.symbol === 'BTC'; });
     if (btc) {
       document.getElementById('btcPriceIdx').textContent = '$' + (btc.price_usd || 0).toLocaleString('en');
@@ -252,16 +295,32 @@ function sentColor(s) {
       btcChgEl.style.color = bchg >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
     }
 
-    // Mood
+    // ── Market Mood ──
     var mood = st.market_mood || {};
-    var score = mood.score !== undefined ? Math.round(mood.score * 100) : 50;
-    document.getElementById('moodScore').textContent = score;
-    var moodLbl = mood.label || 'Neutral';
-    document.getElementById('moodLabel').textContent = moodLbl.toUpperCase();
-    document.getElementById('moodFill').style.width = score + '%';
+    var mScore = mood.score !== undefined ? Math.round(mood.score * 100) : null;
+    if (mScore !== null) {
+      document.getElementById('moodValue').textContent = mScore;
+      var moodLblTxt = mood.label || 'Neutral';
+      var moodBadge = document.getElementById('moodBadge');
+      moodBadge.textContent = moodLblTxt.toUpperCase();
+      moodBadge.style.background = 'var(--pc-' + (mScore >= 60 ? 'green' : mScore >= 40 ? 'yellow' : 'red') + '-bg)';
+      moodBadge.style.color = 'var(--pc-' + (mScore >= 60 ? 'green' : mScore >= 40 ? 'yellow' : 'red') + ')';
 
-    // Financial News
-    var finNews = (st.news || []).slice(0,15);
+      // Save to localStorage history
+      var hist = snapMood(mScore);
+      var mVals = hist.filter(function(h) { return h.mood !== null; }).map(function(h) { return h.mood; });
+      var mDays = hist.map(function(h) { return h.date; });
+      if (mVals.length > 1) drawLineChart('moodChart', mVals, '#5b7fb5', 'rgba(91,127,181,0.08)');
+      else if (mVals.length === 1) drawLineChart('moodChart', [mVals[0], mVals[0]], '#5b7fb5', 'rgba(91,127,181,0.08)');
+      else drawLineChart('moodChart', [], '#5b7fb5', 'rgba(91,127,181,0.08)');
+      document.getElementById('moodOldest').textContent = mDays.length ? mDays[0].slice(5) : '';
+      document.getElementById('moodNewest').textContent = mDays.length ? mDays[mDays.length-1].slice(5) : '';
+    }
+
+    // ── Financial News (sorted newest first) ──
+    var finNews = (st.news || []).slice();
+    finNews.sort(function(a,b) { return new Date(b.published) - new Date(a.published); });
+    finNews = finNews.slice(0,15);
     if (finNews.length) {
       document.getElementById('finNewsList').innerHTML = finNews.map(function(n) {
         return '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
@@ -273,8 +332,10 @@ function sentColor(s) {
       }).join('');
     }
 
-    // Crypto News
-    var cryNews = (crypto.news || []).slice(0,8);
+    // ── Crypto News (sorted newest first) ──
+    var cryNews = (crypto.news || []).slice();
+    cryNews.sort(function(a,b) { return new Date(b.published) - new Date(a.published); });
+    cryNews = cryNews.slice(0,10);
     if (cryNews.length) {
       document.getElementById('cryptoNewsList').innerHTML = cryNews.map(function(n) {
         return '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
@@ -286,7 +347,7 @@ function sentColor(s) {
     }
 
   } catch(e) {
-    document.getElementById('moodLabel').textContent = 'OFFLINE';
+    // silent
   }
 })();
 </script>
