@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-09T21:53:35Z",
-  "last_prediction_date": "2026-07-09",
+  "updated_at": "2026-07-10T15:13:55Z",
+  "last_prediction_date": "2026-07-10",
   "last_settle_date": "2026-07-09",
   "tools": {
     "market_sentinel": {
@@ -377,6 +377,36 @@
           "correct": true,
           "settled": true,
           "change_pct": 0.27
+        },
+        {
+          "date": "2026-07-10",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "S&P 500 +0.02% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-10",
+          "market": "NASDAQ",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "NASDAQ -0.22% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-10",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "DOW +0.15% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -508,6 +538,16 @@
           "correct": true,
           "settled": true,
           "change_pct": 1.78
+        },
+        {
+          "date": "2026-07-10",
+          "market": "Crypto Market",
+          "prediction": "up",
+          "confidence": 68,
+          "signal": "BTC +1.51% | Fear&Greed: 23 (Extreme Fear)",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -633,6 +673,16 @@
           "prediction": "up",
           "confidence": 51,
           "signal": "Will GPT-6 be released before GTA VI? | Yes 51% / No 49% | Vol $682,214",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-10",
+          "market": "Will GPT-6 be released before GTA VI?",
+          "prediction": "up",
+          "confidence": 52,
+          "signal": "Will GPT-6 be released before GTA VI? | Yes 52% / No 48% | Vol $682,329",
           "actual": null,
           "correct": null,
           "settled": false
