@@ -42,9 +42,24 @@
 
 .market-mood-bar { margin: 12px 0; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 
+/* Top stats row */
+.top-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+.stat-box { background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 14px 16px; display: flex; flex-direction: column; }
+.stat-box .sb-hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px; }
+.stat-box .sb-label { font-size: 10px; color: var(--pc-text-3); text-transform: uppercase; letter-spacing: 0.04em; }
+.stat-box .sb-badge { font-size: 9px; font-weight: 600; padding: 2px 8px; border-radius: 3px; }
+.stat-box .sb-main { display: flex; align-items: baseline; gap: 8px; }
+.stat-box .sb-value { font-size: 24px; font-weight: 700; color: var(--pc-heading); font-family: var(--pc-mono); letter-spacing: -0.02em; }
+.stat-box .sb-chg { font-size: 11px; font-weight: 600; font-family: var(--pc-mono); }
+.stat-box .sb-chart { margin-top: 6px; height: 36px; }
+.stat-box .sb-chart canvas { width: 100%; height: 36px; }
+
+.news-item .ndate { font-size: 9px; color: var(--pc-text-3); white-space: nowrap; margin-left: auto; padding-left: 8px; flex-shrink: 0; }
+
 @media (max-width: 768px) {
   .tools-grid { grid-template-columns: 1fr; }
   .live-stats { flex-wrap: wrap; gap: 12px; }
+  .top-row { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -74,7 +89,7 @@
     </div>
     <div class="mood-bar" id="moodBar">
       <span style="font-size:11px;color:var(--pc-text-3)">Market Mood</span>
-      <span class="score" id="moodScore">—</span>
+      <span class="score" id="moodScore">&mdash;</span>
       <span class="label" id="moodLabel">Loading...</span>
       <div style="width:60px;height:4px;border-radius:2px;background:var(--pc-border);overflow:hidden">
         <div id="moodFill" style="height:100%;border-radius:2px;background:linear-gradient(90deg,var(--pc-red),var(--pc-yellow),var(--pc-green));width:50%"></div>
@@ -84,52 +99,64 @@
 
   <!-- ── Indices Bar ── -->
   <div class="indices-bar" id="indicesBar">
-    <div class="indice"><div class="indice-name">S&P 500</div><div class="indice-price" id="sp500Val">—</div><div class="indice-change" id="sp500Chg"></div></div>
-    <div class="indice"><div class="indice-name">NASDAQ</div><div class="indice-price" id="nasdaqVal">—</div><div class="indice-change" id="nasdaqChg"></div></div>
-    <div class="indice"><div class="indice-name">DOW</div><div class="indice-price" id="dowVal">—</div><div class="indice-change" id="dowChg"></div></div>
-    <div class="indice"><div class="indice-name">VIX</div><div class="indice-price" id="vixVal">—</div><div class="indice-change" id="vixChg"></div></div>
+    <div class="indice"><div class="indice-name">S&amp;P 500</div><div class="indice-price" id="sp500Val">&mdash;</div><div class="indice-change" id="sp500Chg"></div></div>
+    <div class="indice"><div class="indice-name">NASDAQ</div><div class="indice-price" id="nasdaqVal">&mdash;</div><div class="indice-change" id="nasdaqChg"></div></div>
+    <div class="indice"><div class="indice-name">DOW</div><div class="indice-price" id="dowVal">&mdash;</div><div class="indice-change" id="dowChg"></div></div>
+    <div class="indice"><div class="indice-name">VIX</div><div class="indice-price" id="vixVal">&mdash;</div><div class="indice-change" id="vixChg"></div></div>
+  </div>
+
+  <!-- ── Top Stats: F&G + BTC ── -->
+  <div class="top-row">
+    <div class="stat-box" id="fgCard">
+      <div class="sb-hdr">
+        <span class="sb-label">Fear &amp; Greed Index</span>
+        <span class="sb-badge" id="fgBadge" style="background:var(--pc-surface-2);color:var(--pc-text-2)">&mdash;</span>
+      </div>
+      <div class="sb-main">
+        <span class="sb-value" id="fgValue">&mdash;</span>
+        <span class="sb-chg" id="fgChg" style="color:var(--pc-text-3);font-size:10px"></span>
+      </div>
+      <div class="sb-chart"><canvas id="fgChart"></canvas></div>
+    </div>
+    <div class="stat-box" id="btcCard">
+      <div class="sb-hdr">
+        <span class="sb-label">Bitcoin (BTC)</span>
+        <span class="sb-badge" id="btcBadge" style="background:var(--pc-surface-2);color:var(--pc-text-2)">&mdash;</span>
+      </div>
+      <div class="sb-main">
+        <span class="sb-value" id="btcPrice">&mdash;</span>
+        <span class="sb-chg" id="btcChg"></span>
+      </div>
+      <div class="sb-chart"><canvas id="btcChart"></canvas></div>
+    </div>
   </div>
 
   <!-- ── Two-column Dashboard ── -->
-  <div class="dash-grid" style="margin-top:20px">
-
+  <div class="dash-grid">
     <!-- Left: Financial News -->
     <div class="news-card dash-full" style="grid-column:1">
-      <h3 style="margin-bottom:8px">📰 Financial News</h3>
+      <h3 style="margin-bottom:8px">Financial News</h3>
       <div id="finNewsList">
         <div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div>
       </div>
     </div>
 
-    <!-- Right: Crypto + Sentiment -->
+    <!-- Right: Crypto News -->
     <div style="display:flex;flex-direction:column;gap:16px">
       <div class="news-card">
-        <h3>🪙 Crypto</h3>
+        <h3>Crypto News</h3>
         <div id="cryptoNewsList">
           <div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div class="stat-card" id="fearGreedCard">
-          <div class="label">Fear &amp; Greed</div>
-          <div class="value" id="fgValue">—</div>
-          <div style="font-size:10px;color:var(--pc-text-3);margin-top:2px" id="fgLabel">Loading...</div>
-        </div>
-        <div class="stat-card">
-          <div class="label">BTC</div>
-          <div class="value" id="btcPrice">—</div>
-          <div style="font-size:10px;color:var(--pc-text-3);margin-top:2px" id="btcChg"></div>
-        </div>
-      </div>
     </div>
-
   </div>
 
   <!-- ── Tool Cards ── -->
   <div class="tools-grid" style="margin-top:24px">
-    <a href="/market-sentinel/" class="tool-card"><div class="tool-card-icon">📊</div><h3>Market Sentinel</h3><p>Real-time sentiment analysis — Fear &amp; Greed, indices, news</p></a>
+    <a href="/market-sentinel/" class="tool-card"><div class="tool-card-icon">📊</div><h3>Market Sentinel</h3><p>Real-time sentiment analysis &mdash; Fear &amp; Greed, indices, news</p></a>
     <a href="/crypto-pulse/" class="tool-card"><div class="tool-card-icon">🪙</div><h3>Crypto Pulse</h3><p>Crypto prices, news sentiment, Reddit buzz &amp; trends</p></a>
-    <a href="/poly-watch/" class="tool-card"><div class="tool-card-icon">🎲</div><h3>Poly Watch</h3><p>AI prediction markets — daily picks with confidence scoring</p></a>
+    <a href="/poly-watch/" class="tool-card"><div class="tool-card-icon">🎲</div><h3>Poly Watch</h3><p>AI prediction markets &mdash; daily picks with confidence scoring</p></a>
     <a href="/stock-pick/" class="tool-card"><div class="tool-card-icon">💰</div><h3>Stock Pick</h3><p>Top 30 value picks ranked by composite scoring</p></a>
     <a href="/trading-arena/" class="tool-card"><div class="tool-card-icon">🤖</div><h3>Trading Arena</h3><p>20 AI bots competing with $10K each</p></a>
   </div>
@@ -138,7 +165,7 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <span>© 2026 PaperChase. Not financial advice.</span>
+    <span>&copy; 2026 PaperChase. Not financial advice.</span>
     <div class="footer-links">
       <a href="/market-sentinel/">Market Sentinel</a>
       <a href="/crypto-pulse/">Crypto Pulse</a>
@@ -150,16 +177,65 @@
 </footer>
 
 <script>
-// ── Dashboard Data Loader ──
+function fmtDate(pubStr) {
+  if (!pubStr) return '';
+  try {
+    const d = new Date(pubStr);
+    if (isNaN(d.getTime())) return pubStr.slice(0,10);
+    const now = new Date();
+    const diffH = (now - d) / 3600000;
+    if (diffH < 24) return Math.round(diffH) + 'h ago';
+    if (diffH < 48) return '1d ago';
+    const m = d.toLocaleDateString('en',{month:'short',day:'numeric'});
+    const y = d.getFullYear() !== now.getFullYear() ? ' ' + d.getFullYear() : '';
+    return m + y;
+  } catch(e) { return pubStr.slice(0,10); }
+}
+
+function drawSpark(id, vals, color, fill) {
+  const c = document.getElementById(id);
+  if (!c) return;
+  const p = c.parentElement;
+  const W = p.clientWidth || 260;
+  c.width = W; c.height = 36;
+  const ctx = c.getContext('2d');
+  if (!vals || vals.length < 1) {
+    ctx.fillStyle = '#b0aba4'; ctx.font = '9px Inter'; ctx.textAlign = 'center';
+    ctx.fillText('daily history coming soon', W/2, 20); return;
+  }
+  const mn = Math.min(...vals), mx = Math.max(...vals), rng = mx - mn || 1;
+  const xs = (W - 8) / Math.max(vals.length - 1, 1);
+  ctx.beginPath();
+  vals.forEach((v,i) => {
+    const x = 4 + i*xs, y = 32 - ((v-mn)/rng)*28;
+    i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+  });
+  ctx.strokeStyle = color; ctx.lineWidth = 1.5; ctx.stroke();
+  const lx = 4 + (vals.length-1)*xs;
+  ctx.lineTo(lx,32); ctx.lineTo(4,32); ctx.closePath();
+  ctx.fillStyle = fill; ctx.fill();
+}
+
+const HK = 'pc_daily';
+function loadH() { try { return JSON.parse(localStorage.getItem(HK))||[]; } catch(e){ return []; }}
+function saveH(h) { try { localStorage.setItem(HK,JSON.stringify(h)); } catch(e){} }
+function snap(fg,btc) {
+  const td = new Date().toISOString().slice(0,10);
+  const h = loadH();
+  if (h.length && h[h.length-1].date===td) return h;
+  h.push({date:td,fg:fg,btc:btc});
+  if (h.length>30) h.splice(0,h.length-30);
+  saveH(h); return h;
+}
+
 (async function() {
   try {
-    const r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json?t='+Date.now());
+    const r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/1817c313a58d62bafc5975c43c870a999c966c01/data/market_data.json?t='+Date.now());
     if (!r.ok) return;
     const d = await r.json();
     const st = d.stocks || {};
     const crypto = d.crypto || {};
 
-    // Indices
     const idx = st.indices || {};
     for (const [key, ids] of [['sp500','sp500'],['nasdaq','nasdaq'],['dow','dow'],['vix','vix']]) {
       const data = idx[key];
@@ -175,50 +251,86 @@
       }
     }
 
-    // Mood
     const mood = st.market_mood || {};
     const score = mood.score !== undefined ? Math.round(mood.score * 100) : 50;
     document.getElementById('moodScore').textContent = score;
     document.getElementById('moodLabel').textContent = (mood.label || 'Neutral').toUpperCase();
     document.getElementById('moodFill').style.width = score + '%';
 
-    // Financial News
-    const finNews = (st.news || []).slice(0,8);
-    if (finNews.length) {
-      document.getElementById('finNewsList').innerHTML = finNews.map(n =>
-        '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
-          '<span class="src">' + (n.source||'?') + '</span>' +
-          '<span class="title">' + n.title + '</span>' +
-          '<span class="sentiment" style="color:' + (n.sentiment==='positive'?'var(--pc-green)':n.sentiment==='negative'?'var(--pc-red)':'var(--pc-text-3)') + '">' + (n.sentiment||'') + '</span>' +
-        '</a>'
-      ).join('');
-    }
-
-    // Crypto News
-    const cryNews = (crypto.news || []).slice(0,6);
-    if (cryNews.length) {
-      document.getElementById('cryptoNewsList').innerHTML = cryNews.map(n =>
-        '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
-          '<span class="title">' + n.title + '</span>' +
-          '<span class="sentiment" style="color:' + (n.sentiment==='positive'?'var(--pc-green)':n.sentiment==='negative'?'var(--pc-red)':'var(--pc-text-3)') + '">' + (n.sentiment||'') + '</span>' +
-        '</a>'
-      ).join('');
-    }
-
-    // Fear & Greed
+    // ── Fear & Greed ──
     const fg = crypto.fear_greed || {};
-    document.getElementById('fgValue').textContent = fg.value || '—';
-    document.getElementById('fgLabel').textContent = fg.label || '';
+    const fgVal = fg.value !== undefined ? fg.value : null;
+    document.getElementById('fgValue').textContent = fgVal !== null ? fgVal : '&mdash;';
+    const fgLabel = fg.label || '';
+    const fgBadge = document.getElementById('fgBadge');
+    fgBadge.textContent = fgLabel;
+    if (fgLabel.toLowerCase().includes('fear')) {
+      fgBadge.style.background = 'var(--pc-red-bg)'; fgBadge.style.color = 'var(--pc-red)';
+    } else if (fgLabel.toLowerCase().includes('greed')) {
+      fgBadge.style.background = 'var(--pc-green-bg)'; fgBadge.style.color = 'var(--pc-green)';
+    } else {
+      fgBadge.style.background = 'var(--pc-yellow-bg)'; fgBadge.style.color = 'var(--pc-yellow)';
+    }
+    const fgPrev = fg.previous_value;
+    if (fgVal !== null && fgPrev !== undefined) {
+      const d2 = fgVal - fgPrev;
+      document.getElementById('fgChg').textContent = (d2 >= 0 ? '+' : '') + d2 + ' vs yesterday';
+      document.getElementById('fgChg').style.color = d2 >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
+    }
 
-    // BTC
+    // ── BTC ──
     const btc = (crypto.prices || []).find(p => p.symbol === 'BTC');
+    let btcVal = null;
     if (btc) {
-      document.getElementById('btcPrice').textContent = '$' + (btc.price_usd || '').toLocaleString('en');
+      btcVal = btc.price_usd;
+      document.getElementById('btcPrice').textContent = '$' + (btcVal || '').toLocaleString('en');
       const chg = btc.change_24h || 0;
       const el = document.getElementById('btcChg');
       el.textContent = (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%';
       el.style.color = chg >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
+      document.getElementById('btcBadge').textContent = '$' + (btc.market_cap ? (btc.market_cap/1e9).toFixed(1) + 'B' : '');
     }
+
+    // ── History & Charts ──
+    const hist = snap(fgVal, btcVal);
+    const fgH = hist.filter(h => h.fg !== null).map(h => h.fg);
+    const btcH = hist.filter(h => h.btc !== null).map(h => h.btc);
+    if (fgH.length > 1) drawSpark('fgChart', fgH, '#c8954e', 'rgba(200,149,78,0.08)');
+    else drawSpark('fgChart', fgH.length ? [fgH[0],fgH[0]] : [], '#c8954e', 'rgba(200,149,78,0.08)');
+    if (btcH.length > 1) drawSpark('btcChart', btcH, '#5b7fb5', 'rgba(91,127,181,0.08)');
+    else drawSpark('btcChart', btcH.length ? [btcH[0],btcH[0]] : [], '#5b7fb5', 'rgba(91,127,181,0.08)');
+
+    // ── Financial News (with dates) ──
+    const finNews = (st.news || []).slice(0,8);
+    if (finNews.length) {
+      document.getElementById('finNewsList').innerHTML = finNews.map(function(n) {
+        var sc = 'var(--pc-text-3)';
+        if (n.sentiment === 'positive') sc = 'var(--pc-green)';
+        else if (n.sentiment === 'negative') sc = 'var(--pc-red)';
+        return '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
+          '<span class="src">' + (n.source||'?') + '</span>' +
+          '<span class="title">' + n.title + '</span>' +
+          '<span class="ndate">' + fmtDate(n.published) + '</span>' +
+          '<span class="sentiment" style="color:' + sc + '">' + (n.sentiment||'') + '</span>' +
+        '</a>';
+      }).join('');
+    }
+
+    // ── Crypto News (with dates) ──
+    const cryNews = (crypto.news || []).slice(0,6);
+    if (cryNews.length) {
+      document.getElementById('cryptoNewsList').innerHTML = cryNews.map(function(n) {
+        var sc = 'var(--pc-text-3)';
+        if (n.sentiment === 'Bullish') sc = 'var(--pc-green)';
+        else if (n.sentiment === 'Bearish') sc = 'var(--pc-red)';
+        return '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
+          '<span class="title">' + n.title + '</span>' +
+          '<span class="ndate">' + fmtDate(n.published) + '</span>' +
+          '<span class="sentiment" style="color:' + sc + '">' + (n.sentiment||'') + '</span>' +
+        '</a>';
+      }).join('');
+    }
+
   } catch(e) {
     document.getElementById('moodLabel').textContent = 'OFFLINE';
   }
