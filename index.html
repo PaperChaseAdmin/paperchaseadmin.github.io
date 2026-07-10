@@ -258,40 +258,10 @@ function tickCountdown() {
   document.getElementById('cdMin').textContent = remMin;
   document.getElementById('cdSec').textContent = String(remSec).padStart(2,'0');
 }
-setInterval(tickCountdown, 1000);
 
-// ── Main ──
-(async function() {
+// ── Background auto-refresh ──
+async function refreshData() {
   try {
-    // ── Countdown init ──
-    tickCountdown();
-
-    // ── F&G 14-day (from API) ──
-    var fgResp = await fetch('https://api.alternative.me/fng/?limit=14');
-    if (fgResp.ok) {
-      var fgData = await fgResp.json();
-      var fgItems = fgData.data || [];
-      if (fgItems.length) {
-        var fgToday = fgItems[0];
-        document.getElementById('fgValue').textContent = fgToday.value;
-        var fgLbl = document.getElementById('fgBadge');
-        fgLbl.textContent = fgToday.value_classification || '';
-        var fgV = parseInt(fgToday.value);
-        fgLbl.style.background = 'var(--pc-' + (fgV >= 50 ? 'green' : 'red') + '-bg)';
-        fgLbl.style.color = 'var(--pc-' + (fgV >= 50 ? 'green' : 'red') + ')';
-
-        var fgVals = [], fgDays = [];
-        for (var i = fgItems.length - 1; i >= 0; i--) {
-          fgVals.push(parseInt(fgItems[i].value));
-          var d = new Date(parseInt(fgItems[i].timestamp) * 1000);
-          fgDays.push(d.toLocaleDateString('en',{month:'short',day:'numeric'}));
-        }
-        document.getElementById('fgOldest').textContent = fgDays[0] || '';
-        document.getElementById('fgNewest').textContent = fgDays[fgDays.length-1] || '';
-        drawLineChart('fgChart', fgVals, fgDays, '#c8954e', 'rgba(200,149,78,0.08)');
-      }
-    }
-
     // ── Market data ──
     var r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json?t=' + Date.now());
     if (!r.ok) return;
@@ -327,7 +297,7 @@ setInterval(tickCountdown, 1000);
       btcChgEl.style.color = bchg >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
     }
 
-    // ── Market Mood ──
+    // Market Mood
     var mood = st.market_mood || {};
     var mScore = mood.score !== undefined ? Math.round(mood.score * 100) : null;
     if (mScore !== null) {
@@ -338,7 +308,7 @@ setInterval(tickCountdown, 1000);
       moodBadge.style.background = 'var(--pc-' + (mScore >= 60 ? 'green' : mScore >= 40 ? 'yellow' : 'red') + '-bg)';
       moodBadge.style.color = 'var(--pc-' + (mScore >= 60 ? 'green' : mScore >= 40 ? 'yellow' : 'red') + ')';
 
-      // Save to localStorage history
+      // Save to localStorage history (only once per day)
       var hist = snapMood(mScore);
       var mVals = hist.filter(function(h) { return h.mood !== null; }).map(function(h) { return h.mood; });
       var mDays = hist.map(function(h) { return h.date; });
@@ -349,7 +319,7 @@ setInterval(tickCountdown, 1000);
       document.getElementById('moodNewest').textContent = mDays.length ? mDays[mDays.length-1].slice(5) : '';
     }
 
-    // ── Financial News (sorted newest first) ──
+    // Financial News
     var finNews = (st.news || []).slice();
     finNews.sort(function(a,b) { return new Date(b.published) - new Date(a.published); });
     finNews = finNews.slice(0,20);
@@ -364,7 +334,7 @@ setInterval(tickCountdown, 1000);
       }).join('');
     }
 
-    // ── Crypto News (sorted newest first) ──
+    // Crypto News
     var cryNews = (crypto.news || []).slice();
     cryNews.sort(function(a,b) { return new Date(b.published) - new Date(a.published); });
     cryNews = cryNews.slice(0,15);
@@ -377,11 +347,46 @@ setInterval(tickCountdown, 1000);
         '</a>';
       }).join('');
     }
+  } catch(e) { /* silent retry on next interval */ }
+}
 
-  } catch(e) {
-    // silent
-  }
+// ── Initial load ──
+tickCountdown();
+setInterval(tickCountdown, 1000);
+
+// F&G 14-day (fetched once — updates slowly)
+(async function() {
+  try {
+    var fgResp = await fetch('https://api.alternative.me/fng/?limit=14');
+    if (fgResp.ok) {
+      var fgData = await fgResp.json();
+      var fgItems = fgData.data || [];
+      if (fgItems.length) {
+        var fgToday = fgItems[0];
+        document.getElementById('fgValue').textContent = fgToday.value;
+        var fgLbl = document.getElementById('fgBadge');
+        fgLbl.textContent = fgToday.value_classification || '';
+        var fgV = parseInt(fgToday.value);
+        fgLbl.style.background = 'var(--pc-' + (fgV >= 50 ? 'green' : 'red') + '-bg)';
+        fgLbl.style.color = 'var(--pc-' + (fgV >= 50 ? 'green' : 'red') + ')';
+
+        var fgVals = [], fgDays = [];
+        for (var i = fgItems.length - 1; i >= 0; i--) {
+          fgVals.push(parseInt(fgItems[i].value));
+          var d = new Date(parseInt(fgItems[i].timestamp) * 1000);
+          fgDays.push(d.toLocaleDateString('en',{month:'short',day:'numeric'}));
+        }
+        document.getElementById('fgOldest').textContent = fgDays[0] || '';
+        document.getElementById('fgNewest').textContent = fgDays[fgDays.length-1] || '';
+        drawLineChart('fgChart', fgVals, fgDays, '#c8954e', 'rgba(200,149,78,0.08)');
+      }
+    }
+  } catch(e) {}
 })();
+
+// First load + auto-refresh every 5 minutes
+refreshData();
+setInterval(refreshData, 300000);
 </script>
 </body>
 </html>
