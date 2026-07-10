@@ -37,12 +37,7 @@
 .fg-card .fg-hdr .fg-title { font-size: 13px; font-weight: 600; color: var(--pc-heading); }
 .fg-card .fg-hdr .fg-current { font-size: 22px; font-weight: 700; font-family: var(--pc-mono); }
 .fg-card .fg-hdr .fg-label { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 3px; margin-left: 8px; }
-.fg-bars { display: flex; flex-direction: column; gap: 3px; }
-.fg-bar-row { display: flex; align-items: center; gap: 6px; font-size: 10px; }
-.fg-bar-row .fg-day { color: var(--pc-text-3); min-width: 28px; font-weight: 500; }
-.fg-bar-row .fg-track { flex: 1; height: 14px; background: var(--pc-surface-2); border-radius: 3px; overflow: hidden; position: relative; }
-.fg-bar-row .fg-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
-.fg-bar-row .fg-val { color: var(--pc-text-2); min-width: 22px; text-align: right; font-weight: 600; font-family: var(--pc-mono); }
+.fg-card .fg-hdr .fg-label { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 3px; margin-left: 8px; }
 
 @media (max-width: 768px) {
   .live-stats { flex-wrap: wrap; gap: 12px; }
@@ -102,8 +97,10 @@
           <span class="fg-label" id="fgTodayLabel" style="background:var(--pc-surface-2);color:var(--pc-text-2)">Loading...</span>
         </span>
       </div>
-      <div class="fg-bars" id="fgHistoryBars">
-        <div class="loading" style="padding:8px 0;color:var(--pc-text-3);font-size:11px">Loading history...</div>
+      <div style="height:48px;margin-top:4px"><canvas id="fgLineChart"></canvas></div>
+      <div style="display:flex;justify-content:space-between;font-size:8px;color:var(--pc-text-3);margin-top:2px">
+        <span id="fgOldestDay"></span>
+        <span id="fgNewestDay"></span>
       </div>
     </div>
   </div>
@@ -165,25 +162,11 @@ function sentColor(s) {
   return 'var(--pc-text-3)';
 }
 
-function fgBarColor(val) {
-  if (val >= 75) return '#2b8a5e';
-  if (val >= 55) return '#75a84e';
-  if (val >= 45) return '#c8954e';
-  if (val >= 25) return '#d4833b';
-  return '#c54b4b';
-}
-
-// format timestamp from FNG API (Unix)
-function tsToDay(ts) {
-  var d = new Date(ts * 1000);
-  return d.toLocaleDateString('en',{month:'short',day:'numeric'});
-}
-
 // ── Main ──
 (async function() {
   try {
     // ── F&G 14-day history ──
-    var fgHistResp = await fetch('https://api.alternative.me/fng/?limit=14&date_format=global');
+    var fgHistResp = await fetch('https://api.alternative.me/fng/?limit=14');
     if (fgHistResp.ok) {
       var fgData = await fgHistResp.json();
       var fgItems = fgData.data || [];
@@ -196,21 +179,41 @@ function tsToDay(ts) {
         lbl.style.background = 'var(--pc-' + (parseInt(today.value) >= 50 ? 'green' : 'red') + '-bg)';
         lbl.style.color = 'var(--pc-' + (parseInt(today.value) >= 50 ? 'green' : 'red') + ')';
 
-        // 14-day bars
-        var barsHtml = '';
-        for (var i = 0; i < fgItems.length; i++) {
-          var item = fgItems[i];
-          var v = parseInt(item.value);
-          var color = fgBarColor(v);
-          var day = tsToDay(parseInt(item.timestamp));
-          var cls = item.value_classification || '';
-          barsHtml += '<div class="fg-bar-row">' +
-            '<span class="fg-day">' + day + '</span>' +
-            '<div class="fg-track"><div class="fg-fill" style="width:' + v + '%;background:' + color + '"></div></div>' +
-            '<span class="fg-val">' + v + '</span>' +
-          '</div>';
+        // 14-day line chart (reversed so oldest on left)
+        var vals = [];
+        var days = [];
+        for (var i = fgItems.length - 1; i >= 0; i--) {
+          vals.push(parseInt(fgItems[i].value));
+          var d = new Date(parseInt(fgItems[i].timestamp) * 1000);
+          days.push(d.toLocaleDateString('en',{month:'short',day:'numeric'}));
         }
-        document.getElementById('fgHistoryBars').innerHTML = barsHtml;
+        document.getElementById('fgOldestDay').textContent = days[0] || '';
+        document.getElementById('fgNewestDay').textContent = days[days.length-1] || '';
+
+        var lc = document.getElementById('fgLineChart');
+        if (lc) {
+          var pw = lc.parentElement.clientWidth || 600;
+          lc.width = pw; lc.height = 48;
+          var cx = lc.getContext('2d');
+          var mn = Math.min(...vals), mx = Math.max(...vals), rng = mx - mn || 1;
+          var xs = (pw - 8) / Math.max(vals.length - 1, 1);
+          // Fill
+          cx.beginPath();
+          vals.forEach(function(v,i) {
+            var x = 4 + i*xs, y = 42 - ((v-mn)/rng)*34;
+            i===0 ? cx.moveTo(x,y) : cx.lineTo(x,y);
+          });
+          var lx = 4 + (vals.length-1)*xs;
+          cx.lineTo(lx, 42); cx.lineTo(4, 42); cx.closePath();
+          cx.fillStyle = 'rgba(200,149,78,0.08)'; cx.fill();
+          // Line
+          cx.beginPath();
+          vals.forEach(function(v,i) {
+            var x = 4 + i*xs, y = 42 - ((v-mn)/rng)*34;
+            i===0 ? cx.moveTo(x,y) : cx.lineTo(x,y);
+          });
+          cx.strokeStyle = '#c8954e'; cx.lineWidth = 1.5; cx.stroke();
+        }
       }
     }
 
@@ -258,7 +261,7 @@ function tsToDay(ts) {
     document.getElementById('moodFill').style.width = score + '%';
 
     // Financial News
-    var finNews = (st.news || []).slice(0,10);
+    var finNews = (st.news || []).slice(0,15);
     if (finNews.length) {
       document.getElementById('finNewsList').innerHTML = finNews.map(function(n) {
         return '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
