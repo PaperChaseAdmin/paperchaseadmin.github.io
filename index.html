@@ -352,7 +352,7 @@ setInterval(tickCountdown, 1000);
     // ── Financial News (sorted newest first) ──
     var finNews = (st.news || []).slice();
     finNews.sort(function(a,b) { return new Date(b.published) - new Date(a.published); });
-    finNews = finNews.slice(0,15);
+    finNews = finNews.slice(0,20);
     if (finNews.length) {
       document.getElementById('finNewsList').innerHTML = finNews.map(function(n) {
         return '<a class="news-item" href="' + (n.url||'#') + '" target="_blank">' +
