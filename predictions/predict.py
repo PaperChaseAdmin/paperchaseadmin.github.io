@@ -103,43 +103,109 @@ def extract_json(text):
 
 
 def ai_market_predictions(md):
-    """Heuristic market predictions based on actual index data (no AI dependency)."""
+    """AI-powered market predictions via OpenRouter deepseek/deepseek-chat.
+    Analyzes all available context: indices, news, macro, sentiment, etc."""
     if not md:
-        return []
+        return None
+
     stocks = md.get("stocks", {})
     idx = stocks.get("indices", {})
     crypto = md.get("crypto", {})
     fg = crypto.get("fear_greed", {})
     btc = next((p for p in crypto.get("prices", []) if p.get("symbol") == "BTC"), {})
+    mood = stocks.get("market_mood", {})
+    news = (stocks.get("news") or [])[:6]
+    macro = (stocks.get("macro") or [])[:4]
+    active = (stocks.get("most_active") or [])[:6]
 
-    def calc_dir(chg):
-        """Determine direction and confidence from % change."""
-        if chg is None or chg == 0:
-            return "neutral", 50
-        abs_chg = abs(chg)
-        if abs_chg < 0.3:
-            return "neutral", 50
-        dir_ = "up" if chg > 0 else "down"
-        conf = min(85, 50 + int(abs_chg * 12))
-        return dir_, conf
-
-    results = []
+    # Build a compact context string
+    lines = ["Current market data for predictions:\n"]
     for key, label in [("sp500","S&P 500"),("nasdaq","NASDAQ"),("dow","DOW")]:
         d = idx.get(key, {}) if isinstance(idx, dict) else {}
-        chg = d.get("change_24h")
-        dir_, conf = calc_dir(chg)
-        sig = f"{label} {chg:+.2f}% today" if chg is not None else "No data available"
-        results.append({"market": label, "prediction": dir_, "confidence": conf, "signal": sig})
+        v = d.get("value", "?")
+        c = d.get("change_24h")
+        chg = f"{c:+.2f}%" if c is not None else "N/A"
+        lines.append(f"{label}: {v} ({chg})")
 
-    btc_chg = btc.get("change_24h")
-    if btc_chg is not None:
-        dir_, conf = calc_dir(btc_chg)
-        fg_str = f"Fear&Greed: {fg.get('value','?')} ({fg.get('label','?')})" if fg else ""
-        sig = f"BTC {btc_chg:+.2f}% | {fg_str}" if fg_str else f"BTC {btc_chg:+.2f}%"
-    else:
-        dir_, conf, sig = "neutral", 50, "No crypto data"
-    results.append({"market": "Crypto Market", "prediction": dir_, "confidence": conf, "signal": sig})
-    return results
+    if mood:
+        ms = mood.get("score")
+        lines.append(f"\nMarket Mood: {ms} ({mood.get('label','?')})" if ms is not None else "\nMarket Mood: N/A")
+
+    if fg:
+        lines.append(f"Fear&Greed: {fg.get('value','?')} ({fg.get('label','?')})")
+
+    if btc:
+        bp = btc.get("price_usd")
+        bc = btc.get("change_24h")
+        lines.append(f"BTC: ${bp:,} ({bc:+.2f}%)" if bp is not None and bc is not None else "")
+
+    if macro:
+        lines.append("\nMacro:")
+        for m in macro:
+            lines.append(f"  {m.get('name','?')}: {m.get('value','?')} ({m.get('change_24h',0):+.2f}%)")
+
+    if active:
+        lines.append("\nMost Active:")
+        for a in active:
+            lines.append(f"  {a.get('symbol','?')}: ${a.get('price_usd',0):,.2f} ({a.get('change_24h',0):+.2f}%)")
+
+    if news:
+        lines.append("\nTop News:")
+        for n in news[:4]:
+            lines.append(f"  [{n.get('source','?')}] {n.get('title','?')[:60]}")
+
+    context = "\n".join(lines)
+
+    prompt = f"""{context}
+
+Based on the above market data, predict the DIRECTION for the NEXT trading session for each index.
+
+Rules:
+- Predict ONLY for: S&P 500, NASDAQ, DOW
+- Direction: "up" (bullish), "down" (bearish), or "neutral" (mixed/unclear)
+- Confidence: 51-95 integer (how sure you are)
+- Signal: 1 short sentence explaining the key reason
+
+Reply ONLY valid JSON. No other text.
+Format: {{"predictions": [{{"market":"S&P 500","prediction":"up","confidence":65,"signal":"Strong earnings and positive macro data"}}]}}"""
+
+    ai_raw = call_openrouter(prompt)
+    if not ai_raw:
+        print("  ⚠️  AI unavailable — falling back to heuristic")
+        return None
+
+    ai_data = extract_json(ai_raw)
+    if not ai_data or not isinstance(ai_data, dict):
+        print(f"  ⚠️  AI parse failed — falling back to heuristic. Raw: {ai_raw[:100]}")
+        return None
+
+    preds = ai_data.get("predictions", [])
+    if not preds:
+        print("  ⚠️  AI returned empty predictions — falling back to heuristic")
+        return None
+
+    # Validate structure
+    valid = []
+    for p in preds:
+        if not isinstance(p, dict): continue
+        mkt = p.get("market", "")
+        if mkt not in ("S&P 500", "NASDAQ", "DOW"): continue
+        dir_ = p.get("prediction", "neutral")
+        if dir_ not in ("up", "down", "neutral"): dir_ = "neutral"
+        conf = p.get("confidence", 50)
+        try:
+            conf = max(51, min(95, int(conf)))
+        except:
+            conf = 50
+        signal = (p.get("signal") or "")[:80]
+        valid.append({"market": mkt, "prediction": dir_, "confidence": conf, "signal": signal})
+
+    if len(valid) < 3:
+        print(f"  ⚠️  AI returned only {len(valid)}/3 valid predictions — falling back")
+        return None
+
+    print(f"  ✅ AI predictions ({len(valid)} indices)")
+    return valid
 
 
 def ai_poly_predict(pd):
@@ -195,14 +261,40 @@ def main():
     print("\n3️⃣  AI Market Predictions (OpenRouter)...")
     all_preds = ai_market_predictions(md)
     if not all_preds:
-        # Fallback to neutral
-        print("  Using neutral fallback")
-        all_preds = [
-            {"market": "S&P 500", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"},
-            {"market": "NASDAQ", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"},
-            {"market": "DOW", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"},
-            {"market": "Crypto Market", "prediction": "neutral", "confidence": 50, "signal": "AI unavailable"},
-        ]
+        # Fallback to heuristic
+        print("  Using heuristic fallback")
+        stocks = md.get("stocks", {}) if md else {}
+        idx = stocks.get("indices", {}) if isinstance(stocks, dict) else {}
+        crypto = md.get("crypto", {}) if md else {}
+        fg = crypto.get("fear_greed", {}) if crypto else {}
+        btc = next((p for p in crypto.get("prices", []) if p.get("symbol") == "BTC"), {}) if crypto else {}
+
+        def calc_dir(chg):
+            if chg is None or chg == 0:
+                return "neutral", 50
+            abs_chg = abs(chg)
+            if abs_chg < 0.3:
+                return "neutral", 50
+            dir_ = "up" if chg > 0 else "down"
+            conf = min(85, 50 + int(abs_chg * 12))
+            return dir_, conf
+
+        all_preds = []
+        for key, label in [("sp500","S&P 500"),("nasdaq","NASDAQ"),("dow","DOW")]:
+            d = idx.get(key, {}) if isinstance(idx, dict) else {}
+            chg = d.get("change_24h")
+            dir_, conf = calc_dir(chg)
+            sig = f"{label} {chg:+.2f}% today" if chg is not None else "No data available"
+            all_preds.append({"market": label, "prediction": dir_, "confidence": conf, "signal": sig})
+
+        btc_chg = btc.get("change_24h") if btc else None
+        if btc_chg is not None:
+            dir_, conf = calc_dir(btc_chg)
+            fg_str = f"Fear&Greed: {fg.get('value','?')} ({fg.get('label','?')})" if fg else ""
+            sig = f"BTC {btc_chg:+.2f}% | {fg_str}" if fg_str else f"BTC {btc_chg:+.2f}%"
+        else:
+            dir_, conf, sig = "neutral", 50, "No crypto data"
+        all_preds.append({"market": "Crypto Market", "prediction": dir_, "confidence": conf, "signal": sig})
 
     # Separate by tool
     ms_preds = [p for p in all_preds if p["market"] in ("S&P 500", "NASDAQ", "DOW")]

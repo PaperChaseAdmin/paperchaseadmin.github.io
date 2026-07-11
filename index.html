@@ -42,9 +42,12 @@
 
 .market-mood-bar { margin: 12px 0; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 
+.crypto-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
 @media (max-width: 768px) {
   .tools-grid { grid-template-columns: 1fr; }
   .live-stats { flex-wrap: wrap; gap: 12px; }
+  .crypto-stats { grid-template-columns: 1fr; gap: 8px; }
 }
 </style>
 </head>
@@ -109,7 +112,7 @@
           <div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="crypto-stats">
         <div class="stat-card" id="fearGreedCard">
           <div class="label">Fear &amp; Greed</div>
           <div class="value" id="fgValue">—</div>
