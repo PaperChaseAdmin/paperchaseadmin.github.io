@@ -46,9 +46,10 @@
 .countdown .num { font-weight: 700; color: var(--pc-heading); min-width: 14px; text-align: center; }
 .countdown .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--pc-green); animation: pulse-dot 2s ease-in-out infinite; }
 
-@keyframes pulse-dot { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+.market-mood-bar { margin: 12px 0; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 
 @media (max-width: 768px) {
+  .tools-grid { grid-template-columns: 1fr; }
   .live-stats { flex-wrap: wrap; gap: 12px; }
   .sent-grid { grid-template-columns: 1fr; }
 }
@@ -94,7 +95,6 @@
 
   <!-- ── Sentiment Row: Financial (left) + Crypto (right) ── -->
   <div class="sent-grid">
-    <!-- Market Mood — Financial Market -->
     <div class="sent-card" id="moodCard">
       <div class="sc-hdr">
         <span class="sc-market" style="background:var(--pc-blue-bg);color:var(--pc-blue)">Financial Market</span>
