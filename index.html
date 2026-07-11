@@ -307,7 +307,11 @@ async function refreshData() {
       var hist = snapMood(mScore);
       var mVals = hist.filter(function(h) { return h.mood !== null; }).map(function(h) { return h.mood; });
       var mDays = hist.map(function(h) { return h.date; });
-      if (mVals.length > 1) drawLineChart('moodChart', mVals, mDays, '#5b7fb5', 'rgba(91,127,181,0.08)');
+      if (mVals.length > 1) {
+        var mChartColor = mScore >= 60 ? '#2b8a5e' : mScore >= 40 ? '#c8954e' : '#c54b4b';
+        var mChartFill = mScore >= 60 ? 'rgba(43,138,94,0.08)' : mScore >= 40 ? 'rgba(200,149,78,0.08)' : 'rgba(197,75,75,0.08)';
+        drawLineChart('moodChart', mVals, mDays, mChartColor, mChartFill);
+      }
       else if (mVals.length === 1) drawLineChart('moodChart', [mVals[0], mVals[0]], [mDays[0],mDays[0]], '#5b7fb5', 'rgba(91,127,181,0.08)');
       else drawLineChart('moodChart', [], [], '#5b7fb5', 'rgba(91,127,181,0.08)');
       document.getElementById('moodOldest').textContent = mDays.length ? mDays[0].slice(5) : '';
@@ -373,7 +377,9 @@ setInterval(tickCountdown, 1000);
         }
         document.getElementById('fgOldest').textContent = fgDays[0] || '';
         document.getElementById('fgNewest').textContent = fgDays[fgDays.length-1] || '';
-        drawLineChart('fgChart', fgVals, fgDays, '#c8954e', 'rgba(200,149,78,0.08)');
+        var fgChartColor = fgV >= 50 ? '#2b8a5e' : '#c54b4b';
+        var fgChartFill = fgV >= 50 ? 'rgba(43,138,94,0.08)' : 'rgba(197,75,75,0.08)';
+        drawLineChart('fgChart', fgVals, fgDays, fgChartColor, fgChartFill);
       }
     }
   } catch(e) {}
