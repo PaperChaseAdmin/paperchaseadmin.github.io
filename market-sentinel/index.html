@@ -260,7 +260,7 @@ function onDataLoaded(updatedAt) {
   clearInterval(_cdTimer);
   const el = document.getElementById('countdown-wrap');
   if (!el || typeof window.startCountdown !== 'function') return;
-  _cdTimer = window.startCountdown(el, 'Data Refresh', 'market-sentinel', loadData);
+  _cdTimer = window.startCountdown(el, 'Next update in', 'market-sentinel', loadData);
 }
 
 // ── Render Predictions ──────────────────────────────────────────────
