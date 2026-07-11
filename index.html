@@ -312,8 +312,12 @@ async function refreshData() {
         var mChartFill = mScore >= 60 ? 'rgba(43,138,94,0.08)' : mScore >= 40 ? 'rgba(200,149,78,0.08)' : 'rgba(197,75,75,0.08)';
         drawLineChart('moodChart', mVals, mDays, mChartColor, mChartFill);
       }
-      else if (mVals.length === 1) drawLineChart('moodChart', [mVals[0], mVals[0]], [mDays[0],mDays[0]], '#5b7fb5', 'rgba(91,127,181,0.08)');
-      else drawLineChart('moodChart', [], [], '#5b7fb5', 'rgba(91,127,181,0.08)');
+      else if (mVals.length === 1) {
+        var m1Color = mScore >= 60 ? '#2b8a5e' : mScore >= 40 ? '#c8954e' : '#c54b4b';
+        var m1Fill = mScore >= 60 ? 'rgba(43,138,94,0.08)' : mScore >= 40 ? 'rgba(200,149,78,0.08)' : 'rgba(197,75,75,0.08)';
+        drawLineChart('moodChart', [mVals[0], mVals[0]], [mDays[0],mDays[0]], m1Color, m1Fill);
+      }
+      else drawLineChart('moodChart', [], [], '#b0aba4', 'rgba(176,171,164,0.06)');
       document.getElementById('moodOldest').textContent = mDays.length ? mDays[0].slice(5) : '';
       document.getElementById('moodNewest').textContent = mDays.length ? mDays[mDays.length-1].slice(5) : '';
     }
