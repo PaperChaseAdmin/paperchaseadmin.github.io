@@ -117,12 +117,11 @@
 .source-note{font-size:9px;color:var(--pc-text-3);padding-top:10px;border-top:1px solid var(--pc-border);margin-top:8px}
 .disclaimer{font-size:10px;color:var(--pc-text-3);text-align:center;padding:16px 0 4px}
 
-/* ── Auth buttons ──────────────────────────── */
 .btn-login,.btn-register{display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);text-decoration:none}
 .btn-login{color:var(--pc-text-2)}.btn-login:hover{color:var(--pc-heading)}
 .btn-register{background:var(--pc-brand);color:#fff}.btn-register:hover{background:var(--pc-brand-hover)}
 
-@media(max-width:900px){
+@media(max-width:768px){
   .index-grid{grid-template-columns:1fr}
   .pred-grid{grid-template-columns:1fr}
   .track-grid{grid-template-columns:1fr}
@@ -135,7 +134,7 @@
 <body>
 
 <nav class="topbar"><div class="topbar-inner">
-  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <a class="logo" href="/">PaperChase<span>.</span></a>
   <div class="topbar-nav">
     <a class="nav-link active" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
     <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
