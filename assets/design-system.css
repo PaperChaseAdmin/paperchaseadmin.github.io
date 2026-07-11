@@ -188,8 +188,8 @@ td { padding: 8px 10px; border-bottom: 1px solid var(--pc-border); font-size: 12
 .mood-bar .label { font-size: 11px; color: var(--pc-text-2); }
 
 /* ── Shared countdown (used by countdown.js) ── */
-.countdown-wrap { display: flex; align-items: center; gap: 8px; }
-.countdown-lbl { font-size: 9px; color: var(--pc-text-2); white-space: nowrap; }
+.countdown-wrap { display: flex; align-items: center; gap: 6px; }
+.countdown-lbl { font-size: 11px; color: var(--pc-text-2); white-space: nowrap; }
 .countdown-num { font-size: 12px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); min-width: 36px; }
 
 /* ── Inline countdown (homepage) ── */

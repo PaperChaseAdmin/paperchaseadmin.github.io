@@ -124,6 +124,6 @@ function startCountdown(el, label, tool, onRefresh) {
     } else {
       display = String(mm).padStart(2, '0') + ':' + String(ss).padStart(2, '0');
     }
-    el.innerHTML = '<span class="countdown-lbl">' + label + '</span><span class="countdown-num">' + display + '</span>';
+    el.innerHTML = '<span class="dot"></span><span class="countdown-lbl">' + label + '</span><span class="countdown-num">' + display + '</span>';
   }
 }
