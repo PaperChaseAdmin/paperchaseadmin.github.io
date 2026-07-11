@@ -69,12 +69,61 @@
 .acc-label{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:3px}
 .acc-val{font-size:24px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
 .acc-sub{font-size:10px;color:var(--pc-text-2);margin-top:2px}
+.trending-sym{font-weight:600;font-size:12px;font-family:var(--pc-mono);min-width:55px;color:var(--pc-heading)}
+.trending-name{font-size:11px;color:var(--pc-text-2);flex:1}
+
+/* ── Layout grids ──────────────────────────── */
+.wrap{min-height:100vh}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:16px}
+
+/* ── Page header ───────────────────────────── */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.page-title-wrap{}
+.page-title{font-size:20px;font-weight:700;color:var(--pc-heading);letter-spacing:-.03em}
+.page-sub{font-size:12px;color:var(--pc-text-2);margin-top:2px}
+.live{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--pc-green);margin-right:4px;vertical-align:middle}
+.countdown-wrap{}
+
+/* ── Loading state ─────────────────────────── */
+.loading{text-align:center;padding:48px 0;color:var(--pc-text-3);font-size:13px}
+.spinner{display:inline-block;width:20px;height:20px;border:2px solid var(--pc-border);border-top-color:var(--pc-brand);border-radius:50%;animation:spin .6s linear infinite;margin-right:8px;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── Section titles ────────────────────────── */
+.section-title{font-size:13px;font-weight:600;color:var(--pc-heading)}
+
+/* ── Price rows (stocks, macro, most active) ─ */
+.price-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--pc-border)}
+.price-row:last-child{border-bottom:none}
+.price-sym{font-weight:600;font-size:12px;font-family:var(--pc-mono);min-width:55px;color:var(--pc-heading)}
+.price-val{font-size:12px;font-weight:600;font-family:var(--pc-mono);margin-left:auto;color:var(--pc-heading);text-align:right}
+.text-green{color:var(--pc-green)!important;font-weight:600;font-family:var(--pc-mono);font-size:12px}
+.text-red{color:var(--pc-red)!important;font-weight:600;font-family:var(--pc-mono);font-size:12px}
+
+/* ── News (market-sentinel specific) ───────── */
+.news-item{display:flex;align-items:flex-start;gap:6px;padding:7px 0;border-bottom:1px solid var(--pc-border)}
+.news-item:last-child{border-bottom:none}
+.news-source{font-size:9px;font-weight:700;color:var(--pc-text-3);text-transform:uppercase;min-width:40px;padding-top:1px}
+.news-title{font-size:12px;color:var(--pc-text);text-decoration:none;flex:1;line-height:1.4}
+.news-title:hover{color:var(--pc-brand)}
+
+/* ── Source note & disclaimer ──────────────── */
+.source-note{font-size:9px;color:var(--pc-text-3);padding-top:10px;border-top:1px solid var(--pc-border);margin-top:8px}
+.disclaimer{font-size:10px;color:var(--pc-text-3);text-align:center;padding:16px 0 4px}
+
+/* ── Auth buttons ──────────────────────────── */
+.btn-login,.btn-register{display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);text-decoration:none}
+.btn-login{color:var(--pc-text-2)}.btn-login:hover{color:var(--pc-heading)}
+.btn-register{background:var(--pc-brand);color:#fff}.btn-register:hover{background:var(--pc-brand-hover)}
 
 @media(max-width:900px){
   .index-grid{grid-template-columns:1fr}
   .pred-grid{grid-template-columns:1fr}
   .track-grid{grid-template-columns:1fr}
   .acc-grid{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
 }
 
 /* ── Trending row (StockTwits) ───────────────── */
