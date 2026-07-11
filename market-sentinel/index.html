@@ -64,11 +64,9 @@
 .track-stat-val{font-size:13px;font-weight:700;font-family:var(--pc-mono)}
 
 /* ── Accuracies ────────────────────────── */
-.acc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
-.acc-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:14px;text-align:center}
-.acc-label{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:3px}
-.acc-val{font-size:24px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
-.acc-sub{font-size:10px;color:var(--pc-text-2);margin-top:2px}
+/* ── Trending row (StockTwits) ───────────────── */
+.trending-row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--pc-border)}
+.trending-row:last-child{border-bottom:none}
 .trending-sym{font-weight:600;font-size:12px;font-family:var(--pc-mono);min-width:55px;color:var(--pc-heading)}
 .trending-name{font-size:11px;color:var(--pc-text-2);flex:1}
 
@@ -92,6 +90,13 @@
 
 /* ── Section titles ────────────────────────── */
 .section-title{font-size:13px;font-weight:600;color:var(--pc-heading)}
+
+/* ── Accuracies ────────────────────────── */
+.acc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.acc-card{border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:14px;text-align:center}
+.acc-label{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:3px}
+.acc-val{font-size:24px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
+.acc-sub{font-size:10px;color:var(--pc-text-2);margin-top:2px}
 
 /* ── Price rows (stocks, macro, most active) ─ */
 .price-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--pc-border)}
@@ -125,12 +130,6 @@
   .grid-3{grid-template-columns:1fr}
   .grid-2{grid-template-columns:1fr}
 }
-
-/* ── Trending row (StockTwits) ───────────────── */
-.trending-row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--pc-border)}
-.trending-row:last-child{border-bottom:none}
-.trending-sym{font-weight:600;font-size:12px;font-family:var(--pc-mono);min-width:55px;color:var(--pc-heading)}
-.trending-name{font-size:11px;color:var(--pc-text-2);flex:1}
 </style>
 </head>
 <body>

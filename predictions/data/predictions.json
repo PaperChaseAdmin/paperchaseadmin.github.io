@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-08T14:57:09Z",
-  "last_prediction_date": "2026-07-08",
-  "last_settle_date": "2026-07-07",
+  "updated_at": "2026-07-10T21:31:58Z",
+  "last_prediction_date": "2026-07-10",
+  "last_settle_date": "2026-07-10",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 3,
-      "correct": 3,
-      "accuracy_pct": 100.0,
+      "total": 9,
+      "correct": 8,
+      "accuracy_pct": 88.9,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -318,9 +318,10 @@
           "prediction": "down",
           "confidence": 59,
           "signal": "S&P 500 -0.76% today",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.28
         },
         {
           "date": "2026-07-08",
@@ -328,9 +329,10 @@
           "prediction": "down",
           "confidence": 57,
           "signal": "NASDAQ -0.59% today",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 0.2
         },
         {
           "date": "2026-07-08",
@@ -338,6 +340,70 @@
           "prediction": "down",
           "confidence": 66,
           "signal": "DOW -1.40% today",
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.09
+        },
+        {
+          "date": "2026-07-09",
+          "market": "S&P 500",
+          "prediction": "up",
+          "confidence": 56,
+          "signal": "S&P 500 +0.58% today",
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.81
+        },
+        {
+          "date": "2026-07-09",
+          "market": "NASDAQ",
+          "prediction": "up",
+          "confidence": 59,
+          "signal": "NASDAQ +0.78% today",
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.3
+        },
+        {
+          "date": "2026-07-09",
+          "market": "DOW",
+          "prediction": "up",
+          "confidence": 53,
+          "signal": "DOW +0.31% today",
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.27
+        },
+        {
+          "date": "2026-07-10",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "S&P 500 +0.02% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-10",
+          "market": "NASDAQ",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "NASDAQ -0.22% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-10",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "DOW +0.15% today",
           "actual": null,
           "correct": null,
           "settled": false
@@ -346,9 +412,9 @@
     },
     "crypto_pulse": {
       "label": "Crypto Pulse",
-      "total": 1,
-      "correct": 0,
-      "accuracy_pct": 0.0,
+      "total": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -457,9 +523,32 @@
           "prediction": "down",
           "confidence": 78,
           "signal": "BTC -2.36% | Fear&Greed: 20 (Extreme Fear)",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -2.22
+        },
+        {
+          "date": "2026-07-09",
+          "market": "Crypto Market",
+          "prediction": "up",
+          "confidence": 76,
+          "signal": "BTC +2.19% | Fear&Greed: 22 (Extreme Fear)",
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.78
+        },
+        {
+          "date": "2026-07-10",
+          "market": "Crypto Market",
+          "prediction": "up",
+          "confidence": 68,
+          "signal": "BTC +1.51% | Fear&Greed: 23 (Extreme Fear)",
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.18
         }
       ]
     },
@@ -575,6 +664,26 @@
           "prediction": "up",
           "confidence": 51,
           "signal": "Will China invades Taiwan before GTA VI? | Yes 50% / No 50% | Vol $1,903,063",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-09",
+          "market": "Will GPT-6 be released before GTA VI?",
+          "prediction": "up",
+          "confidence": 51,
+          "signal": "Will GPT-6 be released before GTA VI? | Yes 51% / No 49% | Vol $682,214",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-10",
+          "market": "Will GPT-6 be released before GTA VI?",
+          "prediction": "up",
+          "confidence": 52,
+          "signal": "Will GPT-6 be released before GTA VI? | Yes 52% / No 48% | Vol $682,329",
           "actual": null,
           "correct": null,
           "settled": false
