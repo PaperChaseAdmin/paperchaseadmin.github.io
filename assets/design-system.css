@@ -187,6 +187,17 @@ td { padding: 8px 10px; border-bottom: 1px solid var(--pc-border); font-size: 12
 .mood-bar .score { font-size: 20px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); }
 .mood-bar .label { font-size: 11px; color: var(--pc-text-2); }
 
+/* ── Shared countdown (used by countdown.js) ── */
+.countdown-wrap { display: flex; align-items: center; gap: 8px; }
+.countdown-lbl { font-size: 9px; color: var(--pc-text-2); white-space: nowrap; }
+.countdown-num { font-size: 12px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); min-width: 36px; }
+
+/* ── Inline countdown (homepage) ── */
+.countdown { font-family: var(--pc-mono); font-size: 11px; color: var(--pc-text-2); display: flex; align-items: center; gap: 4px; }
+.countdown .num { font-weight: 700; color: var(--pc-heading); min-width: 14px; text-align: center; }
+.countdown .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--pc-green); animation: pulse-dot 2s ease-in-out infinite; }
+@keyframes pulse-dot { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
 .split-view { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
 @media (max-width: 768px) {
