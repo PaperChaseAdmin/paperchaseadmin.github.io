@@ -189,6 +189,7 @@ td { padding: 8px 10px; border-bottom: 1px solid var(--pc-border); font-size: 12
 
 /* ── Shared countdown (used by countdown.js) ── */
 .countdown-wrap { display: flex; align-items: center; gap: 6px; }
+.countdown-wrap .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--pc-green); animation: pulse-dot 2s ease-in-out infinite; flex-shrink: 0; }
 .countdown-lbl { font-size: 11px; color: var(--pc-text-2); white-space: nowrap; }
 .countdown-num { font-size: 12px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); min-width: 36px; }
 
