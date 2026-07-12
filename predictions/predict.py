@@ -32,7 +32,7 @@ def call_openrouter(prompt, model=None, max_tokens=500):
         print("  ⚠️  OPENROUTER_API_KEY not set")
         return None
 
-    models_to_try = model or ["deepseek/deepseek-chat", "mistralai/mistral-small-24b-instruct-2501", "qwen/qwen2.5-72b-instruct", "deepseek/deepseek-r1"]
+    models_to_try = model or ["deepseek/deepseek-chat", "mistralai/mistral-small-24b-instruct-2501", "qwen/qwen2.5-72b-instruct", "deepseek/deepseek-r1", "anthropic/claude-sonnet-4"]
 
     if isinstance(models_to_try, str):
         models_to_try = [models_to_try]
