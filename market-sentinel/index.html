@@ -261,8 +261,8 @@ function renderAll(d) {
   // ── News Media ──
   var newsItems = st.news || [];
   var newsSent = st.news_sentiment || {};
-  var nsScore = newsSent.avg_score !== undefined ? Math.round(newsSent.avg_score * 100) : null;
-  var nsLabel = newsSent.overall || '';
+  var nsScore = newsSent.score !== undefined ? Math.round((newsSent.score + 1) * 50) : null;
+  var nsLabel = newsSent.label || '';
   var nsHtml = '';
   if (nsScore !== null) {
     nsHtml = '<span class="ss-val" style="color:' + sentColor(nsLabel) + '">' + nsScore + '</span>' +
@@ -288,38 +288,41 @@ function renderAll(d) {
   // Poly watch
   var poly = st.polymarket || [];
   var polySum = st.polymarket_summary || {};
-  if (polySum.avg_sentiment !== undefined) {
-    var ps = Math.round(polySum.avg_sentiment * 100);
+  if (polySum.outlook) {
     socialHtml += '<div class="src-score" style="margin-bottom:6px">' +
-      '<span class="ss-val" style="color:' + sentColor(polySum.overall||'') + ';font-size:16px">' + ps + '</span>' +
-      '<span class="ss-label" style="background:var(--pc-surface-2);color:' + sentColor(polySum.overall||'') + ';font-size:10px">POLY</span></div>';
+      '<span class="ss-label" style="background:var(--pc-surface-2);color:' + sentColor(polySum.outlook) + ';font-size:10px">POLY: ' + (polySum.outlook||'').toUpperCase() + '</span></div>';
   }
   // Reddit
-  var reddit = (d.crypto || {}).reddit || {};
-  if (reddit.total_mentions !== undefined) {
-    socialHtml += '<div style="font-size:11px;margin-bottom:4px;color:var(--pc-text-2)">Reddit: ' + reddit.total_mentions + ' mentions</div>';
+  var reddit = st.reddit || [];
+  if (reddit.length) {
+    socialHtml += '<div style="font-size:11px;margin-bottom:4px;color:var(--pc-text-2)">Reddit: ' + reddit.length + ' threads</div>';
+  } else {
+    // Try crypto reddit
+    var cryReddit = (d.crypto || {}).reddit || [];
+    if (cryReddit.length) {
+      socialHtml += '<div style="font-size:11px;margin-bottom:4px;color:var(--pc-text-2)">Reddit (crypto): ' + cryReddit.length + ' mentions</div>';
+    }
   }
   // Poly markets
   if (poly.length) {
     poly.slice(0,4).forEach(function(p) {
-      var outcome = p.outcome || p.probability || 0;
-      socialHtml += '<div class="poly-item"><span>' + (p.question||'').slice(0,40) + '</span><span style="font-weight:600;font-family:var(--pc-mono)">' + outcome + '%</span></div>';
+      var yesPrice = p.yes_price != null ? Math.round(p.yes_price * 100) : 0;
+      socialHtml += '<div class="poly-item"><span>' + (p.title||'').slice(0,40) + '</span><span style="font-weight:600;font-family:var(--pc-mono)">' + yesPrice + '%</span></div>';
     });
   }
   document.getElementById('socialSection').innerHTML = socialHtml || '<div style="color:var(--pc-text-3);font-size:11px">Loading forum data...</div>';
 
   // ── Macro ──
   var macroHtml = '';
-  var topMentioned = st.top_mentioned || [];
-  var macroItems = [
-    {name:'10Y Yield', val: d.macro_10y != null ? d.macro_10y + '%' : null},
-    {name:'DXY', val: d.macro_dxy != null ? d.macro_dxy.toFixed(2) : null},
-    {name:'Gold', val: d.macro_gold != null ? '$' + d.macro_gold.toLocaleString() : null},
-    {name:'Oil (WTI)', val: d.macro_oil != null ? '$' + d.macro_oil.toFixed(2) : null},
-  ];
-  macroItems.forEach(function(m) {
-    macroHtml += '<div class="macro-item"><span class="mi-name">' + m.name + '</span><span class="mi-val">' + (m.val || '—') + '</span></div>';
-  });
+  var macroArr = st.macro || [];
+  if (macroArr.length) {
+    macroArr.slice(0,4).forEach(function(m) {
+      var val = m.value != null ? (m.symbol === '^TNX' ? m.value.toFixed(2) + '%' : m.symbol === 'DX-Y.NYB' ? m.value.toFixed(2) : m.value >= 100 ? '$' + Math.round(m.value).toLocaleString() : '$' + m.value.toFixed(2)) : '—';
+      macroHtml += '<div class="macro-item"><span class="mi-name">' + (m.name||'') + '</span><span class="mi-val">' + val + '</span></div>';
+    });
+  } else {
+    macroHtml = '<div style="color:var(--pc-text-3);font-size:11px">No macro data</div>';
+  }
   document.getElementById('macroGrid').innerHTML = macroHtml;
 
   // ── Politics / Geopolitical ──
