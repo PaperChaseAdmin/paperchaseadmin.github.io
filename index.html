@@ -300,8 +300,8 @@ async function refreshData() {
       var moodLblTxt = mood.label || 'Neutral';
       var moodBadge = document.getElementById('moodBadge');
       moodBadge.textContent = moodLblTxt.toUpperCase();
-      moodBadge.style.background = 'var(--pc-' + (mScore >= 60 ? 'green' : mScore >= 40 ? 'yellow' : 'red') + '-bg)';
-      moodBadge.style.color = 'var(--pc-' + (mScore >= 60 ? 'green' : mScore >= 40 ? 'yellow' : 'red') + ')';
+      moodBadge.style.background = 'var(--pc-' + (moodLblTxt.toLowerCase() === 'bullish' ? 'green' : moodLblTxt.toLowerCase() === 'bearish' ? 'red' : 'yellow') + '-bg)';
+      moodBadge.style.color = 'var(--pc-' + (moodLblTxt.toLowerCase() === 'bullish' ? 'green' : moodLblTxt.toLowerCase() === 'bearish' ? 'red' : 'yellow') + ')';
 
       // Save to localStorage history (only once per day)
       var hist = snapMood(mScore);
@@ -370,8 +370,9 @@ setInterval(tickCountdown, 1000);
         var fgLbl = document.getElementById('fgBadge');
         fgLbl.textContent = fgToday.value_classification || '';
         var fgV = parseInt(fgToday.value);
-        fgLbl.style.background = 'var(--pc-' + (fgV >= 50 ? 'green' : 'red') + '-bg)';
-        fgLbl.style.color = 'var(--pc-' + (fgV >= 50 ? 'green' : 'red') + ')';
+        var fgClass = (fgToday.value_classification || '').toLowerCase();
+        fgLbl.style.background = 'var(--pc-' + (fgClass === 'greed' ? 'green' : fgClass === 'fear' || fgClass === 'extreme fear' ? 'red' : 'yellow') + '-bg)';
+        fgLbl.style.color = 'var(--pc-' + (fgClass === 'greed' ? 'green' : fgClass === 'fear' || fgClass === 'extreme fear' ? 'red' : 'yellow') + ')';
 
         var fgVals = [], fgDays = [];
         for (var i = fgItems.length - 1; i >= 0; i--) {
