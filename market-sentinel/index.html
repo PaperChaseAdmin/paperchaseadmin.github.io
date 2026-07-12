@@ -231,14 +231,19 @@ function renderAll(d) {
   }
   document.getElementById('mhSub').textContent = 'Overall market sentiment · ' + (d.updated_at || '').slice(0,10) || 'Latest';
 
-  // ── Indices ──
-  var indices = st.indices || [];
+  // ── Indices (dict: {sp500:{value,change_24h}, ...}) ──
+  var indices = st.indices || {};
   var idxHtml = '';
-  indices.slice(0,6).forEach(function(idx) {
+  var idxNames = {'sp500':'S&P 500','nasdaq':'NASDAQ','dow':'DOW','vix':'VIX'};
+  var idxOrder = ['sp500','nasdaq','dow','vix'];
+  idxOrder.forEach(function(k) {
+    var idx = indices[k];
+    if (!idx) return;
+    var price = idx.value;
     var chg = idx.change_24h || 0;
     idxHtml += '<div class="idx-mini">' +
-      '<div class="im-name">' + (idx.symbol||'?') + '</div>' +
-      '<div class="im-val">' + fmtPrice(idx.price) + '</div>' +
+      '<div class="im-name">' + (idxNames[k]||k) + '</div>' +
+      '<div class="im-val">' + (price != null ? (price >= 1000 ? '$' + Math.round(price).toLocaleString() : '$' + price.toFixed(2)) : '—') + '</div>' +
       '<div class="im-chg" style="color:' + chgColor(chg) + '">' + fmtChg(chg) + '</div></div>';
   });
   document.getElementById('idxGrid').innerHTML = idxHtml || '<div style="color:var(--pc-text-3);font-size:11px">No data</div>';
@@ -246,12 +251,12 @@ function renderAll(d) {
   // ── Fear & Greed ──
   var fg = (d.crypto || {}).fear_greed || {};
   var fgVal = fg.value !== undefined ? parseInt(fg.value) : null;
-  var fgClass = (fg.value_classification || '').toLowerCase();
+  var fgClass = (fg.label || '').toLowerCase();
   var fgHtml = '';
   if (fgVal !== null) {
-    var fgColor = fgClass === 'greed' ? 'var(--pc-green)' : (fgClass === 'fear' || fgClass === 'extreme fear') ? 'var(--pc-red)' : 'var(--pc-yellow)';
+    var fgColor = fgClass === 'greed' || fgClass === 'extreme greed' ? 'var(--pc-green)' : (fgClass === 'fear' || fgClass === 'extreme fear') ? 'var(--pc-red)' : 'var(--pc-yellow)';
     fgHtml = '<span class="fg-val" style="color:' + fgColor + '">' + fgVal + '</span>' +
-      '<span class="fg-label" style="background:var(--pc-surface-2);color:' + fgColor + '">' + (fg.value_classification||'').toUpperCase() + '</span>' +
+      '<span class="fg-label" style="background:var(--pc-surface-2);color:' + fgColor + '">' + (fg.label||'').toUpperCase() + '</span>' +
       '<div class="fg-bar"><div class="fg-fill" style="width:' + fgVal + '%;background:' + fgColor + '"></div></div>';
   } else {
     fgHtml = '<span style="color:var(--pc-text-3);font-size:12px">Loading...</span>';
