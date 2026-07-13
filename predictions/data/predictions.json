@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-10T21:31:58Z",
-  "last_prediction_date": "2026-07-10",
+  "updated_at": "2026-07-13T15:24:30Z",
+  "last_prediction_date": "2026-07-13",
   "last_settle_date": "2026-07-10",
   "tools": {
     "market_sentinel": {
@@ -407,6 +407,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-07-13",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 70,
+          "signal": "Bearish market mood and negative performance in key sectors",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-13",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 75,
+          "signal": "Tech sector under pressure and negative sentiment in most active stocks",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-13",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 60,
+          "signal": "Mixed signals from macro data and slight decline in index",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -684,6 +714,16 @@
           "prediction": "up",
           "confidence": 52,
           "signal": "Will GPT-6 be released before GTA VI? | Yes 52% / No 48% | Vol $682,329",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-13",
+          "market": "Will France win the 2026 FIFA World Cup?",
+          "prediction": "down",
+          "confidence": 62,
+          "signal": "Will France win the 2026 FIFA World Cup? | Yes 38% / No 62% | Vol $115,590,580",
           "actual": null,
           "correct": null,
           "settled": false
