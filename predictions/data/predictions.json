@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-15T21:27:20Z",
-  "last_prediction_date": "2026-07-14",
+  "updated_at": "2026-07-16T14:34:42Z",
+  "last_prediction_date": "2026-07-16",
   "last_settle_date": "2026-07-15",
   "tools": {
     "market_sentinel": {
@@ -471,6 +471,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-07-16",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 68,
+          "signal": "Bearish market mood and extreme fear in the market",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-16",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 72,
+          "signal": "Negative performance in tech stocks and overall bearish sentiment",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-16",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals from macro data and slight positive movement in current session",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -768,6 +798,16 @@
           "prediction": "down",
           "confidence": 61,
           "signal": "Will France win the 2026 FIFA World Cup? | Yes 39% / No 61% | Vol $117,462,338",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-16",
+          "market": "Will Spain win the 2026 FIFA World Cup?",
+          "prediction": "up",
+          "confidence": 57,
+          "signal": "Will Spain win the 2026 FIFA World Cup? | Yes 57% / No 43% | Vol $121,048,023",
           "actual": null,
           "correct": null,
           "settled": false
