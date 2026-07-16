@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-16T14:34:42Z",
+  "updated_at": "2026-07-16T21:29:53Z",
   "last_prediction_date": "2026-07-16",
-  "last_settle_date": "2026-07-15",
+  "last_settle_date": "2026-07-16",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 13,
-      "correct": 12,
-      "accuracy_pct": 92.3,
+      "total": 15,
+      "correct": 14,
+      "accuracy_pct": 93.3,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -478,9 +478,10 @@
           "prediction": "down",
           "confidence": 68,
           "signal": "Bearish market mood and extreme fear in the market",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.51
         },
         {
           "date": "2026-07-16",
@@ -488,9 +489,10 @@
           "prediction": "down",
           "confidence": 72,
           "signal": "Negative performance in tech stocks and overall bearish sentiment",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.47
         },
         {
           "date": "2026-07-16",
