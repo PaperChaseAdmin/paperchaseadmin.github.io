@@ -352,10 +352,18 @@ function renderAll(d) {
         '<span style=\"font-weight:600\">r/' + sub + '</span>' +
         ' · <span style=\"color:var(--pc-text-2)\">activity ' + act + '</span>' +
         ' · <span style=\"color:var(--pc-text-3);font-size:10px\">' + postCount + ' posts</span>';
-      if (r.top_post) {
+      // Individual post titles
+      var postsList = r.posts_list || [];
+      if (postsList.length) {
+        postsList.slice(0,5).forEach(function(p) {
+          var url = p.url || '#';
+          socialHtml += '<div style=\"margin-top:3px;padding:5px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:11px;border-left:2px solid var(--pc-brand)\">' +
+            '<a href=\"' + url + '\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--pc-heading);text-decoration:none\">' + (p.title||'').slice(0,80) + '</a></div>';
+        });
+      } else if (r.top_post) {
         var url = r.top_post_url || '#';
         var score = r.top_post_score;
-        socialHtml += '<div style=\"margin-top:4px;padding:6px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:11px\">' +
+        socialHtml += '<div style=\"margin-top:4px;padding:6px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:11px;border-left:2px solid var(--pc-brand)\">' +
           '<a href=\"' + url + '\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--pc-heading);text-decoration:none\">📌 ' + r.top_post.slice(0,80) + '</a>' +
           (score != null ? ' <span style=\"color:var(--pc-text-3);font-size:10px\">▲' + score + '</span>' : '') +
           '</div>';
@@ -411,6 +419,13 @@ function renderAll(d) {
         socialHtml += '<span class=\"fm-badge\">' + m.sym + ': ' + m.cnt + '</span>';
       });
       socialHtml += '</div>';
+    }
+    // Top posts
+    var topPosts = fourchain.top_posts || [];
+    if (topPosts.length) {
+      topPosts.slice(0,4).forEach(function(t) {
+        socialHtml += '<div style=\"margin-top:3px;padding:5px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:10px;color:var(--pc-text);border-left:2px solid var(--pc-yellow);line-height:1.4\">' + t.slice(0,100) + '</div>';
+      });
     }
     socialHtml += '</div></div>';
   }
