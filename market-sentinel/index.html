@@ -344,25 +344,34 @@ function renderAll(d) {
       '<div class=\"sb-title\">🔴 Reddit</div>';
     reddit.forEach(function(r) {
       var sub = r.subreddit || '';
-      if (sub.startsWith('r/')) sub = sub.slice(2);
+      if (sub.indexOf('r/') === 0) sub = sub.slice(2);
       var act = r.activity_score || 0;
+      var postCount = r.posts || 0;
       socialHtml += '<div class=\"sb-item\">' +
         '<span style=\"font-weight:600\">r/' + sub + '</span>' +
-        ' · <span style=\"color:var(--pc-text-2)\">activity ' + act + '</span>';
+        ' · <span style=\"color:var(--pc-text-2)\">activity ' + act + '</span>' +
+        ' · <span style=\"color:var(--pc-text-3);font-size:10px\">' + postCount + ' posts</span>';
       if (r.top_post) {
-        socialHtml += '<br><span style=\"color:var(--pc-text-3);font-size:10px\">📌 ' + r.top_post.slice(0,70) + '</span>';
+        var url = r.top_post_url || '#';
+        var score = r.top_post_score;
+        socialHtml += '<div style=\"margin-top:4px;padding:6px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:11px\">' +
+          '<a href=\"' + url + '\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--pc-heading);text-decoration:none\">📌 ' + r.top_post.slice(0,80) + '</a>' +
+          (score != null ? ' <span style=\"color:var(--pc-text-3);font-size:10px\">▲' + score + '</span>' : '') +
+          '</div>';
       }
-      // Mentions
+      // Mentions with non-zero counts
       var mentions = r.mentions || {};
       var mArr = Object.keys(mentions).map(function(k) { return {sym: k, cnt: mentions[k]}; });
       mArr.sort(function(a,b) { return b.cnt - a.cnt; });
-      var topM = mArr.filter(function(m) { return m.cnt > 0; }).slice(0,5);
+      var topM = mArr.filter(function(m) { return m.cnt > 0; }).slice(0,8);
       if (topM.length) {
-        socialHtml += '<br><span style=\"font-size:10px\">';
+        socialHtml += '<div style=\"margin-top:4px;display:flex;flex-wrap:wrap;gap:3px\">';
         topM.forEach(function(m) {
-          socialHtml += '<span class=\"sb-tag\">' + m.sym + ' (' + m.cnt + ')</span> ';
+          var pct = m.cnt / Math.max(1, postCount);
+          var bg = pct > 0.3 ? 'var(--pc-green-bg)' : pct > 0.1 ? 'var(--pc-yellow-bg)' : 'var(--pc-surface-2)';
+          socialHtml += '<span style=\"font-size:10px;font-weight:600;font-family:var(--pc-mono);padding:2px 6px;background:' + bg + ';border-radius:3px\">' + m.sym + ' ' + m.cnt + '</span>';
         });
-        socialHtml += '</span>';
+        socialHtml += '</div>';
       }
       socialHtml += '</div>';
     });
@@ -378,6 +387,17 @@ function renderAll(d) {
       '<div class=\"sb-item\">' +
       '<span style=\"font-weight:600\">' + fourchain.thread_count + ' threads</span>' +
       ' · <span style=\"color:var(--pc-text-2)\">' + fourchain.active_threads + ' active</span>';
+    if (fourchain.bullish_pct != null) {
+      var bp = fourchain.bullish_pct;
+      socialHtml += '<div style=\"margin:4px 0;display:flex;gap:8px;align-items:center\">' +
+        '<span style=\"font-size:11px;color:var(--pc-green)\">📈 Bullish ' + bp + '%</span>' +
+        '<span style=\"font-size:11px;color:var(--pc-red)\">📉 Bearish ' + (100-bp) + '%</span>' +
+        '<div style=\"flex:1;max-width:100px;height:4px;background:var(--pc-surface-3);border-radius:2px;overflow:hidden\">' +
+        '<div style=\"height:100%;width:' + bp + '%;background:var(--pc-green);border-radius:2px\"></div></div></div>';
+    }
+    if (fourchain.top_coin) {
+      socialHtml += '<div style=\"margin-bottom:4px;font-size:11px\">🔥 Most mentioned: <strong>' + fourchain.top_coin + '</strong></div>';
+    }
     var fArr = Object.keys(fMentions).map(function(k) { return {sym: k, cnt: fMentions[k]}; });
     fArr.sort(function(a,b) { return b.cnt - a.cnt; });
     if (fArr.length) {
