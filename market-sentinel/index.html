@@ -339,6 +339,7 @@ function renderAll(d) {
 
   // Reddit section
   var reddit = st.reddit || [];
+  var redditSummary = st.reddit_summary || '';
   if (reddit.length) {
     socialHtml += '<div class=\"social-block\">' +
       '<div class=\"sb-title\">🔴 Reddit</div>';
@@ -376,6 +377,10 @@ function renderAll(d) {
       socialHtml += '</div>';
     });
     socialHtml += '</div>';
+  } else if (redditSummary) {
+    socialHtml += '<div class=\"social-block\">' +
+      '<div class=\"sb-title\">🔴 Reddit</div>' +
+      '<div class=\"sb-item\" style=\"color:var(--pc-text-2);font-size:11px\">' + (typeof redditSummary === 'string' ? redditSummary.slice(0,120) : redditSummary.summary ? redditSummary.summary.slice(0,120) : '') + '</div></div>';
   }
 
   // 4chan /biz/ section
