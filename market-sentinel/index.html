@@ -329,7 +329,9 @@ function renderAll(d){
         bearKW=['invade','war','strike','crash','recession','default','tariff','sanction','attack','military','collapse','debt crisis'];
     function polySent(t){
       if(!t)return'Neutral';
-      var l=t.toLowerCase(),b=bullKW.some(function(k){return l.includes(k);}),w=bearKW.some(function(k){return l.includes(k);});
+      var l=t.toLowerCase();
+      var b=bullKW.some(function(k){return new RegExp('\\b'+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b').test(l);});
+      var w=bearKW.some(function(k){return new RegExp('\\b'+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b').test(l);});
       return w?'Bearish':b?'Bullish':'Neutral';
     }
     p.slice(0,6).forEach(function(x){
