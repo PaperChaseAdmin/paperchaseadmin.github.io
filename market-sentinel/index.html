@@ -322,10 +322,20 @@ function renderAll(d){
     $('fourchanSection').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No 4chan data</div>';
   })();
 
-  // ── Polymarket ──
+  // ── Polymarket w/ sentiment tags ──
   (function(){
-    var p=st.polymarket||[],h='';
-    p.slice(0,6).forEach(function(x){var yp=x.yes_price!=null?Math.round(x.yes_price*100):0;h+='<div class="pi"><span class="pi-t">'+(x.title||'').slice(0,45)+'</span><span style="font-weight:600;font-family:var(--pc-mono)">'+yp+'%</span></div>';});
+    var p=st.polymarket||[],h='',
+        bullKW=['rate cut','approve','rally','growth','bull','ceasefire','peace','positive'],
+        bearKW=['invade','war','strike','crash','recession','default','tariff','sanction','attack','military','collapse','debt crisis'];
+    function polySent(t){
+      if(!t)return'Neutral';
+      var l=t.toLowerCase(),b=bullKW.some(function(k){return l.includes(k);}),w=bearKW.some(function(k){return l.includes(k);});
+      return w?'Bearish':b?'Bullish':'Neutral';
+    }
+    p.slice(0,6).forEach(function(x){
+      var yp=x.yes_price!=null?Math.round(x.yes_price*100):0,sent=polySent(x.title),sg=sent==='Bullish'?'b-bull':sent==='Bearish'?'b-bear':'b-neut';
+      h+='<div class="pi"><span class="pi-t">'+(x.title||'').slice(0,45)+' <span class="nl-g '+sg+'" style="font-size:8px">'+sent+'</span></span><span style="font-weight:600;font-family:var(--pc-mono)">'+yp+'%</span></div>';
+    });
     $('polySection').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No data</div>';
   })();
 
