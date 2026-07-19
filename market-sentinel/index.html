@@ -335,8 +335,8 @@ function renderAll(d){
       return w?'Bearish':b?'Bullish':'Neutral';
     }
     p.slice(0,6).forEach(function(x){
-      var yp=x.yes_price!=null?Math.round(x.yes_price*100):0,sent=polySent(x.title),sg=sent==='Bullish'?'b-bull':sent==='Bearish'?'b-bear':'b-neut';
-      h+='<div class="pi"><span class="pi-t">'+(x.title||'').slice(0,45)+' <span class="nl-g '+sg+'" style="font-size:8px">'+sent+'</span></span><span style="font-weight:600;font-family:var(--pc-mono)">'+yp+'%</span></div>';
+      var yp=x.yes_price!=null?Math.round(x.yes_price*100):0,sent=polySent(x.title),sg=sent==='Bullish'?'b-bull':sent==='Bearish'?'b-bear':'b-neut',url=x.url||'#';
+      h+='<div class="pi"><span class="pi-t"><a href="'+url+'" target="_blank" rel="noopener" style="color:var(--pc-text);text-decoration:none">'+(x.title||'').slice(0,45)+'</a> <span class="nl-g '+sg+'" style="font-size:8px">'+sent+'</span></span><span style="font-weight:600;font-family:var(--pc-mono)">'+yp+'%</span></div>';
     });
     $('polySection').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No data</div>';
   })();
