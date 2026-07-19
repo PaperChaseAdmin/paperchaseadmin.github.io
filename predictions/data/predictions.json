@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-16T21:29:53Z",
-  "last_prediction_date": "2026-07-16",
-  "last_settle_date": "2026-07-16",
+  "updated_at": "2026-07-17T21:12:41Z",
+  "last_prediction_date": "2026-07-17",
+  "last_settle_date": "2026-07-17",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 15,
-      "correct": 14,
-      "accuracy_pct": 93.3,
+      "total": 17,
+      "correct": 16,
+      "accuracy_pct": 94.1,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -503,6 +503,38 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-07-17",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 72,
+          "signal": "Bearish market mood and negative macro indicators",
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.01
+        },
+        {
+          "date": "2026-07-17",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 78,
+          "signal": "Tech stocks under pressure and bearish sentiment",
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.4
+        },
+        {
+          "date": "2026-07-17",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals with slight bearish bias",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -810,6 +842,16 @@
           "prediction": "up",
           "confidence": 57,
           "signal": "Will Spain win the 2026 FIFA World Cup? | Yes 57% / No 43% | Vol $121,048,023",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-17",
+          "market": "Will Spain win the 2026 FIFA World Cup?",
+          "prediction": "up",
+          "confidence": 58,
+          "signal": "Will Spain win the 2026 FIFA World Cup? | Yes 58% / No 42% | Vol $122,359,859",
           "actual": null,
           "correct": null,
           "settled": false

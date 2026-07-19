@@ -7,8 +7,8 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title data-i18n-title="page_title_sentinel">Market Sentinel — Market Intelligence Dashboard</title>
-<meta name="description" content="Real-time financial market monitoring — stock indices, news sentiment, Reddit/4chan discussions, macro indicators, most active stocks, and political news."/>
-<meta name="keywords" content="market sentiment, stock market, financial news, reddit wallstreetbets, 4chan biz, macro indicators"/>
+<meta name="description" content="Real-time financial market monitoring — stock indices, news sentiment, 4chan discussions, macro indicators, most active stocks, and political news."/>
+<meta name="keywords" content="market sentiment, stock market, financial news, 4chan biz, macro indicators"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://paperchase.online/market-sentinel/"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
@@ -18,92 +18,91 @@
 <script src="/assets/countdown.js"></script>
 <style>
 /* ── Layout ── */
-.ms-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.ms-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
-/* ── Hero mood card ── */
-.mood-hero { grid-column: 1 / -1; background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 24px; text-align: center; }
+/* ── Hero ── */
+.mood-hero { grid-column: 1 / -1; background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 24px 24px 16px; text-align: center; }
 .mood-hero .mh-score { font-size: 64px; font-weight: 800; font-family: var(--pc-mono); line-height: 1; margin: 8px 0 4px; letter-spacing: -0.03em; }
 .mood-hero .mh-label { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
-.mood-hero .mh-sub { font-size: 11px; color: var(--pc-text-2); }
-.mood-hero .mh-bar { max-width: 300px; margin: 12px auto 0; height: 6px; background: var(--pc-surface-3); border-radius: 3px; overflow: hidden; }
+.mood-hero .mh-bar { max-width: 300px; margin: 10px auto 6px; height: 6px; background: var(--pc-surface-3); border-radius: 3px; overflow: hidden; }
 .mood-hero .mh-fill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+.mood-hero .mh-remark { font-size: 10px; color: var(--pc-text-3); max-width: 500px; margin: 0 auto; line-height: 1.4; padding: 6px 10px; background: var(--pc-surface-2); border-radius: var(--pc-radius); }
 
-/* ── Source cards ── */
-.src-card { background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 16px; }
-.src-card.sc-full { grid-column: 1 / -1; }
-.src-card .sc-title { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--pc-text-3); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
-.src-card .sc-title .icon { font-size: 14px; }
-.src-card .sc-sub { font-size: 11px; color: var(--pc-text-2); margin-bottom: 8px; }
+/* ── Cards ── */
+.card { background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 16px; }
+.card.full { grid-column: 1 / -1; }
+.card .c-title { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--pc-text-3); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.card .c-title .icon { font-size: 14px; }
+.card .c-sub { font-size: 11px; color: var(--pc-text-2); }
 
-/* Source mini score */
-.src-score { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-.src-score .ss-val { font-size: 20px; font-weight: 700; font-family: var(--pc-mono); }
-.src-score .ss-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 3px; }
-.src-score .ss-bar { flex: 1; max-width: 120px; height: 4px; background: var(--pc-surface-3); border-radius: 2px; overflow: hidden; }
-.src-score .ss-fill { height: 100%; border-radius: 2px; }
+/* ── Indices grid ── */
+.idx-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.idx-box { padding: 8px; border-radius: var(--pc-radius); background: var(--pc-surface-2); }
+.idx-box .ib-name { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--pc-text-3); }
+.idx-box .ib-val { font-size: 16px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); margin-top: 1px; }
+.idx-box .ib-chg { font-size: 11px; font-weight: 600; font-family: var(--pc-mono); }
+
+/* ── Two-col mini grid ── */
+.mini2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.mini-item { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; background: var(--pc-surface-2); border-radius: var(--pc-radius); }
+.mini-item .mi-sym { font-size: 12px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); }
+.mini-item .mi-r { text-align: right; }
+.mini-item .mi-price { font-size: 11px; font-weight: 600; font-family: var(--pc-mono); color: var(--pc-heading); }
+.mini-item .mi-chg { font-size: 10px; font-family: var(--pc-mono); }
 
 /* ── News list ── */
-.ms-news { list-style: none; }
-.ms-news li { padding: 8px 0; border-bottom: 1px solid var(--pc-border); font-size: 11px; }
-.ms-news li:last-child { border-bottom: none; }
-.ms-news .ms-news-src { font-weight: 600; color: var(--pc-text-2); }
-.ms-news .ms-news-title { color: var(--pc-heading); }
-.ms-news .ms-news-date { font-size: 10px; color: var(--pc-text-3); margin-left: 4px; }
-.ms-news .ms-news-sent { font-size: 9px; font-weight: 600; margin-left: 6px; }
+.news-list { list-style: none; }
+.news-list li { padding: 8px 0; border-bottom: 1px solid var(--pc-border); font-size: 11px; line-height: 1.4; }
+.news-list li:last-child { border-bottom: none; }
+.news-list .nl-src { font-weight: 600; color: var(--pc-text-2); }
+.news-list .nl-title { color: var(--pc-heading); }
+.news-list .nl-date { font-size: 10px; color: var(--pc-text-3); white-space: nowrap; }
+.news-list .nl-sent { font-size: 9px; font-weight: 600; white-space: nowrap; }
 
-/* ── Index mini grid ── */
-.idx-mini-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; }
-.idx-mini { padding: 8px; border-radius: var(--pc-radius); background: var(--pc-surface-2); }
-.idx-mini .im-name { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--pc-text-3); }
-.idx-mini .im-val { font-size: 16px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); margin-top: 1px; }
-.idx-mini .im-chg { font-size: 11px; font-weight: 600; font-family: var(--pc-mono); }
-
-/* ── Macro mini ── */
+/* ── Macro ── */
 .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .macro-item { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; background: var(--pc-surface-2); border-radius: var(--pc-radius); }
-.macro-item .mi-name { font-size: 10px; font-weight: 600; color: var(--pc-text-2); }
-.macro-item .mi-val { font-size: 13px; font-weight: 600; font-family: var(--pc-mono); color: var(--pc-heading); }
+.macro-item .ma-name { font-size: 10px; font-weight: 600; color: var(--pc-text-2); }
+.macro-item .ma-val { font-size: 13px; font-weight: 600; font-family: var(--pc-mono); color: var(--pc-heading); }
 
-/* ── Most Active / Top Mentioned ── */
-.act-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-.act-item { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; background: var(--pc-surface-2); border-radius: var(--pc-radius); }
-.act-item .ai-sym { font-size: 12px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); }
-.act-item .ai-detail { text-align: right; }
-.act-item .ai-price { font-size: 11px; font-weight: 600; font-family: var(--pc-mono); color: var(--pc-heading); }
-.act-item .ai-chg { font-size: 10px; font-family: var(--pc-mono); }
-.act-item .ai-vol { font-size: 9px; color: var(--pc-text-3); font-family: var(--pc-mono); }
-
-/* ── Social sub-card ── */
-.social-block { margin-bottom: 10px; }
-.social-block:last-child { margin-bottom: 0; }
-.social-block .sb-title { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--pc-text-3); margin-bottom: 4px; }
-.social-block .sb-item { font-size: 11px; padding: 4px 0; border-bottom: 1px solid var(--pc-border); }
-.social-block .sb-item:last-child { border-bottom: none; }
-.social-block .sb-tag { font-size: 9px; font-weight: 600; padding: 1px 5px; border-radius: 3px; background: var(--pc-surface-2); }
-
-/* ── Polymarket mini ── */
+/* ── Polymarket ── */
 .poly-item { padding: 6px 0; border-bottom: 1px solid var(--pc-border); font-size: 11px; display: flex; justify-content: space-between; }
 .poly-item:last-child { border-bottom: none; }
+.poly-item .pi-title { color: var(--pc-text); }
+.poly-item .pi-odds { font-weight: 600; font-family: var(--pc-mono); }
 
-/* ── 4chan mentions inline ── */
-.four-mentions { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
-.four-mentions .fm-badge { font-size: 10px; font-weight: 600; font-family: var(--pc-mono); padding: 2px 6px; background: var(--pc-surface-2); border-radius: 3px; }
+/* ── 4chan ── */
+.fchan-strip { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.fchan-strip .fc-stat { font-size: 11px; }
+.fchan-sent { display: flex; gap: 8px; align-items: center; margin: 4px 0; }
+.fchan-sent .fs-bar { flex: 1; max-width: 100px; height: 4px; background: var(--pc-surface-3); border-radius: 2px; overflow: hidden; }
+.fchan-sent .fs-fill { height: 100%; border-radius: 2px; }
+.fchan-posts { display: flex; flex-direction: column; gap: 3px; }
+.fchan-post { padding: 5px 8px; background: var(--pc-surface-2); border-radius: var(--pc-radius); font-size: 10px; color: var(--pc-text); border-left: 2px solid var(--pc-yellow); line-height: 1.4; }
+.fchan-badges { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+.fchan-badges .fb { font-size: 10px; font-weight: 600; font-family: var(--pc-mono); padding: 2px 6px; background: var(--pc-surface-3); border-radius: 3px; }
+
+/* ── Sentiment score bar ── */
+.sent-bar { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.sent-bar .sb-val { font-size: 20px; font-weight: 700; font-family: var(--pc-mono); }
+.sent-bar .sb-lbl { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 3px; }
+.sent-bar .sb-fill { flex: 1; max-width: 120px; height: 4px; background: var(--pc-surface-3); border-radius: 2px; overflow: hidden; }
+.sent-bar .sb-fill-in { height: 100%; border-radius: 2px; }
 
 /* ── Loading ── */
 .loading { text-align: center; padding: 60px 20px; color: var(--pc-text-2); font-size: 13px; }
 .spinner { width: 24px; height: 24px; border: 2px solid var(--pc-border); border-top-color: var(--pc-brand); border-radius: 50%; animation: spin .6s linear infinite; margin: 0 auto 12px; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ── Badge colors ── */
 .bullish { color: var(--pc-green); }
 .bearish { color: var(--pc-red); }
 .neutral { color: var(--pc-text-3); }
 
 @media (max-width: 768px) {
-  .ms-layout { grid-template-columns: 1fr; }
+  .ms-grid { grid-template-columns: 1fr; }
   .mood-hero .mh-score { font-size: 48px; }
-  .idx-mini-grid { grid-template-columns: 1fr 1fr; }
-  .act-grid { grid-template-columns: 1fr; }
+  .mini2 { grid-template-columns: 1fr; }
+  .idx-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -129,7 +128,7 @@
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
     <div>
       <h1 style="font-size:22px;font-weight:700;color:var(--pc-heading);letter-spacing:-0.03em;margin:0">Market Sentinel</h1>
-      <p style="font-size:12px;color:var(--pc-text-2);margin-top:1px">Market mood · Indices · News · Social &amp; Forums · Macro · Active Stocks · Politics</p>
+      <p style="font-size:12px;color:var(--pc-text-2);margin-top:1px">Market mood · Indices · News · Macro · 4chan · Politics</p>
     </div>
     <div id="countdown-wrap" class="countdown-wrap"></div>
   </div>
@@ -142,59 +141,58 @@
     <div class="mood-hero" id="moodHero">
       <div class="mh-score" id="mhScore">—</div>
       <div class="mh-label" id="mhLabel">Loading...</div>
-      <div class="mh-sub" id="mhSub">Overall market sentiment score</div>
       <div class="mh-bar"><div class="mh-fill" id="mhFill" style="width:0%"></div></div>
+      <div class="mh-remark" id="mhRemark">Combines index trends (S&P 500, NASDAQ, DOW, VIX), news sentiment, macro indicators (Treasury yield, USD, Gold, Oil), most active stock movements &amp; BTC price via AI analysis.</div>
     </div>
 
-    <!-- ═══ SOURCE GRID ═══ -->
-    <div class="ms-layout">
+    <!-- ═══ GRID ═══ -->
+    <div class="ms-grid">
 
-      <!-- 📊 Indices -->
-      <div class="src-card">
-        <div class="sc-title"><span class="icon">📊</span> Market Indices</div>
-        <div class="idx-mini-grid" id="idxGrid"></div>
+      <!-- 📊 Market Indices -->
+      <div class="card">
+        <div class="c-title"><span class="icon">📊</span> Market Indices</div>
+        <div class="idx-grid" id="idxGrid"></div>
       </div>
 
-      <!-- 🔥 Most Active Stocks (replaces Fear & Greed) -->
-      <div class="src-card">
-        <div class="sc-title"><span class="icon">🔥</span> Most Active Stocks</div>
-        <div class="act-grid" id="activeGrid"></div>
+      <!-- 🔥 Most Active Stocks -->
+      <div class="card">
+        <div class="c-title"><span class="icon">🔥</span> Most Active Stocks</div>
+        <div class="mini2" id="activeGrid"></div>
       </div>
 
-      <!-- 📰 News Media (enhanced) -->
-      <div class="src-card sc-full">
-        <div class="sc-title"><span class="icon">📰</span> News Media Sentiment</div>
-        <div class="src-score" id="newsScore"></div>
-        <div id="newsSummary" style="font-size:11px;color:var(--pc-text-2);margin-bottom:8px;padding:8px;background:var(--pc-surface-2);border-radius:var(--pc-radius)"></div>
-        <ul class="ms-news" id="newsList"></ul>
+      <!-- 📰 News Media Sentiment -->
+      <div class="card full">
+        <div class="c-title"><span class="icon">📰</span> News Media Sentiment</div>
+        <div class="sent-bar" id="newsScore"></div>
+        <ul class="news-list" id="newsList"></ul>
       </div>
 
-      <!-- 💬 Social / Forums (enhanced: Reddit + 4chan) -->
-      <div class="src-card sc-full">
-        <div class="sc-title"><span class="icon">💬</span> Social &amp; Forums</div>
-        <div id="socialSection"></div>
-      </div>
-
-      <!-- 📈 Macro -->
-      <div class="src-card">
-        <div class="sc-title"><span class="icon">📈</span> Macro Indicators</div>
+      <!-- 📈 Macro Indicators -->
+      <div class="card">
+        <div class="c-title"><span class="icon">📈</span> Macro Indicators</div>
         <div class="macro-grid" id="macroGrid"></div>
-        <div class="sc-sub" style="margin-top:8px">Source: yfinance</div>
+        <div class="c-sub" style="margin-top:8px">Source: yfinance</div>
       </div>
 
-      <!-- 🏆 Top Mentioned -->
-      <div class="src-card">
-        <div class="sc-title"><span class="icon">🏆</span> Top Mentioned (Reddit)</div>
-        <div class="act-grid" id="mentionGrid"></div>
+      <!-- 🎲 Polymarket (Finance Predictions) -->
+      <div class="card">
+        <div class="c-title"><span class="icon">🎲</span> Prediction Markets</div>
+        <div id="polySection"></div>
       </div>
 
-      <!-- 🏛️ Politics -->
-      <div class="src-card sc-full">
-        <div class="sc-title"><span class="icon">🏛️</span> Political &amp; Geopolitical</div>
+      <!-- 👻 4chan /biz/ -->
+      <div class="card full">
+        <div class="c-title"><span class="icon">👻</span> 4chan /biz/ Discussion</div>
+        <div id="fourchanSection"></div>
+      </div>
+
+      <!-- 🏛️ Political & Geopolitical -->
+      <div class="card full">
+        <div class="c-title"><span class="icon">🏛️</span> Political &amp; Geopolitical</div>
         <div id="politicsSection"></div>
       </div>
 
-    </div><!-- /ms-layout -->
+    </div><!-- /ms-grid -->
   </div><!-- /main-content -->
 </div><!-- /container -->
 
@@ -204,23 +202,25 @@ const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/market-senti
 let _cdTimer = null;
 function onDataLoaded(updatedAt) {
   clearInterval(_cdTimer);
-  const el = document.getElementById('countdown-wrap');
+  var el = document.getElementById('countdown-wrap');
   if (!el || typeof window.startCountdown !== 'function') return;
   _cdTimer = window.startCountdown(el, 'Next update in', 'market-sentinel', loadData);
 }
 
-const fmtPrice = v => v == null ? '—' : v >= 1000 ? '$' + v.toLocaleString('en', {maximumFractionDigits:0}) : v >= 1 ? '$' + v.toFixed(2) : '$' + v.toFixed(4);
-const fmtChg = v => v == null ? '' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
-const chgColor = v => v == null ? '' : v >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
-const sentColor = function(s) {
+var fmtPrice = function(v) {
+  return v == null ? '—' : v >= 1000 ? '$' + v.toLocaleString('en', {maximumFractionDigits:0}) : v >= 1 ? '$' + v.toFixed(2) : '$' + v.toFixed(4);
+};
+var fmtChg = function(v) { return v == null ? '' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%'; };
+var chgColor = function(v) { return v == null ? '' : v >= 0 ? 'var(--pc-green)' : 'var(--pc-red)'; };
+var sentColor = function(s) {
   if (!s) return 'var(--pc-text-3)';
   var l = s.toLowerCase();
-  if (l === 'bullish' || l === 'greed' || l === 'positive' || l === 'greed') return 'var(--pc-green)';
+  if (l === 'bullish' || l === 'greed' || l === 'positive') return 'var(--pc-green)';
   if (l === 'bearish' || l === 'fear' || l === 'extreme fear' || l === 'negative') return 'var(--pc-red)';
   return 'var(--pc-text-3)';
 };
 
-function fmtDate(dateStr) {
+var fmtDate = function(dateStr) {
   if (!dateStr) return '';
   try {
     var d = new Date(dateStr);
@@ -233,7 +233,7 @@ function fmtDate(dateStr) {
     var mm = String(d.getMonth()+1).padStart(2,'0');
     return mm + '/' + dd;
   } catch(e) { return ''; }
-}
+};
 
 function loadData() {
   fetch(DATA_URL + '?t=' + Date.now())
@@ -253,7 +253,7 @@ function renderAll(d) {
   var moodScore = md.score !== undefined ? Math.round(md.score * 100) : null;
   var moodLabel = md.label || 'Neutral';
 
-  // ── Mood hero ──
+  // ── Mood Hero ──
   var mhEl = document.getElementById('mhScore');
   var mhLabel = document.getElementById('mhLabel');
   var mhFill = document.getElementById('mhFill');
@@ -262,12 +262,11 @@ function renderAll(d) {
     mhEl.style.color = sentColor(moodLabel);
     mhLabel.textContent = moodLabel.toUpperCase();
     mhLabel.style.color = sentColor(moodLabel);
-    mhFill.style.width = moodScore + '%';
+    mhFill.style.width = Math.abs(moodScore) + '%';
     mhFill.style.background = sentColor(moodLabel);
   }
-  document.getElementById('mhSub').textContent = 'Overall market sentiment · ' + (d.updated_at || '').slice(0,10) || 'Latest';
 
-  // ── Indices (dict: {sp500:{value,change_24h}, ...}) ──
+  // ── Indices ──
   var indices = st.indices || {};
   var idxHtml = '';
   var idxNames = {'sp500':'S&P 500','nasdaq':'NASDAQ','dow':'DOW','vix':'VIX'};
@@ -277,10 +276,10 @@ function renderAll(d) {
     if (!idx) return;
     var price = idx.value;
     var chg = idx.change_24h || 0;
-    idxHtml += '<div class=\"idx-mini\">' +
-      '<div class=\"im-name\">' + (idxNames[k]||k) + '</div>' +
-      '<div class=\"im-val\">' + (price != null ? (price >= 1000 ? '$' + Math.round(price).toLocaleString() : '$' + price.toFixed(2)) : '—') + '</div>' +
-      '<div class=\"im-chg\" style=\"color:' + chgColor(chg) + '\">' + fmtChg(chg) + '</div></div>';
+    idxHtml += '<div class=\"idx-box\">' +
+      '<div class=\"ib-name\">' + (idxNames[k]||k) + '</div>' +
+      '<div class=\"ib-val\">' + (price != null ? (price >= 1000 ? '$' + Math.round(price).toLocaleString() : '$' + price.toFixed(2)) : '—') + '</div>' +
+      '<div class=\"ib-chg\" style=\"color:' + chgColor(chg) + '\">' + fmtChg(chg) + '</div></div>';
   });
   document.getElementById('idxGrid').innerHTML = idxHtml || '<div style="color:var(--pc-text-3);font-size:11px">No data</div>';
 
@@ -288,11 +287,11 @@ function renderAll(d) {
   var active = st.most_active || [];
   var actHtml = '';
   active.slice(0,8).forEach(function(a) {
-    actHtml += '<div class=\"act-item\">' +
-      '<span class=\"ai-sym\">' + (a.symbol||'') + '</span>' +
-      '<div class=\"ai-detail\">' +
-      '<div class=\"ai-price\">' + fmtPrice(a.price_usd) + '</div>' +
-      '<div class=\"ai-chg\" style=\"color:' + chgColor(a.change_24h) + '\">' + fmtChg(a.change_24h) + '</div>' +
+    actHtml += '<div class=\"mini-item\">' +
+      '<span class=\"mi-sym\">' + (a.symbol||'') + '</span>' +
+      '<div class=\"mi-r\">' +
+      '<div class=\"mi-price\">' + fmtPrice(a.price_usd) + '</div>' +
+      '<div class=\"mi-chg\" style=\"color:' + chgColor(a.change_24h) + '\">' + fmtChg(a.change_24h) + '</div>' +
       '</div></div>';
   });
   if (!actHtml) actHtml = '<div style="color:var(--pc-text-3);font-size:11px">No data</div>';
@@ -305,174 +304,94 @@ function renderAll(d) {
   var nsLabel = newsSent.label || '';
   var nsHtml = '';
   if (nsScore !== null) {
-    nsHtml = '<span class=\"ss-val\" style=\"color:' + sentColor(nsLabel) + '\">' + nsScore + '</span>' +
-      '<span class=\"ss-label\" style=\"background:var(--pc-surface-2);color:' + sentColor(nsLabel) + '\">' + (nsLabel||'').toUpperCase() + '</span>' +
-      '<div class=\"ss-bar\"><div class=\"ss-fill\" style=\"width:' + nsScore + '%;background:' + sentColor(nsLabel) + '\"></div></div>';
+    nsHtml = '<span class=\"sb-val\" style=\"color:' + sentColor(nsLabel) + '\">' + nsScore + '</span>' +
+      '<span class=\"sb-lbl\" style=\"background:var(--pc-surface-2);color:' + sentColor(nsLabel) + '\">' + (nsLabel||'').toUpperCase() + '</span>' +
+      '<div class=\"sb-fill\"><div class=\"sb-fill-in\" style=\"width:' + nsScore + '%;background:' + sentColor(nsLabel) + '\"></div></div>';
   } else {
     nsHtml = '<span style="color:var(--pc-text-3);font-size:12px">' + newsItems.length + ' articles</span>';
   }
   document.getElementById('newsScore').innerHTML = nsHtml;
-
-  // News AI summary
-  var nsSummary = st.news_summary || {};
-  var summaryEl = document.getElementById('newsSummary');
-  if (nsSummary.summary) {
-    summaryEl.innerHTML = nsSummary.summary.slice(0,200);
-  } else {
-    summaryEl.style.display = 'none';
-  }
 
   var newsHtml = '';
   newsItems.forEach(function(n) {
     var s = (n.sentiment||'neutral').toLowerCase();
     var pubDate = fmtDate(n.published);
     newsHtml += '<li>' +
-      '<span class=\"ms-news-src\">' + (n.source||'') + '</span> ' +
-      '<span class=\"ms-news-title\">' + n.title + '</span>' +
-      (pubDate ? '<span class=\"ms-news-date\">· ' + pubDate + '</span>' : '') +
-      '<span class=\"ms-news-sent\" style=\"color:' + sentColor(s) + '\">' + s.toUpperCase() + '</span></li>';
+      '<span class=\"nl-src\">' + (n.source||'') + '</span> ' +
+      '<span class=\"nl-title\">' + n.title + '</span>' +
+      (pubDate ? '<span class=\"nl-date\"> · ' + pubDate + '</span>' : '') +
+      ' <span class=\"nl-sent\" style=\"color:' + sentColor(s) + '\">' + s.toUpperCase() + '</span></li>';
   });
   document.getElementById('newsList').innerHTML = newsHtml || '<li style="color:var(--pc-text-3)">No recent news</li>';
-
-  // ── Social / Forums (Reddit + 4chan) ──
-  var socialHtml = '';
-
-  // Reddit section
-  var reddit = st.reddit || [];
-  var redditSummary = st.reddit_summary || '';
-  if (reddit.length) {
-    socialHtml += '<div class=\"social-block\">' +
-      '<div class=\"sb-title\">🔴 Reddit</div>';
-    reddit.forEach(function(r) {
-      var sub = r.subreddit || '';
-      if (sub.indexOf('r/') === 0) sub = sub.slice(2);
-      var act = r.activity_score || 0;
-      var postCount = r.posts || 0;
-      socialHtml += '<div class=\"sb-item\">' +
-        '<span style=\"font-weight:600\">r/' + sub + '</span>' +
-        ' · <span style=\"color:var(--pc-text-2)\">activity ' + act + '</span>' +
-        ' · <span style=\"color:var(--pc-text-3);font-size:10px\">' + postCount + ' posts</span>';
-      // Individual post titles
-      var postsList = r.posts_list || [];
-      if (postsList.length) {
-        postsList.slice(0,5).forEach(function(p) {
-          var url = p.url || '#';
-          socialHtml += '<div style=\"margin-top:3px;padding:5px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:11px;border-left:2px solid var(--pc-brand)\">' +
-            '<a href=\"' + url + '\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--pc-heading);text-decoration:none\">' + (p.title||'').slice(0,80) + '</a></div>';
-        });
-      } else if (r.top_post) {
-        var url = r.top_post_url || '#';
-        var score = r.top_post_score;
-        socialHtml += '<div style=\"margin-top:4px;padding:6px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:11px;border-left:2px solid var(--pc-brand)\">' +
-          '<a href=\"' + url + '\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--pc-heading);text-decoration:none\">📌 ' + r.top_post.slice(0,80) + '</a>' +
-          (score != null ? ' <span style=\"color:var(--pc-text-3);font-size:10px\">▲' + score + '</span>' : '') +
-          '</div>';
-      }
-      // Mentions with non-zero counts
-      var mentions = r.mentions || {};
-      var mArr = Object.keys(mentions).map(function(k) { return {sym: k, cnt: mentions[k]}; });
-      mArr.sort(function(a,b) { return b.cnt - a.cnt; });
-      var topM = mArr.filter(function(m) { return m.cnt > 0; }).slice(0,8);
-      if (topM.length) {
-        socialHtml += '<div style=\"margin-top:4px;display:flex;flex-wrap:wrap;gap:3px\">';
-        topM.forEach(function(m) {
-          var pct = m.cnt / Math.max(1, postCount);
-          var bg = pct > 0.3 ? 'var(--pc-green-bg)' : pct > 0.1 ? 'var(--pc-yellow-bg)' : 'var(--pc-surface-2)';
-          socialHtml += '<span style=\"font-size:10px;font-weight:600;font-family:var(--pc-mono);padding:2px 6px;background:' + bg + ';border-radius:3px\">' + m.sym + ' ' + m.cnt + '</span>';
-        });
-        socialHtml += '</div>';
-      }
-      socialHtml += '</div>';
-    });
-    socialHtml += '</div>';
-  } else if (redditSummary) {
-    socialHtml += '<div class=\"social-block\">' +
-      '<div class=\"sb-title\">🔴 Reddit</div>' +
-      '<div class=\"sb-item\" style=\"color:var(--pc-text-2);font-size:11px\">' + (typeof redditSummary === 'string' ? redditSummary.slice(0,120) : redditSummary.summary ? redditSummary.summary.slice(0,120) : '') + '</div></div>';
-  }
-
-  // 4chan /biz/ section
-  var fourchain = (d.crypto || {}).fourchain || {};
-  if (fourchain.thread_count) {
-    var fMentions = fourchain.mentions || {};
-    socialHtml += '<div class=\"social-block\">' +
-      '<div class=\"sb-title\">👻 4chan /biz/</div>' +
-      '<div class=\"sb-item\">' +
-      '<span style=\"font-weight:600\">' + fourchain.thread_count + ' threads</span>' +
-      ' · <span style=\"color:var(--pc-text-2)\">' + fourchain.active_threads + ' active</span>';
-    if (fourchain.bullish_pct != null) {
-      var bp = fourchain.bullish_pct;
-      socialHtml += '<div style=\"margin:4px 0;display:flex;gap:8px;align-items:center\">' +
-        '<span style=\"font-size:11px;color:var(--pc-green)\">📈 Bullish ' + bp + '%</span>' +
-        '<span style=\"font-size:11px;color:var(--pc-red)\">📉 Bearish ' + (100-bp) + '%</span>' +
-        '<div style=\"flex:1;max-width:100px;height:4px;background:var(--pc-surface-3);border-radius:2px;overflow:hidden\">' +
-        '<div style=\"height:100%;width:' + bp + '%;background:var(--pc-green);border-radius:2px\"></div></div></div>';
-    }
-    if (fourchain.top_coin) {
-      socialHtml += '<div style=\"margin-bottom:4px;font-size:11px\">🔥 Most mentioned: <strong>' + fourchain.top_coin + '</strong></div>';
-    }
-    var fArr = Object.keys(fMentions).map(function(k) { return {sym: k, cnt: fMentions[k]}; });
-    fArr.sort(function(a,b) { return b.cnt - a.cnt; });
-    if (fArr.length) {
-      socialHtml += '<div class=\"four-mentions\">';
-      fArr.forEach(function(m) {
-        socialHtml += '<span class=\"fm-badge\">' + m.sym + ': ' + m.cnt + '</span>';
-      });
-      socialHtml += '</div>';
-    }
-    // Top posts
-    var topPosts = fourchain.top_posts || [];
-    if (topPosts.length) {
-      topPosts.slice(0,4).forEach(function(t) {
-        socialHtml += '<div style=\"margin-top:3px;padding:5px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:10px;color:var(--pc-text);border-left:2px solid var(--pc-yellow);line-height:1.4\">' + t.slice(0,100) + '</div>';
-      });
-    }
-    socialHtml += '</div></div>';
-  }
-
-  // Polymarket (finance topics)
-  var poly = st.polymarket || [];
-  if (poly.length) {
-    socialHtml += '<div class=\"social-block\">' +
-      '<div class=\"sb-title\">🎲 Polymarket (Finance)</div>';
-    poly.slice(0,5).forEach(function(p) {
-      var yesPrice = p.yes_price != null ? Math.round(p.yes_price * 100) : 0;
-      socialHtml += '<div class=\"poly-item\"><span>' + (p.title||'').slice(0,45) + '</span><span style=\"font-weight:600;font-family:var(--pc-mono)\">' + yesPrice + '%</span></div>';
-    });
-    socialHtml += '</div>';
-  }
-
-  document.getElementById('socialSection').innerHTML = socialHtml || '<div style="color:var(--pc-text-3);font-size:11px">Loading forum data...</div>';
 
   // ── Macro ──
   var macroHtml = '';
   var macroArr = st.macro || [];
-  if (macroArr.length) {
-    macroArr.slice(0,4).forEach(function(m) {
-      var val = m.value != null ? (m.symbol === '^TNX' ? m.value.toFixed(2) + '%' : m.symbol === 'DX-Y.NYB' ? m.value.toFixed(2) : m.value >= 100 ? '$' + Math.round(m.value).toLocaleString() : '$' + m.value.toFixed(2)) : '—';
-      macroHtml += '<div class=\"macro-item\"><span class=\"mi-name\">' + (m.name||'') + '</span><span class=\"mi-val\">' + val + '</span></div>';
-    });
-  } else {
-    macroHtml = '<div style="color:var(--pc-text-3);font-size:11px">No macro data</div>';
-  }
-  document.getElementById('macroGrid').innerHTML = macroHtml;
-
-  // ── Top Mentioned (Reddit stock mentions) ──
-  var mentions = st.top_mentioned || [];
-  var menHtml = '';
-  mentions.slice(0,8).forEach(function(m) {
-    menHtml += '<div class=\"act-item\">' +
-      '<span class=\"ai-sym\">' + (m.symbol||'') + '</span>' +
-      '<div class=\"ai-detail\">' +
-      '<div class=\"ai-price\">' + fmtPrice(m.price_usd) + '</div>' +
-      '<div class=\"ai-chg\" style=\"color:' + chgColor(m.change_24h) + '\">' + fmtChg(m.change_24h) + '</div>' +
-      '</div></div>';
+  var macroNames = {'^TNX':'10Y Treasury','DX-Y.NYB':'USD Index','GC=F':'Gold','CL=F':'Oil'};
+  macroArr.slice(0,4).forEach(function(m) {
+    var val = m.value != null ? (m.symbol === '^TNX' ? m.value.toFixed(2) + '%' : m.symbol === 'DX-Y.NYB' ? m.value.toFixed(2) : m.value >= 100 ? '$' + Math.round(m.value).toLocaleString() : '$' + m.value.toFixed(2)) : '—';
+    macroHtml += '<div class=\"macro-item\"><span class=\"ma-name\">' + (macroNames[m.symbol] || m.name || m.symbol || '') + '</span><span class=\"ma-val\">' + val + '</span></div>';
   });
-  if (!menHtml) menHtml = '<div style="color:var(--pc-text-3);font-size:11px">No mention data</div>';
-  document.getElementById('mentionGrid').innerHTML = menHtml;
+  document.getElementById('macroGrid').innerHTML = macroHtml || '<div style="color:var(--pc-text-3);font-size:11px">No data</div>';
 
-  // ── Politics / Geopolitical ──
-  var polHtml = '<ul class=\"ms-news\">';
+  // ── Polymarket ──
+  var poly = st.polymarket || [];
+  var polyHtml = '';
+  if (poly.length) {
+    poly.slice(0,6).forEach(function(p) {
+      var yesPrice = p.yes_price != null ? Math.round(p.yes_price * 100) : 0;
+      var cat = p.category || '';
+      polyHtml += '<div class=\"poly-item\"><span class=\"pi-title\">' + (cat ? '<span style=\"font-size:9px;color:var(--pc-text-3);margin-right:4px\">[' + cat + ']</span>' : '') + (p.title||'').slice(0,45) + '</span><span class=\"pi-odds\">' + yesPrice + '%</span></div>';
+    });
+  }
+  document.getElementById('polySection').innerHTML = polyHtml || '<div style="color:var(--pc-text-3);font-size:11px">No data</div>';
+
+  // ── 4chan /biz/ ──
+  var fourchain = (d.crypto || {}).fourchain || {};
+  var fcHtml = '';
+  if (fourchain.thread_count) {
+    // Header stats
+    fcHtml += '<div class=\"fchan-strip\">' +
+      '<span class=\"fc-stat\" style=\"font-weight:600\">' + fourchain.thread_count + ' threads</span>' +
+      '<span class=\"fc-stat\" style=\"color:var(--pc-text-2)\">' + fourchain.active_threads + ' active</span>';
+    if (fourchain.top_coin) {
+      fcHtml += '<span class=\"fc-stat\" style=\"font-size:10px;color:var(--pc-text-3)\">🔥 Most mentioned: <strong>' + fourchain.top_coin + '</strong></span>';
+    }
+    fcHtml += '</div>';
+
+    // Bullish / Bearish bar
+    if (fourchain.bullish_pct != null) {
+      var bp = fourchain.bullish_pct;
+      fcHtml += '<div class=\"fchan-sent\">' +
+        '<span style=\"font-size:11px;color:var(--pc-green)\">📈 ' + bp + '%</span>' +
+        '<div class=\"fs-bar\"><div class=\"fs-fill\" style=\"width:' + bp + '%;background:var(--pc-green)\"></div></div>' +
+        '<span style=\"font-size:11px;color:var(--pc-red)\">📉 ' + (100-bp) + '%</span></div>';
+    }
+
+    // Mention badges
+    var fMentions = fourchain.mentions || {};
+    var fArr = Object.keys(fMentions).map(function(k) { return {sym:k, cnt:fMentions[k]}; });
+    fArr.sort(function(a,b) { return b.cnt - a.cnt; });
+    if (fArr.length) {
+      fcHtml += '<div class=\"fchan-badges\">';
+      fArr.forEach(function(m) { fcHtml += '<span class=\"fb\">' + m.sym + ': ' + m.cnt + '</span>'; });
+      fcHtml += '</div>';
+    }
+
+    // Top posts
+    var topPosts = fourchain.top_posts || [];
+    if (topPosts.length) {
+      fcHtml += '<div class=\"fchan-posts\">';
+      topPosts.slice(0,4).forEach(function(t) {
+        fcHtml += '<div class=\"fchan-post\">' + t.slice(0,100) + '</div>';
+      });
+      fcHtml += '</div>';
+    }
+  }
+  document.getElementById('fourchanSection').innerHTML = fcHtml || '<div style="color:var(--pc-text-3);font-size:11px">No 4chan data</div>';
+
+  // ── Political / Geopolitical ──
+  var polHtml = '<ul class=\"news-list\">';
   var politicalNews = newsItems.filter(function(n) {
     var t = (n.title || '').toLowerCase();
     return t.includes('trump') || t.includes('china') || t.includes('iran') || t.includes('russia') || t.includes('ukraine') ||
@@ -485,10 +404,10 @@ function renderAll(d) {
     politicalNews.slice(0,8).forEach(function(n) {
       var s = (n.sentiment||'neutral').toLowerCase();
       var pubDate = fmtDate(n.published);
-      polHtml += '<li><span class=\"ms-news-src\">' + (n.source||'') + '</span> ' +
-        '<span class=\"ms-news-title\">' + n.title + '</span>' +
-        (pubDate ? '<span class=\"ms-news-date\">· ' + pubDate + '</span>' : '') +
-        '<span class=\"ms-news-sent\" style=\"color:' + sentColor(s) + '\">' + s.toUpperCase() + '</span></li>';
+      polHtml += '<li><span class=\"nl-src\">' + (n.source||'') + '</span> ' +
+        '<span class=\"nl-title\">' + n.title + '</span>' +
+        (pubDate ? '<span class=\"nl-date\"> · ' + pubDate + '</span>' : '') +
+        ' <span class=\"nl-sent\" style=\"color:' + sentColor(s) + '\">' + s.toUpperCase() + '</span></li>';
     });
   } else {
     polHtml += '<li style="color:var(--pc-text-3)">No political news in current feed</li>';
@@ -500,7 +419,6 @@ function renderAll(d) {
   onDataLoaded(d.updated_at);
 }
 
-// ── Load on page load ──
 document.addEventListener('DOMContentLoaded', function() { loadData(); });
 </script>
 </body>
