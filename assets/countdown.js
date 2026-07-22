@@ -2,12 +2,8 @@
  * Shared Countdown Script — PaperChase
  * Provides nextUpdateFor(tool) and startCountdown(el, label, tool)
  *
- * Update schedules:
- *   market-sentinel: every 10 min market hours, every 30 min otherwise
- *   crypto-pulse:    every 30 min, 24/7
- *   poly-watch:      every 4 hours, 24/7
- *   trading-arena:   daily 4:30 PM ET (20:30 UTC) Mon-Fri
- *   stock-pick:      daily 8:30 AM ET (12:30 UTC) Mon-Fri
+ * Update schedules (all align with 10-min cron-job.org trigger):
+ *   All tools: every 10 min, 24/7
  */
 
 function nextUpdateFor(tool) {
@@ -57,33 +53,8 @@ function nextUpdateFor(tool) {
   }
 
   switch (tool) {
-
-    case 'market-sentinel':
-      if (isMarketHours) {
-        // Every 10 min during market hours
-        return nextInterval(10);
-      }
-      // Every 30 min outside market hours
-      return nextInterval(30);
-
-    case 'crypto-pulse':
-      // Every 30 min, 24/7
-      return nextInterval(30);
-
-    case 'poly-watch':
-      // Every 4 hours, 24/7
-      return nextInterval(240);
-
-    case 'trading-arena':
-      // Daily at 4:30 PM ET (20:30 UTC) Mon-Fri
-      return nextWeekdayAt(20, 30);
-
-    case 'stock-pick':
-      // Daily at 8:30 AM ET (12:30 UTC) Mon-Fri
-      return nextWeekdayAt(12, 30);
-
     default:
-      return nextInterval(30);
+      return nextInterval(10);
   }
 }
 
