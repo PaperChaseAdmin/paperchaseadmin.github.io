@@ -9,6 +9,8 @@ on:
     paths-ignore:
       - "data/**"
       - "scrapers/**"
+      - "stock-pick/data/**"
+      - "predictions/data/**"
       - "update_data.py"
       - "requirements-ms.txt"
       - ".gitignore"

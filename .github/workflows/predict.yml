@@ -1,7 +1,8 @@
-# Predictions workflow — runs 1hr before US market open
 name: Predict + Stock Pick
 
 on:
+  push:
+    branches: ["main"]
   schedule:
     - cron: '30 12 * * 1-5'   # 12:30 UTC = 8:30 AM ET
   workflow_dispatch:
@@ -40,7 +41,7 @@ jobs:
           fi
 
       - name: Run Stock Pick screener (yfinance + AI analysis)
-        timeout-minutes: 3
+        timeout-minutes: 10
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
