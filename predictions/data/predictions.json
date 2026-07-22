@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-17T21:12:41Z",
-  "last_prediction_date": "2026-07-17",
-  "last_settle_date": "2026-07-17",
+  "updated_at": "2026-07-21T21:37:35Z",
+  "last_prediction_date": "2026-07-21",
+  "last_settle_date": "2026-07-21",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 17,
-      "correct": 16,
-      "accuracy_pct": 94.1,
+      "total": 19,
+      "correct": 18,
+      "accuracy_pct": 94.7,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -535,6 +535,68 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-07-20",
+          "market": "S&P 500",
+          "prediction": "up",
+          "confidence": 68,
+          "signal": "Positive momentum from chipmakers and tech sector",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-20",
+          "market": "NASDAQ",
+          "prediction": "up",
+          "confidence": 72,
+          "signal": "Strong performance in tech and chip stocks driving gains",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-20",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals from industrial and financial sectors",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-21",
+          "market": "S&P 500",
+          "prediction": "up",
+          "confidence": 70,
+          "signal": "Positive momentum and bullish market mood",
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.89
+        },
+        {
+          "date": "2026-07-21",
+          "market": "NASDAQ",
+          "prediction": "up",
+          "confidence": 75,
+          "signal": "Tech sector strength and overall market optimism",
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.29
+        },
+        {
+          "date": "2026-07-21",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals from macro indicators and market mood",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -852,6 +914,26 @@
           "prediction": "up",
           "confidence": 58,
           "signal": "Will Spain win the 2026 FIFA World Cup? | Yes 58% / No 42% | Vol $122,359,859",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-20",
+          "market": "Will China invades Taiwan before GTA VI?",
+          "prediction": "up",
+          "confidence": 51,
+          "signal": "Will China invades Taiwan before GTA VI? | Yes 50% / No 50% | Vol $1,910,019",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-21",
+          "market": "Will China invades Taiwan before GTA VI?",
+          "prediction": "up",
+          "confidence": 51,
+          "signal": "Will China invades Taiwan before GTA VI? | Yes 50% / No 50% | Vol $1,910,568",
           "actual": null,
           "correct": null,
           "settled": false
