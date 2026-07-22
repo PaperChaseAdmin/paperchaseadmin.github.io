@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Crypto Pulse — Crypto Market Intelligence</title>
-<meta name="description" content="Crypto market pulse — spot prices, news sentiment, CoinGecko trends, macro indicators, and AI-powered predictions."/>
-<meta name="keywords" content="crypto, bitcoin, ethereum, sentiment, news, coingecko, macro"/>
+<meta name="description" content="Crypto market intelligence — Fear & Greed, spot prices, news sentiment, 4chan chatter, CoinGecko trends, and community buzz."/>
+<meta name="keywords" content="crypto, bitcoin, ethereum, sentiment, news, 4chan, coingecko, fear and greed"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://paperchase.online/crypto-pulse/"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
@@ -14,297 +17,313 @@
 <link rel="stylesheet" href="/assets/design-system.css">
 <script src="/assets/countdown.js"></script>
 <style>
-/* ── Gauge (same as MS) ────────────────── */
-.gauge-wrap{display:flex;flex-direction:column;align-items:center}
-.gauge-svg{width:180px;height:110px}
-.gauge-value{font-size:36px;font-weight:700;margin-top:4px;font-family:var(--pc-mono);color:var(--pc-heading)}
-.gauge-label{font-size:11px;color:var(--pc-text-2);margin-top:2px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
-.gauge-delta{font-size:11px;margin-top:4px;font-family:var(--pc-mono)}
+.cg { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 
-/* ── Mood score ────────────────────────── */
-.mood-score{font-size:32px;font-weight:700;text-align:center;margin:8px 0 4px;font-family:var(--pc-mono);color:var(--pc-heading)}
-.mood-label{text-align:center;font-size:11px;color:var(--pc-text-2);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+/* Hero */
+.hero { grid-column: 1 / -1; background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 28px; }
+.hero .h-t { display: flex; align-items: center; gap: 36px; }
+.hero .h-l { text-align: center; min-width: 160px; flex-shrink: 0; }
+.hero .h-r { flex: 1; min-width: 0; }
+.hero .h-x { font-size: 11px; color: var(--pc-text-2); line-height: 1.5; margin-bottom: 10px; }
+.hero .h-x strong { color: var(--pc-heading); }
+.hero .h-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 10px; }
+.hero .h-row .hl { width: 55px; color: var(--pc-text-2); flex-shrink: 0; font-weight: 500; }
+.hero .h-row .ht { flex: 1; height: 6px; background: var(--pc-surface-3); border-radius: 3px; overflow: hidden; }
+.hero .h-row .hf { height: 100%; border-radius: 3px; }
+.hero .h-row .hv { width: 50px; text-align: right; font-weight: 600; font-family: var(--pc-mono); }
 
-/* ── Sentiment bars ────────────────────── */
-.sentiment-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-.sentiment-label{font-size:11px;color:var(--pc-text-2);min-width:70px}
-.bar-track{flex:1;height:4px;background:var(--pc-surface-3);border-radius:2px}
-.bar-fill{height:4px;border-radius:2px;transition:width .4s}
+/* Gauge */
+.gw { display: flex; flex-direction: column; align-items: center; }
+.gs { width: 160px; height: 100px; }
+.gv { font-size: 34px; font-weight: 700; margin-top: 2px; font-family: var(--pc-mono); color: var(--pc-heading); }
+.gl { font-size: 11px; color: var(--pc-text-2); margin-top: 1px; text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+.gd { font-size: 11px; margin-top: 2px; font-family: var(--pc-mono); }
 
-/* ── Trending / 4chan ──────────────────── */
-.trending-row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--pc-border)}
-.trending-row:last-child{border-bottom:none}
-.trending-sym{font-weight:600;font-size:12px;font-family:var(--pc-mono);min-width:55px;color:var(--pc-heading)}
-.trending-name{font-size:11px;color:var(--pc-text-2);flex:1}
-@media(max-width:900px){
-  .gauge-svg{width:140px;height:90px}
+/* Section header */
+.sh { grid-column: 1 / -1; margin-bottom: -8px; }
+.sh .st { font-size: 13px; font-weight: 700; color: var(--pc-heading); letter-spacing: -.01em; display: flex; align-items: center; gap: 8px; }
+.sh .sd { font-size: 11px; color: var(--pc-text-2); margin-top: 1px; }
+
+/* Cards */
+.card { background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 16px; }
+.card.full { grid-column: 1 / -1; }
+.card .ct { font-size: 11px; font-weight: 700; color: var(--pc-heading); margin-bottom: 2px; display: flex; align-items: center; gap: 6px; }
+.card .ct .ci { font-size: 15px; }
+.card .cd { font-size: 10px; color: var(--pc-text-3); margin-bottom: 10px; }
+
+/* Price rows */
+.pr { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--pc-border); font-size: 12px; }
+.pr:last-child { border-bottom: none; }
+.pr .ps { font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); min-width: 50px; }
+.pr .pv { font-weight: 600; font-family: var(--pc-mono); color: var(--pc-heading); }
+.pr .pc { font-weight: 600; font-family: var(--pc-mono); }
+
+/* Mini grid */
+.m2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.mi { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; background: var(--pc-surface-2); border-radius: var(--pc-radius); }
+.mi .ms { font-size: 12px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); }
+.mi .mr { text-align: right; }
+.mi .mp { font-size: 11px; font-weight: 600; font-family: var(--pc-mono); color: var(--pc-heading); }
+.mi .mc { font-size: 10px; font-family: var(--pc-mono); }
+
+/* News list */
+.nl { list-style: none; }
+.nl li { padding: 7px 0; border-bottom: 1px solid var(--pc-border); font-size: 11px; line-height: 1.4; display: flex; gap: 4px; flex-wrap: wrap; }
+.nl li:last-child { border-bottom: none; }
+.nl .ns { font-weight: 600; color: var(--pc-text-2); flex-shrink: 0; }
+.nl .nt { color: var(--pc-heading); flex: 1; min-width: 0; }
+.nl .nd { font-size: 10px; color: var(--pc-text-3); white-space: nowrap; flex-shrink: 0; }
+.nl .ng { font-size: 9px; font-weight: 600; white-space: nowrap; flex-shrink: 0; padding: 1px 5px; border-radius: 3px; }
+
+/* Trending */
+.tr { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid var(--pc-border); }
+.tr:last-child { border-bottom: none; }
+.tr .ts { font-weight: 600; font-size: 12px; font-family: var(--pc-mono); min-width: 55px; color: var(--pc-heading); }
+.tr .tn { font-size: 11px; color: var(--pc-text-2); flex: 1; }
+
+/* Badges */
+.b-bull { background: var(--pc-green-bg); color: var(--pc-green); }
+.b-bear { background: var(--pc-red-bg); color: var(--pc-red); }
+.b-neut { background: var(--pc-yellow-bg); color: var(--pc-yellow); }
+
+/* 4chan badges */
+.fb { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+.fb .fb-m { font-size: 10px; font-weight: 600; font-family: var(--pc-mono); padding: 2px 6px; background: var(--pc-surface-3); border-radius: 3px; }
+
+/* Loading */
+.loading { text-align: center; padding: 60px 20px; color: var(--pc-text-2); font-size: 13px; }
+.spinner { width: 24px; height: 24px; border: 2px solid var(--pc-border); border-top-color: var(--pc-brand); border-radius: 50%; animation: spin .6s linear infinite; margin: 0 auto 12px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 768px) {
+  .cg { grid-template-columns: 1fr; gap: 16px; }
+  .hero .h-t { flex-direction: column; align-items: center; gap: 16px; }
+  .hero { padding: 20px; }
+  .gs { width: 130px; height: 85px; }
+  .m2 { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
 
 <nav class="topbar"><div class="topbar-inner">
-  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <a class="logo" href="/">PaperChase<span>.</span></a>
   <div class="topbar-nav">
-    <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
-    <a class="nav-link active" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
-    <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
+    <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
+    <a class="nav-link" href="/crypto-pulse/" style="color:var(--pc-heading);font-weight:600">Crypto Pulse</a>
+    <a class="nav-link" href="/poly-watch/">Poly Watch</a>
     <a class="nav-link" href="/stock-pick/">Stock Pick</a>
-    <a class="nav-link" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
+    <a class="nav-link" href="/trading-arena/">Trading Arena</a>
   </div>
   <div class="topbar-spacer"></div>
   <div class="topbar-auth">
-    <a class="btn-login" href="/login/">Log In</a>
-    <a class="btn-register" href="/register/">Register</a>
+    <a class="nav-link" href="/login/">Log In</a>
+    <a href="/register/" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none">Register</a>
   </div>
 </div></nav>
 
-<div class="wrap">
 <div class="container">
-
-  <div class="page-header">
-    <div class="page-title-wrap">
-      <div class="page-title">Crypto Pulse</div>
-      <div class="page-sub"><span class="live"></span> Crypto prices · Sentiment · News · Trends · Macro</div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+    <div>
+      <h1 style="font-size:22px;font-weight:700;color:var(--pc-heading);letter-spacing:-0.03em;margin:0">Crypto Pulse</h1>
+      <p style="font-size:12px;color:var(--pc-text-2);margin-top:1px">Crypto market intelligence — prices, sentiment, trends, community buzz</p>
     </div>
     <div id="countdown-wrap" class="countdown-wrap"></div>
   </div>
 
-  <div class="loading" id="main-loading"><div class="spinner"></div>Fetching crypto data…</div>
+  <div class="loading" id="main-loading"><div class="spinner"></div>Loading crypto data…</div>
+
   <div id="main-content" style="display:none">
+    <div class="cg">
 
-    <div class="grid-2">
-      <div class="card">
-        <div class="card-title">Fear & Greed Index</div>
-        <div class="gauge-wrap">
-          <svg class="gauge-svg" viewBox="0 0 200 120" id="gauge-svg">
-            <path d="M20,100 A80,80,0,0,1,60.6,43.4" stroke="#ef4444" stroke-width="16" fill="none" stroke-linecap="round"/>
-            <path d="M60.6,43.4 A80,80,0,0,1,100,20" stroke="#f97316" stroke-width="16" fill="none" stroke-linecap="round"/>
-            <path d="M100,20 A80,80,0,0,1,139.4,43.4" stroke="#eab308" stroke-width="16" fill="none" stroke-linecap="round"/>
-            <path d="M139.4,43.4 A80,80,0,0,1,179.4,100" stroke="#15be53" stroke-width="16" fill="none" stroke-linecap="round"/>
-            <line id="gauge-needle" x1="100" y1="100" x2="100" y2="30" stroke="#533afd" stroke-width="2.5" stroke-linecap="round" transform="rotate(0,100,100)"/>
-            <circle cx="100" cy="100" r="5" fill="#533afd"/>
-          </svg>
-          <div class="gauge-value" id="fg-value">—</div>
-          <div class="gauge-label" id="fg-label">Loading</div>
-          <div class="gauge-delta" id="fg-delta"></div>
+      <!-- ═══ MARKET MOOD ═══ -->
+      <div class="hero">
+        <div class="h-t">
+          <div class="h-l">
+            <div class="gw">
+              <svg class="gs" viewBox="0 0 200 120">
+                <path d="M20,100 A80,80,0,0,1,60.6,43.4" stroke="#ef4444" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <path d="M60.6,43.4 A80,80,0,0,1,100,20" stroke="#f97316" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <path d="M100,20 A80,80,0,0,1,139.4,43.4" stroke="#eab308" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <path d="M139.4,43.4 A80,80,0,0,1,179.4,100" stroke="#15be53" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <line id="gauge-needle" x1="100" y1="100" x2="100" y2="30" stroke="#533afd" stroke-width="2.5" stroke-linecap="round" transform="rotate(0,100,100)"/>
+                <circle cx="100" cy="100" r="5" fill="#533afd"/>
+              </svg>
+              <div class="gv" id="fgVal">—</div>
+              <div class="gl" id="fgLbl">Loading</div>
+              <div class="gd" id="fgDlt"></div>
+            </div>
+          </div>
+          <div class="h-r">
+            <div class="h-x">
+              The <strong>Crypto Mood</strong> combines the Fear &amp; Greed Index with AI-analysed news sentiment to show crypto market temperature.
+            </div>
+            <div id="sentBreakdown"></div>
+          </div>
         </div>
-        <div class="source-note"><strong>Source:</strong> alternative.me</div>
       </div>
-      <div class="card">
-        <div class="card-title">Crypto News Sentiment</div>
-        <div style="margin-bottom:14px">
-          <div id="crypto-sentiment-score" class="mood-score">—</div>
-          <div id="crypto-sentiment-label" class="mood-label"></div>
-        </div>
-        <div id="crypto-sentiment-bars"></div>
-        <div class="source-note"><strong>Source:</strong> CoinDesk, Cointelegraph, Decrypt, CryptoSlate</div>
-      </div>
-    </div>
 
-    <div class="grid-2">
-      <div class="card">
-        <div class="card-title">Crypto Prices (Spot)</div>
-        <div id="crypto-prices"></div>
-        <div class="source-note"><strong>Source:</strong> CoinGecko</div>
+      <!-- ═══ SECTION 1: SPOT PRICES ═══ -->
+      <div class="sh">
+        <div class="st">💰 Spot Prices</div>
+        <div class="sd">Real-time crypto prices — spot only, no leverage or derivatives</div>
       </div>
-      <div class="card">
-        <div class="card-title">🎲 Poly Watch — Crypto Topics</div>
-        <div id="crypto-polymarket"></div>
-        <div class="source-note"><strong>Source:</strong> Poly Watch</div>
-      </div>
-    </div>
 
-    <div class="grid-2">
       <div class="card">
-        <div class="card-title">Latest Crypto News</div>
-        <div id="crypto-news"></div>
-        <div class="source-note"><strong>Source:</strong> CoinDesk, Cointelegraph, Decrypt, CryptoSlate</div>
+        <div class="ct"><span class="ci">₿</span> Top Crypto Prices</div>
+        <div class="cd">Spot prices with 24h change — BTC, ETH, BNB, XRP, SOL and more</div>
+        <div id="priceList"></div>
       </div>
+
       <div class="card">
-        <div class="card-title">🔥 CoinGecko Trending Searches</div>
-        <div id="crypto-cg-trending"></div>
-        <div class="source-note"><strong>Source:</strong> CoinGecko</div>
+        <div class="ct"><span class="ci">🔥</span> CoinGecko Trending</div>
+        <div class="cd">Most-searched coins on CoinGecko — early signal for retail interest</div>
+        <div id="trendingList"></div>
       </div>
-    </div>
 
-    <div class="grid-2">
-        <div class="card-title">📈 Macro Indicators</div>
-        <div id="crypto-macro"></div>
-        <div class="source-note"><strong>Source:</strong> yfinance</div>
+      <!-- ═══ SECTION 2: NEWS ═══ -->
+      <div class="sh">
+        <div class="st">📰 Crypto News</div>
+        <div class="sd">Latest crypto media coverage — AI-analysed bullish/bearish per article</div>
       </div>
+
+      <div class="card full">
+        <div class="sb" id="newsSentScore"></div>
+        <ul class="nl" id="newsList"></ul>
+      </div>
+
+      <!-- ═══ SECTION 3: COMMUNITY BUZZ ═══ -->
+      <div class="sh">
+        <div class="st">💬 Community Buzz</div>
+        <div class="sd">Retail chatter on 4chan /biz/ and Reddit — early sentiment signals for crypto</div>
+      </div>
+
       <div class="card">
-        <div class="card-title">🔥 Most Active Stocks</div>
-        <div id="crypto-active"></div>
-        <div class="source-note"><strong>Source:</strong> yfinance by volume</div>
+        <div class="ct"><span class="ci">👻</span> 4chan /biz/ Mentions</div>
+        <div class="cd">Crypto mention counts from the most influential anonymous trading community</div>
+        <div id="fourchanSec"></div>
       </div>
-    </div>
 
-    <div class="disclaimer"><strong>⚠️ Spot Assets Only.</strong> Not financial advice.</div>
-  </div>
+      <div class="card">
+        <div class="ct"><span class="ci">🔴</span> Reddit Crypto</div>
+        <div class="cd">Subreddit activity and top mentioned coins from r/CryptoCurrency and more</div>
+        <div id="redditSec"></div>
+      </div>
 
-</div>
-</div>
+    </div><!-- /cg -->
+  </div><!-- /main-content -->
+</div><!-- /container -->
 
 <script>
-const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json';
+var DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/data/market_data.json';
+var _cdTimer = null;
+function onDataLoaded(t) { clearInterval(_cdTimer); var el=document.getElementById('countdown-wrap'); if(!el||typeof window.startCountdown!=='function')return; _cdTimer=window.startCountdown(el,'Next Scan','crypto-pulse',loadData); }
+var $=function(id){return document.getElementById(id);};
+var FMT = {
+  p: function(v){return v==null?'—':v>=1000?'$'+v.toLocaleString('en',{maximumFractionDigits:0}):v>=1?'$'+v.toFixed(2):v>=0.01?'$'+v.toFixed(4):'$'+v.toFixed(6);},
+  c: function(v){return v==null?'':(v>=0?'+':'')+v.toFixed(2)+'%';},
+  cc: function(v){return v==null?'':v>=0?'var(--pc-green)':'var(--pc-red)';},
+  sc: function(s){if(!s)return'var(--pc-text-3)';var l=s.toLowerCase();if(l==='bullish'||l==='greed'||l==='positive')return'var(--pc-green)';if(l==='bearish'||l==='fear'||l==='extreme fear'||l==='negative')return'var(--pc-red)';return'var(--pc-text-3)';},
+  sg: function(s){if(!s)return'b-neut';var l=s.toLowerCase();if(l==='bullish'||l==='greed'||l==='positive')return'b-bull';if(l==='bearish'||l==='fear'||l==='extreme fear'||l==='negative')return'b-bear';return'b-neut';},
+  sl: function(s){if(!s)return'Neutral';var l=s.toLowerCase();if(l==='bullish'||l==='greed'||l==='positive')return'Bullish';if(l==='bearish'||l==='fear'||l==='extreme fear'||l==='negative')return'Bearish';return'Neutral';},
+  d: function(s){if(!s)return'';try{var d=new Date(s);if(isNaN(d.getTime()))return s.replace(/,.*$/,'');var h=Math.round((new Date()-d)/3600000);if(h<1)return'just now';if(h<24)return h+'h ago';return(d.getMonth()+1)+'/'+String(d.getDate()).padStart(2,'0');}catch(e){return'';}},
+  gc: function(v){return v>=75?'#15be53':v>=55?'#eab308':v>=45?'#f97316':v>=25?'#ef4444':'#dc2626';}
+};
 
-function fmtPrice(v) {
-  if (v == null) return '—';
-  if (v >= 1000) return '$' + v.toLocaleString('en', {maximumFractionDigits:0});
-  if (v >= 1) return '$' + v.toFixed(2);
-  if (v >= 0.01) return '$' + v.toFixed(4);
-  return '$' + v.toFixed(6);
-}
+function loadData(){fetch(DATA_URL+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){renderAll(d);}).catch(function(e){$('main-loading').innerHTML='⚠️ Failed: '+e.message;});}
 
-function fmtChg(v) { return v == null ? '' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%'; }
-function chgClass(v) { return v == null ? '' : v >= 0 ? 'text-green' : 'text-red'; }
+function renderAll(d){
+  $('main-loading').style.display='none';
+  $('main-content').style.display='block';
+  var cr=d.crypto||{},st=d.stocks||{};
 
-// ── Countdown ────────────────────────────
-let _cdTimer = null;
-function onDataLoaded(updatedAt) {
-  clearInterval(_cdTimer);
-  const el = document.getElementById('countdown-wrap');
-  if (!el || typeof window.startCountdown !== 'function') return;
-  _cdTimer = window.startCountdown(el, 'Next Scan', 'crypto-pulse', loadData);
-}
-
-async function loadData() {
-  try {
-    const resp = await fetch(DATA_URL + '?t=' + Date.now());
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const raw = await resp.json();
-    const c = raw.crypto || {};
-    const s = raw.stocks || {};
-    const data = {
-      fear_greed: c.fear_greed,
-      crypto_sentiment: c.news_sentiment || {score: 0, label: ''},
-      crypto_prices: {},
-      poly_markets: c.polymarket || [],
-      news: c.news || [],
-      reddit_activity: c.reddit || [],
-      cg_trending: c.cg_trending || [],
-      macro: s.macro || [],
-      most_active: s.most_active || [],
-    };
-    if (Array.isArray(c.prices)) {
-      c.prices.forEach(p => { data.crypto_prices[p.symbol] = {price: p.price_usd, change_pct: p.change_24h}; });
+  // ── Fear & Greed ──
+  (function(){
+    var fg=cr.fear_greed||{},val=fg.value;
+    if(val!=null){
+      var angle=-90+(val/100)*180;
+      $('fgVal').textContent=val; $('fgVal').style.color=FMT.gc(val);
+      $('fgLbl').textContent=fg.label||(val>=75?'Extreme Greed':val>=55?'Greed':val>=45?'Neutral':val>=25?'Fear':'Extreme Fear');
+      $('fgLbl').style.color=FMT.gc(val);
+      document.getElementById('gauge-needle').setAttribute('transform','rotate('+angle+',100,100)');
+      if(fg.change!=null){var ch=fg.change;$('fgDlt').innerHTML='<span style="color:'+FMT.cc(ch)+'">'+(ch>=0?'▲':'▼')+' '+Math.abs(ch)+'</span>';}
     }
-    onDataLoaded(raw.updated_at || raw.timestamp || new Date().toISOString());
-    render(data);
-  } catch (e) {
-    document.getElementById('main-loading').innerHTML = '<div style="color:var(--pc-text-3);padding:60px">⚠️ Unable to load crypto data. <a href="javascript:location.reload()" style="color:var(--pc-purple)">Retry</a></div>';
-  }
-}
+  })();
 
-function render(d) {
-  document.getElementById('main-loading').style.display = 'none';
-  document.getElementById('main-content').style.display = 'block';
+  // ── News Sentiment breakdown ──
+  (function(){
+    var ns=cr.news_sentiment||{},four=cr.fourchain||{},score=ns.score;
+    var cmp=[];
+    if(score!=null)cmp.push({l:'News',v:score,m:1.0});
+    if(four.thread_count)cmp.push({l:'4chan',v:(four.bullish_pct||50)/50-1,m:1.0});
+    var bh='<div style="font-size:10px;font-weight:600;color:var(--pc-text-3);margin-bottom:5px">SENTIMENT BREAKDOWN</div>';
+    cmp.forEach(function(c){var pct=Math.min(100,Math.max(0,(c.v+c.m)/(c.m*2)*100)),cl=c.v>=0?'var(--pc-green)':'var(--pc-red)';bh+='<div class="h-row"><span class="hl">'+c.l+'</span><div class="ht"><div class="hf" style="width:'+pct+'%;background:'+cl+'"></div></div><span class="hv" style="color:'+cl+'">'+(c.v>0?'+':'')+c.v.toFixed(2)+'</span></div>';});
+    $('sentBreakdown').innerHTML=bh||'<div style="color:var(--pc-text-3);font-size:10px">No sentiment data</div>';
+  })();
 
-  // Fear & Greed
-  const fg = d.fear_greed || {};
-  const fgVal = fg.value;
-  if (fgVal != null) {
-    const angle = -90 + (fgVal / 100) * 180;
-    document.getElementById('gauge-needle').setAttribute('transform', 'rotate(' + angle + ',100,100)');
-    document.getElementById('fg-value').textContent = fgVal;
-    document.getElementById('fg-label').textContent = fg.label || (fgVal >= 75 ? 'Extreme Greed' : fgVal >= 55 ? 'Greed' : fgVal >= 45 ? 'Neutral' : fgVal >= 25 ? 'Fear' : 'Extreme Fear');
-    if (fg.change != null) {
-      const chg = fg.change;
-      document.getElementById('fg-delta').innerHTML = '<span class="' + chgClass(chg) + '">' + (chg >= 0 ? '▲' : '▼') + ' ' + Math.abs(chg) + '</span>';
+  // ── Prices ──
+  (function(){
+    var prices=cr.prices||[],h='';
+    prices.forEach(function(p){
+      h+='<div class="pr"><span class="ps">'+(p.symbol||'')+'</span><span class="pv">'+FMT.p(p.price_usd)+'</span><span class="pc" style="color:'+FMT.cc(p.change_24h)+'">'+FMT.c(p.change_24h)+'</span></div>';
+    });
+    $('priceList').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No price data</div>';
+  })();
+
+  // ── CoinGecko Trending ──
+  (function(){
+    var tg=cr.cg_trending||[],h='';
+    tg.slice(0,8).forEach(function(t){
+      h+='<div class="tr"><span class="ts">'+(t.symbol||'').toUpperCase()+'</span><span class="tn">'+(t.name||'')+'</span></div>';
+    });
+    $('trendingList').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No trending data</div>';
+  })();
+
+  // ── News ──
+  (function(){
+    var items=cr.news||[],sent=cr.news_sentiment||{},score=sent.score;
+    var sh='';
+    if(score!=null)sh='<span style="font-size:20px;font-weight:700;font-family:var(--pc-mono);color:'+FMT.sc(sent.label)+'">'+Math.round((score+1)*50)+'</span><span style="font-size:11px;font-weight:600;text-transform:uppercase;padding:2px 8px;border-radius:3px;background:var(--pc-surface-2);color:'+FMT.sc(sent.label)+'">'+(sent.label||'').toUpperCase()+'</span><span style="font-size:10px;color:var(--pc-text-3)"> '+items.length+' articles</span>';
+    $('newsSentScore').innerHTML=sh;
+    var lh='';
+    items.forEach(function(n){var s=(n.sentiment||'neutral').toLowerCase();lh+='<li><span class="ns">'+(n.source||'')+'</span><span class="nt">'+n.title+'</span>'+(FMT.d(n.published)?'<span class="nd">'+FMT.d(n.published)+'</span>':'')+'<span class="ng '+FMT.sg(s)+'">'+FMT.sl(n.sentiment)+'</span></li>';});
+    $('newsList').innerHTML=lh||'<li style="color:var(--pc-text-3)">No news</li>';
+  })();
+
+  // ── 4chan ──
+  (function(){
+    var f=cr.fourchain||{},h='';
+    if(f.thread_count){
+      h+='<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px"><span style="font-weight:600">'+f.thread_count+' threads</span><span style="color:var(--pc-text-2)">'+f.active_threads+' active</span></div>';
+      if(f.bullish_pct!=null){var bp=f.bullish_pct;h+='<div style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><span style="font-size:11px;color:var(--pc-green)">📈 '+bp+'%</span><div style="flex:1;max-width:100px;height:4px;background:var(--pc-surface-3);border-radius:2px;overflow:hidden"><div style="height:100%;width:'+bp+'%;background:var(--pc-green);border-radius:2px"></div></div><span style="font-size:11px;color:var(--pc-red)">📉 '+(100-bp)+'%</span></div>';}
+      var fm=f.mentions||{},fa=Object.keys(fm).map(function(k){return{s:k,c:fm[k]};}).sort(function(a,b){return b.c-a.c;});
+      if(fa.length){h+='<div class="fb">';fa.forEach(function(m){h+='<span class="fb-m">'+m.s+': '+m.c+'</span>';});h+='</div>';}
     }
-  }
+    $('fourchanSec').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No 4chan data</div>';
+  })();
 
-  // Crypto sentiment
-  const cs = d.crypto_sentiment || {};
-  if (cs.score != null) {
-    document.getElementById('crypto-sentiment-score').textContent = cs.score.toFixed(1);
-    document.getElementById('crypto-sentiment-label').textContent = cs.label || '';
-    document.getElementById('crypto-sentiment-score').style.color = cs.score > 0 ? 'var(--pc-green)' : cs.score < 0 ? 'var(--pc-red)' : 'var(--pc-text-3)';
-  }
-  if (cs.breakdown) {
-    let bars = '';
-    Object.entries(cs.breakdown).slice(0,4).forEach(([k,v]) => {
-      const pct = Math.min(Math.abs(v||0)*100, 100);
-      const color = v >= 0 ? 'var(--pc-green)' : 'var(--pc-red)';
-      bars += '<div class="sentiment-row"><span class="sentiment-label">' + k + '</span><div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + color + '"></div></div></div>';
-    });
-    document.getElementById('crypto-sentiment-bars').innerHTML = bars;
-  }
+  // ── Reddit ──
+  (function(){
+    var rd=cr.reddit||[],tm=cr.top_mentioned||[],h='';
+    if(rd.length){
+      rd.forEach(function(r){
+        h+='<div style="font-size:11px;margin-bottom:4px"><span style="font-weight:600">'+(r.subreddit||'')+'</span> · <span style="color:var(--pc-text-2)">activity '+(r.activity_score||0)+'</span> · <span style="color:var(--pc-text-3);font-size:10px">'+(r.posts||0)+' posts</span></div>';
+        if(r.top_post)h+='<div style="padding:5px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:10px;color:var(--pc-text);margin-bottom:6px">📌 '+(r.top_post||'').slice(0,70)+'</div>';
+      });
+    }
+    if(tm.length){
+      h+='<div style="font-size:11px;font-weight:600;color:var(--pc-text-3);margin-top:8px;margin-bottom:4px">🔥 Top mentioned</div>';
+      h+='<div class="m2">';
+      tm.slice(0,6).forEach(function(m){h+='<div class="mi"><span class="ms">'+(m.symbol||'')+'</span><div class="mr"><div class="mp">'+FMT.p(m.price_usd)+'</div><div class="mc" style="color:'+FMT.cc(m.change_24h)+'">'+FMT.c(m.change_24h)+'</div></div></div>';});
+      h+='</div>';
+    }
+    $('redditSec').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No Reddit data</div>';
+  })();
 
-  // Crypto prices
-  if (d.crypto_prices) {
-    let html = '';
-    Object.entries(d.crypto_prices).slice(0,12).forEach(([sym, c]) => {
-      if (!c || c.price == null) return;
-      html += '<div class="price-row"><span class="price-sym">' + sym + '</span><span class="price-val">' + fmtPrice(c.price) + '</span><span class="' + chgClass(c.change_pct) + '">' + fmtChg(c.change_pct) + '</span></div>';
-    });
-    document.getElementById('crypto-prices').innerHTML = html;
-  }
-
-  // Poly Watch crypto
-  if (d.poly_markets && d.poly_markets.length) {
-    let html = '';
-    d.poly_markets.slice(0,5).forEach(m => {
-      const pct = (m.yes_price||0)*100;
-      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;max-width:180px;white-space:normal;line-height:1.3;font-family:var(--pc-font)">' + (m.title||m.question||'?') + '</span><span class="price-val" style="font-size:12px;text-align:right">' + pct.toFixed(1) + '%</span></div>';
-    });
-    document.getElementById('crypto-polymarket').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px;padding:8px 0">No crypto markets</div>';
-  }
-
-  // Crypto news
-  if (d.news && d.news.length) {
-    let html = '';
-    d.news.slice(0,6).forEach(n => {
-      html += '<div class="news-item"><span class="news-source">' + (n.source||'') + '</span><a class="news-title" href="' + (n.url||'#') + '" target="_blank">' + n.title + '</a></div>';
-    });
-    document.getElementById('crypto-news').innerHTML = html;
-  }
-
-  // CoinGecko trending
-  if (d.cg_trending && d.cg_trending.length) {
-    let html = '';
-    d.cg_trending.slice(0,8).forEach(t => {
-      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||'') + '</span></div>';
-    });
-    document.getElementById('crypto-cg-trending').innerHTML = html;
-  } else if (d.trending_searches) {
-    let html = '';
-    d.trending_searches.slice(0,8).forEach(t => {
-      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||t.symbol||'') + '</span></div>';
-    });
-    document.getElementById('crypto-cg-trending').innerHTML = html;
-  }
-
-  // ── Macro ──
-  if (d.macro && d.macro.length) {
-    let h = '';
-    d.macro.forEach(m => {
-      const chg = m.change_24h;
-      h += '<div class="price-row"><span class="price-sym" style="min-width:100px;font-family:var(--pc-font);font-size:12px">' + (m.name||m.symbol) + '</span><span class="price-val">' + (m.value != null ? m.value : '—') + '</span><span class="' + (chg >= 0 ? 'text-green' : 'text-red') + '">' + (chg >= 0 ? '+' : '') + (chg||0).toFixed(2) + '%</span></div>';
-    });
-    document.getElementById('crypto-macro').innerHTML = h;
-  }
-
-  // ── Most Active ──
-  if (d.most_active && d.most_active.length) {
-    let h = '';
-    d.most_active.slice(0,8).forEach(m => {
-      h += '<div class="price-row"><span class="price-sym">' + m.symbol + '</span><span class="price-val">$' + (m.price_usd||0).toLocaleString('en',{maximumFractionDigits:2}) + '</span><span class="' + (m.change_24h >= 0 ? 'text-green' : 'text-red') + '">' + (m.change_24h >= 0 ? '+' : '') + (m.change_24h||0).toFixed(2) + '%</span></div>';
-    });
-    document.getElementById('crypto-active').innerHTML = h;
-  }
-
-  // Save crypto prediction to localStorage for home page
-  const today = new Date().toISOString().slice(0,10);
-  let cryptoHist = JSON.parse(localStorage.getItem('cryptopulse_predictions') || '[]');
-  if (!cryptoHist.find(h => h.date === today)) {
-    cryptoHist.unshift({ date: today, result: null, direction: null });
-    localStorage.setItem('cryptopulse_predictions', JSON.stringify(cryptoHist.slice(0,10)));
-  }
+  onDataLoaded(d.updated_at);
 }
 
-loadData();
+document.addEventListener('DOMContentLoaded',loadData);
 </script>
 </body>
 </html>
