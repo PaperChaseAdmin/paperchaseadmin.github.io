@@ -43,7 +43,7 @@ def fetch_polymarket(limit: int = 500) -> dict:
                 "title": title,
                 "volume_24h": round(volume),
                 "yes_price": round(yes_bid, 2),
-                "url": f"https://polymarket.com/event/{m.get('slug', '')}",
+                "url": f"https://polymarket.com/market/{m.get('slug', '')}",
             })
     except Exception as e:
         print(f"  [Polymarket] failed: {e}")
