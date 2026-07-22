@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Poly Watch — AI Prediction Market Scanner</title>
-<meta name="description" content="AI-powered prediction market scanner. Find high-confidence bets with heuristic scoring and AI analysis."/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Poly Watch — Prediction Market Scanner</title>
+<meta name="description" content="Polymarket prediction markets — top finance topics by volume with sentiment analysis and click-through to trade."/>
+<meta name="keywords" content="polymarket, prediction markets, crypto, finance, politics, forecasting"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://paperchase.online/poly-watch/"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
@@ -13,174 +17,171 @@
 <link rel="stylesheet" href="/assets/design-system.css">
 <script src="/assets/countdown.js"></script>
 <style>
-.market-grid{display:flex;flex-direction:column;gap:1px;background:var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden}
-.market-card{background:var(--pc-surface);padding:14px 16px;cursor:pointer;transition:background .1s}
-.market-card:hover{background:var(--pc-surface-hover)}
-.market-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:6px}
-.market-card-question{font-size:14px;font-weight:600;color:var(--pc-heading);flex:1;line-height:1.4}
-.market-card-badge{font-size:9px;font-weight:600;padding:2px 7px;border-radius:3px;text-transform:uppercase;white-space:nowrap;flex-shrink:0}
-.badge-yes{background:var(--pc-green-bg);color:var(--pc-green);border:1px solid rgba(21,190,83,.2)}
-.badge-review{background:var(--pc-yellow-bg);color:var(--pc-yellow);border:1px solid rgba(245,158,11,.2)}
-.badge-no{background:var(--pc-red-bg);color:var(--pc-red);border:1px solid rgba(239,68,68,.2)}
-.badge-tag{font-size:9px;padding:1px 5px;border-radius:2px;background:var(--pc-surface-3);color:var(--pc-text-3);border:1px solid var(--pc-border-2);text-transform:uppercase}
-.market-card-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
-.meta-item{font-size:11px;color:var(--pc-text-2)}
-.meta-item strong{color:var(--pc-heading);font-family:var(--pc-mono);font-weight:600}
-.prob-bar-wrap{height:4px;background:var(--pc-surface-3);border-radius:2px;overflow:hidden;margin-bottom:6px}
-.prob-bar-fill{height:100%;border-radius:2px;transition:width .5s}
-.market-card-ai{background:var(--pc-surface-3);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:8px 10px;margin-top:6px;font-size:12px;line-height:1.5;color:var(--pc-text-2);display:none}
-.market-card-ai.open{display:block}
-.ai-outlook{font-weight:600;margin-right:4px}
-.ai-conf{font-size:10px;color:var(--pc-text-3)}
-.top-pick-card{background:var(--pc-surface);border:2px solid var(--pc-green);border-radius:var(--pc-radius-lg);padding:20px;box-shadow:var(--pc-shadow-md);cursor:pointer}
-.pred-row{display:grid;grid-template-columns:80px 1fr 55px 50px;gap:6px;align-items:center;padding:6px 10px;border-radius:var(--pc-radius);font-size:11px;border:1px solid var(--pc-border)}
-.pred-row.resolved-correct{background:var(--pc-green-bg)}
-.pred-row.resolved-wrong{background:var(--pc-red-bg)}
-.pred-row.pending{background:var(--pc-surface-3)}
-.pred-date{color:var(--pc-text-3);font-weight:600;font-size:10px}
-.pred-question{color:var(--pc-text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pred-bet{font-weight:700;text-align:center}
-.pred-result{font-weight:600;text-align:right;font-size:11px}
-@media(max-width:900px){.stats-bar .stat-item{min-width:50%}}
+.pg { display: grid; grid-template-columns: 1fr; gap: 20px; }
+
+/* Stats bar */
+.sb { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.sb .si { padding: 10px 14px; background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); flex: 1; min-width: 100px; text-align: center; }
+.sb .si .sl { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--pc-text-3); }
+.sb .si .sv { font-size: 20px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); margin-top: 2px; }
+
+/* Filter bar */
+.fb { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+.fb button { font-size: 10px; font-weight: 600; padding: 5px 10px; border: 1px solid var(--pc-border); border-radius: var(--pc-radius); background: var(--pc-surface); color: var(--pc-text-2); cursor: pointer; transition: all .1s; }
+.fb button:hover { border-color: var(--pc-brand); color: var(--pc-heading); }
+.fb button.on { background: var(--pc-brand); border-color: var(--pc-brand); color: #fff; }
+.fb .fc { font-size: 10px; color: var(--pc-text-3); margin-left: auto; font-family: var(--pc-mono); }
+
+/* Market cards */
+.ml { display: flex; flex-direction: column; gap: 1px; background: var(--pc-border); border-radius: var(--pc-radius-lg); overflow: hidden; }
+.mc { background: var(--pc-surface); padding: 14px 16px; }
+.mc-h { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+.mc-q { font-size: 13px; font-weight: 600; color: var(--pc-heading); flex: 1; line-height: 1.4; }
+.mc-m { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 11px; color: var(--pc-text-2); margin-bottom: 6px; }
+.mc-m strong { color: var(--pc-heading); font-family: var(--pc-mono); font-weight: 600; }
+.mc-b { height: 4px; background: var(--pc-surface-3); border-radius: 2px; overflow: hidden; }
+.mc-bf { height: 100%; border-radius: 2px; transition: width .5s; }
+.mc-tag { font-size: 9px; padding: 1px 5px; border-radius: 2px; background: var(--pc-surface-3); color: var(--pc-text-3); text-transform: uppercase; }
+
+/* Sentiment badge */
+.sb-bull { background: var(--pc-green-bg); color: var(--pc-green); }
+.sb-bear { background: var(--pc-red-bg); color: var(--pc-red); }
+.sb-neut { background: var(--pc-yellow-bg); color: var(--pc-yellow); }
+.sent-badge { font-size: 9px; font-weight: 600; padding: 1px 5px; border-radius: 3px; }
+
+@media (max-width: 768px) {
+  .sb .si { min-width: 80px; }
+  .mc-q { font-size: 12px; }
+}
 </style>
 </head>
 <body>
 
 <nav class="topbar"><div class="topbar-inner">
-  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <a class="logo" href="/">PaperChase<span>.</span></a>
   <div class="topbar-nav">
     <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
     <a class="nav-link" href="/crypto-pulse/">Crypto Pulse</a>
-    <a class="nav-link active" href="/poly-watch/">Poly Watch</a>
+    <a class="nav-link" href="/poly-watch/" style="color:var(--pc-heading);font-weight:600">Poly Watch</a>
     <a class="nav-link" href="/stock-pick/">Stock Pick</a>
     <a class="nav-link" href="/trading-arena/">Trading Arena</a>
   </div>
   <div class="topbar-spacer"></div>
   <div class="topbar-auth">
-    <a class="btn-login" href="/login/">Log In</a>
-    <a class="btn-register" href="/register/">Register</a>
+    <a class="nav-link" href="/login/">Log In</a>
+    <a href="/register/" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none">Register</a>
   </div>
 </div></nav>
 
-<div class="wrap">
 <div class="container">
-
-  <div class="page-header">
-    <div class="page-title-wrap">
-      <div class="page-title">Poly Watch</div>
-      <div class="page-sub"><span class="live"></span> 🏆 Top pick shown first → Filter by category → Click any market for AI analysis</div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+    <div>
+      <h1 style="font-size:22px;font-weight:700;color:var(--pc-heading);letter-spacing:-0.03em;margin:0">Poly Watch</h1>
+      <p style="font-size:12px;color:var(--pc-text-2);margin-top:1px">Polymarket prediction markets — top by volume with AI sentiment analysis</p>
     </div>
     <div id="countdown-wrap" class="countdown-wrap"></div>
   </div>
 
-  <div class="stats-bar" id="statsBar"></div>
+  <div class="loading" id="main-loading"><div class="spinner"></div>Loading prediction markets…</div>
 
-  <div id="topPickSection" style="display:none;margin-bottom:20px">
-    <div class="section-title" style="margin-bottom:8px;display:flex;align-items:center;gap:8px">
-      <span>🏆 TODAY'S TOP PICK</span>
-      <span id="topPickDate" style="font-size:10px;color:var(--pc-text-3);font-weight:400"></span>
-    </div>
-    <div id="topPickCard" class="top-pick-card" onclick="toggleAI(this)">
-      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-        <div style="flex:1">
-          <div id="topPickQuestion" style="font-size:15px;font-weight:600;color:var(--pc-heading);line-height:1.4;margin-bottom:6px"></div>
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-            <span id="topPickAction" style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:4px;display:inline-block"></span>
-            <span id="topPickProb" style="font-size:13px;color:var(--pc-text-2)"></span>
-            <span id="topPickVol" style="font-size:12px;color:var(--pc-text-3)"></span>
-            <span id="topPickTag" style="font-size:10px;font-weight:600;padding:1px 6px;border-radius:2px;background:var(--pc-surface-3);color:var(--pc-text-3)"></span>
-          </div>
-        </div>
-        <div id="topPickScore" style="font-size:24px;font-weight:800;font-family:var(--pc-mono);color:var(--pc-green);flex-shrink:0;text-align:right"></div>
-      </div>
-      <div id="topPickAI" class="market-card-ai" style="display:none">
-        <span id="topPickAIOutlook" class="ai-outlook"></span>
-        <span id="topPickAIConf" class="ai-conf"></span>
-        <span id="topPickAIAnalysis"></span>
-      </div>
+  <div id="main-content" style="display:none">
+    <div class="pg">
+
+      <!-- ═══ STATS ═══ -->
+      <div class="sb" id="statsBar"></div>
+
+      <!-- ═══ FILTERS ═══ -->
+      <div class="fb" id="filterBar"></div>
+
+      <!-- ═══ MARKET LIST ═══ -->
+      <div class="ml" id="marketList"></div>
+
     </div>
   </div>
-
-  <div id="predHistSection" style="display:none;margin-bottom:20px">
-    <div class="section-title" style="margin-bottom:8px;display:flex;align-items:center;gap:8px">
-      <span>📊 10-DAY PREDICTION TRACK RECORD</span>
-      <span id="predHistAcc" style="font-size:11px;color:var(--pc-text-3);font-weight:400"></span>
-    </div>
-    <div id="predHistTable" style="display:flex;flex-direction:column;gap:4px">
-      <div style="color:var(--pc-text-2);padding:8px;font-size:12px;text-align:center">No prediction history yet — predictions recorded daily</div>
-    </div>
-  </div>
-
-  <div class="filter-bar" id="filterBar">
-    <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">All</button>
-    <button class="filter-btn" data-filter="recommended" onclick="setFilter('recommended',this)">✅ Recommended</button>
-    <button class="filter-btn" data-filter="review" onclick="setFilter('review',this)">⚠️ Review</button>
-    <button class="filter-btn" data-filter="politics" onclick="setFilter('politics',this)">Politics</button>
-    <button class="filter-btn" data-filter="crypto" onclick="setFilter('crypto',this)">Crypto</button>
-    <button class="filter-btn" data-filter="finance" onclick="setFilter('finance',this)">Finance</button>
-    <button class="filter-btn" data-filter="news" onclick="setFilter('news',this)">News</button>
-    <span class="filter-count" id="countLabel">0 markets</span>
-  </div>
-
-  <div id="marketList"><div class="loading"><div class="spinner"></div>Scanning Poly Watch…</div></div>
-
-</div>
 </div>
 
 <script>
-const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/polymarket/scan_results.json';
-let allMarkets = [];
-let currentFilter = 'all';
+var DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/data/market_data.json';
+var _cdTimer = null;
+function onDataLoaded(t) { clearInterval(_cdTimer); var el=document.getElementById('countdown-wrap'); if(!el||typeof window.startCountdown!=='function')return; _cdTimer=window.startCountdown(el,'Next Update','poly-watch',loadData); }
+var $=function(id){return document.getElementById(id);};
 
-function fmt(v) { if (v == null) return '—'; if (v >= 1e6) return '$'+(v/1e6).toFixed(1)+'M'; if (v >= 1e3) return '$'+(v/1e3).toFixed(1)+'K'; return '$'+v.toFixed(0); }
-function setFilter(f, btn) { currentFilter = f; document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); renderMarkets(); }
+var FMT = {
+  p: function(v){return v==null?'—':v>=1e6?'$'+(v/1e6).toFixed(1)+'M':v>=1e3?'$'+(v/1e3).toFixed(1)+'K':'$'+v.toFixed(0);},
+  sc: function(s){if(!s)return'var(--pc-text-3)';var l=s.toLowerCase();if(l==='bullish'||l==='greed'||l==='positive')return'var(--pc-green)';if(l==='bearish'||l==='fear'||l==='extreme fear'||l==='negative')return'var(--pc-red)';return'var(--pc-text-3)';},
+  sg: function(s){if(!s)return'sb-neut';var l=s.toLowerCase();if(l==='bullish'||l==='greed'||l==='positive')return'sb-bull';if(l==='bearish'||l==='fear'||l==='extreme fear'||l==='negative')return'sb-bear';return'sb-neut';},
+  sl: function(s){if(!s)return'Neutral';var l=s.toLowerCase();if(l==='bullish'||l==='greed'||l==='positive')return'Bullish';if(l==='bearish'||l==='fear'||l==='extreme fear'||l==='negative')return'Bearish';return'Neutral';},
+};
 
-function renderMarkets() {
-  let filtered = allMarkets;
-  if (currentFilter === 'recommended') filtered = allMarkets.filter(m => m.heuristic && m.heuristic.score >= 15);
-  else if (currentFilter === 'review') filtered = allMarkets.filter(m => m.heuristic && m.heuristic.score < 15 && m.heuristic.score >= 5);
-  else if (currentFilter !== 'all') filtered = allMarkets.filter(m => m.tag === currentFilter);
-  document.getElementById('countLabel').textContent = filtered.length + ' markets';
-  if (!filtered.length) { document.getElementById('marketList').innerHTML = '<div class="loading" style="padding:40px">No markets found for this filter</div>'; return; }
-  let html = '<div class="market-grid">';
-  filtered.forEach(m => {
-    const h = m.heuristic || {}; const ai = m.ai || {}; const pct = (m.yes_price * 100).toFixed(1);
-    const badge = h.score >= 15 ? 'badge-yes' : h.score >= 5 ? 'badge-review' : 'badge-no';
-    const badgeText = h.score >= 15 ? '✅ Yes' : h.score >= 5 ? '⚠️ Review' : '❌ No';
-    const barColor = m.yes_price >= 0.9 ? 'var(--pc-green)' : m.yes_price >= 0.7 ? 'var(--pc-yellow)' : 'var(--pc-red)';
-    const endDate = m.end_date ? new Date(m.end_date).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : 'N/A';
-    const aiHtml = ai.ai_analysis ? '<div class="market-card-ai open"><span class="ai-outlook" style="color:'+(ai.ai_outlook==='yes'?'var(--pc-green)':'var(--pc-red)')+'">'+(ai.ai_outlook||'neutral').toUpperCase()+'</span><span class="ai-conf">('+(ai.ai_confidence||0)+'% confidence)</span> — '+(ai.ai_analysis||'')+'</div>' : '';
-    html += '<div class="market-card" onclick="toggleAI(this)"><div class="market-card-header"><div class="market-card-question">'+m.question+'</div><span class="market-card-badge '+badge+'">'+badgeText+'</span></div><div class="market-card-meta"><span class="meta-item">Yes: <strong class="'+(m.yes_price>=0.9?'text-green':m.yes_price>=0.7?'text-yellow':'')+'">'+pct+'%</strong></span><span class="meta-item">Ends: <strong>'+endDate+'</strong></span><span class="meta-item">Vol: <strong>'+fmt(m.volume)+'</strong></span><span class="badge-tag">'+(m.tag||'')+'</span>'+(h.reasons?'<span class="meta-item" style="color:var(--pc-text-3);font-size:10px">'+h.reasons+'</span>':'')+'</div><div class="prob-bar-wrap"><div class="prob-bar-fill" style="width:'+pct+'%;background:'+barColor+'"></div></div>'+aiHtml+'</div>';
+var bullKW=['rate cut','approve','rally','growth','bull','ceasefire','peace','positive'];
+var bearKW=['invade','war','strike','crash','recession','default','tariff','sanction','attack','military','collapse','debt crisis','fall'];
+
+function polySent(t){
+  if(!t)return'Neutral';
+  var l=t.toLowerCase();
+  var b=bullKW.some(function(k){return new RegExp('\\b'+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b').test(l);});
+  var w=bearKW.some(function(k){return new RegExp('\\b'+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b').test(l);});
+  return w?'Bearish':b?'Bullish':'Neutral';
+}
+
+var allMarkets=[],currentFilter='all';
+
+function loadData(){
+  fetch(DATA_URL+'?t='+Date.now())
+    .then(function(r){return r.json();})
+    .then(function(d){
+      allMarkets = (d.stocks||{}).polymarket || [];
+      renderAll();
+      onDataLoaded(d.updated_at);
+    })
+    .catch(function(e){$('main-loading').innerHTML='⚠️ Failed to load: '+e.message;});
+}
+
+function renderAll(){
+  $('main-loading').style.display='none';
+  $('main-content').style.display='block';
+
+  // Stats
+  (function(){
+    var total=allMarkets.length,avgYes=total?(allMarkets.reduce(function(s,m){return s+m.yes_price;},0)/total*100).toFixed(1):0,totalVol=allMarkets.reduce(function(s,m){return s+(m.volume_24h||0);},0);
+    $('statsBar').innerHTML='<div class="si"><div class="sl">Markets</div><div class="sv">'+total+'</div></div><div class="si"><div class="sl">Avg Yes%</div><div class="sv">'+avgYes+'%</div></div><div class="si"><div class="sl">Total Volume</div><div class="sv">'+FMT.p(totalVol)+'</div></div>';
+  })();
+
+  // Filter buttons
+  (function(){
+    var cats={};allMarkets.forEach(function(m){var c=m.category||'other';cats[c]=(cats[c]||0)+1;});
+    var html='<button class="on" data-f="all" onclick="setF(\'all\',this)">All</button>';
+    Object.keys(cats).sort().forEach(function(c){html+='<button data-f="'+c+'" onclick="setF(\''+c+'\',this)">'+(c.charAt(0).toUpperCase()+c.slice(1))+'</button>';});
+    html+='<span class="fc" id="countLabel">'+allMarkets.length+' markets</span>';
+    $('filterBar').innerHTML=html;
+  })();
+
+  renderMarkets();
+}
+
+function setF(f,btn){
+  currentFilter=f;
+  document.querySelectorAll('#filterBar button').forEach(function(b){b.classList.remove('on');});
+  btn.classList.add('on');
+  renderMarkets();
+}
+
+function renderMarkets(){
+  var filtered=currentFilter==='all'?allMarkets:allMarkets.filter(function(m){return(m.category||'other')===currentFilter;});
+  $('countLabel').textContent=filtered.length+' markets';
+  if(!filtered.length){$('marketList').innerHTML='<div style="text-align:center;padding:40px;color:var(--pc-text-3);font-size:12px">No markets for this filter</div>';return;}
+  var html='';
+  filtered.slice().sort(function(a,b){return(b.volume_24h||0)-(a.volume_24h||0);}).forEach(function(m){
+    var yp=Math.round((m.yes_price||0)*100),sent=polySent(m.title),sg=FMT.sg(sent),url=m.url||'#',cat=m.category||'';
+    var barColor=yp>=80?'var(--pc-green)':yp>=60?'var(--pc-yellow)':'var(--pc-red)';
+    html+='<div class="mc"><div class="mc-h"><div class="mc-q"><a href="'+url+'" target="_blank" rel="noopener" style="color:var(--pc-heading);text-decoration:none">'+(m.title||'')+'</a></div><span class="sent-badge '+sg+'">'+FMT.sl(sent)+'</span></div>'+
+      '<div class="mc-m"><span>Yes: <strong style="color:'+barColor+'">'+yp+'%</strong></span><span>Vol: <strong>'+FMT.p(m.volume_24h)+'</strong></span><span class="mc-tag">'+cat+'</span></div>'+
+      '<div class="mc-b"><div class="mc-bf" style="width:'+yp+'%;background:'+barColor+'"></div></div></div>';
   });
-  html += '</div>';
-  document.getElementById('marketList').innerHTML = html;
+  $('marketList').innerHTML=html;
 }
 
-function toggleAI(el) { const aiEl = el.querySelector('.market-card-ai'); if (aiEl) aiEl.classList.toggle('open'); }
-
-function renderTopPick(markets) {
-  const section = document.getElementById('topPickSection');
-  const scored = markets.filter(m => m.heuristic && m.heuristic.score > 0).sort((a,b)=>(b.heuristic.score||0)-(a.heuristic.score||0));
-  if (scored.length===0){section.style.display='none';return;}
-  const top=scored[0];const h=top.heuristic||{};const ai=top.ai||{};const pct=(top.yes_price*100).toFixed(1);const betYes=top.yes_price>=0.5;
-  document.getElementById('topPickDate').textContent=new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-  document.getElementById('topPickQuestion').textContent=top.question;
-  const ae=document.getElementById('topPickAction');ae.textContent=betYes?'▸ BET YES':'▸ BET NO';ae.style.background=betYes?'var(--pc-green-bg)':'var(--pc-red-bg)';ae.style.color=betYes?'var(--pc-green)':'var(--pc-red)';ae.style.border='1px solid '+(betYes?'rgba(21,190,83,0.3)':'rgba(239,68,68,0.3)');
-  document.getElementById('topPickProb').innerHTML='Yes: <strong>'+pct+'%</strong>';document.getElementById('topPickVol').textContent='Vol: '+fmt(top.volume);
-  document.getElementById('topPickTag').textContent=(top.tag||'').toUpperCase();document.getElementById('topPickScore').textContent=h.score||'';
-  if(ai.ai_analysis){document.getElementById('topPickAIOutlook').textContent=(ai.ai_outlook||'neutral').toUpperCase();document.getElementById('topPickAIOutlook').style.color=ai.ai_outlook==='yes'?'var(--pc-green)':'var(--pc-red)';document.getElementById('topPickAIConf').textContent='('+(ai.ai_confidence||0)+'% confidence)';document.getElementById('topPickAIAnalysis').textContent=' — '+ai.ai_analysis;}
-  section.style.display='block';savePrediction(top,betYes);
-}
-
-function savePrediction(market,betYes){const today=new Date().toISOString().split('T')[0];let history=JSON.parse(localStorage.getItem('polywatch_predictions')||'[]');if(history.length>0&&history[0].date===today)return;history.unshift({date:today,question:market.question,bet:betYes?'YES':'NO',prob:(market.yes_price*100).toFixed(1)+'%',tag:market.tag||'',score:(market.heuristic||{}).score||0,result:null,correct:null});history=history.slice(0,15);localStorage.setItem('polywatch_predictions',JSON.stringify(history));renderPredHist(history);}
-
-function renderPredHist(history){const section=document.getElementById('predHistSection');if(!history||history.length===0){section.style.display='none';return;}const resolved=history.filter(h=>h.correct!==null);const correct=resolved.filter(h=>h.correct).length;const total=resolved.length;const accPct=total>0?Math.round(correct/total*100):0;document.getElementById('predHistAcc').textContent=total>0?accPct+'% accuracy ('+correct+'/'+total+')':'';const tableHtml=history.slice(0,10).map(h=>{const isResolved=h.correct!==null;const cls=isResolved?(h.correct?'resolved-correct':'resolved-wrong'):'pending';const betColor=h.bet==='YES'?'var(--pc-green)':'var(--pc-red)';return'<div class="pred-row '+cls+'"><span class="pred-date">'+h.date.slice(5)+'</span><span class="pred-question">'+h.question+'</span><span class="pred-bet" style="color:'+betColor+'">'+h.bet+'</span>'+(isResolved?'<span class="pred-result" style="color:'+(h.correct?'var(--pc-green)':'var(--pc-red)')+'">'+(h.correct?'✅ CORRECT':'❌ WRONG')+'</span>':'<span class="pred-result" style="color:var(--pc-text-3)">⏳ Pending</span>')+'</div>';}).join('');document.getElementById('predHistTable').innerHTML=tableHtml;section.style.display='block';}
-
-let _cdTimer=null;
-function onDataLoaded(){clearInterval(_cdTimer);const el=document.getElementById("countdown-wrap");if(!el||typeof window.startCountdown!=="function")return;_cdTimer=window.startCountdown(el,"Next Update","poly-watch",loadData);}
-
-async function loadData(){const today=new Date().toISOString().split('T')[0];const hist=JSON.parse(localStorage.getItem('polywatch_predictions')||'[]');localStorage.setItem('polywatch_predictions',JSON.stringify(hist.filter(h=>h.date>=today)));try{const resp=await fetch(DATA_URL+'?t='+Date.now());if(!resp.ok)throw new Error('HTTP '+resp.status);const data=await resp.json();allMarkets=data.markets||[];const total=allMarkets.length;const recommended=allMarkets.filter(m=>m.heuristic&&m.heuristic.score>=15).length;const avgYes=total?(allMarkets.reduce((s,m)=>s+m.yes_price,0)/total*100).toFixed(1):0;const totalVol=allMarkets.reduce((s,m)=>s+(m.volume||0),0);document.getElementById('statsBar').innerHTML='<div class="stat-item"><div class="stat-lbl">Markets</div><div class="stat-val">'+total+'</div></div><div class="stat-item"><div class="stat-lbl">Recommended</div><div class="stat-val" style="color:var(--pc-green)">'+recommended+'</div></div><div class="stat-item"><div class="stat-lbl">Avg Yes%</div><div class="stat-val">'+avgYes+'%</div></div><div class="stat-item"><div class="stat-lbl">Total Volume</div><div class="stat-val">'+fmt(totalVol)+'</div></div>';renderMarkets();renderTopPick(allMarkets);onDataLoaded();const history=JSON.parse(localStorage.getItem('polywatch_predictions')||'[]');renderPredHist(history);}catch(e){document.getElementById('marketList').innerHTML='<div class="loading" style="color:var(--pc-red)">⚠ Could not load: '+e.message+'</div>';}}
-loadData();
+document.addEventListener('DOMContentLoaded',loadData);
 </script>
 </body>
 </html>
