@@ -126,7 +126,7 @@ fetch(DATA_URL).then(r=>r.json()).then(d=>{
   renderAccuracy(toolAcc);
   renderFilters();
   renderHistory();
-  if(window.startCountdown)startCountdown(document.getElementById('countdown')||document.querySelector('.page-desc'),'Next Prediction','predictions',loadData);
+  if(window.startCountdown)startCountdown(document.getElementById('countdown')||document.querySelector('.page-desc'),'Next Update','predictions',loadData);
 }).catch(e=>{console.error('Predictions load error:',e);});
 }
 

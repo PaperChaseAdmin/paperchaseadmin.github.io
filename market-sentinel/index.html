@@ -252,7 +252,7 @@
 <script>
 var DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/data/market_data.json';
 var _cdTimer = null;
-function onDataLoaded(t) { clearInterval(_cdTimer); var el=document.getElementById('countdown-wrap'); if(!el||typeof window.startCountdown!=='function')return; _cdTimer=window.startCountdown(el,'Next update in','market-sentinel',loadData); }
+function onDataLoaded(t) { clearInterval(_cdTimer); var el=document.getElementById('countdown-wrap'); if(!el||typeof window.startCountdown!=='function')return; _cdTimer=window.startCountdown(el,'Next Update','market-sentinel',loadData); }
 
 var $=function(id){return document.getElementById(id);};
 var FMT = {
