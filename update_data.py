@@ -1,0 +1,262 @@
+#!/usr/bin/env python3
+"""
+Market Sentinel — data update orchestrator.
+Runs all scrapers and writes data/market_data.json.
+Safe to run repeatedly; gracefully handles partial failures.
+
+POLICY: Spot assets only. No leverage, futures, margin, or derivatives data.
+"""
+import sys, os, json, math
+from datetime import datetime, timezone
+from collections import Counter
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from scrapers.news_rss       import fetch_crypto_news, fetch_stock_news
+from scrapers.reddit_data    import fetch_crypto_reddit, fetch_stock_reddit
+from scrapers.polymarket     import fetch_polymarket
+from scrapers.fear_greed     import fetch_fear_greed, fetch_crypto_prices, fetch_coingecko_trending
+from scrapers.stocks_data    import fetch_stock_prices, fetch_market_indices, market_mood_score
+from scrapers.portfolio      import fetch_portfolio
+from scrapers.sentiment      import analyze_headlines, sentiment_label, sentiment_color, generate_summary, ai_market_mood_score
+from scrapers.assets         import CRYPTO_ASSETS, STOCK_ASSETS
+from scrapers.fourchain_data import fetch_biz_sentiment
+from scrapers.market_data import fetch_macro_indicators, fetch_most_active
+from scrapers.google_trends import fetch_stock_trends, fetch_crypto_trends
+
+DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "market_data.json")
+
+
+def aggregate_mentions(reddit_data: list[dict]) -> list[dict]:
+    """Sum mentions across all subreddits, return sorted list."""
+    totals = Counter()
+    for sub in reddit_data:
+        for sym, cnt in sub.get("mentions", {}).items():
+            totals[sym] += cnt
+    return [{"symbol": s, "mentions": c} for s, c in totals.most_common(10)]
+
+
+def enrich_crypto_mentions(mentions: list[dict], prices: list[dict]) -> list[dict]:
+    price_map = {p["symbol"]: p for p in prices}
+    result = []
+    for m in mentions:
+        p = price_map.get(m["symbol"], {})
+        result.append({
+            "symbol":     m["symbol"],
+            "mentions":   m["mentions"],
+            "price_usd":  p.get("price_usd"),
+            "change_24h": p.get("change_24h"),
+        })
+    return result
+
+
+def enrich_stock_mentions(mentions: list[dict], prices: list[dict]) -> list[dict]:
+    price_map = {p["symbol"]: p for p in prices}
+    result = []
+    for m in mentions:
+        p = price_map.get(m["symbol"], {})
+        result.append({
+            "symbol":     m["symbol"],
+            "mentions":   m["mentions"],
+            "price_usd":  p.get("price_usd"),
+            "change_24h": p.get("change_24h"),
+        })
+    return result
+
+
+def run():
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Market Sentinel update starting...")
+    os.makedirs(os.path.dirname(DATA_PATH), exist_ok=True)
+
+    # ── Crypto ──────────────────────────────────────────────────────────
+    print("  Fetching crypto news...")
+    crypto_news_raw = fetch_crypto_news()
+    crypto_headlines = [a["title"] for a in crypto_news_raw[:15]]
+    crypto_analyzed  = analyze_headlines(crypto_headlines)
+    crypto_news_out  = []
+    for i, a in enumerate(crypto_news_raw[:15]):
+        s = crypto_analyzed[i] if i < len(crypto_analyzed) else {"score": 0, "label": "Neutral", "color": "yellow"}
+        crypto_news_out.append({
+            "title":     a["title"],
+            "source":    a["source"],
+            "url":       a["url"],
+            "published": a["published"],
+            "assets":    a.get("assets", []),
+            "sentiment": s["label"],
+            "score":     s["score"],
+            "color":     s["color"],
+        })
+    crypto_avg_score = (
+        round(sum(n["score"] for n in crypto_news_out) / len(crypto_news_out), 3)
+        if crypto_news_out else 0
+    )
+
+    print("  Fetching Fear & Greed...")
+    fear_greed = fetch_fear_greed()
+
+    print("  Fetching crypto prices...")
+    crypto_prices = fetch_crypto_prices()
+
+    print("  Fetching crypto Reddit...")
+    crypto_reddit = fetch_crypto_reddit()
+    crypto_mentions_raw = aggregate_mentions(crypto_reddit)
+    crypto_mentions = enrich_crypto_mentions(crypto_mentions_raw, crypto_prices)
+
+    # ── Stocks ──────────────────────────────────────────────────────────
+    print("  Fetching stock news...")
+    stock_news_raw = fetch_stock_news()
+    stock_headlines = [a["title"] for a in stock_news_raw[:15]]
+    stock_analyzed  = analyze_headlines(stock_headlines)
+    stock_news_out  = []
+    for i, a in enumerate(stock_news_raw[:15]):
+        s = stock_analyzed[i] if i < len(stock_analyzed) else {"score": 0, "label": "Neutral", "color": "yellow"}
+        stock_news_out.append({
+            "title":     a["title"],
+            "source":    a["source"],
+            "url":       a["url"],
+            "published": a["published"],
+            "assets":    a.get("assets", []),
+            "sentiment": s["label"],
+            "score":     s["score"],
+            "color":     s["color"],
+        })
+    stock_avg_score = (
+        round(sum(n["score"] for n in stock_news_out) / len(stock_news_out), 3)
+        if stock_news_out else 0
+    )
+
+    print("  Fetching stock prices & indices...")
+    stock_prices   = fetch_stock_prices()
+    indices        = fetch_market_indices()
+    mood_score     = market_mood_score(indices)  # initial calculation
+
+    print("  Fetching stock Reddit...")
+    stock_reddit = fetch_stock_reddit()
+    stock_mentions_raw = aggregate_mentions(stock_reddit)
+    stock_mentions = enrich_stock_mentions(stock_mentions_raw, stock_prices)
+
+    # ── Social: 4chan /biz/ + CoinGecko Trending ────────────────────────────
+    print("  Fetching 4chan /biz/ sentiment...")
+    fourchain = fetch_biz_sentiment()
+
+    print("  Fetching CoinGecko trending searches...")
+    cg_trending = fetch_coingecko_trending()
+
+    # ── Macro indicators ────────────────────────────────────────────
+    print("  Fetching macro indicators (10yr, DXY, gold, oil)...")
+    macro = fetch_macro_indicators()
+
+    # ── Most active stocks ──────────────────────────────────────────
+    print("  Fetching most active stocks...")
+    most_active = fetch_most_active()
+
+    # ── Google Trends ───────────────────────────────────────────────
+    print("  Fetching Google Trends (stock search interest)...")
+    google_trends_stocks = fetch_stock_trends()
+    google_trends_crypto = fetch_crypto_trends()
+
+    # ── Portfolio ───────────────────────────────────────────────────────
+    print("  Fetching portfolio ETFs...")
+    portfolio = fetch_portfolio()
+
+    # ── Polymarket ──────────────────────────────────────────────────────
+    print("  Fetching Polymarket...")
+    poly = fetch_polymarket()
+
+    # ── AI Summaries ────────────────────────────────────────────────────
+    print("  Generating AI summaries...")
+
+    def _news_text(news): return "\n".join(f"- {n['title']} ({n['sentiment']})" for n in news[:8])
+    def _poly_text(markets): return "\n".join(f"- {m['title']}: Yes {m['yes_price']*100:.0f}% (vol ${m['volume_24h']:,})" for m in markets)
+    def _reddit_text(mentions, reddit):
+        m = ", ".join(f"{x['symbol']} ({x['mentions']} mentions)" for x in mentions[:5])
+        s = "\n".join(f"- r/{r['subreddit']}: activity {r.get('activity_score',0):.0f}/100" for r in reddit[:3])
+        return f"Top mentioned: {m}\nSubreddits:\n{s}"
+
+    crypto_news_summary   = generate_summary("crypto news",               _news_text(crypto_news_out))
+    crypto_poly_summary   = generate_summary("crypto prediction markets",  _poly_text(poly["crypto"]))
+    crypto_reddit_summary = generate_summary("crypto Reddit discussion",   _reddit_text(crypto_mentions, crypto_reddit))
+    stock_news_summary    = generate_summary("stock/finance news",         _news_text(stock_news_out))
+    stock_poly_summary    = generate_summary("finance prediction markets", _poly_text(poly["finance"]))
+    stock_reddit_summary  = generate_summary("stock Reddit discussion",    _reddit_text(stock_mentions, stock_reddit))
+
+    # ── AI Market Mood (refined with ALL data) ────────────────────────
+    print("  AI-powered market mood score...")
+    ai_mood = ai_market_mood_score(indices, stock_news_out, stock_avg_score, fear_greed, macro, most_active, crypto_prices)
+    if ai_mood is not None:
+        mood_score = ai_mood
+        print(f"  AI Mood: {mood_score:.3f} ({sentiment_label(mood_score)})")
+    else:
+        print(f"  Using formula mood: {mood_score:.3f} ({sentiment_label(mood_score)})")
+
+    # ── Assemble output ─────────────────────────────────────────────────
+    output = {
+        "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "crypto": {
+            "fear_greed":      fear_greed,
+            "prices":          crypto_prices[:12],
+            "top_mentioned":   crypto_mentions[:10],
+            "news":            crypto_news_out,
+            "news_sentiment":  {
+                "score": crypto_avg_score,
+                "label": sentiment_label(crypto_avg_score),
+                "color": sentiment_color(crypto_avg_score),
+            },
+            "polymarket":         poly["crypto"],
+            "polymarket_summary": crypto_poly_summary,
+            "reddit":             crypto_reddit,
+            "reddit_summary":     crypto_reddit_summary,
+            "news_summary":       crypto_news_summary,
+            "fourchain":          fourchain,
+            "cg_trending":        cg_trending,
+        },
+        "stocks": {
+            "indices":         indices,
+            "market_mood":     {
+                "score": mood_score,
+                "label": sentiment_label(mood_score),
+                "color": sentiment_color(mood_score),
+            },
+            "prices":          stock_prices,
+            "top_mentioned":   stock_mentions[:10],
+            "news":            stock_news_out,
+            "news_sentiment":  {
+                "score": stock_avg_score,
+                "label": sentiment_label(stock_avg_score),
+                "color": sentiment_color(stock_avg_score),
+            },
+            "polymarket":         poly["finance"],
+            "polymarket_summary": stock_poly_summary,
+            "reddit":             stock_reddit,
+            "reddit_summary":     stock_reddit_summary,
+            "news_summary":       stock_news_summary,
+            "macro":              macro,
+            "most_active":        most_active,
+            "google_trends":      {"stocks": google_trends_stocks, "crypto": google_trends_crypto},
+        },
+        "portfolio": portfolio,
+    }
+
+    with open(DATA_PATH, "w", encoding="utf-8") as f:
+        json.dump(clean_nan(output), f, ensure_ascii=False, indent=2)
+
+    print(f"  [OK] Saved to {DATA_PATH}")
+    print(f"  Crypto F&G: {fear_greed['value']} ({fear_greed['label']})")
+    print(f"  Market mood: {mood_score} ({sentiment_label(mood_score)})")
+    print(f"  Crypto news sentiment: {crypto_avg_score}")
+    print(f"  Stock news sentiment: {stock_avg_score}")
+    print(f"  Portfolio ETFs: {len(portfolio)} loaded")
+
+
+def clean_nan(obj):
+    """Recursively replace NaN/Inf with None for valid JSON."""
+    if isinstance(obj, float):
+        return None if (math.isnan(obj) or math.isinf(obj)) else obj
+    if isinstance(obj, dict):
+        return {k: clean_nan(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [clean_nan(v) for v in obj]
+    return obj
+
+if __name__ == "__main__":
+    run()

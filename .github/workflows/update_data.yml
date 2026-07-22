@@ -1,0 +1,42 @@
+name: Update Market Data
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 min (GitHub backup — cron-job.org triggers every 10 min)
+  workflow_dispatch:           # manual trigger / called by cron-job.org every 10 min
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update market data
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        run: python update_data.py
+
+      - name: Commit & push updated data
+        run: |
+          git config user.name  "market-sentinel[bot]"
+          git config user.email "market-sentinel[bot]@users.noreply.github.com"
+          git add data/market_data.json
+          git diff --staged --quiet || git commit -m "data: update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
