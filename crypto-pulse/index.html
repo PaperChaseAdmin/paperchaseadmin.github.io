@@ -270,16 +270,13 @@ function renderAll(d){
     $('priceList').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No price data</div>';
   })();
 
-  // ── CoinGecko Trending w/ prices ──
+  // ── CoinGecko Trending ──
   (function(){
-    var tg=cr.cg_trending||[],prices=cr.prices||[],priceMap={};
-    prices.forEach(function(p){priceMap[p.symbol]=p;});
-    var h='';
+    var tg=cr.cg_trending||[],h='';
     tg.slice(0,8).forEach(function(t){
-      var sym=(t.symbol||'').toUpperCase(),p=priceMap[t.symbol];
+      var sym=(t.symbol||'').toUpperCase();
       h+='<div class="tr"><span class="ts">'+sym+'</span><span class="tn">'+(t.name||'')+'</span>'+
-        (p?'<span style="font-weight:600;font-family:var(--pc-mono);font-size:11px;color:'+FMT.cc(p.change_24h)+'">'+FMT.p(p.price_usd)+'</span>':
-         t.change_24h!=null?'<span style="font-weight:600;font-family:var(--pc-mono);font-size:11px;color:'+FMT.cc(t.change_24h)+'">'+FMT.c(t.change_24h)+'</span>':'')+'</div>';
+        (t.change_24h!=null?'<span style="font-weight:600;font-family:var(--pc-mono);font-size:11px;color:'+FMT.cc(t.change_24h)+'">'+FMT.c(t.change_24h)+'</span>':'')+'</div>';
     });
     $('trendingList').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No trending data</div>';
   })();
