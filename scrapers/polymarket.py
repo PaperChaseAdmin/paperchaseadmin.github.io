@@ -1,99 +1,52 @@
 """
 Polymarket public API — no key required.
-Fetches top markets by 24h volume, split into crypto and finance/other.
+Fetches top 10 markets by 24h volume, no categorization.
 """
-import requests, json, re
+import requests, json
 
 API = "https://gamma-api.polymarket.com/markets"
 HEADERS = {"User-Agent": "MarketSentinelBot/1.0"}
+SPORTS_KW = [" vs. ", " vs ", "o/u ", "spread", "moneyline",
+    "nba", "nfl", "mlb", "nhl", "fifa", "super bowl", "playoffs"]
 
-SPORTS_EXCLUDE = [
-    " vs. ", " vs ", "o/u ", "spread", "moneyline", "over/under",
-    "nba", "nfl", "mlb", "nhl", "nba", "fifa", "epl", "champions league",
-    "super bowl", "world cup", "playoffs", "championship", "tournament",
-    "match winner", "first goal", "halftime", "innings", "quarter",
-]
 
-CRYPTO_KEYWORDS = [
-    "bitcoin", "btc", "ethereum", "eth", "crypto", "solana", "sol",
-    "xrp", "ripple", "coinbase", "binance", "defi", "nft", "altcoin",
-    "blockchain", "stablecoin", "halving", "memecoin", "doge", "bnb",
-    "price of bitcoin", "price of eth", "above $", "below $"
-]
-STOCK_KEYWORDS = [
-    "stock", "equity", "fed", "rate", "recession", "gdp", "inflation",
-    "s&p", "nasdaq", "dow", "trump", "tariff", "trade", "earnings",
-    "ipo", "merger", "tesla", "nvidia", "apple", "microsoft", "amazon",
-    "google", "meta", "economy", "market", "interest rate", "cpi",
-    "unemployment", "payroll", "xi jinping", "china", "sanction",
-    "iran", "ceasefire", "oil", "opec", "ukraine", "russia", "war",
-    "debt", "treasury", "dollar", "euro", "yen", "budget", "deficit",
-    "nato", "g7", "g20", "imf", "world bank", "bank", "powell",
-    "federal reserve", "jobs report", "election", "congress", "senate",
-]
-
-def _categorize(title: str) -> str:
+def is_sports(title: str) -> bool:
     t = title.lower()
-    if _word_match(t, SPORTS_EXCLUDE):
-        return "other"
-    if _word_match(t, CRYPTO_KEYWORDS):
-        return "crypto"
-    if _word_match(t, STOCK_KEYWORDS):
-        return "finance"
-    return "other"
+    return any(kw in t for kw in SPORTS_KW)
 
-
-def _word_match(text: str, keywords: list) -> bool:
-    """Match keywords with word boundaries to avoid false positives (e.g. 'war' != 'Warriors')."""
-    for kw in keywords:
-        if re.search(r'\b' + re.escape(kw) + r'\b', text):
-            return True
-    return False
 
 def fetch_polymarket(limit: int = 500) -> dict:
-    crypto, finance, other = [], [], []
+    all_markets = []
     try:
         r = requests.get(
             API,
             params={"limit": limit, "active": "true", "order": "volume24hr", "ascending": "false"},
-            headers=HEADERS,
-            timeout=10,
+            headers=HEADERS, timeout=10,
         )
         r.raise_for_status()
-        markets = r.json()
-
-        for m in markets:
-            title   = m.get("question") or m.get("title") or ""
+        for m in r.json():
+            title = m.get("question") or m.get("title") or ""
+            if is_sports(title):
+                continue
             vol_raw = m.get("volume24hr") or m.get("volume") or 0
-            volume  = float(str(vol_raw).split()[0]) if vol_raw else 0
+            volume = float(str(vol_raw).split()[0]) if vol_raw else 0
             prices_raw = m.get("outcomePrices", '["0.5","0.5"]')
             try:
-                # API returns a JSON string, e.g. '["0.65","0.35"]'
                 if isinstance(prices_raw, str):
                     prices_raw = json.loads(prices_raw)
                 yes_bid = float(prices_raw[0]) if prices_raw else 0.5
             except (ValueError, TypeError, json.JSONDecodeError):
                 yes_bid = 0.5
-            # Skip fully resolved markets (0% or 100%)
             if yes_bid <= 0.02 or yes_bid >= 0.98:
                 continue
-            item = {
-                "title":     title,
+            all_markets.append({
+                "title": title,
                 "volume_24h": round(volume),
-                "yes_price":  round(yes_bid, 2),
-                "category":   _categorize(title),
-                "url":        f"https://polymarket.com/event/{m.get('slug','')}",
-            }
-            if item["category"] == "crypto":
-                crypto.append(item)
-            elif item["category"] == "finance":
-                finance.append(item)
-            else:
-                other.append(item)
+                "yes_price": round(yes_bid, 2),
+                "url": f"https://polymarket.com/event/{m.get('slug', '')}",
+            })
     except Exception as e:
         print(f"  [Polymarket] failed: {e}")
 
-    return {
-        "crypto":  sorted(crypto,  key=lambda x: x["volume_24h"], reverse=True)[:8],
-        "finance": sorted(finance, key=lambda x: x["volume_24h"], reverse=True)[:8],
-    }
+    all_markets.sort(key=lambda x: x["volume_24h"], reverse=True)
+    return {"markets": all_markets[:10]}
