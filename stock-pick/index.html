@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Stock Pick — AI-Powered Stock Screener</title>
 <meta name="description" content="Daily AI-powered stock screener — top 30 picks ranked by composite score combining technical, value, growth, and quality factors."/>
-<meta name="keywords" content="stock screener, stock picks, AI stock analysis, value investing, technical analysis"/>
+<meta name="keywords" content="stock screener, stock picks, AI stock analysis, value investing"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://paperchase.online/stock-pick/"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
@@ -14,213 +17,113 @@
 <link rel="stylesheet" href="/assets/design-system.css">
 <script src="/assets/countdown.js"></script>
 <style>
-/* ── Criteria Box ──────────────────────── */
-.criteria-box {
-  background: var(--pc-surface);
-  border: 1px solid var(--pc-border);
-  border-radius: var(--pc-radius-lg);
-  padding: 20px;
-  margin-bottom: 20px;
-}
-.criteria-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.criteria-group h4 {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--pc-text-3);
-  margin-bottom: 8px;
-}
-.criteria-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.criteria-list li {
-  font-size: 13px;
-  color: var(--pc-text);
-  padding: 3px 0;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.criteria-list li::before {
-  content: '✓';
-  color: var(--pc-green);
-  font-weight: 700;
-  font-size: 11px;
-}
-.weight-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
-}
-.weight-label {
-  font-size: 12px;
-  color: var(--pc-text);
-  min-width: 90px;
-}
-.weight-track {
-  flex: 1;
-  height: 6px;
-  background: var(--pc-surface-3);
-  border-radius: 3px;
-  overflow: hidden;
-}
-.weight-fill {
-  height: 100%;
-  border-radius: 3px;
-  background: var(--pc-brand);
-}
-.weight-pct {
-  font-size: 11px;
-  font-weight: 600;
-  font-family: var(--pc-mono);
-  color: var(--pc-text-2);
-  min-width: 30px;
-  text-align: right;
-}
+/* ── Criteria Box ── */
+.cb { background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 20px; margin-bottom: 20px; }
+.cg { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.cg h4 { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--pc-text-3); margin-bottom: 8px; }
+.cg ul { list-style: none; padding: 0; margin: 0; }
+.cg ul li { font-size: 13px; color: var(--pc-text); padding: 3px 0; display: flex; align-items: center; gap: 6px; }
+.cg ul li::before { content: '✓'; color: var(--pc-green); font-weight: 700; font-size: 11px; }
+.wb { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.wb .wl { font-size: 12px; color: var(--pc-text); min-width: 90px; }
+.wb .wt { flex: 1; height: 6px; background: var(--pc-surface-3); border-radius: 3px; overflow: hidden; }
+.wb .wf { height: 100%; border-radius: 3px; background: var(--pc-brand); }
+.wb .wp { font-size: 11px; font-weight: 600; font-family: var(--pc-mono); color: var(--pc-text-2); min-width: 30px; text-align: right; }
 
-/* ── Score badge in table ──────────────── */
-.score-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: 700;
-  font-family: var(--pc-mono);
-  padding: 2px 8px;
-  border-radius: 4px;
-  min-width: 44px;
-}
-.score-high { background: var(--pc-green-bg); color: var(--pc-green); }
-.score-mid { background: var(--pc-yellow-bg); color: var(--pc-yellow); }
-.score-low { background: var(--pc-red-bg); color: var(--pc-red); }
+/* ── Score badge ── */
+.sb { display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; font-family: var(--pc-mono); padding: 2px 8px; border-radius: 4px; min-width: 44px; }
+.sh { background: var(--pc-green-bg); color: var(--pc-green); }
+.sm { background: var(--pc-yellow-bg); color: var(--pc-yellow); }
+.sl { background: var(--pc-red-bg); color: var(--pc-red); }
 
-/* ── MACD badge ────────────────────────── */
-.macd-badge {
-  display: inline-flex;
-  align-items: center;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 1px 6px;
-  border-radius: 3px;
-}
-.macd-golden { background: var(--pc-green-bg); color: var(--pc-green); }
-.macd-none { background: var(--pc-surface-3); color: var(--pc-text-3); }
-.macd-death { background: var(--pc-red-bg); color: var(--pc-red); }
+/* ── MACD badge ── */
+.mb { display: inline-flex; align-items: center; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; padding: 1px 6px; border-radius: 3px; }
+.mg { background: var(--pc-green-bg); color: var(--pc-green); }
+.mn { background: var(--pc-surface-3); color: var(--pc-text-3); }
+.md { background: var(--pc-red-bg); color: var(--pc-red); }
 
-/* ── Summary cell ──────────────────────── */
-.summary-cell {
-  font-size: 11px;
-  color: var(--pc-text-2);
-  line-height: 1.4;
-  max-width: 260px;
-}
+/* ── Summary cell ── */
+.sc { font-size: 11px; color: var(--pc-text-2); line-height: 1.4; max-width: 260px; }
 
-/* ── Stats bar tweaks ──────────────────── */
-.stats-bar .stat-val.small { font-size: 16px; }
+/* ── Stats bar ── */
+.st { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.si { padding: 10px 14px; background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); flex: 1; min-width: 100px; text-align: center; }
+.si .sl { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--pc-text-3); }
+.si .sv { font-size: 18px; font-weight: 700; font-family: var(--pc-mono); color: var(--pc-heading); margin-top: 2px; }
 
-/* ── Responsive ────────────────────────── */
-@media(max-width: 900px) {
-  .criteria-grid { grid-template-columns: 1fr; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading { text-align: center; padding: 60px 20px; color: var(--pc-text-2); font-size: 13px; }
+.spinner { width: 24px; height: 24px; border: 2px solid var(--pc-border); border-top-color: var(--pc-brand); border-radius: 50%; animation: spin .6s linear infinite; margin: 0 auto 12px; }
+
+@media (max-width: 768px) {
+  .cg { grid-template-columns: 1fr; }
   .table-wrap { overflow-x: auto; }
+  .si { min-width: 80px; }
 }
 </style>
 </head>
 <body>
 
 <nav class="topbar"><div class="topbar-inner">
-  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <a class="logo" href="/">PaperChase<span>.</span></a>
   <div class="topbar-nav">
     <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
     <a class="nav-link" href="/crypto-pulse/">Crypto Pulse</a>
     <a class="nav-link" href="/poly-watch/">Poly Watch</a>
-    <a class="nav-link active" href="/stock-pick/">Stock Pick</a>
+    <a class="nav-link" href="/stock-pick/" style="color:var(--pc-heading);font-weight:600">Stock Pick</a>
     <a class="nav-link" href="/trading-arena/">Trading Arena</a>
   </div>
   <div class="topbar-spacer"></div>
   <div class="topbar-auth">
-    <a class="btn-login" href="/login/">Log In</a>
-    <a class="btn-register" href="/register/">Register</a>
+    <a class="nav-link" href="/login/">Log In</a>
+    <a href="/register/" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none">Register</a>
   </div>
 </div></nav>
 
-<div class="wrap">
 <div class="container">
-
-  <div class="page-header">
-    <div class="page-title-wrap">
-      <div class="page-title">💰 Stock Pick</div>
-      <div class="page-sub"><span class="live"></span> Top 30 picks · AI-ranked · Mega-cap value + momentum scan</div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+    <div>
+      <h1 style="font-size:22px;font-weight:700;color:var(--pc-heading);letter-spacing:-0.03em;margin:0">💰 Stock Pick</h1>
+      <p style="font-size:12px;color:var(--pc-text-2);margin-top:1px">Top 30 picks · AI-ranked · Mega-cap value + momentum scan</p>
     </div>
     <div id="countdown-wrap" class="countdown-wrap"></div>
   </div>
 
-  <!-- ── Screening Criteria Box ─────────────── -->
-  <div class="criteria-box">
-    <div class="card-title" style="margin-bottom:14px">📋 Screening Criteria</div>
-    <div class="criteria-grid">
+  <!-- ── Criteria Box ── -->
+  <div class="cb">
+    <div style="font-size:11px;font-weight:700;color:var(--pc-heading);margin-bottom:14px">📋 Screening Criteria</div>
+    <div class="cg">
       <div>
-        <div class="criteria-group">
-          <h4>Hard Filters</h4>
-          <ul class="criteria-list">
-            <li>Market Cap &gt; $100B — large-cap only</li>
-            <li>P/E Ratio &lt; 50 — no excessive valuations</li>
-            <li>No MACD Death Cross — avoids bearish momentum</li>
-            <li>Universe: ~200 major US stocks (S&P 500 heavy hitters)</li>
-          </ul>
-        </div>
+        <h4>Hard Filters</h4>
+        <ul>
+          <li>Market Cap &gt; $100B — large-cap only</li>
+          <li>P/E Ratio &lt; 50 — no excessive valuations</li>
+          <li>No MACD Death Cross — avoids bearish momentum</li>
+          <li>Universe: ~200 major US stocks (S&P 500 heavy hitters)</li>
+        </ul>
       </div>
       <div>
-        <div class="criteria-group">
-          <h4>Score Weights</h4>
-          <div class="weight-bar">
-            <span class="weight-label">📈 Technical</span>
-            <div class="weight-track"><div class="weight-fill" style="width:40%"></div></div>
-            <span class="weight-pct">40%</span>
-          </div>
-          <div class="weight-bar">
-            <span class="weight-label">💎 Value</span>
-            <div class="weight-track"><div class="weight-fill" style="width:30%"></div></div>
-            <span class="weight-pct">30%</span>
-          </div>
-          <div class="weight-bar">
-            <span class="weight-label">🚀 Growth</span>
-            <div class="weight-track"><div class="weight-fill" style="width:20%"></div></div>
-            <span class="weight-pct">20%</span>
-          </div>
-          <div class="weight-bar">
-            <span class="weight-label">🛡️ Quality</span>
-            <div class="weight-track"><div class="weight-fill" style="width:10%"></div></div>
-            <span class="weight-pct">10%</span>
-          </div>
-          <div style="margin-top:10px;font-size:11px;color:var(--pc-text-3)">
-            RSI bell curve · MACD bonus · FCF yield · Revenue growth · Low debt
-          </div>
-        </div>
+        <h4>Score Weights</h4>
+        <div class="wb"><span class="wl">📈 Technical</span><div class="wt"><div class="wf" style="width:40%"></div></div><span class="wp">40%</span></div>
+        <div class="wb"><span class="wl">💎 Value</span><div class="wt"><div class="wf" style="width:30%"></div></div><span class="wp">30%</span></div>
+        <div class="wb"><span class="wl">🚀 Growth</span><div class="wt"><div class="wf" style="width:20%"></div></div><span class="wp">20%</span></div>
+        <div class="wb"><span class="wl">🛡️ Quality</span><div class="wt"><div class="wf" style="width:10%"></div></div><span class="wp">10%</span></div>
+        <div style="margin-top:10px;font-size:11px;color:var(--pc-text-3)">RSI bell curve · MACD bonus · FCF yield · Revenue growth · Low debt</div>
       </div>
     </div>
   </div>
 
-  <!-- ── Stats Bar ──────────────────────────── -->
-  <div class="stats-bar" id="statsBar">
-    <div class="stat-item"><div class="stat-lbl">Total Scan</div><div class="stat-val small" id="stat-total">—</div></div>
-    <div class="stat-item"><div class="stat-lbl">Passing</div><div class="stat-val small" id="stat-passing">—</div></div>
-    <div class="stat-item"><div class="stat-lbl">Top Picks</div><div class="stat-val small" id="stat-picks">30</div></div>
-    <div class="stat-item"><div class="stat-lbl">Updated</div><div class="stat-val small" id="stat-updated">—</div></div>
+  <!-- ── Stats Bar ── -->
+  <div class="st" id="statsBar">
+    <div class="si"><div class="sl">Total Scan</div><div class="sv" id="statTotal">—</div></div>
+    <div class="si"><div class="sl">Passing</div><div class="sv" id="statPassing">—</div></div>
+    <div class="si"><div class="sl">Top Picks</div><div class="sv">30</div></div>
+    <div class="si"><div class="sl">Updated</div><div class="sv" id="statUpdated">—</div></div>
   </div>
 
-  <!-- ── Picks Table ────────────────────────── -->
-  <div class="loading" id="table-loading"><div class="spinner"></div>Loading stock picks…</div>
-  <div id="table-wrap" style="display:none">
+  <!-- ── Picks Table ── -->
+  <div class="loading" id="tableLoading"><div class="spinner"></div>Loading stock picks…</div>
+  <div id="tableWrap" style="display:none">
     <div class="table-wrap">
       <table>
         <thead>
@@ -239,7 +142,7 @@
             <th style="width:220px">AI Analysis</th>
           </tr>
         </thead>
-        <tbody id="picks-body"></tbody>
+        <tbody id="picksBody"></tbody>
       </table>
     </div>
   </div>
@@ -247,97 +150,59 @@
   <div class="disclaimer" style="margin-top:16px"><strong>⚠️ Not Financial Advice.</strong> Algorithmic screening based on quantitative factors. Past performance does not guarantee future results.</div>
 
 </div>
-</div>
 
 <script>
-const DATA_URL = 'data/picks.json';
-let _cdTimer = 0;
+var DATA_URL = 'data/picks.json';
+var _cdTimer = 0;
+var $=function(id){return document.getElementById(id);};
+var FMT = {
+  p: function(v){return v==null?'—':v>=1?'$'+v.toLocaleString('en',{minimumFractionDigits:2,maximumFractionDigits:2}):'$'+v.toFixed(4);},
+  c: function(v){return v==null?'—':'$'+v.toFixed(1)+'B';},
+  pe: function(v){return v==null?'—':v.toFixed(1);},
+  r: function(v){return v==null?'—':v.toFixed(1);},
+};
+function sClass(s){return s==null?'sl':s>=50?'sh':s>=40?'sm':'sl';}
+function mClass(s){return s==='golden'?'mg':s==='death'?'md':'mn';}
+function mLbl(s){return s==='golden'?'Golden':s==='death'?'Death':'—';}
 
-function fmtPrice(v) {
-  if (v == null) return '—';
-  return v >= 1 ? '$' + v.toLocaleString('en', {minimumFractionDigits:2, maximumFractionDigits:2}) : '$' + v.toFixed(4);
-}
-function fmtCap(v) {
-  if (v == null) return '—';
-  return '$' + v.toFixed(1) + 'B';
-}
-function fmtPE(v) {
-  if (v == null) return '—';
-  return v.toFixed(1);
-}
-function fmtRSI(v) {
-  if (v == null) return '—';
-  return v.toFixed(1);
-}
-
-function scoreClass(s) {
-  if (s == null) return 'score-low';
-  if (s >= 50) return 'score-high';
-  if (s >= 40) return 'score-mid';
-  return 'score-low';
-}
-
-function macdClass(s) {
-  if (s === 'golden') return 'macd-golden';
-  if (s === 'death') return 'macd-death';
-  return 'macd-none';
-}
-function macdLabel(s) {
-  if (s === 'golden') return 'Golden';
-  if (s === 'death') return 'Death';
-  return '—';
-}
-
-function renderPicks(data) {
-  const picks = data.picks || [];
-  document.getElementById('table-loading').style.display = 'none';
-  document.getElementById('table-wrap').style.display = 'block';
-
-  document.getElementById('stat-total').textContent = data.total_screened || '—';
-  document.getElementById('stat-passing').textContent = data.passing || '—';
-  const updated = data.updated_at ? new Date(data.updated_at).toLocaleDateString('en-US', {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'}) : '—';
-  document.getElementById('stat-updated').textContent = updated;
-
-  let html = '';
-  picks.forEach((p, i) => {
-    const rank = i + 1;
-    const sClass = scoreClass(p.composite_score);
-    const mClass = macdClass(p.macd_signal);
-    const mLbl = macdLabel(p.macd_signal);
-    html += '<tr>' +
-      '<td style="text-align:center;font-weight:600;color:var(--pc-text-3);font-family:var(--pc-mono)">' + rank + '</td>' +
-      '<td><strong>' + p.symbol + '</strong></td>' +
-      '<td style="font-size:12px">' + (p.company_name || '—') + '</td>' +
-      '<td style="font-size:11px;color:var(--pc-text-2)">' + (p.sector || '—') + '</td>' +
-      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">' + fmtPrice(p.price) + '</td>' +
-      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">' + fmtCap(p.market_cap) + '</td>' +
-      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">' + fmtPE(p.pe_ratio) + '</td>' +
-      '<td style="text-align:center"><span class="macd-badge ' + mClass + '">' + mLbl + '</span></td>' +
-      '<td style="text-align:center;font-family:var(--pc-mono);font-size:12px">' + fmtRSI(p.rsi) + '</td>' +
-      '<td style="text-align:center"><span class="score-badge ' + sClass + '">' + (p.composite_score != null ? p.composite_score.toFixed(1) : '—') + '</span></td>' +
-      '<td><div class="summary-cell">' + (p.summary || '') + '</div></td>' +
-      '<td><div class="summary-cell" style="color:var(--pc-purple);font-size:11px">' + (p.ai_analysis || '') + '</div></td>' +
-      '</tr>';
+function renderPicks(data){
+  var picks=data.picks||[];
+  $('tableLoading').style.display='none';
+  $('tableWrap').style.display='block';
+  $('statTotal').textContent=data.total_screened||'—';
+  $('statPassing').textContent=data.passing||'—';
+  var u=data.updated_at?new Date(data.updated_at).toLocaleDateString('en-US',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}):'—';
+  $('statUpdated').textContent=u;
+  var html='';
+  picks.forEach(function(p,i){
+    var r=i+1,sc=sClass(p.composite_score),mc=mClass(p.macd_signal),ml=mLbl(p.macd_signal);
+    html+='<tr><td style="text-align:center;font-weight:600;color:var(--pc-text-3);font-family:var(--pc-mono)">'+r+'</td>'+
+      '<td><strong>'+p.symbol+'</strong></td><td style="font-size:12px">'+(p.company_name||'—')+'</td>'+
+      '<td style="font-size:11px;color:var(--pc-text-2)">'+(p.sector||'—')+'</td>'+
+      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">'+FMT.p(p.price)+'</td>'+
+      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">'+FMT.c(p.market_cap)+'</td>'+
+      '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">'+FMT.pe(p.pe_ratio)+'</td>'+
+      '<td style="text-align:center"><span class="mb '+mc+'">'+ml+'</span></td>'+
+      '<td style="text-align:center;font-family:var(--pc-mono);font-size:12px">'+FMT.r(p.rsi)+'</td>'+
+      '<td style="text-align:center"><span class="sb '+sc+'">'+(p.composite_score!=null?p.composite_score.toFixed(1):'—')+'</span></td>'+
+      '<td><div class="sc">'+(p.summary||'')+'</div></td>'+
+      '<td><div class="sc" style="color:var(--pc-purple)">'+(p.ai_analysis||'')+'</div></td></tr>';
   });
-  document.getElementById('picks-body').innerHTML = html;
+  $('picksBody').innerHTML=html;
 }
 
-async function loadData() {
-  try {
-    const resp = await fetch(DATA_URL + '?t=' + Date.now());
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const data = await resp.json();
+async function loadData(){
+  try{
+    var resp=await fetch(DATA_URL+'?t='+Date.now());
+    if(!resp.ok)throw new Error('HTTP '+resp.status);
+    var data=await resp.json();
     renderPicks(data);
-    const el = document.getElementById('countdown-wrap');
-    if (window.startCountdown) {
-      clearInterval(_cdTimer);
-      _cdTimer = startCountdown(el, 'Next Update', 'stock-pick', loadData);
-    }
-  } catch (e) {
-    document.getElementById('table-loading').innerHTML = '<div style="color:var(--pc-text-3);padding:60px;text-align:center">⚠️ Unable to load picks. <a href="javascript:location.reload()" style="color:var(--pc-purple)">Retry</a></div>';
+    var el=document.getElementById('countdown-wrap');
+    if(window.startCountdown){clearInterval(_cdTimer);_cdTimer=startCountdown(el,'Next Update','stock-pick',loadData);}
+  }catch(e){
+    $('tableLoading').innerHTML='<div style="color:var(--pc-text-3);padding:60px;text-align:center">⚠️ Unable to load picks. <a href="javascript:location.reload()" style="color:var(--pc-purple)">Retry</a></div>';
   }
 }
-
 loadData();
 </script>
 </body>
