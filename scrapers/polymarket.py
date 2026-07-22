@@ -2,7 +2,7 @@
 Polymarket public API — no key required.
 Fetches top markets by 24h volume, split into crypto and finance/other.
 """
-import requests, json
+import requests, json, re
 
 API = "https://gamma-api.polymarket.com/markets"
 HEADERS = {"User-Agent": "MarketSentinelBot/1.0"}
@@ -34,13 +34,21 @@ STOCK_KEYWORDS = [
 
 def _categorize(title: str) -> str:
     t = title.lower()
-    if any(kw in t for kw in SPORTS_EXCLUDE):
+    if _word_match(t, SPORTS_EXCLUDE):
         return "other"
-    if any(kw in t for kw in CRYPTO_KEYWORDS):
+    if _word_match(t, CRYPTO_KEYWORDS):
         return "crypto"
-    if any(kw in t for kw in STOCK_KEYWORDS):
+    if _word_match(t, STOCK_KEYWORDS):
         return "finance"
     return "other"
+
+
+def _word_match(text: str, keywords: list) -> bool:
+    """Match keywords with word boundaries to avoid false positives (e.g. 'war' != 'Warriors')."""
+    for kw in keywords:
+        if re.search(r'\b' + re.escape(kw) + r'\b', text):
+            return True
+    return False
 
 def fetch_polymarket(limit: int = 500) -> dict:
     crypto, finance, other = [], [], []
