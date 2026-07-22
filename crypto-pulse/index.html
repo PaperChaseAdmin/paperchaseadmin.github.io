@@ -270,11 +270,14 @@ function renderAll(d){
     $('priceList').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No price data</div>';
   })();
 
-  // ── CoinGecko Trending ──
+  // ── CoinGecko Trending w/ prices ──
   (function(){
-    var tg=cr.cg_trending||[],h='';
+    var tg=cr.cg_trending||[],prices=cr.prices||[],priceMap={};
+    prices.forEach(function(p){priceMap[p.symbol]=p;});
+    var h='';
     tg.slice(0,8).forEach(function(t){
-      h+='<div class="tr"><span class="ts">'+(t.symbol||'').toUpperCase()+'</span><span class="tn">'+(t.name||'')+'</span></div>';
+      var sym=(t.symbol||'').toUpperCase(),p=priceMap[t.symbol];
+      h+='<div class="tr"><span class="ts">'+sym+'</span><span class="tn">'+(t.name||'')+'</span>'+(p?('<span style="font-weight:600;font-family:var(--pc-mono);font-size:11px;color:'+FMT.cc(p.change_24h)+'">'+FMT.p(p.price_usd)+'</span>'):'')+'</div>';
     });
     $('trendingList').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No trending data</div>';
   })();
@@ -298,6 +301,8 @@ function renderAll(d){
       if(f.bullish_pct!=null){var bp=f.bullish_pct;h+='<div style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><span style="font-size:11px;color:var(--pc-green)">📈 '+bp+'%</span><div style="flex:1;max-width:100px;height:4px;background:var(--pc-surface-3);border-radius:2px;overflow:hidden"><div style="height:100%;width:'+bp+'%;background:var(--pc-green);border-radius:2px"></div></div><span style="font-size:11px;color:var(--pc-red)">📉 '+(100-bp)+'%</span></div>';}
       var fm=f.mentions||{},fa=Object.keys(fm).map(function(k){return{s:k,c:fm[k]};}).sort(function(a,b){return b.c-a.c;});
       if(fa.length){h+='<div class="fb">';fa.forEach(function(m){h+='<span class="fb-m">'+m.s+': '+m.c+'</span>';});h+='</div>';}
+      var tp=f.top_posts||[];
+      if(tp.length){h+='<div style="display:flex;flex-direction:column;gap:3px;margin-top:4px">';tp.slice(0,4).forEach(function(t){h+='<div style="padding:5px 8px;background:var(--pc-surface-2);border-radius:var(--pc-radius);font-size:10px;color:var(--pc-text);border-left:2px solid var(--pc-yellow);line-height:1.4">'+t.slice(0,100)+'</div>';});h+='</div>';}
     }
     $('fourchanSec').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No 4chan data</div>';
   })();
