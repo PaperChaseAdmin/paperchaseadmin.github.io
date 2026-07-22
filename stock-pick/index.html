@@ -331,7 +331,7 @@ async function loadData() {
     const el = document.getElementById('countdown-wrap');
     if (window.startCountdown) {
       clearInterval(_cdTimer);
-      _cdTimer = startCountdown(el, 'Next Pick', 'stock-pick', loadData);
+      _cdTimer = startCountdown(el, 'Next Update', 'stock-pick', loadData);
     }
   } catch (e) {
     document.getElementById('table-loading').innerHTML = '<div style="color:var(--pc-text-3);padding:60px;text-align:center">⚠️ Unable to load picks. <a href="javascript:location.reload()" style="color:var(--pc-purple)">Retry</a></div>';
