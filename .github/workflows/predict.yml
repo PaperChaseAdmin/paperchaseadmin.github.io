@@ -41,6 +41,7 @@ jobs:
           fi
 
       - name: Run Stock Pick screener (yfinance + AI analysis)
+        if: success() || failure()
         timeout-minutes: 10
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
