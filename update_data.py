@@ -162,6 +162,7 @@ def run():
     # ── Polymarket ──────────────────────────────────────────────────────
     print("  Fetching Polymarket...")
     poly = fetch_polymarket()
+    all_markets = poly.get("markets", [])
 
     # ── AI Summaries ────────────────────────────────────────────────────
     print("  Generating AI summaries...")
@@ -174,10 +175,10 @@ def run():
         return f"Top mentioned: {m}\nSubreddits:\n{s}"
 
     crypto_news_summary   = generate_summary("crypto news",               _news_text(crypto_news_out))
-    crypto_poly_summary   = generate_summary("crypto prediction markets",  _poly_text(poly["crypto"]))
+    crypto_poly_summary   = generate_summary("crypto prediction markets",  _poly_text(all_markets))
     crypto_reddit_summary = generate_summary("crypto Reddit discussion",   _reddit_text(crypto_mentions, crypto_reddit))
     stock_news_summary    = generate_summary("stock/finance news",         _news_text(stock_news_out))
-    stock_poly_summary    = generate_summary("finance prediction markets", _poly_text(poly["finance"]))
+    stock_poly_summary    = generate_summary("finance prediction markets", _poly_text(all_markets))
     stock_reddit_summary  = generate_summary("stock Reddit discussion",    _reddit_text(stock_mentions, stock_reddit))
 
     # ── AI Market Mood (refined with ALL data) ────────────────────────
@@ -202,7 +203,7 @@ def run():
                 "label": sentiment_label(crypto_avg_score),
                 "color": sentiment_color(crypto_avg_score),
             },
-            "polymarket":         poly["crypto"],
+            "polymarket":         all_markets,
             "polymarket_summary": crypto_poly_summary,
             "reddit":             crypto_reddit,
             "reddit_summary":     crypto_reddit_summary,
@@ -225,7 +226,7 @@ def run():
                 "label": sentiment_label(stock_avg_score),
                 "color": sentiment_color(stock_avg_score),
             },
-            "polymarket":         poly["finance"],
+            "polymarket":         all_markets,
             "polymarket_summary": stock_poly_summary,
             "reddit":             stock_reddit,
             "reddit_summary":     stock_reddit_summary,
