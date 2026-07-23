@@ -360,8 +360,8 @@ function renderChart(pf){
   const isUp=vals[vals.length-1]>=10000;
   const color=isUp?'#089981':'#f23645';
   if(chart) chart.destroy();
-  const canvas=$('chart');
-  chart=new Chart(canvas,{
+  var ctx=document.getElementById('mainChart').getContext('2d');
+  chart=new Chart(ctx,{
     type:'line',
     data:{
       labels:labels,
