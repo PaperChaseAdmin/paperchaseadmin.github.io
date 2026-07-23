@@ -58,7 +58,7 @@ def _call_openrouter(prompt: str, max_tokens: int = 300, model: str = None) -> s
     if not key:
         return None
 
-    models = model or ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-26b-a4b-it:free"]
+    models = model or ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-super-120b-a12b:free", "google/gemma-4-26b-a4b-it:free", "deepseek/deepseek-chat:free", "microsoft/phi-4:free"]
     if isinstance(models, str):
         models = [models]
 
