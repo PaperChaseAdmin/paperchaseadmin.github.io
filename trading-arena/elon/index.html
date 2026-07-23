@@ -3,142 +3,18 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Elon · AI Trading Bot · PaperChase</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Elon &middot; AI Trading Bot &middot; PaperChase</title>
 <meta name="description" content="Watch Elon, an AI-powered trading bot with a Aggressive momentum trading in tech, EV & AI strategy. Real portfolio, live trades, transparent AI decisions on PaperChase."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://paperchase.online/trading-arena/elon/"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="/assets/design-system.css">
-<style>
-/* Override old tv-* CSS vars used by bot-detail.js */
-:root {
-  --tv-bg: #0c0d12; --tv-surface: #13151c; --tv-surface-2: #1a1d27; --tv-surface-3: #22263b;
-  --tv-border: #1e2133; --tv-border-2: #2a2f45;
-  --tv-text: #9ba6b8; --tv-text-2: #6b7a8f; --tv-text-3: #4a5568;
-  --tv-heading: #e8edf5;
-  --tv-green: #00d4aa; --tv-red: #f05d5e; --tv-yellow: #f0b429; --tv-blue: #4d9aff; --tv-amber: #f0b429;
-  --tv-font: var(--pc-font); --tv-mono: var(--pc-mono);
-  --tv-radius: var(--pc-radius); --tv-radius-lg: var(--pc-radius-lg);
-}
-/* Bot detail overrides */
-.bot-crest{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:#fff;flex-shrink:0}
-.back-link{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:500;color:var(--pc-purple);text-decoration:none;margin-bottom:16px}
-.back-link:hover{text-decoration:underline}
-.hero-wrap{display:flex;align-items:center;gap:16px;margin-bottom:20px}
-.hero-text h1{font-size:24px;font-weight:700;color:var(--pc-heading);letter-spacing:-0.3px;margin-bottom:4px}
-.hero-text p{font-size:13px;color:var(--pc-text-2);line-height:1.5}
-.outlook-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;margin-bottom:16px;display:flex;align-items:center;gap:12px}
-.outlook-signal{font-size:13px;font-weight:700;padding:3px 10px;border-radius:4px}
-.profit{color:var(--pc-green)}.loss{color:var(--pc-red)}
-.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;background:var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden;margin-bottom:16px}
-.stat-cell{background:var(--pc-surface);padding:12px 14px;text-align:center}
-.stat-lbl{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:2px}
-.stat-val{font-size:16px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
-.prices-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.price-chip{background:var(--pc-surface-2);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:6px 10px;font-size:12px;display:flex;align-items:center;gap:6px}
-.price-chip .sym{font-weight:600;color:var(--pc-heading)}
-.price-chip .val{font-family:var(--pc-mono);color:var(--pc-text)}
-.section-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;margin-bottom:16px}
-.section-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--pc-border)}
-.position-row,.trade-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:6px;align-items:center;padding:8px 10px;border-radius:var(--pc-radius);font-size:12px;border:1px solid var(--pc-border);margin-bottom:4px;cursor:pointer;transition:background .1s}
-.position-row:hover,.trade-row:hover{background:var(--pc-surface-hover)}
-.position-row .sym,.trade-row .sym{font-weight:600;color:var(--pc-heading);font-family:var(--pc-mono)}
-.position-row .qty,.trade-row .action{font-size:11px;color:var(--pc-text-2)}
-.trade-row .reason{font-size:11px;color:var(--pc-text-2);grid-column:1/-1;padding-top:4px;border-top:1px solid var(--pc-border);margin-top:4px;display:none}
-.trade-row.expanded .reason{display:block}
-.position-detail{background:var(--pc-surface-2);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:10px 12px;margin-top:4px;font-size:12px;display:none}
-.position-row.expanded+.position-detail{display:block}
-.badge-buy{background:var(--pc-green-bg);color:var(--pc-green);padding:1px 6px;border-radius:2px;font-size:10px;font-weight:700}
-.badge-sell{background:var(--pc-red-bg);color:var(--pc-red);padding:1px 6px;border-radius:2px;font-size:10px;font-weight:700}
-.badge-hold{background:var(--pc-surface-3);color:var(--pc-text-3);padding:1px 6px;border-radius:2px;font-size:10px;font-weight:700}
-.follow-section{display:flex;flex-direction:column;gap:10px}
-.follow-step{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--pc-text);line-height:1.5}
-.follow-num{width:22px;height:22px;border-radius:50%;background:var(--pc-purple);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.follow-warning{background:var(--pc-yellow-bg);border:1px solid rgba(245,158,11,.2);border-radius:var(--pc-radius);padding:10px 12px;font-size:11px;color:var(--pc-text-2);line-height:1.5}
-#chart{height:300px}
-.favourite-bar{display:flex;justify-content:flex-end;padding:4px 0 8px}
-.fav-btn{background:none;border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:6px 12px;cursor:pointer;font-size:13px;color:var(--pc-text-2);transition:all .15s}
-.fav-btn:hover{background:var(--pc-surface-hover);color:var(--pc-heading)}
-
-/* ── Bot detail layout (from bot-detail.js) ── */
-.bot-hero{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:20px;margin-bottom:16px}
-.hero-row{display:flex;align-items:flex-start;gap:16px}
-.hero-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
-.hero-meta{flex:1}
-.hero-name{font-size:20px;font-weight:700;color:var(--pc-heading);margin-bottom:2px}
-.hero-bio{font-size:13px;color:var(--pc-text-2);margin-bottom:4px}
-.hero-strategy{font-size:11px;color:var(--pc-text-3);font-style:italic}
-.risk-meter{display:flex;align-items:center;gap:8px}
-.risk-track{flex:1;max-width:120px;height:6px;background:var(--pc-surface-3);border-radius:3px;overflow:hidden}
-.risk-fill{height:100%;border-radius:3px;transition:width .3s}
-.risk-text{font-size:10px;font-weight:700;color:var(--pc-text-3);letter-spacing:.05em}
-.metrics-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:1px;background:var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden;margin-top:16px}
-.metric{background:var(--pc-surface);padding:12px 14px;text-align:center}
-.metric-lbl{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:2px}
-.metric-val{font-size:15px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading)}
-
-/* ── Outlook ── */
-.outlook{background:var(--pc-surface-2);border:1px solid var(--pc-border);border-left:3px solid var(--bot-color,var(--pc-purple));border-radius:var(--pc-radius);padding:12px 14px;margin-bottom:16px;font-size:13px;color:var(--pc-text);line-height:1.5}
-
-/* ── Session card ── */
-.session-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;margin-bottom:16px;border-left:3px solid var(--bot-color,var(--pc-purple))}
-.session-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-.session-title{font-size:12px;font-weight:600;color:var(--pc-heading)}
-.session-time{font-size:10px;color:var(--pc-text-3)}
-.session-block{margin-bottom:12px}
-.session-block-lbl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px}
-.condition-chips{display:flex;gap:6px;flex-wrap:wrap}
-.chip{font-size:11px;padding:3px 8px;border-radius:4px;background:var(--pc-surface-3);color:var(--pc-text-2);border:1px solid var(--pc-border)}
-.chip.fear{background:var(--pc-red-bg);color:var(--pc-red);border-color:rgba(239,68,68,.2)}
-.chip.greed{background:var(--pc-green-bg);color:var(--pc-green);border-color:rgba(21,190,83,.2)}
-.chip.up{background:var(--pc-green-bg);color:var(--pc-green);border-color:rgba(21,190,83,.2)}
-.chip.down{background:var(--pc-red-bg);color:var(--pc-red);border-color:rgba(239,68,68,.2)}
-.session-news{list-style:none;padding:0;margin:0}
-.session-news li{font-size:12px;color:var(--pc-text-2);padding:3px 0;padding-left:12px;position:relative;line-height:1.4}
-.session-news li::before{content:'\2022';position:absolute;left:0;color:var(--pc-purple)}
-.decision-badge{font-size:11px;font-weight:600;padding:4px 10px;border-radius:4px;background:var(--pc-surface-3);color:var(--pc-text-2)}
-.decision-badge.traded{background:var(--pc-green-bg);color:var(--pc-green)}
-
-/* ── Specs card ── */
-.spec-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;margin-bottom:16px}
-.spec-card-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--pc-border)}
-.spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
-.spec-item{background:var(--pc-surface-2);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:10px 12px}
-.spec-label{font-size:10px;font-weight:600;color:var(--pc-text-3);margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
-.spec-val{font-size:14px;font-weight:700;color:var(--pc-heading)}
-.spec-sub{font-size:10px;color:var(--pc-text-3);margin-top:2px}
-.ticker-list{display:flex;flex-wrap:wrap;gap:4px}
-.ticker-chip{font-size:11px;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--pc-purple-bg);color:var(--pc-purple);text-decoration:none;transition:all .1s}
-.ticker-chip:hover{background:var(--pc-purple);color:#fff}
-
-/* ── Positions table ── */
-.table-wrap{overflow-x:auto;margin-bottom:16px}
-.table-wrap table{width:100%;border-collapse:collapse;font-size:12px;background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);overflow:hidden}
-.table-wrap th{background:var(--pc-surface-2);padding:8px 10px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);text-align:left;border-bottom:1px solid var(--pc-border)}
-.table-wrap td{padding:8px 10px;border-bottom:1px solid var(--pc-border);color:var(--pc-text)}
-.table-wrap tr:last-child td{border-bottom:none}
-.table-wrap tr:hover td{background:var(--pc-surface-hover)}
-.pos-expand td{background:var(--pc-surface-2)!important;padding:0!important}
-.pos-detail{padding:12px 14px}
-.pos-detail-row{display:flex;align-items:center;gap:8px;margin-bottom:4px}
-.pos-detail-row:last-child{margin-bottom:0}
-.pos-detail-lbl{font-size:10px;font-weight:600;color:var(--pc-text-3);min-width:80px;text-transform:uppercase;letter-spacing:.04em}
-.pos-detail-val{font-size:12px;font-weight:600;color:var(--pc-heading);font-family:var(--pc-mono)}
-.mono{font-family:var(--pc-mono)}
-.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--pc-green);margin-right:4px;animation:pulse-dot 2s ease-in-out infinite}
-@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.4}}
-
-/* ── Signal context badges ── */
-.signal-ctx{display:flex;gap:3px;flex-wrap:wrap;margin-top:4px}
-.ctx-item{font-size:9px;font-weight:600;padding:1px 5px;border-radius:2px;background:var(--pc-surface-3);color:var(--pc-text-3)}
-.ctx-up{background:var(--pc-green-bg);color:var(--pc-green)}
-.ctx-down{background:var(--pc-red-bg);color:var(--pc-red)}
-
-/* ── Empty state ── */
-.empty{text-align:center;padding:40px;color:var(--pc-text-3);font-size:13px}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="/assets/design-system.css"/>
+<script src="/assets/countdown.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
   const BOT_ID='elon',BOT_COLOR='#f97316',BOT_NAME='Elon';
@@ -146,13 +22,27 @@
   const BOT_RISK='HIGH',BOT_RISK_BAR=9;
   const BOT_MODEL='openrouter/qwen',BOT_FALLBACK='openrouter/kimi';
   const BOT_WATCHLIST=['TSLA', 'NVDA', 'META', 'PLTR', 'AMD', 'COIN', 'RBLX', 'SOFI', 'RIVN', 'MSFT', 'GOOGL', 'AMZN', 'AAPL', 'MSTR', 'IONQ'];
-  const BOT_MAX_POSITION=0.35,BOT_MAX_TRADES=3,BOT_MIN_CASH=500;
+  const BOT_MAX_POSITION=0.35,BOT_MAX_TRADES=8,BOT_MIN_CASH=500;
 </script>
+<style>
+.bot-hero{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.bot-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:#fff;flex-shrink:0}
+.bot-meta h1{font-size:20px;font-weight:700;color:var(--pc-heading);margin:0;line-height:1.2}
+.bot-meta .sub{font-size:11px;color:var(--pc-text-2);margin-top:1px}
+.outlook-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;margin-bottom:16px}
+.outlook-card .lbl{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px}
+.outlook-card .txt{font-size:12px;color:var(--pc-text);line-height:1.5}
+.specs{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:16px}
+.specs .si{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:10px 12px}
+.specs .si .sl{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--pc-text-3)}
+.specs .si .sv{font-size:14px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading);margin-top:1px}
+.st{font-size:12px;font-weight:700;color:var(--pc-heading);margin-bottom:10px;margin-top:16px}
+</style>
 </head>
 <body>
 
 <nav class="topbar"><div class="topbar-inner">
-  <a class="logo" href="/"><span class="logo-dot"></span>PaperChase</a>
+  <a class="logo" href="/">PaperChase<span>.</span></a>
   <div class="topbar-nav">
     <a class="nav-link" href="/market-sentinel/">Market Sentinel</a>
     <a class="nav-link" href="/crypto-pulse/">Crypto Pulse</a>
@@ -162,57 +52,31 @@
   </div>
   <div class="topbar-spacer"></div>
   <div class="topbar-auth">
-    <a class="btn-login" href="/login/">Log In</a>
-    <a class="btn-register" href="/register/">Register</a>
+    <a class="nav-link" href="/login/">Log In</a>
+    <a href="/register/" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none">Register</a>
   </div>
 </div></nav>
-<div class="wrap">
+
 <div class="container">
-  <a class="back-link" href="/trading-arena/">&#8592; All Bots</a>
-  <div class="favourite-bar">
-    <button id="favBtn" class="fav-btn" onclick="toggleFavourite()" style="display:none">
-      <span id="favIcon">&#9734;</span> <span id="favLabel">Add to Favourites</span>
-    </button>
-  </div>
-  <div id="loading" style="text-align:center;padding:60px;color:var(--pc-text-2)"><div class="spinner"></div>Loading Elon...</div>
+  <a href="/trading-arena/" style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--pc-text-3);text-decoration:none;margin-bottom:10px">&larr; Back to Arena</a>
+  <div id="loading" class="loading">Loading Elon...</div>
   <div id="app" style="display:none">
     <div id="hero"></div>
     <div id="outlook"></div>
-    <div id="countdown-wrap"></div>
-    <div id="prices-bar"></div>
+    <div id="countdown-wrap" class="countdown-wrap" style="margin-bottom:16px"></div>
+    <div id="prices-bar" class="specs"></div>
     <div id="last-session"></div>
-    <div id="specs"></div>
-    <div id="chart" style="height:300px"></div>
+    <div id="specs" class="specs"></div>
+    <div class="st">&#x1F4C8; Portfolio Performance</div>
+    <div id="chart" style="background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:16px;margin-bottom:16px"><canvas id="mainChart"></canvas></div>
+    <div class="st">&#x1F4E6; Current Positions</div>
     <div id="positions"></div>
+    <div class="st">&#x1F4CB; Trade History</div>
     <div id="trades"></div>
     <div id="follow"></div>
   </div>
-  <a href="/trading-arena/elon/records/" class="btn btn-ghost btn-sm" style="margin-top:12px">&#128196; Full Trade Records</a>
-</div>
+  <a href="/trading-arena/elon/records/" style="display:inline-block;margin-top:12px;font-size:12px;color:var(--pc-text-2)">&#x1F4C4; Full Trade Records</a>
 </div>
 
-<script src="/assets/bot-detail.js"></script>
-<script>
-async function checkFavStatus() {
-  if (!window.PaperChaseAuth) return;
-  var session = await PaperChaseAuth.getSession();
-  var btn = document.getElementById('favBtn');
-  if (!btn) return;
-  if (!session) { btn.style.display = 'none'; return; }
-  btn.style.display = '';
-  var isFav = await PaperChaseAuth.isFavourite(BOT_ID);
-  document.getElementById('favIcon').textContent = isFav ? '★' : '☆';
-  document.getElementById('favLabel').textContent = isFav ? 'Remove from Favourites' : 'Add to Favourites';
-}
-async function toggleFavourite() {
-  if (!window.PaperChaseAuth) return;
-  var session = await PaperChaseAuth.getSession();
-  if (!session) { alert('Please log in to add favourites.'); return; }
-  var isFav = await PaperChaseAuth.isFavourite(BOT_ID);
-  if (isFav) { await PaperChaseAuth.removeFavourite(BOT_ID); }
-  else { await PaperChaseAuth.addFavourite(BOT_ID, BOT_NAME, BOT_AVATAR); }
-  checkFavStatus();
-}
-checkFavStatus();
-</script>
+<script src="/trading-arena/assets/bot-detail.js"></script>
 </body></html>
