@@ -1,10 +1,11 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pkl
 
 # Environment
+# Python
+*.lock
+*.pkl
+*.py[cod]
+*.pyo
 .env
 .env.local
-*.lock
+__pycache__/
+node_modules/
