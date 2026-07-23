@@ -152,7 +152,7 @@ function kpi(bs){
 
 function risk(bs){
   var l={low:0,medium:0,high:0,'very high':0,'very low':0}, t=bs.length||1, cl={low:'var(--pc-green)',medium:'var(--pc-yellow)',high:'var(--pc-red)','very high':'#7c3aed','very low':'#22c55e'}, h='';
-  bs.forEach(function(b){var r=(b.risk_level||'medium').toLowerCase();if(l[r]!==undefined)l[r]++;});
+  bs.forEach(function(b){var r=(b.risk_level||'medium').toLowerCase().replace(/^med$/,'medium');if(l[r]!==undefined)l[r]++;});
   Object.keys(l).forEach(function(k){var p=Math.max((l[k]/t*100).toFixed(0),4);h+='<div class="rb-i"><div class="rb-b" style="height:'+p+'px;background:'+cl[k]+'"></div><span style="font-size:11px;font-weight:700;color:var(--pc-heading)">'+l[k]+'</span><span style="font-size:9px;color:var(--pc-text-3);text-transform:uppercase">'+k+'</span></div>';});
   $('riskInner').innerHTML=h;
 }

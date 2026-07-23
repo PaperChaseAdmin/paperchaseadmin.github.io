@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-22T21:34:00Z",
-  "last_prediction_date": "2026-07-22",
+  "updated_at": "2026-07-23T04:59:49Z",
+  "last_prediction_date": "2026-07-23",
   "last_settle_date": "2026-07-22",
   "tools": {
     "market_sentinel": {
@@ -629,6 +629,36 @@
           "correct": false,
           "settled": true,
           "change_pct": -0.01
+        },
+        {
+          "date": "2026-07-23",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 60,
+          "signal": "Mixed signals from macro data and market mood",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-23",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 70,
+          "signal": "Tech sector weakness and negative sentiment",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-23",
+          "market": "DOW",
+          "prediction": "up",
+          "confidence": 65,
+          "signal": "Stable performance and positive earnings",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -976,6 +1006,16 @@
           "prediction": "up",
           "confidence": 51,
           "signal": "Will China invades Taiwan before GTA VI? | Yes 50% / No 50% | Vol $1,919,050",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-07-23",
+          "market": "Will China invades Taiwan before GTA VI?",
+          "prediction": "up",
+          "confidence": 51,
+          "signal": "Will China invades Taiwan before GTA VI? | Yes 50% / No 50% | Vol $1,919,516",
           "actual": null,
           "correct": null,
           "settled": false
