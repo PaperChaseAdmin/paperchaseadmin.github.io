@@ -25,6 +25,7 @@
   const BOT_MAX_POSITION=0.45,BOT_MAX_TRADES=8,BOT_MIN_CASH=200;
 </script>
 <style>
+:root{--bot-color:var(--pc-brand); --tv-text-2:var(--pc-text-2); --tv-text-3:var(--pc-text-3)}
 .bot-hero{display:flex;align-items:center;gap:14px;margin-bottom:16px}
 .bot-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:#fff;flex-shrink:0}
 .bot-meta h1{font-size:20px;font-weight:700;color:var(--pc-heading);margin:0;line-height:1.2}
@@ -38,8 +39,8 @@
 .outlook-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:20px;margin-bottom:16px}
 .outlook-lbl{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px}
 .outlook{font-size:13px;color:var(--pc-text);line-height:1.6}
-.metrics-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-bottom:16px}
-.metric{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:14px 16px}
+.metrics-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+.metric{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:16px 18px}
 .metric-lbl{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--pc-text-3);margin-bottom:2px}
 .metric-val{font-size:18px;font-weight:700;font-family:var(--pc-mono);color:var(--pc-heading);margin-top:1px}
 .metric-val.profit{color:var(--pc-green)}
