@@ -144,10 +144,10 @@ var bots=[], mainChart=null, $=function(id){return document.getElementById(id);}
 function kpi(bs){
   var a=bs.filter(function(b){return b.status!=='stopped';}), v=bs.reduce(function(s,b){return s+(b.total_value||10000);},0),
       r=a.length?bs.reduce(function(s,b){return s+(b.total_return_pct||0);},0)/bs.length:0,
-      t=bs.reduce(function(s,b){return s+(b.total_trades||0);},0),
       p=bs.filter(function(b){return(b.total_return_pct||0)>0;}).length,
-      d=bs.reduce(function(s,b){return s+(b.today_pnl||0);},0);
-  $('kpiDash').innerHTML='<div class="ki"><div class="kl">Active</div><div class="kv">'+a.length+'/'+bs.length+'</div></div><div class="ki"><div class="kl">AUM</div><div class="kv">$'+v.toLocaleString('en',{maximumFractionDigits:0})+'</div></div><div class="ki"><div class="kl">Avg Return</div><div class="kv" style="color:'+(r>=0?'var(--pc-green)':'var(--pc-red)')+'">'+(r>=0?'+':'')+r.toFixed(2)+'%</div></div><div class="ki"><div class="kl">Trades</div><div class="kv">'+t+'</div></div><div class="ki"><div class="kl">In Profit</div><div class="kv" style="color:var(--pc-green)">'+p+'/'+bs.length+'</div></div><div class="ki"><div class="kl">Today P&L</div><div class="kv" style="color:'+(d>=0?'var(--pc-green)':'var(--pc-red)')+'">'+(d>=0?'+$':'-$')+Math.abs(d).toFixed(2)+'</div></div>';
+      d=bs.reduce(function(s,b){return s+(b.today_pnl||0);},0),
+      pos=bs.reduce(function(s,b){return s+Object.keys(b.positions||{}).length;},0);
+  $('kpiDash').innerHTML='<div class="ki"><div class="kl">Active</div><div class="kv">'+a.length+'/'+bs.length+'</div></div><div class="ki"><div class="kl">AUM</div><div class="kv">$'+v.toLocaleString('en',{maximumFractionDigits:0})+'</div></div><div class="ki"><div class="kl">Avg Return</div><div class="kv" style="color:'+(r>=0?'var(--pc-green)':'var(--pc-red)')+'">'+(r>=0?'+':'')+r.toFixed(2)+'%</div></div><div class="ki"><div class="kl">Positions</div><div class="kv">'+pos+'</div></div><div class="ki"><div class="kl">In Profit</div><div class="kv" style="color:var(--pc-green)">'+p+'/'+bs.length+'</div></div><div class="ki"><div class="kl">Today P&L</div><div class="kv" style="color:'+(d>=0?'var(--pc-green)':'var(--pc-red)')+'">'+(d>=0?'+$':'-$')+Math.abs(d).toFixed(2)+'</div></div>';
 }
 
 function risk(bs){
@@ -166,8 +166,10 @@ function perf(bs){
 function botsList(bs){
   var s=[].concat(bs).sort(function(a,b){return(b.total_return_pct||0)-(a.total_return_pct||0);}), h='', ac=['#533afd','#15be53','#f59e0b','#ef4444','#3b82f6','#8b5cf6','#ec4899','#14b8a6'];
   s.forEach(function(b,i){
-    var p=b.total_return_pct||0, slug=b.slug||b.bot_id||(b.display_name||'').toLowerCase().replace(/\s+/g,'-');
-    h+='<a class="br" href="'+BOT_PREFIX+slug+'/"><span class="rk">#'+(i+1)+'</span><div><div class="nm">'+(b.display_name||'Bot')+'</div><div class="st">'+(b.strategy||'AI Trader')+'</div></div><span class="pv">$'+((b.total_value||10000).toLocaleString('en',{maximumFractionDigits:0}))+'</span><span class="pn" style="color:'+(p>=0?'var(--pc-green)':'var(--pc-red)')+'">'+(p>=0?'+':'')+p.toFixed(2)+'%</span><span class="tr">'+(b.total_trades||0)+' trades</span><button class="fv" onclick="event.preventDefault();fv(\''+slug+'\')">☆</button></a>';
+  var p=b.total_return_pct||0, slug=b.slug||b.bot_id||(b.display_name||'').toLowerCase().replace(/\s+/g,'-');
+  var last=b.last_updated||'',ta='';
+  if(last){var d=new Date(last),n=new Date(),diff=Math.floor((n-d)/60000);ta=diff<1?'now':diff<60?diff+'m':Math.floor(diff/60)+'h';}
+  h+='<a class="br" href="'+BOT_PREFIX+slug+'/"><span class="rk">#'+(i+1)+'</span><div><div class="nm">'+(b.display_name||'Bot')+'</div><div class="st">'+(b.strategy||'AI Trader')+' · '+ta+'</div></div><span class="pv">$'+((b.total_value||10000).toLocaleString('en',{maximumFractionDigits:0}))+'</span><span class="pn" style="color:'+(p>=0?'var(--pc-green)':'var(--pc-red)')+'">'+(p>=0?'+':'')+p.toFixed(2)+'%</span><span class="tr">'+(Object.keys(b.positions||{}).length)+' pos</span><button class="fv" onclick="event.preventDefault();fv(\''+slug+'\')">☆</button></a>';
   });
   $('botList').innerHTML=h;
   $('botCount').textContent='· '+bs.length+' bots';
