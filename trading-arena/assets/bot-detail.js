@@ -377,7 +377,6 @@ function renderChart(pf){
     '<text x="'+(w-p)+'" y="'+(h+p*2-2)+'" font-size="9" fill="var(--pc-text-3)" text-anchor="end">'+labels[labels.length-1]+'</text>'+
   '</svg>';
 }
-}
 
 function renderTrades(trades){
   const el=$('trades');
