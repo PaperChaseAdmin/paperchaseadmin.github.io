@@ -184,7 +184,7 @@ function buildChart(hist,r){
   if(!mainChart)return;
   var lb={all:hist,'1m':hist.slice(-22),'1w':hist.slice(-5),'1d':hist.slice(-2)};
   var d=lb[r]||hist;
-  mainChart.data.labels=d.map(function(_,i){return'Day '+(i+1);});
+  mainChart.data.labels=d.map(function(v,i){var dt=new Date();dt.setDate(dt.getDate()-(hist.length-1-(hist.indexOf(v)>=0?hist.indexOf(v):i))*0.2);return(dt.getMonth()+1)+'/'+dt.getDate();});
   mainChart.data.datasets[0].data=d;
   mainChart.update();
 }
