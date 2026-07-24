@@ -1,6 +1,6 @@
 {
-  "cash": 2908.42,
-  "total_value": 10105.62,
+  "cash": 1042.67,
+  "total_value": 10102.24,
   "positions": {
     "TIPS": {
       "shares": 26867,
@@ -9,61 +9,66 @@
     },
     "GDX": {
       "shares": 3,
-      "current_price": 75.0,
+      "current_price": 75.55,
       "avg_cost": 76.6469
     },
     "DJP": {
       "shares": 15,
-      "current_price": 49.01,
+      "current_price": 48.41,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 103,
-      "current_price": 17.925,
+      "current_price": 17.92,
       "avg_cost": 16.0787
     },
     "TLT": {
       "shares": 23,
-      "current_price": 83.285,
+      "current_price": 83.4712,
       "avg_cost": 84.2931
     },
     "IEF": {
       "shares": 10,
       "avg_cost": 93.94,
-      "current_price": 92.972
+      "current_price": 93.095
     },
     "FXI": {
       "shares": 10,
       "avg_cost": 33.365,
-      "current_price": 34.555
+      "current_price": 34.54
     },
     "IAU": {
       "shares": 2,
       "avg_cost": 77.6,
-      "current_price": 76.07
+      "current_price": 76.5199
     },
     "GSG": {
       "shares": 30,
-      "current_price": 32.815,
+      "current_price": 32.76,
       "avg_cost": 32.0183
     },
     "VWO": {
       "shares": 1,
       "avg_cost": 59.74,
-      "current_price": 57.99
+      "current_price": 57.86
+    },
+    "GLD": {
+      "shares": 5,
+      "avg_cost": 373.15,
+      "current_price": 373.15
     }
   },
-  "total_return_pct": 1.06,
+  "total_return_pct": 1.02,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -3.38,
+  "today_pnl_pct": -0.03,
   "total_trades": 0,
   "today_start_value": 10105.62,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T13:39:39Z",
+  "last_updated": "2026-07-24T14:07:51Z",
   "last_session": {
-    "at": "2026-07-24T13:39:39Z",
+    "at": "2026-07-24T14:07:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -71,27 +76,27 @@
     "top_movers": [
       [
         "EEM",
-        -1.07
+        -1.56
       ],
       [
         "GSG",
-        -0.98
+        -1.15
+      ],
+      [
+        "DJP",
+        -0.8
       ],
       [
         "PDBC",
-        -0.75
-      ],
-      [
-        "FXI",
-        0.28
-      ],
-      [
-        "VWO",
-        -0.2
+        -0.78
       ],
       [
         "GDX",
-        -0.13
+        0.68
+      ],
+      [
+        "GLD",
+        0.46
       ]
     ],
     "news_read": [],
@@ -788,6 +793,10 @@
     {
       "timestamp": "2026-07-24T13:39:39Z",
       "value": 10105.62
+    },
+    {
+      "timestamp": "2026-07-24T14:07:51Z",
+      "value": 10102.24
     }
   ]
 }
