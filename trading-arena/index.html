@@ -74,10 +74,17 @@
 @keyframes spin { to { transform: rotate(360deg); } }
 
 @media (max-width: 768px) {
-  .br { grid-template-columns: 28px 1fr 80px 60px; }
+  .br { grid-template-columns: 28px 1fr 80px 60px; font-size: 11px; gap: 6px; padding: 10px 12px; }
   .br .st, .br .tr { display: none; }
-  .ki { min-width: 80px; }
+  .br .pv { font-size: 12px; }
+  .br .pn { font-size: 12px; }
+  .ki { min-width: 80px; padding: 8px 10px; }
+  .ki .kv { font-size: 14px; }
   .sg { grid-template-columns: 1fr; }
+  .cp { padding: 12px; }
+  .rb { height: 80px; gap: 6px; }
+  .tp .tp-i .tp-p { font-size: 11px; }
+  .bl { border-radius: var(--pc-radius); }
 }
 </style>
 </head>
