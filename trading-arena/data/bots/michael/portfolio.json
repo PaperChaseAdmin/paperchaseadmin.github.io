@@ -1,24 +1,29 @@
 {
-  "cash": 9230.55,
-  "total_value": 10510.05,
+  "cash": 8309.4,
+  "total_value": 10508.8,
   "positions": {
     "KHC": {
       "shares": 50,
       "avg_cost": 24.735,
-      "current_price": 25.59
+      "current_price": 25.565
+    },
+    "INTC": {
+      "shares": 10,
+      "avg_cost": 92.115,
+      "current_price": 92.115
     }
   },
-  "total_return_pct": 5.1,
+  "total_return_pct": 5.09,
   "total_return_usd": 0.0,
-  "today_pnl": 31.31,
-  "today_pnl_pct": 0.3,
+  "today_pnl": 30.06,
+  "today_pnl_pct": 0.29,
   "total_trades": 0,
   "today_start_value": 10478.74,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T18:32:37Z",
+  "last_updated": "2026-07-24T20:05:13Z",
   "last_session": {
-    "at": "2026-07-24T18:32:37Z",
+    "at": "2026-07-24T20:05:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,27 +31,27 @@
     "top_movers": [
       [
         "INTC",
-        -5.73
-      ],
-      [
-        "NUE",
-        3.08
+        -8.03
       ],
       [
         "STLD",
-        2.69
+        2.78
       ],
       [
-        "CMCSA",
-        2.3
+        "NUE",
+        2.68
       ],
       [
         "PFE",
-        -1.72
+        -1.9
       ],
       [
         "KR",
-        1.6
+        1.73
+      ],
+      [
+        "CMCSA",
+        1.57
       ]
     ],
     "news_read": [],
@@ -767,6 +772,10 @@
     {
       "timestamp": "2026-07-24T18:32:37Z",
       "value": 10510.05
+    },
+    {
+      "timestamp": "2026-07-24T20:05:13Z",
+      "value": 10508.8
     }
   ]
 }
