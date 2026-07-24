@@ -1,44 +1,39 @@
 {
-  "cash": 1581.05,
-  "total_value": 10174.88,
+  "cash": 2124.01,
+  "total_value": 10194.27,
   "positions": {
     "AAPL": {
       "shares": 11,
-      "current_price": 327.1789,
+      "current_price": 328.99,
       "avg_cost": 304.2155
     },
     "AVGO": {
       "shares": 9,
       "avg_cost": 372.72,
-      "current_price": 382.51
+      "current_price": 382.93
     },
     "NVDA": {
       "shares": 3,
       "avg_cost": 196.4301,
-      "current_price": 206.97
-    },
-    "AMAT": {
-      "shares": 1,
-      "avg_cost": 572.36,
-      "current_price": 549.99
+      "current_price": 207.56
     },
     "MSFT": {
       "shares": 1,
       "avg_cost": 387.71,
-      "current_price": 381.37
+      "current_price": 382.3213
     }
   },
-  "total_return_pct": 1.75,
+  "total_return_pct": 1.94,
   "total_return_usd": 0.0,
-  "today_pnl": -40.62,
-  "today_pnl_pct": -0.4,
+  "today_pnl": -21.23,
+  "today_pnl_pct": -0.21,
   "total_trades": 0,
   "today_start_value": 10215.5,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T14:06:01Z",
+  "last_updated": "2026-07-24T14:35:12Z",
   "last_session": {
-    "at": "2026-07-24T14:06:01Z",
+    "at": "2026-07-24T14:35:12Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +41,27 @@
     "top_movers": [
       [
         "MU",
-        -5.43
+        -6.07
+      ],
+      [
+        "AMAT",
+        -3.3
       ],
       [
         "INTC",
-        -3.37
+        -3.22
       ],
       [
-        "AMD",
-        -2.8
+        "LRCX",
+        -3.12
       ],
       [
         "CRM",
-        2.5
+        2.9
       ],
       [
-        "AVGO",
-        -2.48
-      ],
-      [
-        "QCOM",
-        -2.35
+        "AMD",
+        -2.56
       ]
     ],
     "news_read": [],
@@ -767,6 +762,10 @@
     {
       "timestamp": "2026-07-24T14:06:01Z",
       "value": 10174.88
+    },
+    {
+      "timestamp": "2026-07-24T14:35:12Z",
+      "value": 10194.27
     }
   ]
 }

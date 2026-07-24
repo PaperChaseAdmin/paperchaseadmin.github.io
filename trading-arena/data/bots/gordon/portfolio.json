@@ -1,39 +1,44 @@
 {
-  "cash": 5641.88,
-  "total_value": 9580.43,
+  "cash": 4672.53,
+  "total_value": 9599.35,
   "positions": {
     "F": {
       "shares": 100,
       "avg_cost": 13.855,
-      "current_price": 14.295
+      "current_price": 14.3399
     },
     "T": {
       "shares": 50,
       "avg_cost": 20.575,
-      "current_price": 23.585
+      "current_price": 23.6905
     },
     "GM": {
       "shares": 10,
       "avg_cost": 79.055,
-      "current_price": 82.6
+      "current_price": 83.065
     },
     "HPQ": {
       "shares": 20,
       "avg_cost": 25.0325,
-      "current_price": 25.19
+      "current_price": 25.415
+    },
+    "INTC": {
+      "shares": 10,
+      "avg_cost": 96.935,
+      "current_price": 96.935
     }
   },
-  "total_return_pct": -4.2,
+  "total_return_pct": -4.01,
   "total_return_usd": 0.0,
-  "today_pnl": 47.38,
-  "today_pnl_pct": 0.5,
+  "today_pnl": 66.3,
+  "today_pnl_pct": 0.7,
   "total_trades": 0,
   "today_start_value": 9533.05,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T14:17:39Z",
+  "last_updated": "2026-07-24T14:47:38Z",
   "last_session": {
-    "at": "2026-07-24T14:17:39Z",
+    "at": "2026-07-24T14:47:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "NOK",
-        -4.52
-      ],
-      [
-        "INTC",
-        -3.37
+        -5.29
       ],
       [
         "HPQ",
-        2.86
+        3.69
       ],
       [
         "T",
-        2.68
+        3.22
+      ],
+      [
+        "INTC",
+        -3.22
       ],
       [
         "GM",
-        2.42
+        3.01
       ],
       [
         "DIS",
-        1.98
+        2.24
       ]
     ],
     "news_read": [],
@@ -762,6 +767,10 @@
     {
       "timestamp": "2026-07-24T14:17:39Z",
       "value": 9580.43
+    },
+    {
+      "timestamp": "2026-07-24T14:47:38Z",
+      "value": 9599.35
     }
   ]
 }
