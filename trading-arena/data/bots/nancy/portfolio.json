@@ -1,39 +1,44 @@
 {
-  "cash": 1716.95,
-  "total_value": 10274.58,
+  "cash": 659.21,
+  "total_value": 10236.06,
   "positions": {
     "AAPL": {
       "shares": 11,
-      "current_price": 332.954,
+      "current_price": 332.33,
       "avg_cost": 304.2155
     },
     "AVGO": {
       "shares": 9,
       "avg_cost": 372.72,
-      "current_price": 384.62
+      "current_price": 381.76
     },
     "NVDA": {
       "shares": 5,
-      "current_price": 209.8598,
+      "current_price": 208.7001,
       "avg_cost": 201.5801
     },
     "MSFT": {
       "shares": 1,
       "avg_cost": 387.71,
-      "current_price": 384.255
+      "current_price": 384.14
+    },
+    "AMD": {
+      "shares": 2,
+      "avg_cost": 528.87,
+      "current_price": 528.87
     }
   },
-  "total_return_pct": 2.75,
+  "total_return_pct": 2.36,
   "total_return_usd": 0.0,
-  "today_pnl": 59.08,
-  "today_pnl_pct": 0.58,
+  "today_pnl": 20.56,
+  "today_pnl_pct": 0.2,
   "total_trades": 0,
   "today_start_value": 10215.5,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T16:55:57Z",
+  "last_updated": "2026-07-24T18:29:23Z",
   "last_session": {
-    "at": "2026-07-24T16:55:57Z",
+    "at": "2026-07-24T18:29:23Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "MU",
-        -5.52
+        -6.9
       ],
       [
         "INTC",
-        -4.32
+        -5.73
       ],
       [
         "CRM",
-        3.68
-      ],
-      [
-        "AAPL",
-        3.51
+        4.03
       ],
       [
         "AMAT",
-        -3.03
+        -3.82
       ],
       [
         "TSLA",
-        -2.92
+        -3.68
+      ],
+      [
+        "LRCX",
+        -3.61
       ]
     ],
     "news_read": [],
@@ -778,6 +783,10 @@
     {
       "timestamp": "2026-07-24T16:55:57Z",
       "value": 10274.58
+    },
+    {
+      "timestamp": "2026-07-24T18:29:23Z",
+      "value": 10236.06
     }
   ]
 }
