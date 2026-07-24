@@ -1,83 +1,78 @@
 {
-  "cash": 1953.49,
-  "total_value": 9506.68,
+  "cash": 2002.93,
+  "total_value": 9524.58,
   "positions": {
     "AAPL": {
       "shares": 10,
-      "current_price": 320.43,
+      "current_price": 324.46,
       "avg_cost": 302.355
     },
     "NVDA": {
       "shares": 16,
-      "current_price": 208.635,
+      "current_price": 207.225,
       "avg_cost": 201.4803
-    },
-    "RIVN": {
-      "shares": 3,
-      "current_price": 16.455,
-      "avg_cost": 17.35
     },
     "COIN": {
       "shares": 2,
       "avg_cost": 153.92,
-      "current_price": 162.51
+      "current_price": 159.47
     },
     "SOFI": {
       "shares": 6,
-      "current_price": 16.655,
+      "current_price": 16.72,
       "avg_cost": 17.3601
     },
     "AMD": {
       "shares": 1,
       "avg_cost": 512.98,
-      "current_price": 536.42
+      "current_price": 542.19
     }
   },
-  "total_return_pct": -4.93,
+  "total_return_pct": -4.75,
   "total_return_usd": 0.0,
-  "today_pnl": -33.23,
-  "today_pnl_pct": -0.35,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9539.91,
-  "today_date": "2026-07-23",
-  "last_action": "...",
-  "last_updated": "2026-07-23T18:31:53Z",
+  "today_start_value": 9524.58,
+  "today_date": "2026-07-24",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-24T13:31:52Z",
   "last_session": {
-    "at": "2026-07-23T18:31:53Z",
+    "at": "2026-07-24T13:31:52Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TSLA",
-        -14.13
+        "MSFT",
+        1.45
       ],
       [
-        "GOOGL",
-        -6.6
+        "COIN",
+        -0.95
+      ],
+      [
+        "AAPL",
+        0.85
+      ],
+      [
+        "PLTR",
+        0.75
       ],
       [
         "MSTR",
-        -5.6
+        -0.68
       ],
       [
-        "AMZN",
-        -4.42
-      ],
-      [
-        "RIVN",
-        -4.2
-      ],
-      [
-        "RBLX",
-        -4.05
+        "GOOGL",
+        0.6
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -764,6 +759,10 @@
     {
       "timestamp": "2026-07-23T18:31:53Z",
       "value": 9506.68
+    },
+    {
+      "timestamp": "2026-07-24T13:31:52Z",
+      "value": 9524.58
     }
   ]
 }

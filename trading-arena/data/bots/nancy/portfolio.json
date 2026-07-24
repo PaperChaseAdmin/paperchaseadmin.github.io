@@ -1,72 +1,77 @@
 {
-  "cash": 1033.5,
-  "total_value": 10249.57,
+  "cash": 645.79,
+  "total_value": 10215.49,
   "positions": {
     "AAPL": {
       "shares": 11,
-      "current_price": 320.43,
+      "current_price": 324.46,
       "avg_cost": 304.2155
     },
     "AVGO": {
       "shares": 9,
       "avg_cost": 372.72,
-      "current_price": 390.45
+      "current_price": 387.22
     },
     "NVDA": {
       "shares": 3,
       "avg_cost": 196.4301,
-      "current_price": 208.635
+      "current_price": 207.225
     },
     "MU": {
       "shares": 1,
       "avg_cost": 983.9486,
-      "current_price": 992.99
+      "current_price": 952.85
     },
     "AMAT": {
       "shares": 1,
       "avg_cost": 572.36,
-      "current_price": 558.4
+      "current_price": 553.43
+    },
+    "MSFT": {
+      "shares": 1,
+      "avg_cost": 387.71,
+      "current_price": 387.71
     }
   },
-  "total_return_pct": 2.5,
+  "total_return_pct": 2.15,
   "total_return_usd": 0.0,
-  "today_pnl": -34.92,
-  "today_pnl_pct": -0.34,
+  "today_pnl": -0.01,
+  "today_pnl_pct": -0.0,
   "total_trades": 0,
-  "today_start_value": 10284.49,
-  "today_date": "2026-07-23",
+  "today_start_value": 10215.5,
+  "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-23T18:34:31Z",
+  "last_updated": "2026-07-24T13:38:19Z",
   "last_session": {
-    "at": "2026-07-23T18:34:31Z",
+    "at": "2026-07-24T13:38:19Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TSLA",
-        -14.13
-      ],
-      [
-        "GOOGL",
-        -6.6
-      ],
-      [
-        "AMZN",
-        -4.42
+        "MU",
+        -3.72
       ],
       [
         "CRM",
-        -4.02
+        2.97
       ],
       [
-        "QCOM",
-        -3.63
+        "AVGO",
+        -1.5
       ],
       [
-        "MU",
-        3.52
+        "MSFT",
+        1.45
+      ],
+      [
+        "LRCX",
+        -1.35
+      ],
+      [
+        "AMAT",
+        -1.32
       ]
     ],
     "news_read": [],
@@ -759,6 +764,10 @@
     {
       "timestamp": "2026-07-23T18:34:31Z",
       "value": 10249.57
+    },
+    {
+      "timestamp": "2026-07-24T13:38:19Z",
+      "value": 10215.49
     }
   ]
 }

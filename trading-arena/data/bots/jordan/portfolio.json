@@ -1,62 +1,67 @@
 {
-  "cash": 2786.34,
-  "total_value": 9321.21,
+  "cash": 205.13,
+  "total_value": 9131.32,
   "positions": {
     "RIOT": {
       "shares": 190,
-      "current_price": 24.105,
+      "current_price": 23.41,
       "avg_cost": 23.8298
     },
     "AMC": {
       "shares": 6,
       "avg_cost": 1.8998,
-      "current_price": 2.195
+      "current_price": 2.305
     },
     "MARA": {
       "shares": 150,
       "avg_cost": 12.945,
-      "current_price": 12.945
+      "current_price": 12.555
+    },
+    "UPST": {
+      "shares": 91,
+      "avg_cost": 28.365,
+      "current_price": 28.365
     }
   },
-  "total_return_pct": -6.79,
+  "total_return_pct": -8.69,
   "total_return_usd": 0.0,
-  "today_pnl": 23.06,
-  "today_pnl_pct": 0.25,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9298.15,
-  "today_date": "2026-07-23",
+  "today_start_value": 9131.32,
+  "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-23T18:46:34Z",
+  "last_updated": "2026-07-24T13:45:17Z",
   "last_session": {
-    "at": "2026-07-23T18:46:34Z",
+    "at": "2026-07-24T13:45:17Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TSLA",
-        -14.13
-      ],
-      [
-        "MSTR",
-        -5.6
+        "RIOT",
+        -3.02
       ],
       [
         "UPST",
-        -4.43
+        2.68
+      ],
+      [
+        "HOOD",
+        -2.17
       ],
       [
         "MARA",
-        4.39
+        -1.8
       ],
       [
-        "RIVN",
-        -4.2
+        "AMC",
+        1.32
       ],
       [
-        "RBLX",
-        -4.05
+        "COIN",
+        -0.95
       ]
     ],
     "news_read": [],
@@ -749,6 +754,10 @@
     {
       "timestamp": "2026-07-23T18:46:34Z",
       "value": 9321.21
+    },
+    {
+      "timestamp": "2026-07-24T13:45:17Z",
+      "value": 9131.32
     }
   ]
 }

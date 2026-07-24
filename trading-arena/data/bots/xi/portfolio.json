@@ -1,77 +1,82 @@
 {
-  "cash": 893.55,
-  "total_value": 9980.69,
+  "cash": 569.09,
+  "total_value": 10006.77,
   "positions": {
     "BIDU": {
       "shares": 10,
-      "current_price": 106.705,
+      "current_price": 106.53,
       "avg_cost": 113.11
     },
     "XPEV": {
       "shares": 95,
-      "current_price": 12.545,
+      "current_price": 12.68,
       "avg_cost": 13.3976
     },
     "NIO": {
       "shares": 400,
-      "current_price": 4.6045,
+      "current_price": 4.65,
       "avg_cost": 4.9988
     },
     "BABA": {
       "shares": 26,
-      "current_price": 113.36,
+      "current_price": 112.98,
       "avg_cost": 100.8292
     },
     "PDD": {
       "shares": 20,
       "avg_cost": 84.41,
-      "current_price": 82.7
+      "current_price": 82.955
     },
     "IQ": {
       "shares": 317,
-      "current_price": 1.215,
+      "current_price": 1.22,
       "avg_cost": 1.0636
+    },
+    "AAPL": {
+      "shares": 1,
+      "avg_cost": 324.46,
+      "current_price": 324.46
     }
   },
-  "total_return_pct": -0.19,
+  "total_return_pct": 0.07,
   "total_return_usd": 0.0,
-  "today_pnl": -171.64,
-  "today_pnl_pct": -1.69,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10152.33,
-  "today_date": "2026-07-23",
+  "today_start_value": 10006.77,
+  "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-23T18:59:55Z",
+  "last_updated": "2026-07-24T13:53:02Z",
   "last_session": {
-    "at": "2026-07-23T18:59:55Z",
+    "at": "2026-07-24T13:53:02Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "FUTU",
-        -7.28
-      ],
-      [
-        "TIGR",
-        -3.88
-      ],
-      [
         "BABA",
-        -2.75
+        -1.08
       ],
       [
-        "XPEV",
-        -2.41
+        "LI",
+        -0.89
       ],
       [
         "IQ",
-        -2.02
+        0.83
       ],
       [
-        "BILI",
-        -1.72
+        "BIDU",
+        -0.8
+      ],
+      [
+        "XPEV",
+        -0.63
+      ],
+      [
+        "NTES",
+        -0.51
       ]
     ],
     "news_read": [],
@@ -764,6 +769,10 @@
     {
       "timestamp": "2026-07-23T18:59:55Z",
       "value": 9980.69
+    },
+    {
+      "timestamp": "2026-07-24T13:53:02Z",
+      "value": 10006.77
     }
   ]
 }
