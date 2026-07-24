@@ -1,39 +1,44 @@
 {
-  "cash": 1059.03,
-  "total_value": 8304.03,
+  "cash": 530.16,
+  "total_value": 8196.85,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 65.3202
+      "current_price": 64.705
     },
     "SOXL": {
       "shares": 23,
-      "current_price": 142.93,
+      "current_price": 139.8,
       "avg_cost": 167.0511
     },
     "SMCI": {
       "shares": 2,
-      "current_price": 31.01,
+      "current_price": 30.535,
       "avg_cost": 29.42
     },
     "NVDA": {
       "shares": 3,
       "avg_cost": 206.06,
-      "current_price": 209.8598
+      "current_price": 208.7001
+    },
+    "AMD": {
+      "shares": 1,
+      "avg_cost": 528.87,
+      "current_price": 528.87
     }
   },
-  "total_return_pct": -16.96,
+  "total_return_pct": -18.03,
   "total_return_usd": 0.0,
-  "today_pnl": -150.48,
-  "today_pnl_pct": -1.78,
+  "today_pnl": -257.66,
+  "today_pnl_pct": -3.05,
   "total_trades": 0,
   "today_start_value": 8454.51,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T17:25:19Z",
+  "last_updated": "2026-07-24T18:38:07Z",
   "last_session": {
-    "at": "2026-07-24T17:25:19Z",
+    "at": "2026-07-24T18:38:07Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "SOXL",
-        -9.28
+        -11.36
       ],
       [
         "RKLB",
-        -7.27
+        -7.66
       ],
       [
         "MRVL",
-        -5.63
+        -6.64
       ],
       [
         "ARM",
-        -5.16
+        -6.48
       ],
       [
         "TSLA",
-        -2.92
+        -3.68
       ],
       [
-        "IONQ",
-        -2.44
+        "AVGO",
+        -2.78
       ]
     ],
     "news_read": [],
@@ -778,6 +783,10 @@
     {
       "timestamp": "2026-07-24T17:25:19Z",
       "value": 8304.03
+    },
+    {
+      "timestamp": "2026-07-24T18:38:07Z",
+      "value": 8196.85
     }
   ]
 }
