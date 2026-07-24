@@ -296,7 +296,7 @@ function renderOutlook(pf){
   }
   // Fall back to last session AI analysis
   const s=pf.last_session;
-  if(s&&s.ai_analysis){
+  if(s&&s.ai_analysis&&s.ai_analysis!=='...'){
     $('outlook').innerHTML='<div class="outlook" style="--bot-color:'+BOT_COLOR+'"><div class="outlook-lbl">Latest Thinking</div>'+s.ai_analysis+'</div>';
     return;
   }
