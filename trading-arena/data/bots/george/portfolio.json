@@ -1,62 +1,67 @@
 {
-  "cash": 5338.22,
-  "total_value": 9912.51,
+  "cash": 905.36,
+  "total_value": 9911.64,
   "positions": {
     "UUP": {
       "shares": 1,
       "avg_cost": 28.3501,
-      "current_price": 28.56
+      "current_price": 28.5701
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 83.054,
-      "current_price": 83.24
+      "current_price": 83.285
     },
     "GLD": {
       "shares": 10,
       "avg_cost": 371.3329,
-      "current_price": 371.3329
+      "current_price": 371.1999
+    },
+    "SPY": {
+      "shares": 6,
+      "avg_cost": 738.81,
+      "current_price": 738.81
     }
   },
-  "total_return_pct": -0.87,
+  "total_return_pct": -0.88,
   "total_return_usd": 0.0,
-  "today_pnl": -17.83,
-  "today_pnl_pct": -0.18,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9930.34,
-  "today_date": "2026-07-23",
+  "today_start_value": 9911.64,
+  "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-23T18:37:42Z",
+  "last_updated": "2026-07-24T13:40:22Z",
   "last_session": {
-    "at": "2026-07-23T18:37:42Z",
+    "at": "2026-07-24T13:40:22Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TSLA",
-        -14.13
+        "BABA",
+        -1.08
       ],
       [
-        "AMZN",
-        -4.42
+        "EEM",
+        -1.07
+      ],
+      [
+        "NVDA",
+        -0.51
+      ],
+      [
+        "TSLA",
+        0.41
       ],
       [
         "META",
-        -3.37
-      ],
-      [
-        "BABA",
-        -2.75
-      ],
-      [
-        "GLD",
-        -2.08
+        -0.38
       ],
       [
         "QQQ",
-        -1.97
+        -0.28
       ]
     ],
     "news_read": [],
@@ -749,6 +754,10 @@
     {
       "timestamp": "2026-07-23T18:37:42Z",
       "value": 9912.51
+    },
+    {
+      "timestamp": "2026-07-24T13:40:22Z",
+      "value": 9911.64
     }
   ]
 }

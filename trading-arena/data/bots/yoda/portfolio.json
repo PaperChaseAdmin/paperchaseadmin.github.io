@@ -1,68 +1,73 @@
 {
-  "cash": 1204.81,
-  "total_value": 9834.42,
+  "cash": 1134.87,
+  "total_value": 9841.42,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 364.2565
+      "current_price": 365.06
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 691.37,
+      "current_price": 690.22,
       "avg_cost": 711.24
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 737.52
+      "current_price": 738.81
+    },
+    "VEA": {
+      "shares": 1,
+      "avg_cost": 69.945,
+      "current_price": 69.945
     }
   },
-  "total_return_pct": -1.66,
+  "total_return_pct": -1.59,
   "total_return_usd": 0.0,
-  "today_pnl": -21.54,
-  "today_pnl_pct": -0.22,
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9855.96,
-  "today_date": "2026-07-23",
-  "last_action": "Downward trend, the market has. Fearful, many traders are. Serene, I remain.",
-  "last_updated": "2026-07-23T18:54:37Z",
+  "today_start_value": 9841.41,
+  "today_date": "2026-07-24",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-24T13:48:56Z",
   "last_session": {
-    "at": "2026-07-23T18:54:37Z",
+    "at": "2026-07-24T13:48:56Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "GLD",
-        -2.08
+        "VNQ",
+        0.82
+      ],
+      [
+        "SCHD",
+        0.41
       ],
       [
         "QQQ",
-        -1.97
+        -0.28
       ],
       [
-        "IVV",
-        -1.32
+        "VEA",
+        0.24
       ],
       [
-        "VOO",
-        -1.32
+        "VIG",
+        0.23
       ],
       [
-        "SPY",
-        -1.31
-      ],
-      [
-        "SCHB",
-        -1.28
+        "VWO",
+        -0.2
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Index ETFs, the path to long-term success they are. Rebalance and deploy cash into undervalued ETFs, I will.",
-    "outlook": "Downward trend, the market has. Fearful, many traders are. Serene, I remain.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -749,6 +754,10 @@
     {
       "timestamp": "2026-07-23T18:54:37Z",
       "value": 9834.42
+    },
+    {
+      "timestamp": "2026-07-24T13:48:56Z",
+      "value": 9841.42
     }
   ]
 }
