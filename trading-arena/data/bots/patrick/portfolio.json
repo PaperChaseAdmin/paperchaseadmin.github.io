@@ -1,77 +1,82 @@
 {
-  "cash": 3448.02,
-  "total_value": 9966.94,
+  "cash": 3270.71,
+  "total_value": 10036.43,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 328.8792,
+      "current_price": 331.805,
       "avg_cost": 299.3344
     },
     "EL": {
       "shares": 12,
-      "current_price": 80.15,
+      "current_price": 80.99,
       "avg_cost": 84.8412
     },
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 139.89
+      "current_price": 142.36
     },
     "LVS": {
       "shares": 10,
       "avg_cost": 45.78,
-      "current_price": 46.03
+      "current_price": 46.21
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 373.3
+      "current_price": 378.5801
     },
     "MGM": {
       "shares": 10,
       "avg_cost": 45.745,
-      "current_price": 45.745
+      "current_price": 46.3
+    },
+    "RH": {
+      "shares": 1,
+      "avg_cost": 177.31,
+      "current_price": 177.31
     }
   },
-  "total_return_pct": -0.33,
+  "total_return_pct": 0.36,
   "total_return_usd": 0.0,
-  "today_pnl": 55.64,
-  "today_pnl_pct": 0.56,
+  "today_pnl": 125.13,
+  "today_pnl_pct": 1.26,
   "total_trades": 0,
   "today_start_value": 9911.3,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T15:17:42Z",
+  "last_updated": "2026-07-24T15:51:18Z",
   "last_session": {
-    "at": "2026-07-24T15:17:42Z",
+    "at": "2026-07-24T15:51:18Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "AAPL",
-        2.24
-      ],
-      [
-        "MGM",
-        1.68
-      ],
-      [
         "RH",
-        1.31
-      ],
-      [
-        "CPRI",
-        -1.29
-      ],
-      [
-        "AMZN",
-        -0.7
+        6.46
       ],
       [
         "LULU",
-        0.7
+        4.31
+      ],
+      [
+        "AAPL",
+        3.16
+      ],
+      [
+        "MGM",
+        2.93
+      ],
+      [
+        "NKE",
+        2.77
+      ],
+      [
+        "TPR",
+        2.32
       ]
     ],
     "news_read": [],
@@ -780,6 +785,10 @@
     {
       "timestamp": "2026-07-24T15:17:42Z",
       "value": 9966.94
+    },
+    {
+      "timestamp": "2026-07-24T15:51:18Z",
+      "value": 10036.43
     }
   ]
 }
