@@ -254,6 +254,19 @@ async function load(){
   renderFollowGuide();
   renderChart(pf);
   renderTrades(tr.trades||[], pf.positions);
+  // Auth gate: hide trade history if not logged in
+  if(typeof PaperChaseAuth!=='undefined'){
+    PaperChaseAuth.getSession().then(function(session){
+      if(!session){
+        var gate=document.getElementById('auth-gate');
+        var tradesEl=document.getElementById('trades');
+        if(gate&&tradesEl){
+          gate.style.display='block';
+          gate.innerHTML='<div class="card" style="text-align:center;padding:24px"><div style="font-size:24px;margin-bottom:8px">&#x1F512;</div><div style="font-size:13px;color:var(--pc-text-2);margin-bottom:12px">Sign in to view full trade history</div><a href="/login/?redirect='+encodeURIComponent(window.location.pathname)+'" style="display:inline-block;padding:8px 20px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none;font-size:13px;font-weight:600">Sign In</a></div>';
+        }
+      }
+    });
+  }
   $('loading').style.display='none';
   $('app').style.display='block';
   setTimeout(load,90000);
