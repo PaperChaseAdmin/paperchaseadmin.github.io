@@ -1,59 +1,64 @@
 {
-  "cash": 1830.81,
-  "total_value": 9802.32,
+  "cash": 1008.66,
+  "total_value": 9817.45,
   "positions": {
     "MO": {
       "shares": 27,
       "avg_cost": 72.2,
-      "current_price": 73.03
+      "current_price": 72.8175
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 261.05,
-      "current_price": 258.235
+      "current_price": 259.02
     },
     "O": {
       "shares": 10,
       "avg_cost": 63.841,
-      "current_price": 65.3344
+      "current_price": 65.585
     },
     "T": {
       "shares": 95,
       "avg_cost": 20.83,
-      "current_price": 23.9405
+      "current_price": 24.0201
     },
     "VZ": {
       "shares": 17,
-      "current_price": 45.78,
+      "current_price": 46.235,
       "avg_cost": 43.1162
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 194.3618
+      "current_price": 192.82
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 76.225
+      "current_price": 76.71
     },
     "IBM": {
       "shares": 1,
       "avg_cost": 212.365,
-      "current_price": 215.52
+      "current_price": 214.145
+    },
+    "KO": {
+      "shares": 10,
+      "avg_cost": 82.215,
+      "current_price": 82.215
     }
   },
-  "total_return_pct": -1.98,
+  "total_return_pct": -1.83,
   "total_return_usd": 0.0,
-  "today_pnl": 130.56,
-  "today_pnl_pct": 1.35,
+  "today_pnl": 145.69,
+  "today_pnl_pct": 1.51,
   "total_trades": 0,
   "today_start_value": 9671.76,
   "today_date": "2026-07-24",
-  "last_action": "Neutral sentiment suggests sticking to fundamentals. Focus on dividend-paying stocks with reliable yields and growth history.",
-  "last_updated": "2026-07-24T18:35:38Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-24T20:06:35Z",
   "last_session": {
-    "at": "2026-07-24T18:35:38Z",
+    "at": "2026-07-24T20:06:35Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,33 +66,33 @@
     "top_movers": [
       [
         "VZ",
-        4.46
+        5.53
       ],
       [
         "T",
-        4.31
+        4.68
       ],
       [
         "IBM",
-        4.27
+        3.56
+      ],
+      [
+        "WPC",
+        2.01
       ],
       [
         "BTI",
-        2.02
-      ],
-      [
-        "PM",
-        1.71
+        1.8
       ],
       [
         "OHI",
-        1.51
+        1.73
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "Current portfolio is well-positioned with dividend-paying stocks across sectors. No immediate trades needed as positions are performing within expectations. Maintain cash reserve and monitor for opportunities to reinvest dividends or add to existing positions with strong fundamentals.",
-    "outlook": "Neutral sentiment suggests sticking to fundamentals. Focus on dividend-paying stocks with reliable yields and growth history.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -802,6 +807,10 @@
     {
       "timestamp": "2026-07-24T18:35:38Z",
       "value": 9802.32
+    },
+    {
+      "timestamp": "2026-07-24T20:06:35Z",
+      "value": 9817.45
     }
   ]
 }
