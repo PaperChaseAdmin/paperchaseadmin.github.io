@@ -3,132 +3,80 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title data-i18n-title="page_title_register">Register | PaperChase</title>
-<meta name="description" content="Create a PaperChase account to track your favourite AI trading bots and personalise your experience."/>
-<meta name="robots" content="index, follow"/>
+<title>Register | PaperChase</title>
+<meta name="description" content="Create your PaperChase account."/>
 <link rel="canonical" href="https://paperchase.online/register/"/>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-W3V49QCMT0');
-</script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"/>
 <link rel="stylesheet" href="/assets/design-system.css"/>
-<script src="/assets/i18n.js"></script>
 <script src="/assets/supabase-client.js"></script>
 <style>
-.wrap{position:relative;z-index:1}
-.auth-container{max-width:420px;margin:60px auto;padding:0 20px}
-.auth-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius);padding:32px}
-.auth-title{font-size:22px;font-weight:700;color:var(--pc-heading);margin-bottom:4px}
-.auth-subtitle{font-size:13px;color:var(--pc-text-2);margin-bottom:24px}
+.auth-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.auth-card{background:var(--pc-surface);border:1px solid var(--pc-border);border-radius:var(--pc-radius-lg);padding:32px;width:100%;max-width:400px}
+.auth-title{font-size:22px;font-weight:700;color:var(--pc-heading);margin-bottom:4px;text-align:center}
+.auth-sub{font-size:13px;color:var(--pc-text-2);margin-bottom:24px;text-align:center}
 .auth-field{margin-bottom:16px}
-.auth-field label{display:block;font-size:12px;font-weight:600;color:var(--pc-text-2);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
-.auth-field input{width:100%;padding:10px 12px;border-radius:var(--pc-radius-sm);border:1px solid var(--pc-border);background:var(--pc-surface-2);color:var(--pc-heading);font-size:14px;font-family:var(--pc-font);outline:none;transition:border-color .15s}
+.auth-field label{display:block;font-size:11px;font-weight:600;color:var(--pc-text-2);margin-bottom:5px;text-transform:uppercase;letter-spacing:.05em}
+.auth-field input{width:100%;padding:10px 12px;border-radius:var(--pc-radius);border:1px solid var(--pc-border);background:var(--pc-surface-2);color:var(--pc-heading);font-size:14px;font-family:var(--pc-font);outline:none;transition:border-color .15s}
 .auth-field input:focus{border-color:var(--pc-brand)}
-.auth-btn{width:100%;padding:10px;border-radius:var(--pc-radius-sm);border:none;background:var(--pc-brand);color:var(--pc-text-inverse);font-size:14px;font-weight:600;font-family:var(--pc-font);cursor:pointer;transition:background .15s}
+.auth-btn{width:100%;padding:10px;border-radius:var(--pc-radius);border:none;background:var(--pc-brand);color:#fff;font-size:14px;font-weight:600;font-family:var(--pc-font);cursor:pointer;transition:background .15s}
 .auth-btn:hover{background:var(--pc-brand-hover)}
 .auth-links{text-align:center;margin-top:16px;font-size:13px;color:var(--pc-text-2)}
-.auth-links a{color:var(--pc-brand);text-decoration:none}
+.auth-links a{color:var(--pc-brand);text-decoration:none;font-weight:600}
 .auth-links a:hover{text-decoration:underline}
-.auth-error{background:var(--pc-red-bg);border:1px solid rgba(240,93,94,.25);color:var(--pc-red);padding:10px 14px;border-radius:var(--pc-radius-sm);margin-bottom:16px;font-size:13px;display:none}
-.password-hint{font-size:11px;color:var(--pc-text-3);margin-top:4px}
-@media(max-width:600px){
-  .auth-card{padding:20px}
-  .auth-container{margin:30px auto}
-}
+.auth-err{background:var(--pc-red-bg);border:1px solid rgba(197,75,75,.25);color:var(--pc-red);padding:10px 14px;border-radius:var(--pc-radius);margin-bottom:16px;font-size:13px;display:none}
+.auth-ok{background:var(--pc-green-bg);border:1px solid rgba(43,138,94,.25);color:var(--pc-green);padding:10px 14px;border-radius:var(--pc-radius);margin-bottom:16px;font-size:13px;display:none}
+@media(max-width:600px){.auth-card{padding:24px 20px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-
-<nav class="topbar"><div class="topbar-inner">
-  <a class="logo" href="/">PaperChase</a>
-  <div class="topbar-nav">
-    <a class="nav-link" href="/market-sentinel/" data-i18n="nav_sentinel">Market Sentinel</a>
-    <a class="nav-link" href="/crypto-pulse/" data-i18n="nav_cryptopulse">Crypto Pulse</a>
-    <a class="nav-link" href="/poly-watch/" data-i18n="nav_polymarket">Poly Watch</a>
-    <a class="nav-link" href="/stock-pick/">Stock Pick</a>
-    <a class="nav-link active" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
-  </div>
-  <div class="topbar-spacer"></div>
-  <div class="topbar-auth">
-    <a class="nav-link" href="/login/" data-i18n="nav_login">Log In</a>
-    <a class="nav-link active" href="/register/" style="background:var(--pc-purple);color:#fff;border-radius:var(--pc-radius);padding:6px 14px" data-i18n="nav_register">Register</a>
-  </div>
-</div></nav>
-
-<div class="auth-container">
+<div class="auth-wrap">
   <div class="auth-card">
-    <div class="auth-title" data-i18n="register_title">Create Account</div>
-    <div class="auth-subtitle" data-i18n="register_subtitle">Join PaperChase and track your favourite bots</div>
-    <div class="auth-error" id="registerError"></div>
-    <form id="registerForm" onsubmit="return handleRegister(event)">
+    <div class="auth-title">Create Account</div>
+    <div class="auth-sub">Join PaperChase and track your favourite bots</div>
+    <div class="auth-err" id="err"></div>
+    <div class="auth-ok" id="ok"></div>
+    <form id="f" onsubmit="return false;">
       <div class="auth-field">
-        <label for="registerName" data-i18n="register_name">Display Name</label>
-        <input type="text" id="registerName" name="display_name" placeholder="e.g. CryptoFan42" required/>
+        <label>Display Name</label>
+        <input type="text" id="name" placeholder="Your name" required/>
       </div>
       <div class="auth-field">
-        <label for="registerEmail" data-i18n="register_email">Email</label>
-        <input type="email" id="registerEmail" name="email" placeholder="you@example.com" required/>
+        <label>Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required/>
       </div>
       <div class="auth-field">
-        <label for="registerPassword" data-i18n="register_password">Password</label>
-        <input type="password" id="registerPassword" name="password" placeholder="Min. 8 characters" required minlength="8"/>
-        <div class="password-hint" data-i18n="register_password_hint">At least 8 characters</div>
+        <label>Password</label>
+        <input type="password" id="pw" placeholder="At least 6 characters" required minlength="6"/>
       </div>
-      <button type="submit" class="auth-btn" data-i18n="register_btn">Create Account</button>
+      <button class="auth-btn" onclick="handleSignup()">Create Account</button>
     </form>
     <div class="auth-links">
-      <span data-i18n="register_have_account">Already have an account?</span>
-      <a href="/login/" data-i18n="register_login_link">Sign In</a>
+      Already have an account? <a href="/login/">Sign In</a>
     </div>
   </div>
 </div>
-
 <script>
-async function handleRegister(e) {
-  e.preventDefault();
-  var name = document.getElementById('registerName').value;
-  var email = document.getElementById('registerEmail').value;
-  var password = document.getElementById('registerPassword').value;
-  var errEl = document.getElementById('registerError');
-  
-  if (!name || !email || !password) {
-    errEl.textContent = 'Please fill in all fields.';
-    errEl.style.display = 'block';
-    return false;
+async function handleSignup(){
+  const name=document.getElementById('name').value.trim();
+  const email=document.getElementById('email').value.trim();
+  const pw=document.getElementById('pw').value;
+  const err=document.getElementById('err');
+  const ok=document.getElementById('ok');
+  err.style.display='none'; ok.style.display='none';
+  if(!name||!email||!pw){ err.textContent='Please fill in all fields.'; err.style.display='block'; return; }
+  if(pw.length<6){ err.textContent='Password must be at least 6 characters.'; err.style.display='block'; return; }
+  const r=await window.PaperChaseAuth.signUp(email,pw,name);
+  if(r.error){
+    err.textContent=r.error.message||'Registration failed.';
+    err.style.display='block'; return;
   }
-  
-  if (password.length < 8) {
-    errEl.textContent = 'Password must be at least 8 characters.';
-    errEl.style.display = 'block';
-    return false;
-  }
-  
-  errEl.style.display = 'none';
-  
-  if (!window.PaperChaseAuth) {
-    errEl.textContent = 'Auth system not ready. Please try again.';
-    errEl.style.display = 'block';
-    return false;
-  }
-  
-  var result = await PaperChaseAuth.signUp(email, password, name);
-  if (result.error) {
-    errEl.textContent = result.error.message || 'Registration failed. Please try again.';
-    errEl.style.display = 'block';
-    return false;
-  }
-  
-  // Success — redirect to account
-  window.location.href = '/account/';
-  return false;
+  ok.textContent='Account created! Check your email for the confirmation link before signing in.';
+  ok.style.display='block';
+  document.getElementById('f').innerHTML='';
 }
-
+document.getElementById('name').focus();
 </script>
 </body>
 </html>
