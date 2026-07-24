@@ -290,7 +290,10 @@ function renderHero(pf){
 }
 
 function renderOutlook(pf){
-  if(!pf.last_action||pf.last_action.startsWith('Init')) return;
+  if(!pf.last_action||pf.last_action.startsWith('Init')){
+    $('outlook').innerHTML='<div class="outlook-lbl" style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px">Latest Thinking</div><div style="font-size:12px;color:var(--pc-text-3);padding:8px 0">Analysis unavailable</div>';
+    return;
+  }
   $('outlook').innerHTML='<div class="outlook" style="--bot-color:'+BOT_COLOR+'"><div class="outlook-lbl">Latest Thinking</div>'+pf.last_action+'</div>';
 }
 
