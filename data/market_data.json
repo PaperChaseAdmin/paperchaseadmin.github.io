@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T06:36:23Z",
+  "updated_at": "2026-07-24T06:49:29Z",
   "crypto": {
     "fear_greed": {
       "value": 28,
@@ -11,74 +11,74 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 65380,
+        "price_usd": 65404,
         "change_24h": -0.5,
-        "market_cap": 1311561449526,
-        "volume_24h": 25150549435
+        "market_cap": 1311847644102,
+        "volume_24h": 25235177066
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1882.98,
+        "price_usd": 1885.07,
         "change_24h": -2.1,
-        "market_cap": 227264659894,
-        "volume_24h": 9605187430
+        "market_cap": 227455980190,
+        "volume_24h": 9644536834
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 568.05,
+        "price_usd": 568.04,
         "change_24h": -0.4,
-        "market_cap": 75650876898,
-        "volume_24h": 471760566
+        "market_cap": 75632503983,
+        "volume_24h": 469967351
       },
       {
         "symbol": "XRP",
         "name": "XRP",
         "price_usd": 1.11,
         "change_24h": -2.3,
-        "market_cap": 69417682449,
-        "volume_24h": 1006270315
+        "market_cap": 69518031024,
+        "volume_24h": 1007117983
       },
       {
         "symbol": "SOL",
         "name": "Solana",
         "price_usd": 75.79,
         "change_24h": -2.3,
-        "market_cap": 44179256541,
-        "volume_24h": 1530197151
+        "market_cap": 44166064077,
+        "volume_24h": 1536247241
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.069262,
+        "price_usd": 0.069224,
         "change_24h": -4.6,
-        "market_cap": 10750008186,
-        "volume_24h": 752772757
+        "market_cap": 10742385913,
+        "volume_24h": 757950582
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
         "price_usd": 8.46,
         "change_24h": -1.6,
-        "market_cap": 6332431078,
-        "volume_24h": 155224082
+        "market_cap": 6328963465,
+        "volume_24h": 153327971
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.16663,
+        "price_usd": 0.166936,
         "change_24h": -4.4,
-        "market_cap": 6215593771,
-        "volume_24h": 227880056
+        "market_cap": 6226697875,
+        "volume_24h": 233018480
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.27,
+        "price_usd": 6.26,
         "change_24h": -4.3,
-        "market_cap": 2707856723,
-        "volume_24h": 159419204
+        "market_cap": 2702031706,
+        "volume_24h": 160961619
       }
     ],
     "top_mentioned": [],
@@ -228,19 +228,19 @@
     "reddit": [],
     "reddit_summary": {
       "outlook": "Mixed",
-      "summary": "We need to produce exactly one paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Must mention numbers and names where available. Max 80 words. Data given: \"Top mentioned: Subreddits:\" but no actual data? The user gave minimal data: \"Top mentioned: Subreddits:\" maybe they omitted actual list. We need to infer? Possibly they expect we just note that no specific data provided, but we must still produce a summary. However we need to mention numbers and names where available. Since data is empty, we can say no specific numbers? But we must mention numbers and names where available—if none, we can say none mentioned. But we still need to start with Bullish/Bearish/Mixed. Without data, we could say Mixed due to lack of clear sentiment. But we need to mention numbers and names where available—maybe we can say \"No specific numbers or names were provided in the data.\" That mentions that there are none. That satisfies mention numbers and names where available (i.e., none). Must be max 80 words. Let's craft ~30 words.\n\n\"Mixed: The Reddit discussion lacks concrete metrics or named assets, showing no clear bullish or bearish bias; participants express uncertainty without citing specific price movements, token names, or subscriber counts, resulting in an ambiguous overall sentiment.\"\n\nCount words: Mixed:(1) The2"
+      "summary": "Please provide the Reddit discussion data you are referring to. You have provided the headers (\"Top mentioned:\" and \"Subreddits:\"), but the actual data containing the names, numbers, and sentiment is missing. \n\nOnce you provide the data, I will immediately generate the single-paragraph summary following your exact constraints."
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "We need exactly one paragraph, start with Bullish:, Bearish:, or Mixed: followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to decide sentiment based on data: There are bearish items: Bitcoin holds near $65,000 as $800B AI selloff leaves crypto largely untouched (Bearish). BitMEX hit with 623 BTC lawsuit on day it announces shutdown (Bearish). Others neutral. So overall maybe Mixed? But we have two bearish, many neutral. Could be Bearish leaning. The instruction: start with Bullish:, Bearish:, or Mixed: followed by specific reasons. Choose one. Since we have bearish items, we could say Bearish: ... mention Bitcoin near $65k, $800B AI selloff, BitMEX lawsuit 623 BTC. Also note neutral items like Ripple RLUSD volume drop 25% (neutral), Mirae plans for Korbit, Goldman Sachs backing Crypto Clarity Act, etc. But we need to keep within 80 words. Let's craft ~70 words.\n\nParagraph: \"Bearish: Bitcoin lingered around $65,000 amid an $800 billion AI‑sector selloff that left crypto largely untouched, while BitMEX faced a 623 BTC lawsuit on the"
+      "summary": "We need exactly one paragraph, start with Bullish:, Bearish:, or Mixed: followed by specific reasons. Mention numbers and names where available. Max 80 words. Summarize overall market sentiment based on data.\n\nData includes: Ripple’s RLUSD gets two boosts as transfer volume drops 25% (Neutral) – neutral. Mirae plans to turn crypto exchange Korbit into something Korea hasn't seen before (Neutral). Bitcoin holds near $65,000 as $800 billion AI selloff leaves crypto largely untouched (Bearish). Here’s what happened in crypto today (Neutral). BitMEX hit with 623 BTC lawsuit on day it announces shutdown (Bearish). Dem senator calls GOP’s CLARITY ethics proposal a ‘piece of s---’: Politico (Neutral). Black Forest Labs Unveils FLUX 3 AI: Ditches Stills for Video—And Robot Hands (Neutral). Goldman Sachs CEO Breaks With Wall Street to Back Crypto Clarity Act (Neutral).\n\nThus we have two bearish items: Bitcoin near $65k amid $800B AI selloff (bearish), BitMEX lawsuit 623 BTC (bearish). Others neutral. So overall sentiment likely Mixed or Bearish? Since more neutral, but bearish items are specific. Could be Mixed"
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 137,
+      "active_threads": 136,
       "mentions": {
         "BTC": 17,
         "XRP": 13,
-        "ETH": 2
+        "SOL": 2
       },
       "bullish_hits": 78,
       "bearish_hits": 44,
@@ -258,51 +258,51 @@
       {
         "symbol": "DEXE",
         "name": "DeXe",
-        "rank": 265,
+        "rank": 262,
         "score": 0,
-        "change_24h": -41.08
+        "change_24h": -40.73
       },
       {
         "symbol": "PENGU",
         "name": "Pudgy Penguins",
         "rank": 113,
         "score": 1,
-        "change_24h": -2.99
+        "change_24h": -2.82
       },
       {
         "symbol": "ADI",
         "name": "ADI",
         "rank": 347,
         "score": 2,
-        "change_24h": 2.96
+        "change_24h": 2.93
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
         "rank": 1,
         "score": 3,
-        "change_24h": -0.51
+        "change_24h": -0.39
       },
       {
         "symbol": "ANSEM",
         "name": "The Black Bull",
         "rank": 345,
         "score": 4,
-        "change_24h": -12.24
+        "change_24h": -12.08
       },
       {
         "symbol": "JIMOTHY",
         "name": "Jimothy The Raccoon",
-        "rank": 755,
+        "rank": 770,
         "score": 5,
-        "change_24h": -27.59
+        "change_24h": -30.31
       },
       {
         "symbol": "ONDO",
         "name": "Ondo",
         "rank": 41,
         "score": 6,
-        "change_24h": -1.4
+        "change_24h": -0.92
       }
     ]
   },
@@ -385,34 +385,34 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Japan’s 40-Year Yield Rises 10 Basis Points on Inflation Fears",
+        "title": "Modi Seeks to Calm Anger as India Protests Widen",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-24/japan-s-40-year-yield-rises-10-basis-points-on-inflation-fears",
-        "published": "Fri, 24 Jul 2026 06:14:31 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-24/modi-seeks-to-calm-anger-in-rare-video-as-india-protests-widen",
+        "published": "Fri, 24 Jul 2026 01:01:32 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Global Bonds Are Reeling as Oil Surge Renews Inflation Threat",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-24/global-bonds-are-reeling-as-oil-surge-renews-inflation-threat",
+        "published": "Fri, 24 Jul 2026 04:33:23 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -0.333,
         "color": "red"
       },
       {
-        "title": "Stock Slide Extends on AI Jitters, Oil Near $100: Markets Wrap",
+        "title": "Dangote Prefers London Over Dubai for Listing of Cement Unit",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-23/stock-market-today-dow-s-p-live-updates",
-        "published": "Thu, 23 Jul 2026 22:06:16 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-24/dangote-prefers-london-over-dubai-for-listing-of-cement-unit",
+        "published": "Fri, 24 Jul 2026 04:50:14 GMT",
         "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Tanker Exits Red Sea Dark as Another China Ship Heads to Strait",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-24/tanker-exits-red-sea-dark-as-another-china-ship-heads-to-strait",
-        "published": "Fri, 24 Jul 2026 06:01:34 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "Trump's new global tariff draws rebukes from trade partners over forced-labor justification",
@@ -545,9 +545,9 @@
       }
     ],
     "news_sentiment": {
-      "score": -0.356,
-      "label": "Bearish",
-      "color": "red"
+      "score": -0.222,
+      "label": "Neutral",
+      "color": "yellow"
     },
     "polymarket": [
       {
@@ -613,16 +613,16 @@
     ],
     "polymarket_summary": {
       "outlook": "Mixed",
-      "summary": "We need exactly one paragraph, start with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to interpret overall market sentiment based on these prediction markets. The data includes various events: Fed rates no change 74% yes, increase 25bps 25% yes (so expectation of no change). Israel-Iran ceasefire continues through July 25: 77% yes. LeBron James play for Miami Heat 2026-27: 43% yes (uncertain). US invade Iran before 2027: 29% yes (low). Mojtaba Khamenei head of state Iran end 2026: 72% yes (high). Kharg Island no longer under Iranian control by July 31: 3% yes (very low). Mitch McConnell steps down before term ends: 42% yes. WTI Crude Oil hit $95 in July: 62% yes. Strait of Hormuz traffic returns to normal by Aug 31: 12% yes (low).\n\nOverall sentiment: seems optimistic about Fed holding rates, ceasefire, possible leadership continuity in Iran, oil price up to $95, but low expectations for geopolitical escalation (US invasion low, Strait normal low, Kh"
+      "summary": "We need to produce exactly ONE paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Must mention numbers and names where available. Max 80 words.\n\nWe need to interpret overall market sentiment based on the data. The data includes various prediction markets: Fed rates, Israel-Iran ceasefire, LeBron James, US invade Iran, Mojtaba, Kharg Island, McConnell, oil, etc. We need to decide if overall sentiment is bullish, bearish, or mixed. Likely mixed because some high probability events (Fed no change 74%, Israel ceasefire 77%, Mojtaba Khamenei head of state 72%) suggest stability, while others like Strait of Hormuz traffic normal only 12% (low), Kharg Island no longer under Iranian control 3% (very low), US invade Iran before 2027 29% low, etc. So overall maybe mixed: some optimism about stability, some concerns about geopolitical risk.\n\nWe need to start with either Bullish:, Bearish:, or Mixed:. Choose Mixed: then give reasons with numbers and names.\n\nWe must keep under 80 words. Let's craft ~70 words.\n\nParagraph: \"Mixed: Markets show confidence in monetary stability with a 74% chance of no Fed rate change after July 2026 and a 77"
     },
     "reddit": [],
     "reddit_summary": {
       "outlook": "Mixed",
-      "summary": "We need to produce exactly one paragraph, starting with Bullish:, Bearish:, or Mixed: followed by specific reasons, mention numbers and names where available. Max 80 words. Data: \"Top mentioned: Subreddits:\" but no actual data? The data seems incomplete. Possibly they expect we infer from given data? There's no actual mentions. Might need to say insufficient data? But must start with one of those labels. Could say Mixed: due to limited data showing equal mentions? But we have no numbers. Could say \"Bullish: ...\"? Might be risky. Perhaps we assume that top mentioned subreddits indicate bullish sentiment? Not sure.\n\nWe could say: Mixed: The discussion shows X mentions in r/wallstreetbets and Y in r/investing, indicating divided outlook. But we have no numbers. Could we infer that \"Top mentioned: Subreddits:\" means the top mentioned are subreddits, but no list. Could be a trick: we must note that data insufficient to determine sentiment, thus Mixed due to lack of clear signal. Provide reasons: lack of specific ticker mentions, no volume data. That's still a reason.\n\nWe need to mention numbers and names where available. We have none, so we can say \"No specific tickers or numeric sentiment scores were provided.\" That's a mention of absence.\n\nWord count: need <=80 words. Let's craft ~40 words"
+      "summary": "We need to produce exactly one paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Must mention numbers and names where available. Max 80 words. Data given: \"Top mentioned: Subreddits:\" but no actual data? The data seems incomplete. Possibly they expect us to infer that there is no data? But we must still produce a paragraph. Perhaps we assume that the data is missing, but we can still say something like \"No specific tickers mentioned\". However they said mention numbers and names where available. If none, we can say none. But we need to start with Bullish/Bearish/Mixed. Since no sentiment data, maybe Mixed. Provide reasons: limited discussion, no clear consensus. Mention that top mentioned subreddits list is empty? Actually \"Top mentioned: Subreddits:\" then nothing. So we can say no subreddits highlighted. Provide numbers: 0 mentions. Keep within 80 words.\n\nLet's craft: \"Mixed: The Reddit snapshot shows no specific tickers or subreddits highlighted, with zero top‑mentioned entries, indicating a lack of concentrated chatter; without clear bullish or bearish cues from user posts, sentiment remains ambiguous, reflecting uncertainty among retail investors.\" Count words.\n\nCount: Mixed:(1) The2 Reddit3 snapshot4 shows5 no6 specific7 tickers8 or9 sub"
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "We need exactly one paragraph, start with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to decide overall sentiment based on data: many bearish items: Japan 40-year yield up 10 bps (bearish), stock slide extends on AI jitters, oil near $100 (bearish), Trump's new global tariff draws rebukes (bearish), August stock-market slump is a myth (bearish). Bullish: Pentagon lowers official Iran war death toll (bullish), Intel's stock jumps as chipmaker rides AI boom to fastest revenue growth in almost 15 years (bullish). Neutral: tanker exits Red Sea dark, FDA advisers peptides.\n\nOverall more bearish items (5 bearish vs 2 bullish). So overall sentiment likely Bearish. Start with \"Bearish:\" then list reasons with numbers/names.\n\nWe need max 80 words. Let's craft ~70 words.\n\nParagraph: \"Bearish: Japan’s 40‑year yield climbed 10 basis points on inflation fears, stocks slid amid AI jitters with oil hovering near $100 a barrel, Trump’s new global tariff provoked rebukes from trade partners over forced‑labor justification, and the notion of an August market slump persists despite"
+      "summary": "We need exactly one paragraph, start with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to decide overall market sentiment based on data. Let's tally: Bullish items: Dangote prefers London over Dubai for listing of cement unit (Bullish), Pentagon lowers official Iran war death toll, omitting four killed this month (Bullish), Intel's stock jumps as chipmaker rides AI boom to fastest revenue growth in almost 15 years (Bullish). That's three bullish.\n\nBearish: Global Bonds Are Reeling as Oil Surge Renews Inflation Threat (Bearish), Trump's new global tariff draws rebukes from trade partners over forced-labor justification (Bearish), The August stock-market slump is a myth — so why does Wall Street keep repeating it? (Bearish). That's three bearish.\n\nNeutral: Modi Seeks to Calm Anger as India Protests Widen (Neutral), Most FDA advisers say peptides like BPC-157 and TB-500 should be made available in the U.S. Here’s what happens next. (Neutral). So equal bullish and bearish. So overall Mixed.\n\nWe need to start with \"Mixed:\" then reasons, mention numbers and names where available. Include"
     },
     "macro": [
       {
@@ -634,20 +634,20 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 101.38,
-        "change_24h": -0.05
+        "value": 101.37,
+        "change_24h": -0.06
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4038.6,
-        "change_24h": -0.2
+        "value": 4038.1,
+        "change_24h": -0.21
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 91.19,
-        "change_24h": -1.08
+        "value": 91.22,
+        "change_24h": -1.05
       }
     ],
     "most_active": [
@@ -714,24 +714,7 @@
     ],
     "google_trends": {
       "stocks": [],
-      "crypto": [
-        {
-          "keyword": "Bitcoin",
-          "interest_score": 76
-        },
-        {
-          "keyword": "Ethereum",
-          "interest_score": 13
-        },
-        {
-          "keyword": "Solana",
-          "interest_score": 9
-        },
-        {
-          "keyword": "crypto",
-          "interest_score": 51
-        }
-      ]
+      "crypto": []
     }
   },
   "portfolio": [
