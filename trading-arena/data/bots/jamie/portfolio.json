@@ -1,40 +1,35 @@
 {
-  "cash": 1602.35,
-  "total_value": 9999.15,
+  "cash": 1815.53,
+  "total_value": 9988.61,
   "positions": {
     "MA": {
       "shares": 3,
       "avg_cost": 529.705,
-      "current_price": 534.4
+      "current_price": 535.99
     },
     "GS": {
       "shares": 2,
       "avg_cost": 1033.175,
-      "current_price": 1070.27
+      "current_price": 1061.55
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 92.8573
+      "current_price": 93.04
     },
     "V": {
       "shares": 4,
       "avg_cost": 361.58,
-      "current_price": 352.93
+      "current_price": 354.395
     },
     "JPM": {
       "shares": 2,
       "avg_cost": 336.345,
-      "current_price": 349.94
-    },
-    "MS": {
-      "shares": 1,
-      "avg_cost": 221.56,
-      "current_price": 213.98
+      "current_price": 350.0371
     },
     "BAC": {
       "shares": 22,
-      "current_price": 61.79,
+      "current_price": 61.77,
       "avg_cost": 59.6595
     },
     "WFC": {
@@ -45,20 +40,20 @@
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 132.635
+      "current_price": 131.92
     }
   },
-  "total_return_pct": -0.01,
+  "total_return_pct": -0.11,
   "total_return_usd": 0.0,
-  "today_pnl": 9.68,
-  "today_pnl_pct": 0.1,
+  "today_pnl": -0.86,
+  "today_pnl_pct": -0.01,
   "total_trades": 0,
   "today_start_value": 9989.47,
   "today_date": "2026-07-24",
-  "last_action": "Stable",
-  "last_updated": "2026-07-24T14:12:35Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-24T14:44:05Z",
   "last_session": {
-    "at": "2026-07-24T14:12:35Z",
+    "at": "2026-07-24T14:44:05Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -66,33 +61,33 @@
     "top_movers": [
       [
         "AXP",
-        -5.67
+        -6.18
       ],
       [
         "PGR",
-        2.12
+        2.82
       ],
       [
         "TRV",
-        1.86
+        2.33
       ],
       [
-        "BAC",
-        0.82
+        "GS",
+        -1.28
       ],
       [
         "MA",
-        0.77
+        1.06
       ],
       [
-        "C",
-        0.59
+        "MS",
+        -0.93
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "No significant changes in market conditions or news to prompt trades. Maintaining current positions aligns with the strategy of stability and strong balance sheets.",
-    "outlook": "Stable",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -787,6 +782,10 @@
     {
       "timestamp": "2026-07-24T14:12:35Z",
       "value": 9999.15
+    },
+    {
+      "timestamp": "2026-07-24T14:44:05Z",
+      "value": 9988.61
     }
   ]
 }

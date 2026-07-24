@@ -1,6 +1,6 @@
 {
   "cash": 1042.67,
-  "total_value": 10102.24,
+  "total_value": 10099.41,
   "positions": {
     "TIPS": {
       "shares": 26867,
@@ -9,66 +9,66 @@
     },
     "GDX": {
       "shares": 3,
-      "current_price": 75.55,
+      "current_price": 75.3699,
       "avg_cost": 76.6469
     },
     "DJP": {
       "shares": 15,
-      "current_price": 48.41,
+      "current_price": 48.44,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 103,
-      "current_price": 17.92,
+      "current_price": 17.905,
       "avg_cost": 16.0787
     },
     "TLT": {
       "shares": 23,
-      "current_price": 83.4712,
+      "current_price": 83.5174,
       "avg_cost": 84.2931
     },
     "IEF": {
       "shares": 10,
       "avg_cost": 93.94,
-      "current_price": 93.095
+      "current_price": 93.1099
     },
     "FXI": {
       "shares": 10,
       "avg_cost": 33.365,
-      "current_price": 34.54
+      "current_price": 34.52
     },
     "IAU": {
       "shares": 2,
       "avg_cost": 77.6,
-      "current_price": 76.5199
+      "current_price": 76.469
     },
     "GSG": {
       "shares": 30,
-      "current_price": 32.76,
+      "current_price": 32.72,
       "avg_cost": 32.0183
     },
     "VWO": {
       "shares": 1,
       "avg_cost": 59.74,
-      "current_price": 57.86
+      "current_price": 57.83
     },
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 373.15
+      "current_price": 372.975
     }
   },
-  "total_return_pct": 1.02,
+  "total_return_pct": 0.99,
   "total_return_usd": 0.0,
-  "today_pnl": -3.38,
-  "today_pnl_pct": -0.03,
+  "today_pnl": -6.21,
+  "today_pnl_pct": -0.06,
   "total_trades": 0,
   "today_start_value": 10105.62,
   "today_date": "2026-07-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T14:07:51Z",
+  "last_action": "Mixed signals with some commodities underperforming, while gold and bonds show strength.",
+  "last_updated": "2026-07-24T14:38:43Z",
   "last_session": {
-    "at": "2026-07-24T14:07:51Z",
+    "at": "2026-07-24T14:38:43Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -76,33 +76,33 @@
     "top_movers": [
       [
         "EEM",
-        -1.56
+        -1.69
       ],
       [
         "GSG",
-        -1.15
-      ],
-      [
-        "DJP",
-        -0.8
+        -1.24
       ],
       [
         "PDBC",
-        -0.78
+        -0.86
+      ],
+      [
+        "DJP",
+        -0.74
       ],
       [
         "GDX",
-        0.68
+        0.51
       ],
       [
-        "GLD",
-        0.46
+        "VWO",
+        -0.46
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Rebalancing portfolio to reduce exposure to underperforming assets and increase positions in assets showing positive momentum and stability.",
+    "outlook": "Mixed signals with some commodities underperforming, while gold and bonds show strength.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -797,6 +797,10 @@
     {
       "timestamp": "2026-07-24T14:07:51Z",
       "value": 10102.24
+    },
+    {
+      "timestamp": "2026-07-24T14:38:43Z",
+      "value": 10099.41
     }
   ]
 }
