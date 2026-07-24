@@ -122,6 +122,33 @@ td{padding:8px 10px;border-bottom:1px solid var(--pc-border);font-size:12px;colo
 .risk-track{flex:1;height:4px;background:var(--pc-surface-3);border-radius:2px;overflow:hidden}
 .risk-fill{height:100%;border-radius:2px;transition:width.3s}
 .risk-text{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--pc-text-3)}
+
+/* ── Mobile ── */
+@media(max-width:768px){
+  .bot-hero{flex-direction:column;align-items:stretch;gap:10px}
+  .hero-row{flex-direction:column;gap:8px}
+  .hero-icon{font-size:32px;text-align:center}
+  .hero-name{font-size:18px;text-align:center}
+  .hero-bio,.hero-strategy{font-size:11px;text-align:center}
+  .risk-meter{justify-content:center}
+  .metrics-row{grid-template-columns:repeat(4,1fr);gap:6px}
+  .metric{padding:8px}
+  .metric-val{font-size:11px}
+  .metric-lbl{font-size:8px}
+  .countdown-wrap{justify-content:center}
+  .spec-grid{grid-template-columns:repeat(3,1fr)}
+  .spec-item{padding:8px 10px}
+  .spec-val{font-size:12px}
+  .spec-sub{font-size:10px}
+  .prices-bar{padding:12px}
+  .session-card{padding:14px}
+  .session-header{flex-direction:column;align-items:flex-start;gap:4px}
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .ticker-list{gap:3px}
+  .ticker-chip{font-size:10px;padding:2px 8px}
+  .st{font-size:13px}
+  #chart{padding:8px!important}
+}
 </style>
 </head>
 <body>
