@@ -1,34 +1,39 @@
 {
-  "cash": 3163.35,
-  "total_value": 9044.66,
+  "cash": 2949.85,
+  "total_value": 9010.99,
   "positions": {
     "AMC": {
       "shares": 6,
       "avg_cost": 1.8998,
-      "current_price": 2.315
+      "current_price": 2.295
     },
     "UPST": {
       "shares": 91,
       "avg_cost": 28.365,
-      "current_price": 28.015
+      "current_price": 27.5201
     },
     "AAPL": {
       "shares": 10,
-      "current_price": 331.805,
+      "current_price": 332.954,
       "avg_cost": 330.3421
+    },
+    "GME": {
+      "shares": 10,
+      "avg_cost": 21.35,
+      "current_price": 21.35
     }
   },
-  "total_return_pct": -9.55,
+  "total_return_pct": -9.89,
   "total_return_usd": 0.0,
-  "today_pnl": -86.66,
-  "today_pnl_pct": -0.95,
+  "today_pnl": -120.33,
+  "today_pnl_pct": -1.32,
   "total_trades": 0,
   "today_start_value": 9131.32,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T15:50:19Z",
+  "last_updated": "2026-07-24T17:29:26Z",
   "last_session": {
-    "at": "2026-07-24T15:50:19Z",
+    "at": "2026-07-24T17:29:26Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +41,27 @@
     "top_movers": [
       [
         "HOOD",
-        -6.01
+        -6.53
       ],
       [
         "RIVN",
-        -3.01
-      ],
-      [
-        "TSLA",
-        -2.86
-      ],
-      [
-        "RBLX",
-        2.27
+        -3.61
       ],
       [
         "RIOT",
-        -2.07
+        -3.56
+      ],
+      [
+        "TSLA",
+        -2.92
       ],
       [
         "COIN",
-        -2.02
+        -2.41
+      ],
+      [
+        "MARA",
+        -2.27
       ]
     ],
     "news_read": [],
@@ -769,6 +774,10 @@
     {
       "timestamp": "2026-07-24T15:50:19Z",
       "value": 9044.66
+    },
+    {
+      "timestamp": "2026-07-24T17:29:26Z",
+      "value": 9010.99
     }
   ]
 }

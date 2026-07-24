@@ -1,82 +1,87 @@
 {
-  "cash": 986.85,
-  "total_value": 9951.62,
+  "cash": 511.63,
+  "total_value": 9938.41,
   "positions": {
     "BIDU": {
       "shares": 10,
-      "current_price": 106.52,
+      "current_price": 106.215,
       "avg_cost": 113.11
     },
     "XPEV": {
       "shares": 95,
-      "current_price": 12.555,
+      "current_price": 12.4915,
       "avg_cost": 13.3976
     },
     "NIO": {
       "shares": 300,
-      "current_price": 4.5315,
+      "current_price": 4.535,
       "avg_cost": 4.9988
     },
     "BABA": {
       "shares": 26,
-      "current_price": 113.08,
+      "current_price": 112.94,
       "avg_cost": 100.8292
     },
     "PDD": {
       "shares": 20,
       "avg_cost": 84.41,
-      "current_price": 82.82
+      "current_price": 82.66
     },
     "IQ": {
       "shares": 317,
-      "current_price": 1.222,
+      "current_price": 1.2246,
       "avg_cost": 1.0636
     },
     "JD": {
       "shares": 12,
-      "current_price": 30.295,
+      "current_price": 30.365,
       "avg_cost": 30.2692
+    },
+    "LI": {
+      "shares": 39,
+      "avg_cost": 12.185,
+      "current_price": 12.185
     }
   },
-  "total_return_pct": -0.48,
+  "total_return_pct": -0.62,
   "total_return_usd": 0.0,
-  "today_pnl": -55.15,
-  "today_pnl_pct": -0.55,
+  "today_pnl": -68.36,
+  "today_pnl_pct": -0.68,
   "total_trades": 0,
   "today_start_value": 10006.77,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T15:56:31Z",
+  "last_updated": "2026-07-24T17:40:49Z",
   "last_session": {
-    "at": "2026-07-24T15:56:31Z",
+    "at": "2026-07-24T17:40:49Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TIGR",
-        -2.36
-      ],
-      [
         "NIO",
         -2.26
       ],
       [
+        "TIGR",
+        -2.26
+      ],
+      [
         "XPEV",
-        -1.57
+        -2.1
       ],
       [
         "LI",
-        -1.37
-      ],
-      [
-        "TME",
-        1.14
+        -1.5
       ],
       [
         "IQ",
-        0.99
+        1.21
+      ],
+      [
+        "BIDU",
+        -1.09
       ]
     ],
     "news_read": [],
@@ -789,6 +794,10 @@
     {
       "timestamp": "2026-07-24T15:56:31Z",
       "value": 9951.62
+    },
+    {
+      "timestamp": "2026-07-24T17:40:49Z",
+      "value": 9938.41
     }
   ]
 }

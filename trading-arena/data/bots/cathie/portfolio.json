@@ -1,66 +1,71 @@
 {
-  "cash": 771.78,
-  "total_value": 7569.55,
+  "cash": 581.81,
+  "total_value": 7535.54,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 310.4366
+      "current_price": 310.2325
     },
     "CRSP": {
       "shares": 19,
-      "current_price": 46.8,
+      "current_price": 46.87,
       "avg_cost": 59.7643
     },
     "NTLA": {
       "shares": 15,
-      "current_price": 10.98,
+      "current_price": 10.95,
       "avg_cost": 16.7933
     },
     "RKLB": {
       "shares": 34,
-      "current_price": 65.93,
+      "current_price": 64.87,
       "avg_cost": 93.8949
     },
     "BEAM": {
       "shares": 22,
-      "current_price": 25.3,
+      "current_price": 25.6,
       "avg_cost": 37.0188
     },
     "RXRX": {
       "shares": 100,
       "avg_cost": 4.045,
-      "current_price": 3.005
+      "current_price": 2.9999
     },
     "PACB": {
       "shares": 351,
-      "current_price": 1.345,
+      "current_price": 1.335,
       "avg_cost": 1.4659
+    },
+    "HOOD": {
+      "shares": 2,
+      "avg_cost": 94.985,
+      "current_price": 94.985
     }
   },
-  "total_return_pct": -24.3,
+  "total_return_pct": -24.64,
   "total_return_usd": 0.0,
-  "today_pnl": -265.84,
-  "today_pnl_pct": -3.39,
+  "today_pnl": -299.85,
+  "today_pnl_pct": -3.83,
   "total_trades": 0,
   "today_start_value": 7835.39,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T15:40:13Z",
+  "last_updated": "2026-07-24T17:18:03Z",
   "last_session": {
-    "at": "2026-07-24T15:40:13Z",
+    "at": "2026-07-24T17:18:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "HOOD",
-        -6.01
+        "RKLB",
+        -7.27
       ],
       [
-        "RKLB",
-        -5.62
+        "HOOD",
+        -6.53
       ],
       [
         "PATH",
@@ -68,15 +73,15 @@
       ],
       [
         "PACB",
-        -4.29
-      ],
-      [
-        "TSLA",
-        -2.86
+        -4.3
       ],
       [
         "TWLO",
-        2.56
+        3.37
+      ],
+      [
+        "TSLA",
+        -2.92
       ]
     ],
     "news_read": [],
@@ -789,6 +794,10 @@
     {
       "timestamp": "2026-07-24T15:40:13Z",
       "value": 7569.55
+    },
+    {
+      "timestamp": "2026-07-24T17:18:03Z",
+      "value": 7535.54
     }
   ]
 }

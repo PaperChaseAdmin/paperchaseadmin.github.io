@@ -1,6 +1,6 @@
 {
   "cash": 1024.18,
-  "total_value": 10103.93,
+  "total_value": 10087.46,
   "positions": {
     "TIPS": {
       "shares": 26867,
@@ -9,38 +9,38 @@
     },
     "GDX": {
       "shares": 4,
-      "current_price": 76.3,
+      "current_price": 75.64,
       "avg_cost": 76.5602
     },
     "DJP": {
       "shares": 15,
-      "current_price": 48.59,
+      "current_price": 48.3001,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 103,
-      "current_price": 17.845,
+      "current_price": 17.8465,
       "avg_cost": 16.0787
     },
     "TLT": {
       "shares": 23,
-      "current_price": 83.615,
+      "current_price": 83.46,
       "avg_cost": 84.2931
     },
     "IEF": {
       "shares": 10,
       "avg_cost": 93.94,
-      "current_price": 93.195
+      "current_price": 93.1291
     },
     "FXI": {
       "shares": 10,
       "avg_cost": 33.365,
-      "current_price": 34.725
+      "current_price": 34.675
     },
     "IAU": {
       "shares": 2,
       "avg_cost": 77.6,
-      "current_price": 76.625
+      "current_price": 76.4399
     },
     "GSG": {
       "shares": 30,
@@ -50,20 +50,20 @@
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 373.86
+      "current_price": 372.95
     }
   },
-  "total_return_pct": 1.04,
+  "total_return_pct": 0.87,
   "total_return_usd": 0.0,
-  "today_pnl": -1.69,
-  "today_pnl_pct": -0.02,
+  "today_pnl": -18.16,
+  "today_pnl_pct": -0.18,
   "total_trades": 0,
   "today_start_value": 10105.62,
   "today_date": "2026-07-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T15:40:58Z",
+  "last_action": "Macro environment shows mixed signals: commodity prices are under pressure today while bonds show modest strength, suggesting investors may be balancing inflation concerns with a flight to safety. The",
+  "last_updated": "2026-07-24T17:18:27Z",
   "last_session": {
-    "at": "2026-07-24T15:40:58Z",
+    "at": "2026-07-24T17:18:27Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -71,33 +71,33 @@
     "top_movers": [
       [
         "GSG",
-        -1.72
-      ],
-      [
-        "GDX",
-        1.69
-      ],
-      [
-        "PDBC",
-        -1.22
+        -1.69
       ],
       [
         "EEM",
-        -1.03
+        -1.38
+      ],
+      [
+        "PDBC",
+        -1.19
+      ],
+      [
+        "DJP",
+        -1.02
+      ],
+      [
+        "GDX",
+        0.85
       ],
       [
         "FXI",
-        0.8
-      ],
-      [
-        "GLD",
-        0.64
+        0.61
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Current holdings reflect a slight overweight in commodities (DJP, PDBC, GSG) which have delivered gains, while gold-related assets (GLD, GDX, IAU) and bonds (TIPS, TLT, IEF) are modestly negative. Given limited cash ($24 above the $1,000 reserve), no new purchases can be made without first trimming positions. Future rebalancing could involve reducing some commodity exposure to increase allocations to bonds and gold, preserving the All Weather risk parity.",
+    "outlook": "Macro environment shows mixed signals: commodity prices are under pressure today while bonds show modest strength, suggesting investors may be balancing inflation concerns with a flight to safety. The All Weather approach remains appropriate, maintaining diversified exposure to gold, bonds, commodities, and equities to navigate shifting growth/inflation regimes.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -804,6 +804,10 @@
     {
       "timestamp": "2026-07-24T15:40:58Z",
       "value": 10103.93
+    },
+    {
+      "timestamp": "2026-07-24T17:18:27Z",
+      "value": 10087.46
     }
   ]
 }

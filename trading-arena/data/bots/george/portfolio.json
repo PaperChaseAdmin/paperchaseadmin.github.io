@@ -1,34 +1,39 @@
 {
-  "cash": 5329.04,
-  "total_value": 9932.32,
+  "cash": 4709.04,
+  "total_value": 9921.69,
   "positions": {
     "UUP": {
       "shares": 1,
       "avg_cost": 28.3501,
-      "current_price": 28.53
+      "current_price": 28.55
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 83.054,
-      "current_price": 83.615
+      "current_price": 83.46
     },
     "GLD": {
       "shares": 10,
       "avg_cost": 371.3329,
-      "current_price": 373.86
+      "current_price": 372.95
+    },
+    "BAC": {
+      "shares": 10,
+      "avg_cost": 62.0,
+      "current_price": 62.0
     }
   },
-  "total_return_pct": -0.68,
+  "total_return_pct": -0.78,
   "total_return_usd": 0.0,
-  "today_pnl": 20.68,
-  "today_pnl_pct": 0.21,
+  "today_pnl": 10.05,
+  "today_pnl_pct": 0.1,
   "total_trades": 0,
   "today_start_value": 9911.64,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T15:42:06Z",
+  "last_updated": "2026-07-24T17:20:08Z",
   "last_session": {
-    "at": "2026-07-24T15:42:06Z",
+    "at": "2026-07-24T17:20:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +41,27 @@
     "top_movers": [
       [
         "TSLA",
-        -2.86
-      ],
-      [
-        "BAC",
-        1.41
+        -2.92
       ],
       [
         "EEM",
-        -1.03
+        -1.38
       ],
       [
-        "XLF",
-        0.94
+        "BAC",
+        1.17
       ],
       [
         "BABA",
-        -0.82
+        -1.0
+      ],
+      [
+        "META",
+        -0.74
       ],
       [
         "FXI",
-        0.8
+        0.61
       ]
     ],
     "news_read": [],
@@ -769,6 +774,10 @@
     {
       "timestamp": "2026-07-24T15:42:06Z",
       "value": 9932.32
+    },
+    {
+      "timestamp": "2026-07-24T17:20:08Z",
+      "value": 9921.69
     }
   ]
 }
