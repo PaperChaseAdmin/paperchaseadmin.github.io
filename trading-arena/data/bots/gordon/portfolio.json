@@ -1,67 +1,72 @@
 {
-  "cash": 5637.03,
-  "total_value": 9593.46,
+  "cash": 4672.03,
+  "total_value": 9636.93,
   "positions": {
     "F": {
       "shares": 100,
       "avg_cost": 13.855,
-      "current_price": 14.335
+      "current_price": 14.535
     },
     "T": {
       "shares": 50,
       "avg_cost": 20.575,
-      "current_price": 23.6585
+      "current_price": 23.89
     },
     "GM": {
       "shares": 10,
       "avg_cost": 79.055,
-      "current_price": 83.1101
+      "current_price": 83.71
     },
     "HPQ": {
       "shares": 20,
       "avg_cost": 25.0325,
-      "current_price": 25.445
+      "current_price": 25.74
+    },
+    "INTC": {
+      "shares": 10,
+      "avg_cost": 96.5,
+      "current_price": 96.5
     }
   },
-  "total_return_pct": -4.07,
+  "total_return_pct": -3.63,
   "total_return_usd": 0.0,
-  "today_pnl": 60.41,
-  "today_pnl_pct": 0.63,
+  "today_pnl": 103.88,
+  "today_pnl_pct": 1.09,
   "total_trades": 0,
   "today_start_value": 9533.05,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T15:16:20Z",
+  "last_updated": "2026-07-24T15:50:06Z",
   "last_session": {
-    "at": "2026-07-24T15:16:20Z",
+    "at": "2026-07-24T15:50:06Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "NOK",
-        -5.73
-      ],
-      [
         "HPQ",
-        3.81
+        5.04
       ],
       [
-        "INTC",
-        -3.77
+        "NOK",
+        -4.52
+      ],
+      [
+        "BBWI",
+        4.52
+      ],
+      [
+        "VFC",
+        4.45
       ],
       [
         "T",
-        3.04
+        4.01
       ],
       [
         "GM",
-        3.02
-      ],
-      [
-        "DIS",
-        2.2
+        3.79
       ]
     ],
     "news_read": [],
@@ -770,6 +775,10 @@
     {
       "timestamp": "2026-07-24T15:16:20Z",
       "value": 9593.46
+    },
+    {
+      "timestamp": "2026-07-24T15:50:06Z",
+      "value": 9636.93
     }
   ]
 }
