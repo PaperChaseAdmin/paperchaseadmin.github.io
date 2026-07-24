@@ -253,7 +253,7 @@ async function load(){
   renderSpecs();
   renderFollowGuide();
   renderChart(pf);
-  renderTrades(tr.trades||[]);
+  renderTrades(tr.trades||[], pf.positions);
   $('loading').style.display='none';
   $('app').style.display='block';
   setTimeout(load,90000);
@@ -387,10 +387,24 @@ function renderChart(pf){
   '</svg>';
 }
 
-function renderTrades(trades){
+function renderTrades(trades, positions){
   const el=$('trades');
   const recent=[...trades].reverse().slice(0,10);
-  if(!recent.length){ el.innerHTML='<div class="empty">No trades yet \u2014 bot activates when US market opens</div>'; return; }
+  if(!recent.length){
+    // Show current positions as holdings summary when no trade history
+    if(positions&&Object.keys(positions).length){
+      let posRows='';
+      for(const t in positions){
+        const p=positions[t];
+        const val=p.shares*p.current_price;
+        posRows+='<tr><td class="mono" style="font-weight:600">'+t+'</td><td class="mono">'+p.shares+'</td><td class="mono">'+fmt(p.avg_cost)+'</td><td class="mono">'+fmt(val)+'</td></tr>';
+      }
+      el.innerHTML='<div class="session-block" style="margin-bottom:8px"><div class="session-block-lbl">Current Holdings (no trades yet)</div><table><thead><tr><th>Ticker</th><th>Shares</th><th>Avg Cost</th><th>Value</th></tr></thead><tbody>'+posRows+'</tbody></table></div>';
+    }else{
+      el.innerHTML='<div class="empty">No trades yet</div>';
+    }
+    return;
+  }
   let rows='';
   recent.forEach(function(t){
     const badge=t.action==='BUY'?'<span class="badge badge-buy">BUY</span>':'<span class="badge badge-sell">SELL</span>';
