@@ -1,44 +1,49 @@
 {
-  "cash": 3905.47,
-  "total_value": 9965.91,
+  "cash": 3448.02,
+  "total_value": 9966.94,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 328.99,
+      "current_price": 328.8792,
       "avg_cost": 299.3344
     },
     "EL": {
       "shares": 12,
-      "current_price": 80.1439,
+      "current_price": 80.15,
       "avg_cost": 84.8412
     },
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 139.8
+      "current_price": 139.89
     },
     "LVS": {
       "shares": 10,
       "avg_cost": 45.78,
-      "current_price": 45.955
+      "current_price": 46.03
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 373.0163
+      "current_price": 373.3
+    },
+    "MGM": {
+      "shares": 10,
+      "avg_cost": 45.745,
+      "current_price": 45.745
     }
   },
-  "total_return_pct": -0.34,
+  "total_return_pct": -0.33,
   "total_return_usd": 0.0,
-  "today_pnl": 54.61,
-  "today_pnl_pct": 0.55,
+  "today_pnl": 55.64,
+  "today_pnl_pct": 0.56,
   "total_trades": 0,
   "today_start_value": 9911.3,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T14:49:21Z",
+  "last_updated": "2026-07-24T15:17:42Z",
   "last_session": {
-    "at": "2026-07-24T14:49:21Z",
+    "at": "2026-07-24T15:17:42Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +51,27 @@
     "top_movers": [
       [
         "AAPL",
-        2.27
+        2.24
       ],
       [
         "MGM",
-        1.61
+        1.68
       ],
       [
         "RH",
-        1.26
+        1.31
       ],
       [
         "CPRI",
-        -0.97
+        -1.29
       ],
       [
         "AMZN",
-        -0.78
+        -0.7
       ],
       [
         "LULU",
-        0.74
+        0.7
       ]
     ],
     "news_read": [],
@@ -771,6 +776,10 @@
     {
       "timestamp": "2026-07-24T14:49:21Z",
       "value": 9965.91
+    },
+    {
+      "timestamp": "2026-07-24T15:17:42Z",
+      "value": 9966.94
     }
   ]
 }

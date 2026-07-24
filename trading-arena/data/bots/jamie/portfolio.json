@@ -1,59 +1,64 @@
 {
-  "cash": 1815.53,
-  "total_value": 9988.61,
+  "cash": 1602.61,
+  "total_value": 9992.34,
   "positions": {
     "MA": {
       "shares": 3,
       "avg_cost": 529.705,
-      "current_price": 535.99
+      "current_price": 535.82
     },
     "GS": {
       "shares": 2,
       "avg_cost": 1033.175,
-      "current_price": 1061.55
+      "current_price": 1063.2
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 93.04
+      "current_price": 93.15
     },
     "V": {
       "shares": 4,
       "avg_cost": 361.58,
-      "current_price": 354.395
+      "current_price": 354.2
     },
     "JPM": {
       "shares": 2,
       "avg_cost": 336.345,
-      "current_price": 350.0371
+      "current_price": 350.27
     },
     "BAC": {
       "shares": 22,
-      "current_price": 61.77,
+      "current_price": 61.81,
       "avg_cost": 59.6595
     },
     "WFC": {
       "shares": 4,
-      "current_price": 86.175,
+      "current_price": 86.1601,
       "avg_cost": 87.525
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 131.92
+      "current_price": 132.0
+    },
+    "PGR": {
+      "shares": 1,
+      "avg_cost": 212.92,
+      "current_price": 212.92
     }
   },
-  "total_return_pct": -0.11,
+  "total_return_pct": -0.08,
   "total_return_usd": 0.0,
-  "today_pnl": -0.86,
-  "today_pnl_pct": -0.01,
+  "today_pnl": 2.87,
+  "today_pnl_pct": 0.03,
   "total_trades": 0,
   "today_start_value": 9989.47,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T14:44:05Z",
+  "last_updated": "2026-07-24T15:12:45Z",
   "last_session": {
-    "at": "2026-07-24T14:44:05Z",
+    "at": "2026-07-24T15:12:45Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,27 +66,27 @@
     "top_movers": [
       [
         "AXP",
-        -6.18
+        -6.14
       ],
       [
         "PGR",
-        2.82
+        2.83
       ],
       [
         "TRV",
-        2.33
+        2.3
       ],
       [
         "GS",
-        -1.28
+        -1.07
       ],
       [
         "MA",
-        1.06
+        1.04
       ],
       [
-        "MS",
-        -0.93
+        "BAC",
+        0.86
       ]
     ],
     "news_read": [],
@@ -786,6 +791,10 @@
     {
       "timestamp": "2026-07-24T14:44:05Z",
       "value": 9988.61
+    },
+    {
+      "timestamp": "2026-07-24T15:12:45Z",
+      "value": 9992.34
     }
   ]
 }
