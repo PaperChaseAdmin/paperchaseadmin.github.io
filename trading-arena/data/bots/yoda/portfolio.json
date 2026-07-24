@@ -1,44 +1,49 @@
 {
-  "cash": 1745.8,
-  "total_value": 9872.86,
+  "cash": 1507.08,
+  "total_value": 9858.5,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 366.73
+      "current_price": 366.0
     },
     "QQQ": {
       "shares": 3,
-      "current_price": 689.685,
+      "current_price": 688.93,
       "avg_cost": 711.24
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 742.56
+      "current_price": 741.07
     },
     "VEA": {
       "shares": 1,
       "avg_cost": 69.945,
-      "current_price": 70.105
+      "current_price": 69.955
     },
     "VXUS": {
       "shares": 1,
       "avg_cost": 83.505,
-      "current_price": 83.825
+      "current_price": 83.675
+    },
+    "VIG": {
+      "shares": 1,
+      "avg_cost": 238.72,
+      "current_price": 238.72
     }
   },
-  "total_return_pct": -1.27,
+  "total_return_pct": -1.42,
   "total_return_usd": 0.0,
-  "today_pnl": 31.45,
-  "today_pnl_pct": 0.32,
+  "today_pnl": 17.09,
+  "today_pnl_pct": 0.17,
   "total_trades": 0,
   "today_start_value": 9841.41,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T15:52:37Z",
+  "last_updated": "2026-07-24T17:35:09Z",
   "last_session": {
-    "at": "2026-07-24T15:52:37Z",
+    "at": "2026-07-24T17:35:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +51,27 @@
     "top_movers": [
       [
         "VNQ",
-        2.41
+        2.11
       ],
       [
         "SCHD",
-        1.42
+        1.23
       ],
       [
         "VIG",
-        0.78
+        0.62
       ],
       [
-        "GLD",
-        0.64
+        "QQQ",
+        -0.45
       ],
       [
-        "SCHB",
-        0.63
+        "SPY",
+        0.39
       ],
       [
         "IVV",
-        0.63
+        0.39
       ]
     ],
     "news_read": [],
@@ -779,6 +784,10 @@
     {
       "timestamp": "2026-07-24T15:52:37Z",
       "value": 9872.86
+    },
+    {
+      "timestamp": "2026-07-24T17:35:09Z",
+      "value": 9858.5
     }
   ]
 }
