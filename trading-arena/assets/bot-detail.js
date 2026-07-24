@@ -290,7 +290,7 @@ function renderHero(pf){
 }
 
 function renderOutlook(pf){
-  if(!pf.last_action||pf.last_action.startsWith('Init')){
+  if(!pf.last_action||pf.last_action.startsWith('Init')||pf.last_action==='...'){
     $('outlook').innerHTML='<div class="outlook-lbl" style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px">Latest Thinking</div><div style="font-size:12px;color:var(--pc-text-3);padding:8px 0">Analysis unavailable</div>';
     return;
   }
