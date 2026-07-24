@@ -1,49 +1,44 @@
 {
-  "cash": 6184.93,
-  "total_value": 9984.62,
+  "cash": 7355.89,
+  "total_value": 9999.67,
   "positions": {
-    "XLP": {
-      "shares": 14,
-      "current_price": 83.6,
-      "avg_cost": 84.1964
-    },
     "XLF": {
       "shares": 10,
       "avg_cost": 56.025,
-      "current_price": 55.83
+      "current_price": 55.885
     },
     "TLT": {
       "shares": 6,
       "avg_cost": 83.645,
-      "current_price": 83.285
+      "current_price": 83.4712
     },
     "XLRE": {
       "shares": 5,
       "avg_cost": 45.17,
-      "current_price": 45.34
+      "current_price": 45.8842
     },
     "GLD": {
       "shares": 1,
       "avg_cost": 381.5,
-      "current_price": 371.1999
+      "current_price": 373.15
     },
     "AAPL": {
       "shares": 3,
       "avg_cost": 324.46,
-      "current_price": 324.46
+      "current_price": 327.1789
     }
   },
-  "total_return_pct": -0.15,
+  "total_return_pct": -0.0,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 15.05,
+  "today_pnl_pct": 0.15,
   "total_trades": 0,
   "today_start_value": 9984.62,
   "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T13:50:55Z",
+  "last_updated": "2026-07-24T14:24:53Z",
   "last_session": {
-    "at": "2026-07-24T13:50:55Z",
+    "at": "2026-07-24T14:24:53Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -51,27 +46,27 @@
     "top_movers": [
       [
         "XLRE",
-        1.07
+        2.1
+      ],
+      [
+        "XLK",
+        -1.06
+      ],
+      [
+        "XLC",
+        0.92
+      ],
+      [
+        "XLE",
+        0.86
+      ],
+      [
+        "QQQ",
+        -0.78
       ],
       [
         "XLV",
         0.64
-      ],
-      [
-        "XLP",
-        0.44
-      ],
-      [
-        "XLK",
-        -0.4
-      ],
-      [
-        "XLY",
-        0.4
-      ],
-      [
-        "XLU",
-        0.39
       ]
     ],
     "news_read": [],
@@ -768,6 +763,10 @@
     {
       "timestamp": "2026-07-24T13:50:55Z",
       "value": 9984.62
+    },
+    {
+      "timestamp": "2026-07-24T14:24:53Z",
+      "value": 9999.67
     }
   ]
 }
