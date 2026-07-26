@@ -17,7 +17,7 @@ STOCK_FEEDS = [
     ("Bloomberg",        "https://feeds.bloomberg.com/markets/news.rss"),
     ("CNBC",             "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
     ("MarketWatch",      "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
-    ("WSJ",              "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml"),
+    ("SeekingAlpha",     "https://seekingalpha.com/feed.xml"),
     ("Fortune",          "https://fortune.com/feed"),
     ("Financial Times",  "https://www.ft.com/?format=rss"),
     ("Yahoo Fin",        "https://finance.yahoo.com/news/rssindex"),
