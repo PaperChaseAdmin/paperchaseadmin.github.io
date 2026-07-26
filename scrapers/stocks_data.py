@@ -12,7 +12,7 @@ def fetch_stock_prices(symbols: list[str] = None) -> list[dict]:
     tickers = symbols or WATCHLIST
     results = []
     try:
-        data = yf.download(tickers, period="2d", auto_adjust=True, progress=False)
+        data = yf.download(tickers, period="5d", auto_adjust=True, progress=False)
         closes = data["Close"]
         for sym in tickers:
             try:
@@ -35,7 +35,7 @@ def fetch_stock_prices(symbols: list[str] = None) -> list[dict]:
 def fetch_market_indices() -> dict:
     result = {"sp500": None, "nasdaq": None, "dow": None, "vix": None}
     try:
-        data = yf.download(INDICES, period="2d", auto_adjust=True, progress=False)
+        data = yf.download(INDICES, period="5d", auto_adjust=True, progress=False)
         closes = data["Close"]
         mapping = {"^GSPC": "sp500", "^IXIC": "nasdaq", "^DJI": "dow", "^VIX": "vix"}
         for ticker, key in mapping.items():
