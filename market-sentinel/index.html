@@ -201,7 +201,7 @@
           </div>
           <div class="mh-r">
             <div class="mh-x">
-              The <strong>Market Mood</strong> combines index trends, news sentiment, and macro signals into a single score.
+              The <strong>Market Mood</strong> distills index trends, news sentiment, and macro data into a single score.
             </div>
             <div id="msBreakdown"></div>
           </div>
@@ -305,7 +305,7 @@ function renderAll(d){
   (function(){
     var md=d.market_mood||st.market_mood||{},score=md.score!==undefined?Math.round(md.score*100):null,label=md.label||'Neutral';
     if(score!==null){
-      $('mhScore').textContent=score+'/100';
+      $('mhScore').textContent=score;
       $('mhScore').style.color=FMT.gc(score+100);
       $('mhLabel').textContent=label;
       $('mhLabel').style.color=FMT.gc(score+100);
@@ -318,7 +318,8 @@ function renderAll(d){
     var cmp=[{l:'Indices',v:aic,m:2.0},{l:'VIX',v:-vc,m:5.0},{l:'News',v:nss!=null?(nss-50)/50:0,m:1.0}];
     if(bc)cmp.push({l:'BTC',v:bc,m:3.0});
     if(fc.thread_count)cmp.push({l:'4chan',v:(fc.bullish_pct||50)/50-1,m:1.0});
-    var bh='';
+    var bh='<div style="font-size:9px;font-weight:600;color:var(--pc-text-3);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">Inputs</div>';
+    if(cmp.length===0)bh+='<div style="color:var(--pc-text-3);font-size:10px">No data</div>';
     cmp.forEach(function(c){var pct=Math.min(100,Math.max(0,(c.v+c.m)/(c.m*2)*100)),cl=c.v>=0?'var(--pc-green)':'var(--pc-red)';bh+='<div class="h-row"><span class="hl">'+c.l+'</span><div class="ht"><div class="hf" style="width:'+pct+'%;background:'+cl+'"></div></div><span class="hv" style="color:'+cl+'">'+(c.v>0?'+':'')+c.v.toFixed(2)+'</span></div>';});
     $('msBreakdown').innerHTML=bh;
   })();
