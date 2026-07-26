@@ -53,6 +53,13 @@
     <a class="nav-link" href="/stock-pick/">Stock Pick</a>
     <a class="nav-link" href="/trading-arena/" data-i18n="nav_trading">Trading Arena</a>
   </div>
+  <div class="topbar-spacer"></div>
+  <div class="topbar-auth">
+    <a class="nav-link" href="/login/" id="nav-login">Log In</a>
+    <a class="nav-link nav-reg" href="/register/" id="nav-register" style="background:var(--pc-brand);color:#fff;border-radius:var(--pc-radius);padding:6px 14px">Register</a>
+    <a class="nav-link" href="/account/" id="nav-account" style="display:none">Account</a>
+    <a class="nav-link" href="#" id="nav-logout" style="display:none" onclick="PaperChaseAuth.signOut();return false">Log Out</a>
+  </div>
 </div></nav>
 
 <div class="container">
@@ -100,5 +107,6 @@ function loadData(){
 }
 document.addEventListener('DOMContentLoaded',loadData);
 </script>
+<script src="/assets/supabase-client.js"></script>
 </body>
 </html>
