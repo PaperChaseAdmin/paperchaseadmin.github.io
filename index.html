@@ -257,7 +257,7 @@ if (typeof window.startCountdown === 'function') {
 async function refreshData() {
   try {
     // ── Market data ──
-    var r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json?t=' + Date.now());
+    var r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/data/market_data.json?t=' + Date.now());
     if (!r.ok) return;
     var d = await r.json();
     var st = d.stocks || {};
