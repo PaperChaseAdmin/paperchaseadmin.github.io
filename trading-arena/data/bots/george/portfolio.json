@@ -1,52 +1,57 @@
 {
-  "cash": 6193.06,
-  "total_value": 9928.86,
+  "cash": 5355.16,
+  "total_value": 9933.56,
   "positions": {
     "GLD": {
       "shares": 10,
       "avg_cost": 371.3329,
-      "current_price": 373.58
+      "current_price": 374.05
+    },
+    "TLT": {
+      "shares": 10,
+      "avg_cost": 83.79,
+      "current_price": 83.79
     }
   },
-  "total_return_pct": -0.71,
+  "total_return_pct": -0.66,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 4.7,
+  "today_pnl_pct": 0.05,
   "total_trades": 0,
   "today_start_value": 9928.86,
   "today_date": "2026-07-27",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-27T14:12:31Z",
+  "last_updated": "2026-07-27T19:14:53Z",
   "last_session": {
-    "at": "2026-07-27T14:12:31Z",
+    "at": "2026-07-27T19:14:53Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TSLA",
-        -3.55
-      ],
-      [
         "NVDA",
-        -3.38
+        -5.48
       ],
       [
-        "BAC",
-        2.1
-      ],
-      [
-        "XLF",
-        1.99
+        "TSLA",
+        -3.83
       ],
       [
         "FXI",
-        1.68
+        2.19
       ],
       [
         "EEM",
-        -1.52
+        -1.9
+      ],
+      [
+        "XLF",
+        1.73
+      ],
+      [
+        "META",
+        -1.58
       ]
     ],
     "news_read": [],
@@ -775,6 +780,10 @@
     {
       "timestamp": "2026-07-27T14:12:31Z",
       "value": 9928.86
+    },
+    {
+      "timestamp": "2026-07-27T19:14:53Z",
+      "value": 9933.56
     }
   ]
 }
