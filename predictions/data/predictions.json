@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-27T14:26:13Z",
+  "updated_at": "2026-07-27T21:34:48Z",
   "last_prediction_date": "2026-07-27",
-  "last_settle_date": "2026-07-24",
+  "last_settle_date": "2026-07-27",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 26,
-      "correct": 21,
-      "accuracy_pct": 80.8,
+      "total": 28,
+      "correct": 23,
+      "accuracy_pct": 82.1,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -701,9 +701,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Positive market sentiment and strong earnings",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.02
         },
         {
           "date": "2026-07-27",
@@ -721,9 +722,10 @@
           "prediction": "up",
           "confidence": 75,
           "signal": "Strong gains in key components",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.51
         }
       ]
     },
