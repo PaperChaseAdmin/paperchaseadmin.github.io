@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T15:22:21Z",
+  "updated_at": "2026-07-27T17:15:53Z",
   "crypto": {
     "fear_greed": {
       "value": 30,
@@ -11,78 +11,88 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 64558,
+        "price_usd": 64819,
         "change_24h": 0.2,
-        "market_cap": 1295170489924,
-        "volume_24h": 23957287989
+        "market_cap": 1300278894226,
+        "volume_24h": 24723121310
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1928.15,
-        "change_24h": 2.3,
-        "market_cap": 232694550514,
-        "volume_24h": 11301547773
+        "price_usd": 1936.77,
+        "change_24h": 1.3,
+        "market_cap": 233729053622,
+        "volume_24h": 11215382490
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 566.92,
-        "change_24h": -0.7,
-        "market_cap": 75494804968,
-        "volume_24h": 463516450
+        "price_usd": 571.59,
+        "change_24h": -0.4,
+        "market_cap": 76111136737,
+        "volume_24h": 474172060
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.088,
-        "change_24h": -0.8,
-        "market_cap": 68033941693,
-        "volume_24h": 895017941
+        "price_usd": 1.093,
+        "change_24h": -1.0,
+        "market_cap": 68305893586,
+        "volume_24h": 959462851
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 75.31,
-        "change_24h": 0.7,
-        "market_cap": 43910248329,
-        "volume_24h": 1627850871
+        "price_usd": 75.86,
+        "change_24h": 0.6,
+        "market_cap": 44227759738,
+        "volume_24h": 1659202378
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.071329,
-        "change_24h": -2.3,
-        "market_cap": 11073505268,
-        "volume_24h": 476189376
+        "price_usd": 0.072144,
+        "change_24h": -1.5,
+        "market_cap": 11199743090,
+        "volume_24h": 491780516
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 8.58,
-        "change_24h": 1.5,
-        "market_cap": 6421747819,
-        "volume_24h": 246534711
+        "price_usd": 8.62,
+        "change_24h": 0.5,
+        "market_cap": 6446875784,
+        "volume_24h": 238734145
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.158749,
-        "change_24h": -3.4,
-        "market_cap": 5921360939,
-        "volume_24h": 206142618
+        "price_usd": 0.158914,
+        "change_24h": -4.0,
+        "market_cap": 5926136170,
+        "volume_24h": 228777460
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.53,
-        "change_24h": -2.2,
-        "market_cap": 2820532280,
-        "volume_24h": 134500917
+        "price_usd": 6.6,
+        "change_24h": -1.2,
+        "market_cap": 2847865911,
+        "volume_24h": 142823858
       }
     ],
     "top_mentioned": [],
     "news": [
+      {
+        "title": "Digital asset trading platform Uphold cuts 17% of global headcount as crypto winter bites",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/07/27/digital-asset-trading-platform-uphold-cuts-17-of-global-headcount-as-crypto-winter-bites",
+        "published": "Mon, 27 Jul 2026 16:47:06 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
+      },
       {
         "title": "What are perps, anyway? Everything you need to know about crypto’s hottest trading instrument",
         "source": "CoinDesk",
@@ -104,14 +114,26 @@
         "color": "green"
       },
       {
-        "title": "Cantor is advising crypto bank AMINA on path to potential public listing",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/07/27/cantor-is-advising-crypto-bank-amina-on-path-to-potential-public-listing",
-        "published": "Mon, 27 Jul 2026 14:36:30 +0000",
-        "assets": [],
+        "title": "Tether’s XAUt gold token receives Shariah certification to expand Islamic finance access",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/tether-xaut-gold-token-receives-shariah-certification-islamic-finance-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Mon, 27 Jul 2026 16:44:03 +0000",
+        "assets": [
+          "ETH"
+        ],
         "sentiment": "Bullish",
-        "score": 0.333,
+        "score": 1.0,
         "color": "green"
+      },
+      {
+        "title": "Kraken parent Payward acquires Magic Labs’ wallet business",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/kraken-parent-payward-acquires-magic-labs-wallet-business?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Mon, 27 Jul 2026 16:40:39 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
         "title": "Bitcoin price eyes $66K as US stocks rise on Iran-strike pause",
@@ -126,23 +148,23 @@
         "color": "green"
       },
       {
-        "title": "Hong Kong crypto giant HashKey merges regional exchange into one",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/hong-kong-crypto-giant-hashkey-merges-its-exchanges-into-one?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Mon, 27 Jul 2026 13:41:44 +0000",
-        "assets": [],
+        "title": "Bitmine Nears Goal of Controlling 5% of Ethereum Supply With $11.8 Billion Treasury",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/374389/bitmine-nears-5-percent-ethereum-supply-with-11-8-billion-treasury",
+        "published": "Mon, 27 Jul 2026 15:42:54 +0000",
+        "assets": [
+          "ETH"
+        ],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Rate path still divides investors: Five things to know in Bitcoin this week",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/markets/rate-path-still-divides-investors-five-things-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Mon, 27 Jul 2026 13:31:07 +0000",
-        "assets": [
-          "BTC"
-        ],
+        "title": "Circle Buys IBM Blockchain Patent Estate—And Becomes America's Biggest Holder",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/374388/circle-ibm-blockchain-patent-estate",
+        "published": "Mon, 27 Jul 2026 15:35:25 +0000",
+        "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
@@ -160,24 +182,16 @@
         "color": "green"
       },
       {
-        "title": "Crypto Firms Pivoting to AI Is 'Zero-Sum' Thinking: Coinbase CEO",
-        "source": "Decrypt",
-        "url": "https://decrypt.co/374366/crypto-firms-pivoting-to-ai-is-zero-sum-thinking-coinbase-ceo",
-        "published": "Mon, 27 Jul 2026 12:27:47 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Morning Minute: Tokenized Stocks Jump 5x on Robinhood Chain",
-        "source": "Decrypt",
-        "url": "https://decrypt.co/374357/morning-minute-tokenized-stocks-jump-5x-on-robinhood-chain",
-        "published": "Mon, 27 Jul 2026 12:00:49 +0000",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
+        "title": "Lawsuit claims BitMEX used server freezes and internal trading to seize 622 Bitcoin ahead of its September closure",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/lawsuit-claims-bitmex-used-server-freezes-and-internal-trading-to-seize-622-bitcoin-ahead-of-its-september-closure/",
+        "published": "Mon, 27 Jul 2026 16:35:08 +0000",
+        "assets": [
+          "BTC"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
         "title": "On-chain data shows 5,280 ETH draining into single address following quiet Triple-A wallet breach",
@@ -200,20 +214,10 @@
         "sentiment": "Neutral",
         "score": -0.2,
         "color": "yellow"
-      },
-      {
-        "title": "BitMart’s sudden shutdown triggers withdrawal delays and on-chain panic, echoing the ghosts of 2022",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/bitmarts-sudden-shutdown-triggers-withdrawal-delays-and-on-chain-panic-echoing-the-ghosts-of-2022/",
-        "published": "Mon, 27 Jul 2026 12:47:27 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": 0.428,
+      "score": 0.372,
       "label": "Bullish",
       "color": "green"
     },
@@ -222,484 +226,481 @@
     "reddit": [],
     "reddit_summary": {
       "outlook": "Mixed",
-      "summary": "We need to produce exactly one paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Must mention numbers and names where available. Max 80 words. Data provided: \"Top mentioned: Subreddits:\" but no actual data? The user gave incomplete data. Possibly they expect us to infer that there is no data? But we must still produce a summary based on given data. Since data is minimal, we can say that no specific sentiment can be derived. But must start with one of the three prefixes. Could say \"Mixed: ...\" and note lack of concrete data. Must mention numbers and names where available—none available, so we can say none. Must be max 80 words. One paragraph.\n\nLet's craft: \"Mixed: The discussion shows activity across multiple subreddits but lacks clear directional cues; top-mentioned subreddits include r/CryptoCurrency and r/Bitcoin, yet sentiment indicators are split with roughly equal numbers of bullish and bearish comments, and no dominant token or price target is cited.\" Need to mention numbers: we can say \"roughly equal numbers\". That's okay. Word count: Let's count.\n\n\"Mixed: The discussion shows activity across multiple subreddits but lacks clear directional cues; top-mentioned subreddits include r/CryptoCurrency and r/Bitcoin, yet sentiment indicators are split with roughly equal numbers"
+      "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "We need exactly one paragraph, start with Bullish:, Bearish:, or Mixed: followed by specific reasons. Must mention numbers and names where available. Max 80 words. Need to summarize overall market sentiment based on data. Let's count sentiment: Many bullish items: Fanatics buys regulated exchange, Cantor advising AMINA, Bitcoin price eyes $66K, Rate path still divides investors (Bullish), Strategy adds $525M to cash reserve, skips Bitcoin buy (Bullish). Neutral items: perps explanation, HashKey merges, Crypto firms pivoting to AI is zero-sum thinking (neutral). No bearish items. So overall bullish. Must start with \"Bullish:\" then reasons. Include numbers: $66K, $525M. Names: Fanatics, Cantor, AMINA, Bitcoin, Strategy (maybe MicroStrategy?), HashKey, Coinbase CEO? Actually Coinbase CEO quoted neutral. We can mention Coinbase CEO but it's neutral. We need specific reasons; we can mention bullish reasons. Keep under 80 words.\n\nLet's craft: \"Bullish: Fanatics’ acquisition of a regulated exchange boosts prediction‑market optimism; Cantor advises AMINA on a potential public listing; Bitcoin targets $66K amid a pause in Iran‑strike tensions; investors see a favorable rate path; and Strategy adds $525"
+      "summary": "Mixed: 6 bullish vs 4 bearish signals detected across crypto news data."
     },
     "fourchain": {
-      "thread_count": 200,
-      "active_threads": 142,
+      "thread_count": 201,
+      "active_threads": 138,
       "mentions": {
-        "XRP": 22,
-        "BTC": 15,
+        "BTC": 25,
+        "XRP": 24,
         "ETH": 4
       },
-      "bullish_hits": 80,
-      "bearish_hits": 38,
+      "bullish_hits": 86,
+      "bearish_hits": 41,
       "bullish_pct": 68,
-      "top_coin": "XRP",
+      "top_coin": "BTC",
       "top_posts": [
         "/smg/ - stock market general test of faith edition &gt;educational sites: https://www.investopedia.com &gt;financial tv ",
         "/smg/ - stock market general oil baggies...... edition &gt;educational sites: https://www.investopedia.com &gt;financial",
         "/xsg/ xrp schizo general #2553 previous: &gt;&gt;62474905 &gt;buy xrp on: coinbase, binance, bitrue, uphold, robinhood, ",
-        "/smg/ - stock market general waiting for the casino to open edition &gt;educational sites: https://www.investopedia.com ",
-        "/smg/ - stock market general hedgies edition &gt;educational sites: https://www.investopedia.com &gt;financial tv stream"
+        "/smg/ - stock market general collapse edition &gt;educational sites: https://www.investopedia.com &gt;financial tv strea",
+        "/smg/ - stock market general waiting for the casino to open edition &gt;educational sites: https://www.investopedia.com "
       ]
     },
     "cg_trending": [
       {
         "symbol": "CSPR",
         "name": "Casper Network",
-        "rank": 681,
+        "rank": 676,
         "score": 0,
-        "change_24h": 2.32
-      },
-      {
-        "symbol": "PUMP",
-        "name": "Pump.fun",
-        "rank": 76,
-        "score": 1,
-        "change_24h": 15.42
-      },
-      {
-        "symbol": "PONS",
-        "name": "Pons",
-        "rank": 438,
-        "score": 2,
-        "change_24h": 17.3
+        "change_24h": 3.3
       },
       {
         "symbol": "AEON",
         "name": "AEON",
-        "rank": 926,
+        "rank": 834,
+        "score": 1,
+        "change_24h": -48.29
+      },
+      {
+        "symbol": "PONS",
+        "name": "Pons",
+        "rank": 525,
+        "score": 2,
+        "change_24h": -10.92
+      },
+      {
+        "symbol": "PUMP",
+        "name": "Pump.fun",
+        "rank": 75,
         "score": 3,
-        "change_24h": 0
-      },
-      {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "rank": 1,
-        "score": 4,
-        "change_24h": -0.01
-      },
-      {
-        "symbol": "ZAMA",
-        "name": "Zama",
-        "rank": 212,
-        "score": 5,
-        "change_24h": 17.87
+        "change_24h": 14.84
       },
       {
         "symbol": "PENGU",
         "name": "Pudgy Penguins",
-        "rank": 112,
+        "rank": 113,
+        "score": 4,
+        "change_24h": -4.58
+      },
+      {
+        "symbol": "ONDO",
+        "name": "Ondo",
+        "rank": 41,
+        "score": 5,
+        "change_24h": 1.4
+      },
+      {
+        "symbol": "ZAMA",
+        "name": "Zama",
+        "rank": 204,
         "score": 6,
-        "change_24h": -1.43
+        "change_24h": 16.44
       }
     ]
   },
   "stocks": {
     "indices": {
       "sp500": {
-        "value": 7416.19,
-        "change_24h": 0.06
+        "value": 7389.85,
+        "change_24h": -0.25
       },
       "nasdaq": {
-        "value": 24955.57,
-        "change_24h": -0.08
+        "value": 24830.15,
+        "change_24h": -1.22
       },
       "dow": {
-        "value": 52181.04,
-        "change_24h": 0.91
+        "value": 52026.79,
+        "change_24h": 0.61
       },
       "vix": {
-        "value": 18.8,
-        "change_24h": 1.18
+        "value": 19.53,
+        "change_24h": 4.44
       }
     },
     "market_mood": {
-      "score": 0.052,
-      "label": "Neutral",
-      "color": "yellow"
+      "score": -0.33,
+      "label": "Bearish",
+      "color": "red"
     },
     "prices": [
       {
         "symbol": "NVDA",
-        "price_usd": 198.29,
-        "change_24h": -4.13
+        "price_usd": 195.93,
+        "change_24h": -6.14
       },
       {
         "symbol": "TSLA",
-        "price_usd": 308.7,
-        "change_24h": -1.38
+        "price_usd": 307.33,
+        "change_24h": -3.87
       },
       {
         "symbol": "AAPL",
-        "price_usd": 338.8,
-        "change_24h": 5.33
+        "price_usd": 336.38,
+        "change_24h": 4.57
       },
       {
         "symbol": "MSFT",
-        "price_usd": 393.18,
-        "change_24h": 3.01
+        "price_usd": 391.96,
+        "change_24h": 2.72
       },
       {
         "symbol": "GOOGL",
-        "price_usd": 328.59,
-        "change_24h": 2.77
+        "price_usd": 326.86,
+        "change_24h": 2.89
       },
       {
         "symbol": "AMZN",
-        "price_usd": 233.35,
-        "change_24h": 0.53
+        "price_usd": 231.76,
+        "change_24h": -0.81
       },
       {
         "symbol": "META",
-        "price_usd": 605.48,
-        "change_24h": 1.73
+        "price_usd": 597.71,
+        "change_24h": -1.38
       },
       {
         "symbol": "AMD",
-        "price_usd": 484.23,
-        "change_24h": -10.28
+        "price_usd": 480.42,
+        "change_24h": -10.98
       },
       {
         "symbol": "PLTR",
-        "price_usd": 129.27,
-        "change_24h": 4.79
+        "price_usd": 131.18,
+        "change_24h": 6.33
       },
       {
         "symbol": "COIN",
-        "price_usd": 163.65,
-        "change_24h": 3.39
+        "price_usd": 164.89,
+        "change_24h": 2.31
       }
     ],
     "top_mentioned": [],
     "news": [
       {
-        "title": "Latest Oil Market News and Analysis for July 27",
+        "title": "LVMH Fashion Unit’s Return to Growth Held Back by Iran War",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-26/latest-oil-market-news-and-analysis-for-july-27",
-        "published": "Sun, 26 Jul 2026 22:02:41 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-27/lvmh-fashion-unit-s-return-to-growth-held-back-by-iran-war",
+        "published": "Mon, 27 Jul 2026 15:45:31 GMT",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
-        "title": "Stocks Waver as Chip Selloff Offsets US-Iran Hopes: Markets Wrap",
+        "title": "Italy Cuts Diesel Tax and Seeks EU Fiscal Room for Energy Aid",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-26/oil-tumbles-as-us-and-iran-pause-military-strikes-markets-wrap",
-        "published": "Sun, 26 Jul 2026 22:09:05 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-27/italy-cuts-diesel-tax-and-seeks-eu-fiscal-room-for-energy-aid",
+        "published": "Mon, 27 Jul 2026 16:57:22 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "S&P 500 Erases Gains as Semiconductor Stocks Extend Losses",
+        "title": "S&P 500 Falls as Chipmaker Rout Outweighs Oil Drop: Markets Wrap",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-07-27/us-stocks-catch-a-bid-as-oil-tumbles-with-iran-conflict-pause",
-        "published": "Mon, 27 Jul 2026 11:12:22 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-26/oil-tumbles-as-us-and-iran-pause-military-strikes-markets-wrap",
+        "published": "Sun, 26 Jul 2026 22:09:05 GMT",
         "assets": [
           "SPY"
         ],
         "sentiment": "Bearish",
-        "score": -0.333,
+        "score": -1.0,
         "color": "red"
       },
       {
         "title": "Sam Altman to meet with Trump administration, senators this week. Here's what he plans to say",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/07/27/altman-trump-china-open-weight-ai.html",
-        "published": "Mon, 27 Jul 2026 14:58:55 GMT",
+        "published": "Mon, 27 Jul 2026 15:24:16 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "NBCUniversal and YouTube ink deal to embed Peacock in the video platform for premium subscribers",
+        "title": "Consolidated food supply may be worsening cyclospora outbreaks, experts say",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/07/27/nbcuniversal-youtube-peacock-premium-subscribers.html",
-        "published": "Mon, 27 Jul 2026 15:02:01 GMT",
+        "url": "https://www.cnbc.com/2026/07/27/cyclospora-outbreak-food-industry-consolidation.html",
+        "published": "Mon, 27 Jul 2026 15:49:31 GMT",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Nvidia, SpaceX, Microsoft launch AI safety initiative as OpenAI cyberattack fallout continues",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/07/27/nvidia-ai-initiative-openai-cyber-attack.html",
-        "published": "Mon, 27 Jul 2026 11:32:45 GMT",
-        "assets": [
-          "NVDA",
-          "MSFT"
-        ],
         "sentiment": "Bearish",
         "score": -0.333,
         "color": "red"
       },
       {
-        "title": "College kids are moving into retirement communities for reasons beyond ‘cheap rent’",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/college-kids-are-moving-into-retirement-communities-for-reasons-beyond-cheap-rent-577dc94b?mod=mw_rss_topstories",
-        "published": "Mon, 27 Jul 2026 15:09:00 GMT",
+        "title": "CME launches single stock futures enabling investors to trade SpaceX, Micron and others 23 hours a day",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/07/27/cme-launches-single-stock-futures-enabling-investors-to-trade-spacex-micron-23-hours-a-day.html",
+        "published": "Mon, 27 Jul 2026 15:50:20 GMT",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "This small-cap stock strategy shines by riding the beat-and-raise trend",
+        "title": "‘Time will tell whether that was a good bet’: My adviser got me a full SpaceX IPO allocation. Was I lucky?",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/time-will-tell-whether-that-was-a-good-bet-my-adviser-got-me-a-full-spacex-ipo-allocation-was-i-lucky-7f319645?mod=mw_rss_topstories",
+        "published": "Mon, 27 Jul 2026 17:09:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "This small-cap fund is built to win the earnings-report games companies play",
         "source": "MarketWatch",
         "url": "https://www.marketwatch.com/story/this-small-cap-stock-strategy-shines-by-riding-the-beat-and-raise-trend-24bee883?mod=mw_rss_topstories",
-        "published": "Mon, 27 Jul 2026 15:08:00 GMT",
+        "published": "Mon, 27 Jul 2026 16:48:00 GMT",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Do I need to hire a broker to find an apartment in New York City?",
+        "title": "SpaceX’s stock falls to a new low despite a near-flawless Starship flight",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/do-i-need-to-hire-a-broker-to-find-an-apartment-in-new-york-city-f5f9cf34?mod=mw_rss_topstories",
-        "published": "Mon, 27 Jul 2026 14:51:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Galp Energia, SGPS, S.A. (GLPEY) Q2 2026 Earnings Call Transcript",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4925844-galp-energia-sgps-s-a-glpey-q2-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Mon, 27 Jul 2026 11:18:48 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Nektar: Sanofi's Exit Clears A Competitor But Raises The Bar In Atopic Dermatitis",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4925892-nektar-sanofi-exit-clears-competitor-raises-bar-atopic-dermatitis?source=feed_all_articles",
-        "published": "Mon, 27 Jul 2026 11:18:07 -0400",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Is The Market Mispricing The Energy Cost Of Sound Money?",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4925891-is-the-market-mispricing-the-energy-cost-of-sound-money?source=feed_all_articles",
-        "published": "Mon, 27 Jul 2026 11:15:07 -0400",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Canadian intern at NATO’s military headquarters arrested on espionage charges",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/07/27/canadian-intern-at-natos-military-headquarters-arrested-on-espionage-charges/",
-        "published": "Mon, 27 Jul 2026 14:40:59 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "U.S. and Iran edge toward talks as Hormuz shipping hits three-week low, regional officials say",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/07/27/u-s-and-iran-edge-toward-talks-as-hormuz-shipping-hits-three-week-low-regional-officials-say/",
-        "published": "Mon, 27 Jul 2026 14:39:59 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "New York City women are making up to $30,000 per month by renting out their closets to strangers",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/07/27/new-york-city-women-are-making-up-to-30000-per-month-by-renting-out-their-closets-to-strangers/",
-        "published": "Mon, 27 Jul 2026 07:02:00 +0000",
+        "url": "https://www.marketwatch.com/story/spacexs-stock-falls-to-a-new-low-despite-a-near-flawless-starship-flight-034a99ab?mod=mw_rss_topstories",
+        "published": "Mon, 27 Jul 2026 16:36:00 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
+      },
+      {
+        "title": "Avante Corp. (XX:CA) Q4 2026 Earnings Call Transcript",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4925925-avante-corp-xx-ca-q4-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Mon, 27 Jul 2026 13:08:51 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Alliance Resource Partners, L.P. Common Units (ARLP) Q2 2026 Earnings Call Transcript",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4925913-alliance-resource-partners-l-p-common-units-arlp-q2-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Mon, 27 Jul 2026 13:08:48 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Business Conditions Monthly May 2026",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4925923-business-conditions-monthly-may-2026?source=feed_all_articles",
+        "published": "Mon, 27 Jul 2026 13:00:00 -0400",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Jeff Raikes: The talent debt I warned about is now showing up in the data",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/07/26/ai-literacy-talent-pipeline-entry-level-jobs-jeff-raikes-microsoft-gates-foundation-2/",
+        "published": "Sun, 26 Jul 2026 11:30:00 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "The millennial generation is split in 2: an older crowd with boomer-style comfort, a younger set going ‘back to the early 1900s’",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/07/25/millennial-generation-split-boomer-level-wealth-multigenerational-homes-housing/",
+        "published": "Sat, 25 Jul 2026 11:30:00 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "The Strait of Hormuz isn’t fertilizer’s first starring role — and 1856 law still defines U.S. overseas territory",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/07/27/hormuz-fertilizer-guano-islands-act-fertilizer-empire/",
+        "published": "Mon, 27 Jul 2026 16:37:52 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": 0.022,
+      "score": 0.244,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Will there be no change in Fed interest rates after the July 2026 meeting?",
-        "volume_24h": 1541064,
-        "yes_price": 0.72,
+        "volume_24h": 1489670,
+        "yes_price": 0.74,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-july-2026-meeting"
       },
       {
         "title": "Will the Fed increase interest rates by 25 bps after the July 2026 meeting?",
-        "volume_24h": 742322,
-        "yes_price": 0.28,
+        "volume_24h": 841655,
+        "yes_price": 0.26,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-july-2026-meeting"
       },
       {
+        "title": "US announces halt in Iran offensive operations by July 31?",
+        "volume_24h": 582285,
+        "yes_price": 0.96,
+        "url": "https://polymarket.com/market/will-the-us-announce-an-iran-ceasefire-by-july-31-20260718000915875"
+      },
+      {
         "title": "Israel x Iran ceasefire continues through July 31?",
-        "volume_24h": 348494,
-        "yes_price": 0.88,
+        "volume_24h": 349085,
+        "yes_price": 0.9,
         "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-july-31-20260716224448968-384-155-519-798-243"
       },
       {
         "title": "US x Iran Effective Ceasefire by July 24?",
-        "volume_24h": 321037,
-        "yes_price": 0.51,
+        "volume_24h": 330762,
+        "yes_price": 0.6,
         "url": "https://polymarket.com/market/us-x-iran-effective-ceasfire-by-july-24-20260715194822044"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by August 31?",
-        "volume_24h": 319296,
+        "volume_24h": 322103,
         "yes_price": 0.12,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
       },
       {
-        "title": "Will the price of Bitcoin be above $64,000 on July 27?",
-        "volume_24h": 286145,
-        "yes_price": 0.97,
-        "url": "https://polymarket.com/market/bitcoin-above-64k-on-july-27-2026"
-      },
-      {
         "title": "Will Bitcoin reach $67,500 in July?",
-        "volume_24h": 197086,
-        "yes_price": 0.27,
+        "volume_24h": 183593,
+        "yes_price": 0.28,
         "url": "https://polymarket.com/market/will-bitcoin-reach-67pt5k-in-july-2026"
       },
       {
         "title": "US x Iran Effective Ceasefire by July 31?",
-        "volume_24h": 177393,
-        "yes_price": 0.56,
+        "volume_24h": 179470,
+        "yes_price": 0.61,
         "url": "https://polymarket.com/market/us-x-iran-effective-ceasfire-by-july-31-20260715194822045"
       },
       {
-        "title": "Will Turkey join the Abraham Accords before 2027?",
-        "volume_24h": 164729,
-        "yes_price": 0.06,
-        "url": "https://polymarket.com/market/will-turkey-join-the-abraham-accords-before-2027"
+        "title": "Will the U.S. invade Iran before 2027?",
+        "volume_24h": 178259,
+        "yes_price": 0.23,
+        "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       },
       {
-        "title": "Bitcoin Up or Down on July 27?",
-        "volume_24h": 157954,
-        "yes_price": 0.28,
-        "url": "https://polymarket.com/market/bitcoin-up-or-down-on-july-27-2026"
+        "title": "Will Turkey join the Abraham Accords before 2027?",
+        "volume_24h": 175527,
+        "yes_price": 0.08,
+        "url": "https://polymarket.com/market/will-turkey-join-the-abraham-accords-before-2027"
       }
     ],
     "polymarket_summary": {
-      "outlook": "Mixed",
-      "summary": "We need to produce exactly ONE paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to interpret sentiment based on data. Let's see: Fed rates: no change 72% vs increase 28% => expectation of no change (neutral to bullish for markets). Israel-Iran ceasefire continues through July 31: 88% high confidence => bullish for stability. US-Iran effective ceasefire by July 24: 51% slight >50, modest. Strait of Hormuz traffic returns to normal by Aug 31: only 12% => bearish for oil supply. Bitcoin above $64k on July 27: 97% very bullish. Bitcoin reach $67,500 in July: 27% low. Bitcoin up or down on July 27: Yes 28% (maybe meaning up? ambiguous). Overall, strong bullish on Bitcoin, moderate on geopolitical ceasefire, mixed on Fed (no change expectation). Strait of Hormuz low expectation bearish. Overall sentiment maybe Mixed but leaning bullish due to Bitcoin and ceasefire. Let's decide: Mixed: reasons: high confidence in no Fed rate change (72%), strong Israel-Iran ceasefire (88%), high Bitcoin > $6"
+      "outlook": "Bullish",
+      "summary": "Bullish: 1 bullish vs 0 bearish signals detected across finance prediction markets data."
     },
     "reddit": [],
     "reddit_summary": {
       "outlook": "Mixed",
-      "summary": "We need to produce exactly one paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nData provided: \"Top mentioned: Subreddits:\" but no actual data? The user gave only that line. Possibly they omitted data. We must work with what we have: only \"Top mentioned: Subreddits:\" no numbers or names. We need to mention numbers and names where available, but none are given. Could we infer? Probably we must note that no specific data provided, so sentiment cannot be determined? But we must produce a paragraph starting with one of those labels. Could say \"Mixed: insufficient data to gauge sentiment\". But need to mention numbers and names where available—none, so we can say none mentioned. Must be <=80 words.\n\nLet's craft: \"Mixed: The Reddit snapshot shows only a placeholder 'Top mentioned: Subreddits:' with no tickers, comment counts, or user sentiment indicators, making it impossible to discern a clear bullish or bearish bias; without concrete mentions of stocks or volume metrics, sentiment remains ambiguous.\" Count words.\n\nCount: Mixed:(1) The2 Reddit3 snapshot4 shows5 only6 a7 placeholder8 'Top9 mentioned:10 Subreddits:'11 with12 no13 tickers,14 comment15"
+      "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "We need exactly one paragraph, start with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Must mention numbers and names where available. Max 80 words. Need to summarize overall market sentiment based on data. Let's count sentiment: We have multiple items: Oil market neutral, Stocks waver as chip selloff offsets US-Iran hopes (Bearish), S&P 500 erases gains as semiconductor stocks extend losses (Bearish), Sam Altman meeting (Neutral), NBCUniversal/YouTube deal (Neutral), Nvidia, SpaceX, Microsoft launch AI safety initiative as OpenAI cyberattack fallout continues (Bearish), College kids moving into retirement communities (Bullish), small-cap stock strategy shines by riding beat-and-raise trend (Bullish). So we have 4 bearish, 2 bullish, 3 neutral. Overall likely mixed or slightly bearish. Need to start with one of those words. Choose 'Mixed:' then give reasons with numbers/names. Must mention numbers and names where available. We have S&P 500, chip selloff, semiconductor stocks, Nvidia, SpaceX, Microsoft, OpenAI, NBCUniversal, YouTube, Peacock, Sam Altman, Trump administration, senators, college kids, small-cap stock strategy. Also maybe mention percentages? Not given. Could mention \"S&P 50"
+      "summary": "Mixed: 8 bullish vs 12 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
         "symbol": "^TNX",
         "name": "10Y Treasury Yield",
-        "value": 4.66,
-        "change_24h": -0.43
+        "value": 4.64,
+        "change_24h": -1.23
       },
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 101.5,
-        "change_24h": 0.03
+        "value": 101.49,
+        "change_24h": 0.06
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4076.7,
-        "change_24h": 0.22
+        "value": 4078.0,
+        "change_24h": 0.26
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 83.17,
-        "change_24h": -6.87
+        "value": 82.79,
+        "change_24h": -7.3
       }
     ],
     "most_active": [
       {
         "symbol": "NVDA",
-        "volume": 59247873,
-        "price_usd": 198.23,
-        "change_24h": -4.16
-      },
-      {
-        "symbol": "TSLA",
-        "volume": 19635300,
-        "price_usd": 308.67,
-        "change_24h": -1.39
-      },
-      {
-        "symbol": "QQQ",
-        "volume": 18610459,
-        "price_usd": 680.66,
-        "change_24h": -0.52
+        "volume": 90349598,
+        "price_usd": 195.94,
+        "change_24h": -6.14
       },
       {
         "symbol": "AAPL",
-        "volume": 18444837,
-        "price_usd": 338.76,
-        "change_24h": 1.72
+        "volume": 28156248,
+        "price_usd": 336.31,
+        "change_24h": 4.55
+      },
+      {
+        "symbol": "TSLA",
+        "volume": 26945763,
+        "price_usd": 307.33,
+        "change_24h": -3.86
+      },
+      {
+        "symbol": "QQQ",
+        "volume": 26818140,
+        "price_usd": 678.31,
+        "change_24h": -1.97
       },
       {
         "symbol": "SPY",
-        "volume": 15384614,
-        "price_usd": 739.14,
-        "change_24h": 0.03
+        "volume": 21702333,
+        "price_usd": 736.72,
+        "change_24h": -0.2
       },
       {
         "symbol": "AMD",
-        "volume": 14118573,
-        "price_usd": 483.97,
-        "change_24h": -7.28
-      },
-      {
-        "symbol": "GOOGL",
-        "volume": 12955123,
-        "price_usd": 328.47,
-        "change_24h": 2.73
-      },
-      {
-        "symbol": "BAC",
-        "volume": 12260987,
-        "price_usd": 62.45,
-        "change_24h": 0.64
+        "volume": 19771352,
+        "price_usd": 480.77,
+        "change_24h": -10.92
       },
       {
         "symbol": "PLTR",
-        "volume": 11301744,
-        "price_usd": 129.3,
-        "change_24h": 5.19
+        "volume": 19068932,
+        "price_usd": 131.26,
+        "change_24h": 6.39
+      },
+      {
+        "symbol": "BAC",
+        "volume": 18730443,
+        "price_usd": 61.95,
+        "change_24h": 1.09
+      },
+      {
+        "symbol": "GOOGL",
+        "volume": 17200199,
+        "price_usd": 326.86,
+        "change_24h": 2.89
       },
       {
         "symbol": "AMZN",
-        "volume": 10937736,
-        "price_usd": 233.27,
-        "change_24h": 0.5
+        "volume": 17067540,
+        "price_usd": 231.79,
+        "change_24h": -0.8
       }
     ],
     "google_trends": {
@@ -713,14 +714,14 @@
       "name": "BlackRock High Yield Bond",
       "type": "Bond Income",
       "price_usd": 47.1,
-      "change_1d": -0.05,
-      "change_1w": -0.5,
-      "change_1m": -0.34,
+      "change_1d": -0.13,
+      "change_1w": -0.53,
+      "change_1m": -0.2,
       "high_3m": 47.44,
       "low_3m": 46.68,
       "week52_high": 48.89,
       "week52_low": 46.84,
-      "rsi": 29.1,
+      "rsi": 29.5,
       "div_yield": 7.45,
       "last_div": null,
       "outlook": {
@@ -734,9 +735,9 @@
         "reasons": [
           "Price below 20-day moving average ↓",
           "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 29.1 — Oversold zone, historically signals a bounce ↑",
+          "RSI 29.5 — Oversold zone, historically signals a bounce ↑",
           "5-day momentum -0.5% — consolidating sideways →",
-          "1-month return -0.3% — range-bound"
+          "1-month return -0.2% — range-bound"
         ]
       }
     },
@@ -744,31 +745,31 @@
       "symbol": "XYLD",
       "name": "Global X S&P 500 Covered Call",
       "type": "Covered Call Income",
-      "price_usd": 40.78,
-      "change_1d": 0.04,
-      "change_1w": 0.01,
-      "change_1m": 2.32,
+      "price_usd": 40.69,
+      "change_1d": -0.01,
+      "change_1w": -0.11,
+      "change_1m": 2.2,
       "high_3m": 40.97,
       "low_3m": 38.96,
       "week52_high": 41.32,
       "week52_low": 38.22,
-      "rsi": 56.8,
+      "rsi": 51.6,
       "div_yield": 9.29,
       "last_div": null,
       "outlook": {
-        "label": "Bullish",
+        "label": "Mild Bullish",
         "color": "green",
-        "score": 3,
-        "bull_count": 3,
+        "score": 2,
+        "bull_count": 2,
         "bear_count": 0,
         "total": 5,
-        "confidence": "Medium",
+        "confidence": "Low",
         "reasons": [
           "Price above 20-day moving average ↑",
           "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 56.8 — Above neutral, mild upward momentum ↑",
-          "5-day momentum +0.0% — consolidating sideways →",
-          "1-month return +2.3% — range-bound"
+          "RSI 51.6 — In neutral range (45–55)",
+          "5-day momentum -0.1% — consolidating sideways →",
+          "1-month return +2.2% — range-bound"
         ]
       }
     },
@@ -776,31 +777,31 @@
       "symbol": "JEPQ",
       "name": "JPMorgan Nasdaq Equity Premium",
       "type": "Equity Income",
-      "price_usd": 57.6,
-      "change_1d": -0.63,
-      "change_1w": -1.7,
-      "change_1m": -3.21,
+      "price_usd": 57.4,
+      "change_1d": -1.92,
+      "change_1w": -1.89,
+      "change_1m": -2.82,
       "high_3m": 60.82,
       "low_3m": 57.21,
       "week52_high": 61.72,
       "week52_low": 53.51,
-      "rsi": 38.6,
+      "rsi": 34.0,
       "div_yield": 9.95,
       "last_div": null,
       "outlook": {
-        "label": "Bearish",
+        "label": "Mild Bearish",
         "color": "red",
-        "score": -3,
+        "score": -2,
         "bull_count": 1,
-        "bear_count": 4,
+        "bear_count": 3,
         "total": 5,
-        "confidence": "High",
+        "confidence": "Medium",
         "reasons": [
           "Price below 20-day moving average ↓",
           "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 38.6 — Below neutral, mild downward pressure ↓",
-          "5-day momentum -1.7% — short-term selling pressure ↓",
-          "1-month return -3.2% — sustained downtrend ↓"
+          "RSI 34.0 — Below neutral, mild downward pressure ↓",
+          "5-day momentum -1.9% — short-term selling pressure ↓",
+          "1-month return -2.8% — range-bound"
         ]
       }
     },
@@ -808,15 +809,15 @@
       "symbol": "SCHD",
       "name": "Schwab US Dividend Equity",
       "type": "Dividend Growth",
-      "price_usd": 33.53,
-      "change_1d": 0.71,
-      "change_1w": 2.37,
-      "change_1m": 4.9,
-      "high_3m": 33.53,
+      "price_usd": 33.49,
+      "change_1d": 2.1,
+      "change_1w": 1.76,
+      "change_1m": 5.57,
+      "high_3m": 33.49,
       "low_3m": 30.88,
       "week52_high": 33.6,
       "week52_low": 26.21,
-      "rsi": 66.2,
+      "rsi": 68.9,
       "div_yield": 3.3,
       "last_div": null,
       "outlook": {
@@ -830,9 +831,9 @@
         "reasons": [
           "Price above 20-day moving average ↑",
           "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 66.2 — Above neutral, mild upward momentum ↑",
-          "5-day momentum +2.4% — short-term buying pressure ↑",
-          "1-month return +4.9% — sustained uptrend ↑"
+          "RSI 68.9 — Above neutral, mild upward momentum ↑",
+          "5-day momentum +1.8% — short-term buying pressure ↑",
+          "1-month return +5.6% — sustained uptrend ↑"
         ]
       }
     },
@@ -840,15 +841,15 @@
       "symbol": "QQQM",
       "name": "Invesco Nasdaq 100",
       "type": "Growth",
-      "price_usd": 280.34,
-      "change_1d": -0.48,
-      "change_1w": -2.18,
-      "change_1m": -4.93,
+      "price_usd": 279.27,
+      "change_1d": -2.01,
+      "change_1w": -2.46,
+      "change_1m": -4.57,
       "high_3m": 306.87,
       "low_3m": 270.45,
       "week52_high": 308.21,
       "week52_low": 227.0,
-      "rsi": 36.2,
+      "rsi": 31.4,
       "div_yield": 43.0,
       "last_div": null,
       "outlook": {
@@ -862,9 +863,9 @@
         "reasons": [
           "Price below 20-day moving average ↓",
           "Short-term trend below long-term (bearish cross) ↓",
-          "RSI 36.2 — Below neutral, mild downward pressure ↓",
-          "5-day momentum -2.2% — short-term selling pressure ↓",
-          "1-month return -4.9% — sustained downtrend ↓"
+          "RSI 31.4 — Below neutral, mild downward pressure ↓",
+          "5-day momentum -2.5% — short-term selling pressure ↓",
+          "1-month return -4.6% — sustained downtrend ↓"
         ]
       }
     }
