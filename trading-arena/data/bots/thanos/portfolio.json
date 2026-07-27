@@ -1,7 +1,13 @@
 {
-  "cash": 10008.06,
+  "cash": 8812.11,
   "total_value": 10008.06,
-  "positions": {},
+  "positions": {
+    "XLP": {
+      "shares": 14,
+      "avg_cost": 85.425,
+      "current_price": 85.425
+    }
+  },
   "total_return_pct": 0.08,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
@@ -10,37 +16,37 @@
   "today_start_value": 10008.06,
   "today_date": "2026-07-27",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-27T14:20:26Z",
+  "last_updated": "2026-07-27T19:21:25Z",
   "last_session": {
-    "at": "2026-07-27T14:20:26Z",
+    "at": "2026-07-27T19:21:25Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "XLC",
-        2.33
-      ],
-      [
-        "XLB",
-        2.22
-      ],
-      [
-        "XLRE",
-        2.01
-      ],
-      [
-        "XLF",
-        1.99
-      ],
-      [
         "XLP",
-        1.89
+        2.67
       ],
       [
         "XLK",
-        -1.69
+        -2.46
+      ],
+      [
+        "XLC",
+        2.42
+      ],
+      [
+        "XLB",
+        2.05
+      ],
+      [
+        "XLY",
+        1.86
+      ],
+      [
+        "XLRE",
+        1.82
       ]
     ],
     "news_read": [],
@@ -768,6 +774,10 @@
     },
     {
       "timestamp": "2026-07-27T14:20:26Z",
+      "value": 10008.06
+    },
+    {
+      "timestamp": "2026-07-27T19:21:25Z",
       "value": 10008.06
     }
   ]

@@ -1,67 +1,72 @@
 {
-  "cash": 5902.29,
-  "total_value": 10009.22,
+  "cash": 4986.09,
+  "total_value": 10009.31,
   "positions": {
     "SHY": {
       "shares": 30,
-      "current_price": 81.845,
+      "current_price": 81.865,
       "avg_cost": 81.7733
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 83.46,
-      "current_price": 83.58
+      "current_price": 83.79
     },
     "XLRE": {
       "shares": 10,
       "avg_cost": 45.975,
-      "current_price": 45.86
+      "current_price": 45.77
     },
     "JPM": {
       "shares": 1,
       "avg_cost": 357.18,
-      "current_price": 357.18
+      "current_price": 355.47
+    },
+    "BIL": {
+      "shares": 10,
+      "avg_cost": 91.62,
+      "current_price": 91.62
     }
   },
   "total_return_pct": 0.09,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
+  "today_pnl": 0.09,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
   "today_start_value": 10009.22,
   "today_date": "2026-07-27",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-27T14:18:07Z",
+  "last_updated": "2026-07-27T19:20:58Z",
   "last_session": {
-    "at": "2026-07-27T14:18:07Z",
+    "at": "2026-07-27T19:20:58Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "JPM",
-        2.15
-      ],
-      [
-        "BAC",
-        2.1
-      ],
-      [
-        "XLRE",
-        2.01
+        "GS",
+        -3.23
       ],
       [
         "VNQ",
-        2.01
+        1.9
+      ],
+      [
+        "XLRE",
+        1.82
       ],
       [
         "XLF",
-        1.99
+        1.73
       ],
       [
-        "PFF",
-        0.56
+        "JPM",
+        1.59
+      ],
+      [
+        "BAC",
+        1.29
       ]
     ],
     "news_read": [],
@@ -790,6 +795,10 @@
     {
       "timestamp": "2026-07-27T14:18:07Z",
       "value": 10009.22
+    },
+    {
+      "timestamp": "2026-07-27T19:20:58Z",
+      "value": 10009.31
     }
   ]
 }
