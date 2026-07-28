@@ -1,98 +1,103 @@
 {
-  "cash": 1848.72,
-  "total_value": 10143.05,
+  "cash": 1684.62,
+  "total_value": 10277.96,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 335.71,
+      "current_price": 339.5,
       "avg_cost": 299.3344
     },
     "EL": {
       "shares": 9,
-      "current_price": 82.685,
+      "current_price": 85.09,
       "avg_cost": 84.8412
     },
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 146.01
+      "current_price": 150.11
     },
     "LVS": {
       "shares": 10,
       "avg_cost": 45.78,
-      "current_price": 47.54
+      "current_price": 48.46
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 378.47
+      "current_price": 383.44
     },
     "MGM": {
       "shares": 10,
       "avg_cost": 45.745,
-      "current_price": 46.11
+      "current_price": 46.22
     },
     "RH": {
       "shares": 2,
-      "current_price": 180.175,
+      "current_price": 178.935,
       "avg_cost": 178.855
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 117.56
+      "current_price": 120.77
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 336.87
+      "current_price": 344.8
+    },
+    "CPRI": {
+      "shares": 10,
+      "avg_cost": 16.41,
+      "current_price": 16.41
     }
   },
-  "total_return_pct": 1.43,
+  "total_return_pct": 2.78,
   "total_return_usd": 0.0,
-  "today_pnl": 19.29,
-  "today_pnl_pct": 0.19,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10123.76,
-  "today_date": "2026-07-27",
-  "last_action": "...",
-  "last_updated": "2026-07-27T19:17:01Z",
+  "today_start_value": 10277.96,
+  "today_date": "2026-07-28",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-28T17:49:04Z",
   "last_session": {
-    "at": "2026-07-27T19:17:01Z",
+    "at": "2026-07-28T17:49:04Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "RH",
-        8.49
-      ],
-      [
-        "LULU",
-        6.22
-      ],
-      [
-        "DRI",
-        4.98
-      ],
-      [
-        "TPR",
-        4.95
-      ],
-      [
-        "AAPL",
-        4.33
+        "CPRI",
+        3.34
       ],
       [
         "HD",
-        3.74
+        2.59
+      ],
+      [
+        "LULU",
+        2.5
+      ],
+      [
+        "NKE",
+        2.29
+      ],
+      [
+        "EL",
+        2.27
+      ],
+      [
+        "TPR",
+        1.82
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -819,6 +824,10 @@
     {
       "timestamp": "2026-07-27T19:17:01Z",
       "value": 10143.05
+    },
+    {
+      "timestamp": "2026-07-28T17:49:04Z",
+      "value": 10277.96
     }
   ]
 }

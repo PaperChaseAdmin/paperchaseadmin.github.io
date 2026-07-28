@@ -1,64 +1,69 @@
 {
-  "cash": 3463.97,
-  "total_value": 10024.01,
+  "cash": 2420.0,
+  "total_value": 10094.37,
   "positions": {
     "MA": {
       "shares": 3,
       "avg_cost": 529.705,
-      "current_price": 551.57
+      "current_price": 561.99
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 95.18
+      "current_price": 97.3736
     },
     "JPM": {
       "shares": 2,
       "avg_cost": 336.345,
-      "current_price": 355.47
+      "current_price": 356.115
     },
     "BAC": {
       "shares": 32,
-      "current_price": 62.065,
+      "current_price": 62.46,
       "avg_cost": 60.3732
     },
     "WFC": {
       "shares": 4,
-      "current_price": 87.2056,
+      "current_price": 86.98,
       "avg_cost": 87.525
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 131.95
+      "current_price": 132.51
     },
     "PGR": {
       "shares": 2,
-      "current_price": 216.37,
+      "current_price": 221.23,
       "avg_cost": 212.73
     },
     "TRV": {
       "shares": 1,
       "avg_cost": 387.885,
-      "current_price": 391.38
+      "current_price": 396.33
     },
     "COF": {
       "shares": 2,
       "avg_cost": 207.125,
-      "current_price": 206.195
+      "current_price": 209.68
+    },
+    "GS": {
+      "shares": 1,
+      "avg_cost": 1043.9698,
+      "current_price": 1043.9698
     }
   },
-  "total_return_pct": 0.24,
+  "total_return_pct": 0.94,
   "total_return_usd": 0.0,
-  "today_pnl": -88.55,
-  "today_pnl_pct": -0.88,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10112.56,
-  "today_date": "2026-07-27",
+  "today_start_value": 10094.37,
+  "today_date": "2026-07-28",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-27T19:15:14Z",
+  "last_updated": "2026-07-28T17:42:44Z",
   "last_session": {
-    "at": "2026-07-27T19:15:14Z",
+    "at": "2026-07-28T17:42:44Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -66,27 +71,27 @@
     "top_movers": [
       [
         "PGR",
-        4.49
+        2.54
+      ],
+      [
+        "MET",
+        2.29
+      ],
+      [
+        "BRK-B",
+        2.26
+      ],
+      [
+        "PRU",
+        2.08
       ],
       [
         "MA",
-        4.01
-      ],
-      [
-        "TRV",
-        3.99
+        1.86
       ],
       [
         "V",
-        3.28
-      ],
-      [
-        "GS",
-        -3.23
-      ],
-      [
-        "COF",
-        3.12
+        1.78
       ]
     ],
     "news_read": [],
@@ -819,6 +824,10 @@
     {
       "timestamp": "2026-07-27T19:15:14Z",
       "value": 10024.01
+    },
+    {
+      "timestamp": "2026-07-28T17:42:44Z",
+      "value": 10094.37
     }
   ]
 }

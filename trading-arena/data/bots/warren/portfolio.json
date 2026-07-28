@@ -1,73 +1,73 @@
 {
   "cash": 1283.03,
-  "total_value": 10155.14,
+  "total_value": 10339.8,
   "positions": {
     "KO": {
       "shares": 29,
-      "current_price": 83.995,
+      "current_price": 88.06,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 5,
       "avg_cost": 361.58,
-      "current_price": 363.09
+      "current_price": 369.0
     },
     "JNJ": {
       "shares": 9,
       "avg_cost": 265.65,
-      "current_price": 268.28
+      "current_price": 267.785
     },
     "MA": {
       "shares": 4,
-      "current_price": 551.57,
+      "current_price": 561.99,
       "avg_cost": 529.0675
     }
   },
-  "total_return_pct": 1.55,
+  "total_return_pct": 3.4,
   "total_return_usd": 0.0,
-  "today_pnl": 91.3,
-  "today_pnl_pct": 0.91,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10063.84,
-  "today_date": "2026-07-27",
-  "last_action": "Neutral market conditions. Focus on fundamentals and strong businesses.",
-  "last_updated": "2026-07-27T19:06:42Z",
+  "today_start_value": 10339.8,
+  "today_date": "2026-07-28",
+  "last_action": "Neutral market conditions. Focus on fundamentals and long-term value.",
+  "last_updated": "2026-07-28T17:35:51Z",
   "last_session": {
-    "at": "2026-07-27T19:06:42Z",
+    "at": "2026-07-28T17:35:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "AAPL",
-        4.33
+        "KO",
+        4.75
+      ],
+      [
+        "ABBV",
+        3.32
+      ],
+      [
+        "BRK-B",
+        2.26
       ],
       [
         "MA",
-        4.01
-      ],
-      [
-        "KO",
-        3.46
-      ],
-      [
-        "JNJ",
-        3.46
+        1.86
       ],
       [
         "V",
-        3.28
+        1.78
       ],
       [
-        "WMT",
-        3.23
+        "PG",
+        1.74
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "Portfolio is well-diversified with strong holdings. Adding a small position in AAPL to increase exposure to tech sector.",
-    "outlook": "Neutral market conditions. Focus on fundamentals and strong businesses.",
+    "ai_analysis": "The portfolio is well-diversified with strong holdings. Adding to BRK-B to increase exposure to a high-quality business at a fair price.",
+    "outlook": "Neutral market conditions. Focus on fundamentals and long-term value.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -794,6 +794,10 @@
     {
       "timestamp": "2026-07-27T19:06:42Z",
       "value": 10155.14
+    },
+    {
+      "timestamp": "2026-07-28T17:35:51Z",
+      "value": 10339.8
     }
   ]
 }

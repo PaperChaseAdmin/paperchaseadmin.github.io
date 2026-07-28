@@ -1,57 +1,62 @@
 {
-  "cash": 7537.9,
-  "total_value": 10530.45,
+  "cash": 4956.2,
+  "total_value": 10585.4,
   "positions": {
     "KHC": {
       "shares": 50,
       "avg_cost": 24.735,
-      "current_price": 26.2801
+      "current_price": 27.0
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 335.71,
-      "current_price": 335.71
+      "current_price": 339.5
+    },
+    "STLD": {
+      "shares": 10,
+      "avg_cost": 258.17,
+      "current_price": 258.17
     }
   },
-  "total_return_pct": 5.3,
+  "total_return_pct": 5.85,
   "total_return_usd": 0.0,
-  "today_pnl": 24.55,
-  "today_pnl_pct": 0.23,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10505.9,
-  "today_date": "2026-07-27",
+  "today_start_value": 10585.4,
+  "today_date": "2026-07-28",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-27T19:14:59Z",
+  "last_updated": "2026-07-28T17:39:46Z",
   "last_session": {
-    "at": "2026-07-27T19:14:59Z",
+    "at": "2026-07-28T17:39:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "INTC",
-        -8.72
+        "NUE",
+        6.25
       ],
       [
         "CMCSA",
-        5.61
+        6.03
       ],
       [
-        "KR",
-        4.38
-      ],
-      [
-        "OXY",
-        -3.65
+        "INTC",
+        -5.17
       ],
       [
         "KHC",
-        3.63
+        2.97
       ],
       [
         "STLD",
-        3.14
+        2.81
+      ],
+      [
+        "KR",
+        2.57
       ]
     ],
     "news_read": [],
@@ -784,6 +789,10 @@
     {
       "timestamp": "2026-07-27T19:14:59Z",
       "value": 10530.45
+    },
+    {
+      "timestamp": "2026-07-28T17:39:46Z",
+      "value": 10585.4
     }
   ]
 }
