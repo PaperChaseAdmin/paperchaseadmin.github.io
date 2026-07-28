@@ -1,57 +1,62 @@
 {
-  "cash": 5355.16,
-  "total_value": 9933.56,
+  "cash": 4729.51,
+  "total_value": 9903.61,
   "positions": {
     "GLD": {
       "shares": 10,
       "avg_cost": 371.3329,
-      "current_price": 374.05
+      "current_price": 370.555
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 83.79,
-      "current_price": 83.79
+      "current_price": 84.29
+    },
+    "EEM": {
+      "shares": 10,
+      "avg_cost": 62.565,
+      "current_price": 62.565
     }
   },
-  "total_return_pct": -0.66,
+  "total_return_pct": -0.96,
   "total_return_usd": 0.0,
-  "today_pnl": 4.7,
-  "today_pnl_pct": 0.05,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9928.86,
-  "today_date": "2026-07-27",
+  "today_start_value": 9903.61,
+  "today_date": "2026-07-28",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-27T19:14:53Z",
+  "last_updated": "2026-07-28T17:39:14Z",
   "last_session": {
-    "at": "2026-07-27T19:14:53Z",
+    "at": "2026-07-28T17:39:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "NVDA",
-        -5.48
-      ],
-      [
-        "TSLA",
-        -3.83
-      ],
-      [
-        "FXI",
-        2.19
-      ],
-      [
         "EEM",
-        -1.9
+        -1.66
+      ],
+      [
+        "XLE",
+        -1.47
       ],
       [
         "XLF",
-        1.73
+        1.13
       ],
       [
-        "META",
-        -1.58
+        "FXI",
+        1.11
+      ],
+      [
+        "GLD",
+        -1.09
+      ],
+      [
+        "NVDA",
+        0.66
       ]
     ],
     "news_read": [],
@@ -784,6 +789,10 @@
     {
       "timestamp": "2026-07-27T19:14:53Z",
       "value": 9933.56
+    },
+    {
+      "timestamp": "2026-07-28T17:39:14Z",
+      "value": 9903.61
     }
   ]
 }

@@ -1,97 +1,102 @@
 {
-  "cash": 735.76,
-  "total_value": 10158.03,
+  "cash": 513.5,
+  "total_value": 10193.66,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 583.54
+      "current_price": 578.48
     },
     "NOC": {
       "shares": 1,
       "avg_cost": 548.38,
-      "current_price": 549.41
+      "current_price": 553.905
     },
     "RTX": {
       "shares": 8,
-      "current_price": 220.09,
+      "current_price": 217.58,
       "avg_cost": 200.4213
     },
     "NUE": {
       "shares": 2,
       "avg_cost": 223.19,
-      "current_price": 245.65
+      "current_price": 263.3451
     },
     "XOM": {
       "shares": 1,
       "avg_cost": 136.71,
-      "current_price": 154.87
+      "current_price": 152.5697
     },
     "F": {
       "shares": 1,
       "avg_cost": 13.855,
-      "current_price": 14.505
+      "current_price": 14.8099
     },
     "GEO": {
       "shares": 10,
       "avg_cost": 31.44,
-      "current_price": 30.82
+      "current_price": 30.84
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 335.71,
+      "current_price": 339.5,
       "avg_cost": 328.9408
     },
     "GM": {
       "shares": 2,
-      "current_price": 85.86,
+      "current_price": 90.71,
       "avg_cost": 84.425
     },
     "HAL": {
       "shares": 1,
       "avg_cost": 33.3599,
-      "current_price": 32.46
+      "current_price": 31.56
+    },
+    "BA": {
+      "shares": 1,
+      "avg_cost": 222.265,
+      "current_price": 222.265
     }
   },
-  "total_return_pct": 1.58,
+  "total_return_pct": 1.94,
   "total_return_usd": 0.0,
-  "today_pnl": 21.28,
-  "today_pnl_pct": 0.21,
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10136.75,
-  "today_date": "2026-07-27",
+  "today_start_value": 10193.65,
+  "today_date": "2026-07-28",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-27T19:07:57Z",
+  "last_updated": "2026-07-28T17:36:06Z",
   "last_session": {
-    "at": "2026-07-27T19:07:57Z",
+    "at": "2026-07-28T17:36:06Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "GM",
-        6.52
+        "NUE",
+        6.25
       ],
       [
-        "RTX",
-        5.23
+        "BA",
+        5.09
+      ],
+      [
+        "GM",
+        4.22
       ],
       [
         "CAT",
-        -3.73
+        -3.91
       ],
       [
-        "NOC",
-        2.99
+        "HAL",
+        -1.77
       ],
       [
-        "LMT",
-        2.63
-      ],
-      [
-        "F",
-        2.59
+        "XOM",
+        -1.42
       ]
     ],
     "news_read": [],
@@ -824,6 +829,10 @@
     {
       "timestamp": "2026-07-27T19:07:57Z",
       "value": 10158.03
+    },
+    {
+      "timestamp": "2026-07-28T17:36:06Z",
+      "value": 10193.66
     }
   ]
 }
