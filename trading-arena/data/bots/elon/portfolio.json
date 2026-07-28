@@ -1,63 +1,58 @@
 {
-  "cash": 2859.65,
-  "total_value": 9414.97,
+  "cash": 6023.17,
+  "total_value": 9415.77,
   "positions": {
     "AAPL": {
       "shares": 10,
-      "current_price": 339.82,
+      "current_price": 339.26,
       "avg_cost": 317.7825
-    },
-    "NVDA": {
-      "shares": 16,
-      "current_price": 197.32,
-      "avg_cost": 201.4803
     }
   },
-  "total_return_pct": -5.85,
+  "total_return_pct": -5.84,
   "total_return_usd": 0.0,
-  "today_pnl": 0.79,
-  "today_pnl_pct": 0.01,
+  "today_pnl": 1.59,
+  "today_pnl_pct": 0.02,
   "total_trades": 0,
   "today_start_value": 9414.18,
   "today_date": "2026-07-28",
-  "last_action": "...",
-  "last_updated": "2026-07-28T18:03:38Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-28T19:32:04Z",
   "last_session": {
-    "at": "2026-07-28T18:03:38Z",
+    "at": "2026-07-28T19:32:04Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "PLTR",
+        -6.45
+      ],
+      [
         "AMD",
-        -7.23
+        -5.98
       ],
       [
         "IONQ",
-        -6.12
+        -5.86
       ],
       [
-        "PLTR",
-        -5.37
-      ],
-      [
-        "RBLX",
-        2.86
+        "MSTR",
+        -2.62
       ],
       [
         "GOOGL",
-        2.72
+        2.46
       ],
       [
-        "MSFT",
-        2.58
+        "RBLX",
+        2.03
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -792,6 +787,10 @@
     {
       "timestamp": "2026-07-28T18:03:38Z",
       "value": 9414.97
+    },
+    {
+      "timestamp": "2026-07-28T19:32:04Z",
+      "value": 9415.77
     }
   ]
 }

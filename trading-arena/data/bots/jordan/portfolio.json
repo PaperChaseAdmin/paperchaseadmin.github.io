@@ -1,44 +1,44 @@
 {
-  "cash": 2295.18,
-  "total_value": 9075.14,
+  "cash": 2022.18,
+  "total_value": 9046.83,
   "positions": {
     "AMC": {
-      "shares": 16,
-      "current_price": 2.695,
-      "avg_cost": 2.3968
+      "shares": 116,
+      "current_price": 2.73,
+      "avg_cost": 2.684
     },
     "AAPL": {
       "shares": 12,
-      "current_price": 339.82,
+      "current_price": 339.26,
       "avg_cost": 331.2368
     },
     "GME": {
       "shares": 10,
       "avg_cost": 21.35,
-      "current_price": 21.99
+      "current_price": 22.17
     },
     "MSTR": {
       "shares": 20,
       "avg_cost": 97.18,
-      "current_price": 97.04
+      "current_price": 96.04
     },
     "RBLX": {
       "shares": 10,
       "avg_cost": 49.7,
-      "current_price": 49.83
+      "current_price": 49.435
     }
   },
-  "total_return_pct": -9.25,
+  "total_return_pct": -9.53,
   "total_return_usd": 0.0,
-  "today_pnl": -7.72,
-  "today_pnl_pct": -0.08,
+  "today_pnl": -36.03,
+  "today_pnl_pct": -0.4,
   "total_trades": 0,
   "today_start_value": 9082.86,
   "today_date": "2026-07-28",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-28T18:17:47Z",
+  "last_updated": "2026-07-28T19:46:29Z",
   "last_session": {
-    "at": "2026-07-28T18:17:47Z",
+    "at": "2026-07-28T19:46:29Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +46,27 @@
     "top_movers": [
       [
         "AMC",
-        7.37
+        8.96
       ],
       [
         "PLTR",
-        -5.37
-      ],
-      [
-        "RIOT",
-        -4.87
-      ],
-      [
-        "MARA",
-        -4.16
-      ],
-      [
-        "RBLX",
-        2.86
+        -6.45
       ],
       [
         "HOOD",
-        -2.85
+        -3.92
+      ],
+      [
+        "MARA",
+        -3.53
+      ],
+      [
+        "RIOT",
+        -3.05
+      ],
+      [
+        "GME",
+        3.04
       ]
     ],
     "news_read": [],
@@ -807,6 +807,10 @@
     {
       "timestamp": "2026-07-28T18:17:47Z",
       "value": 9075.14
+    },
+    {
+      "timestamp": "2026-07-28T19:46:29Z",
+      "value": 9046.83
     }
   ]
 }
