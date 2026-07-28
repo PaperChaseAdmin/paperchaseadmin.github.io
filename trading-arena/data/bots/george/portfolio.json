@@ -1,34 +1,29 @@
 {
-  "cash": 4729.51,
-  "total_value": 9903.61,
+  "cash": 8424.61,
+  "total_value": 9891.26,
   "positions": {
-    "GLD": {
-      "shares": 10,
-      "avg_cost": 371.3329,
-      "current_price": 370.555
-    },
     "TLT": {
       "shares": 10,
       "avg_cost": 83.79,
-      "current_price": 84.29
+      "current_price": 84.215
     },
     "EEM": {
       "shares": 10,
       "avg_cost": 62.565,
-      "current_price": 62.565
+      "current_price": 62.45
     }
   },
-  "total_return_pct": -0.96,
+  "total_return_pct": -1.09,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -12.35,
+  "today_pnl_pct": -0.12,
   "total_trades": 0,
   "today_start_value": 9903.61,
   "today_date": "2026-07-28",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-28T17:39:14Z",
+  "last_updated": "2026-07-28T18:14:35Z",
   "last_session": {
-    "at": "2026-07-28T17:39:14Z",
+    "at": "2026-07-28T18:14:35Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +31,27 @@
     "top_movers": [
       [
         "EEM",
-        -1.66
-      ],
-      [
-        "XLE",
-        -1.47
-      ],
-      [
-        "XLF",
-        1.13
-      ],
-      [
-        "FXI",
-        1.11
+        -1.85
       ],
       [
         "GLD",
-        -1.09
+        -1.37
       ],
       [
-        "NVDA",
-        0.66
+        "XLE",
+        -1.27
+      ],
+      [
+        "FXI",
+        1.09
+      ],
+      [
+        "XLF",
+        1.03
+      ],
+      [
+        "QQQ",
+        -0.72
       ]
     ],
     "news_read": [],
@@ -793,6 +788,10 @@
     {
       "timestamp": "2026-07-28T17:39:14Z",
       "value": 9903.61
+    },
+    {
+      "timestamp": "2026-07-28T18:14:35Z",
+      "value": 9891.26
     }
   ]
 }

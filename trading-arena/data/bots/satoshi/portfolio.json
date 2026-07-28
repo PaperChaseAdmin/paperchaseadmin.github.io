@@ -1,44 +1,49 @@
 {
-  "cash": 1983.24,
-  "total_value": 9331.29,
+  "cash": 1395.34,
+  "total_value": 9294.11,
   "positions": {
     "MSTR": {
       "shares": 35,
-      "current_price": 97.715,
+      "current_price": 97.04,
       "avg_cost": 100.6991
     },
     "COIN": {
       "shares": 19,
-      "current_price": 167.61,
+      "current_price": 167.165,
       "avg_cost": 163.5832
     },
     "MARA": {
       "shares": 10,
-      "current_price": 11.2598,
+      "current_price": 11.2799,
       "avg_cost": 12.7487
     },
     "CLSK": {
       "shares": 31,
-      "current_price": 13.54,
+      "current_price": 13.44,
       "avg_cost": 14.2452
     },
     "RIOT": {
       "shares": 10,
       "avg_cost": 23.41,
-      "current_price": 21.11
+      "current_price": 20.89
+    },
+    "PYPL": {
+      "shares": 10,
+      "avg_cost": 58.79,
+      "current_price": 58.79
     }
   },
-  "total_return_pct": -6.69,
+  "total_return_pct": -7.06,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -37.18,
+  "today_pnl_pct": -0.4,
   "total_trades": 0,
   "today_start_value": 9331.29,
   "today_date": "2026-07-28",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-28T17:54:33Z",
+  "last_updated": "2026-07-28T18:24:37Z",
   "last_session": {
-    "at": "2026-07-28T17:54:33Z",
+    "at": "2026-07-28T18:24:37Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +51,27 @@
     "top_movers": [
       [
         "WULF",
-        -7.26
-      ],
-      [
-        "IREN",
-        -6.03
+        -7.7
       ],
       [
         "CIFR",
-        -5.68
+        -7.02
       ],
       [
-        "PYPL",
-        4.51
-      ],
-      [
-        "MARA",
-        -4.33
+        "IREN",
+        -6.78
       ],
       [
         "RIOT",
-        -3.91
+        -4.87
+      ],
+      [
+        "PYPL",
+        4.84
+      ],
+      [
+        "BTBT",
+        -4.44
       ]
     ],
     "news_read": [],
@@ -803,6 +808,10 @@
     {
       "timestamp": "2026-07-28T17:54:33Z",
       "value": 9331.29
+    },
+    {
+      "timestamp": "2026-07-28T18:24:37Z",
+      "value": 9294.11
     }
   ]
 }

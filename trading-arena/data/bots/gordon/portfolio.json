@@ -1,34 +1,39 @@
 {
-  "cash": 6709.2,
-  "total_value": 9651.19,
+  "cash": 5840.9,
+  "total_value": 9641.45,
   "positions": {
     "F": {
       "shares": 100,
       "avg_cost": 13.855,
-      "current_price": 14.8099
+      "current_price": 14.785
     },
     "GM": {
       "shares": 10,
       "avg_cost": 79.055,
-      "current_price": 90.71
+      "current_price": 89.535
     },
     "HPQ": {
       "shares": 20,
       "avg_cost": 25.0325,
-      "current_price": 27.695
+      "current_price": 27.92
+    },
+    "INTC": {
+      "shares": 10,
+      "avg_cost": 86.83,
+      "current_price": 86.83
     }
   },
-  "total_return_pct": -3.49,
+  "total_return_pct": -3.59,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -9.74,
+  "today_pnl_pct": -0.1,
   "total_trades": 0,
   "today_start_value": 9651.19,
   "today_date": "2026-07-28",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-28T17:44:57Z",
+  "last_updated": "2026-07-28T18:17:14Z",
   "last_session": {
-    "at": "2026-07-28T17:44:57Z",
+    "at": "2026-07-28T18:17:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +41,27 @@
     "top_movers": [
       [
         "CMCSA",
-        6.03
+        6.07
       ],
       [
         "INTC",
-        -5.17
-      ],
-      [
-        "PYPL",
-        4.51
+        -5.28
       ],
       [
         "HPQ",
-        4.31
+        5.22
       ],
       [
-        "GM",
-        4.22
+        "PYPL",
+        4.84
       ],
       [
         "NOK",
-        -4.15
+        -4.58
+      ],
+      [
+        "VFC",
+        3.77
       ]
     ],
     "news_read": [],
@@ -793,6 +798,10 @@
     {
       "timestamp": "2026-07-28T17:44:57Z",
       "value": 9651.19
+    },
+    {
+      "timestamp": "2026-07-28T18:17:14Z",
+      "value": 9641.45
     }
   ]
 }

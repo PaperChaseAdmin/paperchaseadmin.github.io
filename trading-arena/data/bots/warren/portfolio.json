@@ -1,39 +1,39 @@
 {
   "cash": 1283.03,
-  "total_value": 10339.8,
+  "total_value": 10328.69,
   "positions": {
     "KO": {
       "shares": 29,
-      "current_price": 88.06,
+      "current_price": 87.79,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 5,
       "avg_cost": 361.58,
-      "current_price": 369.0
+      "current_price": 369.44
     },
     "JNJ": {
       "shares": 9,
       "avg_cost": 265.65,
-      "current_price": 267.785
+      "current_price": 267.35
     },
     "MA": {
       "shares": 4,
-      "current_price": 561.99,
+      "current_price": 561.6,
       "avg_cost": 529.0675
     }
   },
-  "total_return_pct": 3.4,
+  "total_return_pct": 3.29,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -11.11,
+  "today_pnl_pct": -0.11,
   "total_trades": 0,
   "today_start_value": 10339.8,
   "today_date": "2026-07-28",
-  "last_action": "Neutral market conditions. Focus on fundamentals and long-term value.",
-  "last_updated": "2026-07-28T17:35:51Z",
+  "last_action": "Neutral, stick to fundamentals.",
+  "last_updated": "2026-07-28T18:06:40Z",
   "last_session": {
-    "at": "2026-07-28T17:35:51Z",
+    "at": "2026-07-28T18:06:40Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,33 +41,33 @@
     "top_movers": [
       [
         "KO",
-        4.75
+        4.4
       ],
       [
         "ABBV",
-        3.32
+        3.38
       ],
       [
         "BRK-B",
-        2.26
-      ],
-      [
-        "MA",
-        1.86
+        2.64
       ],
       [
         "V",
-        1.78
+        1.9
+      ],
+      [
+        "MA",
+        1.79
       ],
       [
         "PG",
-        1.74
+        1.64
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "The portfolio is well-diversified with strong holdings. Adding to BRK-B to increase exposure to a high-quality business at a fair price.",
-    "outlook": "Neutral market conditions. Focus on fundamentals and long-term value.",
+    "ai_analysis": "Bought BRK-B to diversify and add a strong business to the portfolio.",
+    "outlook": "Neutral, stick to fundamentals.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -798,6 +798,10 @@
     {
       "timestamp": "2026-07-28T17:35:51Z",
       "value": 10339.8
+    },
+    {
+      "timestamp": "2026-07-28T18:06:40Z",
+      "value": 10328.69
     }
   ]
 }
