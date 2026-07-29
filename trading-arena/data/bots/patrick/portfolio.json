@@ -1,49 +1,54 @@
 {
-  "cash": 3538.11,
-  "total_value": 10328.41,
+  "cash": 3368.33,
+  "total_value": 10347.94,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 341.145,
+      "current_price": 342.53,
       "avg_cost": 299.3344
     },
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 148.675
+      "current_price": 149.385
     },
     "LVS": {
       "shares": 10,
       "avg_cost": 45.78,
-      "current_price": 48.27
+      "current_price": 48.305
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 370.76
+      "current_price": 371.17
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 118.81
+      "current_price": 119.0275
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 342.22
+      "current_price": 342.68
+    },
+    "EL": {
+      "shares": 2,
+      "avg_cost": 84.89,
+      "current_price": 84.89
     }
   },
-  "total_return_pct": 3.28,
+  "total_return_pct": 3.48,
   "total_return_usd": 0.0,
-  "today_pnl": -15.47,
-  "today_pnl_pct": -0.15,
+  "today_pnl": 4.06,
+  "today_pnl_pct": 0.04,
   "total_trades": 0,
   "today_start_value": 10343.88,
   "today_date": "2026-07-29",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-29T17:18:54Z",
+  "last_updated": "2026-07-29T17:43:55Z",
   "last_session": {
-    "at": "2026-07-29T17:18:54Z",
+    "at": "2026-07-29T17:43:55Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -51,27 +56,27 @@
     "top_movers": [
       [
         "CAKE",
-        15.66
+        12.54
+      ],
+      [
+        "CPRI",
+        -4.15
       ],
       [
         "DRI",
-        3.65
+        2.16
       ],
       [
         "RH",
-        -2.85
+        -2.16
       ],
       [
         "RL",
-        -2.42
+        -1.67
       ],
       [
-        "EL",
-        2.42
-      ],
-      [
-        "HD",
-        1.82
+        "LULU",
+        -1.07
       ]
     ],
     "news_read": [],
@@ -832,6 +837,10 @@
     {
       "timestamp": "2026-07-29T17:18:54Z",
       "value": 10328.41
+    },
+    {
+      "timestamp": "2026-07-29T17:43:55Z",
+      "value": 10347.94
     }
   ]
 }
