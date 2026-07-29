@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-28T15:01:42Z",
+  "updated_at": "2026-07-28T21:35:40Z",
   "last_prediction_date": "2026-07-28",
-  "last_settle_date": "2026-07-27",
+  "last_settle_date": "2026-07-28",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 28,
-      "correct": 23,
-      "accuracy_pct": 82.1,
+      "total": 30,
+      "correct": 25,
+      "accuracy_pct": 83.3,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -743,9 +743,10 @@
           "prediction": "down",
           "confidence": 70,
           "signal": "Continued chipmaker rout and tech sector weakness",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.22
         },
         {
           "date": "2026-07-28",
@@ -753,9 +754,10 @@
           "prediction": "up",
           "confidence": 60,
           "signal": "Positive momentum from previous session",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.03
         }
       ]
     },
