@@ -1,69 +1,74 @@
 {
-  "cash": 822.27,
-  "total_value": 10132.6,
+  "cash": 602.16,
+  "total_value": 10109.89,
   "positions": {
     "MO": {
       "shares": 27,
       "avg_cost": 72.2,
-      "current_price": 75.5
+      "current_price": 75.345
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 261.05,
-      "current_price": 266.7801
+      "current_price": 266.3299
     },
     "O": {
       "shares": 10,
       "avg_cost": 63.841,
-      "current_price": 65.88
+      "current_price": 65.64
     },
     "T": {
       "shares": 75,
       "avg_cost": 20.83,
-      "current_price": 24.505
+      "current_price": 24.445
     },
     "VZ": {
       "shares": 20,
-      "current_price": 48.19,
+      "current_price": 48.165,
       "avg_cost": 43.7633
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 200.82
+      "current_price": 200.49
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 75.94
+      "current_price": 75.24
     },
     "IBM": {
       "shares": 1,
       "avg_cost": 212.365,
-      "current_price": 225.895
+      "current_price": 226.99
     },
     "KO": {
       "shares": 13,
-      "current_price": 90.25,
+      "current_price": 89.69,
       "avg_cost": 83.8962
     },
     "JNJ": {
       "shares": 1,
       "avg_cost": 264.9,
-      "current_price": 267.99
+      "current_price": 267.235
+    },
+    "MAIN": {
+      "shares": 4,
+      "avg_cost": 55.0276,
+      "current_price": 55.0276
     }
   },
-  "total_return_pct": 1.33,
+  "total_return_pct": 1.1,
   "total_return_usd": 0.0,
-  "today_pnl": 9.7,
-  "today_pnl_pct": 0.1,
+  "today_pnl": -13.01,
+  "today_pnl_pct": -0.13,
   "total_trades": 0,
   "today_start_value": 10122.9,
   "today_date": "2026-07-29",
-  "last_action": "Analysed \u2014 no trades",
-  "last_updated": "2026-07-29T15:45:09Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-29T17:14:38Z",
   "last_session": {
-    "at": "2026-07-29T15:45:09Z",
+    "at": "2026-07-29T17:14:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -71,33 +76,33 @@
     "top_movers": [
       [
         "KO",
-        7.37
+        6.71
       ],
       [
         "IBM",
-        4.45
+        4.95
       ],
       [
         "ABBV",
-        3.86
-      ],
-      [
-        "BTI",
-        3.72
+        3.63
       ],
       [
         "MO",
-        3.57
+        3.39
+      ],
+      [
+        "BTI",
+        3.37
       ],
       [
         "PM",
-        2.81
+        2.47
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "...",
-    "outlook": "",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -848,6 +853,10 @@
     {
       "timestamp": "2026-07-29T15:45:09Z",
       "value": 10132.6
+    },
+    {
+      "timestamp": "2026-07-29T17:14:38Z",
+      "value": 10109.89
     }
   ]
 }
