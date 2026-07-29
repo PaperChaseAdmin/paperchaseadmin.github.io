@@ -1,77 +1,72 @@
 {
-  "cash": 2363.24,
-  "total_value": 10016.79,
+  "cash": 2712.84,
+  "total_value": 10021.89,
   "positions": {
     "SHY": {
       "shares": 30,
-      "current_price": 81.94,
+      "current_price": 81.9,
       "avg_cost": 81.7733
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 83.46,
-      "current_price": 84.225
+      "current_price": 84.1001
     },
     "XLRE": {
       "shares": 30,
-      "current_price": 46.14,
+      "current_price": 46.04,
       "avg_cost": 46.21
-    },
-    "JPM": {
-      "shares": 1,
-      "avg_cost": 357.18,
-      "current_price": 356.395
     },
     "BIL": {
       "shares": 10,
       "avg_cost": 91.62,
-      "current_price": 91.6201
+      "current_price": 91.635
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 339.26,
-      "current_price": 339.26
+      "current_price": 342.7
     }
   },
-  "total_return_pct": 0.17,
+  "total_return_pct": 0.22,
   "total_return_usd": 0.0,
-  "today_pnl": -6.41,
-  "today_pnl_pct": -0.06,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10023.2,
-  "today_date": "2026-07-28",
+  "today_start_value": 10021.89,
+  "today_date": "2026-07-29",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-28T19:50:39Z",
+  "last_updated": "2026-07-29T14:13:38Z",
   "last_session": {
-    "at": "2026-07-28T19:50:39Z",
+    "at": "2026-07-29T14:13:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "XLF",
-        0.98
-      ],
-      [
-        "XLRE",
-        0.83
-      ],
-      [
         "GS",
-        -0.8
+        -3.85
       ],
       [
-        "VNQ",
-        0.67
-      ],
-      [
-        "TLT",
-        0.57
+        "JPM",
+        -2.2
       ],
       [
         "BAC",
-        0.45
+        -1.93
+      ],
+      [
+        "XLF",
+        -1.07
+      ],
+      [
+        "SPY",
+        -0.44
+      ],
+      [
+        "PFF",
+        -0.28
       ]
     ],
     "news_read": [],
@@ -816,6 +811,10 @@
     {
       "timestamp": "2026-07-28T19:50:39Z",
       "value": 10016.79
+    },
+    {
+      "timestamp": "2026-07-29T14:13:38Z",
+      "value": 10021.89
     }
   ]
 }
