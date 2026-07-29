@@ -1,59 +1,64 @@
 {
-  "cash": 1395.86,
-  "total_value": 10179.97,
+  "cash": 853.45,
+  "total_value": 10197.16,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 574.7
+      "current_price": 575.0
     },
     "RTX": {
       "shares": 8,
-      "current_price": 218.65,
+      "current_price": 219.3,
       "avg_cost": 200.4213
     },
     "NUE": {
       "shares": 2,
       "avg_cost": 223.19,
-      "current_price": 255.405
+      "current_price": 258.01
     },
     "XOM": {
       "shares": 1,
       "avg_cost": 136.71,
-      "current_price": 157.305
+      "current_price": 156.52
     },
     "F": {
       "shares": 1,
       "avg_cost": 13.855,
-      "current_price": 15.4899
+      "current_price": 15.6201
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 342.53,
+      "current_price": 342.7,
       "avg_cost": 328.9408
     },
     "GM": {
       "shares": 2,
-      "current_price": 90.06,
+      "current_price": 91.13,
       "avg_cost": 84.425
     },
     "BA": {
       "shares": 1,
       "avg_cost": 222.265,
-      "current_price": 214.92
+      "current_price": 217.175
+    },
+    "NOC": {
+      "shares": 1,
+      "avg_cost": 542.41,
+      "current_price": 542.41
     }
   },
-  "total_return_pct": 1.8,
+  "total_return_pct": 1.97,
   "total_return_usd": 0.0,
-  "today_pnl": -8.07,
-  "today_pnl_pct": -0.08,
+  "today_pnl": 9.12,
+  "today_pnl_pct": 0.09,
   "total_trades": 0,
   "today_start_value": 10188.04,
   "today_date": "2026-07-29",
-  "last_action": "...",
-  "last_updated": "2026-07-29T17:36:47Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-29T19:05:47Z",
   "last_session": {
-    "at": "2026-07-29T17:36:47Z",
+    "at": "2026-07-29T19:05:47Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,33 +66,33 @@
     "top_movers": [
       [
         "CAT",
-        -6.84
-      ],
-      [
-        "NUE",
-        -3.85
+        -5.19
       ],
       [
         "F",
-        3.48
+        4.45
       ],
       [
-        "BA",
-        -3.0
+        "NUE",
+        -2.86
       ],
       [
         "XOM",
-        2.8
+        2.27
+      ],
+      [
+        "JPM",
+        -2.27
       ],
       [
         "CVX",
-        2.44
+        2.09
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -846,6 +851,10 @@
     {
       "timestamp": "2026-07-29T17:36:47Z",
       "value": 10179.97
+    },
+    {
+      "timestamp": "2026-07-29T19:05:47Z",
+      "value": 10197.16
     }
   ]
 }

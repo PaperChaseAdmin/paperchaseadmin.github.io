@@ -1,6 +1,6 @@
 {
-  "cash": 1106.77,
-  "total_value": 10003.3,
+  "cash": 1010.44,
+  "total_value": 10052.35,
   "positions": {
     "TIPS": {
       "shares": 26867,
@@ -9,56 +9,61 @@
     },
     "DJP": {
       "shares": 10,
-      "current_price": 47.4232,
+      "current_price": 47.54,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 103,
-      "current_price": 17.515,
+      "current_price": 17.56,
       "avg_cost": 16.0787
     },
     "TLT": {
       "shares": 24,
-      "current_price": 83.885,
+      "current_price": 83.565,
       "avg_cost": 84.2528
     },
     "IEF": {
       "shares": 20,
-      "current_price": 93.265,
+      "current_price": 93.465,
       "avg_cost": 93.7475
     },
     "FXI": {
       "shares": 10,
-      "current_price": 36.115,
+      "current_price": 36.455,
       "avg_cost": 33.9817
     },
     "IAU": {
       "shares": 2,
       "avg_cost": 77.6,
-      "current_price": 75.955
+      "current_price": 77.235
     },
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 370.615
+      "current_price": 376.78
     },
     "GDX": {
       "shares": 5,
       "avg_cost": 73.235,
-      "current_price": 73.64
+      "current_price": 75.67
+    },
+    "GSG": {
+      "shares": 3,
+      "avg_cost": 32.11,
+      "current_price": 32.11
     }
   },
-  "total_return_pct": 0.03,
+  "total_return_pct": 0.52,
   "total_return_usd": 0.0,
-  "today_pnl": 18.92,
-  "today_pnl_pct": 0.19,
+  "today_pnl": 67.97,
+  "today_pnl_pct": 0.68,
   "total_trades": 0,
   "today_start_value": 9984.38,
   "today_date": "2026-07-29",
-  "last_action": "...",
-  "last_updated": "2026-07-29T17:41:04Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-29T19:12:54Z",
   "last_session": {
-    "at": "2026-07-29T17:41:04Z",
+    "at": "2026-07-29T19:12:54Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -66,33 +71,33 @@
     "top_movers": [
       [
         "GSG",
-        3.18
+        3.28
       ],
       [
         "PDBC",
-        2.67
-      ],
-      [
-        "DJP",
-        1.88
-      ],
-      [
-        "EEM",
-        -1.49
+        2.93
       ],
       [
         "FXI",
-        1.3
+        2.26
       ],
       [
-        "VWO",
-        -0.96
+        "DJP",
+        2.23
+      ],
+      [
+        "GLD",
+        2.01
+      ],
+      [
+        "IAU",
+        1.98
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -851,6 +856,10 @@
     {
       "timestamp": "2026-07-29T17:41:04Z",
       "value": 10003.3
+    },
+    {
+      "timestamp": "2026-07-29T19:12:54Z",
+      "value": 10052.35
     }
   ]
 }

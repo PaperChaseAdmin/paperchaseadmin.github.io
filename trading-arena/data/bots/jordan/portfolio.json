@@ -1,39 +1,44 @@
 {
-  "cash": 3989.54,
-  "total_value": 9086.3,
+  "cash": 2002.69,
+  "total_value": 9106.19,
   "positions": {
     "AAPL": {
       "shares": 12,
-      "current_price": 342.53,
+      "current_price": 342.7,
       "avg_cost": 331.2368
     },
     "GME": {
       "shares": 10,
       "avg_cost": 21.35,
-      "current_price": 21.88
+      "current_price": 21.98
     },
     "RBLX": {
       "shares": 10,
       "avg_cost": 49.7,
-      "current_price": 49.86
+      "current_price": 50.7451
     },
     "AMC": {
       "shares": 100,
       "avg_cost": 2.7,
-      "current_price": 2.69
+      "current_price": 2.77
+    },
+    "MSTR": {
+      "shares": 20,
+      "avg_cost": 99.3425,
+      "current_price": 99.3425
     }
   },
-  "total_return_pct": -9.14,
+  "total_return_pct": -8.94,
   "total_return_usd": 0.0,
-  "today_pnl": -37.14,
-  "today_pnl_pct": -0.41,
+  "today_pnl": -17.25,
+  "today_pnl_pct": -0.19,
   "total_trades": 0,
   "today_start_value": 9123.44,
   "today_date": "2026-07-29",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-29T17:43:27Z",
+  "last_updated": "2026-07-29T19:22:46Z",
   "last_session": {
-    "at": "2026-07-29T17:43:27Z",
+    "at": "2026-07-29T19:22:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "RIOT",
-        -8.22
-      ],
-      [
-        "MARA",
-        -7.73
+        -7.2
       ],
       [
         "SOFI",
-        -7.35
+        -6.33
       ],
       [
-        "UPST",
-        -3.45
+        "MARA",
+        -6.11
       ],
       [
-        "HOOD",
-        -2.75
+        "AMC",
+        3.37
       ],
       [
-        "NVDA",
-        -2.64
+        "MSTR",
+        3.25
+      ],
+      [
+        "PLTR",
+        2.74
       ]
     ],
     "news_read": [],
@@ -826,6 +831,10 @@
     {
       "timestamp": "2026-07-29T17:43:27Z",
       "value": 9086.3
+    },
+    {
+      "timestamp": "2026-07-29T19:22:46Z",
+      "value": 9106.19
     }
   ]
 }
