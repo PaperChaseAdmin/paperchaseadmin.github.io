@@ -1,73 +1,73 @@
 {
   "cash": 2336.54,
-  "total_value": 9123.44,
+  "total_value": 9042.62,
   "positions": {
     "AAPL": {
       "shares": 12,
-      "current_price": 342.7,
+      "current_price": 340.18,
       "avg_cost": 331.2368
     },
     "GME": {
       "shares": 10,
       "avg_cost": 21.35,
-      "current_price": 21.98
+      "current_price": 21.825
     },
     "MSTR": {
       "shares": 20,
       "avg_cost": 97.18,
-      "current_price": 97.795
+      "current_price": 95.62
     },
     "RBLX": {
       "shares": 10,
       "avg_cost": 49.7,
-      "current_price": 49.88
+      "current_price": 49.3275
     }
   },
-  "total_return_pct": -8.77,
+  "total_return_pct": -9.57,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -80.82,
+  "today_pnl_pct": -0.89,
   "total_trades": 0,
   "today_start_value": 9123.44,
   "today_date": "2026-07-29",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-29T14:09:10Z",
+  "last_action": "Market is choppy with several meme stocks under pressure, but AMC shows modest upside; waiting for a breakout >10% to load up.",
+  "last_updated": "2026-07-29T15:23:10Z",
   "last_session": {
-    "at": "2026-07-29T14:09:10Z",
+    "at": "2026-07-29T15:23:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "SOFI",
-        -9.41
-      ],
-      [
         "RIOT",
-        -4.4
-      ],
-      [
-        "UPST",
-        -2.98
+        -10.83
       ],
       [
         "MARA",
-        -2.94
+        -9.52
       ],
       [
-        "NVDA",
-        -1.97
+        "SOFI",
+        -9.45
       ],
       [
-        "MSTR",
-        1.78
+        "HOOD",
+        -6.17
+      ],
+      [
+        "PLTR",
+        -5.33
+      ],
+      [
+        "AMC",
+        5.29
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "No watchlist names hit the 10%+ threshold today. Current holdings show AAPL modest gain, GME flat, MSTR and RBLX slight drag. Cash reserve healthy. Will stay alert for any sudden spike in AMC, GME, or other meme names to deploy up to 45% of equity per trade.",
+    "outlook": "Market is choppy with several meme stocks under pressure, but AMC shows modest upside; waiting for a breakout >10% to load up.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -810,6 +810,10 @@
     {
       "timestamp": "2026-07-29T14:09:10Z",
       "value": 9123.44
+    },
+    {
+      "timestamp": "2026-07-29T15:23:10Z",
+      "value": 9042.62
     }
   ]
 }

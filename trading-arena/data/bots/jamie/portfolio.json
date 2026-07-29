@@ -1,74 +1,69 @@
 {
-  "cash": 2123.3,
-  "total_value": 9979.51,
+  "cash": 3117.05,
+  "total_value": 10005.53,
   "positions": {
     "MA": {
       "shares": 3,
       "avg_cost": 529.705,
-      "current_price": 564.19
+      "current_price": 563.635
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 97.22
+      "current_price": 97.71
     },
     "JPM": {
       "shares": 2,
       "avg_cost": 336.345,
-      "current_price": 349.6
+      "current_price": 350.445
     },
     "BAC": {
       "shares": 32,
-      "current_price": 61.44,
+      "current_price": 62.055,
       "avg_cost": 60.3732
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 128.65
+      "current_price": 129.05
     },
     "PGR": {
       "shares": 2,
-      "current_price": 220.69,
+      "current_price": 221.98,
       "avg_cost": 212.73
     },
     "TRV": {
       "shares": 1,
       "avg_cost": 387.885,
-      "current_price": 394.92
+      "current_price": 394.69
     },
     "COF": {
       "shares": 2,
       "avg_cost": 207.125,
-      "current_price": 210.78
-    },
-    "GS": {
-      "shares": 1,
-      "avg_cost": 1043.9698,
-      "current_price": 994.72
+      "current_price": 212.28
     },
     "PRU": {
       "shares": 1,
       "avg_cost": 124.15,
-      "current_price": 123.97
+      "current_price": 124.1
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 510.19,
-      "current_price": 509.99
+      "current_price": 509.71
     }
   },
-  "total_return_pct": -0.2,
+  "total_return_pct": 0.06,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 26.02,
+  "today_pnl_pct": 0.26,
   "total_trades": 0,
   "today_start_value": 9979.51,
   "today_date": "2026-07-29",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-29T14:07:40Z",
+  "last_updated": "2026-07-29T15:21:11Z",
   "last_session": {
-    "at": "2026-07-29T14:07:40Z",
+    "at": "2026-07-29T15:21:11Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -76,27 +71,27 @@
     "top_movers": [
       [
         "GS",
-        -3.85
-      ],
-      [
-        "C",
-        -2.94
-      ],
-      [
-        "WFC",
-        -2.93
+        -5.31
       ],
       [
         "MS",
-        -2.83
+        -4.29
       ],
       [
-        "JPM",
-        -2.2
+        "C",
+        -3.11
       ],
       [
-        "BAC",
-        -1.93
+        "PGR",
+        2.88
+      ],
+      [
+        "MET",
+        2.62
+      ],
+      [
+        "BRK-B",
+        2.49
       ]
     ],
     "news_read": [],
@@ -845,6 +840,10 @@
     {
       "timestamp": "2026-07-29T14:07:40Z",
       "value": 9979.51
+    },
+    {
+      "timestamp": "2026-07-29T15:21:11Z",
+      "value": 10005.53
     }
   ]
 }
