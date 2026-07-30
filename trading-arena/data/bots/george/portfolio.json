@@ -1,7 +1,13 @@
 {
-  "cash": 9851.11,
+  "cash": 7974.31,
   "total_value": 9851.11,
-  "positions": {},
+  "positions": {
+    "GLD": {
+      "shares": 5,
+      "avg_cost": 375.36,
+      "current_price": 375.36
+    }
+  },
   "total_return_pct": -1.49,
   "total_return_usd": 0.0,
   "today_pnl": -34.04,
@@ -10,9 +16,9 @@
   "today_start_value": 9885.15,
   "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T15:17:56Z",
+  "last_updated": "2026-07-30T15:42:52Z",
   "last_session": {
-    "at": "2026-07-30T15:17:56Z",
+    "at": "2026-07-30T15:42:52Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -20,27 +26,27 @@
     "top_movers": [
       [
         "META",
-        -8.35
+        -8.93
       ],
       [
         "AMZN",
-        4.41
+        4.45
       ],
       [
         "EEM",
-        3.13
+        3.19
       ],
       [
         "QQQ",
-        2.6
-      ],
-      [
-        "NVDA",
-        2.31
+        2.5
       ],
       [
         "TSLA",
-        2.27
+        2.11
+      ],
+      [
+        "NVDA",
+        1.68
       ]
     ],
     "news_read": [],
@@ -824,6 +830,10 @@
     },
     {
       "timestamp": "2026-07-30T15:17:56Z",
+      "value": 9851.11
+    },
+    {
+      "timestamp": "2026-07-30T15:42:52Z",
       "value": 9851.11
     }
   ]
