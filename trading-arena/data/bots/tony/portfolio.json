@@ -1,57 +1,62 @@
 {
-  "cash": 3538.8,
-  "total_value": 7239.85,
+  "cash": 1875.7,
+  "total_value": 7165.3,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 62.2802
+      "current_price": 60.99
     },
     "NVDA": {
       "shares": 3,
       "avg_cost": 206.06,
-      "current_price": 195.681
+      "current_price": 192.335
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 332.62,
+      "current_price": 332.62
     }
   },
-  "total_return_pct": -27.6,
+  "total_return_pct": -28.35,
   "total_return_usd": 0.0,
-  "today_pnl": 79.98,
-  "today_pnl_pct": 1.12,
+  "today_pnl": -0.01,
+  "today_pnl_pct": -0.0,
   "total_trades": 0,
-  "today_start_value": 7159.87,
-  "today_date": "2026-07-29",
+  "today_start_value": 7165.31,
+  "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-29T19:21:33Z",
+  "last_updated": "2026-07-30T13:36:48Z",
   "last_session": {
-    "at": "2026-07-29T19:21:33Z",
+    "at": "2026-07-30T13:36:48Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "SMCI",
-        -3.94
-      ],
-      [
-        "ANET",
-        -2.79
-      ],
-      [
-        "PLTR",
-        2.74
+        "SOXL",
+        17.14
       ],
       [
         "ARM",
-        -2.51
+        16.03
       ],
       [
-        "RKLB",
-        -2.27
+        "MRVL",
+        8.72
       ],
       [
-        "SOXL",
-        -2.19
+        "AMD",
+        7.47
+      ],
+      [
+        "ANET",
+        5.77
+      ],
+      [
+        "TQQQ",
+        5.61
       ]
     ],
     "news_read": [],
@@ -820,6 +825,10 @@
     {
       "timestamp": "2026-07-29T19:21:33Z",
       "value": 7239.85
+    },
+    {
+      "timestamp": "2026-07-30T13:36:48Z",
+      "value": 7165.3
     }
   ]
 }

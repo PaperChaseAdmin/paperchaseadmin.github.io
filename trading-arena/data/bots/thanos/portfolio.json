@@ -1,46 +1,52 @@
 {
-  "cash": 10025.85,
+  "cash": 9164.3,
   "total_value": 10025.85,
-  "positions": {},
+  "positions": {
+    "XLK": {
+      "shares": 5,
+      "avg_cost": 172.31,
+      "current_price": 172.31
+    }
+  },
   "total_return_pct": 0.26,
   "total_return_usd": 0.0,
-  "today_pnl": -9.3,
-  "today_pnl_pct": -0.09,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10035.15,
-  "today_date": "2026-07-29",
+  "today_start_value": 10025.85,
+  "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-29T19:28:07Z",
+  "last_updated": "2026-07-30T13:40:48Z",
   "last_session": {
-    "at": "2026-07-29T19:28:07Z",
+    "at": "2026-07-30T13:40:48Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "XLE",
-        2.11
+        "XLK",
+        3.52
       ],
       [
-        "GLD",
-        2.01
+        "XLC",
+        -2.7
+      ],
+      [
+        "XLV",
+        -2.08
+      ],
+      [
+        "QQQ",
+        1.97
+      ],
+      [
+        "XLP",
+        -1.75
       ],
       [
         "XLI",
-        -1.85
-      ],
-      [
-        "XLU",
-        -1.01
-      ],
-      [
-        "XLF",
-        -0.81
-      ],
-      [
-        "TLT",
-        -0.8
+        1.03
       ]
     ],
     "news_read": [],
@@ -808,6 +814,10 @@
     },
     {
       "timestamp": "2026-07-29T19:28:07Z",
+      "value": 10025.85
+    },
+    {
+      "timestamp": "2026-07-30T13:40:48Z",
       "value": 10025.85
     }
   ]

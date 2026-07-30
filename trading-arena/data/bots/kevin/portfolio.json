@@ -1,102 +1,107 @@
 {
-  "cash": 630.57,
-  "total_value": 10004.55,
+  "cash": 521.42,
+  "total_value": 9743.9,
   "positions": {
     "MO": {
       "shares": 27,
       "avg_cost": 72.2,
-      "current_price": 74.76
+      "current_price": 70.31
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 261.05,
-      "current_price": 265.96
+      "current_price": 257.175
     },
     "O": {
       "shares": 10,
       "avg_cost": 63.841,
-      "current_price": 65.4
+      "current_price": 65.32
     },
     "T": {
       "shares": 75,
       "avg_cost": 20.83,
-      "current_price": 23.815
+      "current_price": 23.38
     },
     "VZ": {
       "shares": 20,
-      "current_price": 46.92,
+      "current_price": 46.465,
       "avg_cost": 43.7633
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 199.45
+      "current_price": 193.7
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 74.57
+      "current_price": 74.54
     },
     "IBM": {
       "shares": 1,
       "avg_cost": 212.365,
-      "current_price": 229.78
+      "current_price": 221.795
     },
     "KO": {
       "shares": 13,
-      "current_price": 88.76,
+      "current_price": 87.69,
       "avg_cost": 83.8962
     },
     "JNJ": {
       "shares": 1,
       "avg_cost": 264.9,
-      "current_price": 266.055
+      "current_price": 258.82
     },
     "CVX": {
       "shares": 1,
       "avg_cost": 191.475,
-      "current_price": 191.475
+      "current_price": 189.91
+    },
+    "MAIN": {
+      "shares": 2,
+      "avg_cost": 54.575,
+      "current_price": 54.575
     }
   },
-  "total_return_pct": 0.05,
+  "total_return_pct": -2.56,
   "total_return_usd": 0.0,
-  "today_pnl": -118.35,
-  "today_pnl_pct": -1.17,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10122.9,
-  "today_date": "2026-07-29",
+  "today_start_value": 9743.9,
+  "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-29T19:21:04Z",
+  "last_updated": "2026-07-30T13:36:43Z",
   "last_session": {
-    "at": "2026-07-29T19:21:04Z",
+    "at": "2026-07-30T13:36:43Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "MO",
+        -6.55
+      ],
+      [
+        "JNJ",
+        -2.56
+      ],
+      [
         "T",
-        -3.43
-      ],
-      [
-        "VZ",
-        -3.14
-      ],
-      [
-        "CVX",
-        2.09
-      ],
-      [
-        "WPC",
-        -1.38
-      ],
-      [
-        "BTI",
-        1.09
+        -2.34
       ],
       [
         "ABBV",
-        1.05
+        -2.33
+      ],
+      [
+        "PM",
+        -2.32
+      ],
+      [
+        "IBM",
+        -2.0
       ]
     ],
     "news_read": [],
@@ -865,6 +870,10 @@
     {
       "timestamp": "2026-07-29T19:21:04Z",
       "value": 10004.55
+    },
+    {
+      "timestamp": "2026-07-30T13:36:43Z",
+      "value": 9743.9
     }
   ]
 }
