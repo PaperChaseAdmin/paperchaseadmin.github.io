@@ -1,62 +1,67 @@
 {
-  "cash": 7120.13,
-  "total_value": 9633.28,
+  "cash": 6705.53,
+  "total_value": 9651.73,
   "positions": {
     "F": {
       "shares": 50,
       "avg_cost": 13.855,
-      "current_price": 14.965
+      "current_price": 14.82
     },
     "GM": {
       "shares": 10,
       "avg_cost": 79.055,
-      "current_price": 89.05
+      "current_price": 87.69
     },
     "INTC": {
       "shares": 10,
       "avg_cost": 87.44,
-      "current_price": 87.44
+      "current_price": 91.37
+    },
+    "NKE": {
+      "shares": 10,
+      "avg_cost": 41.46,
+      "current_price": 41.46
     }
   },
-  "total_return_pct": -3.67,
+  "total_return_pct": -3.48,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 18.45,
+  "today_pnl_pct": 0.19,
   "total_trades": 0,
   "today_start_value": 9633.28,
   "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T13:37:02Z",
+  "last_updated": "2026-07-30T14:16:31Z",
   "last_session": {
-    "at": "2026-07-30T13:37:02Z",
+    "at": "2026-07-30T14:16:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "NOK",
-        8.92
+        "INTC",
+        11.81
       ],
       [
-        "INTC",
-        6.96
+        "NOK",
+        10.46
       ],
       [
         "HPQ",
-        -4.36
+        -6.14
       ],
       [
         "NKE",
-        -3.15
-      ],
-      [
-        "CVS",
-        -2.44
+        -4.07
       ],
       [
         "CMCSA",
-        -2.36
+        -3.88
+      ],
+      [
+        "SBUX",
+        3.29
       ]
     ],
     "news_read": [],
@@ -829,6 +834,10 @@
     {
       "timestamp": "2026-07-30T13:37:02Z",
       "value": 9633.28
+    },
+    {
+      "timestamp": "2026-07-30T14:16:31Z",
+      "value": 9651.73
     }
   ]
 }
