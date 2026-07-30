@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-29T23:54:20Z",
+  "updated_at": "2026-07-30T01:28:08Z",
   "crypto": {
     "fear_greed": {
-      "value": 29,
+      "value": 28,
       "label": "Fear",
       "previous_value": 29,
       "previous_label": "Fear"
@@ -11,77 +11,138 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 63923,
-        "change_24h": 0,
-        "market_cap": 1282482008292,
-        "volume_24h": 28191651638
+        "price_usd": 63736,
+        "change_24h": -0.19,
+        "market_cap": 1278785577982,
+        "volume_24h": 28114519246
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1908.06,
-        "change_24h": -0.9,
-        "market_cap": 230269392091,
-        "volume_24h": 10402066662
+        "price_usd": 1904.05,
+        "change_24h": -0.5,
+        "market_cap": 229785094640,
+        "volume_24h": 10305993186
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 571.51,
-        "change_24h": -0.1,
-        "market_cap": 76105694833,
-        "volume_24h": 488493652
+        "price_usd": 572.14,
+        "change_24h": 0.12,
+        "market_cap": 76188007486,
+        "volume_24h": 489808289
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.073,
-        "change_24h": 0.5,
-        "market_cap": 67073083104,
-        "volume_24h": 1305576443
+        "price_usd": 1.071,
+        "change_24h": -0.45,
+        "market_cap": 67002252016,
+        "volume_24h": 1280045648
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 73.58,
-        "change_24h": -0.6,
-        "market_cap": 42647540334,
-        "volume_24h": 1792190848
+        "price_usd": 73.51,
+        "change_24h": -0.12,
+        "market_cap": 42603925517,
+        "volume_24h": 1728624060
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.070093,
-        "change_24h": -1.5,
-        "market_cap": 10883649946,
-        "volume_24h": 522816463
+        "price_usd": 0.07031,
+        "change_24h": -0.55,
+        "market_cap": 10919462933,
+        "volume_24h": 511794851
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
         "price_usd": 8.32,
-        "change_24h": -1.7,
-        "market_cap": 6224273947,
-        "volume_24h": 205297447
+        "change_24h": -1.53,
+        "market_cap": 6225999826,
+        "volume_24h": 199320202
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.162106,
-        "change_24h": 1.0,
-        "market_cap": 6052941306,
-        "volume_24h": 339735877
+        "price_usd": 0.162686,
+        "change_24h": 0.26,
+        "market_cap": 6074172142,
+        "volume_24h": 321819135
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.42,
-        "change_24h": -2.8,
-        "market_cap": 2771854688,
-        "volume_24h": 173375319
+        "price_usd": 6.41,
+        "change_24h": -2.18,
+        "market_cap": 2768689362,
+        "volume_24h": 171517884
       }
     ],
-    "top_mentioned": [],
+    "top_mentioned": [
+      {
+        "symbol": "BTC",
+        "mentions": 6,
+        "price_usd": 63736,
+        "change_24h": -0.19
+      },
+      {
+        "symbol": "ETH",
+        "mentions": 0,
+        "price_usd": 1904.05,
+        "change_24h": -0.5
+      },
+      {
+        "symbol": "SOL",
+        "mentions": 0,
+        "price_usd": 73.51,
+        "change_24h": -0.12
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 0,
+        "price_usd": 572.14,
+        "change_24h": 0.12
+      },
+      {
+        "symbol": "XRP",
+        "mentions": 0,
+        "price_usd": 1.071,
+        "change_24h": -0.45
+      },
+      {
+        "symbol": "ADA",
+        "mentions": 0,
+        "price_usd": 0.162686,
+        "change_24h": 0.26
+      },
+      {
+        "symbol": "DOGE",
+        "mentions": 0,
+        "price_usd": 0.07031,
+        "change_24h": -0.55
+      },
+      {
+        "symbol": "AVAX",
+        "mentions": 0,
+        "price_usd": 6.41,
+        "change_24h": -2.18
+      },
+      {
+        "symbol": "LINK",
+        "mentions": 0,
+        "price_usd": 8.32,
+        "change_24h": -1.53
+      },
+      {
+        "symbol": "TON",
+        "mentions": 0,
+        "price_usd": null,
+        "change_24h": null
+      }
+    ],
     "news": [
       {
         "title": "Senators said to hatch idea to toughen Trump's concession on Clarity Act's crypto limits",
@@ -116,6 +177,16 @@
         "color": "green"
       },
       {
+        "title": "US arbitration giant launches specialist panel for crypto disputes",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/aaa-web3-panel-crypto-blockchain-disputes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 30 Jul 2026 00:29:11 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
         "title": "Robinhood posts record quarter, but crypto revenue slides 38%",
         "source": "Cointelegraph",
         "url": "https://cointelegraph.com/news/robinhood-record-quarter-crypto-revenue-slides?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -134,18 +205,6 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Crypto entering biggest consolidation phase in history, says ARK analyst",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/crypto-entering-biggest-consolidation-phase-in-history-says-ark-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Wed, 29 Jul 2026 20:40:38 +0000",
-        "assets": [
-          "SOL"
-        ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       },
       {
         "title": "Microsoft Quietly Adds New Windows App That Wants to Scan Your Face",
@@ -219,21 +278,42 @@
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [],
+    "reddit": [
+      {
+        "subreddit": "r/CryptoCurrency",
+        "mentions": {
+          "BTC": 6,
+          "ETH": 0,
+          "SOL": 0,
+          "BNB": 0,
+          "XRP": 0,
+          "ADA": 0,
+          "DOGE": 0,
+          "AVAX": 0,
+          "LINK": 0,
+          "TON": 0
+        },
+        "activity_score": 100,
+        "top_post": "Daily Crypto Discussion - July 29, 2026 (GMT+0)",
+        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vac1n8/daily_crypto_discussion_july_29_2026_gmt0/",
+        "top_post_score": 0,
+        "posts": 25
+      }
+    ],
     "reddit_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
+      "summary": "We need to produce exactly one paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Must mention numbers and names where available. Max 80 words. Data: top mentioned: BTC (6 mentions), ETH (0), SOL (0), BNB (0), XRP (0). Subreddits: r/r/CryptoCurrency: activity 100/100. So high activity in CryptoCurrency subreddit, BTC mentioned 6 times, others zero. So sentiment likely bullish due to BTC mentions and high activity. Provide reasons: BTC mentioned 6 times, high activity 100/100, no other coins mentioned. So one paragraph, start with \"Bullish:\" then reasons. Must be <=80 words. Let's craft ~40 words.\n\n\"Bullish: Bitcoin dominated discussion with 6 mentions while other major assets received none, indicating focused optimism on BTC; the r/CryptoCurrency subreddit showed maximum activity (100/100), reflecting strong engagement and positive sentiment among participants.\"\n\nCount words: Bullish:(1) Bitcoin2 dominated3 discussion4 with5 6 mentions7 while8 other9 major10 assets11 received12 none,13 indicating14 focused15 optimism16 on17 BTC;18 the19 r/CryptoCurrency"
     },
     "news_summary": {
-      "outlook": "Bullish",
-      "summary": "Bullish: 9 bullish vs 1 bearish signals detected across crypto news data."
+      "outlook": "Mixed",
+      "summary": "We need exactly one paragraph, start with Bullish:, Bearish:, or Mixed: followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to decide sentiment based on data: Many items labeled Bullish: Robinhood slides 4% despite earnings beat as crypto revenue cools (Bullish) - that's odd: slide but labeled Bullish. As crypto perpetual futures boom, Ethereum’s role is shifting (Bullish). US arbitration giant launches specialist panel for crypto disputes (Bullish). Microsoft Quietly Adds New Windows App That Wants to Scan Your Face (Bullish). Others neutral: Senators idea to toughen Trump's concession on Clarity Act's crypto limits (Neutral). Robinhood posts record quarter, but crypto revenue slides 38% (Neutral). Binance.US to attempt prediction markets entry as CFTC-licensed entity (Neutral). Robinhood Posts Best Quarter Ever as Prediction Market and Robinhood Chain Take Off (Neutral).\n\nThus more bullish items than neutral. So overall sentiment likely Bullish. Provide reasons: crypto perpetual futures boom, Ethereum role shifting, arbitration panel, Microsoft app, Robinhood slide despite earnings beat? Actually that is bullish label but slide 4% despite earnings beat as crypto revenue cools - maybe indicates market reacting positively? We'll mention numbers: Robinhood slides 4%, crypto revenue down 38%,"
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 155,
+      "active_threads": 153,
       "mentions": {
         "XRP": 23,
-        "BTC": 19,
+        "BTC": 20,
         "ETH": 2
       },
       "bullish_hits": 98,
@@ -252,51 +332,51 @@
       {
         "symbol": "COTI",
         "name": "COTI",
-        "rank": 419,
+        "rank": 408,
         "score": 0,
-        "change_24h": 51.02
+        "change_24h": 58.0
       },
       {
-        "symbol": "CASHCAT",
-        "name": "Cash Cat",
-        "rank": 454,
+        "symbol": "TAO",
+        "name": "Bittensor",
+        "rank": 42,
         "score": 1,
-        "change_24h": -14.36
+        "change_24h": -3.6
+      },
+      {
+        "symbol": "LIT",
+        "name": "Lighter",
+        "rank": 95,
+        "score": 2,
+        "change_24h": -5.23
+      },
+      {
+        "symbol": "USDG",
+        "name": "Global Dollar",
+        "rank": 28,
+        "score": 3,
+        "change_24h": 0.05
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
         "rank": 1,
-        "score": 2,
-        "change_24h": 0.32
-      },
-      {
-        "symbol": "HYPE",
-        "name": "Hyperliquid",
-        "rank": 10,
-        "score": 3,
-        "change_24h": -1.54
-      },
-      {
-        "symbol": "PONS",
-        "name": "Pons",
-        "rank": 631,
         "score": 4,
-        "change_24h": 3.78
+        "change_24h": -0.29
       },
       {
-        "symbol": "ONDO",
-        "name": "Ondo",
-        "rank": 41,
+        "symbol": "ZAMA",
+        "name": "Zama",
+        "rank": 231,
         "score": 5,
-        "change_24h": -0.61
+        "change_24h": -11.5
       },
       {
-        "symbol": "UNI",
-        "name": "Uniswap",
-        "rank": 38,
+        "symbol": "SOL",
+        "name": "Solana",
+        "rank": 7,
         "score": 6,
-        "change_24h": 2.81
+        "change_24h": -0.3
       }
     ]
   },
@@ -379,54 +459,52 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Wedbush on Meta: We're Not Seeing Its Capex Pay Off",
+        "title": "Hong Kong Builder Parkview Misses Interest Payment on Loan",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-07-29/wedbush-on-meta-we-re-not-seeing-its-capex-pay-off-video",
-        "published": "Wed, 29 Jul 2026 23:29:34 GMT",
-        "assets": [
-          "META"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Goldman Co-CIO: The Market's Punishing the Hyperscalers",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-07-29/goldman-co-cio-the-market-s-punishing-the-hyperscalers-video",
-        "published": "Wed, 29 Jul 2026 23:28:16 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-30/hong-kong-builder-parkview-misses-interest-payment-on-loan",
+        "published": "Thu, 30 Jul 2026 01:11:51 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Allspring on Chipotle, Starbucks Earnings",
+        "title": "Breaking Down the Fed's Plans to Tackle Inflation Risks",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-07-29/allspring-on-chipotle-starbucks-earnings-video",
-        "published": "Wed, 29 Jul 2026 23:26:43 GMT",
+        "url": "https://www.bloomberg.com/news/videos/2026-07-30/breaking-down-the-fed-s-plans-to-tackle-inflation-risks-video",
+        "published": "Thu, 30 Jul 2026 01:07:52 GMT",
         "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
-        "title": "Meta's stock drops on disappointing guidance, dwindling free cash flow",
+        "title": "China’s Zijin Gold and Allied Gold Scrap $3.9 Billion Deal",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-29/allied-gold-says-china-s-zijin-gold-terminates-takeover",
+        "published": "Wed, 29 Jul 2026 11:38:28 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Zuckerberg lays out Meta's AI capacity dilemma: What to sell vs. what to keep",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html",
-        "published": "Wed, 29 Jul 2026 23:42:17 GMT",
+        "url": "https://www.cnbc.com/2026/07/29/zuckerberg-metas-ai-capacity-dilemma-what-to-sell-vs-what-to-keep.html",
+        "published": "Thu, 30 Jul 2026 00:58:44 GMT",
         "assets": [
           "META"
         ],
         "sentiment": "Bearish",
-        "score": -0.5,
+        "score": -1.0,
         "color": "red"
       },
       {
-        "title": "Microsoft jumps 7% as it boosts capital spending plans, citing demand",
+        "title": "Microsoft jumps 8% as it boosts capital spending plans, citing demand",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
-        "published": "Wed, 29 Jul 2026 22:26:25 GMT",
+        "published": "Thu, 30 Jul 2026 01:15:08 GMT",
         "assets": [
           "MSFT"
         ],
@@ -435,185 +513,191 @@
         "color": "green"
       },
       {
-        "title": "Divided Fed holds interest rates steady, but three members voted to hike",
+        "title": "U.S. resumes strikes against Iran, retaliating against surprise missile attack",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html",
-        "published": "Wed, 29 Jul 2026 18:58:16 GMT",
+        "url": "https://www.cnbc.com/2026/07/30/us-iran-war-hormuz-centcom-trump-.html",
+        "published": "Thu, 30 Jul 2026 01:21:23 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
+      },
+      {
+        "title": "Ford’s big-truck bet is paying off — and Wall Street is taking notice",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/fords-big-truck-bet-is-paying-off-and-wall-street-is-taking-notice-6a1de0fb?mod=mw_rss_topstories",
+        "published": "Thu, 30 Jul 2026 01:02:00 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "‘I’m in my peak earning years’: I’m working beyond 70. Will that help increase my Social Security?",
+        "title": "Why SoFi’s stock drops, even after its earnings beat expectations",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/im-in-my-peak-earning-years-im-working-beyond-70-will-that-help-increase-my-social-security-b0fd84da?mod=mw_rss_topstories",
-        "published": "Wed, 29 Jul 2026 23:00:00 GMT",
+        "url": "https://www.marketwatch.com/story/why-sofis-stock-is-dropping-even-after-its-earnings-beat-expectations-ecc442eb?mod=mw_rss_topstories",
+        "published": "Thu, 30 Jul 2026 01:01:00 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Qualcomm’s stock falls as memory woes weigh on earnings",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/qualcomms-stock-falls-as-memory-woes-weigh-on-earnings-fc2b6317?mod=mw_rss_topstories",
+        "published": "Thu, 30 Jul 2026 00:20:00 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -0.333,
         "color": "red"
       },
       {
-        "title": "Why the USO oil ETF is a better buy than crude futures as the Iran war rages",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/why-the-uso-oil-etf-is-a-better-buy-than-crude-futures-as-the-iran-war-rages-85d1ebe0?mod=mw_rss_topstories",
-        "published": "Wed, 29 Jul 2026 22:44:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "‘We already have wills’: We’re in our 60s with $1.5 million. Should we set up a trust to prevent conflict among our heirs?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/we-already-have-wills-were-in-our-60s-with-1-5-million-how-do-we-prevent-family-drama-among-our-heirs-bf7b0eb1?mod=mw_rss_topstories",
-        "published": "Wed, 29 Jul 2026 22:30:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Starbucks Corporation (SBUX) Q3 2026 Earnings Call Transcript",
+        "title": "Hostelworld Group plc (HSWLF) Q2 2026 Earnings Call Transcript",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4927285-starbucks-corporation-sbux-q3-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Wed, 29 Jul 2026 19:43:20 -0400",
+        "url": "https://seekingalpha.com/article/4927375-hostelworld-group-plc-hswlf-q2-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Wed, 29 Jul 2026 21:23:16 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "QUALCOMM Incorporated (QCOM) Q3 2026 Earnings Call Transcript",
+        "title": "Q2 Holdings, Inc. (QTWO) Q2 2026 Earnings Call Transcript",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4927297-qualcomm-incorporated-qcom-q3-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Wed, 29 Jul 2026 19:43:18 -0400",
+        "url": "https://seekingalpha.com/article/4927335-q2-holdings-inc-qtwo-q2-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Wed, 29 Jul 2026 21:23:14 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Best Dividend Aristocrats For August 2026",
+        "title": "RAMZ: A New ETF Arrives Just In Time For The DRAM Crash, Strong Buy",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4927314-best-dividend-aristocrats-for-august-2026?source=feed_all_articles",
-        "published": "Wed, 29 Jul 2026 19:40:40 -0400",
+        "url": "https://seekingalpha.com/article/4927352-ramz-new-etf-arrives-just-in-time-for-dram-crash-strong-buy?source=feed_all_articles",
+        "published": "Wed, 29 Jul 2026 21:21:48 -0400",
         "assets": [],
+        "sentiment": "Bullish",
+        "score": 0.5,
+        "color": "green"
+      },
+      {
+        "title": "Microsoft’s cloud just hit a new milestone—Azure crosses $100 billion in annual revenue",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/07/29/microsoft-azure-100-billion-annual-revenue-earnings-revenue-cloud-ai/",
+        "published": "Wed, 29 Jul 2026 22:02:21 +0000",
+        "assets": [
+          "MSFT"
+        ],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Robinhood CFO details surging prediction market business as firm posts record revenue in Q2",
+        "title": "More than 1,200 AI workers across Anthropic, DeepMind, OpenAI, and Meta are asking for Washington’s help building an AI slowdown plan",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/07/29/robinhood-q2-prediction-markets/",
-        "published": "Wed, 29 Jul 2026 23:05:16 +0000",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Fauci accuses Rand Paul of ‘unhinged obsession,’ pleads Fifth at least 100 times on COVID origins despite full Biden pardon",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/07/29/fauci-rand-paul-unhinged-obsession-pleads-fifth-covid-origins/",
-        "published": "Wed, 29 Jul 2026 17:22:55 +0000",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Dr. Fauci, the Lockdown Czar, just won’t go away",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/07/29/did-lockdowns-work-fauci-hanke/",
-        "published": "Wed, 29 Jul 2026 22:17:41 +0000",
-        "assets": [],
+        "url": "https://fortune.com/2026/07/29/anthropic-deepmind-openai-meta-washington-ai-slowdown-plan/",
+        "published": "Wed, 29 Jul 2026 20:52:34 +0000",
+        "assets": [
+          "META"
+        ],
         "sentiment": "Bearish",
-        "score": -1.0,
+        "score": -0.333,
+        "color": "red"
+      },
+      {
+        "title": "Meta stock drops 10% as free cash flow gets crushed—and Zuckerberg hints at launching cloud business with few details",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/07/29/meta-earnings-zuckerberg-hints-cloud-business-free-cash-flow-capex/",
+        "published": "Thu, 30 Jul 2026 00:40:13 +0000",
+        "assets": [
+          "META"
+        ],
+        "sentiment": "Bearish",
+        "score": -0.333,
         "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": 0.411,
-      "label": "Bullish",
-      "color": "green"
+      "score": 0.122,
+      "label": "Neutral",
+      "color": "yellow"
     },
     "polymarket": [
       {
-        "title": "Will CR Flamengo win on 2026-07-29?",
-        "volume_24h": 778209,
-        "yes_price": 0.12,
-        "url": "https://polymarket.com/market/bra-int-fla-2026-07-29-fla"
-      },
-      {
         "title": "Fed rate hike in 2026?",
-        "volume_24h": 603255,
+        "volume_24h": 624340,
         "yes_price": 0.61,
         "url": "https://polymarket.com/market/fed-rate-hike-in-2026"
       },
       {
-        "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 503500,
-        "yes_price": 0.23,
-        "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
-      },
-      {
         "title": "US x Iran Effective Ceasefire by July 31?",
-        "volume_24h": 500135,
-        "yes_price": 0.21,
+        "volume_24h": 484821,
+        "yes_price": 0.22,
         "url": "https://polymarket.com/market/us-x-iran-effective-ceasfire-by-july-31-20260715194822045"
       },
       {
+        "title": "Will the U.S. invade Iran before 2027?",
+        "volume_24h": 452593,
+        "yes_price": 0.27,
+        "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
+      },
+      {
         "title": "U.S. anti-cartel operation outside of the U.S. by July 31?",
-        "volume_24h": 331348,
-        "yes_price": 0.9,
+        "volume_24h": 338872,
+        "yes_price": 0.97,
         "url": "https://polymarket.com/market/uptspt-anti-cartel-operation-outside-of-the-uptspt-by-july-31-20260616215440524"
       },
       {
-        "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 310477,
-        "yes_price": 0.45,
-        "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
-      },
-      {
         "title": "Strait of Hormuz traffic returns to normal by August 31?",
-        "volume_24h": 307690,
+        "volume_24h": 319122,
         "yes_price": 0.09,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
       },
       {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 285212,
+        "volume_24h": 311462,
         "yes_price": 0.53,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
+        "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+        "volume_24h": 301956,
+        "yes_price": 0.45,
+        "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
+      },
+      {
         "title": "Will Bitcoin dip to $60,000 in July?",
-        "volume_24h": 278057,
-        "yes_price": 0.04,
+        "volume_24h": 271778,
+        "yes_price": 0.05,
         "url": "https://polymarket.com/market/will-bitcoin-dip-to-60000-in-july-20260706151220612-754"
       },
       {
         "title": "Will NVIDIA be the largest company in the world by market cap on July 31?",
-        "volume_24h": 205539,
-        "yes_price": 0.07,
+        "volume_24h": 211315,
+        "yes_price": 0.09,
         "url": "https://polymarket.com/market/will-nvidia-be-the-largest-company-in-the-world-by-market-cap-on-july-31-20260624192329841"
+      },
+      {
+        "title": "Will Bitcoin reach $67,500 in July?",
+        "volume_24h": 194503,
+        "yes_price": 0.02,
+        "url": "https://polymarket.com/market/will-bitcoin-reach-67pt5k-in-july-2026"
       }
     ],
     "polymarket_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 2 bullish vs 2 bearish signals detected across finance prediction markets data."
+      "summary": "We need to produce exactly ONE paragraph, start with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to interpret market sentiment based on data: Fed rate hike in 2026? Yes 61% (vol $624k) suggests expectation of hike. US x Iran ceasefire by July 31? Yes 22% low expectation. US invade Iran before 2027? Yes 27% low. US anti-cartel operation outside US by July 31? Yes 97% high expectation. Strait of Hormuz traffic returns to normal by Aug 31? Yes 9% low expectation. Fed increase rates by 25 bps after Sep 2026 meeting? Yes 53% slight majority. No change after Sep 2026 meeting? Yes 45% close. Bitcoin dip to $60k in July? Yes 5% low. NVIDIA largest company by market cap July 31? Yes 9% low. Bitcoin reach $67.5k in July? Yes 2% low.\n\nOverall sentiment: Mixed? There's high confidence in anti-cartel operation, moderate confidence in Fed hike, low confidence in geopolitical stability and crypto upside. So mixed.\n\nWe need to start with \""
     },
     "reddit": [],
     "reddit_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
+      "summary": "We need to produce exactly one paragraph, starting with Bullish:, Bearish:, or Mixed:. Must be max 80 words. Must mention numbers and names where available. The data provided: \"Top mentioned: Subreddits:\" but no actual data? Possibly missing. We need to infer? The data is incomplete. Maybe we need to respond based on given data: only \"Top mentioned: Subreddits:\" with nothing else. So we have no specifics. We could say no data? But must mention numbers and names where available. Since none, we can say none mentioned. But we need to start with one of the three labels. Perhaps Mixed: because insufficient data. Provide reasons: lack of clear sentiment, no specific tickers mentioned, etc. Must be <=80 words. Let's craft ~30 words.\n\n\"Mixed: The Reddit snapshot shows only subreddit categories without specific tickers or sentiment cues, making it impossible to gauge bullish or bearish bias; no mention counts, stock names, or numeric indicators are provided to support a directional view.\"\n\nCount words: Mixed:(1) The2 Reddit3 snapshot4 shows5 only6 subreddit7 categories8 without9 specific10 tickers11 or12 sentiment13 cues,14 making15 it16 impossible17 to18 gauge19 bullish20 or21 bearish22 bias;23 no24 mention"
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 10 bullish vs 7 bearish signals detected across stock/finance news data."
+      "summary": "We need exactly ONE paragraph, start with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to decide overall market sentiment based on data. Let's list items with sentiment:\n\n- Hong Kong Builder Parkview Misses Interest Payment on Loan (Neutral) -> neutral\n- Breaking Down the Fed's Plans to Tackle Inflation Risks (Bearish) -> bearish\n- China’s Zijin Gold and Allied Gold Scrap $3.9 Billion Deal (Neutral) -> neutral\n- Zuckerberg lays out Meta's AI capacity dilemma: What to sell vs. what to keep (Bearish) -> bearish\n- Microsoft jumps 8% as it boosts capital spending plans, citing demand (Bullish) -> bullish\n- U.S. resumes strikes against Iran, retaliating against surprise missile attack (Bullish) -> bullish\n- Ford’s big-truck bet is paying off — and Wall Street is taking notice (Neutral) -> neutral\n- Why SoFi’s stock drops, even after its earnings beat expectations (Neutral) -> neutral\n\nWe have 2 bullish, 2 bearish, rest neutral. Overall maybe mixed. Provide reasons with numbers and names: Microsoft up 8%, U.S. strikes, Fed inflation plans bearish, Meta AI"
     },
     "macro": [
       {
@@ -625,20 +709,20 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 100.8,
-        "change_24h": -0.57
+        "value": 100.88,
+        "change_24h": -0.5
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4148.0,
-        "change_24h": 2.77
+        "value": 4133.2,
+        "change_24h": 2.4
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 84.42,
-        "change_24h": 6.51
+        "value": 83.95,
+        "change_24h": 5.92
       }
     ],
     "most_active": [
@@ -705,24 +789,7 @@
     ],
     "google_trends": {
       "stocks": [],
-      "crypto": [
-        {
-          "keyword": "Bitcoin",
-          "interest_score": 63
-        },
-        {
-          "keyword": "Ethereum",
-          "interest_score": 11
-        },
-        {
-          "keyword": "Solana",
-          "interest_score": 9
-        },
-        {
-          "keyword": "crypto",
-          "interest_score": 45
-        }
-      ]
+      "crypto": []
     }
   },
   "portfolio": [
