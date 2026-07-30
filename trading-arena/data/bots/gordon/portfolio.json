@@ -1,57 +1,62 @@
 {
-  "cash": 7994.53,
-  "total_value": 9686.83,
+  "cash": 7120.13,
+  "total_value": 9633.28,
   "positions": {
     "F": {
       "shares": 50,
       "avg_cost": 13.855,
-      "current_price": 15.6201
+      "current_price": 14.965
     },
     "GM": {
       "shares": 10,
       "avg_cost": 79.055,
-      "current_price": 91.13
+      "current_price": 89.05
+    },
+    "INTC": {
+      "shares": 10,
+      "avg_cost": 87.44,
+      "current_price": 87.44
     }
   },
-  "total_return_pct": -3.13,
+  "total_return_pct": -3.67,
   "total_return_usd": 0.0,
-  "today_pnl": -31.45,
-  "today_pnl_pct": -0.32,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9718.28,
-  "today_date": "2026-07-29",
+  "today_start_value": 9633.28,
+  "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-29T19:21:58Z",
+  "last_updated": "2026-07-30T13:37:02Z",
   "last_session": {
-    "at": "2026-07-29T19:21:58Z",
+    "at": "2026-07-30T13:37:02Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "VFC",
-        -17.56
-      ],
-      [
-        "F",
-        4.45
-      ],
-      [
-        "T",
-        -3.43
-      ],
-      [
-        "BBWI",
-        -3.0
-      ],
-      [
         "NOK",
-        -2.69
+        8.92
+      ],
+      [
+        "INTC",
+        6.96
+      ],
+      [
+        "HPQ",
+        -4.36
+      ],
+      [
+        "NKE",
+        -3.15
       ],
       [
         "CVS",
-        -2.01
+        -2.44
+      ],
+      [
+        "CMCSA",
+        -2.36
       ]
     ],
     "news_read": [],
@@ -820,6 +825,10 @@
     {
       "timestamp": "2026-07-29T19:21:58Z",
       "value": 9686.83
+    },
+    {
+      "timestamp": "2026-07-30T13:37:02Z",
+      "value": 9633.28
     }
   ]
 }
