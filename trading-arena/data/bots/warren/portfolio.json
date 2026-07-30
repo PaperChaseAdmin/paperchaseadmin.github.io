@@ -1,39 +1,44 @@
 {
-  "cash": 1935.28,
-  "total_value": 10249.77,
+  "cash": 1272.56,
+  "total_value": 10264.06,
   "positions": {
     "KO": {
       "shares": 19,
-      "current_price": 87.97,
+      "current_price": 87.94,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 5,
       "avg_cost": 361.58,
-      "current_price": 361.0
+      "current_price": 362.11
     },
     "JNJ": {
       "shares": 10,
-      "current_price": 255.96,
+      "current_price": 256.005,
       "avg_cost": 262.7655
     },
     "MA": {
       "shares": 4,
-      "current_price": 569.615,
+      "current_price": 571.83,
       "avg_cost": 529.0675
+    },
+    "AAPL": {
+      "shares": 2,
+      "avg_cost": 331.36,
+      "current_price": 331.36
     }
   },
-  "total_return_pct": 2.5,
+  "total_return_pct": 2.64,
   "total_return_usd": 0.0,
-  "today_pnl": -74.18,
-  "today_pnl_pct": -0.72,
+  "today_pnl": -59.89,
+  "today_pnl_pct": -0.58,
   "total_trades": 0,
   "today_start_value": 10323.95,
   "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T15:16:27Z",
+  "last_updated": "2026-07-30T15:37:27Z",
   "last_session": {
-    "at": "2026-07-30T15:16:27Z",
+    "at": "2026-07-30T15:37:27Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "JNJ",
-        -3.58
+        -3.59
       ],
       [
         "ABBV",
-        -2.86
+        -2.63
       ],
       [
         "WMT",
-        -2.62
+        -2.48
       ],
       [
         "PG",
-        -2.44
-      ],
-      [
-        "V",
-        -2.1
+        -2.15
       ],
       [
         "AAPL",
-        -1.94
+        -2.01
+      ],
+      [
+        "V",
+        -1.8
       ]
     ],
     "news_read": [],
@@ -846,6 +851,10 @@
     {
       "timestamp": "2026-07-30T15:16:27Z",
       "value": 10249.77
+    },
+    {
+      "timestamp": "2026-07-30T15:37:27Z",
+      "value": 10264.06
     }
   ]
 }
