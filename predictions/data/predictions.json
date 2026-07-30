@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-30T13:42:09Z",
+  "updated_at": "2026-07-30T21:38:47Z",
   "last_prediction_date": "2026-07-30",
-  "last_settle_date": "2026-07-29",
+  "last_settle_date": "2026-07-30",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 33,
-      "correct": 28,
-      "accuracy_pct": 84.8,
+      "total": 35,
+      "correct": 30,
+      "accuracy_pct": 85.7,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -798,9 +798,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Tech boost and positive earnings outlook",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.66
         },
         {
           "date": "2026-07-30",
@@ -808,9 +809,10 @@
           "prediction": "up",
           "confidence": 75,
           "signal": "Strong tech sector performance and bullish sentiment",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 2.78
         },
         {
           "date": "2026-07-30",
