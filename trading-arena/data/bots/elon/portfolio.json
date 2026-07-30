@@ -1,52 +1,57 @@
 {
-  "cash": 7305.99,
-  "total_value": 9557.54,
+  "cash": 5648.84,
+  "total_value": 9526.97,
   "positions": {
     "MSFT": {
       "shares": 5,
       "avg_cost": 434.97,
-      "current_price": 450.31
+      "current_price": 444.195
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 331.43,
+      "current_price": 331.43
     }
   },
-  "total_return_pct": -4.42,
+  "total_return_pct": -4.73,
   "total_return_usd": 0.0,
-  "today_pnl": 72.75,
-  "today_pnl_pct": 0.77,
+  "today_pnl": 42.18,
+  "today_pnl_pct": 0.44,
   "total_trades": 0,
   "today_start_value": 9484.79,
   "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T14:31:38Z",
+  "last_updated": "2026-07-30T15:16:03Z",
   "last_session": {
-    "at": "2026-07-30T14:31:38Z",
+    "at": "2026-07-30T15:16:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "AMD",
-        15.45
-      ],
-      [
         "MSFT",
-        15.4
+        13.73
       ],
       [
-        "IONQ",
-        9.38
+        "AMD",
+        13.04
       ],
       [
         "META",
-        -9.32
+        -8.35
+      ],
+      [
+        "IONQ",
+        7.47
+      ],
+      [
+        "RBLX",
+        -4.85
       ],
       [
         "AMZN",
-        4.86
-      ],
-      [
-        "SOFI",
-        4.26
+        4.41
       ]
     ],
     "news_read": [],
@@ -827,6 +832,10 @@
     {
       "timestamp": "2026-07-30T14:31:38Z",
       "value": 9557.54
+    },
+    {
+      "timestamp": "2026-07-30T15:16:03Z",
+      "value": 9526.97
     }
   ]
 }
