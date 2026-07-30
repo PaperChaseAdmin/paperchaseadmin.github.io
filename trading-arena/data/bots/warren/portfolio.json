@@ -1,44 +1,44 @@
 {
   "cash": 1272.42,
-  "total_value": 10288.8,
+  "total_value": 10244.37,
   "positions": {
     "KO": {
       "shares": 19,
-      "current_price": 87.47,
+      "current_price": 87.53,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 5,
       "avg_cost": 361.58,
-      "current_price": 364.695
+      "current_price": 362.905
     },
     "JNJ": {
       "shares": 10,
-      "current_price": 256.035,
+      "current_price": 255.0,
       "avg_cost": 262.7655
     },
     "MA": {
       "shares": 4,
-      "current_price": 576.79,
+      "current_price": 570.62,
       "avg_cost": 529.0675
     },
     "AAPL": {
       "shares": 2,
       "avg_cost": 340.18,
-      "current_price": 331.73
+      "current_price": 330.94
     }
   },
-  "total_return_pct": 2.89,
+  "total_return_pct": 2.44,
   "total_return_usd": 0.0,
-  "today_pnl": -35.15,
-  "today_pnl_pct": -0.34,
+  "today_pnl": -79.58,
+  "today_pnl_pct": -0.77,
   "total_trades": 0,
   "today_start_value": 10323.95,
   "today_date": "2026-07-30",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T14:04:05Z",
+  "last_action": "Neutral sentiment \u2014 stick to fundamentals",
+  "last_updated": "2026-07-30T14:32:02Z",
   "last_session": {
-    "at": "2026-07-30T14:04:05Z",
+    "at": "2026-07-30T14:32:02Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,33 +46,33 @@
     "top_movers": [
       [
         "JNJ",
-        -3.6
+        -3.98
       ],
       [
         "ABBV",
-        -2.57
-      ],
-      [
-        "MA",
-        2.34
-      ],
-      [
-        "WMT",
-        -2.14
-      ],
-      [
-        "AAPL",
-        -1.95
+        -3.07
       ],
       [
         "PG",
-        -1.92
+        -2.31
+      ],
+      [
+        "AAPL",
+        -2.19
+      ],
+      [
+        "WMT",
+        -2.15
+      ],
+      [
+        "KO",
+        -1.76
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "No compelling opportunities identified. Maintaining cash reserves and current positions.",
+    "outlook": "Neutral sentiment \u2014 stick to fundamentals",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -843,6 +843,10 @@
     {
       "timestamp": "2026-07-30T14:04:05Z",
       "value": 10288.8
+    },
+    {
+      "timestamp": "2026-07-30T14:32:02Z",
+      "value": 10244.37
     }
   ]
 }

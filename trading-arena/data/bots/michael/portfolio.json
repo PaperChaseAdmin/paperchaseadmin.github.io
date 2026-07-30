@@ -1,34 +1,34 @@
 {
   "cash": 5709.61,
-  "total_value": 10809.33,
+  "total_value": 10872.99,
   "positions": {
     "INTC": {
       "shares": 31,
-      "current_price": 91.37,
+      "current_price": 93.5833,
       "avg_cost": 83.354
     },
     "GEO": {
       "shares": 20,
       "avg_cost": 30.51,
-      "current_price": 30.43
+      "current_price": 30.38
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 331.73,
-      "current_price": 331.73
+      "current_price": 330.94
     }
   },
-  "total_return_pct": 8.09,
+  "total_return_pct": 8.73,
   "total_return_usd": 0.0,
-  "today_pnl": 128.83,
-  "today_pnl_pct": 1.21,
+  "today_pnl": 192.49,
+  "today_pnl_pct": 1.8,
   "total_trades": 0,
   "today_start_value": 10680.5,
   "today_date": "2026-07-30",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T14:11:25Z",
+  "last_action": "Neutral sentiment suggests sticking to fundamentals. No compelling opportunities identified for immediate action.",
+  "last_updated": "2026-07-30T14:34:11Z",
   "last_session": {
-    "at": "2026-07-30T14:11:25Z",
+    "at": "2026-07-30T14:34:11Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,33 +36,33 @@
     "top_movers": [
       [
         "INTC",
-        11.81
+        14.42
       ],
       [
         "CMCSA",
-        -3.88
+        -4.96
       ],
       [
         "KHC",
-        -3.82
-      ],
-      [
-        "F",
-        -3.01
+        -4.45
       ],
       [
         "KR",
-        -2.87
+        -4.03
+      ],
+      [
+        "F",
+        -2.72
       ],
       [
         "PFE",
-        -2.11
+        -2.23
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Current portfolio shows a slight gain overall, with INTC performing well. No urgent need to rebalance or deploy cash given the lack of clear value opportunities in the watchlist.",
+    "outlook": "Neutral sentiment suggests sticking to fundamentals. No compelling opportunities identified for immediate action.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -833,6 +833,10 @@
     {
       "timestamp": "2026-07-30T14:11:25Z",
       "value": 10809.33
+    },
+    {
+      "timestamp": "2026-07-30T14:34:11Z",
+      "value": 10872.99
     }
   ]
 }
