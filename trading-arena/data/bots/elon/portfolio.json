@@ -1,24 +1,29 @@
 {
-  "cash": 7309.94,
-  "total_value": 9484.79,
+  "cash": 5651.29,
+  "total_value": 9565.36,
   "positions": {
     "MSFT": {
       "shares": 5,
       "avg_cost": 434.97,
-      "current_price": 434.97
+      "current_price": 451.085
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 331.73,
+      "current_price": 331.73
     }
   },
-  "total_return_pct": -5.15,
+  "total_return_pct": -4.35,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 80.57,
+  "today_pnl_pct": 0.85,
   "total_trades": 0,
   "today_start_value": 9484.79,
   "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T13:31:26Z",
+  "last_updated": "2026-07-30T14:03:39Z",
   "last_session": {
-    "at": "2026-07-30T13:31:26Z",
+    "at": "2026-07-30T14:03:39Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,27 +31,27 @@
     "top_movers": [
       [
         "MSFT",
-        11.47
-      ],
-      [
-        "META",
-        -9.02
+        15.61
       ],
       [
         "AMD",
-        7.47
+        12.39
+      ],
+      [
+        "META",
+        -9.62
       ],
       [
         "IONQ",
-        4.47
+        7.94
       ],
       [
         "AMZN",
-        2.75
+        4.64
       ],
       [
         "MSTR",
-        1.91
+        4.08
       ]
     ],
     "news_read": [],
@@ -819,6 +824,10 @@
     {
       "timestamp": "2026-07-30T13:31:26Z",
       "value": 9484.79
+    },
+    {
+      "timestamp": "2026-07-30T14:03:39Z",
+      "value": 9565.36
     }
   ]
 }

@@ -1,29 +1,34 @@
 {
-  "cash": 7368.26,
-  "total_value": 10680.5,
+  "cash": 5709.61,
+  "total_value": 10809.33,
   "positions": {
     "INTC": {
       "shares": 31,
-      "current_price": 87.44,
+      "current_price": 91.37,
       "avg_cost": 83.354
     },
     "GEO": {
       "shares": 20,
       "avg_cost": 30.51,
-      "current_price": 30.08
+      "current_price": 30.43
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 331.73,
+      "current_price": 331.73
     }
   },
-  "total_return_pct": 6.8,
+  "total_return_pct": 8.09,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 128.83,
+  "today_pnl_pct": 1.21,
   "total_trades": 0,
   "today_start_value": 10680.5,
   "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T13:34:51Z",
+  "last_updated": "2026-07-30T14:11:25Z",
   "last_session": {
-    "at": "2026-07-30T13:34:51Z",
+    "at": "2026-07-30T14:11:25Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -31,27 +36,27 @@
     "top_movers": [
       [
         "INTC",
-        6.96
-      ],
-      [
-        "KHC",
-        -2.46
-      ],
-      [
-        "CVS",
-        -2.44
+        11.81
       ],
       [
         "CMCSA",
-        -2.36
+        -3.88
+      ],
+      [
+        "KHC",
+        -3.82
       ],
       [
         "F",
-        -1.96
+        -3.01
+      ],
+      [
+        "KR",
+        -2.87
       ],
       [
         "PFE",
-        -1.95
+        -2.11
       ]
     ],
     "news_read": [],
@@ -824,6 +829,10 @@
     {
       "timestamp": "2026-07-30T13:34:51Z",
       "value": 10680.5
+    },
+    {
+      "timestamp": "2026-07-30T14:11:25Z",
+      "value": 10809.33
     }
   ]
 }
