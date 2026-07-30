@@ -1,11 +1,11 @@
 {
-  "cash": 6136.36,
-  "total_value": 9024.98,
+  "cash": 3183.88,
+  "total_value": 9021.93,
   "positions": {
     "GME": {
       "shares": 10,
       "avg_cost": 21.35,
-      "current_price": 21.775
+      "current_price": 21.845
     },
     "AMC": {
       "shares": 100,
@@ -14,21 +14,26 @@
     },
     "RIOT": {
       "shares": 107,
-      "current_price": 22.41,
+      "current_price": 22.375,
       "avg_cost": 21.2442
+    },
+    "MARA": {
+      "shares": 250,
+      "avg_cost": 11.8099,
+      "current_price": 11.8099
     }
   },
-  "total_return_pct": -9.75,
+  "total_return_pct": -9.78,
   "total_return_usd": 0.0,
-  "today_pnl": 152.8,
-  "today_pnl_pct": 1.72,
+  "today_pnl": 149.75,
+  "today_pnl_pct": 1.69,
   "total_trades": 0,
   "today_start_value": 8872.18,
   "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T18:13:40Z",
+  "last_updated": "2026-07-30T18:46:12Z",
   "last_session": {
-    "at": "2026-07-30T18:13:40Z",
+    "at": "2026-07-30T18:46:12Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,7 +41,7 @@
     "top_movers": [
       [
         "RIOT",
-        22.91
+        22.62
       ],
       [
         "MARA",
@@ -44,19 +49,19 @@
       ],
       [
         "META",
-        -9.01
+        -8.97
       ],
       [
         "SOFI",
-        6.0
+        6.07
       ],
       [
         "RBLX",
-        -4.31
+        -4.32
       ],
       [
         "MSTR",
-        3.91
+        3.86
       ]
     ],
     "news_read": [],
@@ -853,6 +858,10 @@
     {
       "timestamp": "2026-07-30T18:13:40Z",
       "value": 9024.98
+    },
+    {
+      "timestamp": "2026-07-30T18:46:12Z",
+      "value": 9021.93
     }
   ]
 }

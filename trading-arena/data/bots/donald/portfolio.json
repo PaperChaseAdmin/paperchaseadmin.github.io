@@ -1,59 +1,64 @@
 {
-  "cash": 3244.79,
-  "total_value": 9947.07,
+  "cash": 1579.24,
+  "total_value": 9960.39,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 563.485
+      "current_price": 564.01
     },
     "RTX": {
       "shares": 8,
-      "current_price": 211.255,
+      "current_price": 212.13,
       "avg_cost": 200.4213
     },
     "NUE": {
       "shares": 2,
       "avg_cost": 223.19,
-      "current_price": 257.91
+      "current_price": 258.3
     },
     "XOM": {
       "shares": 1,
       "avg_cost": 136.71,
-      "current_price": 156.49
+      "current_price": 156.56
     },
     "F": {
       "shares": 1,
       "avg_cost": 13.855,
-      "current_price": 14.795
+      "current_price": 14.745
     },
     "GM": {
       "shares": 2,
-      "current_price": 87.485,
+      "current_price": 87.83,
       "avg_cost": 84.425
     },
     "CAT": {
       "shares": 1,
       "avg_cost": 805.76,
-      "current_price": 805.25
+      "current_price": 806.18
     },
     "NOC": {
       "shares": 1,
       "avg_cost": 527.49,
-      "current_price": 527.49
+      "current_price": 528.76
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 333.11,
+      "current_price": 333.11
     }
   },
-  "total_return_pct": -0.53,
+  "total_return_pct": -0.4,
   "total_return_usd": 0.0,
-  "today_pnl": -42.72,
-  "today_pnl_pct": -0.43,
+  "today_pnl": -29.4,
+  "today_pnl_pct": -0.29,
   "total_trades": 0,
   "today_start_value": 9989.79,
   "today_date": "2026-07-30",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-30T18:05:13Z",
+  "last_updated": "2026-07-30T18:37:16Z",
   "last_session": {
-    "at": "2026-07-30T18:05:13Z",
+    "at": "2026-07-30T18:37:16Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,27 +66,27 @@
     "top_movers": [
       [
         "LHX",
-        -11.32
+        -11.49
       ],
       [
         "F",
-        -3.17
+        -3.5
       ],
       [
         "CAT",
-        2.88
+        2.99
       ],
       [
         "BA",
-        2.6
-      ],
-      [
-        "GM",
-        -2.14
+        2.73
       ],
       [
         "JPM",
-        1.95
+        1.83
+      ],
+      [
+        "GM",
+        -1.82
       ]
     ],
     "news_read": [],
@@ -878,6 +883,10 @@
     {
       "timestamp": "2026-07-30T18:05:13Z",
       "value": 9947.07
+    },
+    {
+      "timestamp": "2026-07-30T18:37:16Z",
+      "value": 9960.39
     }
   ]
 }

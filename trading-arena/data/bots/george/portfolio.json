@@ -1,7 +1,13 @@
 {
-  "cash": 9859.86,
+  "cash": 4966.27,
   "total_value": 9859.86,
-  "positions": {},
+  "positions": {
+    "GLD": {
+      "shares": 13,
+      "avg_cost": 376.43,
+      "current_price": 376.43
+    }
+  },
   "total_return_pct": -1.4,
   "total_return_usd": 0.0,
   "today_pnl": -25.29,
@@ -9,10 +15,10 @@
   "total_trades": 0,
   "today_start_value": 9885.15,
   "today_date": "2026-07-30",
-  "last_action": "Markets are showing mixed signals with tech stocks experiencing volatility. Systemic risk appears low, but caution is warranted given the recent sharp moves in key tech names.",
-  "last_updated": "2026-07-30T18:08:52Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-07-30T18:41:36Z",
   "last_session": {
-    "at": "2026-07-30T18:08:52Z",
+    "at": "2026-07-30T18:41:36Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -20,33 +26,33 @@
     "top_movers": [
       [
         "META",
-        -9.01
+        -8.97
       ],
       [
         "AMZN",
-        4.84
+        4.82
       ],
       [
         "EEM",
-        3.87
-      ],
-      [
-        "QQQ",
-        3.16
+        3.83
       ],
       [
         "TSLA",
-        3.08
+        3.16
+      ],
+      [
+        "QQQ",
+        3.14
       ],
       [
         "NVDA",
-        2.07
+        1.98
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "No immediate dislocations identified. Monitoring for potential opportunities in tech and emerging markets, but current conditions do not warrant decisive action.",
-    "outlook": "Markets are showing mixed signals with tech stocks experiencing volatility. Systemic risk appears low, but caution is warranted given the recent sharp moves in key tech names.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -836,6 +842,10 @@
     },
     {
       "timestamp": "2026-07-30T18:08:52Z",
+      "value": 9859.86
+    },
+    {
+      "timestamp": "2026-07-30T18:41:36Z",
       "value": 9859.86
     }
   ]
