@@ -1,7 +1,13 @@
 {
-  "cash": 9299.28,
+  "cash": 6585.43,
   "total_value": 9299.28,
-  "positions": {},
+  "positions": {
+    "AMZN": {
+      "shares": 10,
+      "avg_cost": 271.385,
+      "current_price": 271.385
+    }
+  },
   "total_return_pct": -7.01,
   "total_return_usd": 0.0,
   "today_pnl": 14.43,
@@ -10,9 +16,9 @@
   "today_start_value": 9284.85,
   "today_date": "2026-07-31",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T17:12:27Z",
+  "last_updated": "2026-07-31T18:57:41Z",
   "last_session": {
-    "at": "2026-07-31T17:12:27Z",
+    "at": "2026-07-31T18:57:41Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -20,27 +26,27 @@
     "top_movers": [
       [
         "RBLX",
-        -29.03
+        -27.53
       ],
       [
         "AMZN",
-        15.13
-      ],
-      [
-        "COIN",
-        -11.14
+        15.21
       ],
       [
         "AAPL",
-        -9.53
+        -9.16
+      ],
+      [
+        "COIN",
+        -8.01
       ],
       [
         "RIVN",
-        -7.75
+        -7.87
       ],
       [
         "GOOGL",
-        5.84
+        6.47
       ]
     ],
     "news_read": [],
@@ -848,6 +854,10 @@
     },
     {
       "timestamp": "2026-07-31T17:12:27Z",
+      "value": 9299.28
+    },
+    {
+      "timestamp": "2026-07-31T18:57:41Z",
       "value": 9299.28
     }
   ]

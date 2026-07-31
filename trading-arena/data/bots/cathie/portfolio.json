@@ -1,59 +1,59 @@
 {
-  "cash": 520.14,
-  "total_value": 7538.04,
+  "cash": 500.33,
+  "total_value": 7568.0,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 310.755
+      "current_price": 311.33
     },
     "CRSP": {
       "shares": 22,
-      "current_price": 47.87,
+      "current_price": 47.94,
       "avg_cost": 58.1301
     },
     "NTLA": {
       "shares": 16,
-      "current_price": 10.715,
+      "current_price": 10.7001,
       "avg_cost": 16.4312
     },
     "RKLB": {
       "shares": 36,
-      "current_price": 64.8,
+      "current_price": 65.43,
       "avg_cost": 92.0891
     },
     "BEAM": {
       "shares": 30,
-      "current_price": 25.55,
+      "current_price": 25.57,
       "avg_cost": 34.1932
     },
     "RXRX": {
       "shares": 50,
       "avg_cost": 4.045,
-      "current_price": 2.9762
+      "current_price": 2.985
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 342.7,
-      "current_price": 301.53
+      "current_price": 302.915
     },
     "PACB": {
-      "shares": 48,
-      "current_price": 1.425,
-      "avg_cost": 1.428
+      "shares": 62,
+      "current_price": 1.415,
+      "avg_cost": 1.4251
     }
   },
-  "total_return_pct": -24.62,
+  "total_return_pct": -24.32,
   "total_return_usd": 0.0,
-  "today_pnl": 82.4,
-  "today_pnl_pct": 1.11,
+  "today_pnl": 112.36,
+  "today_pnl_pct": 1.51,
   "total_trades": 0,
   "today_start_value": 7455.64,
   "today_date": "2026-07-31",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T17:16:22Z",
+  "last_updated": "2026-07-31T19:02:09Z",
   "last_session": {
-    "at": "2026-07-31T17:16:22Z",
+    "at": "2026-07-31T19:02:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,27 +61,27 @@
     "top_movers": [
       [
         "COIN",
-        -11.14
+        -8.01
       ],
       [
         "PACB",
-        -3.72
-      ],
-      [
-        "BEAM",
-        -3.55
+        -4.39
       ],
       [
         "NTLA",
-        -3.38
+        -3.52
       ],
       [
-        "ILMN",
-        -2.5
+        "BEAM",
+        -3.47
+      ],
+      [
+        "TWLO",
+        3.27
       ],
       [
         "PATH",
-        2.14
+        2.38
       ]
     ],
     "news_read": [],
@@ -890,6 +890,10 @@
     {
       "timestamp": "2026-07-31T17:16:22Z",
       "value": 7538.04
+    },
+    {
+      "timestamp": "2026-07-31T19:02:09Z",
+      "value": 7568.0
     }
   ]
 }
