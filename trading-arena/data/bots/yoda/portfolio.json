@@ -1,44 +1,39 @@
 {
-  "cash": 563.02,
-  "total_value": 9833.08,
+  "cash": 629.83,
+  "total_value": 9895.1,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 365.375
+      "current_price": 367.68
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 682.35,
+      "current_price": 687.77,
       "avg_cost": 698.4522
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 740.115
+      "current_price": 745.11
     },
     "VXUS": {
       "shares": 7,
-      "current_price": 84.37,
+      "current_price": 84.615,
       "avg_cost": 84.1643
-    },
-    "SCHD": {
-      "shares": 2,
-      "current_price": 33.305,
-      "avg_cost": 33.75
     }
   },
-  "total_return_pct": -1.67,
+  "total_return_pct": -1.05,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 62.02,
+  "today_pnl_pct": 0.63,
   "total_trades": 0,
   "today_start_value": 9833.08,
   "today_date": "2026-07-31",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T16:07:39Z",
+  "last_updated": "2026-07-31T17:44:52Z",
   "last_session": {
-    "at": "2026-07-31T16:07:39Z",
+    "at": "2026-07-31T17:44:52Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +41,27 @@
     "top_movers": [
       [
         "GLD",
-        -1.74
-      ],
-      [
-        "VEA",
-        -0.87
-      ],
-      [
-        "VIG",
-        -0.76
+        -1.65
       ],
       [
         "VWO",
-        0.65
+        0.9
       ],
       [
-        "VNQ",
-        -0.58
+        "QQQ",
+        0.6
       ],
       [
-        "VXUS",
-        -0.48
+        "VEA",
+        -0.55
+      ],
+      [
+        "SPY",
+        0.45
+      ],
+      [
+        "IVV",
+        0.45
       ]
     ],
     "news_read": [],
@@ -871,6 +866,10 @@
     {
       "timestamp": "2026-07-31T16:07:39Z",
       "value": 9833.08
+    },
+    {
+      "timestamp": "2026-07-31T17:44:52Z",
+      "value": 9895.1
     }
   ]
 }

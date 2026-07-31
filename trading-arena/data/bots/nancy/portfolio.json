@@ -1,34 +1,39 @@
 {
-  "cash": 2660.92,
-  "total_value": 10105.49,
+  "cash": 1847.14,
+  "total_value": 10196.51,
   "positions": {
     "AVGO": {
       "shares": 9,
       "avg_cost": 372.72,
-      "current_price": 384.58
+      "current_price": 389.09
     },
     "MSFT": {
       "shares": 1,
       "avg_cost": 387.71,
-      "current_price": 457.145
+      "current_price": 461.955
     },
     "NVDA": {
       "shares": 18,
-      "current_price": 195.9,
+      "current_price": 198.435,
       "avg_cost": 193.2009
+    },
+    "AMZN": {
+      "shares": 3,
+      "avg_cost": 271.26,
+      "current_price": 271.26
     }
   },
-  "total_return_pct": 1.05,
+  "total_return_pct": 1.97,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 91.02,
+  "today_pnl_pct": 0.9,
   "total_trades": 0,
   "today_start_value": 10105.49,
   "today_date": "2026-07-31",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T15:41:49Z",
+  "last_updated": "2026-07-31T17:15:55Z",
   "last_session": {
-    "at": "2026-07-31T15:41:49Z",
+    "at": "2026-07-31T17:15:55Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +41,27 @@
     "top_movers": [
       [
         "AMZN",
-        13.43
+        15.13
       ],
       [
         "AAPL",
-        -9.42
-      ],
-      [
-        "MU",
-        -5.23
+        -9.53
       ],
       [
         "GOOGL",
-        4.55
+        5.84
       ],
       [
-        "QCOM",
-        -2.32
+        "MU",
+        -4.35
       ],
       [
         "AMAT",
-        1.8
+        3.36
+      ],
+      [
+        "MSFT",
+        2.37
       ]
     ],
     "news_read": [],
@@ -861,6 +866,10 @@
     {
       "timestamp": "2026-07-31T15:41:49Z",
       "value": 10105.49
+    },
+    {
+      "timestamp": "2026-07-31T17:15:55Z",
+      "value": 10196.51
     }
   ]
 }

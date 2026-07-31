@@ -1,67 +1,72 @@
 {
-  "cash": 4143.71,
-  "total_value": 10019.93,
+  "cash": 3711.26,
+  "total_value": 10030.79,
   "positions": {
     "MA": {
       "shares": 2,
       "avg_cost": 529.705,
-      "current_price": 568.33
+      "current_price": 573.49
     },
     "JPM": {
       "shares": 2,
-      "current_price": 353.56,
+      "current_price": 353.435,
       "avg_cost": 342.8462
     },
     "BAC": {
       "shares": 32,
-      "current_price": 62.12,
+      "current_price": 62.155,
       "avg_cost": 60.3732
     },
     "GS": {
       "shares": 2,
-      "current_price": 1022.3,
+      "current_price": 1022.135,
       "avg_cost": 1002.01
+    },
+    "WFC": {
+      "shares": 5,
+      "avg_cost": 86.49,
+      "current_price": 86.49
     }
   },
-  "total_return_pct": 0.2,
+  "total_return_pct": 0.31,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 10.86,
+  "today_pnl_pct": 0.11,
   "total_trades": 0,
   "today_start_value": 10019.93,
   "today_date": "2026-07-31",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T15:51:14Z",
+  "last_updated": "2026-07-31T17:27:09Z",
   "last_session": {
-    "at": "2026-07-31T15:51:14Z",
+    "at": "2026-07-31T17:27:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "MA",
-        -1.54
+        "WFC",
+        1.23
       ],
       [
         "COF",
-        -1.45
-      ],
-      [
-        "WFC",
-        0.96
-      ],
-      [
-        "V",
         -0.95
       ],
       [
         "JPM",
-        0.82
+        0.75
       ],
       [
-        "MS",
-        0.69
+        "TRV",
+        0.74
+      ],
+      [
+        "BAC",
+        0.67
+      ],
+      [
+        "MA",
+        -0.67
       ]
     ],
     "news_read": [],
@@ -866,6 +871,10 @@
     {
       "timestamp": "2026-07-31T15:51:14Z",
       "value": 10019.93
+    },
+    {
+      "timestamp": "2026-07-31T17:27:09Z",
+      "value": 10030.79
     }
   ]
 }
