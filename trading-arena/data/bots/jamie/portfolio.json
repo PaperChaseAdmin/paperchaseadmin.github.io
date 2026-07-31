@@ -1,72 +1,77 @@
 {
-  "cash": 3711.26,
-  "total_value": 10030.79,
+  "cash": 3044.96,
+  "total_value": 10023.01,
   "positions": {
     "MA": {
       "shares": 2,
       "avg_cost": 529.705,
-      "current_price": 573.49
+      "current_price": 573.1775
     },
     "JPM": {
       "shares": 2,
-      "current_price": 353.435,
+      "current_price": 352.81,
       "avg_cost": 342.8462
     },
     "BAC": {
       "shares": 32,
-      "current_price": 62.155,
+      "current_price": 62.045,
       "avg_cost": 60.3732
     },
     "GS": {
       "shares": 2,
-      "current_price": 1022.135,
+      "current_price": 1021.77,
       "avg_cost": 1002.01
     },
     "WFC": {
       "shares": 5,
       "avg_cost": 86.49,
-      "current_price": 86.49
+      "current_price": 86.16
+    },
+    "C": {
+      "shares": 5,
+      "avg_cost": 133.26,
+      "current_price": 133.26
     }
   },
-  "total_return_pct": 0.31,
+  "total_return_pct": 0.23,
   "total_return_usd": 0.0,
-  "today_pnl": 10.86,
-  "today_pnl_pct": 0.11,
+  "today_pnl": 3.08,
+  "today_pnl_pct": 0.03,
   "total_trades": 0,
   "today_start_value": 10019.93,
   "today_date": "2026-07-31",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T17:27:09Z",
+  "last_updated": "2026-07-31T19:11:43Z",
   "last_session": {
-    "at": "2026-07-31T17:27:09Z",
+    "at": "2026-07-31T19:11:43Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "WFC",
-        1.23
-      ],
-      [
         "COF",
-        -0.95
+        -0.94
       ],
       [
-        "JPM",
-        0.75
-      ],
-      [
-        "TRV",
-        0.74
-      ],
-      [
-        "BAC",
-        0.67
+        "WFC",
+        0.85
       ],
       [
         "MA",
-        -0.67
+        -0.73
+      ],
+      [
+        "C",
+        0.7
+      ],
+      [
+        "JPM",
+        0.55
+      ],
+      [
+        "BAC",
+        0.51
       ]
     ],
     "news_read": [],
@@ -875,6 +880,10 @@
     {
       "timestamp": "2026-07-31T17:27:09Z",
       "value": 10030.79
+    },
+    {
+      "timestamp": "2026-07-31T19:11:43Z",
+      "value": 10023.01
     }
   ]
 }
