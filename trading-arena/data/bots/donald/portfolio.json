@@ -1,59 +1,64 @@
 {
-  "cash": 3088.89,
-  "total_value": 9898.8,
+  "cash": 2323.75,
+  "total_value": 9926.09,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 577.135
+      "current_price": 579.495
     },
     "RTX": {
       "shares": 8,
-      "current_price": 214.14,
+      "current_price": 214.78,
       "avg_cost": 200.4213
     },
     "NUE": {
       "shares": 2,
       "avg_cost": 223.19,
-      "current_price": 257.89
+      "current_price": 257.655
     },
     "XOM": {
       "shares": 1,
       "avg_cost": 136.71,
-      "current_price": 153.78
+      "current_price": 154.03
     },
     "F": {
       "shares": 1,
       "avg_cost": 13.855,
-      "current_price": 14.435
+      "current_price": 14.615
     },
     "GM": {
       "shares": 2,
-      "current_price": 87.66,
+      "current_price": 88.39,
       "avg_cost": 84.425
     },
     "CAT": {
       "shares": 1,
       "avg_cost": 805.76,
-      "current_price": 815.245
+      "current_price": 818.93
     },
     "NOC": {
       "shares": 1,
       "avg_cost": 527.49,
-      "current_price": 536.56
+      "current_price": 541.82
+    },
+    "GD": {
+      "shares": 2,
+      "avg_cost": 382.57,
+      "current_price": 382.57
     }
   },
-  "total_return_pct": -1.01,
+  "total_return_pct": -0.74,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 27.29,
+  "today_pnl_pct": 0.28,
   "total_trades": 0,
   "today_start_value": 9898.8,
   "today_date": "2026-07-31",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T15:39:23Z",
+  "last_updated": "2026-07-31T17:15:21Z",
   "last_session": {
-    "at": "2026-07-31T15:39:23Z",
+    "at": "2026-07-31T17:15:21Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,27 +66,27 @@
     "top_movers": [
       [
         "BA",
-        -3.87
-      ],
-      [
-        "F",
-        -2.69
+        -2.74
       ],
       [
         "XOM",
-        -2.03
+        -1.88
       ],
       [
         "LHX",
-        1.31
+        1.86
+      ],
+      [
+        "F",
+        -1.68
       ],
       [
         "CVX",
-        1.11
+        1.51
       ],
       [
-        "HAL",
-        0.92
+        "NOC",
+        1.31
       ]
     ],
     "news_read": [],
@@ -886,6 +891,10 @@
     {
       "timestamp": "2026-07-31T15:39:23Z",
       "value": 9898.8
+    },
+    {
+      "timestamp": "2026-07-31T17:15:21Z",
+      "value": 9926.09
     }
   ]
 }
