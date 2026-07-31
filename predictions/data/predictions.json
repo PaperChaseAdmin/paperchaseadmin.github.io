@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-31T15:00:36Z",
+  "updated_at": "2026-07-31T21:34:35Z",
   "last_prediction_date": "2026-07-31",
-  "last_settle_date": "2026-07-30",
+  "last_settle_date": "2026-07-31",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 35,
+      "total": 36,
       "correct": 30,
-      "accuracy_pct": 85.7,
+      "accuracy_pct": 83.3,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -840,9 +840,10 @@
           "prediction": "down",
           "confidence": 60,
           "signal": "Tech sector under pressure despite Amazon's gains",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 1.0
         },
         {
           "date": "2026-07-31",
