@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T17:54:28Z",
+  "updated_at": "2026-08-02T18:56:00Z",
   "crypto": {
     "fear_greed": {
       "value": 27,
@@ -11,139 +11,88 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 63256,
-        "change_24h": 0.4,
-        "market_cap": 1269323840273,
-        "volume_24h": 15695771927
+        "price_usd": 63352,
+        "change_24h": 0.6,
+        "market_cap": 1271139655975,
+        "volume_24h": 15146218378
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1867.23,
-        "change_24h": -0.4,
-        "market_cap": 225337593072,
-        "volume_24h": 5511306414
+        "price_usd": 1874.8,
+        "change_24h": 0,
+        "market_cap": 226247518263,
+        "volume_24h": 4983987900
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 587.18,
-        "change_24h": 1.9,
-        "market_cap": 78198104264,
-        "volume_24h": 547590046
+        "price_usd": 588.93,
+        "change_24h": 1.6,
+        "market_cap": 78426374587,
+        "volume_24h": 526561093
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.081,
-        "change_24h": 1.7,
-        "market_cap": 67630947802,
-        "volume_24h": 821537344
+        "price_usd": 1.08,
+        "change_24h": 2.0,
+        "market_cap": 67560616434,
+        "volume_24h": 788223008
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 73.28,
-        "change_24h": 0.5,
-        "market_cap": 42597589501,
-        "volume_24h": 1189536407
+        "price_usd": 73.55,
+        "change_24h": 0.8,
+        "market_cap": 42746630458,
+        "volume_24h": 1070391902
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.07056,
-        "change_24h": 0.3,
-        "market_cap": 10961031636,
-        "volume_24h": 427180031
+        "price_usd": 0.070898,
+        "change_24h": 0.8,
+        "market_cap": 11012358302,
+        "volume_24h": 381516035
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.189105,
-        "change_24h": 10.2,
-        "market_cap": 7060486089,
-        "volume_24h": 656914971
+        "price_usd": 0.189092,
+        "change_24h": 8.5,
+        "market_cap": 7060471624,
+        "volume_24h": 646810584
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
         "price_usd": 8.32,
-        "change_24h": 2.2,
-        "market_cap": 6228904213,
-        "volume_24h": 192975461
+        "change_24h": 3.0,
+        "market_cap": 6221569747,
+        "volume_24h": 184672449
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
         "price_usd": 6.63,
-        "change_24h": 3.3,
-        "market_cap": 2861118686,
-        "volume_24h": 269263116
+        "change_24h": 4.1,
+        "market_cap": 2863256459,
+        "volume_24h": 256017907
       }
     ],
-    "top_mentioned": [
-      {
-        "symbol": "BTC",
-        "mentions": 5,
-        "price_usd": 63256,
-        "change_24h": 0.4
-      },
-      {
-        "symbol": "XRP",
-        "mentions": 1,
-        "price_usd": 1.081,
-        "change_24h": 1.7
-      },
-      {
-        "symbol": "ETH",
-        "mentions": 0,
-        "price_usd": 1867.23,
-        "change_24h": -0.4
-      },
-      {
-        "symbol": "SOL",
-        "mentions": 0,
-        "price_usd": 73.28,
-        "change_24h": 0.5
-      },
-      {
-        "symbol": "BNB",
-        "mentions": 0,
-        "price_usd": 587.18,
-        "change_24h": 1.9
-      },
-      {
-        "symbol": "ADA",
-        "mentions": 0,
-        "price_usd": 0.189105,
-        "change_24h": 10.2
-      },
-      {
-        "symbol": "DOGE",
-        "mentions": 0,
-        "price_usd": 0.07056,
-        "change_24h": 0.3
-      },
-      {
-        "symbol": "AVAX",
-        "mentions": 0,
-        "price_usd": 6.63,
-        "change_24h": 3.3
-      },
-      {
-        "symbol": "LINK",
-        "mentions": 0,
-        "price_usd": 8.32,
-        "change_24h": 2.2
-      },
-      {
-        "symbol": "TON",
-        "mentions": 0,
-        "price_usd": null,
-        "change_24h": null
-      }
-    ],
+    "top_mentioned": [],
     "news": [
+      {
+        "title": "Counting down the days: State of Crypto",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto",
+        "published": "Sun, 02 Aug 2026 18:30:00 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
       {
         "title": "Why a DeFi platform ditched its consumer app to become the secret backend for tech giants",
         "source": "CoinDesk",
@@ -159,16 +108,6 @@
         "source": "CoinDesk",
         "url": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
         "published": "Sun, 02 Aug 2026 16:00:00 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "The reverse bridge: Crypto meets Wall Street using perps",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps",
-        "published": "Sun, 02 Aug 2026 13:00:00 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
@@ -241,6 +180,18 @@
         "color": "red"
       },
       {
+        "title": "XRP extends the longest active ETF inflow streak in crypto as rival funds struggle for fresh cash",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/xrp-extends-the-longest-active-etf-inflow-streak-in-crypto-as-rival-funds-struggle-for-fresh-cash/",
+        "published": "Sun, 02 Aug 2026 18:35:10 +0000",
+        "assets": [
+          "XRP"
+        ],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
         "title": "Coldcard’s $89M wallet bug triggers the biggest Bitcoin movement since FTX and completely distorts market signals",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/coldcards-89m-wallet-bug-triggers-the-biggest-bitcoin-movement-since-ftx-and-completely-distorts-market-signals/",
@@ -263,68 +214,35 @@
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
-      },
-      {
-        "title": "How XRPL validators quietly killed a silent exploit that could have drained victim accounts through transaction fees alone",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/how-xrpl-validators-quietly-killed-a-silent-exploit-that-could-have-drained-victim-accounts-through-transaction-fees-alone/",
-        "published": "Sun, 02 Aug 2026 15:30:10 +0000",
-        "assets": [
-          "XRP"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": -0.167,
+      "score": -0.083,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [
-      {
-        "subreddit": "r/CryptoCurrency",
-        "mentions": {
-          "BTC": 5,
-          "XRP": 1,
-          "ETH": 0,
-          "SOL": 0,
-          "BNB": 0,
-          "ADA": 0,
-          "DOGE": 0,
-          "AVAX": 0,
-          "LINK": 0,
-          "TON": 0
-        },
-        "activity_score": 100,
-        "top_post": "Daily Crypto Discussion - August 1, 2026 (GMT+0)",
-        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vd1gcq/daily_crypto_discussion_august_1_2026_gmt0/",
-        "top_post_score": 0,
-        "posts": 25
-      }
-    ],
+    "reddit": [],
     "reddit_summary": {
       "outlook": "Mixed",
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 5 bullish vs 4 bearish signals detected across crypto news data."
+      "summary": "Mixed: 5 bullish vs 5 bearish signals detected across crypto news data."
     },
     "fourchain": {
-      "thread_count": 200,
-      "active_threads": 151,
+      "thread_count": 201,
+      "active_threads": 154,
       "mentions": {
-        "BTC": 23,
+        "BTC": 24,
         "XRP": 12,
-        "DOGE": 3
+        "DOGE": 4
       },
-      "bullish_hits": 97,
-      "bearish_hits": 74,
-      "bullish_pct": 57,
+      "bullish_hits": 92,
+      "bearish_hits": 72,
+      "bullish_pct": 56,
       "top_coin": "BTC",
       "top_posts": [
         "/smg/ stock market general &gt;educational sites: https://www.investopedia.com https://www.khanacademy.org/economi cs-fi",
@@ -336,53 +254,53 @@
     },
     "cg_trending": [
       {
-        "symbol": "CATE",
-        "name": "Catecoin",
-        "rank": 778,
+        "symbol": "BLESS",
+        "name": "Bless",
+        "rank": 580,
         "score": 0,
-        "change_24h": 74.68
+        "change_24h": 71.8
       },
       {
         "symbol": "PENGU",
         "name": "Pudgy Penguins",
         "rank": 110,
         "score": 1,
-        "change_24h": 4.83
+        "change_24h": 4.94
       },
       {
-        "symbol": "BLESS",
-        "name": "Bless",
-        "rank": 579,
+        "symbol": "CATE",
+        "name": "Catecoin",
+        "rank": 774,
         "score": 2,
-        "change_24h": 74.25
-      },
-      {
-        "symbol": "AERO",
-        "name": "Aerodrome Finance",
-        "rank": 111,
-        "score": 3,
-        "change_24h": -3.66
+        "change_24h": 63.03
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
         "rank": 16,
+        "score": 3,
+        "change_24h": 10.31
+      },
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "rank": 1,
         "score": 4,
-        "change_24h": 9.26
+        "change_24h": 1.67
       },
       {
-        "symbol": "UNI",
-        "name": "Uniswap",
-        "rank": 36,
+        "symbol": "PEPE",
+        "name": "Pepe",
+        "rank": 58,
         "score": 5,
-        "change_24h": 2.89
+        "change_24h": 5.89
       },
       {
-        "symbol": "SOL",
-        "name": "Solana",
-        "rank": 7,
+        "symbol": "PUMP",
+        "name": "Pump.fun",
+        "rank": 76,
         "score": 6,
-        "change_24h": 2.08
+        "change_24h": 3.44
       }
     ]
   },
@@ -555,6 +473,16 @@
         "color": "green"
       },
       {
+        "title": "SoFi: More Wall St. Games",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4929291-sofi-more-wall-st-games?source=feed_all_articles",
+        "published": "Sun, 02 Aug 2026 14:00:00 -0400",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
         "title": "Antero Midstream: Veolia Lawsuit Proceeds Help Reduce Its Leverage",
         "source": "SeekingAlpha",
         "url": "https://seekingalpha.com/article/4929320-antero-midstream-veolia-lawsuit-proceeds-helps-reduce-its-leverage?source=feed_all_articles",
@@ -575,14 +503,14 @@
         "color": "green"
       },
       {
-        "title": "Income-Covered Closed-End Fund Report, July 2026",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4929318-income-covered-closed-end-fund-report-july-2026?source=feed_all_articles",
-        "published": "Sun, 02 Aug 2026 12:12:35 -0400",
+        "title": "As Trump balks again at escalating war, Iran smells ‘blood in the water’ and looks to exploit its newfound strategic advantage, experts say",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/02/trump-iran-war-strategic-advantage-oil-saudi-arabia-strait-of-hormuz/",
+        "published": "Sun, 02 Aug 2026 17:48:24 +0000",
         "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
         "title": "He was homeless at 16. Now, he sits on the board of David Beckham’s wellness company and his business is about to hit $1 billion in revenue",
@@ -605,83 +533,73 @@
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
-      },
-      {
-        "title": "Tom Holland and Zendaya share another box-office hit as ‘Spider-Man: Brand New Day’ makes history on the heels of ‘The Odyssey’",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/08/02/tom-holland-zendaya-box-office-spider-man-brand-new-day-opening-weekend-sales/",
-        "published": "Sun, 02 Aug 2026 15:28:18 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": -0.067,
+      "score": 0.0,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 2587602,
+        "volume_24h": 2469266,
         "yes_price": 0.2,
         "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       },
       {
         "title": "US x Iran Effective Ceasefire by July 31?",
-        "volume_24h": 961390,
-        "yes_price": 0.52,
+        "volume_24h": 962025,
+        "yes_price": 0.55,
         "url": "https://polymarket.com/market/us-x-iran-effective-ceasfire-by-july-31-20260715194822045"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by August 31?",
-        "volume_24h": 942967,
+        "volume_24h": 944193,
         "yes_price": 0.12,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by August 15?",
-        "volume_24h": 653336,
+        "volume_24h": 654434,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-15-20260727171036148"
       },
       {
         "title": "Israel x Iran ceasefire continues through August 3?",
-        "volume_24h": 551474,
-        "yes_price": 0.98,
+        "volume_24h": 552089,
+        "yes_price": 0.97,
         "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-3"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 374316,
+        "volume_24h": 374151,
         "yes_price": 0.23,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by December 31?",
-        "volume_24h": 281480,
-        "yes_price": 0.58,
+        "volume_24h": 295701,
+        "yes_price": 0.59,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
       },
       {
         "title": "Kharg Island no longer under Iranian control by August 31?",
-        "volume_24h": 279287,
+        "volume_24h": 277974,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/kharg-island-no-longer-under-iranian-control-by-august-31"
       },
       {
         "title": "Israel x Iran ceasefire continues through August 9?",
-        "volume_24h": 230614,
-        "yes_price": 0.85,
+        "volume_24h": 250344,
+        "yes_price": 0.86,
         "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-9-20260727170733638"
       },
       {
-        "title": "Israel x Iran ceasefire continues through August 4?",
-        "volume_24h": 217704,
-        "yes_price": 0.97,
-        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-4"
+        "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+        "volume_24h": 223376,
+        "yes_price": 0.41,
+        "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       }
     ],
     "polymarket_summary": {
@@ -790,15 +708,15 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 60
+          "interest_score": 57
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 8
+          "interest_score": 9
         },
         {
           "keyword": "Solana",
-          "interest_score": 8
+          "interest_score": 7
         },
         {
           "keyword": "crypto",
