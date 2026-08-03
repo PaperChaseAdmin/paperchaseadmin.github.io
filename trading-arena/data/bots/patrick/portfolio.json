@@ -1,49 +1,54 @@
 {
-  "cash": 6048.02,
-  "total_value": 10064.28,
+  "cash": 4520.42,
+  "total_value": 10069.76,
   "positions": {
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 152.805
+      "current_price": 154.87
     },
     "LVS": {
       "shares": 10,
       "avg_cost": 45.78,
-      "current_price": 49.17
+      "current_price": 46.91
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 382.64
+      "current_price": 378.5
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 119.315
+      "current_price": 121.645
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 332.04
+      "current_price": 337.69
     },
     "CPRI": {
       "shares": 15,
       "avg_cost": 16.015,
-      "current_price": 16.015
+      "current_price": 16.235
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 305.52,
+      "current_price": 305.52
     }
   },
-  "total_return_pct": 0.64,
+  "total_return_pct": 0.7,
   "total_return_usd": 0.0,
-  "today_pnl": 17.13,
-  "today_pnl_pct": 0.17,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10047.15,
-  "today_date": "2026-07-31",
+  "today_start_value": 10069.76,
+  "today_date": "2026-08-03",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T19:19:36Z",
+  "last_updated": "2026-08-03T18:46:20Z",
   "last_session": {
-    "at": "2026-07-31T19:19:36Z",
+    "at": "2026-08-03T18:46:20Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -51,27 +56,27 @@
     "top_movers": [
       [
         "AMZN",
-        15.21
-      ],
-      [
-        "AAPL",
-        -9.16
-      ],
-      [
-        "MGM",
-        -2.34
+        4.08
       ],
       [
         "LVS",
-        -1.4
+        -4.05
+      ],
+      [
+        "RH",
+        4.03
       ],
       [
         "CAKE",
-        1.26
+        2.55
       ],
       [
-        "WYNN",
-        -1.24
+        "LULU",
+        2.31
+      ],
+      [
+        "CPRI",
+        1.95
       ]
     ],
     "news_read": [],
@@ -884,6 +889,10 @@
     {
       "timestamp": "2026-07-31T19:19:36Z",
       "value": 10064.28
+    },
+    {
+      "timestamp": "2026-08-03T18:46:20Z",
+      "value": 10069.76
     }
   ]
 }

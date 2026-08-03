@@ -1,68 +1,73 @@
 {
-  "cash": 5841.62,
-  "total_value": 9922.49,
+  "cash": 5555.44,
+  "total_value": 9911.85,
   "positions": {
     "SHY": {
       "shares": 30,
-      "current_price": 81.95,
+      "current_price": 81.765,
       "avg_cost": 81.7733
     },
     "BIL": {
       "shares": 10,
       "avg_cost": 91.62,
-      "current_price": 91.675
+      "current_price": 91.42
     },
     "JPM": {
       "shares": 2,
       "avg_cost": 351.44,
-      "current_price": 352.81
+      "current_price": 351.545
+    },
+    "XLF": {
+      "shares": 5,
+      "avg_cost": 57.235,
+      "current_price": 57.235
     }
   },
-  "total_return_pct": -0.78,
+  "total_return_pct": -0.88,
   "total_return_usd": 0.0,
-  "today_pnl": -1.77,
-  "today_pnl_pct": -0.02,
+  "today_pnl": -0.01,
+  "today_pnl_pct": -0.0,
   "total_trades": 0,
-  "today_start_value": 9924.26,
-  "today_date": "2026-07-31",
-  "last_action": "Data-dependent approach; monitoring VIX and macroeconomic indicators closely.",
-  "last_updated": "2026-07-31T19:23:15Z",
+  "today_start_value": 9911.86,
+  "today_date": "2026-08-03",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-03T18:47:56Z",
   "last_session": {
-    "at": "2026-07-31T19:23:15Z",
+    "at": "2026-08-03T18:47:56Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TLT",
-        -1.01
-      ],
-      [
         "SPY",
-        0.62
+        1.41
       ],
       [
-        "JPM",
-        0.55
+        "TIP",
+        -0.73
+      ],
+      [
+        "XLF",
+        0.52
       ],
       [
         "BAC",
-        0.51
+        0.45
       ],
       [
-        "IEF",
-        -0.49
+        "PFF",
+        0.3
       ],
       [
-        "VNQ",
-        -0.42
+        "BIL",
+        -0.29
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Current portfolio aligns with a cautious stance, focusing on short-term bonds and banking stocks. No immediate adjustments needed based on available data.",
-    "outlook": "Data-dependent approach; monitoring VIX and macroeconomic indicators closely.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -869,6 +874,10 @@
     {
       "timestamp": "2026-07-31T19:23:15Z",
       "value": 9922.49
+    },
+    {
+      "timestamp": "2026-08-03T18:47:56Z",
+      "value": 9911.85
     }
   ]
 }

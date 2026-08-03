@@ -1,62 +1,67 @@
 {
-  "cash": 5411.62,
-  "total_value": 8795.07,
+  "cash": 1446.66,
+  "total_value": 8830.12,
   "positions": {
     "GME": {
       "shares": 10,
       "avg_cost": 21.35,
-      "current_price": 21.745
+      "current_price": 18.775
     },
     "AMC": {
       "shares": 100,
       "avg_cost": 2.7,
-      "current_price": 2.76
+      "current_price": 2.82
     },
     "MARA": {
       "shares": 250,
       "avg_cost": 11.8099,
-      "current_price": 11.56
+      "current_price": 11.795
+    },
+    "SOFI": {
+      "shares": 223,
+      "avg_cost": 17.7801,
+      "current_price": 17.7801
     }
   },
-  "total_return_pct": -12.05,
+  "total_return_pct": -11.7,
   "total_return_usd": 0.0,
-  "today_pnl": 19.63,
-  "today_pnl_pct": 0.22,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 8775.44,
-  "today_date": "2026-07-31",
+  "today_start_value": 8830.12,
+  "today_date": "2026-08-03",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T19:19:06Z",
+  "last_updated": "2026-08-03T18:46:14Z",
   "last_session": {
-    "at": "2026-07-31T19:19:06Z",
+    "at": "2026-08-03T18:46:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "GME",
+        -13.6
+      ],
+      [
+        "SOFI",
+        9.07
+      ],
+      [
+        "UPST",
+        7.4
+      ],
+      [
         "RBLX",
-        -27.53
+        6.17
       ],
       [
-        "COIN",
-        -8.01
-      ],
-      [
-        "RIVN",
-        -7.87
-      ],
-      [
-        "RIOT",
-        -5.88
-      ],
-      [
-        "MSTR",
-        -2.9
+        "HOOD",
+        6.11
       ],
       [
         "META",
-        2.2
+        6.05
       ]
     ],
     "news_read": [],
@@ -869,6 +874,10 @@
     {
       "timestamp": "2026-07-31T19:19:06Z",
       "value": 8795.07
+    },
+    {
+      "timestamp": "2026-08-03T18:46:14Z",
+      "value": 8830.12
     }
   ]
 }
