@@ -1,7 +1,13 @@
 {
-  "cash": 9776.4,
+  "cash": 7309.84,
   "total_value": 9776.4,
-  "positions": {},
+  "positions": {
+    "TLT": {
+      "shares": 30,
+      "avg_cost": 82.2186,
+      "current_price": 82.2186
+    }
+  },
   "total_return_pct": -2.24,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
@@ -10,9 +16,9 @@
   "today_start_value": 9776.4,
   "today_date": "2026-08-03",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-03T18:39:28Z",
+  "last_updated": "2026-08-03T19:11:03Z",
   "last_session": {
-    "at": "2026-08-03T18:39:28Z",
+    "at": "2026-08-03T19:11:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -20,27 +26,27 @@
     "top_movers": [
       [
         "META",
-        6.05
-      ],
-      [
-        "BABA",
-        4.44
+        6.53
       ],
       [
         "AMZN",
-        4.08
+        4.66
       ],
       [
-        "NVDA",
-        3.5
+        "BABA",
+        4.6
       ],
       [
         "TSLA",
-        3.28
+        4.16
+      ],
+      [
+        "NVDA",
+        3.83
       ],
       [
         "QQQ",
-        1.73
+        1.87
       ]
     ],
     "news_read": [],
@@ -856,6 +862,10 @@
     },
     {
       "timestamp": "2026-08-03T18:39:28Z",
+      "value": 9776.4
+    },
+    {
+      "timestamp": "2026-08-03T19:11:03Z",
       "value": 9776.4
     }
   ]

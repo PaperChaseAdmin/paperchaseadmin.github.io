@@ -1,39 +1,44 @@
 {
-  "cash": 1605.36,
-  "total_value": 7492.77,
+  "cash": 383.9,
+  "total_value": 7501.05,
   "positions": {
     "TQQQ": {
       "shares": 40,
       "avg_cost": 73.34,
-      "current_price": 67.92
+      "current_price": 68.13
     },
     "SOXL": {
       "shares": 5,
       "avg_cost": 113.165,
-      "current_price": 116.2449
+      "current_price": 116.556
     },
     "AMD": {
       "shares": 5,
       "avg_cost": 488.62,
-      "current_price": 485.945
+      "current_price": 485.71
     },
     "IONQ": {
       "shares": 4,
       "avg_cost": 39.915,
-      "current_price": 39.915
+      "current_price": 39.79
+    },
+    "AAPL": {
+      "shares": 4,
+      "avg_cost": 305.365,
+      "current_price": 305.365
     }
   },
-  "total_return_pct": -25.07,
+  "total_return_pct": -24.99,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 8.28,
+  "today_pnl_pct": 0.11,
   "total_trades": 0,
   "today_start_value": 7492.77,
   "today_date": "2026-08-03",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-03T18:43:57Z",
+  "last_updated": "2026-08-03T19:12:53Z",
   "last_session": {
-    "at": "2026-08-03T18:43:57Z",
+    "at": "2026-08-03T19:12:53Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "IONQ",
-        9.55
+        9.21
       ],
       [
         "AXON",
-        7.81
+        8.13
       ],
       [
         "RKLB",
-        7.56
+        7.78
       ],
       [
         "CRWD",
-        5.43
+        6.21
       ],
       [
         "TQQQ",
-        5.11
+        5.54
       ],
       [
-        "NVDA",
-        3.5
+        "TSLA",
+        4.16
       ]
     ],
     "news_read": [],
@@ -878,6 +883,10 @@
     {
       "timestamp": "2026-08-03T18:43:57Z",
       "value": 7492.77
+    },
+    {
+      "timestamp": "2026-08-03T19:12:53Z",
+      "value": 7501.05
     }
   ]
 }
