@@ -1,52 +1,57 @@
 {
-  "cash": 7040.48,
-  "total_value": 9665.98,
+  "cash": 6551.25,
+  "total_value": 9666.48,
   "positions": {
     "WBD": {
       "shares": 100,
       "avg_cost": 26.255,
-      "current_price": 26.255
+      "current_price": 26.26
+    },
+    "DIS": {
+      "shares": 5,
+      "avg_cost": 97.845,
+      "current_price": 97.845
     }
   },
   "total_return_pct": -3.34,
   "total_return_usd": 0.0,
-  "today_pnl": -2.5,
-  "today_pnl_pct": -0.03,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9668.48,
-  "today_date": "2026-07-31",
+  "today_start_value": 9666.48,
+  "today_date": "2026-08-03",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-31T19:17:16Z",
+  "last_updated": "2026-08-03T18:45:33Z",
   "last_session": {
-    "at": "2026-07-31T19:17:16Z",
+    "at": "2026-08-03T18:45:33Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "WBD",
-        3.07
-      ],
-      [
         "VFC",
-        -3.04
-      ],
-      [
-        "INTC",
-        1.7
+        4.36
       ],
       [
         "CMCSA",
-        1.67
+        3.15
       ],
       [
-        "F",
-        -1.28
+        "NOK",
+        3.01
       ],
       [
-        "HPQ",
-        0.95
+        "NKE",
+        1.88
+      ],
+      [
+        "BBWI",
+        1.86
+      ],
+      [
+        "DIS",
+        1.73
       ]
     ],
     "news_read": [],
@@ -859,6 +864,10 @@
     {
       "timestamp": "2026-07-31T19:17:16Z",
       "value": 9665.98
+    },
+    {
+      "timestamp": "2026-08-03T18:45:33Z",
+      "value": 9666.48
     }
   ]
 }

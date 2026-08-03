@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-31T15:00:36Z",
-  "last_prediction_date": "2026-07-31",
-  "last_settle_date": "2026-07-30",
+  "updated_at": "2026-08-03T15:26:25Z",
+  "last_prediction_date": "2026-08-03",
+  "last_settle_date": "2026-07-31",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 35,
+      "total": 36,
       "correct": 30,
-      "accuracy_pct": 85.7,
+      "accuracy_pct": 83.3,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -840,9 +840,10 @@
           "prediction": "down",
           "confidence": 60,
           "signal": "Tech sector under pressure despite Amazon's gains",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 1.0
         },
         {
           "date": "2026-07-31",
@@ -850,6 +851,36 @@
           "prediction": "neutral",
           "confidence": 53,
           "signal": "Limited movement expected with mixed market indicators",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-03",
+          "market": "S&P 500",
+          "prediction": "up",
+          "confidence": 68,
+          "signal": "Positive momentum from strong earnings and bullish market mood",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-03",
+          "market": "NASDAQ",
+          "prediction": "up",
+          "confidence": 72,
+          "signal": "Tech sector strength and higher gains in major stocks",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-03",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals from macro data and slight underperformance",
           "actual": null,
           "correct": null,
           "settled": false
@@ -1270,6 +1301,16 @@
           "prediction": "down",
           "confidence": 82,
           "signal": "Will MegaETH perform an airdrop by December 31, 20 | Yes 18% / No 82% | Vol $10,295",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-03",
+          "market": "Will MegaETH perform an airdrop by December 31, 2026?",
+          "prediction": "down",
+          "confidence": 84,
+          "signal": "Will MegaETH perform an airdrop by December 31, 20 | Yes 16% / No 84% | Vol $10,302",
           "actual": null,
           "correct": null,
           "settled": false
