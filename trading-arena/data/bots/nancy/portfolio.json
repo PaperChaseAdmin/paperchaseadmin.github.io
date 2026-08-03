@@ -1,39 +1,44 @@
 {
-  "cash": 2096.02,
-  "total_value": 10499.61,
+  "cash": 910.14,
+  "total_value": 10519.69,
   "positions": {
     "AVGO": {
       "shares": 6,
       "avg_cost": 372.72,
-      "current_price": 390.63
+      "current_price": 391.77
     },
     "MSFT": {
       "shares": 3,
-      "current_price": 490.755,
+      "current_price": 489.45,
       "avg_cost": 436.9067
     },
     "NVDA": {
       "shares": 18,
-      "current_price": 207.755,
+      "current_price": 208.44,
       "avg_cost": 193.2009
     },
     "AMZN": {
       "shares": 3,
       "avg_cost": 271.26,
-      "current_price": 282.65
+      "current_price": 284.26
+    },
+    "META": {
+      "shares": 2,
+      "avg_cost": 592.9401,
+      "current_price": 592.9401
     }
   },
-  "total_return_pct": 5.0,
+  "total_return_pct": 5.2,
   "total_return_usd": 0.0,
-  "today_pnl": 0.01,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 20.09,
+  "today_pnl_pct": 0.19,
   "total_trades": 0,
   "today_start_value": 10499.6,
   "today_date": "2026-08-03",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-03T18:36:03Z",
+  "last_updated": "2026-08-03T19:08:39Z",
   "last_session": {
-    "at": "2026-08-03T18:36:03Z",
+    "at": "2026-08-03T19:08:39Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "META",
-        6.05
-      ],
-      [
-        "MSFT",
-        5.59
+        6.53
       ],
       [
         "GOOGL",
-        4.89
+        5.41
+      ],
+      [
+        "MSFT",
+        5.32
       ],
       [
         "AMZN",
-        4.08
-      ],
-      [
-        "NVDA",
-        3.5
+        4.66
       ],
       [
         "TSLA",
-        3.28
+        4.16
+      ],
+      [
+        "NVDA",
+        3.83
       ]
     ],
     "news_read": [],
@@ -878,6 +883,10 @@
     {
       "timestamp": "2026-08-03T18:36:03Z",
       "value": 10499.61
+    },
+    {
+      "timestamp": "2026-08-03T19:08:39Z",
+      "value": 10519.69
     }
   ]
 }

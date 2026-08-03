@@ -1,49 +1,54 @@
 {
-  "cash": 1524.14,
-  "total_value": 10247.28,
+  "cash": 1179.59,
+  "total_value": 10247.39,
   "positions": {
     "KO": {
       "shares": 12,
-      "current_price": 86.955,
+      "current_price": 86.895,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 5,
       "avg_cost": 361.58,
-      "current_price": 366.09
+      "current_price": 366.24
     },
     "JNJ": {
       "shares": 5,
-      "current_price": 253.57,
+      "current_price": 254.055,
       "avg_cost": 262.7655
     },
     "MA": {
       "shares": 3,
-      "current_price": 574.7201,
+      "current_price": 574.41,
       "avg_cost": 529.0675
     },
     "AAPL": {
       "shares": 6,
-      "current_price": 305.52,
+      "current_price": 305.365,
       "avg_cost": 311.6733
     },
     "BRK-B": {
       "shares": 2,
       "avg_cost": 512.05,
-      "current_price": 512.05
+      "current_price": 511.81
+    },
+    "AXP": {
+      "shares": 1,
+      "avg_cost": 344.545,
+      "current_price": 344.545
     }
   },
   "total_return_pct": 2.47,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
+  "today_pnl": 0.11,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
   "today_start_value": 10247.28,
   "today_date": "2026-08-03",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-03T18:32:07Z",
+  "last_updated": "2026-08-03T19:04:25Z",
   "last_session": {
-    "at": "2026-08-03T18:32:07Z",
+    "at": "2026-08-03T19:04:25Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -51,27 +56,27 @@
     "top_movers": [
       [
         "AXP",
-        2.3
-      ],
-      [
-        "ABBV",
-        -1.94
+        2.49
       ],
       [
         "CVX",
-        -1.82
+        -2.29
       ],
       [
-        "JNJ",
-        -1.11
+        "ABBV",
+        -2.07
       ],
       [
         "AAPL",
-        -1.09
+        -1.16
       ],
       [
         "USB",
-        1.02
+        1.09
+      ],
+      [
+        "JNJ",
+        -0.87
       ]
     ],
     "news_read": [],
@@ -888,6 +893,10 @@
     {
       "timestamp": "2026-08-03T18:32:07Z",
       "value": 10247.28
+    },
+    {
+      "timestamp": "2026-08-03T19:04:25Z",
+      "value": 10247.39
     }
   ]
 }
