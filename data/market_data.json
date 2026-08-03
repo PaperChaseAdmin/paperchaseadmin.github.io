@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T08:26:01Z",
+  "updated_at": "2026-08-03T11:55:01Z",
   "crypto": {
     "fear_greed": {
       "value": 28,
@@ -11,144 +11,170 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 62342,
-        "change_24h": -1.4,
-        "market_cap": 1251068664827,
-        "volume_24h": 16840307061
+        "price_usd": 62586,
+        "change_24h": -0.8,
+        "market_cap": 1255792965975,
+        "volume_24h": 17505508152
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1833.08,
-        "change_24h": -1.8,
-        "market_cap": 221284896265,
-        "volume_24h": 5174163482
+        "price_usd": 1840.28,
+        "change_24h": -1.3,
+        "market_cap": 222088643244,
+        "volume_24h": 5532888469
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 581.76,
-        "change_24h": -0.3,
-        "market_cap": 77469397533,
-        "volume_24h": 435760966
+        "price_usd": 585.68,
+        "change_24h": 0.5,
+        "market_cap": 77991737190,
+        "volume_24h": 464321695
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.064,
-        "change_24h": -1.3,
-        "market_cap": 66564476785,
-        "volume_24h": 787010487
+        "price_usd": 1.066,
+        "change_24h": -1.1,
+        "market_cap": 66632260483,
+        "volume_24h": 811614605
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 72.22,
-        "change_24h": -1.3,
-        "market_cap": 41977265585,
-        "volume_24h": 971508682
+        "price_usd": 72.46,
+        "change_24h": -1.0,
+        "market_cap": 42110847276,
+        "volume_24h": 1016179048
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.06906,
-        "change_24h": -1.5,
-        "market_cap": 10726798582,
-        "volume_24h": 395511062
+        "price_usd": 0.069382,
+        "change_24h": -1.0,
+        "market_cap": 10777685365,
+        "volume_24h": 410753926
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.181932,
-        "change_24h": -1.9,
-        "market_cap": 6793191322,
-        "volume_24h": 505671519
+        "price_usd": 0.187204,
+        "change_24h": -0.4,
+        "market_cap": 6991553313,
+        "volume_24h": 513152127
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 8.18,
-        "change_24h": -1.8,
-        "market_cap": 6116690065,
-        "volume_24h": 156891929
+        "price_usd": 8.2,
+        "change_24h": -1.6,
+        "market_cap": 6131380664,
+        "volume_24h": 148655737
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.38,
-        "change_24h": -3.1,
-        "market_cap": 2753973737,
-        "volume_24h": 181109141
+        "price_usd": 6.44,
+        "change_24h": -2.4,
+        "market_cap": 2779556551,
+        "volume_24h": 161070612
       }
     ],
     "top_mentioned": [],
     "news": [
       {
-        "title": "U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead",
+        "title": "Solo Bitcoin miner nets $200,000 as Coldcard hardware wallet drains rocks sentiment",
         "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/08/03/u-s-jobs-circle-galaxy-american-bitcoin-earnings-crypto-week-ahead",
-        "published": "Mon, 03 Aug 2026 08:16:28 +0000",
+        "url": "https://www.coindesk.com/daybook-us/2026/08/03/solo-bitcoin-miner-nets-usd200-000-as-coldcard-hardware-wallet-drains-rocks-sentiment",
+        "published": "Mon, 03 Aug 2026 11:18:31 +0000",
+        "assets": [
+          "BTC",
+          "SOL"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day",
+        "published": "Mon, 03 Aug 2026 10:51:37 +0000",
+        "assets": [
+          "BTC",
+          "ETH"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
+        "title": "Bithumb now targets 2028 IPO after major internal restructuring",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/08/03/bithumb-now-targets-2028-ip-after-major-internal-restructuring",
+        "published": "Mon, 03 Aug 2026 10:41:08 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Trumps’ American Bitcoin reports record BTC output, narrower Q2 loss",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/trumps-american-bitcoin-output-narrower-q2-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Mon, 03 Aug 2026 11:40:09 +0000",
         "assets": [
           "BTC"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
+        "title": "Ripple invests in Zilo and Licuido to assist tokenized capital markets push",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/ripple-invests-zilo-licuido-tokenized-capital-markets-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Mon, 03 Aug 2026 10:58:36 +0000",
+        "assets": [
+          "XRP"
         ],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Bitcoin slips under $63,000 despite Iran deal hopes as Coldcard losses rattle market",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/08/03/bitcoin-slips-under-usd63-000-despite-iran-deal-hopes-as-coldcard-losses-rattle-market",
-        "published": "Mon, 03 Aug 2026 06:15:38 +0000",
+        "title": "Bitcoin may find bear market bottom in August: 10x Research",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/markets/bitcoin-find-bear-market-bottom-august-10x-research?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Mon, 03 Aug 2026 10:25:32 +0000",
         "assets": [
           "BTC"
         ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Trump Media’s bitcoin stash may be down to loan collateral after $165 million BTC move",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/08/03/trump-media-s-bitcoin-stash-may-be-down-to-loan-collateral-after-usd165-million-btc-move",
-        "published": "Mon, 03 Aug 2026 05:52:29 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Crypto treasury firm ZeroStack warns of survival risk amid $82.5M loss",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/zerostack-survival-risk-82m-crypto-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Mon, 03 Aug 2026 07:15:56 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Here’s what happened in crypto today",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Mon, 03 Aug 2026 06:25:13 +0000",
-        "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Bitcoin hits $62K while Coinbase premium hits 77-day negative streak",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/markets/bitcoin-hits-62k-while-coinbase-premium-hits-77-day-negative-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Mon, 03 Aug 2026 05:58:00 +0000",
+        "title": "South Korean Exchange Bithumb Targets 2028 IPO",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/374823/south-korean-exchange-bithumb-targets-2028-ipo",
+        "published": "Mon, 03 Aug 2026 11:07:59 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Coldcard Losses Near $114M as Small Bitcoin Transfers Spike",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/374820/coldcard-losses-near-114m-as-small-bitcoin-transfers-spike",
+        "published": "Mon, 03 Aug 2026 10:15:37 +0000",
         "assets": [
           "BTC"
         ],
         "sentiment": "Bearish",
-        "score": -1.0,
+        "score": -0.333,
         "color": "red"
       },
       {
@@ -164,26 +190,26 @@
         "color": "red"
       },
       {
-        "title": "What’s the Deal With Meta’s ‘Pervert Glasses’?",
-        "source": "Decrypt",
-        "url": "https://decrypt.co/374808/whats-the-deal-with-meta-pervert-glasses",
-        "published": "Sun, 02 Aug 2026 15:01:03 +0000",
+        "title": "Five days, a 30% chance, and a battle over Trump’s crypto profits: Inside the Senate’s scramble to pass CLARITY Act before Friday",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/five-days-a-30-chance-and-a-battle-over-trumps-crypto-profits-inside-the-senates-scramble-to-pass-clarity-act-before-friday/",
+        "published": "Mon, 03 Aug 2026 09:45:56 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
-        "title": "CZ Warns Bitcoin Holders After $70 Million Wallet Exploit: 'Nothing Is 100%'",
-        "source": "Decrypt",
-        "url": "https://decrypt.co/374810/cz-warns-bitcoin-holders-70-million-coldcard-wallet-exploit",
-        "published": "Sat, 01 Aug 2026 16:01:17 +0000",
+        "title": "Four unpatched bugs, a 5-year quantum clock, and a miner standoff are pushing Bitcoin to a critical crossroad",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/four-unpatched-bugs-a-5-year-quantum-clock-and-a-miner-standoff-are-pushing-bitcoin-to-a-critical-crossroad/",
+        "published": "Mon, 03 Aug 2026 08:25:38 +0000",
         "assets": [
           "BTC"
         ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
         "title": "Bitcoin miner gambles on a 4-day bridge loan equal to 97% of its BTC treasury value – the deadline passed without in total silence",
@@ -196,32 +222,10 @@
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
-      },
-      {
-        "title": "Luno blocks crypto transfers for some users, leaving a late August cash-out deadline before monthly fees hit",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/luno-blocked-crypto-transfers-for-some-users-now-they-must-sell-this-month-or-watch-monthly-fees-drain-their-accounts/",
-        "published": "Mon, 03 Aug 2026 05:55:54 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Ten mystery investors are using 2,380 BTC to completely hijack a Nasdaq company and gut its leadership",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/ten-mystery-investors-are-using-2380-btc-to-completely-hijack-a-nasdaq-company-and-gut-its-leadership/",
-        "published": "Mon, 03 Aug 2026 04:50:21 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": -0.25,
+      "score": 0.139,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -230,23 +234,23 @@
     "reddit": [],
     "reddit_summary": {
       "outlook": "Mixed",
-      "summary": "Please provide the Reddit discussion data (Top mentioned coins/topics and Subreddits). Once you provide the data, I will generate the concise summary for you."
+      "summary": "We need to produce exactly ONE paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Must mention numbers and names where available. Max 80 words. Data: \"Top mentioned: Subreddits:\" but no further data? The data seems incomplete. Possibly they expect we infer from given data? There's no actual discussion content. Might be a trick: we have no data, so we cannot mention numbers or names. But we must mention numbers and names where available. Since none are available, we can still start with one of the three and give reasons but we have none. Could we say \"No specific data provided\"? That would not mention numbers or names. Might be considered not meeting requirement. Perhaps we assume the data is missing, so we state that sentiment cannot be determined. But we must start with Bullish:, Bearish:, or Mixed:. We could say \"Mixed: Insufficient data to determine sentiment; no specific numbers or names mentioned.\" That mentions no numbers or names, but we said \"no specific numbers or names mentioned\" which is a statement about absence. Is that acceptable? It mentions that there are no numbers/names. Might be okay.\n\nWe need max 80 words. Let's craft ~30 words.\n\n\"Mixed: The provided Reddit data only lists top-mentioned subreddits without any comment counts, or specific token names, so no concrete bullish"
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "We need exactly ONE paragraph, start with Bullish:, Bearish:, or Mixed: followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to decide overall sentiment based on data: many bearish items, one bullish (U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead (Bullish)). Also neutral items. So overall likely Bearish. Provide reasons: Bitcoin slipped under $63k, Coldcard losses $88M, Trump Media BTC move $165M, ZeroStack $82.5M loss, Coinbase premium negative streak 77? Actually \"Trump Media’s bitcoin stash may be down to loan collateral after $165 million BTC move\", ZeroStack $82.5M loss, Coinbase premium 77-day negative streak, Bitcoin at $62K. Also mention bullish: Crypto Week Ahead (U.S. Jobs, Circle, Galaxy, American Bitcoin earnings). Keep within 80 words.\n\nLet's craft ~70 words.\n\nParagraph: \"Bearish: Bitcoin fell below $63,000 to around $62,000 amid Coldcard exploit losses ballooning to $88 million, Trump Media’s $165 million BTC shift to loan collateral, ZeroStack’s $82.5 million loss warning, and a"
+      "summary": "We need exactly one paragraph, start with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to decide overall sentiment based on data: we have multiple items: some bullish (Bithumb IPO, Ripple invests, Bithumb targets 2028 IPO), some bearish (Bitcoin, ether decline due to Coldcard exploit, Trump's American Bitcoin reports record BTC output, narrower Q2 loss (that's bearish?), Coldcard losses near $114M, etc). Also neutral items.\n\nWe need to pick one of the three prefixes. Let's weigh: Bullish items: Bithumb IPO (two mentions), Ripple invests. Bearish: Bitcoin, ether decline due to Coldcard exploit (fifth day), Trump's American Bitcoin reports record BTC output, narrower Q2 loss (bearish?), Coldcard losses near $114M. So more bearish? Actually we have 2 bullish (Bithumb IPO appears twice but same), Ripple invests (bullish). Bearish: Bitcoin, ether decline (bearish), Trump's American Bitcoin reports (bearish), Coldcard losses near $114M (bearish). So 3 bearish vs 2 bullish. So overall maybe Mixed? But we need to"
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 156,
+      "active_threads": 155,
       "mentions": {
-        "BTC": 20,
-        "XRP": 12,
+        "BTC": 19,
+        "XRP": 11,
         "DOGE": 4
       },
-      "bullish_hits": 82,
-      "bearish_hits": 55,
-      "bullish_pct": 60,
+      "bullish_hits": 83,
+      "bearish_hits": 58,
+      "bullish_pct": 59,
       "top_coin": "BTC",
       "top_posts": [
         "/smg/ stock market general oil shorts rug pulled at open by the irgc edition &gt;educational sites: https://www.investop",
@@ -260,51 +264,51 @@
       {
         "symbol": "BLESS",
         "name": "Bless",
-        "rank": 562,
+        "rank": 537,
         "score": 0,
-        "change_24h": 33.89
-      },
-      {
-        "symbol": "GRVT",
-        "name": "GRVT Token",
-        "rank": 581,
-        "score": 1,
-        "change_24h": 9.1
+        "change_24h": 33.44
       },
       {
         "symbol": "PENGU",
         "name": "Pudgy Penguins",
-        "rank": 111,
+        "rank": 110,
+        "score": 1,
+        "change_24h": -0.69
+      },
+      {
+        "symbol": "HYPE",
+        "name": "Hyperliquid",
+        "rank": 10,
         "score": 2,
-        "change_24h": -0.8
+        "change_24h": 3.4
       },
       {
-        "symbol": "ONDO",
-        "name": "Ondo",
-        "rank": 43,
+        "symbol": "AEON",
+        "name": "AEON",
+        "rank": 986,
         "score": 3,
-        "change_24h": -5.15
+        "change_24h": 2.3
       },
       {
-        "symbol": "PONS",
-        "name": "Pons",
-        "rank": 765,
+        "symbol": "GRVT",
+        "name": "GRVT Token",
+        "rank": 617,
         "score": 4,
-        "change_24h": 1.96
+        "change_24h": 5.38
       },
       {
         "symbol": "ANSEM",
         "name": "The Black Bull",
-        "rank": 288,
+        "rank": 289,
         "score": 5,
-        "change_24h": -10.17
+        "change_24h": -11.92
       },
       {
-        "symbol": "BANK",
-        "name": "Lorenzo Protocol",
-        "rank": 828,
+        "symbol": "LINK",
+        "name": "Chainlink",
+        "rank": 19,
         "score": 6,
-        "change_24h": -11.84
+        "change_24h": -0.77
       }
     ]
   },
@@ -323,12 +327,12 @@
         "change_24h": 0.53
       },
       "vix": {
-        "value": 16.14,
-        "change_24h": 0.94
+        "value": 15.96,
+        "change_24h": -0.19
       }
     },
     "market_mood": {
-      "score": 0.15,
+      "score": 0.288,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -387,7 +391,7 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Stocks Rise as Oil Plunge Eases Pressure on Yields: Markets Wrap",
+        "title": "Stocks Rise as Oil Slump Eases Pressure on Yields: Markets Wrap",
         "source": "Bloomberg",
         "url": "https://www.bloomberg.com/news/articles/2026-08-02/oil-slumps-us-futures-rise-on-iran-talks-optimism-markets-wrap",
         "published": "Sun, 02 Aug 2026 22:09:16 GMT",
@@ -397,20 +401,40 @@
         "color": "yellow"
       },
       {
-        "title": "Yen Rises Amid Speculation of More Intervention After US Support",
+        "title": "India’s New Stock Closing Auction Sparks Confusion on Debut",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-02/yen-traders-brace-for-more-intervention-with-us-at-japan-s-side",
-        "published": "Sun, 02 Aug 2026 12:47:40 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-03/india-s-new-stock-closing-auction-sparks-confusion-on-debut",
+        "published": "Mon, 03 Aug 2026 11:42:39 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "AstraZeneca Shares Fall on Deal Talks With Bristol-Myers",
+        "title": "Dollar Drops Further as Yen Rebound Extends Fed-Driven Slide",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-02/astrazeneca-is-said-to-have-explored-bristol-myers-mega-merger",
-        "published": "Sun, 02 Aug 2026 20:13:51 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-03/dollar-drops-further-as-yen-rebound-extends-fed-driven-slide",
+        "published": "Mon, 03 Aug 2026 11:29:24 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": -0.2,
+        "color": "yellow"
+      },
+      {
+        "title": "What the market is saying about the U.S. intervention to prop up the yen",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/08/03/yen-us-intervention-japan-market-currency.html",
+        "published": "Mon, 03 Aug 2026 11:47:06 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Oil prices fall more than 5% as Middle East tensions ebb on diplomatic efforts",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/08/03/oil-prices-today-wti-brent-hormuz-trump-iran.html",
+        "published": "Mon, 03 Aug 2026 11:15:49 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
@@ -420,117 +444,99 @@
         "title": "Trump says Iran talks to resume Monday after calling off planned strikes",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/08/03/trump-iran-us-negotiations-peace-proposals-.html",
-        "published": "Mon, 03 Aug 2026 07:58:45 GMT",
+        "published": "Mon, 03 Aug 2026 11:17:27 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "AstraZeneca shares drop 7% after report on $400 billion merger talks with Bristol Myers Squibb",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/03/astrazeneca-bristol-myers-squibb-merger-talks.html",
-        "published": "Mon, 03 Aug 2026 07:52:36 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -0.333,
-        "color": "red"
-      },
-      {
-        "title": "Why the U.S. stepped in after decades to prop up Japan's yen — and what's at stake",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/03/japan-yen-intervention-us-treasurys-euros-.html",
-        "published": "Mon, 03 Aug 2026 07:28:46 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "We’re in our 60s with $1.5 million. Would a trust be more effective than a will to prevent conflict among our heirs?",
+        "title": "The gap between big tech and the rest of the market just vanished. Here’s what it means for investors.",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/we-already-have-wills-were-in-our-60s-with-1-5-million-how-do-we-prevent-family-drama-among-our-heirs-bf7b0eb1?mod=mw_rss_topstories",
-        "published": "Sun, 02 Aug 2026 17:00:00 GMT",
+        "url": "https://www.marketwatch.com/story/the-gap-between-big-tech-and-the-rest-of-the-market-just-vanished-heres-what-it-means-for-investors-e783d2dc?mod=mw_rss_topstories",
+        "published": "Mon, 03 Aug 2026 11:24:00 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "My girlfriend is 62. Can she claim her late husband’s full Social Security benefit — or does she have to wait?",
+        "title": "AstraZeneca reported tie-up talks with Bristol-Myers Squibb are moving stocks. Analysts are puzzled.",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/my-girlfriend-is-62-can-she-claim-her-late-husbands-full-social-security-benefit-or-does-she-have-to-wait-315c0fa1?mod=mw_rss_topstories",
-        "published": "Sun, 02 Aug 2026 16:00:00 GMT",
+        "url": "https://www.marketwatch.com/story/astrazeneca-tie-up-talks-with-bristol-myers-squibb-are-moving-stocks-analysts-are-puzzled-7ae60fef?mod=mw_rss_topstories",
+        "published": "Mon, 03 Aug 2026 11:02:00 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Private credit has dodged public scrutiny for too long — and regulators need to step in",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/private-credit-has-dodged-public-scrutiny-for-too-long-and-regulators-need-to-step-in-9ebb1d8c?mod=mw_rss_topstories",
+        "published": "Mon, 03 Aug 2026 11:00:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "SCHQ: Risks Could Continue To Mount For Duration Bets",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4929359-schq-risks-could-continue-to-mount-for-duration-bets?source=feed_all_articles",
+        "published": "Mon, 03 Aug 2026 07:45:00 -0400",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "Here’s what’s worth streaming in August 2026 on Netflix, Hulu, HBO Max and more",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/heres-whats-worth-streaming-in-august-2026-on-netflix-hulu-hbo-max-and-more-21b78a08?mod=mw_rss_topstories",
-        "published": "Sun, 02 Aug 2026 15:19:00 GMT",
+        "title": "Exelon: A Solid Utility, But The Upside Is Already Priced In",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4929449-exelon-q2-solid-utility-but-the-upside-is-already-priced-in?source=feed_all_articles",
+        "published": "Mon, 03 Aug 2026 07:44:16 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Long Cast Advisers Q2 2026 Letter",
+        "title": "Boliden: Finding The Entry For 2026-2028",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4929407-long-cast-advisers-q2-2026-letter?source=feed_all_articles",
-        "published": "Mon, 03 Aug 2026 04:05:00 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "PRA Group: Wouldn't Mind A Small Position, But I'm Holding Off",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4929397-pra-group-stock-small-position-but-holding-off?source=feed_all_articles",
-        "published": "Mon, 03 Aug 2026 04:02:19 -0400",
+        "url": "https://seekingalpha.com/article/4929448-boliden-finding-the-entry-for-2026-2028?source=feed_all_articles",
+        "published": "Mon, 03 Aug 2026 07:41:37 -0400",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Term-Limited Bond Funds As An Alternative To Individually Managed Bond Portfolios",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4929396-term-limited-bond-funds-as-an-alternative-to-individually-managed-bond-portfolios?source=feed_all_articles",
-        "published": "Mon, 03 Aug 2026 04:01:56 -0400",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Electric air taxis are finally ready for takeoff",
+        "title": "As Amazon pours billions into AI, Jeff Bezos says the real edge lies in what won’t change",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/08/03/electric-air-taxis-joby-aviation-evtols-archer-aviation/",
-        "published": "Mon, 03 Aug 2026 07:00:00 +0000",
-        "assets": [],
+        "url": "https://fortune.com/article/as-amazon-pours-billions-into-ai-jeff-bezos-says-the-real-edge-lies-in-what-wont-change/",
+        "published": "Mon, 03 Aug 2026 11:13:34 +0000",
+        "assets": [
+          "AMZN"
+        ],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "How Barnes & Noble CEO James Daunt tapped his indie bookstore cred to revive the big-box chain",
+        "title": "Anthropic says its Claude models hacked three real companies during internal testing",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/08/03/barnes-noble-ceo-james-daunt-indie-bookstore-revive-big-box-chain/",
-        "published": "Mon, 03 Aug 2026 07:00:00 +0000",
+        "url": "https://fortune.com/2026/07/31/anthropic-claude-escaped-test-hacked-three-companies-openai/",
+        "published": "Fri, 31 Jul 2026 13:08:31 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
-        "title": "After canceling Iran strikes, Trump says negotiations will resume Monday afternoon while Tehran continues Hormuz talks with Oman",
+        "title": "Circle bought 1,000 IBM blockchain patents. Nothing good can come of that",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/08/02/iran-war-trump-negotiations-resume-monday-tehran-hormuz-talks-oman/",
-        "published": "Sun, 02 Aug 2026 23:23:00 +0000",
+        "url": "https://fortune.com/2026/08/03/circle-bought-1000-ibm-blockchain-patents/",
+        "published": "Mon, 03 Aug 2026 10:58:39 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
@@ -538,84 +544,84 @@
       }
     ],
     "news_sentiment": {
-      "score": -0.022,
+      "score": -0.08,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Strait of Hormuz traffic returns to normal by August 31?",
-        "volume_24h": 625830,
+        "volume_24h": 572309,
         "yes_price": 0.12,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
       },
       {
         "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 536152,
+        "volume_24h": 471350,
         "yes_price": 0.2,
         "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       },
       {
+        "title": "US x Iran Effective Ceasefire by July 31?",
+        "volume_24h": 365844,
+        "yes_price": 0.59,
+        "url": "https://polymarket.com/market/us-x-iran-effective-ceasfire-by-july-31-20260715194822045"
+      },
+      {
         "title": "Strait of Hormuz traffic returns to normal by August 15?",
-        "volume_24h": 448233,
+        "volume_24h": 363664,
         "yes_price": 0.02,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-15-20260727171036148"
       },
       {
-        "title": "US x Iran Effective Ceasefire by July 31?",
-        "volume_24h": 383578,
-        "yes_price": 0.6,
-        "url": "https://polymarket.com/market/us-x-iran-effective-ceasfire-by-july-31-20260715194822045"
-      },
-      {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 312090,
+        "volume_24h": 301923,
         "yes_price": 0.56,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
-        "title": "Israel x Iran ceasefire continues through August 9?",
-        "volume_24h": 244238,
-        "yes_price": 0.91,
-        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-9-20260727170733638"
-      },
-      {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 231824,
-        "yes_price": 0.41,
+        "volume_24h": 247604,
+        "yes_price": 0.42,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
-        "title": "Strait of Hormuz traffic returns to normal by December 31?",
-        "volume_24h": 196335,
-        "yes_price": 0.57,
-        "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
-      },
-      {
-        "title": "Will WTI Crude Oil (WTI) hit (LOW) $60 in August?",
-        "volume_24h": 152222,
-        "yes_price": 0.05,
-        "url": "https://polymarket.com/market/will-wti-dip-to-60-in-august-2026"
+        "title": "Israel x Iran ceasefire continues through August 9?",
+        "volume_24h": 239973,
+        "yes_price": 0.89,
+        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-9-20260727170733638"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 149756,
+        "volume_24h": 143363,
         "yes_price": 0.23,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+      },
+      {
+        "title": "Will WTI Crude Oil (WTI) hit (LOW) $60 in August?",
+        "volume_24h": 141796,
+        "yes_price": 0.04,
+        "url": "https://polymarket.com/market/will-wti-dip-to-60-in-august-2026"
+      },
+      {
+        "title": "Will the Iranian regime fall before 2027?",
+        "volume_24h": 134633,
+        "yes_price": 0.07,
+        "url": "https://polymarket.com/market/will-the-iranian-regime-fall-by-the-end-of-2026"
       }
     ],
     "polymarket_summary": {
       "outlook": "Mixed",
-      "summary": "We need to produce exactly ONE paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to interpret market sentiment based on prediction market data. The data includes various geopolitical and economic events: Strait of Hormuz traffic returning to normal, US invasion of Iran, US-Iran ceasefire, Fed rate changes, Israel-Iran ceasefire, WTI crude oil low.\n\nWe need to decide overall sentiment: likely mixed? Let's see: US-Iran effective ceasefire by July 31: Yes 60% (vol $383k) suggests optimism about de-escalation. Israel-Iran ceasefire continues through Aug 9: Yes 91% (vol $244k) strong optimism. Strait of Hormuz traffic returns to normal by Aug 31: Yes 12% low, Aug 15: 2% low, Sep 30: 23%, Dec 31: 57% moderate. So traffic normal not high expectation except end of year. US invasion of Iran before 2027: Yes 20% low. Fed increase rates after Sep 2026 meeting: Yes 56% (vol $312k) slight expectation of hike. No change after Sep 2026 meeting: Yes"
+      "summary": "We need to produce exactly ONE paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to interpret sentiment based on data: Many markets about geopolitical risk (Strait of Hormuz, US invade Iran, US-Iran ceasefire, Israel-Iran ceasefire). Also Fed rate increase probability 56% vs no change 42%. WTI crude low $60 in August only 4% chance. Iranian regime fall before 2027 only 7%. So overall sentiment: Mixed? Let's see: High probability of US-Iran ceasefire (59%) and Israel-Iran ceasefire continues through Aug 9 (89%) suggests reduced tension => bullish for oil? But low chance of WTI hitting $60 low (4%) suggests expectation of higher oil prices => bullish for oil. However low chance of Strait of Hormuz normal by Aug 15 (2%) and Aug 31 (12%) suggests continued disruption risk => bearish for oil? Actually disruption would increase oil prices, bullish for oil. But low probability of normal traffic suggests continued risk => bullish for oil. However US invade Iran probability 20% low. Iranian regime fall 7% low. So overall maybe mixed: some bullish signals (ceasefires, low chance of low"
     },
     "reddit": [],
     "reddit_summary": {
       "outlook": "Mixed",
-      "summary": "We need to produce exactly ONE paragraph, starting with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Must mention numbers and names where available. Max 80 words. Data given: \"Top mentioned: Subreddits:\" but no actual data? The data seems incomplete. Possibly they expect we infer from that? But we have no numbers or names. Might need to say insufficient data? But must mention numbers and names where available. Since none available, we can say none mentioned. But we still need to start with one of those prefixes. Could say \"Mixed: No clear sentiment emerges from the limited data; only subreddit mentions are noted without specific tickers or counts.\" That mentions no numbers. But requirement: \"Mention numbers and names where available.\" If none, we can omit? It says mention numbers and names where available. If none, we don't need to mention. So we can produce a mixed sentiment statement.\n\nWord count max 80. Let's craft ~30 words.\n\n\"Mixed: The discussion shows no dominant bullish or bearish bias; only subreddit activity is highlighted without specific tickers, volume figures, or user counts to gauge sentiment direction.\"\n\nCount words: Mixed:(1) The2 discussion3 shows4 no5 dominant6 bullish7 or8 bearish9 bias;10 only11 subreddit12 activity13 is14 highlighted"
+      "summary": "We need to produce exactly one paragraph, starting with Bullish:, Bearish:, or Mixed: followed by specific reasons, mention numbers and names where available. Max 80 words. Data: \"Top mentioned: Subreddits:\" but no actual data? The user gave incomplete data. Possibly they expect us to infer that there is no data? But we must still produce a paragraph. Since no specifics, we can say Mixed: limited data indicates... but we need numbers and names where available. There are none. Could we say \"No specific numbers or names provided\"? That would be mentioning that none are available. That might be acceptable. Must be max 80 words. Let's craft ~30 words.\n\n\"Bullish: The discussion shows strong optimism with 120 upvotes on a post about XYZ Corp's earnings beat, while bearish voices note a 15% drop in ABC Inc after guidance cut, resulting in mixed sentiment overall.\" But we don't have those numbers. We must not fabricate. We must stick to data. Since data only says \"Top mentioned: Subreddits:\" with no list, we cannot mention numbers/names. We could say \"No specific numbers or names are provided in the data.\" That is mentioning that none are available. That is okay.\n\nThus: \"Mixed: The Reddit data lacks concrete metrics or named stocks, preventing a clear bullish or bearish conclusion; sentiment appears"
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "We need exactly ONE paragraph, start with 'Bullish:', 'Bearish:', or 'Mixed:' followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe need to decide overall market sentiment based on data. Data includes: Stocks rise as oil plunge eases pressure on yields (neutral). Yen rises amid speculation of more intervention after US support (neutral). AstraZeneca shares fall on deal talks with Bristol-Myers (bearish). Trump says Iran talks to resume Monday after calling off planned strikes (neutral). AstraZeneca shares drop 7% after report on $400 billion merger talks with Bristol Myers Squibb (bearish). Why the U.S. stepped in after decades to prop up Japan's yen — and what's at stake (neutral). We’re in our 60s with $1.5 million... (neutral). My girlfriend is 62... (bearish). So we have two bearish items (AstraZeneca drop 7% on $400B merger talks; girlfriend Social Security question). Neutral items: stocks rise as oil plunge eases pressure on yields; yen rises; Trump Iran talks; US stepping in to prop up yen; personal finance questions. Overall sentiment? Mixed? There's some positive (stocks rise, yen rise) and negative (AstraZeneca drop). So Mixed.\n\nWe need to start with \"Mixed"
+      "summary": "We need exactly one paragraph, start with Bullish:, Bearish:, or Mixed: followed by specific reasons. Mention numbers and names where available. Max 80 words.\n\nWe have data: Oil prices fall >5% (Bearish). Others neutral. So overall sentiment likely Mixed or Bearish? Since only one bearish item, many neutral. Could be Mixed: some bearish pressure from oil, but other factors neutral. Provide reasons: oil down >5% eases yields, etc. Mention numbers: oil fall >5%, maybe mention specific stocks? Not given. Could mention AstraZeneca and Bristol-Myers Squibb tie-up talks moving stocks. Also mention dollar drop, yen rebound. Provide concise.\n\nWord count: aim ~50-70 words.\n\nStart with \"Mixed:\" then reasons.\n\nLet's craft: \"Mixed: Oil prices slid more than 5% amid easing Middle‑East tensions, relieving yield pressure but signaling weaker demand; the dollar fell as the yen rebounded on Fed‑driven moves, while AstraZeneca’s tie‑up talks with Bristol‑Myers Squibb stirred stock activity and the gap between big tech and the rest of the market narrowed. Other items — new Indian closing auction, Trump’s Iran comment — were neutral.\"\n\nCount words: Let's count.\n\nMixed:(1) Oil2 prices3 slid4 more5 than6 5%7 amid8 easing9 Middle‑East"
     },
     "macro": [
       {
@@ -627,20 +633,20 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 99.78,
-        "change_24h": -0.02
+        "value": 99.8,
+        "change_24h": 0.0
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4117.8,
-        "change_24h": 1.7
+        "value": 4110.3,
+        "change_24h": 1.51
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 79.69,
-        "change_24h": -5.88
+        "value": 79.51,
+        "change_24h": -6.09
       }
     ],
     "most_active": [
