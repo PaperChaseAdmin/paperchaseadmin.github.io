@@ -1,72 +1,77 @@
 {
-  "cash": 910.14,
-  "total_value": 10519.69,
+  "cash": 605.04,
+  "total_value": 10626.19,
   "positions": {
     "AVGO": {
       "shares": 6,
       "avg_cost": 372.72,
-      "current_price": 391.77
+      "current_price": 409.585
     },
     "MSFT": {
       "shares": 3,
-      "current_price": 489.45,
+      "current_price": 491.375,
       "avg_cost": 436.9067
     },
     "NVDA": {
       "shares": 18,
-      "current_price": 208.44,
+      "current_price": 210.07,
       "avg_cost": 193.2009
     },
     "AMZN": {
       "shares": 3,
       "avg_cost": 271.26,
-      "current_price": 284.26
+      "current_price": 277.48
     },
     "META": {
       "shares": 2,
       "avg_cost": 592.9401,
-      "current_price": 592.9401
+      "current_price": 585.36
+    },
+    "AAPL": {
+      "shares": 1,
+      "avg_cost": 305.1,
+      "current_price": 305.1
     }
   },
-  "total_return_pct": 5.2,
+  "total_return_pct": 6.26,
   "total_return_usd": 0.0,
-  "today_pnl": 20.09,
-  "today_pnl_pct": 0.19,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10499.6,
-  "today_date": "2026-08-03",
+  "today_start_value": 10626.19,
+  "today_date": "2026-08-04",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-03T19:08:39Z",
+  "last_updated": "2026-08-04T14:04:31Z",
   "last_session": {
-    "at": "2026-08-03T19:08:39Z",
+    "at": "2026-08-04T14:04:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "META",
-        6.53
+        "INTC",
+        6.56
       ],
       [
-        "GOOGL",
-        5.41
+        "AMD",
+        5.27
       ],
       [
-        "MSFT",
-        5.32
+        "LRCX",
+        4.96
       ],
       [
-        "AMZN",
-        4.66
+        "MU",
+        4.86
       ],
       [
-        "TSLA",
-        4.16
+        "AVGO",
+        4.4
       ],
       [
-        "NVDA",
-        3.83
+        "AMAT",
+        4.29
       ]
     ],
     "news_read": [],
@@ -887,6 +892,10 @@
     {
       "timestamp": "2026-08-03T19:08:39Z",
       "value": 10519.69
+    },
+    {
+      "timestamp": "2026-08-04T14:04:31Z",
+      "value": 10626.19
     }
   ]
 }
