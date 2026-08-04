@@ -1,34 +1,39 @@
 {
-  "cash": 3242.6,
-  "total_value": 8852.47,
+  "cash": 228.63,
+  "total_value": 8850.7,
   "positions": {
     "AMC": {
       "shares": 100,
       "avg_cost": 2.7,
-      "current_price": 2.73
+      "current_price": 2.7096
     },
     "SOFI": {
       "shares": 223,
       "avg_cost": 17.7801,
-      "current_price": 18.45
+      "current_price": 18.44
     },
     "AAPL": {
       "shares": 4,
       "avg_cost": 305.365,
-      "current_price": 305.63
+      "current_price": 306.255
+    },
+    "PLTR": {
+      "shares": 19,
+      "avg_cost": 158.63,
+      "current_price": 158.63
     }
   },
-  "total_return_pct": -11.48,
+  "total_return_pct": -11.49,
   "total_return_usd": 0.0,
-  "today_pnl": 31.99,
-  "today_pnl_pct": 0.36,
+  "today_pnl": 30.22,
+  "today_pnl_pct": 0.34,
   "total_trades": 0,
   "today_start_value": 8820.48,
   "today_date": "2026-08-04",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-04T15:44:04Z",
+  "last_updated": "2026-08-04T16:13:49Z",
   "last_session": {
-    "at": "2026-08-04T15:44:04Z",
+    "at": "2026-08-04T16:13:49Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +41,27 @@
     "top_movers": [
       [
         "PLTR",
-        26.5
+        26.21
       ],
       [
         "AMC",
-        -3.86
+        -6.32
       ],
       [
         "UPST",
-        3.3
+        3.91
+      ],
+      [
+        "RBLX",
+        3.63
+      ],
+      [
+        "COIN",
+        3.61
       ],
       [
         "RIVN",
-        2.7
-      ],
-      [
-        "SOFI",
-        2.36
-      ],
-      [
-        "HOOD",
-        1.96
+        3.13
       ]
     ],
     "news_read": [],
@@ -885,6 +890,10 @@
     {
       "timestamp": "2026-08-04T15:44:04Z",
       "value": 8852.47
+    },
+    {
+      "timestamp": "2026-08-04T16:13:49Z",
+      "value": 8850.7
     }
   ]
 }
