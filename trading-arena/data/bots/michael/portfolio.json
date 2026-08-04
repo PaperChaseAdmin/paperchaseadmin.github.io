@@ -1,34 +1,39 @@
 {
-  "cash": 8721.36,
-  "total_value": 11092.65,
+  "cash": 7190.08,
+  "total_value": 11091.64,
   "positions": {
     "INTC": {
       "shares": 11,
-      "current_price": 99.71,
+      "current_price": 99.985,
       "avg_cost": 83.354
     },
     "GEO": {
       "shares": 20,
       "avg_cost": 30.51,
-      "current_price": 31.43
+      "current_price": 31.2801
     },
     "BABA": {
       "shares": 5,
       "avg_cost": 122.15,
-      "current_price": 129.1761
+      "current_price": 128.97
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 306.255,
+      "current_price": 306.255
     }
   },
-  "total_return_pct": 10.93,
+  "total_return_pct": 10.92,
   "total_return_usd": 0.0,
-  "today_pnl": 67.48,
-  "today_pnl_pct": 0.61,
+  "today_pnl": 66.47,
+  "today_pnl_pct": 0.6,
   "total_trades": 0,
   "today_start_value": 11025.17,
   "today_date": "2026-08-04",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-04T15:41:09Z",
+  "last_updated": "2026-08-04T16:08:34Z",
   "last_session": {
-    "at": "2026-08-04T15:41:09Z",
+    "at": "2026-08-04T16:08:34Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +41,27 @@
     "top_movers": [
       [
         "INTC",
-        9.54
+        9.71
       ],
       [
         "NUE",
-        2.53
+        3.04
+      ],
+      [
+        "PFE",
+        2.26
       ],
       [
         "F",
-        -2.22
+        -1.8
       ],
       [
-        "WFC",
-        1.7
+        "STLD",
+        1.4
       ],
       [
-        "KR",
-        -1.53
-      ],
-      [
-        "BABA",
-        1.47
+        "BAC",
+        1.38
       ]
     ],
     "news_read": [],
@@ -885,6 +890,10 @@
     {
       "timestamp": "2026-08-04T15:41:09Z",
       "value": 11092.65
+    },
+    {
+      "timestamp": "2026-08-04T16:08:34Z",
+      "value": 11091.64
     }
   ]
 }
