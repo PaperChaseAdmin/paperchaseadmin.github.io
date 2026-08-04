@@ -1,24 +1,29 @@
 {
-  "cash": 7044.58,
-  "total_value": 9477.82,
+  "cash": 5516.43,
+  "total_value": 9498.43,
   "positions": {
     "SOFI": {
       "shares": 133,
       "avg_cost": 17.935,
-      "current_price": 18.295
+      "current_price": 18.45
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 305.63,
+      "current_price": 305.63
     }
   },
-  "total_return_pct": -5.22,
+  "total_return_pct": -5.02,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 20.61,
+  "today_pnl_pct": 0.22,
   "total_trades": 0,
   "today_start_value": 9477.82,
   "today_date": "2026-08-04",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-04T14:03:02Z",
+  "last_updated": "2026-08-04T15:32:21Z",
   "last_session": {
-    "at": "2026-08-04T14:03:02Z",
+    "at": "2026-08-04T15:32:21Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,27 +31,27 @@
     "top_movers": [
       [
         "PLTR",
-        22.56
+        26.5
       ],
       [
         "AMD",
-        5.27
+        7.08
       ],
       [
         "IONQ",
-        2.53
+        5.46
       ],
       [
-        "AMZN",
-        -2.23
+        "RIVN",
+        2.7
       ],
       [
-        "RBLX",
-        2.05
+        "SOFI",
+        2.36
       ],
       [
-        "NVDA",
-        1.63
+        "MSFT",
+        2.12
       ]
     ],
     "news_read": [],
@@ -871,6 +876,10 @@
     {
       "timestamp": "2026-08-04T14:03:02Z",
       "value": 9477.82
+    },
+    {
+      "timestamp": "2026-08-04T15:32:21Z",
+      "value": 9498.43
     }
   ]
 }
