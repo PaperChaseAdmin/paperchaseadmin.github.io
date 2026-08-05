@@ -1,44 +1,39 @@
 {
-  "cash": 4496.26,
-  "total_value": 8992.86,
+  "cash": 4797.19,
+  "total_value": 8933.08,
   "positions": {
     "MSTR": {
       "shares": 33,
-      "current_price": 97.78,
+      "current_price": 97.1344,
       "avg_cost": 99.4993
-    },
-    "COIN": {
-      "shares": 2,
-      "current_price": 152.156,
-      "avg_cost": 161.3829
     },
     "RIOT": {
       "shares": 25,
-      "current_price": 23.49,
+      "current_price": 22.39,
       "avg_cost": 22.0823
     },
     "MARA": {
       "shares": 20,
       "avg_cost": 10.64,
-      "current_price": 11.83
+      "current_price": 11.585
     },
     "CLSK": {
       "shares": 10,
       "avg_cost": 14.63,
-      "current_price": 14.17
+      "current_price": 13.9
     }
   },
-  "total_return_pct": -10.07,
+  "total_return_pct": -10.67,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -59.78,
+  "today_pnl_pct": -0.66,
   "total_trades": 0,
   "today_start_value": 8992.86,
   "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T14:18:21Z",
+  "last_updated": "2026-08-05T15:16:12Z",
   "last_session": {
-    "at": "2026-08-05T14:18:21Z",
+    "at": "2026-08-05T15:16:12Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +41,27 @@
     "top_movers": [
       [
         "RIOT",
-        9.09
+        3.85
       ],
       [
         "NVDA",
-        4.29
+        3.38
+      ],
+      [
+        "CIFR",
+        -2.87
       ],
       [
         "CORZ",
-        -1.62
+        -2.87
       ],
       [
         "IREN",
-        -1.32
+        -1.97
       ],
       [
-        "BTBT",
-        -1.06
-      ],
-      [
-        "HOOD",
-        1.01
+        "CLSK",
+        -1.94
       ]
     ],
     "news_read": [],
@@ -907,6 +902,10 @@
     {
       "timestamp": "2026-08-05T14:18:21Z",
       "value": 8992.86
+    },
+    {
+      "timestamp": "2026-08-05T15:16:12Z",
+      "value": 8933.08
     }
   ]
 }
