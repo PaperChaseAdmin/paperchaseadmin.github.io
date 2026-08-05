@@ -1,46 +1,52 @@
 {
-  "cash": 9804.43,
+  "cash": 5174.17,
   "total_value": 9804.43,
-  "positions": {},
+  "positions": {
+    "GLD": {
+      "shares": 12,
+      "avg_cost": 385.855,
+      "current_price": 385.855
+    }
+  },
   "total_return_pct": -1.96,
   "total_return_usd": 0.0,
-  "today_pnl": 16.59,
-  "today_pnl_pct": 0.17,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9787.84,
-  "today_date": "2026-08-04",
+  "today_start_value": 9804.43,
+  "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-04T17:43:44Z",
+  "last_updated": "2026-08-05T14:08:35Z",
   "last_session": {
-    "at": "2026-08-04T17:43:44Z",
+    "at": "2026-08-05T14:08:35Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "QQQ",
-        3.13
-      ],
-      [
-        "EEM",
-        2.55
-      ],
-      [
         "NVDA",
-        2.28
+        4.29
       ],
       [
-        "AMZN",
-        -1.9
+        "GLD",
+        3.12
       ],
       [
-        "SPY",
-        1.76
+        "META",
+        0.98
       ],
       [
-        "BABA",
-        1.6
+        "TSLA",
+        -0.71
+      ],
+      [
+        "XLE",
+        -0.7
+      ],
+      [
+        "BAC",
+        0.69
       ]
     ],
     "news_read": [],
@@ -876,6 +882,10 @@
     },
     {
       "timestamp": "2026-08-04T17:43:44Z",
+      "value": 9804.43
+    },
+    {
+      "timestamp": "2026-08-05T14:08:35Z",
       "value": 9804.43
     }
   ]
