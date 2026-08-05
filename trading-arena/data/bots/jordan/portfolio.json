@@ -1,57 +1,62 @@
 {
-  "cash": 3115.5,
-  "total_value": 8966.13,
+  "cash": 2230.38,
+  "total_value": 8954.06,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 311.089,
+      "current_price": 308.608,
       "avg_cost": 308.545
     },
     "PLTR": {
       "shares": 19,
       "avg_cost": 158.63,
-      "current_price": 160.57
+      "current_price": 161.11
+    },
+    "NVDA": {
+      "shares": 4,
+      "avg_cost": 221.28,
+      "current_price": 221.28
     }
   },
-  "total_return_pct": -10.34,
+  "total_return_pct": -10.46,
   "total_return_usd": 0.0,
-  "today_pnl": -13.29,
-  "today_pnl_pct": -0.15,
+  "today_pnl": -25.36,
+  "today_pnl_pct": -0.28,
   "total_trades": 0,
   "today_start_value": 8979.42,
   "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T15:10:51Z",
+  "last_updated": "2026-08-05T16:43:01Z",
   "last_session": {
-    "at": "2026-08-05T15:10:51Z",
+    "at": "2026-08-05T16:43:01Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "UPST",
-        4.98
-      ],
-      [
-        "RIOT",
-        3.85
-      ],
-      [
         "NVDA",
-        3.38
+        4.37
       ],
       [
-        "RIVN",
-        -2.22
+        "UPST",
+        4.12
+      ],
+      [
+        "RBLX",
+        -3.49
       ],
       [
         "MARA",
-        -1.49
+        -2.34
       ],
       [
-        "PLTR",
-        -1.32
+        "RIOT",
+        2.3
+      ],
+      [
+        "RIVN",
+        -1.65
       ]
     ],
     "news_read": [],
@@ -896,6 +901,10 @@
     {
       "timestamp": "2026-08-05T15:10:51Z",
       "value": 8966.13
+    },
+    {
+      "timestamp": "2026-08-05T16:43:01Z",
+      "value": 8954.06
     }
   ]
 }
