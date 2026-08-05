@@ -1,59 +1,64 @@
 {
-  "cash": 2122.39,
-  "total_value": 10225.04,
+  "cash": 1739.82,
+  "total_value": 10225.43,
   "positions": {
     "MA": {
       "shares": 1,
       "avg_cost": 529.705,
-      "current_price": 572.16
+      "current_price": 570.06
     },
     "JPM": {
       "shares": 3,
-      "current_price": 360.905,
+      "current_price": 360.29,
       "avg_cost": 347.9909
     },
     "BAC": {
       "shares": 32,
-      "current_price": 63.355,
+      "current_price": 63.315,
       "avg_cost": 60.3732
     },
     "GS": {
       "shares": 2,
-      "current_price": 1070.36,
+      "current_price": 1073.535,
       "avg_cost": 1002.01
     },
     "WFC": {
       "shares": 5,
       "avg_cost": 86.49,
-      "current_price": 89.1
+      "current_price": 89.29
     },
     "C": {
       "shares": 5,
       "avg_cost": 133.26,
-      "current_price": 138.2901
+      "current_price": 138.495
     },
     "AXP": {
       "shares": 2,
       "avg_cost": 343.94,
-      "current_price": 348.925
+      "current_price": 348.28
     },
     "COF": {
       "shares": 2,
       "avg_cost": 218.245,
-      "current_price": 222.445
+      "current_price": 221.735
+    },
+    "TRV": {
+      "shares": 1,
+      "avg_cost": 382.57,
+      "current_price": 382.57
     }
   },
   "total_return_pct": 2.25,
   "total_return_usd": 0.0,
-  "today_pnl": -12.42,
+  "today_pnl": -12.03,
   "today_pnl_pct": -0.12,
   "total_trades": 0,
   "today_start_value": 10237.46,
   "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T15:10:06Z",
+  "last_updated": "2026-08-05T16:39:44Z",
   "last_session": {
-    "at": "2026-08-05T15:10:06Z",
+    "at": "2026-08-05T16:39:44Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,11 +66,11 @@
     "top_movers": [
       [
         "PRU",
-        -2.13
+        -4.33
       ],
       [
         "GS",
-        1.68
+        1.95
       ],
       [
         "TRV",
@@ -73,15 +78,15 @@
       ],
       [
         "C",
-        1.07
-      ],
-      [
-        "JPM",
-        0.95
+        1.19
       ],
       [
         "WFC",
-        0.84
+        1.0
+      ],
+      [
+        "JPM",
+        0.76
       ]
     ],
     "news_read": [],
@@ -926,6 +931,10 @@
     {
       "timestamp": "2026-08-05T15:10:06Z",
       "value": 10225.04
+    },
+    {
+      "timestamp": "2026-08-05T16:39:44Z",
+      "value": 10225.43
     }
   ]
 }
