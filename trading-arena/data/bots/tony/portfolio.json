@@ -1,39 +1,44 @@
 {
-  "cash": 1342.13,
-  "total_value": 7976.26,
+  "cash": 946.37,
+  "total_value": 7827.07,
   "positions": {
     "TQQQ": {
       "shares": 40,
       "avg_cost": 73.34,
-      "current_price": 75.74
+      "current_price": 74.6871
     },
     "SOXL": {
       "shares": 5,
       "avg_cost": 113.165,
-      "current_price": 140.26
+      "current_price": 131.911
     },
     "AMD": {
       "shares": 5,
       "avg_cost": 488.62,
-      "current_price": 492.2609
+      "current_price": 479.93
     },
     "NVDA": {
       "shares": 2,
       "avg_cost": 220.965,
-      "current_price": 220.965
+      "current_price": 219.125
+    },
+    "ANET": {
+      "shares": 2,
+      "avg_cost": 197.88,
+      "current_price": 197.88
     }
   },
-  "total_return_pct": -20.24,
+  "total_return_pct": -21.73,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -149.19,
+  "today_pnl_pct": -1.87,
   "total_trades": 0,
   "today_start_value": 7976.26,
   "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T14:10:02Z",
+  "last_updated": "2026-08-05T15:10:31Z",
   "last_session": {
-    "at": "2026-08-05T14:10:02Z",
+    "at": "2026-08-05T15:10:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "AMD",
-        -5.4
+        -7.46
       ],
       [
-        "NVDA",
-        4.29
+        "SOXL",
+        -5.66
       ],
       [
         "IONQ",
-        -2.96
-      ],
-      [
-        "SMCI",
-        -2.16
-      ],
-      [
-        "RKLB",
-        1.97
+        -3.95
       ],
       [
         "ANET",
-        1.5
+        3.83
+      ],
+      [
+        "NVDA",
+        3.38
+      ],
+      [
+        "ARM",
+        -3.24
       ]
     ],
     "news_read": [],
@@ -902,6 +907,10 @@
     {
       "timestamp": "2026-08-05T14:10:02Z",
       "value": 7976.26
+    },
+    {
+      "timestamp": "2026-08-05T15:10:31Z",
+      "value": 7827.07
     }
   ]
 }
