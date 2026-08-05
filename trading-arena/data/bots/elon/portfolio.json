@@ -1,7 +1,13 @@
 {
-  "cash": 9529.36,
+  "cash": 7319.56,
   "total_value": 9529.36,
-  "positions": {},
+  "positions": {
+    "NVDA": {
+      "shares": 10,
+      "avg_cost": 220.9799,
+      "current_price": 220.9799
+    }
+  },
   "total_return_pct": -4.71,
   "total_return_usd": 0.0,
   "today_pnl": 1.18,
@@ -10,9 +16,9 @@
   "today_start_value": 9528.18,
   "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T17:05:46Z",
+  "last_updated": "2026-08-05T17:33:51Z",
   "last_session": {
-    "at": "2026-08-05T17:05:46Z",
+    "at": "2026-08-05T17:33:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -20,27 +26,27 @@
     "top_movers": [
       [
         "AMD",
-        -6.01
+        -6.35
       ],
       [
         "NVDA",
-        4.18
+        4.24
       ],
       [
         "GOOGL",
-        -3.54
-      ],
-      [
-        "RBLX",
-        -3.16
+        -4.09
       ],
       [
         "IONQ",
-        -2.68
+        -2.35
+      ],
+      [
+        "RBLX",
+        -2.3
       ],
       [
         "AMZN",
-        -1.87
+        -2.03
       ]
     ],
     "news_read": [],
@@ -892,6 +898,10 @@
     },
     {
       "timestamp": "2026-08-05T17:05:46Z",
+      "value": 9529.36
+    },
+    {
+      "timestamp": "2026-08-05T17:33:51Z",
       "value": 9529.36
     }
   ]
