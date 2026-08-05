@@ -1,82 +1,87 @@
 {
-  "cash": 3194.34,
-  "total_value": 10181.22,
+  "cash": 2989.22,
+  "total_value": 10154.33,
   "positions": {
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 158.5
+      "current_price": 158.04
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 383.965
+      "current_price": 382.26
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 123.24
+      "current_price": 123.06
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 351.97
+      "current_price": 351.67
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 309.745,
+      "current_price": 308.085,
       "avg_cost": 305.3333
     },
     "EL": {
       "shares": 5,
       "avg_cost": 84.395,
-      "current_price": 87.45
+      "current_price": 87.675
     },
     "RH": {
       "shares": 2,
       "avg_cost": 188.685,
-      "current_price": 195.83
+      "current_price": 193.82
+    },
+    "WYNN": {
+      "shares": 2,
+      "avg_cost": 102.56,
+      "current_price": 102.56
     }
   },
-  "total_return_pct": 1.81,
+  "total_return_pct": 1.54,
   "total_return_usd": 0.0,
-  "today_pnl": -35.26,
-  "today_pnl_pct": -0.35,
+  "today_pnl": -62.15,
+  "today_pnl_pct": -0.61,
   "total_trades": 0,
   "today_start_value": 10216.48,
   "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T17:45:41Z",
+  "last_updated": "2026-08-05T18:44:11Z",
   "last_session": {
-    "at": "2026-08-05T17:45:41Z",
+    "at": "2026-08-05T18:44:11Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "WYNN",
-        6.03
+        "CPRI",
+        -5.51
       ],
       [
-        "CPRI",
-        -4.06
+        "WYNN",
+        5.08
       ],
       [
         "RH",
-        4.05
+        2.99
       ],
       [
         "AMZN",
-        -2.03
+        -2.28
       ],
       [
         "DRI",
-        1.85
+        1.76
       ],
       [
-        "TPR",
-        1.62
+        "MGM",
+        -1.59
       ]
     ],
     "news_read": [],
@@ -933,6 +938,10 @@
     {
       "timestamp": "2026-08-05T17:45:41Z",
       "value": 10181.22
+    },
+    {
+      "timestamp": "2026-08-05T18:44:11Z",
+      "value": 10154.33
     }
   ]
 }

@@ -1,67 +1,72 @@
 {
-  "cash": 4405.39,
-  "total_value": 7869.02,
+  "cash": 2864.97,
+  "total_value": 7876.97,
   "positions": {
     "TQQQ": {
       "shares": 30,
       "avg_cost": 73.34,
-      "current_price": 73.8965
+      "current_price": 73.86
     },
     "SOXL": {
       "shares": 3,
       "avg_cost": 113.165,
-      "current_price": 134.7334
+      "current_price": 135.25
     },
     "NVDA": {
       "shares": 2,
       "avg_cost": 220.965,
-      "current_price": 220.9799
+      "current_price": 221.4957
     },
     "ANET": {
       "shares": 2,
       "avg_cost": 197.88,
-      "current_price": 200.29
+      "current_price": 203.515
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 308.085,
+      "current_price": 308.085
     }
   },
-  "total_return_pct": -21.31,
+  "total_return_pct": -21.23,
   "total_return_usd": 0.0,
-  "today_pnl": -107.24,
-  "today_pnl_pct": -1.34,
+  "today_pnl": -99.29,
+  "today_pnl_pct": -1.24,
   "total_trades": 0,
   "today_start_value": 7976.26,
   "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T17:44:12Z",
+  "last_updated": "2026-08-05T18:41:38Z",
   "last_session": {
-    "at": "2026-08-05T17:44:12Z",
+    "at": "2026-08-05T18:41:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "AMD",
-        -6.35
+        "ANET",
+        6.74
       ],
       [
-        "ANET",
-        5.13
+        "AMD",
+        -6.02
       ],
       [
         "NVDA",
-        4.24
+        4.5
       ],
       [
         "SOXL",
-        -3.77
+        -3.36
       ],
       [
         "IONQ",
-        -2.35
+        -2.85
       ],
       [
         "MRVL",
-        -2.11
+        -2.13
       ]
     ],
     "news_read": [],
@@ -918,6 +923,10 @@
     {
       "timestamp": "2026-08-05T17:44:12Z",
       "value": 7869.02
+    },
+    {
+      "timestamp": "2026-08-05T18:41:38Z",
+      "value": 7876.97
     }
   ]
 }
