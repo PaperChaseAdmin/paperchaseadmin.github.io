@@ -1,29 +1,34 @@
 {
-  "cash": 6545.6,
-  "total_value": 9695.9,
+  "cash": 3565.55,
+  "total_value": 9691.14,
   "positions": {
     "NKE": {
       "shares": 48,
       "avg_cost": 41.635,
-      "current_price": 41.725
+      "current_price": 41.7301
     },
     "T": {
       "shares": 50,
       "avg_cost": 22.885,
-      "current_price": 22.9499
+      "current_price": 22.85
+    },
+    "CVS": {
+      "shares": 30,
+      "avg_cost": 99.335,
+      "current_price": 99.335
     }
   },
-  "total_return_pct": -3.04,
+  "total_return_pct": -3.09,
   "total_return_usd": 0.0,
-  "today_pnl": 8.55,
-  "today_pnl_pct": 0.09,
+  "today_pnl": 3.79,
+  "today_pnl_pct": 0.04,
   "total_trades": 0,
   "today_start_value": 9687.35,
   "today_date": "2026-08-05",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T16:42:33Z",
+  "last_updated": "2026-08-05T17:15:22Z",
   "last_session": {
-    "at": "2026-08-05T16:42:33Z",
+    "at": "2026-08-05T17:15:22Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -31,27 +36,27 @@
     "top_movers": [
       [
         "CVS",
-        -5.21
+        -4.86
       ],
       [
         "NOK",
-        -2.02
+        -2.27
       ],
       [
         "T",
-        -1.86
+        -2.25
       ],
       [
         "DIS",
-        1.79
+        2.0
       ],
       [
         "BBWI",
-        -1.61
+        -1.66
       ],
       [
         "CMCSA",
-        -1.52
+        -1.62
       ]
     ],
     "news_read": [],
@@ -900,6 +905,10 @@
     {
       "timestamp": "2026-08-05T16:42:33Z",
       "value": 9695.9
+    },
+    {
+      "timestamp": "2026-08-05T17:15:22Z",
+      "value": 9691.14
     }
   ]
 }
