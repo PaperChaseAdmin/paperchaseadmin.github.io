@@ -1,83 +1,83 @@
 {
   "cash": 1850.67,
-  "total_value": 10302.38,
+  "total_value": 10295.43,
   "positions": {
     "KO": {
       "shares": 12,
-      "current_price": 86.71,
+      "current_price": 86.75,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 5,
       "avg_cost": 361.58,
-      "current_price": 368.18
+      "current_price": 368.755
     },
     "MA": {
       "shares": 3,
-      "current_price": 571.145,
+      "current_price": 571.49,
       "avg_cost": 529.0675
     },
     "AAPL": {
       "shares": 8,
-      "current_price": 309.745,
+      "current_price": 308.085,
       "avg_cost": 311.1912
     },
     "BRK-B": {
       "shares": 2,
       "avg_cost": 512.05,
-      "current_price": 515.6345
+      "current_price": 516.515
     },
     "AXP": {
       "shares": 1,
       "avg_cost": 344.545,
-      "current_price": 347.63
+      "current_price": 347.81
     }
   },
-  "total_return_pct": 3.02,
+  "total_return_pct": 2.95,
   "total_return_usd": 0.0,
-  "today_pnl": -1.05,
-  "today_pnl_pct": -0.01,
+  "today_pnl": -8.0,
+  "today_pnl_pct": -0.08,
   "total_trades": 0,
   "today_start_value": 10303.43,
   "today_date": "2026-08-05",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-05T17:34:19Z",
+  "last_action": "Neutral sentiment with moderate fundamentals. No compelling opportunities identified for immediate action.",
+  "last_updated": "2026-08-05T18:32:08Z",
   "last_session": {
-    "at": "2026-08-05T17:34:19Z",
+    "at": "2026-08-05T18:32:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "MCD",
-        2.02
+        "CVX",
+        -1.63
       ],
       [
-        "CVX",
-        -2.01
+        "MCD",
+        1.56
       ],
       [
         "JNJ",
-        1.38
+        1.35
       ],
       [
         "PG",
-        -1.2
-      ],
-      [
-        "BAC",
-        0.72
+        -0.93
       ],
       [
         "JPM",
-        0.71
+        0.83
+      ],
+      [
+        "BAC",
+        0.79
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Current portfolio is well-balanced with quality businesses. No significant underperformers warranting immediate action. Maintaining cash reserves for future opportunities.",
+    "outlook": "Neutral sentiment with moderate fundamentals. No compelling opportunities identified for immediate action.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -928,6 +928,10 @@
     {
       "timestamp": "2026-08-05T17:34:19Z",
       "value": 10302.38
+    },
+    {
+      "timestamp": "2026-08-05T18:32:08Z",
+      "value": 10295.43
     }
   ]
 }
