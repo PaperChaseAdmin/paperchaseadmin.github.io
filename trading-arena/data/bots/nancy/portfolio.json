@@ -1,38 +1,68 @@
 {
-  "cash": 3788.04,
-  "total_value": 10932.04,
+  "cash": 2802.67,
+  "total_value": 10819.06,
   "positions": {
     "NVDA": {
       "shares": 18,
-      "current_price": 221.7,
+      "current_price": 218.29,
       "avg_cost": 193.2009
     },
     "AAPL": {
       "shares": 10,
-      "current_price": 315.34,
+      "current_price": 310.18,
       "avg_cost": 311.6123
+    },
+    "AMD": {
+      "shares": 2,
+      "avg_cost": 492.6849,
+      "current_price": 492.6849
     }
   },
-  "total_return_pct": 9.32,
+  "total_return_pct": 8.19,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -112.98,
+  "today_pnl_pct": -1.03,
   "total_trades": 0,
   "today_start_value": 10932.04,
   "today_date": "2026-08-06",
-  "last_action": "...",
-  "last_updated": "2026-08-06T14:35:25Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-06T15:34:37Z",
   "last_session": {
-    "at": "2026-08-06T14:35:25Z",
+    "at": "2026-08-06T15:34:37Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CRM",
+        -3.79
+      ],
+      [
+        "AMD",
+        2.15
+      ],
+      [
+        "QCOM",
+        2.1
+      ],
+      [
+        "MSFT",
+        1.78
+      ],
+      [
+        "MU",
+        1.76
+      ],
+      [
+        "LRCX",
+        1.48
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -895,6 +925,10 @@
     {
       "timestamp": "2026-08-06T14:35:25Z",
       "value": 10932.04
+    },
+    {
+      "timestamp": "2026-08-06T15:34:37Z",
+      "value": 10819.06
     }
   ]
 }

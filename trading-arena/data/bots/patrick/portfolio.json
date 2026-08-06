@@ -1,73 +1,93 @@
 {
-  "cash": 2832.62,
-  "total_value": 10199.11,
+  "cash": 2988.52,
+  "total_value": 10246.94,
   "positions": {
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 160.4
+      "current_price": 161.46
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 375.0
+      "current_price": 400.08
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 123.04
+      "current_price": 124.955
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 352.415
+      "current_price": 349.73
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 315.34,
+      "current_price": 310.18,
       "avg_cost": 305.3333
     },
     "EL": {
       "shares": 5,
       "avg_cost": 84.395,
-      "current_price": 86.47
+      "current_price": 87.22
     },
     "RH": {
       "shares": 2,
       "avg_cost": 188.685,
-      "current_price": 193.82
+      "current_price": 191.21
     },
     "WYNN": {
       "shares": 2,
       "avg_cost": 102.56,
-      "current_price": 101.21
-    },
-    "CPRI": {
-      "shares": 10,
-      "avg_cost": 15.66,
-      "current_price": 15.66
+      "current_price": 101.46
     }
   },
-  "total_return_pct": 1.99,
+  "total_return_pct": 2.47,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 47.83,
+  "today_pnl_pct": 0.47,
   "total_trades": 0,
   "today_start_value": 10199.11,
   "today_date": "2026-08-06",
-  "last_action": "Analysed \u2014 no trades",
-  "last_updated": "2026-08-06T14:46:28Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-06T15:42:59Z",
   "last_session": {
-    "at": "2026-08-06T14:46:28Z",
+    "at": "2026-08-06T15:42:59Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RL",
+        5.07
+      ],
+      [
+        "CPRI",
+        -2.68
+      ],
+      [
+        "RH",
+        -2.09
+      ],
+      [
+        "TPR",
+        1.45
+      ],
+      [
+        "CAKE",
+        1.29
+      ],
+      [
+        "LULU",
+        1.17
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -930,6 +950,10 @@
     {
       "timestamp": "2026-08-06T14:46:28Z",
       "value": 10199.11
+    },
+    {
+      "timestamp": "2026-08-06T15:42:59Z",
+      "value": 10246.94
     }
   ]
 }

@@ -1,83 +1,113 @@
 {
-  "cash": 701.47,
-  "total_value": 10208.83,
+  "cash": 512.98,
+  "total_value": 10123.0,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 586.9
+      "current_price": 580.76
     },
     "RTX": {
       "shares": 9,
-      "current_price": 224.7164,
+      "current_price": 221.47,
       "avg_cost": 202.653
     },
     "NUE": {
       "shares": 2,
       "avg_cost": 223.19,
-      "current_price": 273.5
+      "current_price": 273.675
     },
     "XOM": {
       "shares": 1,
       "avg_cost": 136.71,
-      "current_price": 154.09
+      "current_price": 152.48
     },
     "GM": {
       "shares": 2,
-      "current_price": 88.5604,
+      "current_price": 88.28,
       "avg_cost": 84.425
     },
     "CAT": {
       "shares": 1,
       "avg_cost": 805.76,
-      "current_price": 869.98
+      "current_price": 871.2025
     },
     "NOC": {
       "shares": 1,
       "avg_cost": 527.49,
-      "current_price": 563.82
+      "current_price": 563.125
     },
     "LHX": {
       "shares": 2,
       "avg_cost": 276.4,
-      "current_price": 289.505
+      "current_price": 289.055
     },
     "BA": {
       "shares": 4,
-      "current_price": 239.025,
+      "current_price": 234.85,
       "avg_cost": 231.865
     },
     "GD": {
       "shares": 1,
       "avg_cost": 383.115,
-      "current_price": 387.9501
+      "current_price": 386.1
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 315.34,
-      "current_price": 315.34
+      "current_price": 310.18
+    },
+    "CVX": {
+      "shares": 1,
+      "avg_cost": 188.4865,
+      "current_price": 188.4865
     }
   },
-  "total_return_pct": 2.09,
+  "total_return_pct": 1.23,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -85.83,
+  "today_pnl_pct": -0.84,
   "total_trades": 0,
   "today_start_value": 10208.83,
   "today_date": "2026-08-06",
-  "last_action": "Bullish on American defense and industrial sectors",
-  "last_updated": "2026-08-06T14:35:08Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-06T15:34:01Z",
   "last_session": {
-    "at": "2026-08-06T14:35:08Z",
+    "at": "2026-08-06T15:34:01Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "HAL",
+        2.25
+      ],
+      [
+        "BA",
+        -2.21
+      ],
+      [
+        "CVX",
+        1.09
+      ],
+      [
+        "JPM",
+        -0.99
+      ],
+      [
+        "LHX",
+        0.98
+      ],
+      [
+        "GM",
+        -0.98
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Focusing on strengthening positions in top-performing defense stocks while trimming weaker holdings",
-    "outlook": "Bullish on American defense and industrial sectors",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -940,6 +970,10 @@
     {
       "timestamp": "2026-08-06T14:35:08Z",
       "value": 10208.83
+    },
+    {
+      "timestamp": "2026-08-06T15:34:01Z",
+      "value": 10123.0
     }
   ]
 }

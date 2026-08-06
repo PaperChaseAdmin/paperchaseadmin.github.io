@@ -1,48 +1,68 @@
 {
-  "cash": 3250.07,
-  "total_value": 7769.82,
+  "cash": 4800.97,
+  "total_value": 7838.85,
   "positions": {
     "TQQQ": {
       "shares": 30,
       "avg_cost": 73.34,
-      "current_price": 70.885
+      "current_price": 72.865
     },
     "SOXL": {
       "shares": 3,
       "avg_cost": 113.165,
-      "current_price": 124.365
+      "current_price": 138.45
     },
     "NVDA": {
       "shares": 2,
       "avg_cost": 220.965,
-      "current_price": 221.7
-    },
-    "AAPL": {
-      "shares": 5,
-      "avg_cost": 308.085,
-      "current_price": 315.34
+      "current_price": 218.29
     }
   },
-  "total_return_pct": -22.3,
+  "total_return_pct": -21.61,
   "total_return_usd": 0.0,
-  "today_pnl": 0.01,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 69.04,
+  "today_pnl_pct": 0.89,
   "total_trades": 0,
   "today_start_value": 7769.81,
   "today_date": "2026-08-06",
-  "last_action": "Market remains volatile with no clear direction; high beta tech leveraged ETFs showing mixed signals; prefer to de-risk and wait for clearer setups.",
-  "last_updated": "2026-08-06T14:45:28Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-06T15:38:48Z",
   "last_session": {
-    "at": "2026-08-06T14:45:28Z",
+    "at": "2026-08-06T15:38:48Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AXON",
+        -8.99
+      ],
+      [
+        "ARM",
+        5.3
+      ],
+      [
+        "SOXL",
+        4.82
+      ],
+      [
+        "IONQ",
+        3.19
+      ],
+      [
+        "MRVL",
+        2.51
+      ],
+      [
+        "ANET",
+        -2.3
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio heavily weighted in losing leveraged ETF TQQQ; selling frees cash to maintain >=$300 reserve and prepare for future opportunities. Winners SOXL, NVDA, AAPL show modest gains; hold them for now.",
-    "outlook": "Market remains volatile with no clear direction; high beta tech leveraged ETFs showing mixed signals; prefer to de-risk and wait for clearer setups.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -905,6 +925,10 @@
     {
       "timestamp": "2026-08-06T14:45:28Z",
       "value": 7769.82
+    },
+    {
+      "timestamp": "2026-08-06T15:38:48Z",
+      "value": 7838.85
     }
   ]
 }

@@ -1,33 +1,63 @@
 {
-  "cash": 5713.77,
-  "total_value": 8874.84,
+  "cash": 5378.97,
+  "total_value": 8935.23,
   "positions": {
     "MSTR": {
       "shares": 33,
-      "current_price": 95.79,
+      "current_price": 97.62,
       "avg_cost": 99.4993
+    },
+    "RIOT": {
+      "shares": 15,
+      "avg_cost": 22.32,
+      "current_price": 22.32
     }
   },
-  "total_return_pct": -11.25,
+  "total_return_pct": -10.65,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 60.39,
+  "today_pnl_pct": 0.68,
   "total_trades": 0,
   "today_start_value": 8874.84,
   "today_date": "2026-08-06",
-  "last_action": "...",
-  "last_updated": "2026-08-06T14:48:06Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-06T15:54:06Z",
   "last_session": {
-    "at": "2026-08-06T14:48:06Z",
+    "at": "2026-08-06T15:54:06Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CIFR",
+        4.33
+      ],
+      [
+        "IREN",
+        3.86
+      ],
+      [
+        "RIOT",
+        3.77
+      ],
+      [
+        "HUT",
+        3.44
+      ],
+      [
+        "BTBT",
+        1.81
+      ],
+      [
+        "PYPL",
+        1.54
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -890,6 +920,10 @@
     {
       "timestamp": "2026-08-06T14:48:06Z",
       "value": 8874.84
+    },
+    {
+      "timestamp": "2026-08-06T15:54:06Z",
+      "value": 8935.23
     }
   ]
 }

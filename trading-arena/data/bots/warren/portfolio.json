@@ -1,63 +1,83 @@
 {
-  "cash": 1065.99,
-  "total_value": 10378.98,
+  "cash": 1834.44,
+  "total_value": 10271.46,
   "positions": {
     "KO": {
       "shares": 12,
-      "current_price": 87.7598,
+      "current_price": 86.5621,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 5,
       "avg_cost": 361.58,
-      "current_price": 368.37
+      "current_price": 366.48
     },
     "MA": {
       "shares": 3,
-      "current_price": 571.23,
+      "current_price": 567.72,
       "avg_cost": 529.0675
     },
     "AAPL": {
       "shares": 8,
-      "current_price": 315.34,
+      "current_price": 310.18,
       "avg_cost": 311.1912
     },
     "BRK-B": {
       "shares": 2,
       "avg_cost": 512.05,
-      "current_price": 524.1
+      "current_price": 517.74
     },
     "AXP": {
       "shares": 1,
       "avg_cost": 344.545,
-      "current_price": 348.73
-    },
-    "JNJ": {
-      "shares": 3,
-      "avg_cost": 261.56,
-      "current_price": 261.56
+      "current_price": 345.79
     }
   },
-  "total_return_pct": 3.79,
+  "total_return_pct": 2.71,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -107.52,
+  "today_pnl_pct": -1.04,
   "total_trades": 0,
   "today_start_value": 10378.98,
   "today_date": "2026-08-06",
-  "last_action": "Market sentiment is neutral (Fear & Greed 50). No clear catalysts; focus on preserving capital and waiting for attractive valuations.",
-  "last_updated": "2026-08-06T14:32:09Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-06T15:33:36Z",
   "last_session": {
-    "at": "2026-08-06T14:32:09Z",
+    "at": "2026-08-06T15:33:36Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "ABBV",
+        -1.21
+      ],
+      [
+        "CVX",
+        1.09
+      ],
+      [
+        "JPM",
+        -0.99
+      ],
+      [
+        "AXP",
+        -0.94
+      ],
+      [
+        "BAC",
+        -0.61
+      ],
+      [
+        "JNJ",
+        -0.56
+      ]
+    ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "Current portfolio shows modest gains across holdings. AXP and JNJ contribute little to performance; selling them raises cash above $2k, maintaining a strong buffer while keeping core positions in high-quality, wide-moat companies like KO, V, MA, AAPL, BRK-B. No new buys due to empty watchlist; will monitor for fundamental opportunities.",
-    "outlook": "Market sentiment is neutral (Fear & Greed 50). No clear catalysts; focus on preserving capital and waiting for attractive valuations.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -920,6 +940,10 @@
     {
       "timestamp": "2026-08-06T14:32:09Z",
       "value": 10378.98
+    },
+    {
+      "timestamp": "2026-08-06T15:33:36Z",
+      "value": 10271.46
     }
   ]
 }

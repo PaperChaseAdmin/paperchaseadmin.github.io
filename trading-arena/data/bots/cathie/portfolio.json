@@ -1,53 +1,78 @@
 {
-  "cash": 2667.33,
-  "total_value": 8099.71,
+  "cash": 2555.62,
+  "total_value": 8151.67,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 316.56
+      "current_price": 321.82
     },
     "CRSP": {
       "shares": 36,
-      "current_price": 52.385,
+      "current_price": 52.35,
       "avg_cost": 55.9252
     },
     "NTLA": {
-      "shares": 17,
-      "current_price": 10.96,
-      "avg_cost": 16.1183
+      "shares": 27,
+      "current_price": 11.1706,
+      "avg_cost": 14.2858
     },
     "BEAM": {
       "shares": 31,
-      "current_price": 26.74,
+      "current_price": 27.32,
       "avg_cost": 33.9863
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 342.7,
-      "current_price": 315.34
+      "current_price": 310.18
     }
   },
-  "total_return_pct": -19.0,
+  "total_return_pct": -18.48,
   "total_return_usd": 0.0,
-  "today_pnl": -0.01,
-  "today_pnl_pct": -0.0,
+  "today_pnl": 51.95,
+  "today_pnl_pct": 0.64,
   "total_trades": 0,
   "today_start_value": 8099.72,
   "today_date": "2026-08-06",
-  "last_action": "The market is currently experiencing minimal movement with no significant changes in the Fear & Greed Index or S&P 500. There are no relevant headlines affecting disruptive innovation sectors.",
-  "last_updated": "2026-08-06T14:36:11Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-06T15:35:14Z",
   "last_session": {
-    "at": "2026-08-06T14:36:11Z",
+    "at": "2026-08-06T15:35:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PACB",
+        -8.47
+      ],
+      [
+        "ILMN",
+        -5.17
+      ],
+      [
+        "ROKU",
+        2.1
+      ],
+      [
+        "NTLA",
+        1.82
+      ],
+      [
+        "RXRX",
+        1.74
+      ],
+      [
+        "TWLO",
+        -1.08
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Given the current market conditions and lack of significant movement in my watchlist, I am maintaining my positions. My long-term investment thesis remains unchanged, and I see no immediate opportunities or threats that warrant action. I will continue to monitor the market for potential buying opportunities in disruptive innovation sectors.",
-    "outlook": "The market is currently experiencing minimal movement with no significant changes in the Fear & Greed Index or S&P 500. There are no relevant headlines affecting disruptive innovation sectors.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -910,6 +935,10 @@
     {
       "timestamp": "2026-08-06T14:36:11Z",
       "value": 8099.71
+    },
+    {
+      "timestamp": "2026-08-06T15:35:14Z",
+      "value": 8151.67
     }
   ]
 }

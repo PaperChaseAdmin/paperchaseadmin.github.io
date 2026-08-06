@@ -1,7 +1,13 @@
 {
-  "cash": 9535.54,
+  "cash": 7473.04,
   "total_value": 9535.54,
-  "positions": {},
+  "positions": {
+    "IONQ": {
+      "shares": 50,
+      "avg_cost": 41.25,
+      "current_price": 41.25
+    }
+  },
   "total_return_pct": -4.64,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
@@ -9,19 +15,44 @@
   "total_trades": 0,
   "today_start_value": 9535.54,
   "today_date": "2026-08-06",
-  "last_action": "Market is neutral with no clear direction; awaiting new data.",
-  "last_updated": "2026-08-06T14:32:01Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-06T15:33:01Z",
   "last_session": {
-    "at": "2026-08-06T14:32:01Z",
+    "at": "2026-08-06T15:33:01Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IONQ",
+        3.19
+      ],
+      [
+        "AMD",
+        2.15
+      ],
+      [
+        "MSFT",
+        1.78
+      ],
+      [
+        "RBLX",
+        1.74
+      ],
+      [
+        "RIVN",
+        1.64
+      ],
+      [
+        "SOFI",
+        1.23
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "No watchlist items available; staying in cash until opportunities arise.",
-    "outlook": "Market is neutral with no clear direction; awaiting new data.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -883,6 +914,10 @@
     },
     {
       "timestamp": "2026-08-06T14:32:01Z",
+      "value": 9535.54
+    },
+    {
+      "timestamp": "2026-08-06T15:33:01Z",
       "value": 9535.54
     }
   ]
