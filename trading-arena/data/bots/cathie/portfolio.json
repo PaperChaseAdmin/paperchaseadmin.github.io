@@ -1,44 +1,49 @@
 {
-  "cash": 2555.62,
-  "total_value": 8151.67,
+  "cash": 2320.62,
+  "total_value": 8121.22,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 321.82
+      "current_price": 319.68
     },
     "CRSP": {
       "shares": 36,
-      "current_price": 52.35,
+      "current_price": 51.895,
       "avg_cost": 55.9252
     },
     "NTLA": {
       "shares": 27,
-      "current_price": 11.1706,
+      "current_price": 11.17,
       "avg_cost": 14.2858
     },
     "BEAM": {
       "shares": 31,
-      "current_price": 27.32,
+      "current_price": 27.27,
       "avg_cost": 33.9863
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 342.7,
-      "current_price": 310.18
+      "current_price": 312.655
+    },
+    "PACB": {
+      "shares": 200,
+      "avg_cost": 1.175,
+      "current_price": 1.175
     }
   },
-  "total_return_pct": -18.48,
+  "total_return_pct": -18.79,
   "total_return_usd": 0.0,
-  "today_pnl": 51.95,
-  "today_pnl_pct": 0.64,
+  "today_pnl": 21.5,
+  "today_pnl_pct": 0.27,
   "total_trades": 0,
   "today_start_value": 8099.72,
   "today_date": "2026-08-06",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-06T15:35:14Z",
+  "last_updated": "2026-08-06T19:48:24Z",
   "last_session": {
-    "at": "2026-08-06T15:35:14Z",
+    "at": "2026-08-06T19:48:24Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +51,27 @@
     "top_movers": [
       [
         "PACB",
-        -8.47
+        -9.62
       ],
       [
         "ILMN",
-        -5.17
+        -5.1
       ],
       [
         "ROKU",
-        2.1
+        2.24
       ],
       [
-        "NTLA",
-        1.82
-      ],
-      [
-        "RXRX",
-        1.74
+        "COIN",
+        -2.08
       ],
       [
         "TWLO",
-        -1.08
+        -2.08
+      ],
+      [
+        "HOOD",
+        -2.07
       ]
     ],
     "news_read": [],
@@ -939,6 +944,10 @@
     {
       "timestamp": "2026-08-06T15:35:14Z",
       "value": 8151.67
+    },
+    {
+      "timestamp": "2026-08-06T19:48:24Z",
+      "value": 8121.22
     }
   ]
 }

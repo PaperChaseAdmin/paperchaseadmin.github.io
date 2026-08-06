@@ -1,7 +1,13 @@
 {
-  "cash": 9717.59,
+  "cash": 6589.94,
   "total_value": 9717.59,
-  "positions": {},
+  "positions": {
+    "DIS": {
+      "shares": 30,
+      "avg_cost": 104.255,
+      "current_price": 104.255
+    }
+  },
   "total_return_pct": -2.82,
   "total_return_usd": 0.0,
   "today_pnl": -9.79,
@@ -10,37 +16,37 @@
   "today_start_value": 9727.38,
   "today_date": "2026-08-06",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-06T15:41:20Z",
+  "last_updated": "2026-08-06T19:55:49Z",
   "last_session": {
-    "at": "2026-08-06T15:41:20Z",
+    "at": "2026-08-06T19:55:49Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "CVS",
-        -2.46
-      ],
-      [
-        "WBD",
-        2.0
-      ],
-      [
-        "DIS",
-        1.73
-      ],
-      [
-        "T",
-        1.67
+        "GM",
+        -2.75
       ],
       [
         "PYPL",
-        1.54
+        2.6
       ],
       [
-        "GM",
-        -0.98
+        "VFC",
+        -2.53
+      ],
+      [
+        "DIS",
+        2.46
+      ],
+      [
+        "BBWI",
+        -2.45
+      ],
+      [
+        "CVS",
+        -2.22
       ]
     ],
     "news_read": [],
@@ -912,6 +918,10 @@
     },
     {
       "timestamp": "2026-08-06T15:41:20Z",
+      "value": 9717.59
+    },
+    {
+      "timestamp": "2026-08-06T19:55:49Z",
       "value": 9717.59
     }
   ]

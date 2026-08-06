@@ -1,57 +1,52 @@
 {
-  "cash": 5599.94,
-  "total_value": 8897.16,
+  "cash": 7361.22,
+  "total_value": 8924.5,
   "positions": {
-    "NVDA": {
-      "shares": 8,
-      "current_price": 218.29,
-      "avg_cost": 221.085
-    },
     "AAPL": {
       "shares": 5,
       "avg_cost": 310.18,
-      "current_price": 310.18
+      "current_price": 312.655
     }
   },
-  "total_return_pct": -11.03,
+  "total_return_pct": -10.76,
   "total_return_usd": 0.0,
-  "today_pnl": -27.28,
-  "today_pnl_pct": -0.31,
+  "today_pnl": 0.06,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
   "today_start_value": 8924.44,
   "today_date": "2026-08-06",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-06T15:41:51Z",
+  "last_updated": "2026-08-06T19:56:27Z",
   "last_session": {
-    "at": "2026-08-06T15:41:51Z",
+    "at": "2026-08-06T19:56:27Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "RIOT",
-        3.77
+        "AMC",
+        -3.7
+      ],
+      [
+        "MARA",
+        -3.43
       ],
       [
         "UPST",
-        2.52
+        -2.19
       ],
       [
-        "RBLX",
-        1.74
+        "COIN",
+        -2.08
       ],
       [
-        "RIVN",
-        1.64
+        "HOOD",
+        -2.07
       ],
       [
-        "SOFI",
-        1.23
-      ],
-      [
-        "AMC",
-        -1.12
+        "MSTR",
+        -2.02
       ]
     ],
     "news_read": [],
@@ -924,6 +919,10 @@
     {
       "timestamp": "2026-08-06T15:41:51Z",
       "value": 8897.16
+    },
+    {
+      "timestamp": "2026-08-06T19:56:27Z",
+      "value": 8924.5
     }
   ]
 }
