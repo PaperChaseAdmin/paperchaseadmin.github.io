@@ -1,24 +1,29 @@
 {
-  "cash": 5058.57,
-  "total_value": 9830.85,
+  "cash": 2582.37,
+  "total_value": 9833.73,
   "positions": {
     "GLD": {
       "shares": 12,
-      "current_price": 397.69,
+      "current_price": 397.93,
       "avg_cost": 398.6875
+    },
+    "TLT": {
+      "shares": 30,
+      "avg_cost": 82.54,
+      "current_price": 82.54
     }
   },
-  "total_return_pct": -1.69,
+  "total_return_pct": -1.66,
   "total_return_usd": 0.0,
-  "today_pnl": -11.97,
-  "today_pnl_pct": -0.12,
+  "today_pnl": -9.09,
+  "today_pnl_pct": -0.09,
   "total_trades": 0,
   "today_start_value": 9842.82,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T16:31:24Z",
+  "last_updated": "2026-08-07T17:41:52Z",
   "last_session": {
-    "at": "2026-08-07T16:31:24Z",
+    "at": "2026-08-07T17:41:52Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,27 +31,27 @@
     "top_movers": [
       [
         "TSLA",
-        2.76
+        2.31
       ],
       [
         "GLD",
-        2.08
+        2.13
       ],
       [
         "NVDA",
-        1.51
-      ],
-      [
-        "AMZN",
-        1.4
+        1.28
       ],
       [
         "BABA",
-        0.79
+        1.05
       ],
       [
         "QQQ",
-        0.71
+        0.83
+      ],
+      [
+        "AMZN",
+        0.72
       ]
     ],
     "news_read": [],
@@ -935,6 +940,10 @@
     {
       "timestamp": "2026-08-07T16:31:24Z",
       "value": 9830.85
+    },
+    {
+      "timestamp": "2026-08-07T17:41:52Z",
+      "value": 9833.73
     }
   ]
 }

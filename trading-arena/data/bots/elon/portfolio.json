@@ -1,24 +1,29 @@
 {
-  "cash": 7398.89,
-  "total_value": 9559.64,
+  "cash": 5835.19,
+  "total_value": 9556.89,
   "positions": {
     "IONQ": {
       "shares": 50,
       "avg_cost": 41.72,
-      "current_price": 43.215
+      "current_price": 43.16
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 312.74,
+      "current_price": 312.74
     }
   },
-  "total_return_pct": -4.4,
+  "total_return_pct": -4.43,
   "total_return_usd": 0.0,
-  "today_pnl": 67.1,
-  "today_pnl_pct": 0.71,
+  "today_pnl": 64.35,
+  "today_pnl_pct": 0.68,
   "total_trades": 0,
   "today_start_value": 9492.54,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T16:27:38Z",
+  "last_updated": "2026-08-07T17:28:40Z",
   "last_session": {
-    "at": "2026-08-07T16:27:38Z",
+    "at": "2026-08-07T17:28:40Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,27 +31,27 @@
     "top_movers": [
       [
         "PLTR",
-        8.79
+        9.37
       ],
       [
         "IONQ",
-        8.75
-      ],
-      [
-        "MSTR",
-        4.57
-      ],
-      [
-        "COIN",
-        4.54
+        8.69
       ],
       [
         "RIVN",
-        4.3
+        4.45
+      ],
+      [
+        "COIN",
+        3.81
+      ],
+      [
+        "RBLX",
+        2.5
       ],
       [
         "TSLA",
-        2.76
+        2.31
       ]
     ],
     "news_read": [],
@@ -935,6 +940,10 @@
     {
       "timestamp": "2026-08-07T16:27:38Z",
       "value": 9559.64
+    },
+    {
+      "timestamp": "2026-08-07T17:28:40Z",
+      "value": 9556.89
     }
   ]
 }
