@@ -1,83 +1,118 @@
 {
-  "cash": 1152.51,
-  "total_value": 9634.75,
+  "cash": 555.09,
+  "total_value": 9558.8,
   "positions": {
     "ABBV": {
       "shares": 5,
       "avg_cost": 261.05,
-      "current_price": 245.725
+      "current_price": 242.84
     },
     "O": {
       "shares": 14,
-      "current_price": 63.81,
+      "current_price": 62.34,
       "avg_cost": 63.8557
     },
     "T": {
       "shares": 75,
-      "current_price": 23.44,
+      "current_price": 23.52,
       "avg_cost": 21.1047
     },
     "VZ": {
       "shares": 26,
-      "current_price": 47.19,
+      "current_price": 46.49,
       "avg_cost": 44.3492
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 190.49
+      "current_price": 186.84
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 71.71
+      "current_price": 71.875
     },
     "IBM": {
       "shares": 1,
       "avg_cost": 212.365,
-      "current_price": 228.765
+      "current_price": 234.475
     },
     "KO": {
       "shares": 13,
-      "current_price": 87.7598,
+      "current_price": 86.2101,
       "avg_cost": 83.8962
     },
     "MAIN": {
-      "shares": 14,
-      "current_price": 56.395,
-      "avg_cost": 56.0164
+      "shares": 19,
+      "current_price": 57.58,
+      "avg_cost": 56.4371
     },
     "JNJ": {
       "shares": 1,
       "avg_cost": 258.5001,
-      "current_price": 261.56
+      "current_price": 255.725
     },
     "MO": {
       "shares": 10,
       "avg_cost": 69.24,
-      "current_price": 69.24
+      "current_price": 67.41
+    },
+    "CVX": {
+      "shares": 1,
+      "avg_cost": 189.37,
+      "current_price": 186.26
+    },
+    "BTI": {
+      "shares": 2,
+      "avg_cost": 59.99,
+      "current_price": 59.99
     }
   },
-  "total_return_pct": -3.65,
+  "total_return_pct": -4.41,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9634.75,
-  "today_date": "2026-08-06",
-  "last_action": "Neutral market conditions with moderate sentiment. Stick to fundamentals and focus on dividend-paying stocks.",
-  "last_updated": "2026-08-06T14:42:48Z",
+  "today_start_value": 9558.8,
+  "today_date": "2026-08-07",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T13:42:36Z",
   "last_session": {
-    "at": "2026-08-06T14:42:48Z",
+    "at": "2026-08-07T13:42:36Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BTI",
+        2.18
+      ],
+      [
+        "CVX",
+        -1.57
+      ],
+      [
+        "MAIN",
+        1.39
+      ],
+      [
+        "VZ",
+        -1.06
+      ],
+      [
+        "T",
+        -0.8
+      ],
+      [
+        "KO",
+        -0.74
+      ]
+    ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "Portfolio shows a mix of gains and losses. Consider rebalancing positions to optimize dividend income and manage risk. No immediate opportunities identified in the watchlist.",
-    "outlook": "Neutral market conditions with moderate sentiment. Stick to fundamentals and focus on dividend-paying stocks.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -940,6 +975,18 @@
     {
       "timestamp": "2026-08-06T14:42:48Z",
       "value": 9634.75
+    },
+    {
+      "timestamp": "2026-08-06T15:38:10Z",
+      "value": 9581.16
+    },
+    {
+      "timestamp": "2026-08-06T19:55:18Z",
+      "value": 9578.92
+    },
+    {
+      "timestamp": "2026-08-07T13:42:36Z",
+      "value": 9558.8
     }
   ]
 }

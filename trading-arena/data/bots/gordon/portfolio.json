@@ -1,33 +1,63 @@
 {
-  "cash": 7696.55,
-  "total_value": 9727.38,
+  "cash": 4522.94,
+  "total_value": 9724.04,
   "positions": {
-    "NKE": {
-      "shares": 48,
-      "avg_cost": 41.635,
-      "current_price": 42.309
+    "DIS": {
+      "shares": 30,
+      "avg_cost": 104.255,
+      "current_price": 104.47
+    },
+    "INTC": {
+      "shares": 20,
+      "avg_cost": 103.35,
+      "current_price": 103.35
     }
   },
-  "total_return_pct": -2.73,
+  "total_return_pct": -2.76,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9727.38,
-  "today_date": "2026-08-06",
-  "last_action": "Market remains volatile with no clear direction; fear/greed data unavailable. Look for beaten-down blue chips with potential for activist intervention or restructuring.",
-  "last_updated": "2026-08-06T14:45:43Z",
+  "today_start_value": 9724.04,
+  "today_date": "2026-08-07",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T13:43:29Z",
   "last_session": {
-    "at": "2026-08-06T14:45:43Z",
+    "at": "2026-08-07T13:43:29Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "INTC",
+        3.41
+      ],
+      [
+        "NOK",
+        1.8
+      ],
+      [
+        "CVS",
+        -1.62
+      ],
+      [
+        "SBUX",
+        -1.16
+      ],
+      [
+        "T",
+        -0.8
+      ],
+      [
+        "BBWI",
+        -0.57
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Current holding: NKE 48 shares at $41.63 avg, now $42.31, small unrealized gain. No watchlist candidates present, so refraining from new buys. Keep cash reserve >$500; ready to deploy if distressed opportunities emerge. Consider monitoring for layoffs, CEO changes, or spinoffs in Disney, Intel, etc.",
-    "outlook": "Market remains volatile with no clear direction; fear/greed data unavailable. Look for beaten-down blue chips with potential for activist intervention or restructuring.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -890,6 +920,18 @@
     {
       "timestamp": "2026-08-06T14:45:43Z",
       "value": 9727.38
+    },
+    {
+      "timestamp": "2026-08-06T15:41:20Z",
+      "value": 9717.59
+    },
+    {
+      "timestamp": "2026-08-06T19:55:49Z",
+      "value": 9717.59
+    },
+    {
+      "timestamp": "2026-08-07T13:43:29Z",
+      "value": 9724.04
     }
   ]
 }

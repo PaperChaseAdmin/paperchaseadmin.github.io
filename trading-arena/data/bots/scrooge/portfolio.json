@@ -1,113 +1,138 @@
 {
-  "cash": 988.37,
-  "total_value": 10021.97,
+  "cash": 244.4,
+  "total_value": 9993.69,
   "positions": {
     "T": {
       "shares": 68,
-      "current_price": 23.44,
+      "current_price": 23.52,
       "avg_cost": 22.1241
     },
     "MAIN": {
-      "shares": 10,
-      "avg_cost": 53.18,
-      "current_price": 56.395
+      "shares": 13,
+      "current_price": 57.58,
+      "avg_cost": 54.2035
     },
     "VZ": {
       "shares": 25,
-      "current_price": 47.19,
+      "current_price": 46.49,
       "avg_cost": 44.1244
     },
     "MO": {
       "shares": 20,
       "avg_cost": 71.62,
-      "current_price": 69.24
+      "current_price": 67.41
     },
     "PM": {
       "shares": 2,
       "avg_cost": 182.2283,
-      "current_price": 190.49
+      "current_price": 186.84
     },
     "ENB": {
       "shares": 11,
-      "current_price": 52.235,
+      "current_price": 51.51,
       "avg_cost": 53.675
     },
     "ABBV": {
       "shares": 1,
       "avg_cost": 255.8736,
-      "current_price": 245.725
+      "current_price": 242.84
     },
     "WPC": {
       "shares": 2,
       "avg_cost": 70.81,
-      "current_price": 71.71
+      "current_price": 71.875
     },
     "BTI": {
       "shares": 3,
       "avg_cost": 61.93,
-      "current_price": 59.57
+      "current_price": 59.99
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 50.01,
-      "current_price": 49.04
+      "current_price": 48.54
     },
     "ARCC": {
       "shares": 7,
       "avg_cost": 18.595,
-      "current_price": 19.4316
+      "current_price": 19.595
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 33.865
+      "current_price": 33.5514
     },
     "HTGC": {
-      "shares": 20,
-      "current_price": 16.635,
-      "avg_cost": 16.0065
+      "shares": 30,
+      "current_price": 17.128,
+      "avg_cost": 16.3906
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 165.81
+      "current_price": 164.705
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 57.75
+      "current_price": 57.522
     },
     "GLD": {
-      "shares": 3,
-      "current_price": 389.7,
-      "avg_cost": 381.935
+      "shares": 4,
+      "current_price": 399.54,
+      "avg_cost": 386.3363
     },
     "O": {
       "shares": 6,
-      "current_price": 63.81,
+      "current_price": 62.34,
       "avg_cost": 62.395
     }
   },
-  "total_return_pct": 0.22,
+  "total_return_pct": -0.06,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10021.97,
-  "today_date": "2026-08-06",
-  "last_action": "Analysed \u2014 no trades",
-  "last_updated": "2026-08-06T14:46:47Z",
+  "today_start_value": 9993.69,
+  "today_date": "2026-08-07",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T13:45:25Z",
   "last_session": {
-    "at": "2026-08-06T14:46:47Z",
+    "at": "2026-08-07T13:45:25Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GLD",
+        2.52
+      ],
+      [
+        "BTI",
+        2.18
+      ],
+      [
+        "MAIN",
+        1.39
+      ],
+      [
+        "VZ",
+        -1.06
+      ],
+      [
+        "T",
+        -0.8
+      ],
+      [
+        "PM",
+        -0.64
+      ]
+    ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
     "ai_analysis": "",
-    "outlook": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -970,6 +995,18 @@
     {
       "timestamp": "2026-08-06T14:46:47Z",
       "value": 10021.97
+    },
+    {
+      "timestamp": "2026-08-06T15:46:00Z",
+      "value": 9984.58
+    },
+    {
+      "timestamp": "2026-08-06T19:57:03Z",
+      "value": 9976.33
+    },
+    {
+      "timestamp": "2026-08-07T13:45:25Z",
+      "value": 9993.69
     }
   ]
 }

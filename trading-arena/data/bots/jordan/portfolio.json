@@ -1,33 +1,63 @@
 {
-  "cash": 7150.84,
-  "total_value": 8924.44,
+  "cash": 4326.12,
+  "total_value": 8927.02,
   "positions": {
-    "NVDA": {
-      "shares": 8,
-      "current_price": 221.7,
-      "avg_cost": 221.085
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 310.18,
+      "current_price": 313.16
+    },
+    "MSTR": {
+      "shares": 30,
+      "avg_cost": 101.17,
+      "current_price": 101.17
     }
   },
-  "total_return_pct": -10.76,
+  "total_return_pct": -10.73,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 8924.44,
-  "today_date": "2026-08-06",
-  "last_action": "Awaiting the next parabolic move or short-squeeze catalyst; currently holding cash to deploy quickly when momentum appears.",
-  "last_updated": "2026-08-06T14:45:53Z",
+  "today_start_value": 8927.02,
+  "today_date": "2026-08-07",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T13:43:56Z",
   "last_session": {
-    "at": "2026-08-06T14:45:53Z",
+    "at": "2026-08-07T13:43:56Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MSTR",
+        4.27
+      ],
+      [
+        "RIOT",
+        4.13
+      ],
+      [
+        "PLTR",
+        3.8
+      ],
+      [
+        "HOOD",
+        2.95
+      ],
+      [
+        "RIVN",
+        2.28
+      ],
+      [
+        "RBLX",
+        2.08
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "NVDA shows minimal intraday movement and modest unrealized P/L. Selling the position clears the book and maintains the required cash reserve, enabling rapid entry into any watchlist stock that exhibits >10% intraday upside or meme-driven momentum.",
-    "outlook": "Awaiting the next parabolic move or short-squeeze catalyst; currently holding cash to deploy quickly when momentum appears.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -890,6 +920,18 @@
     {
       "timestamp": "2026-08-06T14:45:53Z",
       "value": 8924.44
+    },
+    {
+      "timestamp": "2026-08-06T15:41:51Z",
+      "value": 8897.16
+    },
+    {
+      "timestamp": "2026-08-06T19:56:27Z",
+      "value": 8924.5
+    },
+    {
+      "timestamp": "2026-08-07T13:43:56Z",
+      "value": 8927.02
     }
   ]
 }

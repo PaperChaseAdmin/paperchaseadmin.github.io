@@ -1,48 +1,63 @@
 {
-  "cash": 6448.32,
-  "total_value": 9954.02,
+  "cash": 8709.9,
+  "total_value": 9912.45,
   "positions": {
     "BIL": {
       "shares": 10,
       "avg_cost": 91.62,
-      "current_price": 91.445
-    },
-    "JPM": {
-      "shares": 2,
-      "avg_cost": 351.44,
-      "current_price": 361.55
+      "current_price": 91.47
     },
     "XLF": {
       "shares": 5,
       "avg_cost": 57.235,
-      "current_price": 58.29
-    },
-    "AAPL": {
-      "shares": 5,
-      "avg_cost": 315.34,
-      "current_price": 315.34
+      "current_price": 57.57
     }
   },
-  "total_return_pct": -0.46,
+  "total_return_pct": -0.88,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9954.02,
-  "today_date": "2026-08-06",
-  "last_action": "Without clear VIX or Fear & Greed data, maintaining a cautious stance; preferring to hold cash and avoid speculative positions.",
-  "last_updated": "2026-08-06T14:47:22Z",
+  "today_start_value": 9912.45,
+  "today_date": "2026-08-07",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T13:48:09Z",
   "last_session": {
-    "at": "2026-08-06T14:47:22Z",
+    "at": "2026-08-07T13:48:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GS",
+        0.8
+      ],
+      [
+        "BAC",
+        -0.48
+      ],
+      [
+        "XLU",
+        -0.44
+      ],
+      [
+        "XLF",
+        -0.4
+      ],
+      [
+        "IEF",
+        0.38
+      ],
+      [
+        "TLT",
+        0.35
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Current portfolio shows modest gains in banks and financials, small loss in BIL. In absence of definitive market stress or inflation signals, reducing exposure to underperforming assets and locking in gains aligns with a data-dependent, risk-averse approach.",
-    "outlook": "Without clear VIX or Fear & Greed data, maintaining a cautious stance; preferring to hold cash and avoid speculative positions.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -905,6 +920,18 @@
     {
       "timestamp": "2026-08-06T14:47:22Z",
       "value": 9954.02
+    },
+    {
+      "timestamp": "2026-08-06T15:49:03Z",
+      "value": 9913.36
+    },
+    {
+      "timestamp": "2026-08-06T19:57:49Z",
+      "value": 9914.45
+    },
+    {
+      "timestamp": "2026-08-07T13:48:09Z",
+      "value": 9912.45
     }
   ]
 }

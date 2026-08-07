@@ -1,63 +1,88 @@
 {
-  "cash": 2692.77,
-  "total_value": 10224.9,
+  "cash": 2133.52,
+  "total_value": 10060.03,
   "positions": {
     "JPM": {
       "shares": 3,
-      "current_price": 361.55,
+      "current_price": 355.34,
       "avg_cost": 347.9909
     },
     "BAC": {
       "shares": 32,
-      "current_price": 63.82,
+      "current_price": 62.6601,
       "avg_cost": 60.3732
     },
     "GS": {
       "shares": 2,
-      "current_price": 1061.0,
+      "current_price": 1040.27,
       "avg_cost": 1002.01
-    },
-    "WFC": {
-      "shares": 5,
-      "avg_cost": 86.49,
-      "current_price": 89.73
     },
     "C": {
       "shares": 5,
       "avg_cost": 133.26,
-      "current_price": 138.725
+      "current_price": 133.03
     },
     "AXP": {
       "shares": 2,
       "avg_cost": 343.94,
-      "current_price": 348.73
+      "current_price": 340.83
     },
     "COF": {
       "shares": 2,
       "avg_cost": 218.245,
-      "current_price": 221.75
+      "current_price": 218.46
+    },
+    "MET": {
+      "shares": 10,
+      "current_price": 99.11,
+      "avg_cost": 99.09
     }
   },
-  "total_return_pct": 2.25,
+  "total_return_pct": 0.6,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10224.9,
-  "today_date": "2026-08-06",
-  "last_action": "Analysed \u2014 no trades",
-  "last_updated": "2026-08-06T14:40:03Z",
+  "today_start_value": 10060.03,
+  "today_date": "2026-08-07",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T13:42:11Z",
   "last_session": {
-    "at": "2026-08-06T14:40:03Z",
+    "at": "2026-08-07T13:42:11Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "WFC",
+        -1.29
+      ],
+      [
+        "MA",
+        -1.0
+      ],
+      [
+        "V",
+        -0.99
+      ],
+      [
+        "MET",
+        -0.84
+      ],
+      [
+        "GS",
+        0.8
+      ],
+      [
+        "PGR",
+        -0.78
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -920,6 +945,18 @@
     {
       "timestamp": "2026-08-06T14:40:03Z",
       "value": 10224.9
+    },
+    {
+      "timestamp": "2026-08-06T15:37:35Z",
+      "value": 10118.36
+    },
+    {
+      "timestamp": "2026-08-06T19:55:02Z",
+      "value": 10082.77
+    },
+    {
+      "timestamp": "2026-08-07T13:42:11Z",
+      "value": 10060.03
     }
   ]
 }

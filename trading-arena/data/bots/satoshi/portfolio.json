@@ -1,33 +1,68 @@
 {
-  "cash": 5713.77,
-  "total_value": 8874.84,
+  "cash": 5135.95,
+  "total_value": 9049.28,
   "positions": {
     "MSTR": {
       "shares": 33,
-      "current_price": 95.79,
+      "current_price": 101.17,
       "avg_cost": 99.4993
+    },
+    "RIOT": {
+      "shares": 20,
+      "current_price": 21.9886,
+      "avg_cost": 22.1438
+    },
+    "CLSK": {
+      "shares": 10,
+      "avg_cost": 13.495,
+      "current_price": 13.495
     }
   },
-  "total_return_pct": -11.25,
+  "total_return_pct": -9.51,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
   "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 8874.84,
-  "today_date": "2026-08-06",
-  "last_action": "...",
-  "last_updated": "2026-08-06T14:48:06Z",
+  "today_start_value": 9049.28,
+  "today_date": "2026-08-07",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T13:51:00Z",
   "last_session": {
-    "at": "2026-08-06T14:48:06Z",
+    "at": "2026-08-07T13:51:00Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CLSK",
+        6.12
+      ],
+      [
+        "WULF",
+        5.68
+      ],
+      [
+        "IREN",
+        4.66
+      ],
+      [
+        "MSTR",
+        4.27
+      ],
+      [
+        "CIFR",
+        4.23
+      ],
+      [
+        "HUT",
+        4.21
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -890,6 +925,18 @@
     {
       "timestamp": "2026-08-06T14:48:06Z",
       "value": 8874.84
+    },
+    {
+      "timestamp": "2026-08-06T15:54:06Z",
+      "value": 8935.23
+    },
+    {
+      "timestamp": "2026-08-06T19:58:30Z",
+      "value": 8882.75
+    },
+    {
+      "timestamp": "2026-08-07T13:51:00Z",
+      "value": 9049.28
     }
   ]
 }
