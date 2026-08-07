@@ -1,49 +1,54 @@
 {
-  "cash": 1548.63,
-  "total_value": 8293.46,
+  "cash": 1140.53,
+  "total_value": 8247.08,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 333.355
+      "current_price": 328.4
     },
     "CRSP": {
       "shares": 46,
-      "current_price": 53.3392,
+      "current_price": 53.43,
       "avg_cost": 55.363
     },
     "NTLA": {
       "shares": 47,
-      "current_price": 11.79,
+      "current_price": 11.7,
       "avg_cost": 13.2833
     },
     "BEAM": {
       "shares": 31,
-      "current_price": 27.465,
+      "current_price": 27.2032,
       "avg_cost": 33.9863
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 342.7,
-      "current_price": 313.2
+      "current_price": 311.67
     },
     "PACB": {
       "shares": 200,
       "avg_cost": 1.175,
-      "current_price": 1.195
+      "current_price": 1.185
+    },
+    "RKLB": {
+      "shares": 5,
+      "avg_cost": 81.6201,
+      "current_price": 81.6201
     }
   },
-  "total_return_pct": -17.07,
+  "total_return_pct": -17.53,
   "total_return_usd": 0.0,
-  "today_pnl": 70.06,
-  "today_pnl_pct": 0.85,
+  "today_pnl": 23.68,
+  "today_pnl_pct": 0.29,
   "total_trades": 0,
   "today_start_value": 8223.4,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T15:49:29Z",
+  "last_updated": "2026-08-07T16:29:48Z",
   "last_session": {
-    "at": "2026-08-07T15:49:29Z",
+    "at": "2026-08-07T16:29:48Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -51,27 +56,27 @@
     "top_movers": [
       [
         "TWLO",
-        30.15
+        31.05
       ],
       [
         "PLTR",
-        8.57
+        8.79
       ],
       [
         "RKLB",
-        7.47
+        7.9
       ],
       [
         "PATH",
-        5.89
-      ],
-      [
-        "NTLA",
-        4.89
+        5.82
       ],
       [
         "COIN",
-        4.42
+        4.54
+      ],
+      [
+        "NTLA",
+        4.09
       ]
     ],
     "news_read": [],
@@ -956,6 +961,10 @@
     {
       "timestamp": "2026-08-07T15:49:29Z",
       "value": 8293.46
+    },
+    {
+      "timestamp": "2026-08-07T16:29:48Z",
+      "value": 8247.08
     }
   ]
 }

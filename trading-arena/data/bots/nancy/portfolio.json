@@ -1,77 +1,72 @@
 {
-  "cash": 625.56,
-  "total_value": 10937.22,
+  "cash": 1584.23,
+  "total_value": 10872.25,
   "positions": {
     "NVDA": {
       "shares": 18,
-      "current_price": 224.58,
+      "current_price": 222.34,
       "avg_cost": 193.2009
     },
     "AAPL": {
       "shares": 10,
-      "current_price": 313.2,
+      "current_price": 311.67,
       "avg_cost": 311.6123
-    },
-    "AMD": {
-      "shares": 2,
-      "avg_cost": 492.6849,
-      "current_price": 482.795
     },
     "MSFT": {
       "shares": 2,
       "avg_cost": 499.46,
-      "current_price": 502.095
+      "current_price": 502.891
     },
     "INTC": {
       "shares": 5,
       "avg_cost": 103.35,
-      "current_price": 101.2
+      "current_price": 100.52
     },
     "QCOM": {
       "shares": 4,
       "avg_cost": 165.3588,
-      "current_price": 165.3588
+      "current_price": 165.205
     }
   },
-  "total_return_pct": 9.37,
+  "total_return_pct": 8.72,
   "total_return_usd": 0.0,
-  "today_pnl": 29.83,
-  "today_pnl_pct": 0.27,
+  "today_pnl": -35.14,
+  "today_pnl_pct": -0.32,
   "total_trades": 0,
   "today_start_value": 10907.39,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T15:48:52Z",
+  "last_updated": "2026-08-07T16:29:10Z",
   "last_session": {
-    "at": "2026-08-07T15:48:52Z",
+    "at": "2026-08-07T16:29:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TSLA",
-        4.26
-      ],
-      [
         "QCOM",
-        3.06
+        3.04
       ],
       [
-        "NVDA",
-        2.56
+        "TSLA",
+        2.76
       ],
       [
         "CRM",
-        2.56
+        2.37
+      ],
+      [
+        "AMD",
+        -2.07
+      ],
+      [
+        "MU",
+        -1.86
       ],
       [
         "AMAT",
-        2.2
-      ],
-      [
-        "AMZN",
-        2.19
+        1.7
       ]
     ],
     "news_read": [],
@@ -956,6 +951,10 @@
     {
       "timestamp": "2026-08-07T15:48:52Z",
       "value": 10937.22
+    },
+    {
+      "timestamp": "2026-08-07T16:29:10Z",
+      "value": 10872.25
     }
   ]
 }
