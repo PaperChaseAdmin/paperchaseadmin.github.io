@@ -1,52 +1,57 @@
 {
-  "cash": 6589.94,
-  "total_value": 9717.59,
+  "cash": 4522.94,
+  "total_value": 9724.04,
   "positions": {
     "DIS": {
       "shares": 30,
       "avg_cost": 104.255,
-      "current_price": 104.255
+      "current_price": 104.47
+    },
+    "INTC": {
+      "shares": 20,
+      "avg_cost": 103.35,
+      "current_price": 103.35
     }
   },
-  "total_return_pct": -2.82,
+  "total_return_pct": -2.76,
   "total_return_usd": 0.0,
-  "today_pnl": -9.79,
-  "today_pnl_pct": -0.1,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9727.38,
-  "today_date": "2026-08-06",
+  "today_start_value": 9724.04,
+  "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-06T19:55:49Z",
+  "last_updated": "2026-08-07T13:43:29Z",
   "last_session": {
-    "at": "2026-08-06T19:55:49Z",
+    "at": "2026-08-07T13:43:29Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "GM",
-        -2.75
+        "INTC",
+        3.41
       ],
       [
-        "PYPL",
-        2.6
-      ],
-      [
-        "VFC",
-        -2.53
-      ],
-      [
-        "DIS",
-        2.46
-      ],
-      [
-        "BBWI",
-        -2.45
+        "NOK",
+        1.8
       ],
       [
         "CVS",
-        -2.22
+        -1.62
+      ],
+      [
+        "SBUX",
+        -1.16
+      ],
+      [
+        "T",
+        -0.8
+      ],
+      [
+        "BBWI",
+        -0.57
       ]
     ],
     "news_read": [],
@@ -923,6 +928,10 @@
     {
       "timestamp": "2026-08-06T19:55:49Z",
       "value": 9717.59
+    },
+    {
+      "timestamp": "2026-08-07T13:43:29Z",
+      "value": 9724.04
     }
   ]
 }

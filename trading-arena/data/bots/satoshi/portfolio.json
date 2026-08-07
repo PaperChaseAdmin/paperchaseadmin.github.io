@@ -1,29 +1,34 @@
 {
-  "cash": 5270.9,
-  "total_value": 8882.75,
+  "cash": 5135.95,
+  "total_value": 9049.28,
   "positions": {
     "MSTR": {
       "shares": 33,
-      "current_price": 96.35,
+      "current_price": 101.17,
       "avg_cost": 99.4993
     },
     "RIOT": {
       "shares": 20,
-      "current_price": 21.615,
+      "current_price": 21.9886,
       "avg_cost": 22.1438
+    },
+    "CLSK": {
+      "shares": 10,
+      "avg_cost": 13.495,
+      "current_price": 13.495
     }
   },
-  "total_return_pct": -11.17,
+  "total_return_pct": -9.51,
   "total_return_usd": 0.0,
-  "today_pnl": 7.91,
-  "today_pnl_pct": 0.09,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 8874.84,
-  "today_date": "2026-08-06",
+  "today_start_value": 9049.28,
+  "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-06T19:58:30Z",
+  "last_updated": "2026-08-07T13:51:00Z",
   "last_session": {
-    "at": "2026-08-06T19:58:30Z",
+    "at": "2026-08-07T13:51:00Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -31,27 +36,27 @@
     "top_movers": [
       [
         "CLSK",
-        -5.59
+        6.12
       ],
       [
-        "CORZ",
-        -3.51
+        "WULF",
+        5.68
       ],
       [
-        "MARA",
-        -3.43
+        "IREN",
+        4.66
       ],
       [
-        "PYPL",
-        2.6
+        "MSTR",
+        4.27
       ],
       [
-        "COIN",
-        -2.08
+        "CIFR",
+        4.23
       ],
       [
-        "HOOD",
-        -2.07
+        "HUT",
+        4.21
       ]
     ],
     "news_read": [],
@@ -928,6 +933,10 @@
     {
       "timestamp": "2026-08-06T19:58:30Z",
       "value": 8882.75
+    },
+    {
+      "timestamp": "2026-08-07T13:51:00Z",
+      "value": 9049.28
     }
   ]
 }

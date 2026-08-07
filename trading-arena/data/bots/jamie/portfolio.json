@@ -1,87 +1,82 @@
 {
-  "cash": 1701.87,
-  "total_value": 10082.77,
+  "cash": 2133.52,
+  "total_value": 10060.03,
   "positions": {
     "JPM": {
       "shares": 3,
-      "current_price": 356.13,
+      "current_price": 355.34,
       "avg_cost": 347.9909
     },
     "BAC": {
       "shares": 32,
-      "current_price": 62.815,
+      "current_price": 62.6601,
       "avg_cost": 60.3732
     },
     "GS": {
       "shares": 2,
-      "current_price": 1034.15,
+      "current_price": 1040.27,
       "avg_cost": 1002.01
-    },
-    "WFC": {
-      "shares": 5,
-      "avg_cost": 86.49,
-      "current_price": 87.85
     },
     "C": {
       "shares": 5,
       "avg_cost": 133.26,
-      "current_price": 134.57
+      "current_price": 133.03
     },
     "AXP": {
       "shares": 2,
       "avg_cost": 343.94,
-      "current_price": 343.155
+      "current_price": 340.83
     },
     "COF": {
       "shares": 2,
       "avg_cost": 218.245,
-      "current_price": 219.81
+      "current_price": 218.46
     },
     "MET": {
       "shares": 10,
-      "current_price": 99.61,
+      "current_price": 99.11,
       "avg_cost": 99.09
     }
   },
-  "total_return_pct": 0.83,
+  "total_return_pct": 0.6,
   "total_return_usd": 0.0,
-  "today_pnl": -142.13,
-  "today_pnl_pct": -1.39,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10224.9,
-  "today_date": "2026-08-06",
+  "today_start_value": 10060.03,
+  "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-06T19:55:02Z",
+  "last_updated": "2026-08-07T13:42:11Z",
   "last_session": {
-    "at": "2026-08-06T19:55:02Z",
+    "at": "2026-08-07T13:42:11Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "WFC",
+        -1.29
+      ],
+      [
+        "MA",
+        -1.0
+      ],
+      [
+        "V",
+        -0.99
+      ],
+      [
         "MET",
-        3.51
+        -0.84
       ],
       [
         "GS",
-        -2.47
+        0.8
       ],
       [
-        "C",
-        -2.23
-      ],
-      [
-        "MS",
-        -1.78
-      ],
-      [
-        "AXP",
-        -1.77
-      ],
-      [
-        "WFC",
-        -1.48
+        "PGR",
+        -0.78
       ]
     ],
     "news_read": [],
@@ -958,6 +953,10 @@
     {
       "timestamp": "2026-08-06T19:55:02Z",
       "value": 10082.77
+    },
+    {
+      "timestamp": "2026-08-07T13:42:11Z",
+      "value": 10060.03
     }
   ]
 }
