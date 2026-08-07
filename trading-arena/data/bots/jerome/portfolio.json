@@ -1,67 +1,62 @@
 {
-  "cash": 6805.47,
-  "total_value": 9912.18,
+  "cash": 8371.57,
+  "total_value": 9918.57,
   "positions": {
     "BIL": {
       "shares": 10,
       "avg_cost": 91.62,
-      "current_price": 91.47
+      "current_price": 91.475
     },
     "XLU": {
       "shares": 5,
       "avg_cost": 43.785,
-      "current_price": 43.78
+      "current_price": 43.7
     },
     "TLT": {
       "shares": 5,
       "avg_cost": 82.54,
-      "current_price": 82.5073
-    },
-    "AAPL": {
-      "shares": 5,
-      "avg_cost": 312.115,
-      "current_price": 312.115
+      "current_price": 82.75
     }
   },
-  "total_return_pct": -0.88,
+  "total_return_pct": -0.81,
   "total_return_usd": 0.0,
-  "today_pnl": -0.27,
-  "today_pnl_pct": -0.0,
+  "today_pnl": 6.12,
+  "today_pnl_pct": 0.06,
   "total_trades": 0,
   "today_start_value": 9912.45,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T19:06:56Z",
+  "last_updated": "2026-08-07T20:36:13Z",
   "last_session": {
-    "at": "2026-08-07T19:06:56Z",
+    "at": "2026-08-07T20:36:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "XLU",
-        0.92
-      ],
-      [
         "GS",
-        0.44
+        0.86
       ],
       [
-        "XLRE",
-        0.42
+        "XLU",
+        0.75
+      ],
+      [
+        "JPM",
+        0.64
       ],
       [
         "SPY",
-        0.41
+        0.57
       ],
       [
-        "VNQ",
-        0.4
+        "PFF",
+        0.38
       ],
       [
-        "XLF",
-        -0.37
+        "XLRE",
+        0.37
       ]
     ],
     "news_read": [],
@@ -958,6 +953,10 @@
     {
       "timestamp": "2026-08-07T19:06:56Z",
       "value": 9912.18
+    },
+    {
+      "timestamp": "2026-08-07T20:36:13Z",
+      "value": 9918.57
     }
   ]
 }

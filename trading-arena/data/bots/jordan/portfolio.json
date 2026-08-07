@@ -1,24 +1,29 @@
 {
-  "cash": 5011.82,
-  "total_value": 8934.35,
+  "cash": 3474.12,
+  "total_value": 8940.45,
   "positions": {
     "PLTR": {
       "shares": 23,
       "avg_cost": 170.45,
-      "current_price": 170.545
+      "current_price": 170.81
+    },
+    "COIN": {
+      "shares": 10,
+      "avg_cost": 153.77,
+      "current_price": 153.77
     }
   },
-  "total_return_pct": -10.66,
+  "total_return_pct": -10.6,
   "total_return_usd": 0.0,
-  "today_pnl": 7.33,
-  "today_pnl_pct": 0.08,
+  "today_pnl": 13.43,
+  "today_pnl_pct": 0.15,
   "total_trades": 0,
   "today_start_value": 8927.02,
   "today_date": "2026-08-07",
-  "last_action": "Market is showing signs of rotation into high-momentum names; fear/greed unknown but we see PLTR surging near 10% and several crypto-related stocks up. Ready to pounce on any breakout.",
-  "last_updated": "2026-08-07T18:52:03Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T20:15:23Z",
   "last_session": {
-    "at": "2026-08-07T18:52:03Z",
+    "at": "2026-08-07T20:15:23Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,33 +31,33 @@
     "top_movers": [
       [
         "PLTR",
-        9.36
+        9.56
       ],
       [
         "MARA",
-        -5.4
+        -6.95
       ],
       [
         "COIN",
-        4.98
+        5.76
       ],
       [
         "RIVN",
-        4.29
-      ],
-      [
-        "HOOD",
-        2.84
+        4.26
       ],
       [
         "RBLX",
-        2.76
+        3.75
+      ],
+      [
+        "UPST",
+        3.47
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "PLTR leads watchlist with +9.4% intraday, approaching the 10% trigger. No other names exceed threshold, but COIN (+5%) and RIVN (+4.3%) show strength. Current PLTR position near max allocation; cash ample. Await next >10% mover or breakout to deploy aggressively.",
-    "outlook": "Market is showing signs of rotation into high-momentum names; fear/greed unknown but we see PLTR surging near 10% and several crypto-related stocks up. Ready to pounce on any breakout.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -943,6 +948,10 @@
     {
       "timestamp": "2026-08-07T18:52:03Z",
       "value": 8934.35
+    },
+    {
+      "timestamp": "2026-08-07T20:15:23Z",
+      "value": 8940.45
     }
   ]
 }
