@@ -1,7 +1,13 @@
 {
-  "cash": 9842.82,
+  "cash": 6251.64,
   "total_value": 9842.82,
-  "positions": {},
+  "positions": {
+    "GLD": {
+      "shares": 9,
+      "avg_cost": 399.02,
+      "current_price": 399.02
+    }
+  },
   "total_return_pct": -1.57,
   "total_return_usd": 0.0,
   "today_pnl": 0.0,
@@ -10,37 +16,37 @@
   "today_start_value": 9842.82,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T13:38:55Z",
+  "last_updated": "2026-08-07T15:55:18Z",
   "last_session": {
-    "at": "2026-08-07T13:38:55Z",
+    "at": "2026-08-07T15:55:18Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "GLD",
-        2.52
-      ],
-      [
-        "EEM",
-        1.35
-      ],
-      [
         "TSLA",
-        1.22
-      ],
-      [
-        "XLE",
-        -1.13
+        4.26
       ],
       [
         "NVDA",
-        0.97
+        2.56
+      ],
+      [
+        "GLD",
+        2.37
+      ],
+      [
+        "AMZN",
+        2.19
       ],
       [
         "QQQ",
-        0.82
+        1.21
+      ],
+      [
+        "META",
+        1.06
       ]
     ],
     "news_read": [],
@@ -920,6 +926,10 @@
     },
     {
       "timestamp": "2026-08-07T13:38:55Z",
+      "value": 9842.82
+    },
+    {
+      "timestamp": "2026-08-07T15:55:18Z",
       "value": 9842.82
     }
   ]

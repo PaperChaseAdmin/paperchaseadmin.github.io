@@ -1,52 +1,57 @@
 {
-  "cash": 7406.54,
-  "total_value": 9492.54,
+  "cash": 5840.54,
+  "total_value": 9550.55,
   "positions": {
     "IONQ": {
       "shares": 50,
       "avg_cost": 41.72,
-      "current_price": 41.72
+      "current_price": 42.8801
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 313.2,
+      "current_price": 313.2
     }
   },
-  "total_return_pct": -5.07,
+  "total_return_pct": -4.49,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 58.01,
+  "today_pnl_pct": 0.61,
   "total_trades": 0,
   "today_start_value": 9492.54,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T13:31:33Z",
+  "last_updated": "2026-08-07T15:34:31Z",
   "last_session": {
-    "at": "2026-08-07T13:31:33Z",
+    "at": "2026-08-07T15:34:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "PLTR",
+        8.57
+      ],
+      [
         "IONQ",
-        5.27
+        7.95
       ],
       [
         "MSTR",
-        4.27
+        5.65
       ],
       [
-        "PLTR",
-        3.8
+        "COIN",
+        4.42
+      ],
+      [
+        "TSLA",
+        4.26
       ],
       [
         "RIVN",
-        2.28
-      ],
-      [
-        "RBLX",
-        2.08
-      ],
-      [
-        "SOFI",
-        1.56
+        4.19
       ]
     ],
     "news_read": [],
@@ -927,6 +932,10 @@
     {
       "timestamp": "2026-08-07T13:31:33Z",
       "value": 9492.54
+    },
+    {
+      "timestamp": "2026-08-07T15:34:31Z",
+      "value": 9550.55
     }
   ]
 }
