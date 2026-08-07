@@ -1,57 +1,52 @@
 {
-  "cash": 4326.12,
-  "total_value": 8927.02,
+  "cash": 5892.12,
+  "total_value": 8956.32,
   "positions": {
-    "AAPL": {
-      "shares": 5,
-      "avg_cost": 310.18,
-      "current_price": 313.16
-    },
     "MSTR": {
       "shares": 30,
       "avg_cost": 101.17,
-      "current_price": 101.17
+      "current_price": 102.14
     }
   },
-  "total_return_pct": -10.73,
+  "total_return_pct": -10.44,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 29.3,
+  "today_pnl_pct": 0.33,
   "total_trades": 0,
   "today_start_value": 8927.02,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T13:43:56Z",
+  "last_updated": "2026-08-07T16:20:15Z",
   "last_session": {
-    "at": "2026-08-07T13:43:56Z",
+    "at": "2026-08-07T16:20:15Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "MSTR",
-        4.27
-      ],
-      [
-        "RIOT",
-        4.13
-      ],
-      [
         "PLTR",
-        3.8
+        8.57
       ],
       [
-        "HOOD",
-        2.95
+        "MSTR",
+        5.65
+      ],
+      [
+        "COIN",
+        4.42
+      ],
+      [
+        "TSLA",
+        4.26
       ],
       [
         "RIVN",
-        2.28
+        4.19
       ],
       [
-        "RBLX",
-        2.08
+        "HOOD",
+        4.01
       ]
     ],
     "news_read": [],
@@ -932,6 +927,10 @@
     {
       "timestamp": "2026-08-07T13:43:56Z",
       "value": 8927.02
+    },
+    {
+      "timestamp": "2026-08-07T16:20:15Z",
+      "value": 8956.32
     }
   ]
 }
