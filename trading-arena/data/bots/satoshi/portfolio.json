@@ -1,52 +1,57 @@
 {
-  "cash": 5676.43,
-  "total_value": 8919.34,
+  "cash": 4907.58,
+  "total_value": 8950.28,
   "positions": {
     "MSTR": {
       "shares": 33,
-      "current_price": 98.27,
+      "current_price": 99.2077,
       "avg_cost": 99.4993
+    },
+    "COIN": {
+      "shares": 5,
+      "avg_cost": 153.77,
+      "current_price": 153.77
     }
   },
-  "total_return_pct": -10.81,
+  "total_return_pct": -10.5,
   "total_return_usd": 0.0,
-  "today_pnl": -129.94,
-  "today_pnl_pct": -1.44,
+  "today_pnl": -99.0,
+  "today_pnl_pct": -1.09,
   "total_trades": 0,
   "today_start_value": 9049.28,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T19:15:22Z",
+  "last_updated": "2026-08-07T20:39:46Z",
   "last_session": {
-    "at": "2026-08-07T19:15:22Z",
+    "at": "2026-08-07T20:39:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "HUT",
-        -5.71
-      ],
-      [
-        "CIFR",
-        -5.7
-      ],
-      [
         "MARA",
-        -5.4
-      ],
-      [
-        "COIN",
-        4.98
+        -6.95
       ],
       [
         "IREN",
-        4.64
+        6.89
+      ],
+      [
+        "CIFR",
+        -6.29
+      ],
+      [
+        "COIN",
+        5.76
+      ],
+      [
+        "HUT",
+        -5.3
       ],
       [
         "WULF",
-        -4.23
+        -3.55
       ]
     ],
     "news_read": [],
@@ -943,6 +948,10 @@
     {
       "timestamp": "2026-08-07T19:15:22Z",
       "value": 8919.34
+    },
+    {
+      "timestamp": "2026-08-07T20:39:46Z",
+      "value": 8950.28
     }
   ]
 }
