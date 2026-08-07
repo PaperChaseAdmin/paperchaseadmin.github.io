@@ -1,39 +1,44 @@
 {
-  "cash": 4511.66,
-  "total_value": 7916.28,
+  "cash": 4172.22,
+  "total_value": 7875.01,
   "positions": {
     "TQQQ": {
       "shares": 30,
       "avg_cost": 73.34,
-      "current_price": 74.565
+      "current_price": 73.5
     },
     "SOXL": {
       "shares": 3,
       "avg_cost": 113.165,
-      "current_price": 139.4502
+      "current_price": 137.055
     },
     "NVDA": {
       "shares": 2,
       "avg_cost": 220.965,
-      "current_price": 224.58
+      "current_price": 222.34
     },
     "IONQ": {
       "shares": 7,
       "avg_cost": 41.72,
-      "current_price": 42.8801
+      "current_price": 43.215
+    },
+    "PLTR": {
+      "shares": 2,
+      "avg_cost": 169.72,
+      "current_price": 169.72
     }
   },
-  "total_return_pct": -20.84,
+  "total_return_pct": -21.25,
   "total_return_usd": 0.0,
-  "today_pnl": 37.95,
-  "today_pnl_pct": 0.48,
+  "today_pnl": -3.32,
+  "today_pnl_pct": -0.04,
   "total_trades": 0,
   "today_start_value": 7878.33,
   "today_date": "2026-08-07",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T16:08:01Z",
+  "last_updated": "2026-08-07T16:33:00Z",
   "last_session": {
-    "at": "2026-08-07T16:08:01Z",
+    "at": "2026-08-07T16:33:00Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,27 +46,27 @@
     "top_movers": [
       [
         "PLTR",
-        8.57
+        8.79
       ],
       [
         "IONQ",
-        7.95
+        8.75
       ],
       [
         "RKLB",
-        7.47
+        7.9
       ],
       [
-        "SOXL",
-        5.41
+        "AXON",
+        4.26
       ],
       [
         "SMCI",
-        4.66
+        3.51
       ],
       [
-        "TSLA",
-        4.26
+        "SOXL",
+        3.29
       ]
     ],
     "news_read": [],
@@ -946,6 +951,10 @@
     {
       "timestamp": "2026-08-07T16:08:01Z",
       "value": 7916.28
+    },
+    {
+      "timestamp": "2026-08-07T16:33:00Z",
+      "value": 7875.01
     }
   ]
 }

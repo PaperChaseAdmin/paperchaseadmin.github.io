@@ -1,98 +1,103 @@
 {
-  "cash": 506.26,
-  "total_value": 10645.85,
+  "cash": 500.92,
+  "total_value": 10620.57,
   "positions": {
     "XPEV": {
       "shares": 47,
-      "current_price": 12.16,
+      "current_price": 12.085,
       "avg_cost": 13.0675
     },
     "NIO": {
       "shares": 335,
-      "current_price": 4.7401,
+      "current_price": 4.725,
       "avg_cost": 4.9664
     },
     "BABA": {
       "shares": 26,
-      "current_price": 127.9,
+      "current_price": 127.8101,
       "avg_cost": 100.8292
     },
     "PDD": {
       "shares": 20,
       "avg_cost": 84.41,
-      "current_price": 91.98
+      "current_price": 91.725
     },
     "JD": {
       "shares": 15,
-      "current_price": 32.93,
+      "current_price": 32.915,
       "avg_cost": 30.7594
     },
     "LI": {
       "shares": 70,
-      "current_price": 12.9951,
+      "current_price": 12.95,
       "avg_cost": 12.69
     },
     "FUTU": {
       "shares": 2,
       "avg_cost": 103.65,
-      "current_price": 108.885
+      "current_price": 107.95
     },
     "BIDU": {
       "shares": 8,
-      "current_price": 110.07,
+      "current_price": 109.76,
       "avg_cost": 107.4144
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 305.52,
-      "current_price": 313.2
+      "current_price": 311.67
+    },
+    "IQ": {
+      "shares": 4,
+      "avg_cost": 1.335,
+      "current_price": 1.335
     }
   },
-  "total_return_pct": 6.46,
+  "total_return_pct": 6.21,
   "total_return_usd": 0.0,
-  "today_pnl": 103.77,
-  "today_pnl_pct": 0.98,
+  "today_pnl": 78.49,
+  "today_pnl_pct": 0.74,
   "total_trades": 0,
   "today_start_value": 10542.08,
   "today_date": "2026-08-07",
-  "last_action": "...",
-  "last_updated": "2026-08-07T16:25:16Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-07T16:36:43Z",
   "last_session": {
-    "at": "2026-08-07T16:25:16Z",
+    "at": "2026-08-07T16:36:43Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "FUTU",
-        4.18
-      ],
-      [
-        "XPEV",
-        4.15
-      ],
-      [
         "IQ",
         3.49
       ],
       [
+        "XPEV",
+        3.47
+      ],
+      [
+        "FUTU",
+        3.28
+      ],
+      [
         "NIO",
-        3.15
+        2.61
       ],
       [
         "LI",
-        2.44
+        2.05
       ],
       [
-        "TIGR",
-        1.37
+        "TME",
+        -1.2
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -971,6 +976,10 @@
     {
       "timestamp": "2026-08-07T16:25:16Z",
       "value": 10645.85
+    },
+    {
+      "timestamp": "2026-08-07T16:36:43Z",
+      "value": 10620.57
     }
   ]
 }
