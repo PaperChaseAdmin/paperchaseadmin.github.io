@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T14:05:14Z",
+  "updated_at": "2026-08-08T14:56:45Z",
   "crypto": {
     "fear_greed": {
       "value": 30,
@@ -11,77 +11,138 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 64974,
+        "price_usd": 65110,
         "change_24h": -0.3,
-        "market_cap": 1303868695429,
-        "volume_24h": 15483490243
+        "market_cap": 1306593632943,
+        "volume_24h": 14439570423
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1919.04,
+        "price_usd": 1922.97,
         "change_24h": -0.5,
-        "market_cap": 231593741533,
-        "volume_24h": 4734521973
+        "market_cap": 232067825739,
+        "volume_24h": 4471262533
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 598.0,
+        "price_usd": 608.78,
         "change_24h": 1.1,
-        "market_cap": 79632270170,
-        "volume_24h": 411478719
+        "market_cap": 81067540743,
+        "volume_24h": 518569697
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.041,
+        "price_usd": 1.044,
         "change_24h": 0.5,
-        "market_cap": 65119788796,
-        "volume_24h": 1060653243
+        "market_cap": 65294724140,
+        "volume_24h": 1005981075
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 75.53,
+        "price_usd": 76.1,
         "change_24h": 2.3,
-        "market_cap": 43962315378,
-        "volume_24h": 1443624832
+        "market_cap": 44293911119,
+        "volume_24h": 1463846134
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.070485,
+        "price_usd": 0.071277,
         "change_24h": 0.7,
-        "market_cap": 10953831089,
-        "volume_24h": 308992125
+        "market_cap": 11077014194,
+        "volume_24h": 321078943
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.199985,
+        "price_usd": 0.199788,
         "change_24h": -0.2,
-        "market_cap": 7470137336,
-        "volume_24h": 260608656
+        "market_cap": 7462773224,
+        "volume_24h": 249424582
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 8.32,
+        "price_usd": 8.36,
         "change_24h": 0.6,
-        "market_cap": 6226987980,
-        "volume_24h": 142723214
+        "market_cap": 6251888432,
+        "volume_24h": 141810384
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.52,
+        "price_usd": 6.55,
         "change_24h": 0.5,
-        "market_cap": 2813950782,
-        "volume_24h": 127145088
+        "market_cap": 2827684775,
+        "volume_24h": 125167769
       }
     ],
-    "top_mentioned": [],
+    "top_mentioned": [
+      {
+        "symbol": "BTC",
+        "mentions": 6,
+        "price_usd": 65110,
+        "change_24h": -0.3
+      },
+      {
+        "symbol": "LINK",
+        "mentions": 1,
+        "price_usd": 8.36,
+        "change_24h": 0.6
+      },
+      {
+        "symbol": "ETH",
+        "mentions": 0,
+        "price_usd": 1922.97,
+        "change_24h": -0.5
+      },
+      {
+        "symbol": "SOL",
+        "mentions": 0,
+        "price_usd": 76.1,
+        "change_24h": 2.3
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 0,
+        "price_usd": 608.78,
+        "change_24h": 1.1
+      },
+      {
+        "symbol": "XRP",
+        "mentions": 0,
+        "price_usd": 1.044,
+        "change_24h": 0.5
+      },
+      {
+        "symbol": "ADA",
+        "mentions": 0,
+        "price_usd": 0.199788,
+        "change_24h": -0.2
+      },
+      {
+        "symbol": "DOGE",
+        "mentions": 0,
+        "price_usd": 0.071277,
+        "change_24h": 0.7
+      },
+      {
+        "symbol": "AVAX",
+        "mentions": 0,
+        "price_usd": 6.55,
+        "change_24h": 0.5
+      },
+      {
+        "symbol": "TON",
+        "mentions": 0,
+        "price_usd": null,
+        "change_24h": null
+      }
+    ],
     "news": [
       {
         "title": "Trillions in institutional money to flow into bitcoin, says Bitwise's Matt Hougan",
@@ -178,6 +239,16 @@
         "color": "red"
       },
       {
+        "title": "This $1.5 billion hack is exposing just how ‘irreversible’ stolen crypto really is",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/this-1-5-billion-hack-is-exposing-just-how-irreversible-stolen-crypto-really-is/",
+        "published": "Sat, 08 Aug 2026 14:10:51 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
         "title": "CLARITY Act is finally headed for a 60-vote Senate showdown in September",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/clarity-act-is-finally-headed-for-a-60-vote-senate-showdown-in-september/",
@@ -198,18 +269,6 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Trump Media’s $6.4 billion crypto venture canceled amid escalating Trump ethics concerns",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/trump-medias-6-4-billion-crypto-venture-canceled-amid-escalating-trump-ethics-concerns/",
-        "published": "Sat, 08 Aug 2026 12:05:04 +0000",
-        "assets": [
-          "ETH"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       }
     ],
     "news_sentiment": {
@@ -219,7 +278,28 @@
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [],
+    "reddit": [
+      {
+        "subreddit": "r/CryptoCurrency",
+        "mentions": {
+          "BTC": 6,
+          "LINK": 1,
+          "ETH": 0,
+          "SOL": 0,
+          "BNB": 0,
+          "XRP": 0,
+          "ADA": 0,
+          "DOGE": 0,
+          "AVAX": 0,
+          "TON": 0
+        },
+        "activity_score": 100,
+        "top_post": "Daily Crypto Discussion - August 7, 2026 (GMT+0)",
+        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vifjz5/daily_crypto_discussion_august_7_2026_gmt0/",
+        "top_post_score": 0,
+        "posts": 25
+      }
+    ],
     "reddit_summary": {
       "outlook": "Mixed",
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
@@ -229,20 +309,20 @@
       "summary": "Mixed: 6 bullish vs 8 bearish signals detected across crypto news data."
     },
     "fourchain": {
-      "thread_count": 199,
-      "active_threads": 140,
+      "thread_count": 201,
+      "active_threads": 141,
       "mentions": {
-        "BTC": 22,
+        "BTC": 23,
         "XRP": 7,
         "SOL": 3
       },
-      "bullish_hits": 93,
+      "bullish_hits": 94,
       "bearish_hits": 54,
-      "bullish_pct": 63,
+      "bullish_pct": 64,
       "top_coin": "BTC",
       "top_posts": [
-        "/smg/ - stock market general the eternal climb &gt;educational sites: https://www.investopedia.com https://www.khanacade",
         "/smg/ - stock market general putting the fun in fundamental analysis edition &gt;educational sites: https://www.investop",
+        "/smg/ - stock market general weekend has started edition &gt;educational sites: https://www.investopedia.com https://www",
         "/smg/ stock market general taste the gold edition &gt;educational sites: https://www.investopedia.com https://www.khanac",
         "/smg/ stock market general house of bulls edition &gt;educational sites: https://www.investopedia.com https://www.khanac",
         "/smg/ stock market general friday edition &gt;educational sites: https://www.investopedia.com https://www.khanacademy.or"
@@ -250,53 +330,53 @@
     },
     "cg_trending": [
       {
-        "symbol": "JIMOTHY",
-        "name": "Jimothy The Raccoon",
-        "rank": 987,
-        "score": 0,
-        "change_24h": 213.19
-      },
-      {
         "symbol": "PENGU",
         "name": "Pudgy Penguins",
         "rank": 108,
-        "score": 1,
-        "change_24h": 2.98
+        "score": 0,
+        "change_24h": 4.36
       },
       {
         "symbol": "STONKBROKER",
         "name": "StonkBroker",
-        "rank": 456,
-        "score": 2,
-        "change_24h": 31.99
+        "rank": 451,
+        "score": 1,
+        "change_24h": 52.1
       },
       {
-        "symbol": "PONS",
-        "name": "Pons",
-        "rank": 744,
+        "symbol": "CASHCAT",
+        "name": "Cash Cat",
+        "rank": 260,
+        "score": 2,
+        "change_24h": -1.01
+      },
+      {
+        "symbol": "TUT",
+        "name": "Tutorial",
+        "rank": 398,
         "score": 3,
-        "change_24h": 16.43
+        "change_24h": 99.65
       },
       {
         "symbol": "PI",
         "name": "Pi Network",
         "rank": 65,
         "score": 4,
-        "change_24h": 2.85
+        "change_24h": 3.63
       },
       {
-        "symbol": "CASHCAT",
-        "name": "Cash Cat",
-        "rank": 269,
+        "symbol": "PONS",
+        "name": "Pons",
+        "rank": 740,
         "score": 5,
-        "change_24h": -6.2
+        "change_24h": 20.94
       },
       {
-        "symbol": "HYPE",
-        "name": "Hyperliquid",
-        "rank": 10,
+        "symbol": "SLX",
+        "name": "Solstice",
+        "rank": 762,
         "score": 6,
-        "change_24h": -3.56
+        "change_24h": 18.5
       }
     ]
   },
@@ -379,30 +459,30 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "US Munitions Strain Complicates Iran Strategy",
+        "title": "LIV Golf Tries to Survive Without Saudi Billions",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-08/us-munitions-strain-complicates-iran-strategy-video",
-        "published": "Sat, 08 Aug 2026 14:01:29 GMT",
+        "url": "https://www.bloomberg.com/news/videos/2026-08-08/liv-golf-tries-to-survive-without-saudi-billions-video",
+        "published": "Sat, 08 Aug 2026 14:41:53 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Hunting Camo Moves From the Woods to Runways",
+        "title": "China’s AI Push Reshapes Its Economic Future",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-08/hunting-camo-moves-from-the-woods-to-runways-video",
-        "published": "Sat, 08 Aug 2026 13:49:35 GMT",
+        "url": "https://www.bloomberg.com/news/videos/2026-08-08/china-s-ai-push-reshapes-its-economic-future-video",
+        "published": "Sat, 08 Aug 2026 14:32:07 GMT",
         "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
-        "title": "University of California Faculty Push to Bring Back SAT and ACT Score Consideration",
+        "title": "WuXi AppTec Gets Temporary Reprieve of Chinese Military Curb",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-08/uc-faculty-push-to-bring-back-sat-and-act-video",
-        "published": "Sat, 08 Aug 2026 13:41:04 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-08/wuxi-apptec-gets-temporary-reprieve-of-chinese-military-label",
+        "published": "Sat, 08 Aug 2026 04:57:41 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
@@ -439,163 +519,163 @@
         "color": "red"
       },
       {
-        "title": "Berkshire Hathaway profit doubles, fueled by a near $13 billion investment gain",
+        "title": "‘My wife and I are both retired’: Do we dip into our $2.3 million fund to pay off our $300,000 mortgage at 2.9%?",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/berkshire-hathaway-profit-doubles-fueled-by-a-near-13-billion-investment-gain-26982ecf?mod=mw_rss_topstories",
-        "published": "Sat, 08 Aug 2026 13:43:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "‘This has been an emotionally difficult time’: My brother has cancer and my father is 94. How do I shoulder this responsibility?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/this-has-been-an-emotionally-difficult-time-my-brother-has-cancer-and-my-father-is-94-how-do-i-shoulder-this-responsibility-9da09dc4?mod=mw_rss_topstories",
-        "published": "Sat, 08 Aug 2026 12:00:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "How can we minimize taxes in retirement with a $2.3 million nest egg — while buying homes in Florida and New England?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/how-can-we-minimize-taxes-in-retirement-with-a-2-3-million-nest-egg-while-buying-homes-in-florida-and-new-england-9e2449aa?mod=mw_rss_topstories",
-        "published": "Sat, 08 Aug 2026 12:00:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Southern Company And Duke Energy: Utilities With Long-Term Potential",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4933752-southern-company-and-duke-energy-utilities-with-long-term-potential?source=feed_all_articles",
-        "published": "Sat, 08 Aug 2026 10:03:40 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "NML: Good Performance YTD, But A Decline In Oil Prices Might Weigh On Shares",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4933725-nml-good-performance-ytd-but-a-decline-on-oil-prices-might-weigh-on-shares?source=feed_all_articles",
-        "published": "Sat, 08 Aug 2026 10:00:37 -0400",
+        "url": "https://www.marketwatch.com/story/my-wife-and-i-are-both-retired-do-we-dip-into-our-2-3-million-fund-to-pay-off-our-300-000-mortgage-at-2-9-2d23d1df?mod=mw_rss_topstories",
+        "published": "Sat, 08 Aug 2026 14:48:00 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "AMD: The Market Is Pricing In A Fantasy",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4933751-amd-the-market-is-pricing-in-a-fantasy?source=feed_all_articles",
-        "published": "Sat, 08 Aug 2026 09:52:42 -0400",
-        "assets": [
-          "AMD"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "This ‘hidden’ career path is in dire need of more workers—and it can pay Gen Z over $300,000 with no degree required",
-        "source": "Fortune",
-        "url": "https://fortune.com/article/hidden-career-path-aviation-maintenance-technicians-six-figure-salaries-gen-z-job-shortage-airport-airline-workers/",
-        "published": "Sat, 08 Aug 2026 13:15:58 +0000",
+        "title": "Paying for pricey daycare? Here’s how to keep saving for retirement at the same time.",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/how-parents-can-keep-saving-for-retirement-during-the-expensive-childcare-years-e06b3abe?mod=mw_rss_topstories",
+        "published": "Sat, 08 Aug 2026 14:46:00 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "It’s not just Canadian tourists snubbing U.S. cities. Business leaders are cancelling more trips to America as geopolitical tensions continue",
-        "source": "Fortune",
-        "url": "https://fortune.com/article/how-are-canadians-snubbing-us-travel-tariffs-tourism/",
-        "published": "Sat, 08 Aug 2026 13:12:42 +0000",
+        "title": "Should wealthier Americans forgo their Social Security benefits as a charitable gesture?",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/should-wealthier-americans-forgo-their-social-security-benefits-as-a-charitable-gesture-2c7b6801?mod=mw_rss_topstories",
+        "published": "Sat, 08 Aug 2026 14:30:00 GMT",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
+        "title": "Sterling Infrastructure Q2 2026 Review: A Triple Beat Sold On The Mix",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4933724-sterling-infrastructure-q2-2026-review-a-triple-beat-sold-on-the-mix?source=feed_all_articles",
+        "published": "Sat, 08 Aug 2026 10:52:00 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "The tables have turned: Florida and Texas are the biggest losers in the housing market as Ohio emerges a surprise winner",
+        "title": "PDD: Cheap, But Regulatory Risk Makes The Discount Deserved",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4933760-pdd-cheap-but-regulatory-risk-makes-the-discount-deserved?source=feed_all_articles",
+        "published": "Sat, 08 Aug 2026 10:46:41 -0400",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
+      },
+      {
+        "title": "First Ship Lease Trust (FSLUF) Q4 2026 Earnings Call Prepared Remarks Transcript",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4933770-first-ship-lease-trust-fsluf-q4-2026-earnings-call-prepared-remarks-transcript?source=feed_all_articles",
+        "published": "Sat, 08 Aug 2026 10:44:03 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "GOP senators look to pass Trump’s voting bill as part of a budget package that funds the Iran war and Pentagon after recess",
         "source": "Fortune",
-        "url": "https://fortune.com/article/winners-losers-housing-market-ohio-florida-texas/",
-        "published": "Sat, 08 Aug 2026 13:09:59 +0000",
+        "url": "https://fortune.com/2026/08/08/gop-senators-trump-voting-bill-save-america-act-budget-package-iran-war-pentagon/",
+        "published": "Sat, 08 Aug 2026 14:34:16 +0000",
         "assets": [],
         "sentiment": "Neutral",
-        "score": 0.2,
+        "score": 0.0,
         "color": "yellow"
+      },
+      {
+        "title": "Senate confirms Todd Blanche as attorney general by narrowest of margins in the middle of the night",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/08/senate-confirmation-todd-blanche-attorney-general-vote-margin-trump/",
+        "published": "Sat, 08 Aug 2026 14:23:09 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Berkshire Hathaway finally spends massive cash pile, buying $10 billion in Alphabet stock and repurchasing $4.5 billion in shares",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/08/berkshire-hathaway-cash-pile-10-billion-alphabet-stock-brk-repurchasei-greg-abel-warren-buffett/",
+        "published": "Sat, 08 Aug 2026 14:15:37 +0000",
+        "assets": [
+          "GOOGL"
+        ],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": 0.28,
+      "score": -0.022,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Strait of Hormuz traffic returns to normal by August 31?",
-        "volume_24h": 716229,
+        "volume_24h": 740994,
         "yes_price": 0.1,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
       },
       {
         "title": "Fed rate hike in 2026?",
-        "volume_24h": 548865,
+        "volume_24h": 549158,
         "yes_price": 0.55,
         "url": "https://polymarket.com/market/fed-rate-hike-in-2026"
       },
       {
         "title": "US x Iran Effective Ceasefire by July 31?",
-        "volume_24h": 341978,
-        "yes_price": 0.83,
+        "volume_24h": 340070,
+        "yes_price": 0.84,
         "url": "https://polymarket.com/market/us-x-iran-effective-ceasfire-by-july-31-20260715194822045"
       },
       {
         "title": "US announces end of Iranian blockade by August 8, 2026?",
-        "volume_24h": 276199,
+        "volume_24h": 280181,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-8-2026"
       },
       {
-        "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 265091,
-        "yes_price": 0.36,
-        "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
-      },
-      {
         "title": "Iran leadership change by August 31?",
-        "volume_24h": 261410,
+        "volume_24h": 257057,
         "yes_price": 0.04,
         "url": "https://polymarket.com/market/iran-leadership-change-by-august-31-669-893"
       },
       {
         "title": "US announces end of Iranian blockade by August 15, 2026?",
-        "volume_24h": 229477,
-        "yes_price": 0.47,
+        "volume_24h": 233187,
+        "yes_price": 0.41,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-15-2026-20260713152715083-347-987-697-628-574-676"
       },
       {
-        "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 186613,
-        "yes_price": 0.62,
-        "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
+        "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
+        "volume_24h": 225246,
+        "yes_price": 0.36,
+        "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
+      },
+      {
+        "title": "Bitcoin Up or Down on August 8?",
+        "volume_24h": 170399,
+        "yes_price": 0.97,
+        "url": "https://polymarket.com/market/bitcoin-up-or-down-on-august-8-2026"
       },
       {
         "title": "Clarity Act (H.R.3633) signed into law in 2026?",
-        "volume_24h": 148036,
+        "volume_24h": 158934,
         "yes_price": 0.17,
         "url": "https://polymarket.com/market/clarity-act-signed-into-law-in-2026"
       },
       {
-        "title": "Bitcoin Up or Down on August 8?",
-        "volume_24h": 147036,
-        "yes_price": 0.81,
-        "url": "https://polymarket.com/market/bitcoin-up-or-down-on-august-8-2026"
+        "title": "Will the U.S. invade Iran before 2027?",
+        "volume_24h": 150315,
+        "yes_price": 0.17,
+        "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       }
     ],
     "polymarket_summary": {
@@ -608,8 +688,8 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Bullish",
-      "summary": "Bullish: 7 bullish vs 4 bearish signals detected across stock/finance news data."
+      "outlook": "Bearish",
+      "summary": "Bearish: 3 bullish vs 5 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -701,7 +781,24 @@
     ],
     "google_trends": {
       "stocks": [],
-      "crypto": []
+      "crypto": [
+        {
+          "keyword": "Bitcoin",
+          "interest_score": 70
+        },
+        {
+          "keyword": "Ethereum",
+          "interest_score": 10
+        },
+        {
+          "keyword": "Solana",
+          "interest_score": 12
+        },
+        {
+          "keyword": "crypto",
+          "interest_score": 42
+        }
+      ]
     }
   },
   "portfolio": [
