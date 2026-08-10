@@ -1,62 +1,57 @@
 {
-  "cash": 6259.47,
-  "total_value": 10007.37,
+  "cash": 6702.67,
+  "total_value": 9981.22,
   "positions": {
     "SHY": {
       "shares": 30,
-      "current_price": 81.83,
+      "current_price": 81.87,
       "avg_cost": 81.7733
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 83.46,
-      "current_price": 83.325
-    },
-    "XLRE": {
-      "shares": 10,
-      "avg_cost": 45.975,
-      "current_price": 45.975
+      "current_price": 82.245
     }
   },
-  "total_return_pct": 0.07,
+  "total_return_pct": -0.19,
   "total_return_usd": 0.0,
-  "today_pnl": 26.94,
-  "today_pnl_pct": 0.27,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9980.43,
-  "today_date": "2026-07-24",
+  "today_start_value": 9981.22,
+  "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T20:24:11Z",
+  "last_updated": "2026-08-10T16:23:09Z",
   "last_session": {
-    "at": "2026-07-24T20:24:11Z",
+    "at": "2026-08-10T16:23:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "XLRE",
-        2.28
-      ],
-      [
         "VNQ",
-        2.23
+        -1.52
       ],
       [
-        "GS",
-        -1.42
+        "XLRE",
+        -1.46
+      ],
+      [
+        "XLU",
+        -1.07
       ],
       [
         "BAC",
-        1.1
+        0.93
+      ],
+      [
+        "TLT",
+        -0.62
       ],
       [
         "XLF",
-        0.78
-      ],
-      [
-        "JPM",
-        0.77
+        0.42
       ]
     ],
     "news_read": [],
@@ -781,6 +776,10 @@
     {
       "timestamp": "2026-07-24T20:24:11Z",
       "value": 10007.37
+    },
+    {
+      "timestamp": "2026-08-10T16:23:09Z",
+      "value": 9981.22
     }
   ]
 }
