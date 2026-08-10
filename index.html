@@ -155,9 +155,10 @@
       <a href="/poly-watch/">Poly Watch</a>
       <a href="/stock-pick/">Stock Pick</a>
       <a href="/trading-arena/">Trading Arena</a>
+      <a href="/privacy/">Privacy Policy</a>
     </div>
   </div>
-<a href="/privacy/" style="color:var(--pc-text-3);text-decoration:none;font-size:11px;margin-left:16px">Privacy Policy</a></footer>
+</footer>
 
 <script>
 function fmtDate(pubStr) {
@@ -263,7 +264,7 @@ if (typeof window.startCountdown === 'function') {
 async function refreshData() {
   try {
     // ── Market data ──
-    var r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/data/market_data.json?t=' + Date.now());
+    var r = await fetch('https://paperchase.online/data/market_data.json?t=' + Date.now());
     if (!r.ok) return;
     var d = await r.json();
     var st = d.stocks || {};
