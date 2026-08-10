@@ -7,7 +7,6 @@ on:
   push:
     branches: ["main"]
     paths-ignore:
-      - "data/**"
       - "scrapers/**"
       - "stock-pick/data/**"
       - "predictions/data/**"
