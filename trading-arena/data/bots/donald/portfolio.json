@@ -1,64 +1,69 @@
 {
-  "cash": 3584.98,
-  "total_value": 10139.94,
+  "cash": 3392.12,
+  "total_value": 10132.13,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 603.35
+      "current_price": 603.56
     },
     "NOC": {
       "shares": 1,
       "avg_cost": 548.38,
-      "current_price": 579.95
+      "current_price": 578.44
     },
     "RTX": {
       "shares": 8,
-      "current_price": 225.24,
+      "current_price": 224.79,
       "avg_cost": 200.4213
     },
     "NUE": {
       "shares": 2,
       "avg_cost": 223.19,
-      "current_price": 275.31
+      "current_price": 274.84
     },
     "XOM": {
       "shares": 1,
       "avg_cost": 136.71,
-      "current_price": 158.22
+      "current_price": 158.09
     },
     "F": {
       "shares": 1,
       "avg_cost": 13.855,
-      "current_price": 14.045
+      "current_price": 14.005
     },
     "GEO": {
       "shares": 10,
       "avg_cost": 31.44,
-      "current_price": 31.13
+      "current_price": 30.8732
     },
     "GM": {
       "shares": 1,
       "avg_cost": 82.99,
-      "current_price": 88.73
+      "current_price": 88.67
     },
     "HAL": {
       "shares": 1,
       "avg_cost": 33.3599,
-      "current_price": 33.425
+      "current_price": 33.4201
+    },
+    "CVX": {
+      "shares": 1,
+      "avg_cost": 192.8551,
+      "current_price": 192.8551
     }
   },
-  "total_return_pct": 1.4,
+  "total_return_pct": 1.32,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -7.81,
+  "today_pnl_pct": -0.08,
   "total_trades": 0,
   "today_start_value": 10139.94,
   "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T16:03:08Z",
+  "last_updated": "2026-08-10T16:31:58Z",
   "last_session": {
-    "at": "2026-08-10T16:03:08Z",
+    "at": "2026-08-10T16:31:58Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -66,27 +71,27 @@
     "top_movers": [
       [
         "HAL",
-        4.81
+        4.78
       ],
       [
         "CVX",
-        3.41
+        3.37
       ],
       [
         "XOM",
-        3.38
+        3.29
       ],
       [
         "LMT",
-        2.64
+        2.65
       ],
       [
         "LHX",
-        2.3
+        2.16
       ],
       [
-        "NOC",
-        1.46
+        "GM",
+        1.29
       ]
     ],
     "news_read": [],
@@ -815,6 +820,10 @@
     {
       "timestamp": "2026-08-10T16:03:08Z",
       "value": 10139.94
+    },
+    {
+      "timestamp": "2026-08-10T16:31:58Z",
+      "value": 10132.13
     }
   ]
 }

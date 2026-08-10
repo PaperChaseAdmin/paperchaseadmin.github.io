@@ -1,29 +1,34 @@
 {
-  "cash": 6702.67,
-  "total_value": 9981.22,
+  "cash": 5174.92,
+  "total_value": 9980.82,
   "positions": {
     "SHY": {
       "shares": 30,
-      "current_price": 81.87,
+      "current_price": 81.8533,
       "avg_cost": 81.7733
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 83.46,
-      "current_price": 82.245
+      "current_price": 82.255
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 305.55,
+      "current_price": 305.55
     }
   },
   "total_return_pct": -0.19,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -0.4,
+  "today_pnl_pct": -0.0,
   "total_trades": 0,
   "today_start_value": 9981.22,
   "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T16:23:09Z",
+  "last_updated": "2026-08-10T16:44:26Z",
   "last_session": {
-    "at": "2026-08-10T16:23:09Z",
+    "at": "2026-08-10T16:44:26Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -35,23 +40,23 @@
       ],
       [
         "XLRE",
-        -1.46
+        -1.48
       ],
       [
         "XLU",
-        -1.07
+        -0.97
       ],
       [
         "BAC",
-        0.93
+        0.7
       ],
       [
         "TLT",
-        -0.62
+        -0.61
       ],
       [
-        "XLF",
-        0.42
+        "GS",
+        -0.61
       ]
     ],
     "news_read": [],
@@ -780,6 +785,10 @@
     {
       "timestamp": "2026-08-10T16:23:09Z",
       "value": 9981.22
+    },
+    {
+      "timestamp": "2026-08-10T16:44:26Z",
+      "value": 9980.82
     }
   ]
 }

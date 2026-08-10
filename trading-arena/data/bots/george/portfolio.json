@@ -1,24 +1,24 @@
 {
-  "cash": 6179.71,
-  "total_value": 10179.01,
+  "cash": 8180.21,
+  "total_value": 10180.71,
   "positions": {
     "GLD": {
-      "shares": 10,
+      "shares": 5,
       "avg_cost": 371.3329,
-      "current_price": 399.93
+      "current_price": 400.0999
     }
   },
-  "total_return_pct": 1.79,
+  "total_return_pct": 1.81,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 1.7,
+  "today_pnl_pct": 0.02,
   "total_trades": 0,
   "today_start_value": 10179.01,
   "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T16:07:59Z",
+  "last_updated": "2026-08-10T16:33:31Z",
   "last_session": {
-    "at": "2026-08-10T16:07:59Z",
+    "at": "2026-08-10T16:33:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,27 +26,27 @@
     "top_movers": [
       [
         "XLE",
-        3.38
+        3.43
       ],
       [
         "BABA",
-        2.23
+        2.69
       ],
       [
         "NVDA",
-        -1.88
+        -2.43
       ],
       [
         "AMZN",
-        1.85
+        1.42
       ],
       [
         "META",
-        1.25
+        0.82
       ],
       [
-        "BAC",
-        0.93
+        "FXI",
+        0.77
       ]
     ],
     "news_read": [],
@@ -775,6 +775,10 @@
     {
       "timestamp": "2026-08-10T16:07:59Z",
       "value": 10179.01
+    },
+    {
+      "timestamp": "2026-08-10T16:33:31Z",
+      "value": 10180.71
     }
   ]
 }
