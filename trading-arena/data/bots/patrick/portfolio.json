@@ -1,54 +1,59 @@
 {
-  "cash": 2519.96,
-  "total_value": 10125.67,
+  "cash": 2299.5,
+  "total_value": 10126.24,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 306.44,
+      "current_price": 306.93,
       "avg_cost": 299.3344
     },
     "EL": {
       "shares": 9,
-      "current_price": 87.2,
+      "current_price": 87.15,
       "avg_cost": 84.8412
     },
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 161.1
+      "current_price": 161.345
     },
     "RL": {
       "shares": 4,
-      "current_price": 402.655,
+      "current_price": 401.21,
       "avg_cost": 377.6787
     },
     "RH": {
       "shares": 1,
       "avg_cost": 177.31,
-      "current_price": 187.735
+      "current_price": 187.505
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 127.23
+      "current_price": 127.36
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 347.8971
+      "current_price": 348.237
+    },
+    "CAKE": {
+      "shares": 2,
+      "avg_cost": 110.23,
+      "current_price": 110.23
     }
   },
   "total_return_pct": 1.26,
   "total_return_usd": 0.0,
-  "today_pnl": -9.82,
-  "today_pnl_pct": -0.1,
+  "today_pnl": -9.25,
+  "today_pnl_pct": -0.09,
   "total_trades": 0,
   "today_start_value": 10135.49,
   "today_date": "2026-08-10",
-  "last_action": "...",
-  "last_updated": "2026-08-10T17:53:19Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-10T18:14:03Z",
   "last_session": {
-    "at": "2026-08-10T17:53:19Z",
+    "at": "2026-08-10T18:14:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -56,33 +61,33 @@
     "top_movers": [
       [
         "RH",
-        -4.29
+        -4.41
       ],
       [
         "CAKE",
-        2.93
-      ],
-      [
-        "AAPL",
-        -2.21
+        2.95
       ],
       [
         "HD",
-        -2.19
+        -2.08
       ],
       [
-        "RL",
-        1.8
+        "AAPL",
+        -2.05
       ],
       [
         "MGM",
-        -1.6
+        -1.75
+      ],
+      [
+        "EL",
+        -1.4
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -817,6 +822,10 @@
     {
       "timestamp": "2026-08-10T17:53:19Z",
       "value": 10125.67
+    },
+    {
+      "timestamp": "2026-08-10T18:14:03Z",
+      "value": 10126.24
     }
   ]
 }

@@ -1,34 +1,29 @@
 {
-  "cash": 3607.87,
-  "total_value": 8706.17,
+  "cash": 3622.51,
+  "total_value": 8685.5,
   "positions": {
-    "AMC": {
-      "shares": 6,
-      "avg_cost": 1.8998,
-      "current_price": 2.45
-    },
     "PLTR": {
       "shares": 20,
       "avg_cost": 177.7914,
-      "current_price": 177.57
+      "current_price": 176.4172
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 306.44,
-      "current_price": 306.44
+      "current_price": 306.93
     }
   },
-  "total_return_pct": -12.94,
+  "total_return_pct": -13.15,
   "total_return_usd": 0.0,
-  "today_pnl": -4.75,
-  "today_pnl_pct": -0.05,
+  "today_pnl": -25.42,
+  "today_pnl_pct": -0.29,
   "total_trades": 0,
   "today_start_value": 8710.92,
   "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T17:53:03Z",
+  "last_updated": "2026-08-10T18:13:34Z",
   "last_session": {
-    "at": "2026-08-10T17:53:03Z",
+    "at": "2026-08-10T18:13:34Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +31,27 @@
     "top_movers": [
       [
         "MARA",
-        -5.7
-      ],
-      [
-        "AMC",
-        -5.41
+        -6.11
       ],
       [
         "RIOT",
-        -5.19
+        -6.04
       ],
       [
-        "PLTR",
-        3.2
+        "AMC",
+        -5.79
       ],
       [
         "MSTR",
-        -2.63
+        -3.08
       ],
       [
         "COIN",
-        -2.62
+        -2.74
+      ],
+      [
+        "PLTR",
+        2.58
       ]
     ],
     "news_read": [],
@@ -797,6 +792,10 @@
     {
       "timestamp": "2026-08-10T17:53:03Z",
       "value": 8706.17
+    },
+    {
+      "timestamp": "2026-08-10T18:13:34Z",
+      "value": 8685.5
     }
   ]
 }

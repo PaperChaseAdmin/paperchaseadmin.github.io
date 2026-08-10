@@ -1,24 +1,29 @@
 {
-  "cash": 9296.2,
-  "total_value": 10538.45,
+  "cash": 7761.55,
+  "total_value": 10536.95,
   "positions": {
     "KHC": {
       "shares": 50,
       "avg_cost": 24.735,
-      "current_price": 24.845
+      "current_price": 24.815
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 306.93,
+      "current_price": 306.93
     }
   },
-  "total_return_pct": 5.38,
+  "total_return_pct": 5.37,
   "total_return_usd": 0.0,
-  "today_pnl": 8.9,
-  "today_pnl_pct": 0.08,
+  "today_pnl": 7.4,
+  "today_pnl_pct": 0.07,
   "total_trades": 0,
   "today_start_value": 10529.55,
   "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T17:44:30Z",
+  "last_updated": "2026-08-10T18:11:30Z",
   "last_session": {
-    "at": "2026-08-10T17:44:30Z",
+    "at": "2026-08-10T18:11:30Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,27 +31,27 @@
     "top_movers": [
       [
         "OXY",
-        4.68
+        4.71
       ],
       [
         "INTC",
-        -2.91
+        -3.71
       ],
       [
         "BABA",
-        2.9
-      ],
-      [
-        "KHC",
-        -1.88
+        2.64
       ],
       [
         "STLD",
-        1.83
+        1.99
       ],
       [
-        "JD",
-        1.29
+        "KHC",
+        -1.99
+      ],
+      [
+        "CMCSA",
+        -1.26
       ]
     ],
     "news_read": [],
@@ -787,6 +792,10 @@
     {
       "timestamp": "2026-08-10T17:44:30Z",
       "value": 10538.45
+    },
+    {
+      "timestamp": "2026-08-10T18:11:30Z",
+      "value": 10536.95
     }
   ]
 }
