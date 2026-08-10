@@ -1,72 +1,67 @@
 {
-  "cash": 2492.92,
-  "total_value": 8921.82,
+  "cash": 2683.72,
+  "total_value": 8906.21,
   "positions": {
     "MSTR": {
       "shares": 35,
-      "current_price": 97.96,
+      "current_price": 97.61,
       "avg_cost": 100.6991
     },
     "COIN": {
       "shares": 15,
-      "current_price": 149.655,
+      "current_price": 149.936,
       "avg_cost": 163.0267
-    },
-    "MARA": {
-      "shares": 20,
-      "current_price": 9.615,
-      "avg_cost": 12.7487
     },
     "CLSK": {
       "shares": 31,
-      "current_price": 11.825,
+      "current_price": 11.705,
       "avg_cost": 14.2452
     },
     "RIOT": {
       "shares": 10,
       "avg_cost": 23.41,
-      "current_price": 19.66
+      "current_price": 19.425
     }
   },
-  "total_return_pct": -10.78,
+  "total_return_pct": -10.94,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -15.61,
+  "today_pnl_pct": -0.17,
   "total_trades": 0,
   "today_start_value": 8921.82,
   "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T16:26:26Z",
+  "last_updated": "2026-08-10T16:49:03Z",
   "last_session": {
-    "at": "2026-08-10T16:26:26Z",
+    "at": "2026-08-10T16:49:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "CIFR",
-        -4.86
-      ],
-      [
         "MARA",
-        -4.78
-      ],
-      [
-        "WULF",
-        -4.54
-      ],
-      [
-        "CORZ",
-        -4.19
+        -5.55
       ],
       [
         "RIOT",
-        -4.12
+        -5.46
       ],
       [
-        "BTBT",
-        -3.99
+        "CORZ",
+        -5.43
+      ],
+      [
+        "WULF",
+        -4.92
+      ],
+      [
+        "CLSK",
+        -4.84
+      ],
+      [
+        "CIFR",
+        -4.74
       ]
     ],
     "news_read": [],
@@ -795,6 +790,10 @@
     {
       "timestamp": "2026-08-10T16:26:26Z",
       "value": 8921.82
+    },
+    {
+      "timestamp": "2026-08-10T16:49:03Z",
+      "value": 8906.21
     }
   ]
 }

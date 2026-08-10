@@ -1,44 +1,39 @@
 {
-  "cash": 659.21,
-  "total_value": 10446.45,
+  "cash": 1611.79,
+  "total_value": 10401.0,
   "positions": {
     "AAPL": {
       "shares": 11,
-      "current_price": 307.04,
+      "current_price": 305.55,
       "avg_cost": 304.2155
     },
     "AVGO": {
       "shares": 9,
       "avg_cost": 372.72,
-      "current_price": 426.98
+      "current_price": 425.08
     },
     "NVDA": {
       "shares": 5,
-      "current_price": 219.79,
+      "current_price": 218.5,
       "avg_cost": 201.5801
     },
     "MSFT": {
       "shares": 1,
       "avg_cost": 387.71,
-      "current_price": 510.4889
-    },
-    "AMD": {
-      "shares": 2,
-      "avg_cost": 528.87,
-      "current_price": 478.77
+      "current_price": 509.94
     }
   },
-  "total_return_pct": 4.46,
+  "total_return_pct": 4.01,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -45.45,
+  "today_pnl_pct": -0.44,
   "total_trades": 0,
   "today_start_value": 10446.45,
   "today_date": "2026-08-10",
-  "last_action": "...",
-  "last_updated": "2026-08-10T16:03:21Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-10T16:32:19Z",
   "last_session": {
-    "at": "2026-08-10T16:03:21Z",
+    "at": "2026-08-10T16:32:19Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,33 +41,33 @@
     "top_movers": [
       [
         "INTC",
-        -3.29
-      ],
-      [
-        "MSFT",
-        2.1
-      ],
-      [
-        "QCOM",
-        -2.03
+        -3.16
       ],
       [
         "AAPL",
-        -1.99
+        -2.48
       ],
       [
         "NVDA",
-        -1.88
+        -2.43
       ],
       [
-        "AMZN",
-        1.85
+        "QCOM",
+        -2.08
+      ],
+      [
+        "CRM",
+        2.07
+      ],
+      [
+        "MSFT",
+        1.99
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -795,6 +790,10 @@
     {
       "timestamp": "2026-08-10T16:03:21Z",
       "value": 10446.45
+    },
+    {
+      "timestamp": "2026-08-10T16:32:19Z",
+      "value": 10401.0
     }
   ]
 }
