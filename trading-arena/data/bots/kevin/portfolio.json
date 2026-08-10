@@ -1,112 +1,92 @@
 {
-  "cash": 1381.83,
-  "total_value": 9605.82,
+  "cash": 1008.66,
+  "total_value": 9817.45,
   "positions": {
+    "MO": {
+      "shares": 27,
+      "avg_cost": 72.2,
+      "current_price": 72.8175
+    },
+    "ABBV": {
+      "shares": 7,
+      "avg_cost": 261.05,
+      "current_price": 259.02
+    },
     "O": {
-      "shares": 14,
-      "current_price": 62.2,
-      "avg_cost": 63.8557
+      "shares": 10,
+      "avg_cost": 63.841,
+      "current_price": 65.585
     },
     "T": {
-      "shares": 75,
-      "current_price": 23.67,
-      "avg_cost": 21.1047
+      "shares": 95,
+      "avg_cost": 20.83,
+      "current_price": 24.0201
     },
     "VZ": {
-      "shares": 26,
-      "current_price": 46.57,
-      "avg_cost": 44.3492
+      "shares": 17,
+      "current_price": 46.235,
+      "avg_cost": 43.1162
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 187.665
+      "current_price": 192.82
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 71.145
+      "current_price": 76.71
     },
     "IBM": {
       "shares": 1,
       "avg_cost": 212.365,
-      "current_price": 235.2551
+      "current_price": 214.145
     },
     "KO": {
-      "shares": 13,
-      "current_price": 86.91,
-      "avg_cost": 83.8962
-    },
-    "MAIN": {
-      "shares": 24,
-      "current_price": 58.2101,
-      "avg_cost": 57.0164
-    },
-    "JNJ": {
-      "shares": 1,
-      "avg_cost": 258.5001,
-      "current_price": 259.805
-    },
-    "MO": {
       "shares": 10,
-      "avg_cost": 69.24,
-      "current_price": 67.81
-    },
-    "CVX": {
-      "shares": 1,
-      "avg_cost": 189.37,
-      "current_price": 189.0
-    },
-    "BTI": {
-      "shares": 2,
-      "avg_cost": 59.99,
-      "current_price": 58.055
-    },
-    "ENB": {
-      "shares": 2,
-      "avg_cost": 51.585,
-      "current_price": 51.585
+      "avg_cost": 82.215,
+      "current_price": 82.215
     }
   },
-  "total_return_pct": -3.94,
+  "total_return_pct": -1.83,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 145.69,
+  "today_pnl_pct": 1.51,
   "total_trades": 0,
-  "today_start_value": 9605.82,
-  "today_date": "2026-08-10",
+  "today_start_value": 9671.76,
+  "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T13:50:12Z",
+  "last_updated": "2026-07-24T20:06:35Z",
   "last_session": {
-    "at": "2026-08-10T13:50:12Z",
+    "at": "2026-07-24T20:06:35Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "BTI",
-        -2.19
-      ],
-      [
-        "CVX",
-        1.46
-      ],
-      [
-        "MAIN",
-        -1.14
-      ],
-      [
         "VZ",
-        -1.03
+        5.53
       ],
       [
         "T",
-        -0.95
+        4.68
       ],
       [
         "IBM",
-        -0.95
+        3.56
+      ],
+      [
+        "WPC",
+        2.01
+      ],
+      [
+        "BTI",
+        1.8
+      ],
+      [
+        "OHI",
+        1.73
       ]
     ],
     "news_read": [],
@@ -831,186 +811,6 @@
     {
       "timestamp": "2026-07-24T20:06:35Z",
       "value": 9817.45
-    },
-    {
-      "timestamp": "2026-07-27T14:13:53Z",
-      "value": 9862.07
-    },
-    {
-      "timestamp": "2026-07-27T19:15:33Z",
-      "value": 9902.69
-    },
-    {
-      "timestamp": "2026-07-28T17:43:29Z",
-      "value": 10111.9
-    },
-    {
-      "timestamp": "2026-07-28T18:16:17Z",
-      "value": 10108.69
-    },
-    {
-      "timestamp": "2026-07-28T19:41:26Z",
-      "value": 10091.7
-    },
-    {
-      "timestamp": "2026-07-29T14:07:55Z",
-      "value": 10122.9
-    },
-    {
-      "timestamp": "2026-07-29T15:21:49Z",
-      "value": 10123.8
-    },
-    {
-      "timestamp": "2026-07-29T15:45:09Z",
-      "value": 10132.6
-    },
-    {
-      "timestamp": "2026-07-29T17:14:38Z",
-      "value": 10109.89
-    },
-    {
-      "timestamp": "2026-07-29T17:42:12Z",
-      "value": 10102.86
-    },
-    {
-      "timestamp": "2026-07-29T19:21:04Z",
-      "value": 10004.55
-    },
-    {
-      "timestamp": "2026-07-30T13:36:43Z",
-      "value": 9743.9
-    },
-    {
-      "timestamp": "2026-07-30T14:14:23Z",
-      "value": 9665.82
-    },
-    {
-      "timestamp": "2026-07-30T14:35:00Z",
-      "value": 9662.19
-    },
-    {
-      "timestamp": "2026-07-30T15:19:06Z",
-      "value": 9663.35
-    },
-    {
-      "timestamp": "2026-07-30T15:50:06Z",
-      "value": 9655.78
-    },
-    {
-      "timestamp": "2026-07-30T16:20:48Z",
-      "value": 9669.13
-    },
-    {
-      "timestamp": "2026-07-30T18:12:26Z",
-      "value": 9670.25
-    },
-    {
-      "timestamp": "2026-07-30T18:44:48Z",
-      "value": 9674.98
-    },
-    {
-      "timestamp": "2026-07-31T15:53:35Z",
-      "value": 9677.67
-    },
-    {
-      "timestamp": "2026-07-31T17:29:33Z",
-      "value": 9650.58
-    },
-    {
-      "timestamp": "2026-07-31T19:14:06Z",
-      "value": 9630.56
-    },
-    {
-      "timestamp": "2026-08-03T18:43:35Z",
-      "value": 9623.88
-    },
-    {
-      "timestamp": "2026-08-03T19:12:48Z",
-      "value": 9622.46
-    },
-    {
-      "timestamp": "2026-08-04T14:12:12Z",
-      "value": 9557.37
-    },
-    {
-      "timestamp": "2026-08-04T15:42:33Z",
-      "value": 9524.7
-    },
-    {
-      "timestamp": "2026-08-04T16:09:34Z",
-      "value": 9533.51
-    },
-    {
-      "timestamp": "2026-08-04T17:47:27Z",
-      "value": 9574.93
-    },
-    {
-      "timestamp": "2026-08-05T14:09:33Z",
-      "value": 9541.42
-    },
-    {
-      "timestamp": "2026-08-05T15:10:11Z",
-      "value": 9521.98
-    },
-    {
-      "timestamp": "2026-08-05T16:40:00Z",
-      "value": 9529.26
-    },
-    {
-      "timestamp": "2026-08-05T17:14:35Z",
-      "value": 9515.26
-    },
-    {
-      "timestamp": "2026-08-05T17:43:47Z",
-      "value": 9509.77
-    },
-    {
-      "timestamp": "2026-08-05T18:41:29Z",
-      "value": 9515.28
-    },
-    {
-      "timestamp": "2026-08-06T13:40:07Z",
-      "value": 9634.75
-    },
-    {
-      "timestamp": "2026-08-06T14:42:48Z",
-      "value": 9634.75
-    },
-    {
-      "timestamp": "2026-08-06T15:38:10Z",
-      "value": 9581.16
-    },
-    {
-      "timestamp": "2026-08-06T19:55:18Z",
-      "value": 9578.92
-    },
-    {
-      "timestamp": "2026-08-07T13:42:36Z",
-      "value": 9558.8
-    },
-    {
-      "timestamp": "2026-08-07T16:00:55Z",
-      "value": 9649.56
-    },
-    {
-      "timestamp": "2026-08-07T16:32:45Z",
-      "value": 9654.35
-    },
-    {
-      "timestamp": "2026-08-07T17:45:24Z",
-      "value": 9670.54
-    },
-    {
-      "timestamp": "2026-08-07T18:45:46Z",
-      "value": 9664.03
-    },
-    {
-      "timestamp": "2026-08-07T20:06:41Z",
-      "value": 9666.29
-    },
-    {
-      "timestamp": "2026-08-10T13:50:12Z",
-      "value": 9605.82
     }
   ]
 }

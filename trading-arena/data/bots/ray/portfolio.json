@@ -1,107 +1,97 @@
 {
-  "cash": 1026.71,
-  "total_value": 10268.27,
+  "cash": 1182.45,
+  "total_value": 10089.45,
   "positions": {
     "TIPS": {
       "shares": 26867,
       "current_price": 0.0002,
       "avg_cost": 0.0003
     },
+    "GDX": {
+      "shares": 4,
+      "current_price": 75.13,
+      "avg_cost": 76.5602
+    },
     "DJP": {
       "shares": 10,
-      "current_price": 46.98,
+      "current_price": 48.4,
       "avg_cost": 44.55
     },
     "PDBC": {
-      "shares": 58,
-      "current_price": 17.59,
-      "avg_cost": 16.1642
+      "shares": 103,
+      "current_price": 17.93,
+      "avg_cost": 16.0787
+    },
+    "TLT": {
+      "shares": 24,
+      "current_price": 83.325,
+      "avg_cost": 84.2528
     },
     "IEF": {
-      "shares": 5,
-      "current_price": 92.9591,
-      "avg_cost": 93.7475
+      "shares": 10,
+      "avg_cost": 93.94,
+      "current_price": 93.05
     },
     "FXI": {
-      "shares": 5,
-      "current_price": 36.25,
-      "avg_cost": 33.9817
+      "shares": 10,
+      "avg_cost": 33.365,
+      "current_price": 34.6
     },
     "IAU": {
       "shares": 2,
       "avg_cost": 77.6,
-      "current_price": 81.5299
+      "current_price": 76.22
+    },
+    "GSG": {
+      "shares": 30,
+      "current_price": 32.75,
+      "avg_cost": 32.0183
     },
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 397.73
-    },
-    "GDX": {
-      "shares": 12,
-      "current_price": 88.97,
-      "avg_cost": 79.335
-    },
-    "EEM": {
-      "shares": 15,
-      "current_price": 65.12,
-      "avg_cost": 63.34
-    },
-    "TLT": {
-      "shares": 11,
-      "current_price": 82.415,
-      "avg_cost": 82.0182
-    },
-    "BIL": {
-      "shares": 10,
-      "avg_cost": 91.4199,
-      "current_price": 91.485
-    },
-    "GSG": {
-      "shares": 34,
-      "current_price": 31.84,
-      "avg_cost": 31.3114
+      "current_price": 371.815
     }
   },
-  "total_return_pct": 2.68,
+  "total_return_pct": 0.89,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -16.17,
+  "today_pnl_pct": -0.16,
   "total_trades": 0,
-  "today_start_value": 10268.27,
-  "today_date": "2026-08-10",
+  "today_start_value": 10105.62,
+  "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T13:45:00Z",
+  "last_updated": "2026-07-24T20:03:56Z",
   "last_session": {
-    "at": "2026-08-10T13:45:00Z",
+    "at": "2026-07-24T20:03:56Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "EEM",
+        -1.99
+      ],
+      [
         "GSG",
-        2.46
+        -1.18
+      ],
+      [
+        "DJP",
+        -0.82
       ],
       [
         "PDBC",
-        1.97
-      ],
-      [
-        "GDX",
-        -1.02
-      ],
-      [
-        "EEM",
         -0.75
       ],
       [
-        "TLT",
-        -0.43
+        "VWO",
+        -0.58
       ],
       [
-        "VWO",
-        -0.27
+        "FXI",
+        0.39
       ]
     ],
     "news_read": [],
@@ -826,186 +816,6 @@
     {
       "timestamp": "2026-07-24T20:03:56Z",
       "value": 10089.45
-    },
-    {
-      "timestamp": "2026-07-27T14:12:06Z",
-      "value": 10032.9
-    },
-    {
-      "timestamp": "2026-07-27T19:14:30Z",
-      "value": 10010.27
-    },
-    {
-      "timestamp": "2026-07-28T17:36:57Z",
-      "value": 9957.14
-    },
-    {
-      "timestamp": "2026-07-28T18:11:20Z",
-      "value": 9953.62
-    },
-    {
-      "timestamp": "2026-07-28T19:36:23Z",
-      "value": 9951.74
-    },
-    {
-      "timestamp": "2026-07-29T14:05:45Z",
-      "value": 9984.38
-    },
-    {
-      "timestamp": "2026-07-29T15:19:24Z",
-      "value": 9986.31
-    },
-    {
-      "timestamp": "2026-07-29T15:43:40Z",
-      "value": 9987.53
-    },
-    {
-      "timestamp": "2026-07-29T17:11:21Z",
-      "value": 9996.21
-    },
-    {
-      "timestamp": "2026-07-29T17:41:04Z",
-      "value": 10003.3
-    },
-    {
-      "timestamp": "2026-07-29T19:12:54Z",
-      "value": 10052.35
-    },
-    {
-      "timestamp": "2026-07-30T13:33:54Z",
-      "value": 10003.79
-    },
-    {
-      "timestamp": "2026-07-30T14:10:43Z",
-      "value": 10022.27
-    },
-    {
-      "timestamp": "2026-07-30T14:33:31Z",
-      "value": 10013.16
-    },
-    {
-      "timestamp": "2026-07-30T15:17:42Z",
-      "value": 9996.14
-    },
-    {
-      "timestamp": "2026-07-30T15:42:48Z",
-      "value": 10005.12
-    },
-    {
-      "timestamp": "2026-07-30T16:17:02Z",
-      "value": 10023.82
-    },
-    {
-      "timestamp": "2026-07-30T18:08:32Z",
-      "value": 10018.49
-    },
-    {
-      "timestamp": "2026-07-30T18:41:12Z",
-      "value": 10017.86
-    },
-    {
-      "timestamp": "2026-07-31T15:47:04Z",
-      "value": 9964.91
-    },
-    {
-      "timestamp": "2026-07-31T17:19:13Z",
-      "value": 9964.37
-    },
-    {
-      "timestamp": "2026-07-31T19:04:01Z",
-      "value": 9970.95
-    },
-    {
-      "timestamp": "2026-08-03T18:39:12Z",
-      "value": 9951.72
-    },
-    {
-      "timestamp": "2026-08-03T19:10:27Z",
-      "value": 9958.96
-    },
-    {
-      "timestamp": "2026-08-04T14:10:37Z",
-      "value": 9995.35
-    },
-    {
-      "timestamp": "2026-08-04T15:38:04Z",
-      "value": 9997.3
-    },
-    {
-      "timestamp": "2026-08-04T16:07:55Z",
-      "value": 10006.55
-    },
-    {
-      "timestamp": "2026-08-04T17:43:19Z",
-      "value": 10014.65
-    },
-    {
-      "timestamp": "2026-08-05T14:08:12Z",
-      "value": 10109.64
-    },
-    {
-      "timestamp": "2026-08-05T15:08:46Z",
-      "value": 10134.41
-    },
-    {
-      "timestamp": "2026-08-05T16:39:04Z",
-      "value": 10136.72
-    },
-    {
-      "timestamp": "2026-08-05T17:10:25Z",
-      "value": 10129.71
-    },
-    {
-      "timestamp": "2026-08-05T17:42:03Z",
-      "value": 10129.55
-    },
-    {
-      "timestamp": "2026-08-05T18:37:56Z",
-      "value": 10147.84
-    },
-    {
-      "timestamp": "2026-08-06T13:34:38Z",
-      "value": 10110.94
-    },
-    {
-      "timestamp": "2026-08-06T14:36:17Z",
-      "value": 10110.94
-    },
-    {
-      "timestamp": "2026-08-06T15:35:51Z",
-      "value": 10138.07
-    },
-    {
-      "timestamp": "2026-08-06T19:50:36Z",
-      "value": 10133.01
-    },
-    {
-      "timestamp": "2026-08-07T13:38:32Z",
-      "value": 10270.77
-    },
-    {
-      "timestamp": "2026-08-07T15:51:30Z",
-      "value": 10276.42
-    },
-    {
-      "timestamp": "2026-08-07T16:30:58Z",
-      "value": 10261.08
-    },
-    {
-      "timestamp": "2026-08-07T17:39:23Z",
-      "value": 10253.53
-    },
-    {
-      "timestamp": "2026-08-07T18:38:00Z",
-      "value": 10246.27
-    },
-    {
-      "timestamp": "2026-08-07T19:57:32Z",
-      "value": 10257.57
-    },
-    {
-      "timestamp": "2026-08-10T13:45:00Z",
-      "value": 10268.27
     }
   ]
 }

@@ -1,67 +1,92 @@
 {
-  "cash": 4185.87,
-  "total_value": 10027.24,
+  "cash": 1798.28,
+  "total_value": 10003.38,
   "positions": {
-    "JPM": {
+    "MA": {
       "shares": 3,
-      "current_price": 356.86,
-      "avg_cost": 347.9909
-    },
-    "BAC": {
-      "shares": 32,
-      "current_price": 63.105,
-      "avg_cost": 60.3732
+      "avg_cost": 529.705,
+      "current_price": 539.03
     },
     "GS": {
       "shares": 2,
-      "current_price": 1038.59,
-      "avg_cost": 1002.01
+      "avg_cost": 1033.175,
+      "current_price": 1059.3199
+    },
+    "MET": {
+      "shares": 1,
+      "avg_cost": 90.02,
+      "current_price": 94.59
+    },
+    "JPM": {
+      "shares": 2,
+      "avg_cost": 336.345,
+      "current_price": 352.55
+    },
+    "BAC": {
+      "shares": 32,
+      "current_price": 61.9435,
+      "avg_cost": 60.3732
+    },
+    "WFC": {
+      "shares": 4,
+      "current_price": 86.355,
+      "avg_cost": 87.525
     },
     "C": {
-      "shares": 5,
-      "avg_cost": 133.26,
-      "current_price": 134.85
+      "shares": 4,
+      "avg_cost": 131.12,
+      "current_price": 131.76
+    },
+    "PGR": {
+      "shares": 2,
+      "current_price": 213.4676,
+      "avg_cost": 212.73
+    },
+    "TRV": {
+      "shares": 1,
+      "avg_cost": 387.885,
+      "current_price": 388.09
     }
   },
-  "total_return_pct": 0.27,
+  "total_return_pct": 0.03,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 13.91,
+  "today_pnl_pct": 0.14,
   "total_trades": 0,
-  "today_start_value": 10027.24,
-  "today_date": "2026-08-10",
+  "today_start_value": 9989.47,
+  "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T13:49:46Z",
+  "last_updated": "2026-07-24T20:05:52Z",
   "last_session": {
-    "at": "2026-08-10T13:49:46Z",
+    "at": "2026-07-24T20:05:52Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "AXP",
+        -4.52
+      ],
+      [
+        "PGR",
+        3.12
+      ],
+      [
         "TRV",
-        -1.03
+        3.07
       ],
       [
         "MET",
-        -0.87
+        2.23
       ],
       [
-        "BRK-B",
-        0.83
+        "MA",
+        1.67
       ],
       [
-        "AXP",
-        -0.69
-      ],
-      [
-        "WFC",
-        -0.4
-      ],
-      [
-        "COF",
-        -0.39
+        "PRU",
+        1.64
       ]
     ],
     "news_read": [],
@@ -786,186 +811,6 @@
     {
       "timestamp": "2026-07-24T20:05:52Z",
       "value": 10003.38
-    },
-    {
-      "timestamp": "2026-07-27T14:13:36Z",
-      "value": 10112.56
-    },
-    {
-      "timestamp": "2026-07-27T19:15:14Z",
-      "value": 10024.01
-    },
-    {
-      "timestamp": "2026-07-28T17:42:44Z",
-      "value": 10094.37
-    },
-    {
-      "timestamp": "2026-07-28T18:16:11Z",
-      "value": 10083.05
-    },
-    {
-      "timestamp": "2026-07-28T19:40:42Z",
-      "value": 10082.16
-    },
-    {
-      "timestamp": "2026-07-29T14:07:40Z",
-      "value": 9979.51
-    },
-    {
-      "timestamp": "2026-07-29T15:21:11Z",
-      "value": 10005.53
-    },
-    {
-      "timestamp": "2026-07-29T15:45:02Z",
-      "value": 10014.49
-    },
-    {
-      "timestamp": "2026-07-29T17:14:03Z",
-      "value": 10005.17
-    },
-    {
-      "timestamp": "2026-07-29T17:41:58Z",
-      "value": 10008.8
-    },
-    {
-      "timestamp": "2026-07-29T19:17:26Z",
-      "value": 9998.4
-    },
-    {
-      "timestamp": "2026-07-30T13:36:15Z",
-      "value": 10020.85
-    },
-    {
-      "timestamp": "2026-07-30T14:11:51Z",
-      "value": 9985.11
-    },
-    {
-      "timestamp": "2026-07-30T14:34:44Z",
-      "value": 9982.54
-    },
-    {
-      "timestamp": "2026-07-30T15:18:52Z",
-      "value": 9933.0
-    },
-    {
-      "timestamp": "2026-07-30T15:49:47Z",
-      "value": 9947.22
-    },
-    {
-      "timestamp": "2026-07-30T16:20:29Z",
-      "value": 9980.22
-    },
-    {
-      "timestamp": "2026-07-30T18:12:07Z",
-      "value": 10023.77
-    },
-    {
-      "timestamp": "2026-07-30T18:44:23Z",
-      "value": 10029.78
-    },
-    {
-      "timestamp": "2026-07-31T15:51:14Z",
-      "value": 10019.93
-    },
-    {
-      "timestamp": "2026-07-31T17:27:09Z",
-      "value": 10030.79
-    },
-    {
-      "timestamp": "2026-07-31T19:11:43Z",
-      "value": 10023.01
-    },
-    {
-      "timestamp": "2026-08-03T18:42:52Z",
-      "value": 10022.17
-    },
-    {
-      "timestamp": "2026-08-03T19:12:23Z",
-      "value": 10021.5
-    },
-    {
-      "timestamp": "2026-08-04T14:11:49Z",
-      "value": 10134.28
-    },
-    {
-      "timestamp": "2026-08-04T15:41:48Z",
-      "value": 10209.36
-    },
-    {
-      "timestamp": "2026-08-04T16:08:55Z",
-      "value": 10211.64
-    },
-    {
-      "timestamp": "2026-08-04T17:47:11Z",
-      "value": 10191.51
-    },
-    {
-      "timestamp": "2026-08-05T14:09:18Z",
-      "value": 10237.46
-    },
-    {
-      "timestamp": "2026-08-05T15:10:06Z",
-      "value": 10225.04
-    },
-    {
-      "timestamp": "2026-08-05T16:39:44Z",
-      "value": 10225.43
-    },
-    {
-      "timestamp": "2026-08-05T17:12:01Z",
-      "value": 10227.89
-    },
-    {
-      "timestamp": "2026-08-05T17:43:33Z",
-      "value": 10224.06
-    },
-    {
-      "timestamp": "2026-08-05T18:41:06Z",
-      "value": 10228.97
-    },
-    {
-      "timestamp": "2026-08-06T13:37:27Z",
-      "value": 10224.9
-    },
-    {
-      "timestamp": "2026-08-06T14:40:03Z",
-      "value": 10224.9
-    },
-    {
-      "timestamp": "2026-08-06T15:37:35Z",
-      "value": 10118.36
-    },
-    {
-      "timestamp": "2026-08-06T19:55:02Z",
-      "value": 10082.77
-    },
-    {
-      "timestamp": "2026-08-07T13:42:11Z",
-      "value": 10060.03
-    },
-    {
-      "timestamp": "2026-08-07T15:58:44Z",
-      "value": 10059.25
-    },
-    {
-      "timestamp": "2026-08-07T16:32:13Z",
-      "value": 10043.18
-    },
-    {
-      "timestamp": "2026-08-07T17:45:03Z",
-      "value": 10077.59
-    },
-    {
-      "timestamp": "2026-08-07T18:42:21Z",
-      "value": 10065.39
-    },
-    {
-      "timestamp": "2026-08-07T20:04:44Z",
-      "value": 10091.17
-    },
-    {
-      "timestamp": "2026-08-10T13:49:46Z",
-      "value": 10027.24
     }
   ]
 }

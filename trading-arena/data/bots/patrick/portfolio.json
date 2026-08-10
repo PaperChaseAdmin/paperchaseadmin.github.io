@@ -1,54 +1,64 @@
 {
-  "cash": 3146.44,
-  "total_value": 10218.43,
+  "cash": 2029.12,
+  "total_value": 10009.78,
   "positions": {
+    "AAPL": {
+      "shares": 9,
+      "current_price": 333.21,
+      "avg_cost": 299.3344
+    },
+    "EL": {
+      "shares": 9,
+      "current_price": 80.305,
+      "avg_cost": 84.8412
+    },
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 162.0
+      "current_price": 142.725
+    },
+    "LVS": {
+      "shares": 10,
+      "avg_cost": 45.78,
+      "current_price": 46.01
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 396.22
+      "current_price": 373.61
+    },
+    "MGM": {
+      "shares": 10,
+      "avg_cost": 45.745,
+      "current_price": 45.53
+    },
+    "RH": {
+      "shares": 1,
+      "avg_cost": 177.31,
+      "current_price": 174.055
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 128.0
+      "current_price": 114.48
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 351.93
-    },
-    "AAPL": {
-      "shares": 9,
-      "current_price": 306.8892,
-      "avg_cost": 305.3333
-    },
-    "EL": {
-      "shares": 7,
-      "current_price": 87.36,
-      "avg_cost": 85.3793
-    },
-    "CPRI": {
-      "shares": 15,
-      "avg_cost": 15.09,
-      "current_price": 15.325
+      "current_price": 333.035
     }
   },
-  "total_return_pct": 2.18,
+  "total_return_pct": 0.1,
   "total_return_usd": 0.0,
-  "today_pnl": 0.01,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 98.48,
+  "today_pnl_pct": 0.99,
   "total_trades": 0,
-  "today_start_value": 10218.42,
-  "today_date": "2026-08-10",
+  "today_start_value": 9911.3,
+  "today_date": "2026-07-24",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T13:51:25Z",
+  "last_updated": "2026-07-24T20:12:46Z",
   "last_session": {
-    "at": "2026-08-10T13:51:25Z",
+    "at": "2026-07-24T20:12:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -56,27 +66,27 @@
     "top_movers": [
       [
         "RH",
-        -3.04
+        5.18
       ],
       [
         "AAPL",
-        -1.93
+        3.6
       ],
       [
-        "EL",
-        -1.46
-      ],
-      [
-        "HD",
-        -1.26
+        "LULU",
+        3.49
       ],
       [
         "TPR",
-        -0.79
+        2.7
       ],
       [
-        "CAKE",
-        -0.78
+        "HD",
+        2.58
+      ],
+      [
+        "NKE",
+        2.07
       ]
     ],
     "news_read": [],
@@ -801,186 +811,6 @@
     {
       "timestamp": "2026-07-24T20:12:46Z",
       "value": 10009.78
-    },
-    {
-      "timestamp": "2026-07-27T14:17:10Z",
-      "value": 10123.76
-    },
-    {
-      "timestamp": "2026-07-27T19:17:01Z",
-      "value": 10143.05
-    },
-    {
-      "timestamp": "2026-07-28T17:49:04Z",
-      "value": 10277.96
-    },
-    {
-      "timestamp": "2026-07-28T18:18:25Z",
-      "value": 10272.21
-    },
-    {
-      "timestamp": "2026-07-28T19:46:58Z",
-      "value": 10244.95
-    },
-    {
-      "timestamp": "2026-07-29T14:09:44Z",
-      "value": 10343.88
-    },
-    {
-      "timestamp": "2026-07-29T15:23:35Z",
-      "value": 10314.41
-    },
-    {
-      "timestamp": "2026-07-29T15:47:02Z",
-      "value": 10303.0
-    },
-    {
-      "timestamp": "2026-07-29T17:18:54Z",
-      "value": 10328.41
-    },
-    {
-      "timestamp": "2026-07-29T17:43:55Z",
-      "value": 10347.94
-    },
-    {
-      "timestamp": "2026-07-29T19:26:02Z",
-      "value": 10397.77
-    },
-    {
-      "timestamp": "2026-07-30T13:37:56Z",
-      "value": 10268.96
-    },
-    {
-      "timestamp": "2026-07-30T14:17:10Z",
-      "value": 10232.24
-    },
-    {
-      "timestamp": "2026-07-30T14:37:05Z",
-      "value": 10228.15
-    },
-    {
-      "timestamp": "2026-07-30T15:20:38Z",
-      "value": 10235.42
-    },
-    {
-      "timestamp": "2026-07-30T15:52:16Z",
-      "value": 10246.86
-    },
-    {
-      "timestamp": "2026-07-30T16:24:20Z",
-      "value": 10257.44
-    },
-    {
-      "timestamp": "2026-07-30T18:13:44Z",
-      "value": 10282.2
-    },
-    {
-      "timestamp": "2026-07-30T18:46:34Z",
-      "value": 10285.19
-    },
-    {
-      "timestamp": "2026-07-31T16:00:14Z",
-      "value": 10047.15
-    },
-    {
-      "timestamp": "2026-07-31T17:39:51Z",
-      "value": 10060.99
-    },
-    {
-      "timestamp": "2026-07-31T19:19:36Z",
-      "value": 10064.28
-    },
-    {
-      "timestamp": "2026-08-03T18:46:20Z",
-      "value": 10069.76
-    },
-    {
-      "timestamp": "2026-08-03T19:14:22Z",
-      "value": 10075.68
-    },
-    {
-      "timestamp": "2026-08-04T14:18:21Z",
-      "value": 10096.74
-    },
-    {
-      "timestamp": "2026-08-04T15:46:10Z",
-      "value": 10099.67
-    },
-    {
-      "timestamp": "2026-08-04T16:14:12Z",
-      "value": 10129.01
-    },
-    {
-      "timestamp": "2026-08-04T17:49:51Z",
-      "value": 10139.96
-    },
-    {
-      "timestamp": "2026-08-05T14:14:42Z",
-      "value": 10216.48
-    },
-    {
-      "timestamp": "2026-08-05T15:11:09Z",
-      "value": 10254.4
-    },
-    {
-      "timestamp": "2026-08-05T16:43:18Z",
-      "value": 10185.68
-    },
-    {
-      "timestamp": "2026-08-05T17:16:10Z",
-      "value": 10167.2
-    },
-    {
-      "timestamp": "2026-08-05T17:45:41Z",
-      "value": 10181.22
-    },
-    {
-      "timestamp": "2026-08-05T18:44:11Z",
-      "value": 10154.33
-    },
-    {
-      "timestamp": "2026-08-06T13:40:59Z",
-      "value": 10199.11
-    },
-    {
-      "timestamp": "2026-08-06T14:46:28Z",
-      "value": 10199.11
-    },
-    {
-      "timestamp": "2026-08-06T15:42:59Z",
-      "value": 10246.94
-    },
-    {
-      "timestamp": "2026-08-06T19:56:48Z",
-      "value": 10246.73
-    },
-    {
-      "timestamp": "2026-08-07T13:44:31Z",
-      "value": 10238.42
-    },
-    {
-      "timestamp": "2026-08-07T16:23:03Z",
-      "value": 10282.4
-    },
-    {
-      "timestamp": "2026-08-07T16:34:20Z",
-      "value": 10257.98
-    },
-    {
-      "timestamp": "2026-08-07T17:51:29Z",
-      "value": 10282.78
-    },
-    {
-      "timestamp": "2026-08-07T18:52:18Z",
-      "value": 10295.3
-    },
-    {
-      "timestamp": "2026-08-07T20:19:25Z",
-      "value": 10313.77
-    },
-    {
-      "timestamp": "2026-08-10T13:51:25Z",
-      "value": 10218.43
     }
   ]
 }
