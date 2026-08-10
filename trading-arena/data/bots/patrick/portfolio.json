@@ -1,64 +1,59 @@
 {
-  "cash": 2029.12,
-  "total_value": 10009.78,
+  "cash": 2484.22,
+  "total_value": 10135.49,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 333.21,
+      "current_price": 307.04,
       "avg_cost": 299.3344
     },
     "EL": {
       "shares": 9,
-      "current_price": 80.305,
+      "current_price": 86.83,
       "avg_cost": 84.8412
     },
     "TPR": {
       "shares": 4,
       "avg_cost": 143.8,
-      "current_price": 142.725
-    },
-    "LVS": {
-      "shares": 10,
-      "avg_cost": 45.78,
-      "current_price": 46.01
+      "current_price": 160.915
     },
     "RL": {
       "shares": 3,
       "avg_cost": 369.585,
-      "current_price": 373.61
+      "current_price": 403.11
     },
     "MGM": {
       "shares": 10,
       "avg_cost": 45.745,
-      "current_price": 45.53
+      "current_price": 43.8
     },
     "RH": {
       "shares": 1,
       "avg_cost": 177.31,
-      "current_price": 174.055
+      "current_price": 190.43
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 114.48
+      "current_price": 127.62
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 333.035
+      "current_price": 348.82
     }
   },
-  "total_return_pct": 0.1,
+  "total_return_pct": 1.35,
   "total_return_usd": 0.0,
-  "today_pnl": 98.48,
-  "today_pnl_pct": 0.99,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9911.3,
-  "today_date": "2026-07-24",
+  "today_start_value": 10135.49,
+  "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T20:12:46Z",
+  "last_updated": "2026-08-10T16:22:00Z",
   "last_session": {
-    "at": "2026-07-24T20:12:46Z",
+    "at": "2026-08-10T16:22:00Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -66,27 +61,27 @@
     "top_movers": [
       [
         "RH",
-        5.18
+        -2.92
+      ],
+      [
+        "CAKE",
+        2.28
       ],
       [
         "AAPL",
-        3.6
+        -1.99
       ],
       [
-        "LULU",
-        3.49
-      ],
-      [
-        "TPR",
-        2.7
+        "RL",
+        1.92
       ],
       [
         "HD",
-        2.58
+        -1.9
       ],
       [
-        "NKE",
-        2.07
+        "AMZN",
+        1.85
       ]
     ],
     "news_read": [],
@@ -811,6 +806,10 @@
     {
       "timestamp": "2026-07-24T20:12:46Z",
       "value": 10009.78
+    },
+    {
+      "timestamp": "2026-08-10T16:22:00Z",
+      "value": 10135.49
     }
   ]
 }

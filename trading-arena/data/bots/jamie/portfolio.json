@@ -1,92 +1,97 @@
 {
-  "cash": 1798.28,
-  "total_value": 10003.38,
+  "cash": 1264.8,
+  "total_value": 10119.54,
   "positions": {
     "MA": {
       "shares": 3,
       "avg_cost": 529.705,
-      "current_price": 539.03
+      "current_price": 563.04
     },
     "GS": {
       "shares": 2,
       "avg_cost": 1033.175,
-      "current_price": 1059.3199
+      "current_price": 1038.66
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 94.59
+      "current_price": 97.59
     },
     "JPM": {
       "shares": 2,
       "avg_cost": 336.345,
-      "current_price": 352.55
+      "current_price": 358.36
     },
     "BAC": {
       "shares": 32,
-      "current_price": 61.9435,
+      "current_price": 63.775,
       "avg_cost": 60.3732
     },
     "WFC": {
       "shares": 4,
-      "current_price": 86.355,
+      "current_price": 87.455,
       "avg_cost": 87.525
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 131.76
+      "current_price": 135.81
     },
     "PGR": {
       "shares": 2,
-      "current_price": 213.4676,
+      "current_price": 214.29,
       "avg_cost": 212.73
     },
     "TRV": {
       "shares": 1,
       "avg_cost": 387.885,
-      "current_price": 388.09
+      "current_price": 378.07
+    },
+    "BRK-B": {
+      "shares": 1,
+      "avg_cost": 533.48,
+      "current_price": 533.48
     }
   },
-  "total_return_pct": 0.03,
+  "total_return_pct": 1.2,
   "total_return_usd": 0.0,
-  "today_pnl": 13.91,
-  "today_pnl_pct": 0.14,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9989.47,
-  "today_date": "2026-07-24",
+  "today_start_value": 10119.54,
+  "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-07-24T20:05:52Z",
+  "last_updated": "2026-08-10T16:16:34Z",
   "last_session": {
-    "at": "2026-07-24T20:05:52Z",
+    "at": "2026-08-10T16:16:34Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "AXP",
-        -4.52
-      ],
-      [
-        "PGR",
-        3.12
+        "BRK-B",
+        2.24
       ],
       [
         "TRV",
-        3.07
+        -1.62
       ],
       [
-        "MET",
-        2.23
+        "BAC",
+        0.93
       ],
       [
-        "MA",
-        1.67
+        "AXP",
+        -0.76
+      ],
+      [
+        "V",
+        -0.56
       ],
       [
         "PRU",
-        1.64
+        0.56
       ]
     ],
     "news_read": [],
@@ -811,6 +816,10 @@
     {
       "timestamp": "2026-07-24T20:05:52Z",
       "value": 10003.38
+    },
+    {
+      "timestamp": "2026-08-10T16:16:34Z",
+      "value": 10119.54
     }
   ]
 }
