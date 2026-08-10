@@ -1,18 +1,10 @@
 # Deploy PaperChase static site to GitHub Pages
 # Serves at paperchase.online/
-#
-# Only deploys when frontend files change — data updates are ignored.
+# Deploys on EVERY push to main — guarantees no stale pages.
 name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
-    paths-ignore:
-      - "scrapers/**"
-      - "stock-pick/data/**"
-      - "predictions/data/**"
-      - "update_data.py"
-      - "requirements-ms.txt"
-      - ".gitignore"
   workflow_dispatch:
 
 permissions:
