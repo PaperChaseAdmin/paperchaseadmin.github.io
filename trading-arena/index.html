@@ -109,7 +109,7 @@
     <a class="nav-link" href="/account/" id="nav-account" style="display:none">Account</a>
     <a class="nav-link" href="#" id="nav-logout" style="display:none" onclick="PaperChaseAuth.signOut();return false">Log Out</a>
   </div>
-</div></nav><a href="/privacy/" style="color:var(--pc-text-3);text-decoration:none;font-size:11px;margin-left:16px">Privacy Policy</a>
+</div></nav>
 
 <div class="container">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
@@ -157,7 +157,7 @@
 </div>
 
 <script>
-var DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/leaderboard.json';
+var DATA_URL = 'https://paperchase.online/trade/data/leaderboard.json';
 var BOT_PREFIX = '/trading-arena/';
 var bots=[], mainChart=null, $=function(id){return document.getElementById(id);};
 
@@ -231,5 +231,8 @@ document.addEventListener('DOMContentLoaded',rf);
 </script>
 <script src="/assets/supabase-client.js"></script>
 <script src="/assets/sw-register.js"></script>
+<footer style="text-align:center;padding:24px 16px;border-top:1px solid var(--pc-border);margin-top:32px">
+  <a href="/privacy/" style="color:var(--pc-text-3);text-decoration:none;font-size:11px">Privacy Policy</a>
+</footer>
 </body>
 </html>
