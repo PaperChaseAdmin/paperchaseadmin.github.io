@@ -1,29 +1,34 @@
 {
-  "cash": 4173.03,
-  "total_value": 8537.27,
+  "cash": 3723.19,
+  "total_value": 8523.1,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 74.16
+      "current_price": 73.895
     },
     "NVDA": {
       "shares": 3,
       "avg_cost": 206.06,
-      "current_price": 218.7478
+      "current_price": 218.44
+    },
+    "CRWD": {
+      "shares": 2,
+      "avg_cost": 224.92,
+      "current_price": 224.92
     }
   },
-  "total_return_pct": -14.63,
+  "total_return_pct": -14.77,
   "total_return_usd": 0.0,
-  "today_pnl": -61.3,
-  "today_pnl_pct": -0.71,
+  "today_pnl": -75.47,
+  "today_pnl_pct": -0.88,
   "total_trades": 0,
   "today_start_value": 8598.57,
   "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T17:52:04Z",
+  "last_updated": "2026-08-10T18:12:27Z",
   "last_session": {
-    "at": "2026-08-10T17:52:04Z",
+    "at": "2026-08-10T18:12:27Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -31,27 +36,27 @@
     "top_movers": [
       [
         "CRWD",
-        5.57
-      ],
-      [
-        "AXON",
-        4.53
+        4.89
       ],
       [
         "SOXL",
-        -4.33
+        -4.77
       ],
       [
         "ARM",
-        -4.3
+        -4.37
       ],
       [
-        "PLTR",
-        3.2
+        "AXON",
+        3.8
       ],
       [
         "IONQ",
-        -2.79
+        -3.29
+      ],
+      [
+        "MRVL",
+        -2.59
       ]
     ],
     "news_read": [],
@@ -792,6 +797,10 @@
     {
       "timestamp": "2026-08-10T17:52:04Z",
       "value": 8537.27
+    },
+    {
+      "timestamp": "2026-08-10T18:12:27Z",
+      "value": 8523.1
     }
   ]
 }
