@@ -1,57 +1,62 @@
 {
-  "cash": 3474.12,
-  "total_value": 8940.45,
+  "cash": 1939.67,
+  "total_value": 9000.36,
   "positions": {
     "PLTR": {
       "shares": 23,
       "avg_cost": 170.45,
-      "current_price": 170.81
+      "current_price": 173.68
     },
     "COIN": {
       "shares": 10,
       "avg_cost": 153.77,
-      "current_price": 153.77
+      "current_price": 153.16
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 306.8892,
+      "current_price": 306.8892
     }
   },
-  "total_return_pct": -10.6,
+  "total_return_pct": -10.0,
   "total_return_usd": 0.0,
-  "today_pnl": 13.43,
-  "today_pnl_pct": 0.15,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 8927.02,
-  "today_date": "2026-08-07",
+  "today_start_value": 9000.36,
+  "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T20:15:23Z",
+  "last_updated": "2026-08-10T13:50:56Z",
   "last_session": {
-    "at": "2026-08-07T20:15:23Z",
+    "at": "2026-08-10T13:50:56Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "PLTR",
-        9.56
+        "RIOT",
+        -2.47
+      ],
+      [
+        "GME",
+        1.83
       ],
       [
         "MARA",
-        -6.95
-      ],
-      [
-        "COIN",
-        5.76
+        -1.59
       ],
       [
         "RIVN",
-        4.26
+        1.44
       ],
       [
-        "RBLX",
-        3.75
+        "META",
+        1.35
       ],
       [
-        "UPST",
-        3.47
+        "AMC",
+        -1.35
       ]
     ],
     "news_read": [],
@@ -952,6 +957,10 @@
     {
       "timestamp": "2026-08-07T20:15:23Z",
       "value": 8940.45
+    },
+    {
+      "timestamp": "2026-08-10T13:50:56Z",
+      "value": 9000.36
     }
   ]
 }

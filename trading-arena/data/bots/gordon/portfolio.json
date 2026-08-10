@@ -1,57 +1,62 @@
 {
-  "cash": 3430.55,
-  "total_value": 9706.75,
+  "cash": 2458.7,
+  "total_value": 9638.34,
   "positions": {
     "DIS": {
       "shares": 30,
       "avg_cost": 104.255,
-      "current_price": 104.8
+      "current_price": 104.63
     },
     "AAPL": {
       "shares": 10,
-      "current_price": 313.22,
+      "current_price": 306.8892,
       "avg_cost": 312.445
+    },
+    "INTC": {
+      "shares": 10,
+      "avg_cost": 97.185,
+      "current_price": 97.185
     }
   },
-  "total_return_pct": -2.93,
+  "total_return_pct": -3.62,
   "total_return_usd": 0.0,
-  "today_pnl": -17.29,
-  "today_pnl_pct": -0.18,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9724.04,
-  "today_date": "2026-08-07",
+  "today_start_value": 9638.34,
+  "today_date": "2026-08-10",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-07T20:11:49Z",
+  "last_updated": "2026-08-10T13:50:43Z",
   "last_session": {
-    "at": "2026-08-07T20:11:49Z",
+    "at": "2026-08-10T13:50:43Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "HPQ",
-        6.16
-      ],
-      [
-        "F",
-        1.88
+        "INTC",
+        -4.78
       ],
       [
         "BBWI",
-        1.76
+        -2.28
       ],
       [
-        "WBD",
-        1.52
+        "HPQ",
+        1.96
       ],
       [
-        "SBUX",
-        1.5
+        "NOK",
+        1.07
       ],
       [
-        "PYPL",
-        -1.5
+        "CMCSA",
+        -1.03
+      ],
+      [
+        "T",
+        -0.95
       ]
     ],
     "news_read": [],
@@ -952,6 +957,10 @@
     {
       "timestamp": "2026-08-07T20:11:49Z",
       "value": 9706.75
+    },
+    {
+      "timestamp": "2026-08-10T13:50:43Z",
+      "value": 9638.34
     }
   ]
 }

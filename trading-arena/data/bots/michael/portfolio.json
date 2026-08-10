@@ -1,73 +1,78 @@
 {
-  "cash": 8075.7,
-  "total_value": 11051.05,
+  "cash": 6541.25,
+  "total_value": 11050.2,
   "positions": {
     "GEO": {
       "shares": 20,
       "avg_cost": 30.51,
-      "current_price": 30.9
+      "current_price": 30.655
     },
     "BABA": {
       "shares": 5,
       "avg_cost": 122.15,
-      "current_price": 128.41
+      "current_price": 128.5
     },
     "CVS": {
       "shares": 10,
-      "current_price": 95.6,
+      "current_price": 95.99,
       "avg_cost": 98.5683
     },
     "KHC": {
       "shares": 30,
       "avg_cost": 25.2,
-      "current_price": 25.31
+      "current_price": 25.3
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 306.8892,
+      "current_price": 306.8892
     }
   },
-  "total_return_pct": 10.51,
+  "total_return_pct": 10.5,
   "total_return_usd": 0.0,
-  "today_pnl": 33.35,
-  "today_pnl_pct": 0.3,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 11017.7,
-  "today_date": "2026-08-07",
-  "last_action": "Neutral sentiment suggests sticking to fundamental analysis. No compelling opportunities identified at this time.",
-  "last_updated": "2026-08-07T20:03:00Z",
+  "today_start_value": 11050.2,
+  "today_date": "2026-08-10",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-10T13:49:27Z",
   "last_session": {
-    "at": "2026-08-07T20:03:00Z",
+    "at": "2026-08-10T13:49:27Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "GEO",
-        2.52
+        "INTC",
+        -4.78
+      ],
+      [
+        "OXY",
+        2.59
+      ],
+      [
+        "CMCSA",
+        -1.03
       ],
       [
         "F",
-        1.88
+        -0.64
+      ],
+      [
+        "CVS",
+        0.6
       ],
       [
         "PFE",
-        1.64
-      ],
-      [
-        "KHC",
-        1.38
-      ],
-      [
-        "INTC",
-        1.36
-      ],
-      [
-        "BABA",
-        1.27
+        -0.41
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "Current portfolio is balanced with a mix of value stocks and cash. No immediate action required as positions are performing within expected ranges. Maintaining cash reserve for future opportunities.",
-    "outlook": "Neutral sentiment suggests sticking to fundamental analysis. No compelling opportunities identified at this time.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -962,6 +967,10 @@
     {
       "timestamp": "2026-08-07T20:03:00Z",
       "value": 11051.05
+    },
+    {
+      "timestamp": "2026-08-10T13:49:27Z",
+      "value": 11050.2
     }
   ]
 }
