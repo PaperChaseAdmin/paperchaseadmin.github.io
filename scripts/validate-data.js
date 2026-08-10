@@ -63,6 +63,25 @@ async function main() {
     errors.forEach(e => console.log(`  ❌ ${e}`));
     process.exit(1);
   }
+
+  // 6. Check predictions + stock-pick freshness (deploy-dependent)
+  const extra = [
+    ['predictions', 'https://paperchase.online/predictions/data/predictions.json', 'updated_at'],
+    ['stock-pick', 'https://paperchase.online/stock-pick/data/picks.json', 'updated_at'],
+  ];
+  for (const [name, url, key] of extra) {
+    try {
+      const r = await fetch(url + '?t=' + Date.now());
+      const j = await r.json();
+      const age = (Date.now() - new Date(j[key]).getTime()) / 3600000;
+      if (age > 30) errors.push(`STALE ${name.toUpperCase()}: ${age.toFixed(0)}h old`);
+    } catch { errors.push(`FAIL: cannot fetch ${name}`); }
+  }
+  if (errors.length) {
+    console.log('DATA VALIDATION FAILED:');
+    errors.forEach(e => console.log(`  ❌ ${e}`));
+    process.exit(1);
+  }
   console.log(`DATA VALIDATION PASSED ✅ (${news.length} articles, ${st.prices?.length || 0} stocks, ${cr.prices?.length || 0} crypto)`);
 }
 
