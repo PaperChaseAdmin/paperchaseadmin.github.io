@@ -1,7 +1,13 @@
 {
-  "cash": 8609.81,
+  "cash": 5698.31,
   "total_value": 8609.81,
-  "positions": {},
+  "positions": {
+    "MARA": {
+      "shares": 300,
+      "avg_cost": 9.705,
+      "current_price": 9.705
+    }
+  },
   "total_return_pct": -13.9,
   "total_return_usd": 0.0,
   "today_pnl": -67.2,
@@ -10,9 +16,9 @@
   "today_start_value": 8677.01,
   "today_date": "2026-08-11",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T17:49:03Z",
+  "last_updated": "2026-08-11T18:38:27Z",
   "last_session": {
-    "at": "2026-08-11T17:49:03Z",
+    "at": "2026-08-11T18:38:27Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -20,27 +26,27 @@
     "top_movers": [
       [
         "UPST",
-        -3.38
-      ],
-      [
-        "MARA",
-        2.51
-      ],
-      [
-        "META",
-        1.6
-      ],
-      [
-        "RBLX",
-        -1.35
-      ],
-      [
-        "AMC",
-        -1.24
+        -2.95
       ],
       [
         "MSTR",
-        -1.19
+        -1.81
+      ],
+      [
+        "MARA",
+        1.62
+      ],
+      [
+        "META",
+        1.3
+      ],
+      [
+        "AMC",
+        -1.13
+      ],
+      [
+        "COIN",
+        -1.11
       ]
     ],
     "news_read": [],
@@ -800,6 +806,10 @@
     },
     {
       "timestamp": "2026-08-11T17:49:03Z",
+      "value": 8609.81
+    },
+    {
+      "timestamp": "2026-08-11T18:38:27Z",
       "value": 8609.81
     }
   ]
