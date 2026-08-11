@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-11T13:57:34Z",
+  "updated_at": "2026-08-11T21:11:12Z",
   "last_prediction_date": "2026-08-11",
-  "last_settle_date": "2026-08-10",
+  "last_settle_date": "2026-08-11",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 27,
-      "correct": 22,
-      "accuracy_pct": 81.5,
+      "total": 29,
+      "correct": 23,
+      "accuracy_pct": 79.3,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -742,9 +742,10 @@
           "prediction": "down",
           "confidence": 60,
           "signal": "Negative tech sector performance and fear sentiment",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.6
         },
         {
           "date": "2026-08-11",
@@ -752,9 +753,10 @@
           "prediction": "up",
           "confidence": 65,
           "signal": "Positive momentum from previous session and stable macro indicators",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": false,
+          "settled": true,
+          "change_pct": -0.34
         }
       ]
     },
