@@ -1,62 +1,67 @@
 {
-  "cash": 3723.19,
-  "total_value": 8523.1,
+  "cash": 2176.09,
+  "total_value": 8537.81,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 73.895
+      "current_price": 74.0881
     },
     "NVDA": {
       "shares": 3,
       "avg_cost": 206.06,
-      "current_price": 218.44
+      "current_price": 220.9892
     },
     "CRWD": {
       "shares": 2,
       "avg_cost": 224.92,
-      "current_price": 224.92
+      "current_price": 223.625
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 309.42,
+      "current_price": 309.42
     }
   },
-  "total_return_pct": -14.77,
+  "total_return_pct": -14.62,
   "total_return_usd": 0.0,
-  "today_pnl": -75.47,
-  "today_pnl_pct": -0.88,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 8598.57,
-  "today_date": "2026-08-10",
+  "today_start_value": 8537.81,
+  "today_date": "2026-08-11",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T18:12:27Z",
+  "last_updated": "2026-08-11T13:47:46Z",
   "last_session": {
-    "at": "2026-08-10T18:12:27Z",
+    "at": "2026-08-11T13:47:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "CRWD",
-        4.89
+        "IONQ",
+        2.53
       ],
       [
         "SOXL",
-        -4.77
+        2.42
       ],
       [
-        "ARM",
-        -4.37
+        "SMCI",
+        2.03
+      ],
+      [
+        "NVDA",
+        1.75
+      ],
+      [
+        "ANET",
+        1.56
       ],
       [
         "AXON",
-        3.8
-      ],
-      [
-        "IONQ",
-        -3.29
-      ],
-      [
-        "MRVL",
-        -2.59
+        -1.49
       ]
     ],
     "news_read": [],
@@ -801,6 +806,10 @@
     {
       "timestamp": "2026-08-10T18:12:27Z",
       "value": 8523.1
+    },
+    {
+      "timestamp": "2026-08-11T13:47:46Z",
+      "value": 8537.81
     }
   ]
 }

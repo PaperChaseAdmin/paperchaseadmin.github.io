@@ -1,24 +1,29 @@
 {
-  "cash": 7528.62,
-  "total_value": 9984.27,
+  "cash": 6294.12,
+  "total_value": 9985.47,
   "positions": {
     "SHY": {
       "shares": 30,
-      "current_price": 81.855,
+      "current_price": 81.895,
       "avg_cost": 81.7733
+    },
+    "TLT": {
+      "shares": 15,
+      "avg_cost": 82.3,
+      "current_price": 82.3
     }
   },
-  "total_return_pct": -0.16,
+  "total_return_pct": -0.15,
   "total_return_usd": 0.0,
-  "today_pnl": 3.05,
-  "today_pnl_pct": 0.03,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 9981.22,
-  "today_date": "2026-08-10",
-  "last_action": "Market conditions are unclear due to missing Fear & Greed index and VIX data. Monitoring for clearer signals before making trading decisions.",
-  "last_updated": "2026-08-10T18:18:54Z",
+  "today_start_value": 9985.47,
+  "today_date": "2026-08-11",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-11T13:54:08Z",
   "last_session": {
-    "at": "2026-08-10T18:18:54Z",
+    "at": "2026-08-11T13:54:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -26,33 +31,33 @@
     "top_movers": [
       [
         "VNQ",
-        -1.57
+        -0.5
       ],
       [
         "XLRE",
-        -1.51
-      ],
-      [
-        "TLT",
-        -0.77
+        -0.43
       ],
       [
         "XLU",
-        -0.72
+        0.42
       ],
       [
-        "BAC",
-        0.72
+        "TLT",
+        0.28
       ],
       [
         "GS",
-        -0.71
+        0.24
+      ],
+      [
+        "IEF",
+        0.22
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Current portfolio is stable with minimal PNL impact from SHY. No immediate action required based on available data.",
-    "outlook": "Market conditions are unclear due to missing Fear & Greed index and VIX data. Monitoring for clearer signals before making trading decisions.",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -791,6 +796,10 @@
     {
       "timestamp": "2026-08-10T18:18:54Z",
       "value": 9984.27
+    },
+    {
+      "timestamp": "2026-08-11T13:54:08Z",
+      "value": 9985.47
     }
   ]
 }

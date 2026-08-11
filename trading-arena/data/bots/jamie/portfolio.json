@@ -1,36 +1,36 @@
 {
-  "cash": 3452.43,
-  "total_value": 10089.59,
+  "cash": 1905.33,
+  "total_value": 10113.88,
   "positions": {
     "MA": {
       "shares": 3,
       "avg_cost": 529.705,
-      "current_price": 561.6915
+      "current_price": 562.13
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 97.15
+      "current_price": 96.86
     },
     "JPM": {
       "shares": 2,
       "avg_cost": 336.345,
-      "current_price": 357.64
+      "current_price": 360.555
     },
     "BAC": {
       "shares": 36,
-      "current_price": 63.62,
+      "current_price": 63.985,
       "avg_cost": 60.7334
     },
     "WFC": {
       "shares": 4,
-      "current_price": 87.635,
+      "current_price": 87.785,
       "avg_cost": 87.525
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 135.43
+      "current_price": 136.72
     },
     "PGR": {
       "shares": 2,
@@ -40,48 +40,53 @@
     "BRK-B": {
       "shares": 1,
       "avg_cost": 533.48,
-      "current_price": 529.01
+      "current_price": 527.535
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 309.42,
+      "current_price": 309.42
     }
   },
-  "total_return_pct": 0.9,
+  "total_return_pct": 1.14,
   "total_return_usd": 0.0,
-  "today_pnl": -29.95,
-  "today_pnl_pct": -0.3,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 0,
-  "today_start_value": 10119.54,
-  "today_date": "2026-08-10",
+  "today_start_value": 10113.88,
+  "today_date": "2026-08-11",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-10T18:11:46Z",
+  "last_updated": "2026-08-11T13:43:06Z",
   "last_session": {
-    "at": "2026-08-10T18:11:46Z",
+    "at": "2026-08-11T13:43:06Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TRV",
-        -1.82
+        "C",
+        0.85
+      ],
+      [
+        "MS",
+        0.46
       ],
       [
         "BRK-B",
-        1.4
+        -0.35
       ],
       [
         "AXP",
-        -0.92
+        0.32
       ],
       [
-        "BAC",
-        0.72
+        "TRV",
+        -0.31
       ],
       [
-        "GS",
-        -0.71
-      ],
-      [
-        "V",
-        -0.66
+        "WFC",
+        0.27
       ]
     ],
     "news_read": [],
@@ -826,6 +831,10 @@
     {
       "timestamp": "2026-08-10T18:11:46Z",
       "value": 10089.59
+    },
+    {
+      "timestamp": "2026-08-11T13:43:06Z",
+      "value": 10113.88
     }
   ]
 }
