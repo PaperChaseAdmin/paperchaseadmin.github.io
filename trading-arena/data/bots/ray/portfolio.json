@@ -1,6 +1,6 @@
 {
   "cash": 1183.29,
-  "total_value": 10270.36,
+  "total_value": 10272.69,
   "positions": {
     "TIPS": {
       "shares": 26867,
@@ -9,56 +9,56 @@
     },
     "DJP": {
       "shares": 10,
-      "current_price": 48.4,
+      "current_price": 48.245,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 105,
-      "current_price": 17.7301,
+      "current_price": 17.82,
       "avg_cost": 16.1117
     },
     "TLT": {
       "shares": 24,
-      "current_price": 82.3,
+      "current_price": 82.275,
       "avg_cost": 84.2528
     },
     "IEF": {
       "shares": 10,
       "avg_cost": 93.94,
-      "current_price": 92.965
+      "current_price": 92.9299
     },
     "FXI": {
       "shares": 10,
       "avg_cost": 33.365,
-      "current_price": 35.755
+      "current_price": 35.715
     },
     "IAU": {
       "shares": 2,
       "avg_cost": 77.6,
-      "current_price": 82.6691
+      "current_price": 82.4498
     },
     "GSG": {
       "shares": 40,
-      "current_price": 32.3,
+      "current_price": 32.34,
       "avg_cost": 32.0725
     },
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 403.26
+      "current_price": 402.185
     }
   },
-  "total_return_pct": 2.7,
+  "total_return_pct": 2.73,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 2.33,
+  "today_pnl_pct": 0.02,
   "total_trades": 0,
   "today_start_value": 10270.36,
   "today_date": "2026-08-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T13:42:09Z",
+  "last_action": "Mixed signals with some commodities and bonds showing slight gains while equities and emerging markets are mixed.",
+  "last_updated": "2026-08-11T15:40:17Z",
   "last_session": {
-    "at": "2026-08-11T13:42:09Z",
+    "at": "2026-08-11T15:40:17Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -66,33 +66,33 @@
     "top_movers": [
       [
         "FXI",
-        -2.08
+        -2.1
       ],
       [
         "EEM",
-        0.58
+        0.59
+      ],
+      [
+        "DJP",
+        -0.51
       ],
       [
         "GDX",
-        -0.56
-      ],
-      [
-        "PDBC",
-        -0.56
+        -0.36
       ],
       [
         "TLT",
-        0.28
+        0.27
       ],
       [
         "IEF",
-        0.22
+        0.18
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Current portfolio is well-diversified across asset classes. No immediate adjustments needed as positions align with the All Weather strategy. Monitoring for any significant shifts in economic indicators to rebalance accordingly.",
+    "outlook": "Mixed signals with some commodities and bonds showing slight gains while equities and emerging markets are mixed.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -835,6 +835,10 @@
     {
       "timestamp": "2026-08-11T13:42:09Z",
       "value": 10270.36
+    },
+    {
+      "timestamp": "2026-08-11T15:40:17Z",
+      "value": 10272.69
     }
   ]
 }

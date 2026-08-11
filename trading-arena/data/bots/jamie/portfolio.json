@@ -1,98 +1,98 @@
 {
   "cash": 1905.33,
-  "total_value": 10113.88,
+  "total_value": 10098.16,
   "positions": {
     "MA": {
       "shares": 3,
       "avg_cost": 529.705,
-      "current_price": 562.13
+      "current_price": 566.37
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 96.86
+      "current_price": 96.62
     },
     "JPM": {
       "shares": 2,
       "avg_cost": 336.345,
-      "current_price": 360.555
+      "current_price": 360.925
     },
     "BAC": {
       "shares": 36,
-      "current_price": 63.985,
+      "current_price": 63.83,
       "avg_cost": 60.7334
     },
     "WFC": {
       "shares": 4,
-      "current_price": 87.785,
+      "current_price": 87.58,
       "avg_cost": 87.525
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 136.72
+      "current_price": 136.15
     },
     "PGR": {
       "shares": 2,
-      "current_price": 214.035,
+      "current_price": 213.75,
       "avg_cost": 212.73
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 533.48,
-      "current_price": 527.535
+      "current_price": 521.4
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 309.42,
-      "current_price": 309.42
+      "current_price": 306.71
     }
   },
-  "total_return_pct": 1.14,
+  "total_return_pct": 0.98,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -15.72,
+  "today_pnl_pct": -0.16,
   "total_trades": 0,
   "today_start_value": 10113.88,
   "today_date": "2026-08-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T13:43:06Z",
+  "last_action": "Stable with slight volatility in financial stocks.",
+  "last_updated": "2026-08-11T15:45:19Z",
   "last_session": {
-    "at": "2026-08-11T13:43:06Z",
+    "at": "2026-08-11T15:45:19Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "C",
-        0.85
-      ],
-      [
-        "MS",
-        0.46
-      ],
-      [
         "BRK-B",
-        -0.35
+        -1.51
+      ],
+      [
+        "V",
+        0.77
+      ],
+      [
+        "C",
+        0.7
       ],
       [
         "AXP",
-        0.32
+        0.68
       ],
       [
-        "TRV",
-        -0.31
+        "MA",
+        0.56
       ],
       [
-        "WFC",
-        0.27
+        "COF",
+        0.47
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "No significant changes in market conditions or news to prompt immediate action. Monitoring for opportunities to rebalance or take profits.",
+    "outlook": "Stable with slight volatility in financial stocks.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -835,6 +835,10 @@
     {
       "timestamp": "2026-08-11T13:43:06Z",
       "value": 10113.88
+    },
+    {
+      "timestamp": "2026-08-11T15:45:19Z",
+      "value": 10098.16
     }
   ]
 }

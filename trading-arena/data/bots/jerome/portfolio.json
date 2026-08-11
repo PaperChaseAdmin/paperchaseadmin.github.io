@@ -1,57 +1,62 @@
 {
-  "cash": 6294.12,
-  "total_value": 9985.47,
+  "cash": 5860.62,
+  "total_value": 9984.8,
   "positions": {
     "SHY": {
       "shares": 30,
-      "current_price": 81.895,
+      "current_price": 81.885,
       "avg_cost": 81.7733
     },
     "TLT": {
       "shares": 15,
       "avg_cost": 82.3,
-      "current_price": 82.3
+      "current_price": 82.275
+    },
+    "XLU": {
+      "shares": 10,
+      "avg_cost": 43.35,
+      "current_price": 43.35
     }
   },
   "total_return_pct": -0.15,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -0.67,
+  "today_pnl_pct": -0.01,
   "total_trades": 0,
   "today_start_value": 9985.47,
   "today_date": "2026-08-11",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T13:54:08Z",
+  "last_updated": "2026-08-11T15:52:13Z",
   "last_session": {
-    "at": "2026-08-11T13:54:08Z",
+    "at": "2026-08-11T15:52:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "VNQ",
-        -0.5
+        "XLU",
+        0.51
       ],
       [
         "XLRE",
-        -0.43
+        -0.48
       ],
       [
-        "XLU",
-        0.42
+        "VNQ",
+        -0.47
       ],
       [
-        "TLT",
-        0.28
+        "JPM",
+        0.34
       ],
       [
         "GS",
-        0.24
+        0.31
       ],
       [
-        "IEF",
-        0.22
+        "TLT",
+        0.27
       ]
     ],
     "news_read": [],
@@ -800,6 +805,10 @@
     {
       "timestamp": "2026-08-11T13:54:08Z",
       "value": 9985.47
+    },
+    {
+      "timestamp": "2026-08-11T15:52:13Z",
+      "value": 9984.8
     }
   ]
 }

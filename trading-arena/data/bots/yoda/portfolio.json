@@ -1,72 +1,77 @@
 {
-  "cash": 631.77,
-  "total_value": 10261.65,
+  "cash": 558.94,
+  "total_value": 10248.15,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 382.01
+      "current_price": 381.53
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 721.25,
+      "current_price": 720.15,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 773.53
+      "current_price": 772.36
     },
     "VXUS": {
       "shares": 4,
-      "current_price": 87.14,
+      "current_price": 87.065,
       "avg_cost": 86.5913
     },
     "VIG": {
       "shares": 1,
       "avg_cost": 238.72,
-      "current_price": 246.115
+      "current_price": 245.84
+    },
+    "VEA": {
+      "shares": 1,
+      "avg_cost": 72.825,
+      "current_price": 72.825
     }
   },
-  "total_return_pct": 2.62,
+  "total_return_pct": 2.48,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -13.5,
+  "today_pnl_pct": -0.13,
   "total_trades": 0,
   "today_start_value": 10261.65,
   "today_date": "2026-08-11",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T13:53:53Z",
+  "last_updated": "2026-08-11T15:48:14Z",
   "last_session": {
-    "at": "2026-08-11T13:53:53Z",
+    "at": "2026-08-11T15:48:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "VEA",
-        0.52
+        "VNQ",
+        -0.47
       ],
       [
-        "VNQ",
-        -0.5
+        "VEA",
+        0.46
       ],
       [
         "VXUS",
-        0.35
+        0.27
       ],
       [
-        "GLD",
-        0.2
+        "VWO",
+        -0.16
       ],
       [
         "AGG",
-        0.18
+        0.15
       ],
       [
         "BND",
-        0.15
+        0.13
       ]
     ],
     "news_read": [],
@@ -815,6 +820,10 @@
     {
       "timestamp": "2026-08-11T13:53:53Z",
       "value": 10261.65
+    },
+    {
+      "timestamp": "2026-08-11T15:48:14Z",
+      "value": 10248.15
     }
   ]
 }
