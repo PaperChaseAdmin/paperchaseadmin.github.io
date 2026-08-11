@@ -1,15 +1,15 @@
 {
-  "cash": 2143.75,
-  "total_value": 10110.13,
+  "cash": 2299.85,
+  "total_value": 10119.53,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 306.71,
+      "current_price": 307.28,
       "avg_cost": 299.3344
     },
     "EL": {
       "shares": 9,
-      "current_price": 86.91,
+      "current_price": 87.29,
       "avg_cost": 84.8412
     },
     "TPR": {
@@ -19,46 +19,41 @@
     },
     "RL": {
       "shares": 4,
-      "current_price": 401.485,
+      "current_price": 401.135,
       "avg_cost": 377.6787
     },
     "RH": {
       "shares": 1,
       "avg_cost": 177.31,
-      "current_price": 183.415
+      "current_price": 182.925
     },
     "LULU": {
       "shares": 10,
       "avg_cost": 115.13,
-      "current_price": 125.05
+      "current_price": 125.1412
     },
     "HD": {
       "shares": 1,
       "avg_cost": 331.208,
-      "current_price": 355.6168
+      "current_price": 357.12
     },
     "CAKE": {
       "shares": 2,
       "avg_cost": 110.23,
-      "current_price": 112.29
-    },
-    "CPRI": {
-      "shares": 10,
-      "avg_cost": 15.575,
-      "current_price": 15.575
+      "current_price": 112.275
     }
   },
-  "total_return_pct": 1.1,
+  "total_return_pct": 1.2,
   "total_return_usd": 0.0,
-  "today_pnl": -12.84,
-  "today_pnl_pct": -0.13,
+  "today_pnl": -3.44,
+  "today_pnl_pct": -0.03,
   "total_trades": 0,
   "today_start_value": 10122.97,
   "today_date": "2026-08-11",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T15:47:14Z",
+  "last_updated": "2026-08-11T16:12:44Z",
   "last_session": {
-    "at": "2026-08-11T15:47:14Z",
+    "at": "2026-08-11T16:12:44Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -66,27 +61,27 @@
     "top_movers": [
       [
         "NKE",
-        -2.39
-      ],
-      [
-        "LULU",
-        -2.15
+        -2.48
       ],
       [
         "AMZN",
-        -1.78
+        -2.08
+      ],
+      [
+        "LULU",
+        -2.08
+      ],
+      [
+        "HD",
+        1.81
       ],
       [
         "TPR",
         -1.69
       ],
       [
-        "HD",
-        1.38
-      ],
-      [
         "RL",
-        -1.33
+        -1.41
       ]
     ],
     "news_read": [],
@@ -839,6 +834,10 @@
     {
       "timestamp": "2026-08-11T15:47:14Z",
       "value": 10110.13
+    },
+    {
+      "timestamp": "2026-08-11T16:12:44Z",
+      "value": 10119.53
     }
   ]
 }

@@ -1,67 +1,72 @@
 {
-  "cash": 1266.05,
-  "total_value": 8811.67,
+  "cash": 344.21,
+  "total_value": 8791.86,
   "positions": {
     "MSTR": {
       "shares": 35,
-      "current_price": 96.16,
+      "current_price": 95.9001,
       "avg_cost": 100.6991
     },
     "COIN": {
       "shares": 20,
-      "current_price": 148.36,
+      "current_price": 147.92,
       "avg_cost": 159.685
     },
     "CLSK": {
       "shares": 61,
-      "current_price": 11.62,
+      "current_price": 11.605,
       "avg_cost": 13.0222
     },
     "RIOT": {
       "shares": 25,
-      "current_price": 20.16,
+      "current_price": 20.12,
       "avg_cost": 22.029
+    },
+    "AAPL": {
+      "shares": 3,
+      "avg_cost": 307.28,
+      "current_price": 307.28
     }
   },
-  "total_return_pct": -11.88,
+  "total_return_pct": -12.08,
   "total_return_usd": 0.0,
-  "today_pnl": -136.34,
-  "today_pnl_pct": -1.52,
+  "today_pnl": -156.15,
+  "today_pnl_pct": -1.75,
   "total_trades": 0,
   "today_start_value": 8948.01,
   "today_date": "2026-08-11",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T15:57:41Z",
+  "last_updated": "2026-08-11T16:15:31Z",
   "last_session": {
-    "at": "2026-08-11T15:57:41Z",
+    "at": "2026-08-11T16:15:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "HUT",
-        7.21
+        "CIFR",
+        7.13
       ],
       [
-        "CIFR",
-        6.68
+        "HUT",
+        6.97
       ],
       [
         "WULF",
-        5.0
+        4.35
       ],
       [
         "RIOT",
-        4.05
+        3.66
       ],
       [
         "IREN",
-        2.57
+        2.79
       ],
       [
         "MARA",
-        2.09
+        1.73
       ]
     ],
     "news_read": [],
@@ -814,6 +819,10 @@
     {
       "timestamp": "2026-08-11T15:57:41Z",
       "value": 8811.67
+    },
+    {
+      "timestamp": "2026-08-11T16:15:31Z",
+      "value": 8791.86
     }
   ]
 }
