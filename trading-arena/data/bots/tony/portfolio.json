@@ -1,34 +1,39 @@
 {
-  "cash": 2840.1,
-  "total_value": 8420.5,
+  "cash": 2206.15,
+  "total_value": 8470.46,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 72.4599
+      "current_price": 73.0299
     },
     "NVDA": {
       "shares": 3,
       "avg_cost": 206.06,
-      "current_price": 216.8
+      "current_price": 217.9201
     },
     "SOXL": {
       "shares": 10,
       "avg_cost": 130.7,
-      "current_price": 130.7
+      "current_price": 132.5101
+    },
+    "AXON": {
+      "shares": 1,
+      "avg_cost": 633.95,
+      "current_price": 633.95
     }
   },
-  "total_return_pct": -15.79,
+  "total_return_pct": -15.3,
   "total_return_usd": 0.0,
-  "today_pnl": -117.31,
-  "today_pnl_pct": -1.37,
+  "today_pnl": -67.35,
+  "today_pnl_pct": -0.79,
   "total_trades": 0,
   "today_start_value": 8537.81,
   "today_date": "2026-08-11",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T18:37:43Z",
+  "last_updated": "2026-08-11T19:37:38Z",
   "last_session": {
-    "at": "2026-08-11T18:37:43Z",
+    "at": "2026-08-11T19:37:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -36,27 +41,27 @@
     "top_movers": [
       [
         "AXON",
-        6.3
+        6.31
       ],
       [
-        "CRWD",
-        -2.09
-      ],
-      [
-        "AVGO",
-        -1.83
-      ],
-      [
-        "TQQQ",
-        -1.81
+        "IONQ",
+        2.92
       ],
       [
         "ANET",
-        1.46
+        2.57
       ],
       [
-        "RKLB",
-        -1.39
+        "AVGO",
+        -1.99
+      ],
+      [
+        "SOXL",
+        1.98
+      ],
+      [
+        "CRWD",
+        -1.58
       ]
     ],
     "news_read": [],
@@ -821,6 +826,10 @@
     {
       "timestamp": "2026-08-11T18:37:43Z",
       "value": 8420.5
+    },
+    {
+      "timestamp": "2026-08-11T19:37:38Z",
+      "value": 8470.46
     }
   ]
 }
