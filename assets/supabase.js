@@ -1,6 +1,6 @@
 /* PaperChase Supabase Auth Helper */
 const SUPABASE_URL = 'https://ksityddelwdtvawjsmyj.supabase.co';
-const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ewogICJyb2xlIjogImFub24iLAogICJpc3MiOiAic3VwYWJhc2UiLAogICJpYXQiOiAxNzE4MjM2ODAwLAogICJleHAiOiAxODc2MDAzMjAwCn0.sG8T5q0ZAqLR4JpYbDqh7lA64voYv5RjaM1MpFnpr5I';
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzaXR5ZGRlbHdkdHZhd2pzbXlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5OTY3NzQsImV4cCI6MjA5NDU3Mjc3NH0.RZMARTP09EeOnKpfS2MwG0IcBcdupIQxDtmCkESM40M';
 
 let _supabase = null;
 function getSupabase() {
