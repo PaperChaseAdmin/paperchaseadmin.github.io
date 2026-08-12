@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-12T13:58:59Z",
+  "updated_at": "2026-08-12T21:10:28Z",
   "last_prediction_date": "2026-08-12",
-  "last_settle_date": "2026-08-11",
+  "last_settle_date": "2026-08-12",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 29,
-      "correct": 23,
-      "accuracy_pct": 79.3,
+      "total": 30,
+      "correct": 24,
+      "accuracy_pct": 80.0,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -774,9 +774,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Tech sector momentum and positive earnings",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.54
         },
         {
           "date": "2026-08-12",
