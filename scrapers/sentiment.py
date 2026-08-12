@@ -139,10 +139,25 @@ def generate_summary(topic: str, data_text: str) -> dict:
     text = _ai_generate(prompt)
 
     if text:
-        outlook = "Mixed"
-        if text.lower().startswith("bullish"):  outlook = "Bullish"
-        elif text.lower().startswith("bearish"): outlook = "Bearish"
-        return {"outlook": outlook, "summary": text}
+        t = text.strip()
+        lowered = t.lower()
+        outlook = None
+        for label in ("bullish", "bearish", "mixed"):
+            if lowered.startswith(label):
+                outlook = label.capitalize()
+                break
+        # Reject prompt echoes / model refusals that don't follow the required format.
+        # (Live production data has had the raw prompt and a refusal written verbatim.)
+        if outlook is None or len(t) > 400 or any(
+            phrase in lowered for phrase in (
+                "exactly one paragraph", "max 80 words", "summarize the overall market sentiment",
+                "please provide", "i cannot", "i can't", "as an ai", "i'm an ai",
+            )
+        ):
+            print("  [summary] AI output rejected (bad format or prompt echo), using keyword fallback")
+            text = None
+        else:
+            return {"outlook": outlook, "summary": t}
 
     # Keyword fallback
     bull = sum(1 for w in BULLISH_WORDS if w in data_text.lower())

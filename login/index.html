@@ -73,7 +73,11 @@ async function handleLogin(){
     err.style.display='block'; return;
   }
   const params=new URLSearchParams(window.location.search);
-  window.location.href=params.get('redirect')||'/account/';
+  let redirect=params.get('redirect');
+  if(!redirect||!redirect.startsWith('/')||redirect.startsWith('//')||redirect.includes('://')||redirect.startsWith('\\')){
+    redirect='/account/';
+  }
+  window.location.href=redirect;
 }
 document.getElementById('email').focus();
 </script>
