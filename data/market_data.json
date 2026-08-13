@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T05:31:22Z",
+  "updated_at": "2026-08-13T09:05:39Z",
   "crypto": {
     "fear_greed": {
       "value": 29,
@@ -11,78 +11,151 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 63894,
-        "change_24h": -0.2,
-        "market_cap": 1282319190303,
-        "volume_24h": 22059335905
+        "price_usd": 63706,
+        "change_24h": -0.1,
+        "market_cap": 1278552698523,
+        "volume_24h": 21554168173
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1896.85,
-        "change_24h": 0.3,
-        "market_cap": 228944950597,
-        "volume_24h": 7154556453
+        "price_usd": 1888.02,
+        "change_24h": -0.1,
+        "market_cap": 227849311993,
+        "volume_24h": 7161872735
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 613.95,
-        "change_24h": -0.1,
-        "market_cap": 81759507363,
-        "volume_24h": 582731974
+        "price_usd": 613.56,
+        "change_24h": 0.3,
+        "market_cap": 81706286085,
+        "volume_24h": 524202842
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.011,
-        "change_24h": -0.9,
-        "market_cap": 63345192792,
-        "volume_24h": 944289519
+        "price_usd": 1.012,
+        "change_24h": -0.7,
+        "market_cap": 63419256715,
+        "volume_24h": 878919608
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 76.27,
-        "change_24h": -0.4,
-        "market_cap": 44436905242,
-        "volume_24h": 1291645674
+        "price_usd": 76.14,
+        "change_24h": -0.1,
+        "market_cap": 44362289913,
+        "volume_24h": 1278017845
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.070294,
-        "change_24h": -2.7,
-        "market_cap": 10929272859,
-        "volume_24h": 417791903
+        "price_usd": 0.070435,
+        "change_24h": -1.7,
+        "market_cap": 10950997797,
+        "volume_24h": 398935208
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.183826,
-        "change_24h": -2.3,
-        "market_cap": 6867562314,
-        "volume_24h": 208366821
+        "price_usd": 0.186289,
+        "change_24h": 0.6,
+        "market_cap": 6958858607,
+        "volume_24h": 223102312
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 8.78,
-        "change_24h": 0.4,
-        "market_cap": 6570481888,
-        "volume_24h": 233559978
+        "price_usd": 8.74,
+        "change_24h": 0,
+        "market_cap": 6539834050,
+        "volume_24h": 218673891
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.5,
-        "change_24h": 3.5,
-        "market_cap": 2805786119,
-        "volume_24h": 218775004
+        "price_usd": 6.51,
+        "change_24h": 4.5,
+        "market_cap": 2810491911,
+        "volume_24h": 217056356
       }
     ],
-    "top_mentioned": [],
+    "top_mentioned": [
+      {
+        "symbol": "BTC",
+        "mentions": 2,
+        "price_usd": 63706,
+        "change_24h": -0.1
+      },
+      {
+        "symbol": "ETH",
+        "mentions": 1,
+        "price_usd": 1888.02,
+        "change_24h": -0.1
+      },
+      {
+        "symbol": "SOL",
+        "mentions": 0,
+        "price_usd": 76.14,
+        "change_24h": -0.1
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 0,
+        "price_usd": 613.56,
+        "change_24h": 0.3
+      },
+      {
+        "symbol": "XRP",
+        "mentions": 0,
+        "price_usd": 1.012,
+        "change_24h": -0.7
+      },
+      {
+        "symbol": "ADA",
+        "mentions": 0,
+        "price_usd": 0.186289,
+        "change_24h": 0.6
+      },
+      {
+        "symbol": "DOGE",
+        "mentions": 0,
+        "price_usd": 0.070435,
+        "change_24h": -1.7
+      },
+      {
+        "symbol": "AVAX",
+        "mentions": 0,
+        "price_usd": 6.51,
+        "change_24h": 4.5
+      },
+      {
+        "symbol": "LINK",
+        "mentions": 0,
+        "price_usd": 8.74,
+        "change_24h": 0
+      },
+      {
+        "symbol": "TON",
+        "mentions": 0,
+        "price_usd": null,
+        "change_24h": null
+      }
+    ],
     "news": [
+      {
+        "title": "Metaplanet denies selling bitcoin worth $320 million",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2026/08/13/metaplanet-denies-selling-bitcoin-worth-usd320-million",
+        "published": "Thu, 13 Aug 2026 05:34:48 +0000",
+        "assets": [
+          "BTC"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
       {
         "title": "Bitcoin firms ask AI labs for same tools attackers already have",
         "source": "CoinDesk",
@@ -108,46 +181,30 @@
         "color": "red"
       },
       {
-        "title": "Bitcoin slips near $63,500 as traders look past CPI to Fed’s next tests",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/08/13/bitcoin-slips-near-usd63-500-as-traders-look-past-cpi-to-fed-s-next-tests",
-        "published": "Thu, 13 Aug 2026 03:39:06 +0000",
-        "assets": [
-          "BTC"
-        ],
+        "title": "Securitize falls 16% after earnings miss, tokenization revenue drops",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/securitize-falls-earnings-miss-tokenization-revenue?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 13 Aug 2026 08:29:01 +0000",
+        "assets": [],
         "sentiment": "Bearish",
-        "score": -1.0,
+        "score": -0.5,
         "color": "red"
       },
       {
-        "title": "Crypto valuations could double as protocols link revenue to tokens: Bitwise CIO",
+        "title": "BitGo posts $19M Q2 loss despite 80% revenue surge to $4.3B",
         "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/crypto-valuations-protocol-revenue-token-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 13 Aug 2026 05:01:42 +0000",
-        "assets": [
-          "LINK"
-        ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
+        "url": "https://cointelegraph.com/news/bitgo-q2-19-million-revenue-surge-4-3-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 13 Aug 2026 07:42:59 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
-        "title": "Metaplanet CEO shuts down Bitcoin sale speculation after $322M transfer",
+        "title": "Copper US arm becomes FINRA member, SEC-registered broker-dealer",
         "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/gerovich-shuts-down-bitcoin-sale-metaplanets-transfer?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 13 Aug 2026 04:15:26 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "ASX shareholder plans to sue former directors over failed blockchain project",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/asx-shareholder-lawsuit-failed-blockchain-chess-project?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 13 Aug 2026 01:00:57 +0000",
+        "url": "https://cointelegraph.com/news/copper-us-arm-joins-finra-after-sec-broker-dealer-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 13 Aug 2026 07:14:19 +0000",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
@@ -184,6 +241,30 @@
         "color": "green"
       },
       {
+        "title": "Strategy sold $100M to defend STRC’s $100 stock price as DeFi packages the risk into a 7% ‘safer’ trade",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/strategy-sold-100m-to-defend-strcs-100-stock-price-as-defi-packages-the-risk-into-a-7-safer-trade/",
+        "published": "Thu, 13 Aug 2026 07:45:37 +0000",
+        "assets": [
+          "SOL"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Arthur Hayes says a $60 billion Fed cap is Bitcoin’s next liquidity trigger and needed for a price surge",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/arthur-hayes-says-a-60-billion-fed-cap-is-bitcoins-next-liquidity-trigger-and-needed-for-a-price-surge/",
+        "published": "Thu, 13 Aug 2026 06:24:44 +0000",
+        "assets": [
+          "BTC"
+        ],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
         "title": "BlackRock’s Bitcoin income ETF offset less than 30% of its $1.2M crypto losses with options",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/blackrocks-bitcoin-income-etf-offset-less-than-30-of-its-1-2m-crypto-losses-with-options/",
@@ -194,115 +275,114 @@
         "sentiment": "Bearish",
         "score": -0.333,
         "color": "red"
-      },
-      {
-        "title": "Cypherpunk secures a $46M Zcash gain and turns a $4.7M operating loss into $39.4M profit",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/cypherpunk-secures-a-46m-zcash-gain-and-turns-a-4-7m-operating-loss-into-39-4m-profit/",
-        "published": "Wed, 12 Aug 2026 22:30:49 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": -0.2,
-        "color": "yellow"
-      },
-      {
-        "title": "Bitcoin miner HIVE’s $79M quarter runs into an $80M Swedish tax problem",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/bitcoin-miner-hives-79m-quarter-runs-into-an-80m-swedish-tax-problem/",
-        "published": "Wed, 12 Aug 2026 21:40:19 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": -0.211,
+      "score": -0.236,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [],
+    "reddit": [
+      {
+        "subreddit": "r/CryptoCurrency",
+        "mentions": {
+          "BTC": 2,
+          "ETH": 1,
+          "SOL": 0,
+          "BNB": 0,
+          "XRP": 0,
+          "ADA": 0,
+          "DOGE": 0,
+          "AVAX": 0,
+          "LINK": 0,
+          "TON": 0
+        },
+        "activity_score": 100,
+        "top_post": "Daily Crypto Discussion - August 12, 2026 (GMT+0)",
+        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vmtils/daily_crypto_discussion_august_12_2026_gmt0/",
+        "top_post_score": 0,
+        "posts": 25
+      }
+    ],
     "reddit_summary": {
       "outlook": "Mixed",
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
     },
     "news_summary": {
       "outlook": "Bearish",
-      "summary": "Bearish: 3 bullish vs 8 bearish signals detected across crypto news data."
+      "summary": "Bearish: 3 bullish vs 14 bearish signals detected across crypto news data."
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 146,
+      "active_threads": 145,
       "mentions": {
-        "BTC": 30,
+        "BTC": 26,
         "XRP": 12,
         "ETH": 5
       },
-      "bullish_hits": 77,
+      "bullish_hits": 75,
       "bearish_hits": 44,
-      "bullish_pct": 64,
+      "bullish_pct": 63,
       "top_coin": "BTC",
       "top_posts": [
         "/smg/ - stock market general capitol of capital edition &gt;educational sites: https://www.investopedia.com https://www.",
         "/smg/ - stock market general refreshing edition &gt;educational sites: https://www.investopedia.com https://www.khanacad",
-        "/smg/ - stock market general insider trade now for only $100k edition &gt;educational sites: https://www.investopedia.co",
+        "/smg/ - stock market general oil? edition &gt;educational sites: https://www.investopedia.com https://www.khanacademy.or",
         "/smg/ - stock market general squid games edition &gt;educational sites: https://www.investopedia.com https://www.khanaca",
         "/smg// - stock market general fake and gay cpi edition &gt;educational sites: https://www.investopedia.com https://www.k"
       ]
     },
     "cg_trending": [
       {
-        "symbol": "APR",
-        "name": "aPriori",
-        "rank": 224,
-        "score": 0,
-        "change_24h": 82.03
-      },
-      {
         "symbol": "CASHCAT",
         "name": "Cash Cat",
-        "rank": 184,
-        "score": 1,
-        "change_24h": 13.65
-      },
-      {
-        "symbol": "DOS",
-        "name": "DAPPOS",
-        "rank": 384,
-        "score": 2,
-        "change_24h": -18.45
-      },
-      {
-        "symbol": "PENGU",
-        "name": "Pudgy Penguins",
-        "rank": 106,
-        "score": 3,
-        "change_24h": -1.44
-      },
-      {
-        "symbol": "CYS",
-        "name": "Cysic",
-        "rank": 140,
-        "score": 4,
-        "change_24h": 26.28
-      },
-      {
-        "symbol": "LIT",
-        "name": "Lighter",
-        "rank": 88,
-        "score": 5,
-        "change_24h": 4.29
+        "rank": 190,
+        "score": 0,
+        "change_24h": 11.87
       },
       {
         "symbol": "HYPE",
         "name": "Hyperliquid",
-        "rank": 10,
+        "rank": 9,
+        "score": 1,
+        "change_24h": 3.79
+      },
+      {
+        "symbol": "PENGU",
+        "name": "Pudgy Penguins",
+        "rank": 104,
+        "score": 2,
+        "change_24h": -0.69
+      },
+      {
+        "symbol": "ACU",
+        "name": "Acurast",
+        "rank": 483,
+        "score": 3,
+        "change_24h": 25.75
+      },
+      {
+        "symbol": "ANSEM",
+        "name": "The Black Bull",
+        "rank": 297,
+        "score": 4,
+        "change_24h": 1.71
+      },
+      {
+        "symbol": "SOL",
+        "name": "Solana",
+        "rank": 7,
+        "score": 5,
+        "change_24h": -0.07
+      },
+      {
+        "symbol": "COTI",
+        "name": "COTI",
+        "rank": 600,
         "score": 6,
-        "change_24h": 4.18
+        "change_24h": 14.27
       }
     ]
   },
@@ -321,14 +401,14 @@
         "change_24h": -0.04
       },
       "vix": {
-        "value": 14.55,
-        "change_24h": -4.78
+        "value": 14.69,
+        "change_24h": 0.96
       }
     },
     "market_mood": {
-      "score": 0.334,
-      "label": "Bullish",
-      "color": "green"
+      "score": 0.047,
+      "label": "Neutral",
+      "color": "yellow"
     },
     "prices": [
       {
@@ -385,30 +465,30 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Stocks and Bonds Rise as Fed Rate-Hike Bets Ease: Markets Wrap",
+        "title": "CK Hutchison Profit Jumps Sharply on Boost From Asset Sales",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-12/stock-market-today-dow-s-p-live-updates",
-        "published": "Wed, 12 Aug 2026 22:08:18 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-13/ck-hutchison-profit-jumps-sharply-on-oil-retail-strength",
+        "published": "Thu, 13 Aug 2026 08:35:53 GMT",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Korea Steps Up Home Supply Push as President Faces Headwind",
+        "title": "HSBC's Martins Sees BOE on Hold as UK Data 'Look Alright'",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-13/korea-steps-up-home-supply-push-as-president-faces-discontent",
-        "published": "Thu, 13 Aug 2026 03:00:00 GMT",
+        "url": "https://www.bloomberg.com/news/videos/2026-08-13/hsbc-s-martins-sees-boe-on-hold-as-data-look-alright-video",
+        "published": "Thu, 13 Aug 2026 08:53:23 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Thyssenkrupp Raises Outlook Slightly on Steel, Warship Gains",
+        "title": "Lenovo’s AI-Driven Revenue Boost Sends Stock to New Record",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-13/thyssenkrupp-raises-outlook-slightly-on-steel-warship-gains",
-        "published": "Thu, 13 Aug 2026 05:00:00 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-13/lenovo-shares-surge-19-after-revenue-beat-renews-ai-optimism",
+        "published": "Thu, 13 Aug 2026 05:47:26 GMT",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
@@ -418,31 +498,51 @@
         "title": "‘Hormuz remains blocked’: Iran disputes Trump claims as traffic sinks to near 3-month lows",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/08/13/us-iran-war-trump-hormuz-irgc.html",
-        "published": "Thu, 13 Aug 2026 05:19:50 GMT",
+        "published": "Thu, 13 Aug 2026 08:28:14 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "South Korea’s Kospi has staged a stunning comeback. How long will the bull market last?",
+        "title": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/13/south-korea-kospi-bull-market-sk-hynix-samsung-surge.html",
-        "published": "Thu, 13 Aug 2026 05:22:03 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Cerebras stock plunges 14% after second earnings report following IPO",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/12/cerebras-cbrs-q2-earnings-report-2026.html",
-        "published": "Wed, 12 Aug 2026 23:49:23 GMT",
+        "url": "https://www.cnbc.com/2026/08/13/chinese-firm-tops-micron-kioxia-shipments-nand-memory-chips.html",
+        "published": "Thu, 13 Aug 2026 02:59:50 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
+      },
+      {
+        "title": "Shipping giants warn ports and trucks could hold up deliveries and push up prices",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/08/13/maersk-earnings-shipping-hormuz-red-sea.html",
+        "published": "Thu, 13 Aug 2026 08:54:59 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Actress Tamara Mello of ‘She’s All That’ puts L.A. home on the market for $1.5 million",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/actresstamara-melloof-shes-all-that-puts-l-a-home-on-the-market-for-1-5-million-0046941f?mod=mw_rss_topstories",
+        "published": "Thu, 13 Aug 2026 08:58:00 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Lenovo profits soar past expectations on AI computers, servers and services",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/lenovo-profits-soar-past-expectations-on-ai-computers-servers-and-services-162e11e6?mod=mw_rss_topstories",
+        "published": "Thu, 13 Aug 2026 07:20:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "Cisco sees record results from an AI ‘supercycle,’ but its stock pulls back",
@@ -455,54 +555,44 @@
         "color": "yellow"
       },
       {
-        "title": "My wife can claim $900 at 62. Should she take it now — or wait for her spousal benefit?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/i-want-her-to-choose-the-best-strategy-my-wifes-social-security-is-just-900-should-she-claim-spousal-benefit-at-62-e3ef621d?mod=mw_rss_topstories",
-        "published": "Thu, 13 Aug 2026 01:00:00 GMT",
+        "title": "CapitaLand Investment Limited (CLILF) Q2 2026 Earnings Call Transcript",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4935910-capitaland-investment-limited-clilf-q2-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Thu, 13 Aug 2026 04:57:14 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "AEVEX Corp. (AVEX) Q2 2026 Earnings Call Transcript",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4935906-aevex-corp-avex-q2-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Thu, 13 Aug 2026 04:57:12 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "2026 U.S. Insurance Investments Market Report: A Regulatory Redesign",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4935886-2026-us-insurance-investments-market-report-regulatory-redesign?source=feed_all_articles",
+        "published": "Thu, 13 Aug 2026 04:53:00 -0400",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
+        "title": "Tech CEOs are writing 6,500-word manifestos. Who’s actually reading?",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/13/tech-ceos-ai-manifesto-zuckerberg-amodei-readership/",
+        "published": "Thu, 13 Aug 2026 08:31:12 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "I found a $100 bill in the communal washer at my Airbnb. What should I do?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/im-dreaming-of-cocktails-at-chateau-marmont-i-found-100-in-my-airbnbs-communal-washer-what-should-i-do-9694ecca?mod=mw_rss_topstories",
-        "published": "Thu, 13 Aug 2026 00:45:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "ASE Technology Holding: Rising Earnings, Improving Margins, And Robust Demand Fuel Upside",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4935807-ase-technology-holding-rising-earnings-improving-margins-and-robust-demand-fuel-upside?source=feed_all_articles",
-        "published": "Thu, 13 Aug 2026 01:17:34 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Omeros Corporation (OMER) Q2 2026 Earnings Call Transcript",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4935734-omeros-corporation-omer-q2-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Thu, 13 Aug 2026 01:17:12 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Intercorp Financial Services Inc. (IFS) Q2 2026 Earnings Call Transcript",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4935822-intercorp-financial-services-inc-ifs-q2-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Thu, 13 Aug 2026 01:17:10 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       },
       {
         "title": "The Philippines needs ‘power of all sorts’ to build energy security following a nationwide crisis, says Prime Infra CEO Guillaume Lucci",
@@ -523,83 +613,73 @@
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
-      },
-      {
-        "title": "Current price of oil as of August 11, 2026",
-        "source": "Fortune",
-        "url": "https://fortune.com/article/price-of-oil-08-11-2026/",
-        "published": "Tue, 11 Aug 2026 10:20:36 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": 0.267,
+      "score": 0.133,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 748856,
+        "volume_24h": 536563,
         "yes_price": 0.67,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
-        "title": "Clarity Act (H.R.3633) signed into law in 2026?",
-        "volume_24h": 434571,
-        "yes_price": 0.2,
-        "url": "https://polymarket.com/market/clarity-act-signed-into-law-in-2026"
-      },
-      {
         "title": "Strait of Hormuz traffic returns to normal by August 31?",
-        "volume_24h": 390675,
+        "volume_24h": 409785,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
       },
       {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 381594,
+        "volume_24h": 374403,
         "yes_price": 0.33,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
         "title": "US announces end of Iranian blockade by August 15, 2026?",
-        "volume_24h": 249713,
+        "volume_24h": 226737,
         "yes_price": 0.04,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-15-2026-20260713152715083-347-987-697-628-574-676"
       },
       {
-        "title": "US-Iran 60 day negotiation period extended?",
-        "volume_24h": 209634,
-        "yes_price": 0.24,
-        "url": "https://polymarket.com/market/us-iran-60-day-negotiation-period-extended-20260624044855448"
-      },
-      {
         "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 208078,
+        "volume_24h": 207980,
         "yes_price": 0.17,
         "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       },
       {
-        "title": "Will Alexandria Ocasio-Cortez win the 2028 Democratic presidential nomination?",
-        "volume_24h": 192188,
+        "title": "Clarity Act (H.R.3633) signed into law in 2026?",
+        "volume_24h": 195404,
         "yes_price": 0.2,
+        "url": "https://polymarket.com/market/clarity-act-signed-into-law-in-2026"
+      },
+      {
+        "title": "Will Alexandria Ocasio-Cortez win the 2028 Democratic presidential nomination?",
+        "volume_24h": 191611,
+        "yes_price": 0.19,
         "url": "https://polymarket.com/market/will-alexandria-ocasio-cortez-win-the-2028-democratic-presidential-nomination-653"
       },
       {
+        "title": "US-Iran 60 day negotiation period extended?",
+        "volume_24h": 188676,
+        "yes_price": 0.24,
+        "url": "https://polymarket.com/market/us-iran-60-day-negotiation-period-extended-20260624044855448"
+      },
+      {
         "title": "Fed rate hike in 2026?",
-        "volume_24h": 174370,
+        "volume_24h": 163781,
         "yes_price": 0.55,
         "url": "https://polymarket.com/market/fed-rate-hike-in-2026"
       },
       {
-        "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 141264,
-        "yes_price": 0.15,
-        "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+        "title": "Will Alexandria Ocasio-Cortez win the 2028 US Presidential Election?",
+        "volume_24h": 134529,
+        "yes_price": 0.13,
+        "url": "https://polymarket.com/market/will-alexandria-ocasio-cortez-win-the-2028-us-presidential-election"
       }
     ],
     "polymarket_summary": {
@@ -612,8 +692,8 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Mixed",
-      "summary": "Mixed: 10 bullish vs 7 bearish signals detected across stock/finance news data."
+      "outlook": "Bullish",
+      "summary": "Bullish: 7 bullish vs 3 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -625,20 +705,20 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 99.96,
-        "change_24h": -0.05
+        "value": 99.97,
+        "change_24h": -0.04
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4458.8,
-        "change_24h": 1.13
+        "value": 4434.1,
+        "change_24h": 0.57
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 83.04,
-        "change_24h": -0.28
+        "value": 81.82,
+        "change_24h": -1.74
       }
     ],
     "most_active": [
@@ -705,24 +785,7 @@
     ],
     "google_trends": {
       "stocks": [],
-      "crypto": [
-        {
-          "keyword": "Bitcoin",
-          "interest_score": 46
-        },
-        {
-          "keyword": "Ethereum",
-          "interest_score": 8
-        },
-        {
-          "keyword": "Solana",
-          "interest_score": 6
-        },
-        {
-          "keyword": "crypto",
-          "interest_score": 27
-        }
-      ]
+      "crypto": []
     }
   },
   "portfolio": [
