@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T11:42:09Z",
+  "updated_at": "2026-08-13T12:45:03Z",
   "crypto": {
     "fear_greed": {
       "value": 29,
@@ -11,78 +11,88 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 63331,
-        "change_24h": -0.7,
-        "market_cap": 1271023772447,
-        "volume_24h": 20583668918
+        "price_usd": 63526,
+        "change_24h": -1.1,
+        "market_cap": 1274990404431,
+        "volume_24h": 19934439975
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1874.78,
-        "change_24h": -1.2,
-        "market_cap": 226252097780,
-        "volume_24h": 6846944081
+        "price_usd": 1884.82,
+        "change_24h": -1.6,
+        "market_cap": 227479136022,
+        "volume_24h": 6534684077
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 607.71,
-        "change_24h": -0.5,
-        "market_cap": 80924720077,
-        "volume_24h": 522062894
+        "price_usd": 609.1,
+        "change_24h": -0.8,
+        "market_cap": 81110485311,
+        "volume_24h": 513578720
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.003,
-        "change_24h": -1.6,
-        "market_cap": 62866715145,
-        "volume_24h": 912040881
+        "price_usd": 1.006,
+        "change_24h": -1.7,
+        "market_cap": 63025497012,
+        "volume_24h": 882422189
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 75.54,
-        "change_24h": -1.3,
-        "market_cap": 44007988766,
-        "volume_24h": 1252382345
+        "price_usd": 75.89,
+        "change_24h": -1.5,
+        "market_cap": 44212804575,
+        "volume_24h": 1173568238
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.069938,
+        "price_usd": 0.070193,
         "change_24h": -2.6,
-        "market_cap": 10873580218,
-        "volume_24h": 406894405
+        "market_cap": 10914103474,
+        "volume_24h": 395952561
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.183348,
-        "change_24h": -1.3,
-        "market_cap": 6849869394,
-        "volume_24h": 225051198
+        "price_usd": 0.183314,
+        "change_24h": -2.0,
+        "market_cap": 6848179050,
+        "volume_24h": 213737543
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 8.68,
-        "change_24h": -0.7,
-        "market_cap": 6491225364,
-        "volume_24h": 206556835
+        "price_usd": 8.76,
+        "change_24h": -1.4,
+        "market_cap": 6552197487,
+        "volume_24h": 198904198
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.48,
-        "change_24h": 4.2,
-        "market_cap": 2800003308,
-        "volume_24h": 216711057
+        "price_usd": 6.52,
+        "change_24h": 3.4,
+        "market_cap": 2816490814,
+        "volume_24h": 199599016
       }
     ],
     "top_mentioned": [],
     "news": [
+      {
+        "title": "Bullish Q2 adjusted earnings in line as rise in subscription revenue offsets digital asset slowdown",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/08/13/bullish-reports-usd280-million-q2-net-loss-as-crypto-trading-slows",
+        "published": "Thu, 13 Aug 2026 12:09:58 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 0.5,
+        "color": "green"
+      },
       {
         "title": "Strategy, Metaplanet unrealized bitcoin losses highlight risk of concentrating on just one token",
         "source": "CoinDesk",
@@ -108,11 +118,13 @@
         "color": "green"
       },
       {
-        "title": "MUFG to test real-time blockchain settlement for Japanese government bond trades",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/08/13/mufg-to-test-real-time-blockchain-settlement-for-japanese-government-bond-trades",
-        "published": "Thu, 13 Aug 2026 10:15:32 +0000",
-        "assets": [],
+        "title": "SEC allows Franklin Templeton funds to invest in onchain money fund",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/sec-franklin-templeton-funds-invest-onchain-money-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 13 Aug 2026 11:48:37 +0000",
+        "assets": [
+          "TON"
+        ],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
@@ -128,7 +140,7 @@
         "color": "green"
       },
       {
-        "title": "Binance bStocks passes xStocks as second-largest tokenized stock issuer",
+        "title": "Binance bStocks pass xStocks as second-largest tokenized stock issuer",
         "source": "Cointelegraph",
         "url": "https://cointelegraph.com/news/binance-bstocks-second-largest-tokenized-stock-issuer?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Thu, 13 Aug 2026 09:53:36 +0000",
@@ -138,16 +150,24 @@
         "color": "red"
       },
       {
-        "title": "Bitcoin speculators keep BTC price ‘pinned’ below $68.7K: Glassnode",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/markets/bitcoin-speculators-in-the-red-keep-price-pinned-below-687k-new-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Thu, 13 Aug 2026 09:37:16 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "title": "Morning Minute: The SEC Plans Rules for Tokenized Stocks",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/375547/morning-minute-the-sec-plans-rules-for-tokenized-stocks",
+        "published": "Thu, 13 Aug 2026 11:53:17 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
+        "title": "Twitch Turns On Amazon AI Training by Default: 'Nobody Would Opt In'",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/375535/twitch-turns-on-amazon-ai-training-by-default-nobody-would-opt-in",
+        "published": "Thu, 13 Aug 2026 11:42:27 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
         "title": "CEO of Crypto Lender Delio Gets 15 Years Over $49M Fraud",
@@ -160,21 +180,13 @@
         "color": "yellow"
       },
       {
-        "title": "The AI-Generated Pattern Hides You From Surveillance Cameras—Including Flock",
-        "source": "Decrypt",
-        "url": "https://decrypt.co/375479/ai-generated-pattern-hides-you-surveillance-cameras-flock",
-        "published": "Wed, 12 Aug 2026 21:31:15 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "'Inner Thoughts' of Every Major AI Model Exposed in Massive Exploit",
-        "source": "Decrypt",
-        "url": "https://decrypt.co/375501/inner-thoughts-every-major-ai-model-exposed-exploit",
-        "published": "Wed, 12 Aug 2026 20:31:04 +0000",
-        "assets": [],
+        "title": "Why millions of everyday savers will soon own Bitcoin without ever downloading a crypto app",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/why-millions-of-everyday-savers-will-soon-own-bitcoin-without-ever-downloading-a-crypto-app/",
+        "published": "Thu, 13 Aug 2026 12:15:51 +0000",
+        "assets": [
+          "BTC"
+        ],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
@@ -198,22 +210,10 @@
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
-      },
-      {
-        "title": "How a wall of 1.79 million Bitcoin is quietly choking every attempt to break above $65,000",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/how-a-wall-of-1-79-million-bitcoin-is-quietly-choking-every-attempt-to-break-above-65000/",
-        "published": "Thu, 13 Aug 2026 09:10:18 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": -0.083,
+      "score": -0.292,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -225,19 +225,19 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Bearish",
-      "summary": "Bearish: 4 bullish vs 7 bearish signals detected across crypto news data."
+      "outlook": "Mixed",
+      "summary": "Mixed: 8 bullish vs 9 bearish signals detected across crypto news data."
     },
     "fourchain": {
-      "thread_count": 198,
-      "active_threads": 147,
+      "thread_count": 201,
+      "active_threads": 146,
       "mentions": {
-        "BTC": 26,
-        "XRP": 13,
+        "BTC": 25,
+        "XRP": 14,
         "ETH": 5
       },
-      "bullish_hits": 79,
-      "bearish_hits": 49,
+      "bullish_hits": 78,
+      "bearish_hits": 48,
       "bullish_pct": 62,
       "top_coin": "BTC",
       "top_posts": [
@@ -252,51 +252,51 @@
       {
         "symbol": "DEUS",
         "name": "XMAQUINA",
-        "rank": 877,
+        "rank": 882,
         "score": 0,
-        "change_24h": 4.18
-      },
-      {
-        "symbol": "PENGU",
-        "name": "Pudgy Penguins",
-        "rank": 104,
-        "score": 1,
-        "change_24h": -1.62
+        "change_24h": -1.13
       },
       {
         "symbol": "ACU",
         "name": "Acurast",
-        "rank": 487,
-        "score": 2,
-        "change_24h": 26.21
-      },
-      {
-        "symbol": "CASHCAT",
-        "name": "Cash Cat",
-        "rank": 193,
-        "score": 3,
-        "change_24h": 4.56
-      },
-      {
-        "symbol": "LINK",
-        "name": "Chainlink",
-        "rank": 17,
-        "score": 4,
-        "change_24h": -1.84
+        "rank": 486,
+        "score": 1,
+        "change_24h": 25.15
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
         "rank": 1,
+        "score": 2,
+        "change_24h": -1.26
+      },
+      {
+        "symbol": "CASHCAT",
+        "name": "Cash Cat",
+        "rank": 194,
+        "score": 3,
+        "change_24h": 3.84
+      },
+      {
+        "symbol": "LIT",
+        "name": "Lighter",
+        "rank": 89,
+        "score": 4,
+        "change_24h": 0.98
+      },
+      {
+        "symbol": "CYS",
+        "name": "Cysic",
+        "rank": 153,
         "score": 5,
-        "change_24h": -1.17
+        "change_24h": -16.53
       },
       {
         "symbol": "HYPE",
         "name": "Hyperliquid",
-        "rank": 9,
+        "rank": 10,
         "score": 6,
-        "change_24h": 2.6
+        "change_24h": 2.7
       }
     ]
   },
@@ -315,12 +315,12 @@
         "change_24h": -0.04
       },
       "vix": {
-        "value": 14.58,
-        "change_24h": 0.21
+        "value": 14.57,
+        "change_24h": 0.14
       }
     },
     "market_mood": {
-      "score": 0.085,
+      "score": 0.088,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -379,34 +379,34 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Aluminum Extends Fall From Seven-Week High as Supply Fears Ease",
+        "title": "Stocks Rise and Bond Yields Fall After PPI Report: Markets Wrap",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-13/aluminum-extends-fall-from-seven-week-high-as-supply-fears-ease",
-        "published": "Thu, 13 Aug 2026 04:19:36 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Latest Oil Market News and Analysis for Aug. 13",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-12/latest-oil-market-news-and-analysis-for-aug-13",
-        "published": "Wed, 12 Aug 2026 22:02:05 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-12/stock-market-today-dow-s-p-live-updates",
+        "published": "Wed, 12 Aug 2026 22:08:18 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Gold Wavers Near $4,400 as Tame Inflation Eases Rate-Hike Bets",
+        "title": "Frasers Group Buys Harvey Nichols Out of Insolvency, Beating Next",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-12/gold-steadies-after-tame-us-inflation-data-eases-rate-hike-bets",
-        "published": "Wed, 12 Aug 2026 23:14:51 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-13/frasers-group-acquires-uk-luxury-department-store-harvey-nichols",
+        "published": "Thu, 13 Aug 2026 12:26:56 GMT",
         "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
+      },
+      {
+        "title": "Taiwan Warns Against Uganda Travel as Passport Disputes Grow",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-13/taiwan-warns-against-uganda-travel-as-passport-disputes-grow",
+        "published": "Thu, 13 Aug 2026 12:02:18 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "An inside look at SK Hynix $720 billion AI-fueled buildout that's taking over South Korea",
@@ -422,185 +422,187 @@
         "title": "Oil prices drop as investors weigh falling demand against Middle East tensions",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/08/13/oil-spill-near-oman-worries-over-supply-.html",
-        "published": "Thu, 13 Aug 2026 11:10:52 GMT",
+        "published": "Thu, 13 Aug 2026 11:55:14 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -0.6,
         "color": "red"
       },
       {
-        "title": "Treasury yields dip as Wall Street awaits wholesale inflation data",
+        "title": "Democrats demand Trump reveal stock managers, explain suspicious trades",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/13/treasury-yields-wall-street-inflation-data.html",
-        "published": "Thu, 13 Aug 2026 08:40:17 GMT",
+        "url": "https://www.cnbc.com/2026/08/13/trump-stock-trades-warren-garcia.html",
+        "published": "Thu, 13 Aug 2026 12:00:01 GMT",
         "assets": [],
-        "sentiment": "Bearish",
-        "score": -0.5,
-        "color": "red"
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
-        "title": "Lenovo profits soar past expectations on AI computers, servers and services",
+        "title": "Wholesale inflation flattens out in July and price pressure ease",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/lenovo-profits-soar-past-expectations-on-ai-computers-servers-and-services-162e11e6?mod=mw_rss_topstories",
-        "published": "Thu, 13 Aug 2026 11:00:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Bill Ackman once exited his Netflix stake in a huff. He’s buying the streaming giant again, as well as these five stocks.",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/bill-ackman-once-exited-netflix-stake-in-a-huff-why-hes-buying-the-streaming-giant-again-as-well-as-these-five-stocks-ae0d9220?mod=mw_rss_topstories",
-        "published": "Thu, 13 Aug 2026 10:54:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Flying first class is getting cheaper — if you don’t mind giving up some perks",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/flying-first-class-is-getting-cheaper-if-you-dont-mind-giving-up-some-perks-76035942?mod=mw_rss_topstories",
-        "published": "Thu, 13 Aug 2026 10:30:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Elemental Royalty Corporation 2026 Q2 - Results - Earnings Call Presentation",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4935985-elemental-royalty-corporation-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
-        "published": "Thu, 13 Aug 2026 07:34:17 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Nichols plc (NJMVF) Vit Hit Limited - M&A Call - Slideshow",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4935984-nichols-plc-njmvf-vit-hit-limited-m-and-a-call-slideshow?source=feed_all_articles",
-        "published": "Thu, 13 Aug 2026 07:33:51 -0400",
+        "url": "https://www.marketwatch.com/story/wholesale-inflation-flattens-out-in-july-and-price-pressure-ease-c0ea1b91?mod=mw_rss_topstories",
+        "published": "Thu, 13 Aug 2026 12:38:00 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "CK Asset Holdings Limited 2026 Q2 - Results - Earnings Call Presentation",
+        "title": "Bill Ackman once exited his Netflix stake in a huff. He’s buying the streaming giant again, as well as these five stocks.",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/bill-ackman-once-exited-netflix-stake-in-a-huff-why-hes-buying-the-streaming-giant-again-as-well-as-these-five-stocks-ae0d9220?mod=mw_rss_topstories",
+        "published": "Thu, 13 Aug 2026 12:36:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "The AI boom is not just driving stocks — it’s also moving the foreign-exchange market",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/the-ai-boom-is-not-just-driving-stocks-its-also-moving-the-foreign-exchange-market-275d2f74?mod=mw_rss_topstories",
+        "published": "Thu, 13 Aug 2026 12:11:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "AMD's Post-Earnings Selloff Looks Temporary",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4935983-ck-asset-holdings-limited-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
-        "published": "Thu, 13 Aug 2026 07:33:36 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Nvidia wants your pension fund in the AI trade",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/08/13/nvidia-wants-your-pension-fund-in-the-ai-trade/",
-        "published": "Thu, 13 Aug 2026 10:42:57 +0000",
+        "url": "https://seekingalpha.com/article/4935986-amd-post-earnings-selloff-looks-temporary?source=feed_all_articles",
+        "published": "Thu, 13 Aug 2026 08:35:17 -0400",
         "assets": [
-          "NVDA"
+          "AMD"
         ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
       },
       {
-        "title": "Current price of oil as of August 13, 2026",
-        "source": "Fortune",
-        "url": "https://fortune.com/article/price-of-oil-08-13-2026/",
-        "published": "Thu, 13 Aug 2026 10:15:05 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Anthropic reportedly plans a $2 trillion IPO in October—the largest ever—that will eclipse SpaceX",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/",
-        "published": "Thu, 13 Aug 2026 09:12:46 +0000",
+        "title": "Montana Aerospace AG 2026 Q2 - Results - Earnings Call Presentation",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4936011-montana-aerospace-ag-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
+        "published": "Thu, 13 Aug 2026 08:34:34 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
+      },
+      {
+        "title": "Tapestry, Inc. 2026 Q4 - Results - Earnings Call Presentation",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4936010-tapestry-inc-2026-q4-results-earnings-call-presentation?source=feed_all_articles",
+        "published": "Thu, 13 Aug 2026 08:34:15 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Only 12% of family businesses stay in the family by the third generation. A Goldman Sachs chairman says optimism is the reason",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/13/family-business-generational-wealth-goldman-sachs-chairman-optimism-advice/",
+        "published": "Thu, 13 Aug 2026 12:00:00 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "SAP Chief Quantum Officer: AI is about to commoditize intelligence. Better decisions will be the next competitive advantage",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/13/sap-chief-quantum-officer-ai-better-decisions/",
+        "published": "Thu, 13 Aug 2026 11:30:00 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Google’s DeepMind is having an identity crisis",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/13/googles-deepmind-is-having-an-identity-crisis/",
+        "published": "Thu, 13 Aug 2026 11:13:25 +0000",
+        "assets": [
+          "GOOGL"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": 0.193,
-      "label": "Neutral",
-      "color": "yellow"
+      "score": 0.36,
+      "label": "Bullish",
+      "color": "green"
     },
     "polymarket": [
       {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 557609,
-        "yes_price": 0.67,
+        "volume_24h": 507162,
+        "yes_price": 0.7,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by August 31?",
-        "volume_24h": 408430,
+        "volume_24h": 463630,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
       },
       {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 377998,
-        "yes_price": 0.33,
+        "volume_24h": 359676,
+        "yes_price": 0.28,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
         "title": "US announces end of Iranian blockade by August 15, 2026?",
-        "volume_24h": 230794,
+        "volume_24h": 250552,
         "yes_price": 0.04,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-15-2026-20260713152715083-347-987-697-628-574-676"
       },
       {
         "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 198895,
+        "volume_24h": 186578,
         "yes_price": 0.17,
         "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       },
       {
         "title": "Fed rate hike in 2026?",
-        "volume_24h": 158350,
+        "volume_24h": 152355,
         "yes_price": 0.55,
         "url": "https://polymarket.com/market/fed-rate-hike-in-2026"
       },
       {
         "title": "Will Alexandria Ocasio-Cortez win the 2028 Democratic presidential nomination?",
-        "volume_24h": 158207,
+        "volume_24h": 151960,
         "yes_price": 0.19,
         "url": "https://polymarket.com/market/will-alexandria-ocasio-cortez-win-the-2028-democratic-presidential-nomination-653"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 151402,
+        "volume_24h": 150399,
         "yes_price": 0.15,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
       },
       {
         "title": "Bab el-Mandeb Strait effectively closed by August 31?",
-        "volume_24h": 114762,
+        "volume_24h": 113667,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/bab-el-mandeb-strait-effectively-closed-by-august-31"
       },
       {
-        "title": "Will Alexandria Ocasio-Cortez win the 2028 US Presidential Election?",
-        "volume_24h": 108105,
-        "yes_price": 0.13,
-        "url": "https://polymarket.com/market/will-alexandria-ocasio-cortez-win-the-2028-us-presidential-election"
+        "title": "Bitcoin Up or Down on August 13?",
+        "volume_24h": 111652,
+        "yes_price": 0.6,
+        "url": "https://polymarket.com/market/bitcoin-up-or-down-on-august-13-2026"
       }
     ],
     "polymarket_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 2 bullish vs 2 bearish signals detected across finance prediction markets data."
+      "summary": "Mixed: 2 bullish vs 3 bearish signals detected across finance prediction markets data."
     },
     "reddit": [],
     "reddit_summary": {
@@ -609,32 +611,32 @@
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 9 bullish vs 11 bearish signals detected across stock/finance news data."
+      "summary": "Mixed: 9 bullish vs 9 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
         "symbol": "^TNX",
         "name": "10Y Treasury Yield",
-        "value": 4.68,
-        "change_24h": -0.04
+        "value": 4.67,
+        "change_24h": -0.17
       },
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 99.89,
-        "change_24h": -0.12
+        "value": 99.95,
+        "change_24h": -0.06
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4447.5,
-        "change_24h": 0.88
+        "value": 4444.2,
+        "change_24h": 0.8
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 81.59,
-        "change_24h": -2.02
+        "value": 81.53,
+        "change_24h": -2.09
       }
     ],
     "most_active": [
