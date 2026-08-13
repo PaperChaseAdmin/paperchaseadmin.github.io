@@ -71,6 +71,78 @@
         "ticker_chg_pct": -0.37,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 2,
+      "price": 304.43,
+      "total_value": 608.86,
+      "reasoning": "AAPL is down -1.34 PnL and trading below avg cost. Despite being a quality business, current price doesn't offer value. Better to redeploy cash into higher-conviction opportunities with stronger near-term fundamentals or better entry points.",
+      "timestamp": "2026-08-13T14:03:12Z",
+      "market_outlook": "Market is in a neutral state with mixed sentiment. No extreme fear or greed. As a value investor, focus remains on fundamentals: buying quality businesses at reasonable prices, trimming underperformers, and letting compounders work. No need to chase momentum \u2014 discipline over activity.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.7,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "WMT",
+      "shares": 8,
+      "price": 115.425,
+      "total_value": 923.4,
+      "reasoning": "WMT shows negative PnL (-3.24) and is trading below avg cost. While a defensive stock, it lacks the earnings consistency and moat strength of higher-conviction holdings like KO, PG, or V. Selling to reallocate capital to better-valued wide-moat businesses.",
+      "timestamp": "2026-08-13T14:03:12Z",
+      "market_outlook": "Market is in a neutral state with mixed sentiment. No extreme fear or greed. As a value investor, focus remains on fundamentals: buying quality businesses at reasonable prices, trimming underperformers, and letting compounders work. No need to chase momentum \u2014 discipline over activity.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.4,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PG",
+      "shares": 2,
+      "price": 145.585,
+      "total_value": 291.17,
+      "reasoning": "PG is a core holding with strong brand moat, consistent dividends, and stable earnings. Currently up 1.1% today and trading above avg cost. Still reasonably valued relative to historical averages. Buying more to increase exposure to a defensive compounder with reliable cash flow.",
+      "timestamp": "2026-08-13T14:03:12Z",
+      "market_outlook": "Market is in a neutral state with mixed sentiment. No extreme fear or greed. As a value investor, focus remains on fundamentals: buying quality businesses at reasonable prices, trimming underperformers, and letting compounders work. No need to chase momentum \u2014 discipline over activity.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.1,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "V",
+      "shares": 2,
+      "price": 361.88,
+      "total_value": 723.76,
+      "reasoning": "V has excellent network effects, high margins, and consistent revenue growth. Up 0.73% today and trading above avg cost. Still not overvalued relative to fundamentals. Adding to position to increase exposure to best-in-class payment processor with durable moat.",
+      "timestamp": "2026-08-13T14:03:12Z",
+      "market_outlook": "Market is in a neutral state with mixed sentiment. No extreme fear or greed. As a value investor, focus remains on fundamentals: buying quality businesses at reasonable prices, trimming underperformers, and letting compounders work. No need to chase momentum \u2014 discipline over activity.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.73,
+        "trigger_news": null
+      }
     }
   ]
 }

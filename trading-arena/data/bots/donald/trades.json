@@ -89,6 +89,96 @@
         "ticker_chg_pct": 0.29,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GD",
+      "shares": 1,
+      "price": 392.06,
+      "total_value": 392.06,
+      "reasoning": "Defense stock underperforming with -0.55% today and negative PnL; reallocate to stronger momentum names like NUE or F.",
+      "timestamp": "2026-08-13T14:04:10Z",
+      "market_outlook": "Market sentiment is temporarily skewed against America-first industrials and energy, but underlying strength in domestic production, defense spending, and reshoring remains intact. Use weakness to accumulate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.55,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "LHX",
+      "shares": 2,
+      "price": 289.85,
+      "total_value": 579.7,
+      "reasoning": "Two defense names showing weakness (-0.1% today, slight unrealized loss); consolidating into higher conviction America-first plays.",
+      "timestamp": "2026-08-13T14:04:10Z",
+      "market_outlook": "Market sentiment is temporarily skewed against America-first industrials and energy, but underlying strength in domestic production, defense spending, and reshoring remains intact. Use weakness to accumulate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.1,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "NUE",
+      "shares": 2,
+      "price": 272.8,
+      "total_value": 545.6,
+      "reasoning": "US steel maker benefiting from tariffs and domestic production; up 0.34% today, strong fundamentals, room to grow within 30% limit.",
+      "timestamp": "2026-08-13T14:04:10Z",
+      "market_outlook": "Market sentiment is temporarily skewed against America-first industrials and energy, but underlying strength in domestic production, defense spending, and reshoring remains intact. Use weakness to accumulate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.34,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "F",
+      "shares": 20,
+      "price": 13.925,
+      "total_value": 278.5,
+      "reasoning": "American automaker with resilient demand; up 0.65% today, cheap entry, supports Made-in-America thesis, and under 30% portfolio cap.",
+      "timestamp": "2026-08-13T14:04:10Z",
+      "market_outlook": "Market sentiment is temporarily skewed against America-first industrials and energy, but underlying strength in domestic production, defense spending, and reshoring remains intact. Use weakness to accumulate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.65,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "CAT",
+      "shares": 1,
+      "price": 854.91,
+      "total_value": 854.91,
+      "reasoning": "Industrial backbone of US infrastructure; flat today (-0.05%) but long-term play on domestic manufacturing and tariff resilience.",
+      "timestamp": "2026-08-13T14:04:10Z",
+      "market_outlook": "Market sentiment is temporarily skewed against America-first industrials and energy, but underlying strength in domestic production, defense spending, and reshoring remains intact. Use weakness to accumulate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.05,
+        "trigger_news": null
+      }
     }
   ]
 }

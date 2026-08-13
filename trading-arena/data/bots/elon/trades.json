@@ -53,6 +53,60 @@
         "ticker_chg_pct": 1.38,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IONQ",
+      "shares": 10,
+      "price": 46.93,
+      "total_value": 469.3,
+      "reasoning": "IONQ shows strongest momentum today at +3.74%, aligned with AI/quantum disruption theme. Current position is zero, so this is a new high-conviction buy. At $46.93/share, 10 shares = $469.30, well under 35% limit and preserves >$500 cash.",
+      "timestamp": "2026-08-13T14:02:19Z",
+      "market_outlook": "Market shows selective strength in AI, quantum, and disruptive tech despite lack of Fear & Greed data. Momentum is concentrated in IONQ, PLTR, AMD, MSTR. Avoiding financials like SOFI unless they show breakout volume or news. Ready to pivot fast if sentiment shifts.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.74,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PLTR",
+      "shares": 3,
+      "price": 176.145,
+      "total_value": 528.44,
+      "reasoning": "PLTR up 3.02% today, strong AI/data momentum. Already holding 10 shares, adding 5 more to increase exposure to a winner. Cost: 5 * $176.145 = $880.73. Total PLTR would be 15 shares (~$2,642), still under 35% of total portfolio (~$9,445).",
+      "timestamp": "2026-08-13T14:02:19Z",
+      "market_outlook": "Market shows selective strength in AI, quantum, and disruptive tech despite lack of Fear & Greed data. Momentum is concentrated in IONQ, PLTR, AMD, MSTR. Avoiding financials like SOFI unless they show breakout volume or news. Ready to pivot fast if sentiment shifts.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.02,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "SOFI",
+      "shares": 25,
+      "price": 18.2299,
+      "total_value": 455.75,
+      "reasoning": "SOFI is a laggard (+1.39%) with minimal PnL ($1.00). Selling to free up cash for higher-momentum AI/tech plays. Proceeds: ~$455.75, which will be redeployed.",
+      "timestamp": "2026-08-13T14:02:19Z",
+      "market_outlook": "Market shows selective strength in AI, quantum, and disruptive tech despite lack of Fear & Greed data. Momentum is concentrated in IONQ, PLTR, AMD, MSTR. Avoiding financials like SOFI unless they show breakout volume or news. Ready to pivot fast if sentiment shifts.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.39,
+        "trigger_news": null
+      }
     }
   ]
 }

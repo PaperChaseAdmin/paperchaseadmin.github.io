@@ -1,83 +1,83 @@
 {
-  "cash": 1642.66,
-  "total_value": 10213.64,
+  "cash": 1408.24,
+  "total_value": 10136.82,
   "positions": {
     "BIDU": {
       "shares": 11,
-      "current_price": 104.72,
+      "current_price": 104.3772,
       "avg_cost": 112.7614
     },
     "NIO": {
-      "shares": 200,
-      "current_price": 4.4799,
+      "shares": 100,
+      "current_price": 4.49,
       "avg_cost": 4.8947
     },
     "BABA": {
       "shares": 26,
-      "current_price": 123.62,
+      "current_price": 123.0,
       "avg_cost": 100.8292
     },
     "PDD": {
-      "shares": 25,
-      "current_price": 88.4,
-      "avg_cost": 85.208
-    },
-    "JD": {
-      "shares": 12,
-      "current_price": 31.105,
-      "avg_cost": 30.2692
+      "shares": 35,
+      "current_price": 86.72,
+      "avg_cost": 85.64
     },
     "LI": {
       "shares": 59,
-      "current_price": 12.3,
+      "current_price": 12.27,
       "avg_cost": 12.224
+    },
+    "TME": {
+      "shares": 20,
+      "avg_cost": 8.715,
+      "current_price": 8.715
     }
   },
-  "total_return_pct": 2.14,
+  "total_return_pct": 1.37,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 4,
+  "today_pnl": -76.82,
+  "today_pnl_pct": -0.75,
+  "total_trades": 8,
   "today_start_value": 10213.64,
   "today_date": "2026-08-13",
-  "last_action": "Chinese ADRs are under pressure today due to broader risk-off sentiment, but the long-term rejuvenation story remains intact. No new stimulus or regulatory updates, but valuations are becoming attract",
-  "last_updated": "2026-08-13T13:45:16Z",
+  "last_action": "Chinese ADRs under pressure from short-term sentiment but long-term rejuvenation story intact. Govt stimulus and tech support measures will drive recovery. Current weakness offers accumulation opportu",
+  "last_updated": "2026-08-13T14:18:13Z",
   "last_session": {
-    "at": "2026-08-13T13:45:16Z",
+    "at": "2026-08-13T14:18:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "BILI",
-        -2.73
-      ],
-      [
-        "NTES",
-        -1.73
-      ],
-      [
         "JD",
-        -1.52
+        -5.36
       ],
       [
-        "NIO",
-        -1.43
+        "TME",
+        3.01
       ],
       [
-        "LI",
-        -1.37
+        "IQ",
+        -2.63
       ],
       [
-        "XPEV",
-        -1.29
+        "PDD",
+        -2.54
+      ],
+      [
+        "BILI",
+        -2.1
+      ],
+      [
+        "BABA",
+        -1.72
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The portfolio is currently overweight in underperforming EV names (NIO, XPEV) and underweight in core tech and consumer leaders. By selling 80 XPEV and 199 NIO shares, I free up ~$1,850 in cash. I am reallocating to BABA (10 shares), PDD (5 shares), and LI (20 shares) to improve portfolio quality and alignment with my belief in Chinese champions. This keeps cash above $500 reserve and avoids over-concentration. No single stock exceeds 30% of portfolio post-trade.",
-    "outlook": "Chinese ADRs are under pressure today due to broader risk-off sentiment, but the long-term rejuvenation story remains intact. No new stimulus or regulatory updates, but valuations are becoming attractive. I am using today's weakness to rebalance toward higher-conviction names like BABA, PDD, and LI while reducing exposure to more speculative EV names.",
+    "ai_analysis": "Portfolio rebalanced: sold underperformers JD and partial NIO to raise cash. Added to resilient BABA and PDD on dips. Initiated TME position on strong momentum. Maintains diversified exposure to Chinese tech, e-commerce, and entertainment sectors. Cash reserve preserved above $500 threshold.",
+    "outlook": "Chinese ADRs under pressure from short-term sentiment but long-term rejuvenation story intact. Govt stimulus and tech support measures will drive recovery. Current weakness offers accumulation opportunities in national champions.",
     "trades_made": 4
   },
   "portfolio_history": [
@@ -844,6 +844,10 @@
     {
       "timestamp": "2026-08-13T13:45:16Z",
       "value": 10213.64
+    },
+    {
+      "timestamp": "2026-08-13T14:18:13Z",
+      "value": 10136.82
     }
   ]
 }

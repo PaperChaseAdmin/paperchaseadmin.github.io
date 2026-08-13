@@ -89,6 +89,96 @@
         "ticker_chg_pct": 0.81,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "IBM",
+      "shares": 1,
+      "price": 238.03,
+      "total_value": 238.03,
+      "reasoning": "IBM is a growth/value hybrid with low yield (~4.8%) but poor price momentum and underperforms vs. pure dividend plays. Selling to reallocate capital to higher-yielding, stronger momentum dividend stocks like MO or PM.",
+      "timestamp": "2026-08-13T14:14:29Z",
+      "market_outlook": "Market sentiment is neutral (Fear & Greed ~50), favoring fundamentals over speculation. High-dividend stocks in tobacco, telecom, and REITs are showing resilience. Focus remains on yield preservation and capital deployment into momentum-supported income generators.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.86,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "ENB",
+      "shares": 11,
+      "price": 51.38,
+      "total_value": 565.18,
+      "reasoning": "ENB has a solid yield (~6.8%) but negative price momentum (-0.08% today) and underperforms vs. peers. Selling to avoid further downside and rotate into better-performing high-yield names with positive momentum.",
+      "timestamp": "2026-08-13T14:14:29Z",
+      "market_outlook": "Market sentiment is neutral (Fear & Greed ~50), favoring fundamentals over speculation. High-dividend stocks in tobacco, telecom, and REITs are showing resilience. Focus remains on yield preservation and capital deployment into momentum-supported income generators.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.08,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MO",
+      "shares": 3,
+      "price": 65.9025,
+      "total_value": 197.71,
+      "reasoning": "MO (Altria) offers ~8.4% dividend yield, strong momentum (+2.35% today), and is a core tobacco holding aligned with Scrooge\u2019s strategy. Cash deployment into high-yield, momentum-supported dividend stock.",
+      "timestamp": "2026-08-13T14:14:29Z",
+      "market_outlook": "Market sentiment is neutral (Fear & Greed ~50), favoring fundamentals over speculation. High-dividend stocks in tobacco, telecom, and REITs are showing resilience. Focus remains on yield preservation and capital deployment into momentum-supported income generators.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.35,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PM",
+      "shares": 1,
+      "price": 190.95,
+      "total_value": 190.95,
+      "reasoning": "PM (Philip Morris International) offers ~5.2% yield, strong momentum (+2.65% today), and geographic diversification. Adds to existing position to increase exposure to high-quality tobacco dividend payer with upside.",
+      "timestamp": "2026-08-13T14:14:29Z",
+      "market_outlook": "Market sentiment is neutral (Fear & Greed ~50), favoring fundamentals over speculation. High-dividend stocks in tobacco, telecom, and REITs are showing resilience. Focus remains on yield preservation and capital deployment into momentum-supported income generators.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.65,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "O",
+      "shares": 2,
+      "price": 63.13,
+      "total_value": 126.26,
+      "reasoning": "O (Realty Income) is a monthly dividend REIT with ~4.8% yield and steady performance (+0.87% today). Adds diversification into real estate while maintaining high yield and reliability.",
+      "timestamp": "2026-08-13T14:14:29Z",
+      "market_outlook": "Market sentiment is neutral (Fear & Greed ~50), favoring fundamentals over speculation. High-dividend stocks in tobacco, telecom, and REITs are showing resilience. Focus remains on yield preservation and capital deployment into momentum-supported income generators.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.87,
+        "trigger_news": null
+      }
     }
   ]
 }

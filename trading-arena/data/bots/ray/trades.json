@@ -71,6 +71,78 @@
         "ticker_chg_pct": -1.06,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GSG",
+      "shares": 10,
+      "price": 32.15,
+      "total_value": 321.5,
+      "reasoning": "GSG down -1.44% today, weak commodity momentum. Reduce exposure to rebalance toward stronger inflation hedges like GLD and IAU, which have better recent performance and fundamentals.",
+      "timestamp": "2026-08-13T14:07:01Z",
+      "market_outlook": "Mixed signals: equities (SPY) up +0.7%, but gold and commodities showing weakness. No clear inflation or recession signal yet. Maintaining All Weather balance \u2014 increasing gold and bonds slightly to prepare for potential volatility, while reducing underperforming commodity exposure.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.44,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "PDBC",
+      "shares": 20,
+      "price": 17.72,
+      "total_value": 354.4,
+      "reasoning": "PDBC down -1.39% today, underperforming vs. GLD and IAU. Taking partial profits after strong run (PNL: +168.27) to rebalance toward gold and reduce commodity concentration risk.",
+      "timestamp": "2026-08-13T14:07:01Z",
+      "market_outlook": "Mixed signals: equities (SPY) up +0.7%, but gold and commodities showing weakness. No clear inflation or recession signal yet. Maintaining All Weather balance \u2014 increasing gold and bonds slightly to prepare for potential volatility, while reducing underperforming commodity exposure.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.39,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IAU",
+      "shares": 3,
+      "price": 82.215,
+      "total_value": 246.65,
+      "reasoning": "IAU down -0.92% today, offering a cheaper gold exposure alternative to GLD. Current allocation ~0.6% \u2014 room to increase. Adding to strengthen gold allocation while maintaining diversification across precious metals.",
+      "timestamp": "2026-08-13T14:07:01Z",
+      "market_outlook": "Mixed signals: equities (SPY) up +0.7%, but gold and commodities showing weakness. No clear inflation or recession signal yet. Maintaining All Weather balance \u2014 increasing gold and bonds slightly to prepare for potential volatility, while reducing underperforming commodity exposure.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.92,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 2,
+      "price": 82.8101,
+      "total_value": 165.62,
+      "reasoning": "TLT up +0.85% today, showing resilience as rates stabilize. Bonds are essential for deflation/recession protection in All Weather portfolio. Current allocation ~1.0% \u2014 increasing to improve balance between growth and protection assets.",
+      "timestamp": "2026-08-13T14:07:01Z",
+      "market_outlook": "Mixed signals: equities (SPY) up +0.7%, but gold and commodities showing weakness. No clear inflation or recession signal yet. Maintaining All Weather balance \u2014 increasing gold and bonds slightly to prepare for potential volatility, while reducing underperforming commodity exposure.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.85,
+        "trigger_news": null
+      }
     }
   ]
 }

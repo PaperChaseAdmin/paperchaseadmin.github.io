@@ -1,64 +1,64 @@
 {
-  "cash": 1160.7,
-  "total_value": 8844.65,
+  "cash": 3272.35,
+  "total_value": 8983.25,
   "positions": {
     "MSTR": {
-      "shares": 25,
-      "current_price": 94.835,
+      "shares": 15,
+      "current_price": 97.1,
       "avg_cost": 100.6991
     },
     "COIN": {
-      "shares": 20,
-      "current_price": 150.78,
+      "shares": 10,
+      "current_price": 151.515,
       "avg_cost": 159.685
     },
     "CLSK": {
       "shares": 41,
-      "current_price": 12.15,
+      "current_price": 12.455,
       "avg_cost": 13.0222
     },
     "RIOT": {
       "shares": 25,
-      "current_price": 20.185,
+      "current_price": 20.38,
       "avg_cost": 22.029
     },
     "CIFR": {
       "shares": 10,
       "avg_cost": 17.255,
-      "current_price": 17.51
+      "current_price": 17.67
     },
     "MARA": {
-      "shares": 10,
-      "avg_cost": 9.755,
-      "current_price": 9.605
+      "shares": 20,
+      "current_price": 9.6699,
+      "avg_cost": 9.7125
     },
     "IREN": {
-      "shares": 10,
-      "avg_cost": 46.245,
-      "current_price": 46.245
+      "shares": 15,
+      "current_price": 49.06,
+      "avg_cost": 47.1833
     },
     "BTBT": {
-      "shares": 50,
-      "avg_cost": 1.49,
-      "current_price": 1.49
+      "shares": 70,
+      "current_price": 1.625,
+      "avg_cost": 1.5286
     },
     "HOOD": {
       "shares": 5,
       "avg_cost": 97.32,
-      "current_price": 97.32
+      "current_price": 99.87
     }
   },
-  "total_return_pct": -11.55,
+  "total_return_pct": -10.17,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 5,
+  "today_pnl": 138.6,
+  "today_pnl_pct": 1.57,
+  "total_trades": 10,
   "today_start_value": 8844.65,
   "today_date": "2026-08-13",
-  "last_action": "Crypto sentiment is mixed but showing signs of renewal with select miners and exchanges outperforming. Fear & Greed data unavailable, but price action in IREN, BTBT, and HOOD suggests speculative inte",
-  "last_updated": "2026-08-13T13:44:36Z",
+  "last_action": "Crypto momentum is igniting with IREN and BTBT leading gains, signaling renewed miner strength. Fear & Greed data missing but price action suggests improving sentiment. BTC miners outperforming exchan",
+  "last_updated": "2026-08-13T14:17:15Z",
   "last_session": {
-    "at": "2026-08-13T13:44:36Z",
+    "at": "2026-08-13T14:17:15Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -66,33 +66,33 @@
     "top_movers": [
       [
         "IREN",
-        5.86
+        12.07
       ],
       [
         "BTBT",
-        3.42
+        11.3
       ],
       [
         "HOOD",
-        2.92
+        4.96
       ],
       [
-        "CIFR",
-        -1.73
+        "MSTR",
+        2.32
       ],
       [
-        "HUT",
-        1.69
+        "CLSK",
+        1.93
       ],
       [
         "COIN",
-        1.38
+        1.45
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is overweight in large-cap crypto names (MSTR, COIN) that are lagging momentum leaders. Rotating into higher-beta, higher-momentum crypto-adjacent stocks like IREN and BTBT to capture short-term upside while maintaining core exposure. Keeping cash reserve above $300 as required. Trades reflect active rebalancing: selling laggards, buying momentum, and diversifying within crypto theme.",
-    "outlook": "Crypto sentiment is mixed but showing signs of renewal with select miners and exchanges outperforming. Fear & Greed data unavailable, but price action in IREN, BTBT, and HOOD suggests speculative interest is returning. Bitcoin miners with operational leverage may outperform in short term.",
+    "ai_analysis": "Portfolio is overweight in underperforming names (MSTR, COIN, CLSK, RIOT) while missing momentum in IREN, BTBT, HOOD. Sold 10 MSTR and 10 COIN to raise ~$1,175 cash. Deployed into IREN (5), BTBT (20), MARA (10) to chase momentum and maintain crypto-adjacent exposure. Kept HOOD as is due to strong +5% move. Maintained $300+ cash reserve. Trades reflect active rebalancing: cutting laggards, doubling on winners, and averaging down on core longs with conviction.",
+    "outlook": "Crypto momentum is igniting with IREN and BTBT leading gains, signaling renewed miner strength. Fear & Greed data missing but price action suggests improving sentiment. BTC miners outperforming exchanges \u2014 rotate into high-beta miners while trimming COIN for diversification.",
     "trades_made": 5
   },
   "portfolio_history": [
@@ -859,6 +859,10 @@
     {
       "timestamp": "2026-08-13T13:44:36Z",
       "value": 8844.65
+    },
+    {
+      "timestamp": "2026-08-13T14:17:15Z",
+      "value": 8983.25
     }
   ]
 }
