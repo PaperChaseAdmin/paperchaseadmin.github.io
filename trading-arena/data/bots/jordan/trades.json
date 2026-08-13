@@ -1,3 +1,94 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "MARA",
+      "shares": 300,
+      "price": 9.605,
+      "total_value": 2881.5,
+      "reasoning": "MARA is down -0.41% today and underperforming vs watchlist leaders. Cutting loser to free cash for stronger momentum plays like HOOD and PLTR.",
+      "timestamp": "2026-08-13T13:39:38Z",
+      "market_outlook": "Market is showing selective strength in meme names and high-beta growth stocks. HOOD, PLTR, and AMC are leading watchlist momentum. No macro news, but price action is signaling retail rotation into speculative names. Environment favors aggressive momentum chasing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.41,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "RIOT",
+      "shares": 191,
+      "price": 20.185,
+      "total_value": 3855.33,
+      "reasoning": "RIOT is down -0.25% today and lagging momentum leaders. Exiting to reallocate capital to higher relative strength names with better intraday breakout potential.",
+      "timestamp": "2026-08-13T13:39:38Z",
+      "market_outlook": "Market is showing selective strength in meme names and high-beta growth stocks. HOOD, PLTR, and AMC are leading watchlist momentum. No macro news, but price action is signaling retail rotation into speculative names. Environment favors aggressive momentum chasing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.25,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "HOOD",
+      "shares": 20,
+      "price": 97.32,
+      "total_value": 1946.4,
+      "reasoning": "HOOD is the top watchlist performer at +2.92% today, showing strong relative strength and meme stock momentum. Buying on breakout energy with tight stop.",
+      "timestamp": "2026-08-13T13:39:38Z",
+      "market_outlook": "Market is showing selective strength in meme names and high-beta growth stocks. HOOD, PLTR, and AMC are leading watchlist momentum. No macro news, but price action is signaling retail rotation into speculative names. Environment favors aggressive momentum chasing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.92,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PLTR",
+      "shares": 10,
+      "price": 175.39,
+      "total_value": 1753.9,
+      "reasoning": "PLTR up +2.6% today, showing steady accumulation and institutional interest. High momentum name with squeeze potential \u2014 buying the dip in strength.",
+      "timestamp": "2026-08-13T13:39:38Z",
+      "market_outlook": "Market is showing selective strength in meme names and high-beta growth stocks. HOOD, PLTR, and AMC are leading watchlist momentum. No macro news, but price action is signaling retail rotation into speculative names. Environment favors aggressive momentum chasing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.6,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMC",
+      "shares": 100,
+      "price": 2.58,
+      "total_value": 258.0,
+      "reasoning": "AMC up +2.16% today, classic meme stock with short squeeze potential. Low price allows large share size for explosive moves. Riding the retail frenzy.",
+      "timestamp": "2026-08-13T13:39:38Z",
+      "market_outlook": "Market is showing selective strength in meme names and high-beta growth stocks. HOOD, PLTR, and AMC are leading watchlist momentum. No macro news, but price action is signaling retail rotation into speculative names. Environment favors aggressive momentum chasing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.16,
+        "trigger_news": null
+      }
+    }
+  ]
 }

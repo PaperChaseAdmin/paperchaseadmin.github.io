@@ -1,109 +1,109 @@
 {
-  "cash": 923.79,
-  "total_value": 9643.65,
+  "cash": 1406.84,
+  "total_value": 9637.49,
   "positions": {
-    "ABBV": {
-      "shares": 7,
-      "avg_cost": 261.05,
-      "current_price": 250.18
-    },
-    "O": {
-      "shares": 10,
-      "avg_cost": 63.841,
-      "current_price": 61.845
-    },
     "T": {
       "shares": 95,
       "avg_cost": 20.83,
-      "current_price": 24.425
+      "current_price": 24.27
     },
     "VZ": {
       "shares": 22,
-      "current_price": 47.25,
+      "current_price": 47.08,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 186.175
+      "current_price": 188.11
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 70.49
+      "current_price": 71.155
     },
     "IBM": {
       "shares": 1,
       "avg_cost": 212.365,
-      "current_price": 238.69
+      "current_price": 237.64
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 86.56
+      "current_price": 87.07
     },
     "CVX": {
       "shares": 6,
-      "current_price": 196.49,
+      "current_price": 194.03,
       "avg_cost": 193.7867
     },
     "MAIN": {
-      "shares": 5,
-      "avg_cost": 59.055,
-      "current_price": 59.06
+      "shares": 15,
+      "current_price": 58.985,
+      "avg_cost": 59.0083
     },
     "ENB": {
       "shares": 3,
       "avg_cost": 51.905,
-      "current_price": 51.695
+      "current_price": 51.345
+    },
+    "BTI": {
+      "shares": 15,
+      "avg_cost": 57.01,
+      "current_price": 57.01
+    },
+    "OHI": {
+      "shares": 10,
+      "avg_cost": 46.35,
+      "current_price": 46.35
     }
   },
-  "total_return_pct": -3.56,
+  "total_return_pct": -3.63,
   "total_return_usd": 0.0,
-  "today_pnl": 64.46,
-  "today_pnl_pct": 0.67,
-  "total_trades": 0,
-  "today_start_value": 9579.19,
-  "today_date": "2026-08-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T19:37:21Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 5,
+  "today_start_value": 9637.49,
+  "today_date": "2026-08-13",
+  "last_action": "Market is neutral (Fear & Greed 50). Focus remains on fundamentals: dividend yield, payout ratio, and growth. Rotating out of laggards (ABBV, O) into momentum leaders (BTI, OHI) and reinforcing convic",
+  "last_updated": "2026-08-13T13:38:09Z",
   "last_session": {
-    "at": "2026-08-11T19:37:21Z",
+    "at": "2026-08-13T13:38:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "OHI",
-        -3.36
+        "BTI",
+        2.1
       ],
       [
-        "T",
-        1.56
-      ],
-      [
-        "IBM",
-        1.04
-      ],
-      [
-        "MO",
-        -0.99
+        "CVX",
+        -1.37
       ],
       [
         "ABBV",
-        0.93
+        1.22
+      ],
+      [
+        "OHI",
+        1.05
       ],
       [
         "MAIN",
-        0.92
+        0.81
+      ],
+      [
+        "PM",
+        0.78
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio is overweight in underperforming dividend stocks despite sector strength. Sold ABBV and O to free up ~$1,800 in capital. Deployed into MAIN (adding to existing), BTI (new high-momentum tobacco), and OHI (new healthcare REIT). All buys are from watchlist, under 20% per stock, and maintain >$500 cash. Trades align with Kevin\u2019s rule: only dividend payers, focus on yield and growth, reinvest dividends via capital allocation.",
+    "outlook": "Market is neutral (Fear & Greed 50). Focus remains on fundamentals: dividend yield, payout ratio, and growth. Rotating out of laggards (ABBV, O) into momentum leaders (BTI, OHI) and reinforcing conviction positions (MAIN). Building passive income through active rebalancing.",
+    "trades_made": 5
   },
   "portfolio_history": [
     {
@@ -865,6 +865,10 @@
     {
       "timestamp": "2026-08-11T19:37:21Z",
       "value": 9643.65
+    },
+    {
+      "timestamp": "2026-08-13T13:38:09Z",
+      "value": 9637.49
     }
   ]
 }

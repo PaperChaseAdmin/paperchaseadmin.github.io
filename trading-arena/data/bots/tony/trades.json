@@ -1,3 +1,58 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "AXON",
+      "shares": 1,
+      "price": 593.245,
+      "total_value": 593.25,
+      "reasoning": "AXON is underperforming with negative momentum (-0.56%) and a significant unrealized loss (-40.71). As a Tony Stark-style trader, I cut losers fast to redeploy capital into higher-conviction, momentum-driven tech plays. This frees up ~$593 for better opportunities.",
+      "timestamp": "2026-08-13T13:38:43Z",
+      "market_outlook": "Market is showing selective strength in AI and defense tech, with momentum favoring innovative names. Fear is low, complacency creeping in \u2014 but Tony Stark thrives in volatility. The dip in some names is a buying opportunity; the rally in others confirms trend. Stay aggressive, stay long the future.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.56,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PLTR",
+      "shares": 3,
+      "price": 175.39,
+      "total_value": 526.17,
+      "reasoning": "PLTR is the top performer in the watchlist (+2.6% today), showing strong momentum in AI/data analytics \u2014 a core Tony Stark thesis. With solid fundamentals and institutional adoption, it\u2019s a high-conviction buy. At $175.39, 3 shares cost ~$526, well under 40% of portfolio and leaving ample cash.",
+      "timestamp": "2026-08-13T13:38:43Z",
+      "market_outlook": "Market is showing selective strength in AI and defense tech, with momentum favoring innovative names. Fear is low, complacency creeping in \u2014 but Tony Stark thrives in volatility. The dip in some names is a buying opportunity; the rally in others confirms trend. Stay aggressive, stay long the future.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.6,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "SMCI",
+      "shares": 10,
+      "price": 38.6247,
+      "total_value": 386.25,
+      "reasoning": "SMCI is up +2.18% today and remains a leader in AI server infrastructure \u2014 critical for the AI boom Tony Stark would back. It\u2019s volatile but aligned with leveraged tech exposure. 10 shares at $38.62 = ~$386, under 40% limit. Adds diversification within high-growth tech while maintaining aggression.",
+      "timestamp": "2026-08-13T13:38:43Z",
+      "market_outlook": "Market is showing selective strength in AI and defense tech, with momentum favoring innovative names. Fear is low, complacency creeping in \u2014 but Tony Stark thrives in volatility. The dip in some names is a buying opportunity; the rally in others confirms trend. Stay aggressive, stay long the future.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.18,
+        "trigger_news": null
+      }
+    }
+  ]
 }

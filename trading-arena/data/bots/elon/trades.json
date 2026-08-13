@@ -1,3 +1,58 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "BUY",
+      "ticker": "PLTR",
+      "shares": 10,
+      "price": 175.39,
+      "total_value": 1753.9,
+      "reasoning": "PLTR is the top gainer on watchlist at +2.6%, showing strong momentum. Aggressive tech trader likes disruption plays in AI/data analytics. Current cash allows for this add without exceeding 35% limit.",
+      "timestamp": "2026-08-13T13:31:49Z",
+      "market_outlook": "Market shows selective strength in tech disruptors despite mixed breadth. Fear & Greed unavailable, but watchlist momentum suggests risk-on sentiment in speculative tech. Aggressive posture warranted given leadership in PLTR, SOFI, COIN.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.6,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "SOFI",
+      "shares": 25,
+      "price": 18.19,
+      "total_value": 454.75,
+      "reasoning": "SOFI up +1.45%, benefiting from fintech momentum. Aggressive deployment into high-conviction momentum names. Still well under 35% portfolio limit per stock.",
+      "timestamp": "2026-08-13T13:31:49Z",
+      "market_outlook": "Market shows selective strength in tech disruptors despite mixed breadth. Fear & Greed unavailable, but watchlist momentum suggests risk-on sentiment in speculative tech. Aggressive posture warranted given leadership in PLTR, SOFI, COIN.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.45,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "COIN",
+      "shares": 15,
+      "price": 150.78,
+      "total_value": 2261.7,
+      "reasoning": "COIN +1.38%, crypto-adjacent play with strong retail sentiment alignment. Fits Elon's preference for disruptive, sentiment-driven tech/crypto names. Adds to watchlist momentum theme.",
+      "timestamp": "2026-08-13T13:31:49Z",
+      "market_outlook": "Market shows selective strength in tech disruptors despite mixed breadth. Fear & Greed unavailable, but watchlist momentum suggests risk-on sentiment in speculative tech. Aggressive posture warranted given leadership in PLTR, SOFI, COIN.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.38,
+        "trigger_news": null
+      }
+    }
+  ]
 }

@@ -1,64 +1,69 @@
 {
-  "cash": 1830.56,
-  "total_value": 8624.81,
+  "cash": 4609.1,
+  "total_value": 8567.4,
   "positions": {
-    "MARA": {
-      "shares": 300,
-      "avg_cost": 9.705,
-      "current_price": 9.755
+    "HOOD": {
+      "shares": 20,
+      "avg_cost": 97.32,
+      "current_price": 97.32
     },
-    "RIOT": {
-      "shares": 191,
-      "avg_cost": 20.25,
-      "current_price": 20.25
+    "PLTR": {
+      "shares": 10,
+      "avg_cost": 175.39,
+      "current_price": 175.39
+    },
+    "AMC": {
+      "shares": 100,
+      "avg_cost": 2.58,
+      "current_price": 2.58
     }
   },
-  "total_return_pct": -13.75,
+  "total_return_pct": -14.33,
   "total_return_usd": 0.0,
-  "today_pnl": -52.2,
-  "today_pnl_pct": -0.6,
-  "total_trades": 0,
-  "today_start_value": 8677.01,
-  "today_date": "2026-08-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T19:38:20Z",
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
+  "total_trades": 5,
+  "today_start_value": 8567.39,
+  "today_date": "2026-08-13",
+  "last_action": "Market is showing selective strength in meme names and high-beta growth stocks. HOOD, PLTR, and AMC are leading watchlist momentum. No macro news, but price action is signaling retail rotation into sp",
+  "last_updated": "2026-08-13T13:39:38Z",
   "last_session": {
-    "at": "2026-08-11T19:38:20Z",
+    "at": "2026-08-13T13:39:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "RIOT",
-        4.41
+        "HOOD",
+        2.92
+      ],
+      [
+        "PLTR",
+        2.6
+      ],
+      [
+        "AMC",
+        2.16
       ],
       [
         "UPST",
-        -2.98
-      ],
-      [
-        "MARA",
-        2.04
-      ],
-      [
-        "MSTR",
-        -1.16
-      ],
-      [
-        "META",
-        1.16
+        1.8
       ],
       [
         "SOFI",
-        -1.16
+        1.45
+      ],
+      [
+        "COIN",
+        1.38
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Sold underperforming crypto miners (MARA, RIOT) to rotate into stronger relative strength names. HOOD leads with +2.9%, followed by PLTR and AMC. Deployed ~80% of freed cash into these leaders, keeping $200+ reserve. Positions sized for max exposure per rules (under 45% per stock). Focus is on riding intraday momentum and rebalancing daily \u2014 no marriage to positions. If these break further, will add more; if they reverse, will cut fast. Pure price action trading.",
+    "outlook": "Market is showing selective strength in meme names and high-beta growth stocks. HOOD, PLTR, and AMC are leading watchlist momentum. No macro news, but price action is signaling retail rotation into speculative names. Environment favors aggressive momentum chasing.",
+    "trades_made": 5
   },
   "portfolio_history": [
     {
@@ -820,6 +825,10 @@
     {
       "timestamp": "2026-08-11T19:38:20Z",
       "value": 8624.81
+    },
+    {
+      "timestamp": "2026-08-13T13:39:38Z",
+      "value": 8567.4
     }
   ]
 }

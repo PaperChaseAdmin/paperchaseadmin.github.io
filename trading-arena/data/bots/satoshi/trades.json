@@ -1,3 +1,94 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "MSTR",
+      "shares": 10,
+      "price": 94.835,
+      "total_value": 948.35,
+      "reasoning": "MSTR is underperforming despite Bitcoin strength; taking partial profit to rebalance into stronger momentum names like IREN and BTBT which show explosive short-term gains.",
+      "timestamp": "2026-08-13T13:44:36Z",
+      "market_outlook": "Crypto sentiment is mixed but showing signs of renewal with select miners and exchanges outperforming. Fear & Greed data unavailable, but price action in IREN, BTBT, and HOOD suggests speculative interest is returning. Bitcoin miners with operational leverage may outperform in short term.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.49,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IREN",
+      "shares": 10,
+      "price": 46.245,
+      "total_value": 462.45,
+      "reasoning": "IREN shows strongest momentum in watchlist (+5.86%) with solid fundamentals in Bitcoin mining; high conviction buy on breakout strength.",
+      "timestamp": "2026-08-13T13:44:36Z",
+      "market_outlook": "Crypto sentiment is mixed but showing signs of renewal with select miners and exchanges outperforming. Fear & Greed data unavailable, but price action in IREN, BTBT, and HOOD suggests speculative interest is returning. Bitcoin miners with operational leverage may outperform in short term.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 5.86,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BTBT",
+      "shares": 50,
+      "price": 1.49,
+      "total_value": 74.5,
+      "reasoning": "BTBT surging +3.42% with low price and high volatility; speculative but aligned with crypto-adjacent thesis; small position to capture momentum.",
+      "timestamp": "2026-08-13T13:44:36Z",
+      "market_outlook": "Crypto sentiment is mixed but showing signs of renewal with select miners and exchanges outperforming. Fear & Greed data unavailable, but price action in IREN, BTBT, and HOOD suggests speculative interest is returning. Bitcoin miners with operational leverage may outperform in short term.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.42,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "CLSK",
+      "shares": 20,
+      "price": 12.15,
+      "total_value": 243.0,
+      "reasoning": "CLSK showing weak relative strength (+0.33%) vs peers; cutting underperformer to free cash for higher momentum opportunities.",
+      "timestamp": "2026-08-13T13:44:36Z",
+      "market_outlook": "Crypto sentiment is mixed but showing signs of renewal with select miners and exchanges outperforming. Fear & Greed data unavailable, but price action in IREN, BTBT, and HOOD suggests speculative interest is returning. Bitcoin miners with operational leverage may outperform in short term.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.33,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "HOOD",
+      "shares": 5,
+      "price": 97.32,
+      "total_value": 486.6,
+      "reasoning": "HOOD +2.92% and gaining traction as crypto-adjacent brokerage; indirect crypto exposure with improving sentiment; small starter position.",
+      "timestamp": "2026-08-13T13:44:36Z",
+      "market_outlook": "Crypto sentiment is mixed but showing signs of renewal with select miners and exchanges outperforming. Fear & Greed data unavailable, but price action in IREN, BTBT, and HOOD suggests speculative interest is returning. Bitcoin miners with operational leverage may outperform in short term.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.92,
+        "trigger_news": null
+      }
+    }
+  ]
 }

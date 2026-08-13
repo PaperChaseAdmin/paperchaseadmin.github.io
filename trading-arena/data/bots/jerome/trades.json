@@ -1,3 +1,58 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "TLT",
+      "shares": 5,
+      "price": 82.6,
+      "total_value": 413.0,
+      "reasoning": "TLT up 0.6% today; taking partial profit as bond rally may be extended. Maintain core position but reduce exposure to lock in gains.",
+      "timestamp": "2026-08-13T13:42:24Z",
+      "market_outlook": "Market shows mixed signals with modest gains in rate-sensitive sectors. VIX and Fear & Greed not provided, but bond and bank strength suggests neither extreme fear nor greed. Proceeding with cautious rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.6,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BIL",
+      "shares": 7,
+      "price": 91.51,
+      "total_value": 640.57,
+      "reasoning": "BIL flat today; adding to short-term Treasury exposure as a defensive cash equivalent. Low volatility, high liquidity, aligns with data-dependent stance.",
+      "timestamp": "2026-08-13T13:42:24Z",
+      "market_outlook": "Market shows mixed signals with modest gains in rate-sensitive sectors. VIX and Fear & Greed not provided, but bond and bank strength suggests neither extreme fear nor greed. Proceeding with cautious rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.0,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLF",
+      "shares": 10,
+      "price": 58.22,
+      "total_value": 582.2,
+      "reasoning": "XLF up 0.55%; banks benefiting from higher rates. Adding to financials as inflation remains a concern and yield curve dynamics support bank margins.",
+      "timestamp": "2026-08-13T13:42:24Z",
+      "market_outlook": "Market shows mixed signals with modest gains in rate-sensitive sectors. VIX and Fear & Greed not provided, but bond and bank strength suggests neither extreme fear nor greed. Proceeding with cautious rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.55,
+        "trigger_news": null
+      }
+    }
+  ]
 }
