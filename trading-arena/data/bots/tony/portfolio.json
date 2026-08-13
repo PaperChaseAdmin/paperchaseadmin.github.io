@@ -1,79 +1,84 @@
 {
-  "cash": 1886.97,
-  "total_value": 8650.97,
+  "cash": 1293.2,
+  "total_value": 8839.09,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 74.9729
+      "current_price": 77.0367
     },
     "NVDA": {
-      "shares": 3,
+      "shares": 1,
       "avg_cost": 206.06,
-      "current_price": 224.48
+      "current_price": 225.3799
     },
     "SOXL": {
-      "shares": 10,
-      "avg_cost": 130.7,
-      "current_price": 142.95
-    },
-    "PLTR": {
-      "shares": 3,
-      "avg_cost": 175.39,
-      "current_price": 175.39
+      "shares": 15,
+      "current_price": 149.82,
+      "avg_cost": 137.0733
     },
     "SMCI": {
       "shares": 10,
       "avg_cost": 38.6247,
-      "current_price": 38.6247
+      "current_price": 39.7501
+    },
+    "MRVL": {
+      "shares": 3,
+      "avg_cost": 227.6943,
+      "current_price": 227.6943
+    },
+    "IONQ": {
+      "shares": 3,
+      "avg_cost": 46.93,
+      "current_price": 46.93
     }
   },
-  "total_return_pct": -13.49,
+  "total_return_pct": -11.61,
   "total_return_usd": 0.0,
-  "today_pnl": -0.01,
-  "today_pnl_pct": -0.0,
-  "total_trades": 3,
+  "today_pnl": 188.11,
+  "today_pnl_pct": 2.17,
+  "total_trades": 8,
   "today_start_value": 8650.98,
   "today_date": "2026-08-13",
-  "last_action": "Market is showing selective strength in AI and defense tech, with momentum favoring innovative names. Fear is low, complacency creeping in \u2014 but Tony Stark thrives in volatility. The dip in some names",
-  "last_updated": "2026-08-13T13:38:43Z",
+  "last_action": "Market is in a risk-on phase with strong momentum in leveraged tech and semiconductors. Fear & Greed not available, but watchlist shows broad gains \u2014 especially in SMCI, SOXL, MRVL, ARM, IONQ. This is",
+  "last_updated": "2026-08-13T14:11:44Z",
   "last_session": {
-    "at": "2026-08-13T13:38:43Z",
+    "at": "2026-08-13T14:11:44Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "PLTR",
-        2.6
-      ],
-      [
-        "RKLB",
-        -2.35
-      ],
-      [
         "SMCI",
-        2.18
+        5.62
       ],
       [
-        "ANET",
-        -1.7
+        "SOXL",
+        5.24
+      ],
+      [
+        "MRVL",
+        4.75
       ],
       [
         "ARM",
-        -1.06
+        4.35
       ],
       [
         "IONQ",
-        0.95
+        3.74
+      ],
+      [
+        "TQQQ",
+        3.21
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is currently overweight in leveraged ETFs (TQQQ, SOXL) and NVDA, with AXON dragging performance. Sold AXON to cut losses and rotate into PLTR (AI/data leader) and SMCI (AI hardware) \u2014 both showing strong technical momentum and fundamental tailwinds. Maintains cash reserve (>$300) and stays within position limits. Strategy: double down on winning momentum, eliminate laggards, and keep the portfolio bleeding-edge as per Stark doctrine.",
-    "outlook": "Market is showing selective strength in AI and defense tech, with momentum favoring innovative names. Fear is low, complacency creeping in \u2014 but Tony Stark thrives in volatility. The dip in some names is a buying opportunity; the rally in others confirms trend. Stay aggressive, stay long the future.",
-    "trades_made": 3
+    "ai_analysis": "Portfolio is up 184.83 (TQQQ) + 57.96 (NVDA) + 191.2 (SOXL) + 2.27 (PLTR) + 11.25 (SMCI) = 447.51 unrealized PnL. Cash is 1886.97. After trades: buying SOXL (5*149.82=749.10), MRVL (10*227.69=2276.90), IONQ (15*46.93=703.95) = ~3729.95 outflow. Selling PLTR (3*176.145=528.44) and NVDA (2*225.38=450.76) = ~979.20 inflow. Net cash change: -2750.75. New cash: 1886.97 - 2750.75 = -863.78 \u2192 violates 300 cash reserve. Adjusting: reduce IONQ to 5 shares (234.65), MRVL to 5 shares (1138.45), SOXL to 3 shares (449.46). Total buy: 1822.56. Sell: 979.20. Net outflow: 843.36. New cash: 1886.97 - 843.36 = 1043.61 (>300). Allocations: SOXL new total 13 shares (~1947.66), MRVL 5 shares (~1138.45), IONQ 5 shares (~234.65), NVDA 1 share (~225.38), SMCI 10 shares (~397.50), TQQQ 50 shares (~3851.84). All under 40% of total (~8650).",
+    "outlook": "Market is in a risk-on phase with strong momentum in leveraged tech and semiconductors. Fear & Greed not available, but watchlist shows broad gains \u2014 especially in SMCI, SOXL, MRVL, ARM, IONQ. This is a momentum-driven rally in AI and advanced tech. Volatility is elevated but favorable for aggressive positions. No signs of reversal yet \u2014 double down on strength.",
+    "trades_made": 5
   },
   "portfolio_history": [
     {
@@ -839,6 +844,10 @@
     {
       "timestamp": "2026-08-13T13:38:43Z",
       "value": 8650.97
+    },
+    {
+      "timestamp": "2026-08-13T14:11:44Z",
+      "value": 8839.09
     }
   ]
 }

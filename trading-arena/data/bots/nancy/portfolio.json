@@ -1,79 +1,89 @@
 {
-  "cash": 2594.64,
-  "total_value": 10364.56,
+  "cash": 1960.15,
+  "total_value": 10440.43,
   "positions": {
-    "AAPL": {
-      "shares": 4,
-      "current_price": 302.68,
-      "avg_cost": 304.8987
-    },
     "AVGO": {
       "shares": 4,
       "avg_cost": 372.72,
-      "current_price": 412.0
+      "current_price": 423.5
     },
     "NVDA": {
       "shares": 16,
-      "current_price": 224.48,
+      "current_price": 225.3799,
       "avg_cost": 213.8401
     },
     "MSFT": {
       "shares": 2,
-      "current_price": 495.735,
+      "current_price": 498.87,
       "avg_cost": 441.7225
     },
     "LRCX": {
       "shares": 1,
       "avg_cost": 311.18,
-      "current_price": 328.05
+      "current_price": 330.25
+    },
+    "INTC": {
+      "shares": 4,
+      "avg_cost": 105.5425,
+      "current_price": 105.5425
+    },
+    "MU": {
+      "shares": 1,
+      "avg_cost": 934.79,
+      "current_price": 934.79
+    },
+    "AMD": {
+      "shares": 1,
+      "avg_cost": 495.25,
+      "current_price": 495.25
     }
   },
-  "total_return_pct": 3.65,
+  "total_return_pct": 4.4,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 2,
+  "today_pnl": 75.87,
+  "today_pnl_pct": 0.73,
+  "total_trades": 6,
   "today_start_value": 10364.56,
   "today_date": "2026-08-13",
-  "last_action": "Semiconductor and tech stocks remain in a bullish phase with strong institutional interest. Momentum is shifting toward AI-driven names like NVDA and MSFT, while some legacy semiconductors may see pro",
-  "last_updated": "2026-08-13T13:34:12Z",
+  "last_action": "Semiconductor sector showing strong momentum with INTC, MU, AMD leading. AI-driven demand continues to fuel tech rotation. Nancy's instincts suggest this is early stage of semiconductor bull run - agg",
+  "last_updated": "2026-08-13T14:04:47Z",
   "last_session": {
-    "at": "2026-08-13T13:34:12Z",
+    "at": "2026-08-13T14:04:47Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "CRM",
-        1.42
+        "INTC",
+        4.52
       ],
       [
-        "META",
-        1.16
+        "MU",
+        2.61
+      ],
+      [
+        "AMD",
+        2.47
       ],
       [
         "AVGO",
-        -0.8
+        1.74
       ],
       [
-        "QCOM",
-        0.7
+        "META",
+        1.73
       ],
       [
-        "MSFT",
-        0.67
-      ],
-      [
-        "LRCX",
-        0.59
+        "TSLA",
+        1.7
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is overweight in AVGO after its large gain; reducing exposure to rebalance into higher momentum tech names. NVDA and MSFT are showing early signs of breakout momentum with supportive price action. Keeping cash reserve above $500 as required. Trades align with aggressive conviction in tech/semiconductors and active rebalancing discipline.",
-    "outlook": "Semiconductor and tech stocks remain in a bullish phase with strong institutional interest. Momentum is shifting toward AI-driven names like NVDA and MSFT, while some legacy semiconductors may see profit-taking. Expect continued volatility but upward bias in tech ahead of potential policy catalysts.",
-    "trades_made": 2
+    "ai_analysis": "Portfolio rebalanced: sold AAPL (weak relative performance) to fund semiconductor buys in INTC, MU, AMD. Maintains core NVDA, AVGO, MSFT positions while adding to strongest momentum names. Cash reserve maintained above $500. Semiconductor exposure increased per Nancy's high-conviction strategy.",
+    "outlook": "Semiconductor sector showing strong momentum with INTC, MU, AMD leading. AI-driven demand continues to fuel tech rotation. Nancy's instincts suggest this is early stage of semiconductor bull run - aggressive buying warranted.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -839,6 +849,10 @@
     {
       "timestamp": "2026-08-13T13:34:12Z",
       "value": 10364.56
+    },
+    {
+      "timestamp": "2026-08-13T14:04:47Z",
+      "value": 10440.43
     }
   ]
 }

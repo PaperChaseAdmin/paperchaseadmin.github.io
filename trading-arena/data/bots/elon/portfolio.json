@@ -1,78 +1,78 @@
 {
-  "cash": 1666.0,
-  "total_value": 9445.59,
+  "cash": 1124.01,
+  "total_value": 9481.11,
   "positions": {
     "NVDA": {
       "shares": 8,
-      "current_price": 224.48,
+      "current_price": 225.3799,
       "avg_cost": 201.4803
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 303.32,
-      "current_price": 302.68
+      "current_price": 304.43
     },
     "PLTR": {
-      "shares": 10,
-      "avg_cost": 175.39,
-      "current_price": 175.39
-    },
-    "SOFI": {
-      "shares": 25,
-      "avg_cost": 18.19,
-      "current_price": 18.19
+      "shares": 13,
+      "current_price": 176.145,
+      "avg_cost": 175.5642
     },
     "COIN": {
       "shares": 15,
       "avg_cost": 150.78,
-      "current_price": 150.78
+      "current_price": 151.515
+    },
+    "IONQ": {
+      "shares": 10,
+      "avg_cost": 46.93,
+      "current_price": 46.93
     }
   },
-  "total_return_pct": -5.54,
+  "total_return_pct": -5.19,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 3,
+  "today_pnl": 35.52,
+  "today_pnl_pct": 0.38,
+  "total_trades": 6,
   "today_start_value": 9445.59,
   "today_date": "2026-08-13",
-  "last_action": "Market shows selective strength in tech disruptors despite mixed breadth. Fear & Greed unavailable, but watchlist momentum suggests risk-on sentiment in speculative tech. Aggressive posture warranted ",
-  "last_updated": "2026-08-13T13:31:49Z",
+  "last_action": "Market shows selective strength in AI, quantum, and disruptive tech despite lack of Fear & Greed data. Momentum is concentrated in IONQ, PLTR, AMD, MSTR. Avoiding financials like SOFI unless they show",
+  "last_updated": "2026-08-13T14:02:19Z",
   "last_session": {
-    "at": "2026-08-13T13:31:49Z",
+    "at": "2026-08-13T14:02:19Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "IONQ",
+        3.74
+      ],
+      [
         "PLTR",
-        2.6
+        3.02
       ],
       [
-        "SOFI",
-        1.45
+        "AMD",
+        2.47
       ],
       [
-        "COIN",
-        1.38
+        "MSTR",
+        2.32
       ],
       [
-        "RIVN",
-        -1.19
+        "RBLX",
+        2.05
       ],
       [
         "META",
-        1.16
-      ],
-      [
-        "IONQ",
-        0.95
+        1.73
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio currently weighted toward NVDA and AAPL. NVDA up modestly, AAPL slightly down. Rotating cash into higher-momentum names like PLTR, SOFI, COIN to capture near-term leadership. Maintains discipline: no single position will exceed 35% after these trades. Cash reserve remains well above $500. Actively rebalancing toward stronger relative strength names as per Elon's aggressive, momentum-driven style.",
-    "outlook": "Market shows selective strength in tech disruptors despite mixed breadth. Fear & Greed unavailable, but watchlist momentum suggests risk-on sentiment in speculative tech. Aggressive posture warranted given leadership in PLTR, SOFI, COIN.",
+    "ai_analysis": "Portfolio is moderately exposed to NVDA, AAPL, PLTR with small gains. Cash is $1,666, but after selling SOFI (~$455) and buying IONQ ($469) and adding to PLTR ($881), net cash change is -$895, leaving ~$771 cash \u2014 still above $500 reserve. Total tech/AI exposure increases, which aligns with aggressive disruption strategy. No single stock will exceed 35% post-trades.",
+    "outlook": "Market shows selective strength in AI, quantum, and disruptive tech despite lack of Fear & Greed data. Momentum is concentrated in IONQ, PLTR, AMD, MSTR. Avoiding financials like SOFI unless they show breakout volume or news. Ready to pivot fast if sentiment shifts.",
     "trades_made": 3
   },
   "portfolio_history": [
@@ -839,6 +839,10 @@
     {
       "timestamp": "2026-08-13T13:31:49Z",
       "value": 9445.59
+    },
+    {
+      "timestamp": "2026-08-13T14:02:19Z",
+      "value": 9481.11
     }
   ]
 }

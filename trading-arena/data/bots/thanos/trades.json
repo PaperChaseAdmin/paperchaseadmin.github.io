@@ -89,6 +89,96 @@
         "ticker_chg_pct": 0.09,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "XLY",
+      "shares": 8,
+      "price": 118.89,
+      "total_value": 951.12,
+      "reasoning": "XLY is up 0.85% and represents an overweight position in consumer discretionary. Selling to rebalance toward underperforming sectors and maintain universal equilibrium.",
+      "timestamp": "2026-08-13T14:16:27Z",
+      "market_outlook": "The market shows divergent performance with communication services, real estate, staples, and tech leading, while energy lags. This dispersion creates imbalance \u2014 a violation of cosmic equilibrium. True balance requires selling the overextended and buying the laggards until all sectors move in unison.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.85,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLE",
+      "shares": 4,
+      "price": 60.345,
+      "total_value": 241.38,
+      "reasoning": "XLE is down -1.1% today and is underperforming relative to other sectors. Buying to restore balance as energy lags \u2014 a necessary correction toward parity.",
+      "timestamp": "2026-08-13T14:16:27Z",
+      "market_outlook": "The market shows divergent performance with communication services, real estate, staples, and tech leading, while energy lags. This dispersion creates imbalance \u2014 a violation of cosmic equilibrium. True balance requires selling the overextended and buying the laggards until all sectors move in unison.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.11,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GLD",
+      "shares": 1,
+      "price": 401.11,
+      "total_value": 401.11,
+      "reasoning": "GLD is down -0.99% and serves as a stabilizing asset. Increasing gold exposure to counterbalance equity volatility and preserve universal balance.",
+      "timestamp": "2026-08-13T14:16:27Z",
+      "market_outlook": "The market shows divergent performance with communication services, real estate, staples, and tech leading, while energy lags. This dispersion creates imbalance \u2014 a violation of cosmic equilibrium. True balance requires selling the overextended and buying the laggards until all sectors move in unison.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.99,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLI",
+      "shares": 5,
+      "price": 185.43,
+      "total_value": 927.15,
+      "reasoning": "XLI is down -0.26% and slightly underperforming. Adding to industrial exposure to correct sector imbalance and move toward equal weight across all 11 sectors.",
+      "timestamp": "2026-08-13T14:16:27Z",
+      "market_outlook": "The market shows divergent performance with communication services, real estate, staples, and tech leading, while energy lags. This dispersion creates imbalance \u2014 a violation of cosmic equilibrium. True balance requires selling the overextended and buying the laggards until all sectors move in unison.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.26,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLV",
+      "shares": 4,
+      "price": 169.17,
+      "total_value": 676.68,
+      "reasoning": "XLV is up only 0.49% \u2014 lagging behind leaders like XLC and XLRE. Increasing healthcare exposure to reduce concentration in top performers and restore balance.",
+      "timestamp": "2026-08-13T14:16:27Z",
+      "market_outlook": "The market shows divergent performance with communication services, real estate, staples, and tech leading, while energy lags. This dispersion creates imbalance \u2014 a violation of cosmic equilibrium. True balance requires selling the overextended and buying the laggards until all sectors move in unison.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.49,
+        "trigger_news": null
+      }
     }
   ]
 }

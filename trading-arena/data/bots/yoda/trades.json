@@ -1,3 +1,40 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "VXUS",
+      "shares": 2,
+      "price": 87.71,
+      "total_value": 175.42,
+      "reasoning": "VXUS underperforms with minimal gain. Sell to rebalance and deploy cash into stronger international exposure via VEA or VWO.",
+      "timestamp": "2026-08-13T14:14:56Z",
+      "market_outlook": "Markets show mild strength today, led by real estate and tech. No fear, no greed \u2014 just steady accumulation. The index path remains clear: buy the dips, hold the course.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.19,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "VEA",
+      "shares": 4,
+      "price": 73.475,
+      "total_value": 293.9,
+      "reasoning": "VEA offers developed international exposure at $73.475 with positive momentum. Undervalued relative to VXUS. Buy to diversify internationally with better fundamentals.",
+      "timestamp": "2026-08-13T14:14:56Z",
+      "market_outlook": "Markets show mild strength today, led by real estate and tech. No fear, no greed \u2014 just steady accumulation. The index path remains clear: buy the dips, hold the course.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.23,
+        "trigger_news": null
+      }
+    }
+  ]
 }
