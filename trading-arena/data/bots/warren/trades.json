@@ -1,3 +1,76 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "BRK-B",
+      "shares": 2,
+      "price": 511.72,
+      "total_value": 1023.44,
+      "reasoning": "BRK-B is down 7.7% from avg cost with no near-term catalyst; better to deploy cash into higher-quality, more attractively valued businesses with stronger moats and consistent earnings.",
+      "timestamp": "2026-08-13T13:32:44Z",
+      "market_outlook": "Market is in a neutral state with no extreme fear or greed. Focus remains on fundamentals: wide moats, consistent earnings, and prudent valuations. No need to chase momentum; instead, upgrade portfolio quality by selling laggards and buying better defensive compounders.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.34,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "JNJ",
+      "shares": 3,
+      "price": 261.35,
+      "total_value": 784.05,
+      "reasoning": "JNJ is down 4.9% from avg cost; while a quality business, current valuation doesn't offer sufficient margin of safety relative to peers like PG or KO with better near-term momentum and defensive stability.",
+      "timestamp": "2026-08-13T13:32:44Z",
+      "market_outlook": "Market is in a neutral state with no extreme fear or greed. Focus remains on fundamentals: wide moats, consistent earnings, and prudent valuations. No need to chase momentum; instead, upgrade portfolio quality by selling laggards and buying better defensive compounders.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.09,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PG",
+      "shares": 4,
+      "price": 145.07,
+      "total_value": 580.28,
+      "reasoning": "PG is a fortress balance stock with pricing power, global scale, and consistent dividend growth. At $145.07 (+0.57% today), it offers defensive stability and trades at a reasonable valuation relative to historical averages. Use proceeds from BRK-B and JNJ sales to initiate a position.",
+      "timestamp": "2026-08-13T13:32:44Z",
+      "market_outlook": "Market is in a neutral state with no extreme fear or greed. Focus remains on fundamentals: wide moats, consistent earnings, and prudent valuations. No need to chase momentum; instead, upgrade portfolio quality by selling laggards and buying better defensive compounders.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.57,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "WMT",
+      "shares": 8,
+      "price": 115.83,
+      "total_value": 926.64,
+      "reasoning": "WMT is down -0.37% today but remains a compounding machine with unmatched scale, supply chain advantages, and consistent execution. Trading at $115.83, it offers a wide moat and resilience in any environment. Initiate a position with cash reserves.",
+      "timestamp": "2026-08-13T13:32:44Z",
+      "market_outlook": "Market is in a neutral state with no extreme fear or greed. Focus remains on fundamentals: wide moats, consistent earnings, and prudent valuations. No need to chase momentum; instead, upgrade portfolio quality by selling laggards and buying better defensive compounders.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.37,
+        "trigger_news": null
+      }
+    }
+  ]
 }

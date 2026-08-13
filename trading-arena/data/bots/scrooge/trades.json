@@ -1,3 +1,94 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "O",
+      "shares": 32,
+      "price": 62.895,
+      "total_value": 2012.64,
+      "reasoning": "O is underperforming with negative P&L (-23.05) and current price below avg cost. Selling to deploy cash into higher-yielding opportunities with better momentum.",
+      "timestamp": "2026-08-13T13:41:11Z",
+      "market_outlook": "Market shows neutral sentiment (Fear & Greed 50). Focus remains on dividend capture and capital preservation. High-yield sectors (REITs, BDCs, tobacco) are resilient. Deploying cash from underperformers into momentum-backed dividend payers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.48,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "HTGC",
+      "shares": 10,
+      "price": 16.78,
+      "total_value": 167.8,
+      "reasoning": "HTGC is a BDC with strong yield potential, up 1.08% today, and currently held with 10.82 P&L. Adding to position as it fits dividend-focused strategy and shows momentum.",
+      "timestamp": "2026-08-13T13:41:11Z",
+      "market_outlook": "Market shows neutral sentiment (Fear & Greed 50). Focus remains on dividend capture and capital preservation. High-yield sectors (REITs, BDCs, tobacco) are resilient. Deploying cash from underperformers into momentum-backed dividend payers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.08,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "OHI",
+      "shares": 5,
+      "price": 46.35,
+      "total_value": 231.75,
+      "reasoning": "OHI is a healthcare REIT with attractive yield, up 1.05% today, and currently held with -10.98 P&L. Averaging down on a quality dividend payer with potential for recovery.",
+      "timestamp": "2026-08-13T13:41:11Z",
+      "market_outlook": "Market shows neutral sentiment (Fear & Greed 50). Focus remains on dividend capture and capital preservation. High-yield sectors (REITs, BDCs, tobacco) are resilient. Deploying cash from underperformers into momentum-backed dividend payers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.05,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BTI",
+      "shares": 5,
+      "price": 57.01,
+      "total_value": 285.05,
+      "reasoning": "BTI (tobacco) offers high dividend yield, up 2.1% today (top mover), and currently held with -14.76 P&L. Averaging down on a reliable cash generator with strong yield.",
+      "timestamp": "2026-08-13T13:41:11Z",
+      "market_outlook": "Market shows neutral sentiment (Fear & Greed 50). Focus remains on dividend capture and capital preservation. High-yield sectors (REITs, BDCs, tobacco) are resilient. Deploying cash from underperformers into momentum-backed dividend payers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.1,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MAIN",
+      "shares": 5,
+      "price": 58.985,
+      "total_value": 294.93,
+      "reasoning": "MAIN is a BDC with solid yield, up 0.81% today, and currently held with 58.05 P&L. Adding to winner to increase exposure to high-yield business development companies.",
+      "timestamp": "2026-08-13T13:41:11Z",
+      "market_outlook": "Market shows neutral sentiment (Fear & Greed 50). Focus remains on dividend capture and capital preservation. High-yield sectors (REITs, BDCs, tobacco) are resilient. Deploying cash from underperformers into momentum-backed dividend payers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.81,
+        "trigger_news": null
+      }
+    }
+  ]
 }

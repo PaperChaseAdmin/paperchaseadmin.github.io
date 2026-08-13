@@ -1,74 +1,79 @@
 {
-  "cash": 2206.15,
-  "total_value": 8470.46,
+  "cash": 1886.97,
+  "total_value": 8650.97,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 73.0299
+      "current_price": 74.9729
     },
     "NVDA": {
       "shares": 3,
       "avg_cost": 206.06,
-      "current_price": 217.9201
+      "current_price": 224.48
     },
     "SOXL": {
       "shares": 10,
       "avg_cost": 130.7,
-      "current_price": 132.5101
+      "current_price": 142.95
     },
-    "AXON": {
-      "shares": 1,
-      "avg_cost": 633.95,
-      "current_price": 633.95
+    "PLTR": {
+      "shares": 3,
+      "avg_cost": 175.39,
+      "current_price": 175.39
+    },
+    "SMCI": {
+      "shares": 10,
+      "avg_cost": 38.6247,
+      "current_price": 38.6247
     }
   },
-  "total_return_pct": -15.3,
+  "total_return_pct": -13.49,
   "total_return_usd": 0.0,
-  "today_pnl": -67.35,
-  "today_pnl_pct": -0.79,
-  "total_trades": 0,
-  "today_start_value": 8537.81,
-  "today_date": "2026-08-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-11T19:37:38Z",
+  "today_pnl": -0.01,
+  "today_pnl_pct": -0.0,
+  "total_trades": 3,
+  "today_start_value": 8650.98,
+  "today_date": "2026-08-13",
+  "last_action": "Market is showing selective strength in AI and defense tech, with momentum favoring innovative names. Fear is low, complacency creeping in \u2014 but Tony Stark thrives in volatility. The dip in some names",
+  "last_updated": "2026-08-13T13:38:43Z",
   "last_session": {
-    "at": "2026-08-11T19:37:38Z",
+    "at": "2026-08-13T13:38:43Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "AXON",
-        6.31
+        "PLTR",
+        2.6
       ],
       [
-        "IONQ",
-        2.92
+        "RKLB",
+        -2.35
+      ],
+      [
+        "SMCI",
+        2.18
       ],
       [
         "ANET",
-        2.57
+        -1.7
       ],
       [
-        "AVGO",
-        -1.99
+        "ARM",
+        -1.06
       ],
       [
-        "SOXL",
-        1.98
-      ],
-      [
-        "CRWD",
-        -1.58
+        "IONQ",
+        0.95
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio is currently overweight in leveraged ETFs (TQQQ, SOXL) and NVDA, with AXON dragging performance. Sold AXON to cut losses and rotate into PLTR (AI/data leader) and SMCI (AI hardware) \u2014 both showing strong technical momentum and fundamental tailwinds. Maintains cash reserve (>$300) and stays within position limits. Strategy: double down on winning momentum, eliminate laggards, and keep the portfolio bleeding-edge as per Stark doctrine.",
+    "outlook": "Market is showing selective strength in AI and defense tech, with momentum favoring innovative names. Fear is low, complacency creeping in \u2014 but Tony Stark thrives in volatility. The dip in some names is a buying opportunity; the rally in others confirms trend. Stay aggressive, stay long the future.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -830,6 +835,10 @@
     {
       "timestamp": "2026-08-11T19:37:38Z",
       "value": 8470.46
+    },
+    {
+      "timestamp": "2026-08-13T13:38:43Z",
+      "value": 8650.97
     }
   ]
 }

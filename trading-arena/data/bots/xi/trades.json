@@ -1,3 +1,76 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "XPEV",
+      "shares": 80,
+      "price": 11.59,
+      "total_value": 927.2,
+      "reasoning": "XPEV is down 1.29% today and has a large unrealized loss of -$125.79. As a Chinese EV play, it's underperforming relative to peers like LI and NIO. Selling to cut losses and reallocate capital to stronger names with better momentum and fundamentals.",
+      "timestamp": "2026-08-13T13:45:16Z",
+      "market_outlook": "Chinese ADRs are under pressure today due to broader risk-off sentiment, but the long-term rejuvenation story remains intact. No new stimulus or regulatory updates, but valuations are becoming attractive. I am using today's weakness to rebalance toward higher-conviction names like BABA, PDD, and LI while reducing exposure to more speculative EV names.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.29,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "NIO",
+      "shares": 199,
+      "price": 4.4799,
+      "total_value": 891.5,
+      "reasoning": "NIO is down 1.43% today with a significant unrealized loss of -$165.51. While I believe in the long-term EV story in China, near-term weakness and cash burn concerns warrant reducing exposure. Selling half the position to lock in some capital and reduce risk.",
+      "timestamp": "2026-08-13T13:45:16Z",
+      "market_outlook": "Chinese ADRs are under pressure today due to broader risk-off sentiment, but the long-term rejuvenation story remains intact. No new stimulus or regulatory updates, but valuations are becoming attractive. I am using today's weakness to rebalance toward higher-conviction names like BABA, PDD, and LI while reducing exposure to more speculative EV names.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.43,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PDD",
+      "shares": 5,
+      "price": 88.4,
+      "total_value": 442.0,
+      "reasoning": "PDD is down 0.85% today but shows resilience with positive PnL (+$79.80). The company benefits from consumer downgrade trends and strong international growth via Temu. Adding to the position on weakness, as PDD remains a top Chinese growth story with solid execution.",
+      "timestamp": "2026-08-13T13:45:16Z",
+      "market_outlook": "Chinese ADRs are under pressure today due to broader risk-off sentiment, but the long-term rejuvenation story remains intact. No new stimulus or regulatory updates, but valuations are becoming attractive. I am using today's weakness to rebalance toward higher-conviction names like BABA, PDD, and LI while reducing exposure to more speculative EV names.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.85,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "LI",
+      "shares": 20,
+      "price": 12.3,
+      "total_value": 246.0,
+      "reasoning": "LI is down 1.37% today but has minimal unrealized loss and shows relative strength compared to NIO and XPEV. Li Auto has improving margins, strong delivery numbers, and is benefiting from EV demand in China's premium segment. Buying the dip in a fundamentally stronger EV player.",
+      "timestamp": "2026-08-13T13:45:16Z",
+      "market_outlook": "Chinese ADRs are under pressure today due to broader risk-off sentiment, but the long-term rejuvenation story remains intact. No new stimulus or regulatory updates, but valuations are becoming attractive. I am using today's weakness to rebalance toward higher-conviction names like BABA, PDD, and LI while reducing exposure to more speculative EV names.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.37,
+        "trigger_news": null
+      }
+    }
+  ]
 }

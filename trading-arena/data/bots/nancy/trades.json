@@ -1,3 +1,40 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "BUY",
+      "ticker": "MSFT",
+      "shares": 1,
+      "price": 495.735,
+      "total_value": 495.74,
+      "reasoning": "MSFT up +0.67%, strong tech leadership, and cloud/AI tailwinds. Increasing position to capitalize on continued outperformance.",
+      "timestamp": "2026-08-13T13:34:12Z",
+      "market_outlook": "Semiconductor and tech stocks remain in a bullish phase with strong institutional interest. Momentum is shifting toward AI-driven names like NVDA and MSFT, while some legacy semiconductors may see profit-taking. Expect continued volatility but upward bias in tech ahead of potential policy catalysts.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.67,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AVGO",
+      "shares": 5,
+      "price": 412.0,
+      "total_value": 2060.0,
+      "reasoning": "AVGO down -0.8% today despite strong fundamentals; taking partial profits after significant run to rebalance into higher momentum names.",
+      "timestamp": "2026-08-13T13:34:12Z",
+      "market_outlook": "Semiconductor and tech stocks remain in a bullish phase with strong institutional interest. Momentum is shifting toward AI-driven names like NVDA and MSFT, while some legacy semiconductors may see profit-taking. Expect continued volatility but upward bias in tech ahead of potential policy catalysts.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.8,
+        "trigger_news": null
+      }
+    }
+  ]
 }

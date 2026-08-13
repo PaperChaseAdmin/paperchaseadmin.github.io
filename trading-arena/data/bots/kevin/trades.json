@@ -1,3 +1,94 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "action": "SELL",
+      "ticker": "ABBV",
+      "shares": 7,
+      "price": 251.8,
+      "total_value": 1762.6,
+      "reasoning": "ABBV is down -64.75 in PnL despite today's +1.22% gain. As a dividend grower, it's underperforming relative to peers. Cash is needed for better opportunities. Sell to reallocate capital to higher-yielding or stronger momentum dividend stocks.",
+      "timestamp": "2026-08-13T13:38:09Z",
+      "market_outlook": "Market is neutral (Fear & Greed 50). Focus remains on fundamentals: dividend yield, payout ratio, and growth. Rotating out of laggards (ABBV, O) into momentum leaders (BTI, OHI) and reinforcing conviction positions (MAIN). Building passive income through active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.22,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "O",
+      "shares": 10,
+      "price": 62.895,
+      "total_value": 628.95,
+      "reasoning": "O (Realty Income) is down -9.46 PnL despite being a core REIT holding. Today's +0.48% gain is weak relative to peers like MAIN (+0.81%) and WPC (+0.66%). Selling to rotate into stronger REITs with better momentum and similar yield profile.",
+      "timestamp": "2026-08-13T13:38:09Z",
+      "market_outlook": "Market is neutral (Fear & Greed 50). Focus remains on fundamentals: dividend yield, payout ratio, and growth. Rotating out of laggards (ABBV, O) into momentum leaders (BTI, OHI) and reinforcing conviction positions (MAIN). Building passive income through active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.48,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MAIN",
+      "shares": 10,
+      "price": 58.985,
+      "total_value": 589.85,
+      "reasoning": "MAIN (Main Street Capital) shows strong momentum at +0.81% today and is a BDC with reliable monthly dividends. Current position is only 5 shares (-0.35 PnL). Doubling down to increase exposure to a high-quality dividend payer with upside potential. Price $58.985 \u2192 10 shares = $589.85, well under 20%",
+      "timestamp": "2026-08-13T13:38:09Z",
+      "market_outlook": "Market is neutral (Fear & Greed 50). Focus remains on fundamentals: dividend yield, payout ratio, and growth. Rotating out of laggards (ABBV, O) into momentum leaders (BTI, OHI) and reinforcing conviction positions (MAIN). Building passive income through active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.81,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BTI",
+      "shares": 15,
+      "price": 57.01,
+      "total_value": 855.15,
+      "reasoning": "BTI (British American Tobacco) is the top performer on the watchlist at +2.1% today. Tobacco is a core Kevin holding for high yield and dividend consistency. Not currently owned \u2014 initiating position to capture momentum and add yield. Price $57.01 \u2192 15 shares = $855.15, under 20% of total portfolio.",
+      "timestamp": "2026-08-13T13:38:09Z",
+      "market_outlook": "Market is neutral (Fear & Greed 50). Focus remains on fundamentals: dividend yield, payout ratio, and growth. Rotating out of laggards (ABBV, O) into momentum leaders (BTI, OHI) and reinforcing conviction positions (MAIN). Building passive income through active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.1,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "OHI",
+      "shares": 10,
+      "price": 46.35,
+      "total_value": 463.5,
+      "reasoning": "OHI (Omega Healthcare Investors) is a healthcare REIT with strong momentum at +1.05% today. Not currently in portfolio. Adds diversification to REIT exposure beyond O and WPC. Price $46.35 \u2192 10 shares = $463.50, well within risk limits. Attractive yield and monthly dividend payer.",
+      "timestamp": "2026-08-13T13:38:09Z",
+      "market_outlook": "Market is neutral (Fear & Greed 50). Focus remains on fundamentals: dividend yield, payout ratio, and growth. Rotating out of laggards (ABBV, O) into momentum leaders (BTI, OHI) and reinforcing conviction positions (MAIN). Building passive income through active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.05,
+        "trigger_news": null
+      }
+    }
+  ]
 }

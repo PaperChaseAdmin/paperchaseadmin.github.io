@@ -1,89 +1,84 @@
 {
-  "cash": 511.96,
-  "total_value": 10481.02,
+  "cash": 1642.66,
+  "total_value": 10213.64,
   "positions": {
     "BIDU": {
       "shares": 11,
-      "current_price": 106.18,
+      "current_price": 104.72,
       "avg_cost": 112.7614
     },
-    "XPEV": {
-      "shares": 80,
-      "current_price": 11.805,
-      "avg_cost": 13.1624
-    },
     "NIO": {
-      "shares": 399,
-      "current_price": 4.61,
+      "shares": 200,
+      "current_price": 4.4799,
       "avg_cost": 4.8947
     },
     "BABA": {
       "shares": 26,
-      "current_price": 127.96,
+      "current_price": 123.62,
       "avg_cost": 100.8292
     },
     "PDD": {
-      "shares": 20,
-      "avg_cost": 84.41,
-      "current_price": 90.6475
+      "shares": 25,
+      "current_price": 88.4,
+      "avg_cost": 85.208
     },
     "JD": {
       "shares": 12,
-      "current_price": 31.8725,
+      "current_price": 31.105,
       "avg_cost": 30.2692
     },
     "LI": {
-      "shares": 39,
-      "avg_cost": 12.185,
-      "current_price": 12.69
+      "shares": 59,
+      "current_price": 12.3,
+      "avg_cost": 12.224
     }
   },
-  "total_return_pct": 4.81,
+  "total_return_pct": 2.14,
   "total_return_usd": 0.0,
-  "today_pnl": 24.83,
-  "today_pnl_pct": 0.24,
-  "total_trades": 0,
-  "today_start_value": 10456.19,
-  "today_date": "2026-08-11",
-  "last_action": "...",
-  "last_updated": "2026-08-11T19:40:17Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 4,
+  "today_start_value": 10213.64,
+  "today_date": "2026-08-13",
+  "last_action": "Chinese ADRs are under pressure today due to broader risk-off sentiment, but the long-term rejuvenation story remains intact. No new stimulus or regulatory updates, but valuations are becoming attract",
+  "last_updated": "2026-08-13T13:45:16Z",
   "last_session": {
-    "at": "2026-08-11T19:40:17Z",
+    "at": "2026-08-13T13:45:16Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TME",
-        -11.77
-      ],
-      [
         "BILI",
-        -5.27
-      ],
-      [
-        "JD",
-        -4.77
-      ],
-      [
-        "NIO",
-        -4.36
-      ],
-      [
-        "TIGR",
-        -4.07
+        -2.73
       ],
       [
         "NTES",
-        -3.85
+        -1.73
+      ],
+      [
+        "JD",
+        -1.52
+      ],
+      [
+        "NIO",
+        -1.43
+      ],
+      [
+        "LI",
+        -1.37
+      ],
+      [
+        "XPEV",
+        -1.29
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
-    "trades_made": 0
+    "ai_analysis": "The portfolio is currently overweight in underperforming EV names (NIO, XPEV) and underweight in core tech and consumer leaders. By selling 80 XPEV and 199 NIO shares, I free up ~$1,850 in cash. I am reallocating to BABA (10 shares), PDD (5 shares), and LI (20 shares) to improve portfolio quality and alignment with my belief in Chinese champions. This keeps cash above $500 reserve and avoids over-concentration. No single stock exceeds 30% of portfolio post-trade.",
+    "outlook": "Chinese ADRs are under pressure today due to broader risk-off sentiment, but the long-term rejuvenation story remains intact. No new stimulus or regulatory updates, but valuations are becoming attractive. I am using today's weakness to rebalance toward higher-conviction names like BABA, PDD, and LI while reducing exposure to more speculative EV names.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -845,6 +840,10 @@
     {
       "timestamp": "2026-08-11T19:40:17Z",
       "value": 10481.02
+    },
+    {
+      "timestamp": "2026-08-13T13:45:16Z",
+      "value": 10213.64
     }
   ]
 }
