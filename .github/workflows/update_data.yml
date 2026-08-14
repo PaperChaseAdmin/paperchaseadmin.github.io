@@ -1,11 +1,13 @@
 name: Update Market Data
 
 on:
-  push:
-    branches: ["main"]
   schedule:
     - cron: '0 * * * *'   # every hour
   workflow_dispatch:           # manual trigger
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false    # queue instead of racing (was: parallel runs → git push race)
 
 jobs:
   update:
@@ -41,6 +43,7 @@ jobs:
         run: |
           git config user.name  "market-sentinel[bot]"
           git config user.email "market-sentinel[bot]@users.noreply.github.com"
+          git pull --rebase origin main   # avoid non-fast-forward race with other runs
           git add data/market_data.json
           git diff --staged --quiet || git commit -m "data: update $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
