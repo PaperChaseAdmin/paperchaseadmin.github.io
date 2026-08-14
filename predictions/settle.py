@@ -13,6 +13,25 @@ MARKET_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/market-sent
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
+# NYSE/NASDAQ market holidays — static list, add a new year's set each January.
+US_MARKET_HOLIDAYS = {
+    "2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03", "2026-05-25",
+    "2026-06-19", "2026-07-03", "2026-09-07", "2026-11-26", "2026-12-25",
+}
+
+
+def market_open_today(dt):
+    """Deterministic US market-open check: weekday + known NYSE holidays.
+    Replaces the old paid-LLM 'was the market open' call (which defaulted to
+    OPEN whenever the AI failed — settling predictions on holidays)."""
+    if dt.weekday() >= 5:
+        return False
+    d = dt.strftime("%Y-%m-%d")
+    if d[:4] != "2026":
+        print("  ⚠️  No holiday list for this year — weekday check only")
+        return True
+    return d not in US_MARKET_HOLIDAYS
+
 
 def call_openrouter(prompt, max_tokens=50):
     """Quick OpenRouter call for simple checks. Returns text or None."""
@@ -20,7 +39,7 @@ def call_openrouter(prompt, max_tokens=50):
         return None
     try:
         import requests
-        for model in ["deepseek/deepseek-chat", "mistralai/mistral-small-24b-instruct-2501", "qwen/qwen2.5-72b-instruct"]:
+        for model in ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-super-120b-a12b:free", "openai/gpt-oss-20b:free", "google/gemma-4-26b-a4b-it:free", "cohere/north-mini-code:free"]:
             r = requests.post(
                 "https://openrouter.ai/api/v1/chat/completions",
                 headers={"Authorization": f"Bearer {OPENROUTER_KEY}", "Content-Type": "application/json", "HTTP-Referer": "https://paperchase.online"},
@@ -101,14 +120,9 @@ def main():
     print(f"📊 PaperChase Prediction Settlement — {today}")
     print("=" * 50)
 
-    # Check if market was open today via AI
-    weekday = today_dt.strftime("%A")
-    check = call_openrouter(
-        f"Was the US stock market (NYSE/NASDAQ) open for regular trading today {today} ({weekday})? "
-        "Reply with exactly: OPEN or CLOSED.",
-        max_tokens=10
-    )
-    if check and 'CLOSED' in check.upper():
+    # Check if market was open today — deterministic (weekday + NYSE holidays).
+    # No AI call (the old paid-LLM check defaulted to OPEN on any failure).
+    if not market_open_today(today_dt):
         print(f"  🏝️  Market CLOSED today. Skipping settlement.")
         return
     print(f"  ✅ Market was OPEN — settling predictions...\n")
@@ -186,6 +200,8 @@ def main():
 
     data["last_settle_date"] = today
     data["updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    data["total_preds"] = sum(len(t.get("predictions", [])) for t in tools.values() if isinstance(t, dict))
+    data.pop("_force_update", None)  # debug residue cleanup
 
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
