@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-13T21:10:29Z",
-  "last_prediction_date": "2026-08-13",
+  "updated_at": "2026-08-14T13:56:08Z",
+  "last_prediction_date": "2026-08-14",
   "last_settle_date": "2026-08-13",
   "tools": {
     "market_sentinel": {
@@ -820,6 +820,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-08-14",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "S&P 500 +0.08% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-14",
+          "market": "NASDAQ",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "NASDAQ +0.07% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-14",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 50,
+          "signal": "DOW +0.01% today",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -962,6 +992,16 @@
           "correct": true,
           "settled": true,
           "change_pct": 1.18
+        },
+        {
+          "date": "2026-08-14",
+          "market": "Crypto Market",
+          "prediction": "down",
+          "confidence": 64,
+          "signal": "BTC -1.20% | Fear&Greed: 29 (Fear)",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -1230,9 +1270,19 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-08-14",
+          "market": "Will MegaETH perform an airdrop by December 31, 2026?",
+          "prediction": "down",
+          "confidence": 82,
+          "signal": "Will MegaETH perform an airdrop by December 31, 20 | Yes 18% / No 82% | Vol $10,350",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     }
   },
-  "total_preds": 117
+  "total_preds": 122
 }
