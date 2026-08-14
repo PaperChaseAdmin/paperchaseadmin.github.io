@@ -161,6 +161,42 @@
         "ticker_chg_pct": -2.43,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AVGO",
+      "shares": 2,
+      "price": 401.01,
+      "total_value": 802.02,
+      "reasoning": "AVGO down 4.01% today, underperforming watchlist. Taking profit on small position to reallocate to stronger momentum names like AMD and MU.",
+      "timestamp": "2026-08-14T14:12:36Z",
+      "market_outlook": "Semiconductor momentum is bifurcating - AMD, MU, and NVDA showing strength while AVGO and AMAT weaken. Focus on leaders with AI exposure. Government tech spending likely to support sector.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -4.01,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMD",
+      "shares": 2,
+      "price": 497.965,
+      "total_value": 995.93,
+      "reasoning": "AMD up 3.08% today, strong momentum in semiconductors. Adding to existing position with conviction ahead of potential government chip funding news.",
+      "timestamp": "2026-08-14T14:12:36Z",
+      "market_outlook": "Semiconductor momentum is bifurcating - AMD, MU, and NVDA showing strength while AVGO and AMAT weaken. Focus on leaders with AI exposure. Government tech spending likely to support sector.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.08,
+        "trigger_news": null
+      }
     }
   ]
 }

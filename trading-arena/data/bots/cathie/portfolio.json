@@ -1,99 +1,94 @@
 {
-  "cash": 1713.06,
-  "total_value": 8386.57,
+  "cash": 1545.71,
+  "total_value": 8386.07,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 344.13
+      "current_price": 349.76
     },
     "CRSP": {
-      "shares": 17,
-      "current_price": 53.285,
-      "avg_cost": 57.2291
+      "shares": 22,
+      "current_price": 52.4001,
+      "avg_cost": 56.1316
     },
     "NTLA": {
       "shares": 19,
-      "current_price": 11.705,
+      "current_price": 11.566,
       "avg_cost": 15.801
     },
-    "RXRX": {
-      "shares": 50,
-      "avg_cost": 4.045,
-      "current_price": 3.26
-    },
     "PATH": {
-      "shares": 8,
-      "current_price": 16.5102,
-      "avg_cost": 12.5106
+      "shares": 12,
+      "current_price": 16.19,
+      "avg_cost": 13.7371
     },
     "PLTR": {
       "shares": 4,
       "avg_cost": 176.145,
-      "current_price": 179.345
+      "current_price": 177.9599
     },
     "RKLB": {
       "shares": 10,
       "avg_cost": 81.2,
-      "current_price": 81.2
+      "current_price": 80.8
     },
     "ROKU": {
       "shares": 5,
       "avg_cost": 156.82,
-      "current_price": 156.82
+      "current_price": 157.05
     },
     "BEAM": {
       "shares": 20,
       "avg_cost": 26.39,
-      "current_price": 26.39
+      "current_price": 26.0055
     }
   },
-  "total_return_pct": -16.13,
+  "total_return_pct": -16.14,
   "total_return_usd": 0.0,
-  "today_pnl": -0.01,
-  "today_pnl_pct": -0.0,
-  "total_trades": 12,
+  "today_pnl": -0.51,
+  "today_pnl_pct": -0.01,
+  "total_trades": 15,
   "today_start_value": 8386.58,
   "today_date": "2026-08-14",
-  "last_action": "Markets are pricing in short-term fear, but disruptive innovation continues unabated. Genomics, AI, space, and autonomous vehicles are advancing regardless of quarterly volatility. I remain aggressive",
-  "last_updated": "2026-08-14T13:34:44Z",
+  "last_action": "Market is pricing in short-term fear, but innovation cycles in AI, genomics, and autonomous systems are accelerating. Volatility creates entry points in disruptive leaders with 5+ year horizons. Focus",
+  "last_updated": "2026-08-14T14:15:23Z",
   "last_session": {
-    "at": "2026-08-14T13:34:44Z",
+    "at": "2026-08-14T14:15:23Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "RKLB",
-        2.03
+        "RXRX",
+        -3.68
       ],
       [
-        "ROKU",
-        1.9
+        "TWLO",
+        -3.56
+      ],
+      [
+        "PATH",
+        -3.03
+      ],
+      [
+        "TSLA",
+        2.9
       ],
       [
         "CRSP",
-        -1.52
+        -2.73
       ],
       [
         "COIN",
-        -1.48
-      ],
-      [
-        "ILMN",
-        -1.48
-      ],
-      [
-        "HOOD",
-        -1.44
+        -2.1
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is underweight in pure-play AI and space leaders. I'm rotating out of underperformers (CRSP, HOOD) and doubling down on RKLB (space launch), BEAM (gene editing), and ROKU (streaming infrastructure). Cash deployment is targeted toward long-term secular trends, not short-term sentiment.",
-    "outlook": "Markets are pricing in short-term fear, but disruptive innovation continues unabated. Genomics, AI, space, and autonomous vehicles are advancing regardless of quarterly volatility. I remain aggressively long innovation with a 5-year view.",
-    "trades_made": 5
+    "ai_analysis": "Portfolio is overweight in beaten-down genomics names (CRSP, NTLA, BEAM) and underweight in AI/automation leaders. Sold RXRX to free cash, added to TSLA and CRSP on dips, trimmed PATH to lock in gains. Maintaining innovation thesis: disruptive tech wins long-term. Cash reserve preserved above $500. Trades reflect active rebalancing toward higher-conviction, higher-momentum innovation plays.",
+    "outlook": "Market is pricing in short-term fear, but innovation cycles in AI, genomics, and autonomous systems are accelerating. Volatility creates entry points in disruptive leaders with 5+ year horizons. Focus remains on exponential tech adoption, not quarterly noise.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -867,6 +862,10 @@
     {
       "timestamp": "2026-08-14T13:34:44Z",
       "value": 8386.57
+    },
+    {
+      "timestamp": "2026-08-14T14:15:23Z",
+      "value": 8386.07
     }
   ]
 }

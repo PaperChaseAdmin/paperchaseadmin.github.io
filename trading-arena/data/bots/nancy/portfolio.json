@@ -1,54 +1,49 @@
 {
-  "cash": 1589.85,
-  "total_value": 10434.9,
+  "cash": 1395.94,
+  "total_value": 10404.96,
   "positions": {
-    "AVGO": {
-      "shares": 2,
-      "avg_cost": 372.72,
-      "current_price": 407.625
-    },
     "NVDA": {
       "shares": 16,
-      "current_price": 226.74,
+      "current_price": 225.55,
       "avg_cost": 213.8401
     },
     "MSFT": {
       "shares": 2,
-      "current_price": 496.6,
+      "current_price": 498.64,
       "avg_cost": 441.7225
     },
     "LRCX": {
       "shares": 1,
       "avg_cost": 311.18,
-      "current_price": 335.405
+      "current_price": 335.98
     },
     "INTC": {
       "shares": 6,
-      "current_price": 105.77,
+      "current_price": 105.67,
       "avg_cost": 105.6183
     },
     "MU": {
       "shares": 2,
-      "current_price": 974.015,
+      "current_price": 969.5201,
       "avg_cost": 954.4025
     },
     "AMD": {
-      "shares": 1,
-      "avg_cost": 495.25,
-      "current_price": 490.7
+      "shares": 3,
+      "current_price": 497.965,
+      "avg_cost": 497.06
     }
   },
-  "total_return_pct": 4.35,
+  "total_return_pct": 4.05,
   "total_return_usd": 0.0,
-  "today_pnl": 0.01,
-  "today_pnl_pct": 0.0,
-  "total_trades": 9,
+  "today_pnl": -29.93,
+  "today_pnl_pct": -0.29,
+  "total_trades": 11,
   "today_start_value": 10434.89,
   "today_date": "2026-08-14",
-  "last_action": "Semiconductor sector remains favored due to AI infrastructure demand and potential policy tailwinds. Momentum is shifting toward MU, AMD, and INTC, while AVGO and AMAT show weakness. Tech leadership l",
-  "last_updated": "2026-08-14T13:33:59Z",
+  "last_action": "Semiconductor momentum is bifurcating - AMD, MU, and NVDA showing strength while AVGO and AMAT weaken. Focus on leaders with AI exposure. Government tech spending likely to support sector.",
+  "last_updated": "2026-08-14T14:12:36Z",
   "last_session": {
-    "at": "2026-08-14T13:33:59Z",
+    "at": "2026-08-14T14:12:36Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -56,34 +51,34 @@
     "top_movers": [
       [
         "AMAT",
-        -5.34
-      ],
-      [
-        "MU",
-        2.56
+        -4.15
       ],
       [
         "AVGO",
-        -2.43
+        -4.01
       ],
       [
         "AMD",
-        1.83
-      ],
-      [
-        "INTC",
-        1.15
+        3.08
       ],
       [
         "TSLA",
-        1.06
+        2.9
+      ],
+      [
+        "MU",
+        2.15
+      ],
+      [
+        "CRM",
+        -1.95
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is overweight in AVGO and NVDA. Taking partial profits in AVGO to reduce concentration and deploy cash into higher-momentum semiconductor names. Maintaining core holdings in NVDA and MSFT. Adding to MU, AMD, and INTC to align with near-term strength. Keeping cash reserve above $500 as required.",
-    "outlook": "Semiconductor sector remains favored due to AI infrastructure demand and potential policy tailwinds. Momentum is shifting toward MU, AMD, and INTC, while AVGO and AMAT show weakness. Tech leadership likely to persist.",
-    "trades_made": 3
+    "ai_analysis": "Portfolio is overweight in underperforming AVGO and AMAT (not held but watched). Rotating capital into AMD, MU, and NVDA for better momentum alignment. Maintaining MSFT and AAPL as core tech holdings. Keeping cash reserve above $500 for flexibility.",
+    "outlook": "Semiconductor momentum is bifurcating - AMD, MU, and NVDA showing strength while AVGO and AMAT weaken. Focus on leaders with AI exposure. Government tech spending likely to support sector.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -857,6 +852,10 @@
     {
       "timestamp": "2026-08-14T13:33:59Z",
       "value": 10434.9
+    },
+    {
+      "timestamp": "2026-08-14T14:12:36Z",
+      "value": 10404.96
     }
   ]
 }
