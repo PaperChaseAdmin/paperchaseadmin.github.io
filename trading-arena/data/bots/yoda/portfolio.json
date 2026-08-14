@@ -1,84 +1,79 @@
 {
-  "cash": 513.02,
-  "total_value": 10343.11,
+  "cash": 758.92,
+  "total_value": 10351.45,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 384.435
+      "current_price": 384.45
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 731.62,
+      "current_price": 733.53,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 777.94
+      "current_price": 778.06
     },
     "VXUS": {
       "shares": 2,
-      "current_price": 87.71,
+      "current_price": 87.845,
       "avg_cost": 86.5913
-    },
-    "VIG": {
-      "shares": 1,
-      "avg_cost": 238.72,
-      "current_price": 247.045
     },
     "VEA": {
       "shares": 4,
       "avg_cost": 73.475,
-      "current_price": 73.475
+      "current_price": 73.72
     }
   },
-  "total_return_pct": 3.43,
+  "total_return_pct": 3.51,
   "total_return_usd": 0.0,
-  "today_pnl": 55.33,
-  "today_pnl_pct": 0.54,
-  "total_trades": 2,
-  "today_start_value": 10287.78,
-  "today_date": "2026-08-13",
-  "last_action": "Markets show mild strength today, led by real estate and tech. No fear, no greed \u2014 just steady accumulation. The index path remains clear: buy the dips, hold the course.",
-  "last_updated": "2026-08-13T14:14:56Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 3,
+  "today_start_value": 10351.45,
+  "today_date": "2026-08-14",
+  "last_action": "Markets fluctuate like the tides, but the index endures. Fear and greed are illusions. Stay the course, and compounding will be your ally.",
+  "last_updated": "2026-08-14T13:42:31Z",
   "last_session": {
-    "at": "2026-08-13T14:14:56Z",
+    "at": "2026-08-14T13:42:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "VNQ",
-        1.21
+        "GLD",
+        0.86
+      ],
+      [
+        "VWO",
+        -0.45
+      ],
+      [
+        "VIG",
+        -0.29
+      ],
+      [
+        "VEA",
+        0.24
       ],
       [
         "QQQ",
-        1.07
+        0.23
       ],
       [
-        "GLD",
-        -0.99
-      ],
-      [
-        "SPY",
-        0.7
-      ],
-      [
-        "IVV",
-        0.7
-      ],
-      [
-        "VOO",
-        0.69
+        "VXUS",
+        0.14
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is slightly overweight in US equities. International exposure via VXUS is lagging. Rotating into VEA improves diversification while maintaining index discipline. Cash deployment aligns with dollar-cost averaging into undervalued assets. No panic, only patience.",
-    "outlook": "Markets show mild strength today, led by real estate and tech. No fear, no greed \u2014 just steady accumulation. The index path remains clear: buy the dips, hold the course.",
-    "trades_made": 2
+    "ai_analysis": "Portfolio is slightly overweight in U.S. large-cap (SPY, QQQ, VTI) and underweight in international and bonds. Deploying cash into VTI and VXUS improves diversification. Selling VIG to rebalance toward broader market exposure. Maintaining cash reserve above $500 as required. Trades reflect disciplined, Yoda-like patience and long-term focus.",
+    "outlook": "Markets fluctuate like the tides, but the index endures. Fear and greed are illusions. Stay the course, and compounding will be your ally.",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -848,6 +843,10 @@
     {
       "timestamp": "2026-08-13T14:14:56Z",
       "value": 10343.11
+    },
+    {
+      "timestamp": "2026-08-14T13:42:31Z",
+      "value": 10351.45
     }
   ]
 }

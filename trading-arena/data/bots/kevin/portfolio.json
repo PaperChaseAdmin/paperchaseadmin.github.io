@@ -1,79 +1,74 @@
 {
-  "cash": 820.83,
-  "total_value": 9665.69,
+  "cash": 531.29,
+  "total_value": 9715.62,
   "positions": {
     "T": {
       "shares": 95,
       "avg_cost": 20.83,
-      "current_price": 24.245
+      "current_price": 24.665
     },
     "VZ": {
       "shares": 22,
-      "current_price": 47.2701,
+      "current_price": 48.33,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 190.95
+      "current_price": 188.48
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 71.39
+      "current_price": 71.32
     },
     "IBM": {
       "shares": 1,
       "avg_cost": 212.365,
-      "current_price": 238.03
+      "current_price": 238.14
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 87.56
+      "current_price": 87.34
     },
     "CVX": {
       "shares": 6,
-      "current_price": 194.65,
+      "current_price": 198.42,
       "avg_cost": 193.7867
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 59.445,
+      "current_price": 59.2,
       "avg_cost": 59.0083
-    },
-    "BTI": {
-      "shares": 20,
-      "current_price": 57.43,
-      "avg_cost": 57.115
-    },
-    "OHI": {
-      "shares": 10,
-      "avg_cost": 46.35,
-      "current_price": 46.45
     },
     "MO": {
       "shares": 4,
       "avg_cost": 65.9025,
-      "current_price": 65.9025
+      "current_price": 64.84
     },
     "O": {
-      "shares": 3,
-      "avg_cost": 63.13,
-      "current_price": 63.13
+      "shares": 5,
+      "current_price": 62.895,
+      "avg_cost": 63.036
+    },
+    "ABBV": {
+      "shares": 7,
+      "avg_cost": 250.6,
+      "current_price": 250.6
     }
   },
-  "total_return_pct": -3.34,
+  "total_return_pct": -2.84,
   "total_return_usd": 0.0,
-  "today_pnl": 28.2,
-  "today_pnl_pct": 0.29,
-  "total_trades": 9,
-  "today_start_value": 9637.49,
-  "today_date": "2026-08-13",
-  "last_action": "Market is neutral (Fear & Greed ~50), so focus remains on fundamentals. Dividend stocks are holding up well, especially tobacco and REITs. No signs of panic or euphoria \u2014 ideal for steady income build",
-  "last_updated": "2026-08-13T14:10:33Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 13,
+  "today_start_value": 9715.62,
+  "today_date": "2026-08-14",
+  "last_action": "Market is neutral (Fear & Greed ~50). No panic, no euphoria \u2014 ideal for disciplined dividend investing. Focus on fundamentals: yield, payout ratio, and dividend growth. Avoid chasing momentum; instead",
+  "last_updated": "2026-08-14T13:38:21Z",
   "last_session": {
-    "at": "2026-08-13T14:10:33Z",
+    "at": "2026-08-14T13:38:21Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -81,33 +76,33 @@
     "top_movers": [
       [
         "BTI",
-        2.88
+        -1.19
       ],
       [
-        "PM",
-        2.65
-      ],
-      [
-        "MO",
-        2.35
+        "ENB",
+        -1.11
       ],
       [
         "ABBV",
-        1.84
-      ],
-      [
-        "MAIN",
-        1.6
+        0.83
       ],
       [
         "OHI",
-        1.26
+        -0.49
+      ],
+      [
+        "JNJ",
+        -0.48
+      ],
+      [
+        "CVX",
+        0.42
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "Portfolio is slightly overweight in telecoms and underweight in tobacco and REITs relative to my strategy. Sold ENB (a laggard) to fund purchases in MO, O, and BTI \u2014 all high-yield, dividend-growing names with positive momentum. Maintained cash reserve above $500. Trades are small and disciplined, reinforcing the passive income machine without overexposure.",
-    "outlook": "Market is neutral (Fear & Greed ~50), so focus remains on fundamentals. Dividend stocks are holding up well, especially tobacco and REITs. No signs of panic or euphoria \u2014 ideal for steady income building.",
+    "ai_analysis": "Portfolio is overweight in telecoms (T, VZ) and underweight in pharma and REITs relative to opportunity. BTI and OHI are consistent underperformers with no dividend growth catalysts. Selling them frees ~$1,700+ cash. Deploying into ABBV (pharma growth + yield), JNJ (stability), and O (monthly compounding REIT) improves diversification and income quality. Maintains >$500 cash reserve. Trades align with Kevin\u2019s rule: no dividend = dead to me. All selected stocks pay growing dividends.",
+    "outlook": "Market is neutral (Fear & Greed ~50). No panic, no euphoria \u2014 ideal for disciplined dividend investing. Focus on fundamentals: yield, payout ratio, and dividend growth. Avoid chasing momentum; instead, buy quality dividend stocks on weakness.",
     "trades_made": 4
   },
   "portfolio_history": [
@@ -878,6 +873,10 @@
     {
       "timestamp": "2026-08-13T14:10:33Z",
       "value": 9665.69
+    },
+    {
+      "timestamp": "2026-08-14T13:38:21Z",
+      "value": 9715.62
     }
   ]
 }

@@ -1,69 +1,74 @@
 {
-  "cash": 2151.41,
-  "total_value": 8634.17,
+  "cash": 773.22,
+  "total_value": 8626.01,
   "positions": {
     "PLTR": {
       "shares": 22,
-      "current_price": 176.145,
+      "current_price": 179.345,
       "avg_cost": 175.8018
     },
-    "AMC": {
-      "shares": 250,
-      "current_price": 2.6623,
-      "avg_cost": 2.6294
+    "RBLX": {
+      "shares": 10,
+      "avg_cost": 38.795,
+      "current_price": 38.795
     },
-    "MSTR": {
-      "shares": 20,
-      "avg_cost": 97.1,
-      "current_price": 97.1
+    "TSLA": {
+      "shares": 5,
+      "avg_cost": 344.13,
+      "current_price": 344.13
+    },
+    "META": {
+      "shares": 3,
+      "avg_cost": 599.535,
+      "current_price": 599.535
     }
   },
-  "total_return_pct": -13.66,
+  "total_return_pct": -13.74,
   "total_return_usd": 0.0,
-  "today_pnl": 66.78,
-  "today_pnl_pct": 0.78,
-  "total_trades": 9,
-  "today_start_value": 8567.39,
-  "today_date": "2026-08-13",
-  "last_action": "Market is showing selective momentum in meme stocks and crypto-related names. HOOD, AMC, PLTR leading the charge - this is where the retail frenzy is rotating. Price action confirms strength, fundamen",
-  "last_updated": "2026-08-13T14:13:17Z",
+  "today_pnl": -0.01,
+  "today_pnl_pct": -0.0,
+  "total_trades": 14,
+  "today_start_value": 8626.02,
+  "today_date": "2026-08-14",
+  "last_action": "Market is weak overall, but pockets of momentum exist. RBLX, TSLA, and META are showing relative strength. Focusing on the fastest movers \u2014 price action is the only signal that matters. Selling laggar",
+  "last_updated": "2026-08-14T13:40:14Z",
   "last_session": {
-    "at": "2026-08-13T14:13:17Z",
+    "at": "2026-08-14T13:40:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "HOOD",
-        4.96
-      ],
-      [
-        "AMC",
-        4.75
-      ],
-      [
-        "PLTR",
-        3.02
-      ],
-      [
         "MSTR",
-        2.32
+        -3.13
+      ],
+      [
+        "RIOT",
+        -2.58
       ],
       [
         "RBLX",
-        2.05
+        2.21
       ],
       [
-        "META",
-        1.73
+        "MARA",
+        -1.68
+      ],
+      [
+        "AMC",
+        -1.57
+      ],
+      [
+        "COIN",
+        -1.48
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Sold HOOD for profit-taking after 4.96% gain, deploying capital into AMC (150 shares) and PLTR (15 shares) to increase exposure to strongest momentum names. Added MSTR (20 shares) as Bitcoin proxy play. Maintaining aggressive posture - buying strength, selling into quick gains. Cash reserve preserved above $200. Portfolio positioned for continued meme stock rotation.",
-    "outlook": "Market is showing selective momentum in meme stocks and crypto-related names. HOOD, AMC, PLTR leading the charge - this is where the retail frenzy is rotating. Price action confirms strength, fundamentals irrelevant. Ready to ride the next wave.",
-    "trades_made": 4
+    "ai_analysis": "Portfolio is weighed down by dead positions in AMC and MSTR. Liquidating them to deploy capital into today\u2019s top watchlist performers. RBLX leads with +2.21% \u2014 a clear momentum signal. TSLA and META offer secondary momentum plays. Keeping cash reserve above $200. Ready to double down if any break above 3% today. This is how you build returns: cut fast, buy faster, ride the wave.",
+    "outlook": "Market is weak overall, but pockets of momentum exist. RBLX, TSLA, and META are showing relative strength. Focusing on the fastest movers \u2014 price action is the only signal that matters. Selling laggards to fuel the next rocket.",
+    "trades_made": 5
   },
   "portfolio_history": [
     {
@@ -833,6 +838,10 @@
     {
       "timestamp": "2026-08-13T14:13:17Z",
       "value": 8634.17
+    },
+    {
+      "timestamp": "2026-08-14T13:40:14Z",
+      "value": 8626.01
     }
   ]
 }

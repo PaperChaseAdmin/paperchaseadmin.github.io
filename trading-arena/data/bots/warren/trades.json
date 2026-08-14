@@ -143,6 +143,42 @@
         "ticker_chg_pct": 0.73,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "PG",
+      "shares": 6,
+      "price": 144.205,
+      "total_value": 865.23,
+      "reasoning": "PG is underperforming with negative PnL and weak momentum; selling to reallocate capital to stronger moat businesses with better momentum and fundamentals.",
+      "timestamp": "2026-08-14T13:32:18Z",
+      "market_outlook": "Market is neutral with mixed signals. No extreme fear or greed. Focus remains on fundamentals: buy quality businesses at fair prices, sell laggards, and maintain discipline.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.01,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "ABBV",
+      "shares": 4,
+      "price": 250.6,
+      "total_value": 1002.4,
+      "reasoning": "ABBV shows strong momentum (+0.83%), solid fundamentals, and a durable moat in pharma. At $250.60, it's reasonably valued for a quality business with consistent earnings and dividend growth. Fits value discipline with upside potential.",
+      "timestamp": "2026-08-14T13:32:18Z",
+      "market_outlook": "Market is neutral with mixed signals. No extreme fear or greed. Focus remains on fundamentals: buy quality businesses at fair prices, sell laggards, and maintain discipline.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.83,
+        "trigger_news": null
+      }
     }
   ]
 }

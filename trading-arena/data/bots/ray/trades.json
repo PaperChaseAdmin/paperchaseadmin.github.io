@@ -143,6 +143,78 @@
         "ticker_chg_pct": 0.85,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TLT",
+      "shares": 14,
+      "price": 82.2194,
+      "total_value": 1151.07,
+      "reasoning": "TLT is down -0.45% today and has a negative P&L (-25.58). With rising inflation expectations (evidenced by gold/commodities strength), long bonds are unattractive. Selling to reduce duration exposure and reallocate to inflation-protected assets.",
+      "timestamp": "2026-08-14T13:35:23Z",
+      "market_outlook": "Inflationary pressures are building as evidenced by strength in gold (GLD +0.86%, IAU +0.83%) and gold miners (GDX +1.64%). Bonds (TLT, IEF) are weakening, which aligns with rising inflation expectations. The Fed may be behind the curve, supporting further commodity and gold strength. No signs of recession yet, so maintaining growth-oriented inflation hedges is appropriate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.45,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "IEF",
+      "shares": 11,
+      "price": 93.275,
+      "total_value": 1026.03,
+      "reasoning": "IEF shows minimal movement (-0.03%) and small negative P&L (-6.26). As intermediate-term bonds, they offer little benefit in an inflationary environment. Selling to reduce bond exposure and increase allocation to commodities and gold.",
+      "timestamp": "2026-08-14T13:35:23Z",
+      "market_outlook": "Inflationary pressures are building as evidenced by strength in gold (GLD +0.86%, IAU +0.83%) and gold miners (GDX +1.64%). Bonds (TLT, IEF) are weakening, which aligns with rising inflation expectations. The Fed may be behind the curve, supporting further commodity and gold strength. No signs of recession yet, so maintaining growth-oriented inflation hedges is appropriate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.03,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GDX",
+      "shares": 2,
+      "price": 89.78,
+      "total_value": 179.56,
+      "reasoning": "GDX is the top performer in the watchlist (+1.64%) and leveraged to gold strength. As inflation rises, gold miners often outperform physical gold. Current allocation allows for a small position (<20% portfolio) to capture momentum in the gold complex.",
+      "timestamp": "2026-08-14T13:35:23Z",
+      "market_outlook": "Inflationary pressures are building as evidenced by strength in gold (GLD +0.86%, IAU +0.83%) and gold miners (GDX +1.64%). Bonds (TLT, IEF) are weakening, which aligns with rising inflation expectations. The Fed may be behind the curve, supporting further commodity and gold strength. No signs of recession yet, so maintaining growth-oriented inflation hedges is appropriate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.64,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PDBC",
+      "shares": 10,
+      "price": 17.745,
+      "total_value": 177.45,
+      "reasoning": "PDBC is a broad commodity ETF that benefits from inflationary pressures. Though slightly down today (-0.14), it has strong YTD momentum and fits the All Weather approach. Adding to existing position increases diversification into commodities, which perform well in rising inflation environments.",
+      "timestamp": "2026-08-14T13:35:23Z",
+      "market_outlook": "Inflationary pressures are building as evidenced by strength in gold (GLD +0.86%, IAU +0.83%) and gold miners (GDX +1.64%). Bonds (TLT, IEF) are weakening, which aligns with rising inflation expectations. The Fed may be behind the curve, supporting further commodity and gold strength. No signs of recession yet, so maintaining growth-oriented inflation hedges is appropriate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.14,
+        "trigger_news": null
+      }
     }
   ]
 }

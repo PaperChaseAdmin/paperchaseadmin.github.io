@@ -1,79 +1,84 @@
 {
-  "cash": 1124.01,
-  "total_value": 9481.11,
+  "cash": 1721.6,
+  "total_value": 9517.54,
   "positions": {
     "NVDA": {
       "shares": 8,
-      "current_price": 225.3799,
+      "current_price": 226.74,
       "avg_cost": 201.4803
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 303.32,
-      "current_price": 304.43
+      "current_price": 305.84
     },
     "PLTR": {
       "shares": 13,
-      "current_price": 176.145,
+      "current_price": 179.345,
       "avg_cost": 175.5642
     },
     "COIN": {
-      "shares": 15,
-      "avg_cost": 150.78,
-      "current_price": 151.515
-    },
-    "IONQ": {
       "shares": 10,
-      "avg_cost": 46.93,
-      "current_price": 46.93
+      "avg_cost": 150.78,
+      "current_price": 151.425
+    },
+    "AMD": {
+      "shares": 1,
+      "avg_cost": 490.7,
+      "current_price": 490.7
+    },
+    "RBLX": {
+      "shares": 3,
+      "avg_cost": 38.795,
+      "current_price": 38.795
     }
   },
-  "total_return_pct": -5.19,
+  "total_return_pct": -4.82,
   "total_return_usd": 0.0,
-  "today_pnl": 35.52,
-  "today_pnl_pct": 0.38,
-  "total_trades": 6,
-  "today_start_value": 9445.59,
-  "today_date": "2026-08-13",
-  "last_action": "Market shows selective strength in AI, quantum, and disruptive tech despite lack of Fear & Greed data. Momentum is concentrated in IONQ, PLTR, AMD, MSTR. Avoiding financials like SOFI unless they show",
-  "last_updated": "2026-08-13T14:02:19Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 10,
+  "today_start_value": 9517.54,
+  "today_date": "2026-08-14",
+  "last_action": "Market showing selective strength in tech and momentum names. Fear & Greed unavailable, but watchlist divergence suggests rotation into leaders. Aggressive deployment into AMD and RBLX aligns with dis",
+  "last_updated": "2026-08-14T13:31:53Z",
   "last_session": {
-    "at": "2026-08-13T14:02:19Z",
+    "at": "2026-08-14T13:31:53Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "IONQ",
-        3.74
-      ],
-      [
-        "PLTR",
-        3.02
-      ],
-      [
-        "AMD",
-        2.47
-      ],
-      [
         "MSTR",
-        2.32
+        -3.13
       ],
       [
         "RBLX",
-        2.05
+        2.21
+      ],
+      [
+        "AMD",
+        1.83
+      ],
+      [
+        "COIN",
+        -1.48
+      ],
+      [
+        "TSLA",
+        1.06
       ],
       [
         "META",
-        1.73
+        0.91
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is moderately exposed to NVDA, AAPL, PLTR with small gains. Cash is $1,666, but after selling SOFI (~$455) and buying IONQ ($469) and adding to PLTR ($881), net cash change is -$895, leaving ~$771 cash \u2014 still above $500 reserve. Total tech/AI exposure increases, which aligns with aggressive disruption strategy. No single stock will exceed 35% post-trades.",
-    "outlook": "Market shows selective strength in AI, quantum, and disruptive tech despite lack of Fear & Greed data. Momentum is concentrated in IONQ, PLTR, AMD, MSTR. Avoiding financials like SOFI unless they show breakout volume or news. Ready to pivot fast if sentiment shifts.",
-    "trades_made": 3
+    "ai_analysis": "Portfolio is slightly concentrated in NVDA (19.1% of total), AAPL (16.1%), PLTR (23.2%), COIN (13.5%), IONQ (5.3%). After trades: IONQ exit frees ~$448, COIN trim frees ~$379, AMD buy uses ~$981, RBLX buy uses ~$388. Net cash change: -$542. New cash: ~$582 (still above $500 min). Positions adjusted toward momentum and conviction. Max single stock post-trade: PLTR at ~23.2% (still under 35%).",
+    "outlook": "Market showing selective strength in tech and momentum names. Fear & Greed unavailable, but watchlist divergence suggests rotation into leaders. Aggressive deployment into AMD and RBLX aligns with disruption thesis while cutting IONQ and trimming COIN improves portfolio quality.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -843,6 +848,10 @@
     {
       "timestamp": "2026-08-13T14:02:19Z",
       "value": 9481.11
+    },
+    {
+      "timestamp": "2026-08-14T13:31:53Z",
+      "value": 9517.54
     }
   ]
 }

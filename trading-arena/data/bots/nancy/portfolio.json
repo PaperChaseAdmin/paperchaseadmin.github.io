@@ -1,89 +1,89 @@
 {
-  "cash": 1960.15,
-  "total_value": 10440.43,
+  "cash": 1589.85,
+  "total_value": 10434.9,
   "positions": {
     "AVGO": {
-      "shares": 4,
+      "shares": 2,
       "avg_cost": 372.72,
-      "current_price": 423.5
+      "current_price": 407.625
     },
     "NVDA": {
       "shares": 16,
-      "current_price": 225.3799,
+      "current_price": 226.74,
       "avg_cost": 213.8401
     },
     "MSFT": {
       "shares": 2,
-      "current_price": 498.87,
+      "current_price": 496.6,
       "avg_cost": 441.7225
     },
     "LRCX": {
       "shares": 1,
       "avg_cost": 311.18,
-      "current_price": 330.25
+      "current_price": 335.405
     },
     "INTC": {
-      "shares": 4,
-      "avg_cost": 105.5425,
-      "current_price": 105.5425
+      "shares": 6,
+      "current_price": 105.77,
+      "avg_cost": 105.6183
     },
     "MU": {
-      "shares": 1,
-      "avg_cost": 934.79,
-      "current_price": 934.79
+      "shares": 2,
+      "current_price": 974.015,
+      "avg_cost": 954.4025
     },
     "AMD": {
       "shares": 1,
       "avg_cost": 495.25,
-      "current_price": 495.25
+      "current_price": 490.7
     }
   },
-  "total_return_pct": 4.4,
+  "total_return_pct": 4.35,
   "total_return_usd": 0.0,
-  "today_pnl": 75.87,
-  "today_pnl_pct": 0.73,
-  "total_trades": 6,
-  "today_start_value": 10364.56,
-  "today_date": "2026-08-13",
-  "last_action": "Semiconductor sector showing strong momentum with INTC, MU, AMD leading. AI-driven demand continues to fuel tech rotation. Nancy's instincts suggest this is early stage of semiconductor bull run - agg",
-  "last_updated": "2026-08-13T14:04:47Z",
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
+  "total_trades": 9,
+  "today_start_value": 10434.89,
+  "today_date": "2026-08-14",
+  "last_action": "Semiconductor sector remains favored due to AI infrastructure demand and potential policy tailwinds. Momentum is shifting toward MU, AMD, and INTC, while AVGO and AMAT show weakness. Tech leadership l",
+  "last_updated": "2026-08-14T13:33:59Z",
   "last_session": {
-    "at": "2026-08-13T14:04:47Z",
+    "at": "2026-08-14T13:33:59Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "INTC",
-        4.52
+        "AMAT",
+        -5.34
       ],
       [
         "MU",
-        2.61
-      ],
-      [
-        "AMD",
-        2.47
+        2.56
       ],
       [
         "AVGO",
-        1.74
+        -2.43
       ],
       [
-        "META",
-        1.73
+        "AMD",
+        1.83
+      ],
+      [
+        "INTC",
+        1.15
       ],
       [
         "TSLA",
-        1.7
+        1.06
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio rebalanced: sold AAPL (weak relative performance) to fund semiconductor buys in INTC, MU, AMD. Maintains core NVDA, AVGO, MSFT positions while adding to strongest momentum names. Cash reserve maintained above $500. Semiconductor exposure increased per Nancy's high-conviction strategy.",
-    "outlook": "Semiconductor sector showing strong momentum with INTC, MU, AMD leading. AI-driven demand continues to fuel tech rotation. Nancy's instincts suggest this is early stage of semiconductor bull run - aggressive buying warranted.",
-    "trades_made": 4
+    "ai_analysis": "Portfolio is overweight in AVGO and NVDA. Taking partial profits in AVGO to reduce concentration and deploy cash into higher-momentum semiconductor names. Maintaining core holdings in NVDA and MSFT. Adding to MU, AMD, and INTC to align with near-term strength. Keeping cash reserve above $500 as required.",
+    "outlook": "Semiconductor sector remains favored due to AI infrastructure demand and potential policy tailwinds. Momentum is shifting toward MU, AMD, and INTC, while AVGO and AMAT show weakness. Tech leadership likely to persist.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -853,6 +853,10 @@
     {
       "timestamp": "2026-08-13T14:04:47Z",
       "value": 10440.43
+    },
+    {
+      "timestamp": "2026-08-14T13:33:59Z",
+      "value": 10434.9
     }
   ]
 }

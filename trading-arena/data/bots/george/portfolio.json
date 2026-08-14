@@ -1,68 +1,68 @@
 {
-  "cash": 511.37,
-  "total_value": 10167.51,
+  "cash": 1546.0,
+  "total_value": 10203.57,
   "positions": {
     "GLD": {
       "shares": 12,
       "avg_cost": 402.44,
-      "current_price": 401.11
+      "current_price": 402.29
     },
     "TLT": {
-      "shares": 30,
-      "avg_cost": 82.6,
-      "current_price": 82.8101
+      "shares": 32,
+      "current_price": 82.2194,
+      "avg_cost": 82.5762
     },
     "META": {
-      "shares": 4,
+      "shares": 2,
       "avg_cost": 589.63,
-      "current_price": 589.63
+      "current_price": 599.535
     }
   },
-  "total_return_pct": 1.68,
+  "total_return_pct": 2.04,
   "total_return_usd": 0.0,
-  "today_pnl": -11.87,
-  "today_pnl_pct": -0.12,
-  "total_trades": 5,
-  "today_start_value": 10179.38,
-  "today_date": "2026-08-13",
-  "last_action": "Market is exhibiting divergent behavior: tech and select discretionary names (META, TSLA) are strengthening, while commodities (XLE, BABA) and gold are weakening short-term. However, gold's resilience",
-  "last_updated": "2026-08-13T14:08:11Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 7,
+  "today_start_value": 10203.57,
+  "today_date": "2026-08-14",
+  "last_action": "Market shows mild bullishness in tech (TSLA, META, NVDA) but gold and bonds are diverging \u2014 GLD up, TLT down slightly. This divergence suggests uncertainty. I anticipate a potential shift toward risk-",
+  "last_updated": "2026-08-14T13:36:04Z",
   "last_session": {
-    "at": "2026-08-13T14:08:11Z",
+    "at": "2026-08-14T13:36:04Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "META",
-        1.73
-      ],
-      [
-        "BABA",
-        -1.72
-      ],
-      [
         "TSLA",
-        1.7
+        1.06
       ],
       [
-        "XLE",
-        -1.11
-      ],
-      [
-        "QQQ",
-        1.07
+        "META",
+        0.91
       ],
       [
         "GLD",
-        -0.99
+        0.86
+      ],
+      [
+        "NVDA",
+        0.65
+      ],
+      [
+        "XLE",
+        0.59
+      ],
+      [
+        "TLT",
+        -0.45
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Sold XLF to eliminate laggard exposure and free capital. Increased GLD as a tactical hedge against potential equity/bond volatility, given mixed signals in risk assets. Added to META and TSLA to ride momentum in leading growth names. Portfolio is now more balanced: hedged with gold, long innovation, and positioned to benefit from either continued strength or a volatility spike. Cash remains above $300 reserve after trades.",
-    "outlook": "Market is exhibiting divergent behavior: tech and select discretionary names (META, TSLA) are strengthening, while commodities (XLE, BABA) and gold are weakening short-term. However, gold's resilience despite dollar strength (UUP flat) suggests hidden risk aversion. I'm balancing momentum long positions in tech with a defensive gold hedge \u2014 preparing for either continued tech leadership or a sudden risk-off shift. Reflexivity suggests today's leaders could accelerate, but I'm hedging for the break.",
+    "ai_analysis": "Portfolio is overweight equities (META) and underweight macro hedges. Increasing GLD and TLT aligns with my core thesis: prepare for systemic risk via reflexive safety assets. Selling partial META locks in gains and funds the hedge. Cash remains sufficient (>$300 reserve).",
+    "outlook": "Market shows mild bullishness in tech (TSLA, META, NVDA) but gold and bonds are diverging \u2014 GLD up, TLT down slightly. This divergence suggests uncertainty. I anticipate a potential shift toward risk-off as reflexive feedback loops could turn negative if liquidity tightens or growth surprises to the downside.",
     "trades_made": 2
   },
   "portfolio_history": [
@@ -833,6 +833,10 @@
     {
       "timestamp": "2026-08-13T14:08:11Z",
       "value": 10167.51
+    },
+    {
+      "timestamp": "2026-08-14T13:36:04Z",
+      "value": 10203.57
     }
   ]
 }

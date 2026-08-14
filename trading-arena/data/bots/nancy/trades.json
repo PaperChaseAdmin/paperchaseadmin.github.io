@@ -107,6 +107,60 @@
         "ticker_chg_pct": 0.7,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MU",
+      "shares": 1,
+      "price": 974.015,
+      "total_value": 974.01,
+      "reasoning": "MU shows strong momentum with +2.56% today and is a semiconductor play with upside ahead of potential AI-driven demand. Current position is only 1 share\u2014adding to capitalize on trend.",
+      "timestamp": "2026-08-14T13:33:59Z",
+      "market_outlook": "Semiconductor sector remains favored due to AI infrastructure demand and potential policy tailwinds. Momentum is shifting toward MU, AMD, and INTC, while AVGO and AMAT show weakness. Tech leadership likely to persist.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.56,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "INTC",
+      "shares": 2,
+      "price": 105.77,
+      "total_value": 211.54,
+      "reasoning": "INTC up +1.15%, showing signs of recovery. Semiconductor exposure is core to strategy, and current 4-share position can be increased to average into strength.",
+      "timestamp": "2026-08-14T13:33:59Z",
+      "market_outlook": "Semiconductor sector remains favored due to AI infrastructure demand and potential policy tailwinds. Momentum is shifting toward MU, AMD, and INTC, while AVGO and AMAT show weakness. Tech leadership likely to persist.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.15,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AVGO",
+      "shares": 2,
+      "price": 407.625,
+      "total_value": 815.25,
+      "reasoning": "AVGO down -2.43% today despite being a semiconductor. Taking partial profit after strong run (current PnL +$139.62) to rebalance into stronger momentum names like MU and AMD.",
+      "timestamp": "2026-08-14T13:33:59Z",
+      "market_outlook": "Semiconductor sector remains favored due to AI infrastructure demand and potential policy tailwinds. Momentum is shifting toward MU, AMD, and INTC, while AVGO and AMAT show weakness. Tech leadership likely to persist.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.43,
+        "trigger_news": null
+      }
     }
   ]
 }

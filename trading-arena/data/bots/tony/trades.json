@@ -143,6 +143,78 @@
         "ticker_chg_pct": 0.61,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "MRVL",
+      "shares": 3,
+      "price": 222.24,
+      "total_value": 666.72,
+      "reasoning": "MRVL is underperforming with negative P&L (-16.36) and weak momentum (0.19% today). Cutting losses to reallocate capital to stronger setups like AMD or RKLB which show bullish momentum.",
+      "timestamp": "2026-08-14T13:38:59Z",
+      "market_outlook": "Market is showing selective strength in AI, semiconductors, and defense tech. While some leaders like AVGO are pulling back, the rotation into momentum names like AMD and RKLB suggests risk-on sentiment in cutting-edge sectors. Volatility is expected to remain high, but this presents buying opportunities in high-conviction names.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.19,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "IONQ",
+      "shares": 3,
+      "price": 44.755,
+      "total_value": 134.27,
+      "reasoning": "IONQ is down -0.58% today with negative P&L (-6.52). Quantum computing is speculative; preferring more immediate momentum in AI chips and defense tech with clearer catalysts.",
+      "timestamp": "2026-08-14T13:38:59Z",
+      "market_outlook": "Market is showing selective strength in AI, semiconductors, and defense tech. While some leaders like AVGO are pulling back, the rotation into momentum names like AMD and RKLB suggests risk-on sentiment in cutting-edge sectors. Volatility is expected to remain high, but this presents buying opportunities in high-conviction names.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.58,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMD",
+      "shares": 2,
+      "price": 490.7,
+      "total_value": 981.4,
+      "reasoning": "AMD shows strong momentum (+1.83% today) and is a leader in AI chips. At $490.70, it's a core holding for AI exposure. Using technical strength and fundamental leadership in data center GPUs to justify entry.",
+      "timestamp": "2026-08-14T13:38:59Z",
+      "market_outlook": "Market is showing selective strength in AI, semiconductors, and defense tech. While some leaders like AVGO are pulling back, the rotation into momentum names like AMD and RKLB suggests risk-on sentiment in cutting-edge sectors. Volatility is expected to remain high, but this presents buying opportunities in high-conviction names.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.83,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "RKLB",
+      "shares": 5,
+      "price": 81.2,
+      "total_value": 406.0,
+      "reasoning": "RKLB is the top mover today (+2.03%) in defense/aerospace. As a Tony Stark-aligned play (space, rockets, defense tech), it fits the cutting-edge thesis. High volatility acceptable for asymmetric upside.",
+      "timestamp": "2026-08-14T13:38:59Z",
+      "market_outlook": "Market is showing selective strength in AI, semiconductors, and defense tech. While some leaders like AVGO are pulling back, the rotation into momentum names like AMD and RKLB suggests risk-on sentiment in cutting-edge sectors. Volatility is expected to remain high, but this presents buying opportunities in high-conviction names.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.03,
+        "trigger_news": null
+      }
     }
   ]
 }
