@@ -1,78 +1,78 @@
 {
-  "cash": 5918.14,
-  "total_value": 9995.71,
+  "cash": 5090.46,
+  "total_value": 9995.04,
   "positions": {
     "SHY": {
-      "shares": 20,
-      "current_price": 82.0394,
-      "avg_cost": 81.7733
+      "shares": 25,
+      "current_price": 82.065,
+      "avg_cost": 81.8316
     },
     "TLT": {
-      "shares": 5,
+      "shares": 3,
       "avg_cost": 82.3,
-      "current_price": 82.8101
+      "current_price": 82.2194
     },
     "XLU": {
       "shares": 5,
       "avg_cost": 43.35,
-      "current_price": 44.0717
+      "current_price": 44.03
     },
     "BIL": {
       "shares": 7,
       "avg_cost": 91.51,
-      "current_price": 91.51
+      "current_price": 91.535
     },
     "XLF": {
-      "shares": 20,
-      "current_price": 58.09,
-      "avg_cost": 58.155
+      "shares": 30,
+      "current_price": 58.18,
+      "avg_cost": 58.1633
     }
   },
-  "total_return_pct": -0.04,
+  "total_return_pct": -0.05,
   "total_return_usd": 0.0,
-  "today_pnl": 2.22,
-  "today_pnl_pct": 0.02,
-  "total_trades": 6,
-  "today_start_value": 9993.49,
-  "today_date": "2026-08-13",
-  "last_action": "Market conditions lack clear directional signals: Fear & Greed and VIX data unavailable. Price action shows mild rotation into real estate (XLRE, VNQ) and financials (GS), with bonds (TLT) and utiliti",
-  "last_updated": "2026-08-13T14:15:37Z",
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
+  "total_trades": 9,
+  "today_start_value": 9995.03,
+  "today_date": "2026-08-14",
+  "last_action": "Market conditions show mixed signals with no extreme fear or greed data. VIX is not elevated, reducing immediate need for defensive bonds like TLT. Financials (XLF) are holding up better than other se",
+  "last_updated": "2026-08-14T13:43:03Z",
   "last_session": {
-    "at": "2026-08-13T14:15:37Z",
+    "at": "2026-08-14T13:43:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "XLRE",
-        1.26
-      ],
-      [
-        "VNQ",
-        1.21
-      ],
-      [
         "GS",
-        1.07
+        -0.91
       ],
       [
         "TLT",
-        0.85
+        -0.45
       ],
       [
-        "SPY",
-        0.7
+        "JPM",
+        -0.36
       ],
       [
-        "XLU",
-        0.55
+        "BAC",
+        -0.25
+      ],
+      [
+        "XLF",
+        -0.19
+      ],
+      [
+        "AGG",
+        -0.06
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is slightly overweight bonds (TLT) and utilities (XLU) relative to current macro backdrop. Financials (XLF) lag despite favorable rate environment, presenting a relative value opportunity. Keeping cash reserve above $1000 (current cash $5864.63) allows flexibility. No aggressive moves due to absence of clear Fed-relevant data (inflation, growth, employment). Focus is on mean reversion and sector rotation within defensive and rate-sensitive cohorts.",
-    "outlook": "Market conditions lack clear directional signals: Fear & Greed and VIX data unavailable. Price action shows mild rotation into real estate (XLRE, VNQ) and financials (GS), with bonds (TLT) and utilities (XLU) modestly higher. No evidence of inflation spikes or recession fears. Proceeding with cautious rebalancing \u2014 reducing extended bond and utility positions to add to underperforming financials, which offer better risk-adjusted returns in a higher-for-longer rates scenario.",
+    "ai_analysis": "Portfolio is slightly underweight in financials and short-term Treasuries relative to long-term bonds. Selling 2 shares of TLT reduces duration exposure and frees capital. Buying 10 shares of XLF increases allocation to rate-sensitive financials that may benefit from steady policy. Adding 5 shares of SHY enhances liquidity and yield. All trades respect 25% max per stock and maintain cash above $1000. Total trades: 3, within session limit.",
+    "outlook": "Market conditions show mixed signals with no extreme fear or greed data. VIX is not elevated, reducing immediate need for defensive bonds like TLT. Financials (XLF) are holding up better than other sectors, suggesting resilience. Inflation appears data-dependent without urgent spikes, supporting a balanced, gradual rebalancing approach.",
     "trades_made": 3
   },
   "portfolio_history": [
@@ -843,6 +843,10 @@
     {
       "timestamp": "2026-08-13T14:15:37Z",
       "value": 9995.71
+    },
+    {
+      "timestamp": "2026-08-14T13:43:03Z",
+      "value": 9995.04
     }
   ]
 }

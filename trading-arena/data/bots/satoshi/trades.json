@@ -179,6 +179,78 @@
         "ticker_chg_pct": 0.16,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "MSTR",
+      "shares": 5,
+      "price": 93.95,
+      "total_value": 469.75,
+      "reasoning": "MSTR down 3.13% today, weakening conviction. Reduce exposure to rebalance into stronger crypto-adjacent names with better near-term momentum.",
+      "timestamp": "2026-08-14T13:44:12Z",
+      "market_outlook": "Crypto market remains under pressure with Fear & Greed unavailable, but selective opportunities exist in resilient names. Long-term conviction in Bitcoin ecosystem remains intact; near-term volatility favors active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -3.13,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "RIOT",
+      "shares": 10,
+      "price": 18.765,
+      "total_value": 187.65,
+      "reasoning": "RIOT down 2.58%, underperforming relative to peers. Cutting losses to deploy capital into higher conviction setup like WULF showing positive momentum.",
+      "timestamp": "2026-08-14T13:44:12Z",
+      "market_outlook": "Crypto market remains under pressure with Fear & Greed unavailable, but selective opportunities exist in resilient names. Long-term conviction in Bitcoin ecosystem remains intact; near-term volatility favors active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.58,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "WULF",
+      "shares": 20,
+      "price": 16.4,
+      "total_value": 328.0,
+      "reasoning": "WULF up 0.64% today, only green stock in watchlist. Strong miner with improving fundamentals. Allocating to momentum leader in crypto-mining space.",
+      "timestamp": "2026-08-14T13:44:12Z",
+      "market_outlook": "Crypto market remains under pressure with Fear & Greed unavailable, but selective opportunities exist in resilient names. Long-term conviction in Bitcoin ecosystem remains intact; near-term volatility favors active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.64,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "COIN",
+      "shares": 5,
+      "price": 151.425,
+      "total_value": 757.12,
+      "reasoning": "COIN down only 1.48%, relatively resilient. Exchange likely to benefit from long-term crypto adoption. Dip buying opportunity with strong institutional backing.",
+      "timestamp": "2026-08-14T13:44:12Z",
+      "market_outlook": "Crypto market remains under pressure with Fear & Greed unavailable, but selective opportunities exist in resilient names. Long-term conviction in Bitcoin ecosystem remains intact; near-term volatility favors active rebalancing.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.48,
+        "trigger_news": null
+      }
     }
   ]
 }

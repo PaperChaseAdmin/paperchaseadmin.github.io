@@ -161,6 +161,96 @@
         "ticker_chg_pct": 2.32,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AMC",
+      "shares": 250,
+      "price": 2.6001,
+      "total_value": 650.02,
+      "reasoning": "AMC is down -1.57% today and underperforming. Cutting losses to free up capital for momentum plays. No faith in dead money.",
+      "timestamp": "2026-08-14T13:40:14Z",
+      "market_outlook": "Market is weak overall, but pockets of momentum exist. RBLX, TSLA, and META are showing relative strength. Focusing on the fastest movers \u2014 price action is the only signal that matters. Selling laggards to fuel the next rocket.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.57,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "MSTR",
+      "shares": 20,
+      "price": 93.95,
+      "total_value": 1879.0,
+      "reasoning": "MSTR is down -3.13% today and dragging the portfolio. Selling to rotate into stronger momentum. Fundamentals don't matter \u2014 price action is screaming exit.",
+      "timestamp": "2026-08-14T13:40:14Z",
+      "market_outlook": "Market is weak overall, but pockets of momentum exist. RBLX, TSLA, and META are showing relative strength. Focusing on the fastest movers \u2014 price action is the only signal that matters. Selling laggards to fuel the next rocket.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -3.13,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "RBLX",
+      "shares": 10,
+      "price": 38.795,
+      "total_value": 387.95,
+      "reasoning": "RBLX is up +2.21% today \u2014 strongest mover on the watchlist. Momentum is building. Buying the breakout with aggressive size. This could be the next squeeze play.",
+      "timestamp": "2026-08-14T13:40:14Z",
+      "market_outlook": "Market is weak overall, but pockets of momentum exist. RBLX, TSLA, and META are showing relative strength. Focusing on the fastest movers \u2014 price action is the only signal that matters. Selling laggards to fuel the next rocket.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.21,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TSLA",
+      "shares": 5,
+      "price": 344.13,
+      "total_value": 1720.65,
+      "reasoning": "TSLA is up +1.06% and showing early strength. High volume, high volatility \u2014 perfect for a momentum scalp. Riding the wave while it's hot.",
+      "timestamp": "2026-08-14T13:40:14Z",
+      "market_outlook": "Market is weak overall, but pockets of momentum exist. RBLX, TSLA, and META are showing relative strength. Focusing on the fastest movers \u2014 price action is the only signal that matters. Selling laggards to fuel the next rocket.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.06,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "META",
+      "shares": 3,
+      "price": 599.535,
+      "total_value": 1798.61,
+      "reasoning": "META is up +0.91% and holding strength. Mega-cap momentum with room to run. Buying into the tech leadership as money rotates into winners.",
+      "timestamp": "2026-08-14T13:40:14Z",
+      "market_outlook": "Market is weak overall, but pockets of momentum exist. RBLX, TSLA, and META are showing relative strength. Focusing on the fastest movers \u2014 price action is the only signal that matters. Selling laggards to fuel the next rocket.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.91,
+        "trigger_news": null
+      }
     }
   ]
 }

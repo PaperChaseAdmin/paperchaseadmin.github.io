@@ -1,93 +1,98 @@
 {
-  "cash": 771.46,
-  "total_value": 10059.37,
+  "cash": 531.28,
+  "total_value": 10072.24,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 601.075
+      "current_price": 601.95
     },
     "NOC": {
       "shares": 1,
       "avg_cost": 548.38,
-      "current_price": 574.93
+      "current_price": 579.77
     },
     "RTX": {
       "shares": 8,
-      "current_price": 219.84,
+      "current_price": 221.19,
       "avg_cost": 200.4213
     },
     "NUE": {
       "shares": 5,
-      "current_price": 272.8,
+      "current_price": 272.31,
       "avg_cost": 252.918
     },
     "XOM": {
       "shares": 1,
       "avg_cost": 136.71,
-      "current_price": 158.105
+      "current_price": 159.575
     },
     "GM": {
       "shares": 1,
       "avg_cost": 82.99,
-      "current_price": 86.91
+      "current_price": 86.495
     },
     "CVX": {
       "shares": 1,
       "avg_cost": 192.8551,
-      "current_price": 194.65
+      "current_price": 198.42
     },
     "CAT": {
       "shares": 2,
-      "current_price": 854.91,
+      "current_price": 852.77,
       "avg_cost": 852.095
-    },
-    "GEO": {
-      "shares": 5,
-      "avg_cost": 31.56,
-      "current_price": 31.38
     },
     "F": {
       "shares": 20,
       "avg_cost": 13.925,
-      "current_price": 13.925
+      "current_price": 13.965
+    },
+    "LHX": {
+      "shares": 1,
+      "avg_cost": 291.71,
+      "current_price": 291.71
+    },
+    "HAL": {
+      "shares": 3,
+      "avg_cost": 33.11,
+      "current_price": 33.11
     }
   },
-  "total_return_pct": 0.59,
+  "total_return_pct": 0.72,
   "total_return_usd": 0.0,
-  "today_pnl": -54.17,
-  "today_pnl_pct": -0.54,
-  "total_trades": 10,
-  "today_start_value": 10113.54,
-  "today_date": "2026-08-13",
-  "last_action": "Market sentiment is temporarily skewed against America-first industrials and energy, but underlying strength in domestic production, defense spending, and reshoring remains intact. Use weakness to acc",
-  "last_updated": "2026-08-13T14:04:10Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 13,
+  "today_start_value": 10072.24,
+  "today_date": "2026-08-14",
+  "last_action": "The market is showing resilience in defense and energy sectors, reinforcing the America First thesis. With no Chinese exposure and a focus on domestically advantaged companies, the portfolio is positi",
+  "last_updated": "2026-08-14T13:32:56Z",
   "last_session": {
-    "at": "2026-08-13T14:04:10Z",
+    "at": "2026-08-14T13:32:56Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "HAL",
-        -1.65
-      ],
-      [
-        "RTX",
-        -1.18
-      ],
-      [
-        "XOM",
-        -1.04
-      ],
-      [
-        "CVX",
-        -0.98
+        "LHX",
+        1.13
       ],
       [
         "LMT",
-        -0.81
+        0.97
+      ],
+      [
+        "NOC",
+        0.88
+      ],
+      [
+        "HAL",
+        0.84
+      ],
+      [
+        "GEO",
+        -0.65
       ],
       [
         "F",
@@ -96,9 +101,9 @@
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is overweight in defense names showing near-term pressure. Rotating out of GD and LHX (defense) into F (auto), NUE (steel), and CAT (industrials) to better align with tariff, energy deregulation, and American manufacturing themes. Maintaining core holdings in LMT, RTX, XOM for long-term thesis. Keeping cash above $500 reserve. All trades within watchlist and 30% per stock limit.",
-    "outlook": "Market sentiment is temporarily skewed against America-first industrials and energy, but underlying strength in domestic production, defense spending, and reshoring remains intact. Use weakness to accumulate.",
-    "trades_made": 5
+    "ai_analysis": "I sold GEO, a consistent underperformer, to free up capital for higher-conviction America First trades. LHX and HAL were selected for their strong momentum, sector tailwinds, and alignment with defense and energy deregulation themes. Trades keep cash above $500 reserve and respect position limits. Active rebalancing improves portfolio quality without overexposure.",
+    "outlook": "The market is showing resilience in defense and energy sectors, reinforcing the America First thesis. With no Chinese exposure and a focus on domestically advantaged companies, the portfolio is positioned to benefit from tariffs, military spending, and energy independence.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -868,6 +873,10 @@
     {
       "timestamp": "2026-08-13T14:04:10Z",
       "value": 10059.37
+    },
+    {
+      "timestamp": "2026-08-14T13:32:56Z",
+      "value": 10072.24
     }
   ]
 }

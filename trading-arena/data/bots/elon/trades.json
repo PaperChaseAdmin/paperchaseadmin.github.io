@@ -107,6 +107,78 @@
         "ticker_chg_pct": 1.39,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMD",
+      "shares": 1,
+      "price": 490.7,
+      "total_value": 490.7,
+      "reasoning": "Strong momentum (+1.83%), tech leader in AI/data center, underweight vs conviction. Deploying cash into high-potential disruptor.",
+      "timestamp": "2026-08-14T13:31:53Z",
+      "market_outlook": "Market showing selective strength in tech and momentum names. Fear & Greed unavailable, but watchlist divergence suggests rotation into leaders. Aggressive deployment into AMD and RBLX aligns with disruption thesis while cutting IONQ and trimming COIN improves portfolio quality.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.83,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "RBLX",
+      "shares": 3,
+      "price": 38.795,
+      "total_value": 116.39,
+      "reasoning": "Top watchlist gainer (+2.21%), metaverse/gaming momentum, speculative but aligned with disruption theme. Small position to test strength.",
+      "timestamp": "2026-08-14T13:31:53Z",
+      "market_outlook": "Market showing selective strength in tech and momentum names. Fear & Greed unavailable, but watchlist divergence suggests rotation into leaders. Aggressive deployment into AMD and RBLX aligns with disruption thesis while cutting IONQ and trimming COIN improves portfolio quality.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.21,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "IONQ",
+      "shares": 10,
+      "price": 44.755,
+      "total_value": 447.55,
+      "reasoning": "Cutting loser (-0.58% today, -21.75% PnL). Quantum speculative, not core tech/EV/AI focus. Redeploying capital to better momentum names.",
+      "timestamp": "2026-08-14T13:31:53Z",
+      "market_outlook": "Market showing selective strength in tech and momentum names. Fear & Greed unavailable, but watchlist divergence suggests rotation into leaders. Aggressive deployment into AMD and RBLX aligns with disruption thesis while cutting IONQ and trimming COIN improves portfolio quality.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.58,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "COIN",
+      "shares": 5,
+      "price": 151.425,
+      "total_value": 757.12,
+      "reasoning": "Taking partial profit on small winner (-1.48% today, +9.68% PnL). Crypto-adjacent, less conviction than pure AI/tech plays. Reducing to fund higher-conviction buys.",
+      "timestamp": "2026-08-14T13:31:53Z",
+      "market_outlook": "Market showing selective strength in tech and momentum names. Fear & Greed unavailable, but watchlist divergence suggests rotation into leaders. Aggressive deployment into AMD and RBLX aligns with disruption thesis while cutting IONQ and trimming COIN improves portfolio quality.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.48,
+        "trigger_news": null
+      }
     }
   ]
 }

@@ -89,6 +89,42 @@
         "ticker_chg_pct": 1.73,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 2,
+      "price": 82.2194,
+      "total_value": 164.44,
+      "reasoning": "TLT is down -0.45% but remains a key asset for systemic risk hedging. Bonds often rally when fear rises. Adding to TLT to increase duration exposure and hedge equity volatility.",
+      "timestamp": "2026-08-14T13:36:04Z",
+      "market_outlook": "Market shows mild bullishness in tech (TSLA, META, NVDA) but gold and bonds are diverging \u2014 GLD up, TLT down slightly. This divergence suggests uncertainty. I anticipate a potential shift toward risk-off as reflexive feedback loops could turn negative if liquidity tightens or growth surprises to the downside.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.45,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "META",
+      "shares": 2,
+      "price": 599.535,
+      "total_value": 1199.07,
+      "reasoning": "META is up 0.91% and has delivered strong PnL (+39.62). Taking partial profits to rebalance into macro hedges (GLD, TLT) and reduce equity concentration.",
+      "timestamp": "2026-08-14T13:36:04Z",
+      "market_outlook": "Market shows mild bullishness in tech (TSLA, META, NVDA) but gold and bonds are diverging \u2014 GLD up, TLT down slightly. This divergence suggests uncertainty. I anticipate a potential shift toward risk-off as reflexive feedback loops could turn negative if liquidity tightens or growth surprises to the downside.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.91,
+        "trigger_news": null
+      }
     }
   ]
 }

@@ -1,99 +1,89 @@
 {
-  "cash": 2344.01,
-  "total_value": 10093.94,
+  "cash": 1615.9,
+  "total_value": 10125.26,
   "positions": {
     "T": {
       "shares": 81,
-      "current_price": 24.245,
+      "current_price": 24.665,
       "avg_cost": 22.4695
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 59.445,
+      "current_price": 59.2,
       "avg_cost": 55.115
     },
     "VZ": {
-      "shares": 24,
-      "current_price": 47.2701,
-      "avg_cost": 44.0215
+      "shares": 29,
+      "current_price": 48.33,
+      "avg_cost": 44.7643
     },
     "GLD": {
-      "shares": 1,
-      "avg_cost": 380.44,
-      "current_price": 401.11
+      "shares": 3,
+      "current_price": 402.29,
+      "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 190.95,
+      "current_price": 188.48,
       "avg_cost": 185.1355
     },
     "ABBV": {
-      "shares": 1,
-      "avg_cost": 255.8736,
-      "current_price": 253.0
+      "shares": 3,
+      "current_price": 250.6,
+      "avg_cost": 252.3579
     },
     "WPC": {
       "shares": 2,
       "avg_cost": 70.81,
-      "current_price": 71.39
-    },
-    "BTI": {
-      "shares": 8,
-      "current_price": 57.43,
-      "avg_cost": 58.855
-    },
-    "OHI": {
-      "shares": 8,
-      "current_price": 46.45,
-      "avg_cost": 47.7225
+      "current_price": 71.32
     },
     "ARCC": {
       "shares": 7,
       "avg_cost": 18.595,
-      "current_price": 20.035
+      "current_price": 20.09
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 34.415
+      "current_price": 34.4211
     },
     "HTGC": {
       "shares": 20,
-      "current_price": 16.795,
+      "current_price": 16.9,
       "avg_cost": 16.239
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 167.19
+      "current_price": 166.62
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 57.9437
+      "current_price": 57.86
     },
     "MO": {
       "shares": 5,
-      "current_price": 65.9025,
+      "current_price": 64.84,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 2,
       "avg_cost": 63.13,
-      "current_price": 63.13
+      "current_price": 62.895
     }
   },
-  "total_return_pct": 0.94,
+  "total_return_pct": 1.25,
   "total_return_usd": 0.0,
-  "today_pnl": 23.62,
-  "today_pnl_pct": 0.23,
-  "total_trades": 10,
-  "today_start_value": 10070.32,
-  "today_date": "2026-08-13",
-  "last_action": "Market sentiment is neutral (Fear & Greed ~50), favoring fundamentals over speculation. High-dividend stocks in tobacco, telecom, and REITs are showing resilience. Focus remains on yield preservation ",
-  "last_updated": "2026-08-13T14:14:29Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 15,
+  "today_start_value": 10125.26,
+  "today_date": "2026-08-14",
+  "last_action": "Market is neutral (Fear & Greed 50). Focus on fundamentals and dividend yield. Telecoms, healthcare dividend aristocrats, and gold provide stability and income in uncertain times.",
+  "last_updated": "2026-08-14T13:42:01Z",
   "last_session": {
-    "at": "2026-08-13T14:14:29Z",
+    "at": "2026-08-14T13:42:01Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -101,33 +91,33 @@
     "top_movers": [
       [
         "BTI",
-        2.88
+        -1.19
       ],
       [
-        "PM",
-        2.65
+        "ENB",
+        -1.11
       ],
       [
-        "MO",
-        2.35
+        "GLD",
+        0.86
       ],
       [
         "ABBV",
-        1.84
-      ],
-      [
-        "MAIN",
-        1.6
+        0.83
       ],
       [
         "OHI",
-        1.26
+        -0.49
+      ],
+      [
+        "ARCC",
+        -0.45
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "Portfolio is overweight in underperforming names (IBM, ENB) and underweight in top momentum dividend movers (MO, PM, O). Selling IBM and ENB frees ~$480 cash. Deploying into MO, PM, and O increases yield exposure, aligns with DRIP strategy, and maintains cash reserve above $200. Trades reflect active rebalancing toward stronger dividend momentum without violating position limits.",
-    "outlook": "Market sentiment is neutral (Fear & Greed ~50), favoring fundamentals over speculation. High-dividend stocks in tobacco, telecom, and REITs are showing resilience. Focus remains on yield preservation and capital deployment into momentum-supported income generators.",
+    "ai_analysis": "Portfolio is overweight in underperforming tobacco and healthcare REITs. Selling BTI and OHI cuts losses and frees ~$840 cash. Deploying into GLD (store of value), ABBV (dividend growth), and VZ (high yield telecom) aligns with Scrooge's strategy: prioritize yield, hold winners, add to reserves, and never sell a dividend payer unless cut. Maintains >$200 cash reserve. 5 trades executed.",
+    "outlook": "Market is neutral (Fear & Greed 50). Focus on fundamentals and dividend yield. Telecoms, healthcare dividend aristocrats, and gold provide stability and income in uncertain times.",
     "trades_made": 5
   },
   "portfolio_history": [
@@ -898,6 +888,10 @@
     {
       "timestamp": "2026-08-13T14:14:29Z",
       "value": 10093.94
+    },
+    {
+      "timestamp": "2026-08-14T13:42:01Z",
+      "value": 10125.26
     }
   ]
 }
