@@ -149,12 +149,12 @@ function renderToday(preds){
     const dirClass=p.prediction==='up'?'dir-up':p.prediction==='down'?'dir-down':'dir-neutral';
     const color=p.prediction==='up'?'var(--pc-green)':p.prediction==='down'?'var(--pc-red)':'var(--pc-text-3)';
     return `<div class="pred-card">
-      <div class="pred-card-title">${p.market||'Market'}</div>
-      <div class="pred-card-index">${p.toolLabel||''}</div>
+      <div class="pred-card-title">${esc(p.market||'Market')}</div>
+      <div class="pred-card-index">${esc(p.toolLabel||'')}</div>
       <div class="pred-card-dir" style="color:${color}">${DIR_EMOJI[p.prediction]||'➡️'} ${p.prediction?.toUpperCase()||'N/A'}</div>
       <div class="pred-card-conf">Confidence: ${p.confidence||'?'}%</div>
       <div class="pred-card-bar"><div class="pred-card-fill" style="width:${p.confidence||0}%;background:${color}"></div></div>
-      <div style="font-size:10px;color:var(--pc-text-3);margin-top:6px">${(p.signal||'').substring(0,80)}</div>
+      <div style="font-size:10px;color:var(--pc-text-3);margin-top:6px">${esc(p.signal||'').substring(0,80)}</div>
     </div>`;
   }).join('');
 }
@@ -172,7 +172,7 @@ function renderFilters(){
   const tools=[...new Set(allPredictions.map(p=>p.toolKey))];
   document.getElementById('filter-bar').innerHTML=
     `<button class="filter-btn active" onclick="setFilter('all')">All</button>`+
-    tools.map(t=>`<button class="filter-btn" onclick="setFilter('${t}')">${allPredictions.find(p=>p.toolKey===t)?.toolLabel||t}</button>`).join('');
+    tools.map(t=>`<button class="filter-btn" onclick="setFilter('${t.replace(/'/g,"\\'")}')">${esc(allPredictions.find(p=>p.toolKey===t)?.toolLabel||t)}</button>`).join('');
 }
 
 function setFilter(f){filter=f;
@@ -189,8 +189,8 @@ function renderHistory(){
     const toolTagClass=`tool-tag tool-${p.toolKey?.split('_').map(s=>s[0]?.toUpperCase()).join('')||'NA'}`;
     return `<tr>
       <td>${p.date||'—'}</td>
-      <td><span class="${toolTagClass}">${p.toolLabel||p.toolKey||'—'}</span></td>
-      <td>${p.market||'—'}</td>
+      <td><span class="${toolTagClass}">${esc(p.toolLabel||p.toolKey||'—')}</span></td>
+      <td>${esc(p.market||'—')}</td>
       <td class="${dc}">${DIR_EMOJI[p.prediction]||''} ${p.prediction?.toUpperCase()||'—'}</td>
       <td>${p.confidence||'—'}%</td>
       <td>${badge}</td>

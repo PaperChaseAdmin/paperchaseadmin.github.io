@@ -347,7 +347,7 @@ function renderAll(d){
     if(score!==null)sh='<span class="sb-v" style="color:'+FMT.sc(label)+'">'+score+'</span><span class="sb-l" style="background:var(--pc-surface-2);color:'+FMT.sc(label)+'">'+(label||'').toUpperCase()+'</span><div class="sb-tr"><div class="sb-fl" style="width:'+score+'%;background:'+FMT.sc(label)+'"></div></div><span class="sb-n">'+items.length+' articles</span>';
     $('newsScore').innerHTML=sh;
     var lh='';
-    items.forEach(function(n){var s=(n.sentiment||'neutral').toLowerCase(),lbl=FMT.sl(n.sentiment);lh+='<li><span class="nl-s">'+(n.source||'')+'</span><span class="nl-t">'+n.title+'</span>'+(FMT.d(n.published)?'<span class="nl-d">'+FMT.d(n.published)+'</span>':'')+'<span class="nl-g '+FMT.sg(s)+'">'+lbl+'</span></li>';});
+    items.forEach(function(n){var s=(n.sentiment||'neutral').toLowerCase(),lbl=FMT.sl(n.sentiment);lh+='<li><span class="nl-s">'+esc(n.source)+'</span><span class="nl-t">'+esc(n.title)+'</span>'+(FMT.d(n.published)?'<span class="nl-d">'+FMT.d(n.published)+'</span>':'')+'<span class="nl-g '+FMT.sg(s)+'">'+lbl+'</span></li>';});
     $('newsList').innerHTML=lh||'<li style="color:var(--pc-text-3)">No recent news</li>';
   })();
 
@@ -356,13 +356,13 @@ function renderAll(d){
     var f=(d.crypto||{}).fourchain||{},h='';
     if(f.thread_count){
       h+='<div class="fc-s"><span style="font-weight:600">'+f.thread_count+' threads</span><span style="color:var(--pc-text-2)">'+f.active_threads+' active</span>';
-      if(f.top_coin)h+='<span style="font-size:10px;color:var(--pc-text-3)">🔥 Most mentioned: <strong>'+f.top_coin+'</strong></span>';
+      if(f.top_coin)h+='<span style="font-size:10px;color:var(--pc-text-3)">🔥 Most mentioned: <strong>'+esc(f.top_coin)+'</strong></span>';
       h+='</div>';
       if(f.bullish_pct!=null){var bp=f.bullish_pct;h+='<div class="fc-bar"><span style="font-size:11px;color:var(--pc-green)">📈 '+bp+'%</span><div class="fb-tr"><div class="fb-fl" style="width:'+bp+'%;background:var(--pc-green)"></div></div><span style="font-size:11px;color:var(--pc-red)">📉 '+(100-bp)+'%</span></div>';}
       var fm=f.mentions||{},fa=Object.keys(fm).map(function(k){return{s:k,c:fm[k]};}).sort(function(a,b){return b.c-a.c;});
-      if(fa.length){h+='<div class="fc-b">';fa.forEach(function(m){h+='<span class="fb">'+m.s+': '+m.c+'</span>';});h+='</div>';}
+      if(fa.length){h+='<div class="fc-b">';fa.forEach(function(m){h+='<span class="fb">'+esc(m.s)+': '+esc(m.c)+'</span>';});h+='</div>';}
       var tp=f.top_posts||[];
-      if(tp.length){h+='<div class="fc-pts">';tp.slice(0,4).forEach(function(t){h+='<div class="fc-pt">'+t.slice(0,100)+'</div>';});h+='</div>';}
+      if(tp.length){h+='<div class="fc-pts">';tp.slice(0,4).forEach(function(t){h+='<div class="fc-pt">'+esc(t).slice(0,100)+'</div>';});h+='</div>';}
     }
     $('fourchanSection').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No 4chan data</div>';
   })();
@@ -381,7 +381,7 @@ function renderAll(d){
     }
     p.slice(0,6).forEach(function(x){
       var yp=x.yes_price!=null?Math.round(x.yes_price*100):0,sent=polySent(x.title),sg=sent==='Bullish'?'b-bull':sent==='Bearish'?'b-bear':'b-neut',url=x.url||'#';
-      h+='<div class="pi"><span class="pi-t"><a href="'+url+'" target="_blank" rel="noopener" style="color:var(--pc-text);text-decoration:none">'+(x.title||'').slice(0,45)+'</a> <span class="nl-g '+sg+'" style="font-size:8px">'+sent+'</span></span><span style="font-weight:600;font-family:var(--pc-mono)">'+yp+'%</span></div>';
+      h+='<div class="pi"><span class="pi-t"><a href="'+esc(url)+'" target="_blank" rel="noopener" style="color:var(--pc-text);text-decoration:none">'+esc(x.title).slice(0,45)+'</a> <span class="nl-g '+sg+'" style="font-size:8px">'+sent+'</span></span><span style="font-weight:600;font-family:var(--pc-mono)">'+yp+'%</span></div>';
     });
     $('polySection').innerHTML=h||'<div style="color:var(--pc-text-3);font-size:11px">No data</div>';
   })();
@@ -405,7 +405,7 @@ function renderAll(d){
     var items=st.news||[],kw=['trump','china','iran','russia','ukraine','tariff','trade war','sanction','congress','fed','federal reserve','political','president','senate','strike','military','diplomat','war','election','policy','regulation'];
     var fi=items.filter(function(n){var t=(n.title||'').toLowerCase();return kw.some(function(k){return t.includes(k);});});
     var h='<ul class="nl">';
-    if(fi.length){fi.slice(0,8).forEach(function(n){var s=(n.sentiment||'neutral').toLowerCase(),lbl=FMT.sl(n.sentiment);h+='<li><span class="nl-s">'+(n.source||'')+'</span><span class="nl-t">'+n.title+'</span>'+(FMT.d(n.published)?'<span class="nl-d">'+FMT.d(n.published)+'</span>':'')+'<span class="nl-g '+FMT.sg(s)+'">'+lbl+'</span></li>';});}
+    if(fi.length){fi.slice(0,8).forEach(function(n){var s=(n.sentiment||'neutral').toLowerCase(),lbl=FMT.sl(n.sentiment);h+='<li><span class="nl-s">'+esc(n.source)+'</span><span class="nl-t">'+esc(n.title)+'</span>'+(FMT.d(n.published)?'<span class="nl-d">'+FMT.d(n.published)+'</span>':'')+'<span class="nl-g '+FMT.sg(s)+'">'+lbl+'</span></li>';});}
     else{h+='<li style="color:var(--pc-text-3)">No political news</li>';}
     h+='</ul>';$('politicsSection').innerHTML=h;
   })();

@@ -101,7 +101,7 @@ function loadData(){
       var html='';
       markets.forEach(function(m){
         var yp=Math.round((m.yes_price||0)*100),bar=yp>=80?'var(--pc-green)':yp>=60?'var(--pc-yellow)':'var(--pc-red)';
-        html+='<div class="mc"><div class="mc-q"><a href="'+(m.url||'#')+'" target="_blank" rel="noopener">'+(m.title||'')+'</a></div><div class="mc-m"><span>Yes: <strong style="color:'+bar+'">'+yp+'%</strong></span><span>Vol: <strong>'+fmt(m.volume_24h)+'</strong></span></div><div class="mc-b"><div class="mc-bf" style="width:'+yp+'%;background:'+bar+'"></div></div></div>';
+        html+='<div class="mc"><div class="mc-q"><a href="'+esc(m.url||'#')+'" target="_blank" rel="noopener">'+esc(m.title||'')+'</a></div><div class="mc-m"><span>Yes: <strong style="color:'+bar+'">'+yp+'%</strong></span><span>Vol: <strong>'+fmt(m.volume_24h)+'</strong></span></div><div class="mc-b"><div class="mc-bf" style="width:'+yp+'%;background:'+bar+'"></div></div></div>';
       });
       $('marketList').innerHTML=html||'<div style="text-align:center;padding:40px;color:var(--pc-text-3)">No markets</div>';
       onDataLoaded(d.updated_at);

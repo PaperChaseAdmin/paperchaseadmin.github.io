@@ -8,6 +8,9 @@
  *   trading-arena: every 30 min during market hours (cron-job.org 8148615)
  */
 
+// HTML-escape user-generated / AI content before innerHTML injection
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+
 function nextUpdateFor(tool) {
   const now = new Date();
   const dow = now.getUTCDay();       // 0=Sun, 6=Sat
