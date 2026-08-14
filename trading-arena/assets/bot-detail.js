@@ -92,7 +92,7 @@ function renderPositions(pf){
   
   // Get trade history for this bot to find entry details
   // We'll store it as a map ticker->latest trade
-  fetch(BASE+'trades.json?t='+Date.now()).then(r=>r.json()).then(tr => {
+  fetch(BASE+'trades.json').then(r=>r.json()).then(tr => {
     const tradeMap = {};
     (tr.trades||[]).forEach(t => {
       if (t.action === 'BUY' && !tradeMap[t.ticker]) tradeMap[t.ticker] = t;
@@ -225,13 +225,13 @@ function renderFollowGuide(){
 
 async function load(){
   const [pf, tr] = await Promise.all([
-    fetch(BASE+'portfolio.json?t='+Date.now()).then(r=>r.json()),
-    fetch(BASE+'trades.json?t='+Date.now()).then(r=>r.json())
+    fetch(BASE+'portfolio.json').then(r=>r.json()),
+    fetch(BASE+'trades.json').then(r=>r.json())
   ]);
   
   // Marketplace data for current prices
   try {
-    const mp = await fetch('https://paperchase.online/market-sentinel/data/market_data.json?t='+Date.now()).then(r=>r.json());
+    const mp = await fetch('https://paperchase.online/data/market_data.json').then(r=>r.json());
     const stocks = mp.stocks || {};
     const sp = stocks.prices || [];
     // Enrich positions with current market prices
