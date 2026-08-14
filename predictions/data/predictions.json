@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-14T13:56:08Z",
+  "updated_at": "2026-08-14T20:52:31Z",
   "last_prediction_date": "2026-08-14",
-  "last_settle_date": "2026-08-13",
+  "last_settle_date": "2026-08-14",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
@@ -855,9 +855,9 @@
     },
     "crypto_pulse": {
       "label": "Crypto Pulse",
-      "total": 4,
-      "correct": 3,
-      "accuracy_pct": 75.0,
+      "total": 5,
+      "correct": 4,
+      "accuracy_pct": 80.0,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -999,9 +999,10 @@
           "prediction": "down",
           "confidence": 64,
           "signal": "BTC -1.20% | Fear&Greed: 29 (Fear)",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.6
         }
       ]
     },
