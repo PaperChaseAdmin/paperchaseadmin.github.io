@@ -179,6 +179,60 @@
         "ticker_chg_pct": -1.48,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TSLA",
+      "shares": 3,
+      "price": 349.76,
+      "total_value": 1049.28,
+      "reasoning": "TSLA is showing strong momentum (+2.9%) and fits my high-energy tech/EV focus. Need to increase exposure to winners.",
+      "timestamp": "2026-08-14T14:04:28Z",
+      "market_outlook": "Bullish on momentum and disruption.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.9,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IONQ",
+      "shares": 3,
+      "price": 46.5,
+      "total_value": 139.5,
+      "reasoning": "Quantum computing is the next frontier of disruption. IONQ is up 3.48% and I want a concentrated bet on this high-growth tech play.",
+      "timestamp": "2026-08-14T14:04:28Z",
+      "market_outlook": "Bullish on momentum and disruption.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.48,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "COIN",
+      "shares": 10,
+      "price": 150.67,
+      "total_value": 1506.7,
+      "reasoning": "COIN is lagging with a -2.1% move. Cutting the dead weight to redeploy capital into higher momentum plays like TSLA and IONQ.",
+      "timestamp": "2026-08-14T14:04:28Z",
+      "market_outlook": "Bullish on momentum and disruption.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.1,
+        "trigger_news": null
+      }
     }
   ]
 }

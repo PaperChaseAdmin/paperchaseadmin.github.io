@@ -179,6 +179,60 @@
         "ticker_chg_pct": 0.83,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "ABBV",
+      "shares": 4,
+      "price": 248.66,
+      "total_value": 994.64,
+      "reasoning": "ABBV is down 0.81% today and trading below avg cost ($248.66 vs $250.60). It's a minor loser, but with no fundamental deterioration, we can rotate capital into stronger momentum names like CVX or JPM that show better relative strength and align with value principles.",
+      "timestamp": "2026-08-14T14:08:09Z",
+      "market_outlook": "Market shows mixed but moderate momentum with no extreme fear or greed. Value opportunities exist in quality businesses with steady fundamentals. Focus on rebalancing toward relative strength without chasing hype.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.81,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "CVX",
+      "shares": 4,
+      "price": 200.54,
+      "total_value": 802.16,
+      "reasoning": "CVX is up 1.42% today, showing strength in energy. It's a wide-moat business with consistent cash flows, trading at a reasonable valuation. At $200.54, 4 shares cost $802.16 \u2014 well under 25% of portfolio. Adds diversification and aligns with value investing in essential commodities.",
+      "timestamp": "2026-08-14T14:08:09Z",
+      "market_outlook": "Market shows mixed but moderate momentum with no extreme fear or greed. Value opportunities exist in quality businesses with steady fundamentals. Focus on rebalancing toward relative strength without chasing hype.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.42,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "JPM",
+      "shares": 2,
+      "price": 365.51,
+      "total_value": 731.02,
+      "reasoning": "JPM is up 0.65% today and trading at $365.51. It's a premier financial institution with strong moat, disciplined management, and consistent earnings. 2 shares cost $731.02 \u2014 under 25% limit. Adds quality exposure to financials while maintaining discipline.",
+      "timestamp": "2026-08-14T14:08:09Z",
+      "market_outlook": "Market shows mixed but moderate momentum with no extreme fear or greed. Value opportunities exist in quality businesses with steady fundamentals. Focus on rebalancing toward relative strength without chasing hype.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.65,
+        "trigger_news": null
+      }
     }
   ]
 }

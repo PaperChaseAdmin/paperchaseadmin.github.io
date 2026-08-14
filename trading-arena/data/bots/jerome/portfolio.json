@@ -1,79 +1,54 @@
 {
   "cash": 5090.46,
-  "total_value": 9995.04,
+  "total_value": 9998.06,
   "positions": {
     "SHY": {
       "shares": 25,
-      "current_price": 82.065,
+      "current_price": 82.0604,
       "avg_cost": 81.8316
     },
     "TLT": {
       "shares": 3,
       "avg_cost": 82.3,
-      "current_price": 82.2194
+      "current_price": 82.275
     },
     "XLU": {
       "shares": 5,
       "avg_cost": 43.35,
-      "current_price": 44.03
+      "current_price": 44.18
     },
     "BIL": {
       "shares": 7,
       "avg_cost": 91.51,
-      "current_price": 91.535
+      "current_price": 91.53
     },
     "XLF": {
       "shares": 30,
-      "current_price": 58.18,
+      "current_price": 58.255,
       "avg_cost": 58.1633
     }
   },
-  "total_return_pct": -0.05,
+  "total_return_pct": -0.02,
   "total_return_usd": 0.0,
-  "today_pnl": 0.01,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 3.03,
+  "today_pnl_pct": 0.03,
   "total_trades": 9,
   "today_start_value": 9995.03,
   "today_date": "2026-08-14",
-  "last_action": "Market conditions show mixed signals with no extreme fear or greed data. VIX is not elevated, reducing immediate need for defensive bonds like TLT. Financials (XLF) are holding up better than other se",
-  "last_updated": "2026-08-14T13:43:03Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-14T15:03:15Z",
   "last_session": {
-    "at": "2026-08-14T13:43:03Z",
+    "at": "2026-08-14T15:03:15Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "GS",
-        -0.91
-      ],
-      [
-        "TLT",
-        -0.45
-      ],
-      [
-        "JPM",
-        -0.36
-      ],
-      [
-        "BAC",
-        -0.25
-      ],
-      [
-        "XLF",
-        -0.19
-      ],
-      [
-        "AGG",
-        -0.06
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio is slightly underweight in financials and short-term Treasuries relative to long-term bonds. Selling 2 shares of TLT reduces duration exposure and frees capital. Buying 10 shares of XLF increases allocation to rate-sensitive financials that may benefit from steady policy. Adding 5 shares of SHY enhances liquidity and yield. All trades respect 25% max per stock and maintain cash above $1000. Total trades: 3, within session limit.",
-    "outlook": "Market conditions show mixed signals with no extreme fear or greed data. VIX is not elevated, reducing immediate need for defensive bonds like TLT. Financials (XLF) are holding up better than other sectors, suggesting resilience. Inflation appears data-dependent without urgent spikes, supporting a balanced, gradual rebalancing approach.",
-    "trades_made": 3
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
+    "trades_made": 0
   },
   "portfolio_history": [
     {
@@ -847,6 +822,10 @@
     {
       "timestamp": "2026-08-14T13:43:03Z",
       "value": 9995.04
+    },
+    {
+      "timestamp": "2026-08-14T15:03:15Z",
+      "value": 9998.06
     }
   ]
 }
