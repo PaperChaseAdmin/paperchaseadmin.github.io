@@ -190,16 +190,16 @@ function renderPicks(data){
   picks.forEach(function(p,i){
     var r=i+1,sc=sClass(p.composite_score),mc=mClass(p.macd_signal),ml=mLbl(p.macd_signal);
     html+='<tr><td style="text-align:center;font-weight:600;color:var(--pc-text-3);font-family:var(--pc-mono)">'+r+'</td>'+
-      '<td><strong>'+p.symbol+'</strong></td><td style="font-size:12px">'+(p.company_name||'—')+'</td>'+
-      '<td style="font-size:11px;color:var(--pc-text-2)">'+(p.sector||'—')+'</td>'+
+      '<td><strong>'+p.symbol+'</strong></td><td style="font-size:12px">'+esc(p.company_name||'—')+'</td>'+
+      '<td style="font-size:11px;color:var(--pc-text-2)">'+esc(p.sector||'—')+'</td>'+
       '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">'+FMT.p(p.price)+'</td>'+
       '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">'+FMT.c(p.market_cap)+'</td>'+
       '<td style="text-align:right;font-family:var(--pc-mono);font-size:12px">'+FMT.pe(p.pe_ratio)+'</td>'+
       '<td style="text-align:center"><span class="mb '+mc+'">'+ml+'</span></td>'+
       '<td style="text-align:center;font-family:var(--pc-mono);font-size:12px">'+FMT.r(p.rsi)+'</td>'+
       '<td style="text-align:center"><span class="sb '+sc+'">'+(p.composite_score!=null?p.composite_score.toFixed(1):'—')+'</span></td>'+
-      '<td><div class="sc">'+(p.summary||'')+'</div></td>'+
-      '<td><div class="sc" style="color:var(--pc-purple)">'+(p.ai_analysis||'')+'</div></td></tr>';
+      '<td><div class="sc">'+esc(p.summary||'')+'</div></td>'+
+      '<td><div class="sc" style="color:var(--pc-purple)">'+esc(p.ai_analysis||'')+'</div></td></tr>';
   });
   $('picksBody').innerHTML=html;
 }

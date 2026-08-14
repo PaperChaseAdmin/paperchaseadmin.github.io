@@ -128,10 +128,10 @@ function renderPositions(pf){
               '<div class="pos-detail-row"><span class="pos-detail-lbl">Entry Price</span><span class="pos-detail-val">' + fmt(entry.price) + '</span></div>' +
               '<div class="pos-detail-row"><span class="pos-detail-lbl">Shares</span><span class="pos-detail-val">' + entry.shares + '</span></div>' +
               '<div class="pos-detail-row"><span class="pos-detail-lbl">Total Cost</span><span class="pos-detail-val">' + fmt(entry.total_value) + '</span></div>' +
-              (entry.reasoning ? '<div class="pos-detail-row" style="flex-direction:column;gap:4px"><span class="pos-detail-lbl">Signal</span><span class="pos-detail-val" style="font-size:11px;line-height:1.5;max-width:500px">' + entry.reasoning + '</span></div>' : '') +
+              (entry.reasoning ? '<div class="pos-detail-row" style="flex-direction:column;gap:4px"><span class="pos-detail-lbl">Signal</span><span class="pos-detail-val" style="font-size:11px;line-height:1.5;max-width:500px">' + esc(entry.reasoning) + '</span></div>' : '') +
               (entry.signal_context ? '<div class="pos-detail-row"><span class="pos-detail-lbl">Market Context</span><span class="pos-detail-val" style="display:flex;flex-wrap:wrap;gap:3px">' + 
                 (entry.signal_context.ticker_chg_pct != null ? '<span class="ctx-item ' + (entry.signal_context.ticker_chg_pct>=0?'ctx-up':'ctx-down') + '">' + t + ': ' + (entry.signal_context.ticker_chg_pct>=0?'+':'') + Number(entry.signal_context.ticker_chg_pct).toFixed(1) + '%</span>' : '') +
-                (entry.signal_context.fg_value != null ? '<span class="ctx-item">F&G: ' + entry.signal_context.fg_value + (entry.signal_context.fg_label?' ('+entry.signal_context.fg_label+')':'') + '</span>' : '') +
+                (entry.signal_context.fg_value != null ? '<span class="ctx-item">F&G: ' + entry.signal_context.fg_value + (entry.signal_context.fg_label?' ('+esc(entry.signal_context.fg_label)+')':'') + '</span>' : '') +
                 (entry.signal_context.sp500_chg != null ? '<span class="ctx-item ' + (entry.signal_context.sp500_chg>=0?'ctx-up':'ctx-down') + '">S&P: ' + (entry.signal_context.sp500_chg>=0?'+':'') + Number(entry.signal_context.sp500_chg).toFixed(1) + '%</span>' : '') +
                 (entry.signal_context.vix != null ? '<span class="ctx-item">VIX: ' + Number(entry.signal_context.vix).toFixed(1) + '</span>' : '') +
               '</span></div>' : '')
@@ -304,13 +304,13 @@ function renderHero(pf){
 
 function renderOutlook(pf){
   if(pf.last_action&&!pf.last_action.startsWith('Init')&&pf.last_action!=='...'){
-    $('outlook').innerHTML='<div class="outlook" style="--bot-color:'+BOT_COLOR+'"><div class="outlook-lbl">Latest Thinking</div>'+pf.last_action+'</div>';
+    $('outlook').innerHTML='<div class="outlook" style="--bot-color:'+BOT_COLOR+'"><div class="outlook-lbl">Latest Thinking</div>'+esc(pf.last_action)+'</div>';
     return;
   }
   // Fall back to last session AI analysis
   const s=pf.last_session;
   if(s&&s.ai_analysis&&s.ai_analysis!=='...'){
-    $('outlook').innerHTML='<div class="outlook" style="--bot-color:'+BOT_COLOR+'"><div class="outlook-lbl">Latest Thinking</div>'+s.ai_analysis+'</div>';
+    $('outlook').innerHTML='<div class="outlook" style="--bot-color:'+BOT_COLOR+'"><div class="outlook-lbl">Latest Thinking</div>'+esc(s.ai_analysis)+'</div>';
     return;
   }
   $('outlook').innerHTML='<div class="outlook-lbl" style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--pc-text-3);margin-bottom:6px">Latest Thinking</div><div style="font-size:12px;color:var(--pc-text-3);padding:8px 0">Analysis unavailable</div>';
@@ -334,11 +334,11 @@ function renderLastSession(pf){
     '<span class="chip '+(spClass||'')+'">S&amp;P 500: '+spStr+'</span>'+
     '<span class="chip">VIX: '+vixVal+'</span>';
 
-  const newsItems=(s.news_read||[]).map(function(h){ return '<li>'+h+'</li>'; }).join('');
+  const newsItems=(s.news_read||[]).map(function(h){ return '<li>'+esc(h)+'</li>'; }).join('');
 
-  const extra=s.domain_extra?'<div class="session-block"><div class="session-block-lbl">Domain Context</div><div class="domain-extra">'+s.domain_extra+'</div></div>':'';
+  const extra=s.domain_extra?'<div class="session-block"><div class="session-block-lbl">Domain Context</div><div class="domain-extra">'+esc(s.domain_extra)+'</div></div>':'';
 
-  const reasoning=s.ai_analysis?'<div class="session-block"><div class="session-block-lbl">AI Reasoning</div><div class="ai-reasoning" style="--bot-color:'+BOT_COLOR+'">'+s.ai_analysis+'</div></div>':'';
+  const reasoning=s.ai_analysis?'<div class="session-block"><div class="session-block-lbl">AI Reasoning</div><div class="ai-reasoning" style="--bot-color:'+BOT_COLOR+'">'+esc(s.ai_analysis)+'</div></div>':'';
 
   const n=s.trades_made||0;
   const badgeClass=n>0?'traded':'';
@@ -429,7 +429,7 @@ function renderTrades(trades, positions){
         const cls=sc.ticker_chg_pct>0?'ctx-up':'ctx-down';
         parts.push('<span class="ctx-item '+cls+'">'+t.ticker+': '+(sc.ticker_chg_pct>=0?'+':'')+Number(sc.ticker_chg_pct).toFixed(1)+'%</span>');
       }
-      if(sc.fg_value!=null) parts.push('<span class="ctx-item">F&amp;G: '+sc.fg_value+(sc.fg_label?' ('+sc.fg_label+')':'')+'</span>');
+      if(sc.fg_value!=null) parts.push('<span class="ctx-item">F&amp;G: '+sc.fg_value+(sc.fg_label?' ('+esc(sc.fg_label)+')':'')+'</span>');
       if(sc.sp500_chg!=null){
         const cls=sc.sp500_chg>=0?'ctx-up':'ctx-down';
         parts.push('<span class="ctx-item '+cls+'">S&amp;P: '+(sc.sp500_chg>=0?'+':'')+Number(sc.sp500_chg).toFixed(1)+'%</span>');
@@ -437,7 +437,7 @@ function renderTrades(trades, positions){
       if(sc.vix!=null) parts.push('<span class="ctx-item">VIX: '+Number(sc.vix).toFixed(1)+'</span>');
       if(parts.length) ctxHtml='<div class="signal-ctx">'+parts.join('')+'</div>';
     }
-    const reasonCell='<div style="color:var(--tv-text-2);font-size:12px;line-height:1.5;max-width:260px">'+(t.reasoning||'\u2014')+'</div>'+ctxHtml;
+    const reasonCell='<div style="color:var(--tv-text-2);font-size:12px;line-height:1.5;max-width:260px">'+esc(t.reasoning||'\u2014')+'</div>'+ctxHtml;
     rows+='<tr>'+
       '<td class="mono" style="color:var(--tv-text-2);white-space:nowrap">'+fmtTs(t.timestamp)+'</td>'+
       '<td>'+badge+'</td>'+
