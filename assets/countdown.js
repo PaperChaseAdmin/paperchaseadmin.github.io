@@ -2,8 +2,10 @@
  * Shared Countdown Script — PaperChase
  * Provides nextUpdateFor(tool) and startCountdown(el, label, tool)
  *
- * Update schedules (all align with 10-min cron-job.org trigger):
- *   All tools: every 10 min, 24/7
+ * Update schedules (real cadence, 2026-08-14):
+ *   market-sentinel / crypto-pulse / poly-watch / home: hourly (:00 UTC, GH Actions schedule)
+ *   predictions / stock-pick: daily 12:30 UTC, Mon–Fri (predict.yml)
+ *   trading-arena: every 30 min during market hours (cron-job.org 8148615)
  */
 
 function nextUpdateFor(tool) {
@@ -45,16 +47,41 @@ function nextUpdateFor(tool) {
   function nextInterval(minutes) {
     const totalSeconds = (h * 60 + m) * 60 + s;
     const intervalSec = minutes * 60;
-    const nextSec = Math.ceil(totalSeconds / intervalSec) * intervalSec;
+    // floor+1: always the NEXT boundary (ceil would return the current one at exact marks)
+    const nextSec = (Math.floor(totalSeconds / intervalSec) + 1) * intervalSec;
     const nx = new Date(now);
     nx.setUTCHours(0, 0, 0, 0);
     nx.setUTCSeconds(nextSec);
     return nx;
   }
 
+  // ── Helper: next market open (Mon–Fri 13:30 UTC) ──
+  function nextMarketOpen() {
+    const nx = new Date(now);
+    nx.setUTCHours(13, 30, 0, 0);
+    if (nx <= now) nx.setUTCDate(nx.getUTCDate() + 1);
+    while (nx.getUTCDay() === 0 || nx.getUTCDay() === 6) {
+      nx.setUTCDate(nx.getUTCDate() + 1);
+    }
+    return nx;
+  }
+
   switch (tool) {
+    case 'market-sentinel':
+    case 'crypto-pulse':
+    case 'poly-watch':
+      // Market data refreshes hourly on the hour
+      return nextInterval(60);
+    case 'predictions':
+    case 'stock-pick':
+      // AI predictions + stock picks: daily 12:30 UTC, Mon–Fri
+      return nextWeekdayAt(12, 30);
+    case 'trading-arena':
+      // Bot runs every 30 min during market hours, else next market open
+      if (isMarketHours) return nextInterval(30);
+      return nextMarketOpen();
     default:
-      return nextInterval(10);
+      return nextInterval(60);
   }
 }
 
