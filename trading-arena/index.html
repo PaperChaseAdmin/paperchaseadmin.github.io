@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -26,7 +27,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/design-system.css">
 <script src="/assets/countdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 /* ── KPI ── */
 .kpi { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
@@ -89,7 +90,7 @@
   .bl { border-radius: var(--pc-radius); }
 }
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238177146851721" crossorigin="anonymous"></script>
+<!-- AdSense removed 2026-08-14 (account not approved yet). Re-add when approved: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238177146851721" crossorigin="anonymous"></script> -->
 </head>
 <body>
 
@@ -215,7 +216,7 @@ function onDataLoaded(){clearInterval(_cd);var el=$('countdown-wrap');if(!el||ty
 
 async function loadData(){
   try{
-    var resp=await fetch(DATA_URL+'?t='+Date.now());
+    var resp=await fetch(DATA_URL+'');
     if(!resp.ok)throw new Error('HTTP '+resp.status);
     var data=await resp.json();
     bots=data.bots||[];var hist=data.portfolio_history||[10000];

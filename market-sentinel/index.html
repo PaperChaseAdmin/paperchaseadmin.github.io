@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -149,7 +150,7 @@
   .nl .nl-t { min-width: 0; }
 }
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238177146851721" crossorigin="anonymous"></script>
+<!-- AdSense removed 2026-08-14 (account not approved yet). Re-add when approved: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238177146851721" crossorigin="anonymous"></script> -->
 </head>
 <body>
 
@@ -297,7 +298,7 @@ var FMT = {
   d: function(s){if(!s)return'';try{var d=new Date(s);if(isNaN(d.getTime()))return s.replace(/,.*$/,'');var h=Math.round((new Date()-d)/3600000);if(h<1)return'just now';if(h<24)return h+'h ago';return(d.getMonth()+1)+'/'+String(d.getDate()).padStart(2,'0');}catch(e){return'';}}
 };
 
-function loadData(){fetch(DATA_URL+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){renderAll(d);}).catch(function(e){$('main-loading').innerHTML='⚠️ Failed to load: '+e.message;});}
+function loadData(){fetch(DATA_URL+'').then(function(r){return r.json();}).then(function(d){renderAll(d);}).catch(function(e){$('main-loading').innerHTML='⚠️ Failed to load: '+e.message;});}
 
 function renderAll(d){
   $('main-loading').style.display='none';

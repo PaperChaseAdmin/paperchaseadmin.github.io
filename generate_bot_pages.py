@@ -23,6 +23,7 @@ def h_escape(v):
 DETAIL_TMPL = """<!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>BOTNAME · AI Trading Bot · PaperChase</title>
@@ -162,7 +163,6 @@ DETAIL_TMPL = """<!DOCTYPE html>
 /* ── Empty state ── */
 .empty{text-align:center;padding:40px;color:var(--pc-text-3);font-size:13px}
 </style>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
   const BOT_ID=JSBOTID,BOT_COLOR=JSBOTCOLOR,BOT_NAME=JSBOTNAME;
   const BOT_AVATAR=JSBOTAVATAR,BOT_BIO=JSBOTBIO,BOT_STRATEGY=JSBOTSTRATEGY;
@@ -213,7 +213,7 @@ DETAIL_TMPL = """<!DOCTYPE html>
 </div>
 </div>
 
-<script src="/assets/bot-detail.js"></script>
+<script src="/trading-arena/assets/bot-detail.js"></script>
 <script>
 async function checkFavStatus() {
   if (!window.PaperChaseAuth) return;
@@ -242,6 +242,7 @@ checkFavStatus();
 RECORDS_TMPL = """<!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>BOTNAME Trade Records · PaperChase</title>
@@ -324,7 +325,7 @@ RECORDS_TMPL = """<!DOCTYPE html>
 <script>
   const BOT_ID=JSBOTID,BOT_COLOR=JSBOTCOLOR,BOT_NAME=JSBOTNAME,BOT_AVATAR=JSBOTAVATAR;
 </script>
-<script src="/assets/records.js"></script>
+<script src="/trading-arena/assets/records.js"></script>
 </body></html>"""
 
 # ── GENERATE ──

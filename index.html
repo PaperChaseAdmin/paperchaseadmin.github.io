@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -60,7 +61,7 @@
   .sent-grid { grid-template-columns: 1fr; }
 }
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238177146851721" crossorigin="anonymous"></script>
+<!-- AdSense removed 2026-08-14 (account not approved yet). Re-add when approved: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238177146851721" crossorigin="anonymous"></script> -->
 </head>
 <body>
 <nav class="topbar"><div class="topbar-inner">
@@ -137,7 +138,6 @@
     <div style="display:flex;flex-direction:column;gap:16px">
       <div class="news-card">
         <div style="margin:20px 0">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5238177146851721" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <h3>Crypto News</h3>
@@ -267,7 +267,7 @@ if (typeof window.startCountdown === 'function') {
 async function refreshData() {
   try {
     // ── Market data ──
-    var r = await fetch('https://paperchase.online/data/market_data.json?t=' + Date.now());
+    var r = await fetch('https://paperchase.online/data/market_data.json');
     if (!r.ok) return;
     var d = await r.json();
     var st = d.stocks || {};

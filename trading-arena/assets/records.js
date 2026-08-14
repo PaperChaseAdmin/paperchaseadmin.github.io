@@ -54,7 +54,7 @@ function renderTable() {
 document.addEventListener('DOMContentLoaded', async () => {
   document.title = (typeof BOT_NAME !== 'undefined' ? BOT_NAME : 'Bot') + ' Records · PaperChase';
   try {
-    const data = await fetch(BASE2 + 'trades.json?t=' + Date.now()).then(r => r.json());
+    const data = await fetch(BASE2 + 'trades.json').then(r => r.json());
     allTrades = data.trades || [];
   } catch (e) {
     console.error('Records load error:', e);
