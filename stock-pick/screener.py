@@ -298,6 +298,10 @@ def process_stock(ticker: str) -> dict | None:
         # revenueGrowth from yfinance is a decimal (e.g. 0.15 = 15%)
         if revenue_growth is not None:
             revenue_growth *= 100
+            # yfinance sometimes returns already-percent or glitched values
+            # (e.g. COF showed 1111% — real ~8%) — reject anything absurd
+            if revenue_growth < -100 or revenue_growth > 500:
+                revenue_growth = None
 
         fcf = safe_float(info.get("freeCashflow"))
         total_debt = safe_float(info.get("totalDebt"))
