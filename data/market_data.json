@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T20:09:56Z",
+  "updated_at": "2026-08-15T21:10:22Z",
   "crypto": {
     "fear_greed": {
       "value": 34,
@@ -12,76 +12,137 @@
         "symbol": "BTC",
         "name": "Bitcoin",
         "price_usd": 63043,
-        "change_24h": 0.4,
-        "market_cap": 1265338016146,
-        "volume_24h": 11276946485
+        "change_24h": 0.2,
+        "market_cap": 1265328395011,
+        "volume_24h": 10993611730
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1882.34,
-        "change_24h": 0.5,
-        "market_cap": 227167242652,
-        "volume_24h": 2933825063
+        "price_usd": 1881.82,
+        "change_24h": 0.2,
+        "market_cap": 227097332820,
+        "volume_24h": 2891505299
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 610.69,
-        "change_24h": 0.9,
-        "market_cap": 81321879039,
-        "volume_24h": 426819477
+        "price_usd": 609.88,
+        "change_24h": 0.7,
+        "market_cap": 81219450091,
+        "volume_24h": 428213736
       },
       {
         "symbol": "XRP",
         "name": "XRP",
         "price_usd": 1.003,
-        "change_24h": 0.4,
-        "market_cap": 62872730255,
-        "volume_24h": 593284262
+        "change_24h": 0.6,
+        "market_cap": 62857628644,
+        "volume_24h": 568319444
       },
       {
         "symbol": "SOL",
         "name": "Solana",
         "price_usd": 75.48,
-        "change_24h": 0.9,
-        "market_cap": 43987246414,
-        "volume_24h": 683586298
+        "change_24h": 0.6,
+        "market_cap": 43981592806,
+        "volume_24h": 673540017
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.069871,
-        "change_24h": 0.4,
-        "market_cap": 10865582459,
-        "volume_24h": 158883071
+        "price_usd": 0.069899,
+        "change_24h": 0.1,
+        "market_cap": 10867938307,
+        "volume_24h": 160075332
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 9.57,
-        "change_24h": 7.1,
-        "market_cap": 7159476738,
-        "volume_24h": 505579776
+        "price_usd": 9.55,
+        "change_24h": 6.5,
+        "market_cap": 7143905812,
+        "volume_24h": 504836362
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.177924,
-        "change_24h": -0.6,
-        "market_cap": 6647434964,
-        "volume_24h": 128305013
+        "price_usd": 0.177624,
+        "change_24h": -1.1,
+        "market_cap": 6635117995,
+        "volume_24h": 127398250
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
         "price_usd": 6.49,
-        "change_24h": 1.3,
-        "market_cap": 2803594500,
-        "volume_24h": 223796442
+        "change_24h": 1.0,
+        "market_cap": 2802301529,
+        "volume_24h": 228876154
       }
     ],
-    "top_mentioned": [],
+    "top_mentioned": [
+      {
+        "symbol": "BTC",
+        "mentions": 2,
+        "price_usd": 63043,
+        "change_24h": 0.2
+      },
+      {
+        "symbol": "SOL",
+        "mentions": 2,
+        "price_usd": 75.48,
+        "change_24h": 0.6
+      },
+      {
+        "symbol": "LINK",
+        "mentions": 1,
+        "price_usd": 9.55,
+        "change_24h": 6.5
+      },
+      {
+        "symbol": "ETH",
+        "mentions": 0,
+        "price_usd": 1881.82,
+        "change_24h": 0.2
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 0,
+        "price_usd": 609.88,
+        "change_24h": 0.7
+      },
+      {
+        "symbol": "XRP",
+        "mentions": 0,
+        "price_usd": 1.003,
+        "change_24h": 0.6
+      },
+      {
+        "symbol": "ADA",
+        "mentions": 0,
+        "price_usd": 0.177624,
+        "change_24h": -1.1
+      },
+      {
+        "symbol": "DOGE",
+        "mentions": 0,
+        "price_usd": 0.069899,
+        "change_24h": 0.1
+      },
+      {
+        "symbol": "AVAX",
+        "mentions": 0,
+        "price_usd": 6.49,
+        "change_24h": 1.0
+      },
+      {
+        "symbol": "TON",
+        "mentions": 0,
+        "price_usd": null,
+        "change_24h": null
+      }
+    ],
     "news": [
       {
         "title": "Robot maker Unitree is going public. Hyperliquid traders see 4x upside from IPO price",
@@ -184,6 +245,18 @@
         "color": "red"
       },
       {
+        "title": "Trump to meet Coinbase, Ripple and crypto leaders as CLARITY Act odds collapse to 10%",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/trump-to-meet-coinbase-ripple-and-crypto-leaders-as-clarity-act-odds-collapse-to-10/",
+        "published": "Sat, 15 Aug 2026 20:40:13 +0000",
+        "assets": [
+          "XRP"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
         "title": "Crypto crash liquidations face massive data gap as public records contradict $18B Solana claim",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/crypto-crash-liquidations-face-massive-data-gap-as-public-records-contradict-18b-solana-claim/",
@@ -206,26 +279,37 @@
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
-      },
-      {
-        "title": "How a public crypto firm’s 4.3% AI gain hides millions in balance sheet losses",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/how-a-public-crypto-firms-4-3-ai-gain-hides-millions-in-balance-sheet-losses/",
-        "published": "Sat, 15 Aug 2026 15:20:09 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -0.333,
-        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": 0.167,
+      "score": 0.194,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [],
+    "reddit": [
+      {
+        "subreddit": "r/CryptoCurrency",
+        "mentions": {
+          "BTC": 2,
+          "SOL": 2,
+          "LINK": 1,
+          "ETH": 0,
+          "BNB": 0,
+          "XRP": 0,
+          "ADA": 0,
+          "DOGE": 0,
+          "AVAX": 0,
+          "TON": 0
+        },
+        "activity_score": 100,
+        "top_post": "Daily Crypto Discussion - August 14, 2026 (GMT+0)",
+        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vomaz1/daily_crypto_discussion_august_14_2026_gmt0/",
+        "top_post_score": 0,
+        "posts": 25
+      }
+    ],
     "reddit_summary": {
       "outlook": "Mixed",
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
@@ -236,73 +320,73 @@
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 143,
+      "active_threads": 145,
       "mentions": {
-        "BTC": 23,
+        "BTC": 21,
         "XRP": 11,
         "BNB": 1
       },
-      "bullish_hits": 92,
-      "bearish_hits": 58,
-      "bullish_pct": 61,
+      "bullish_hits": 90,
+      "bearish_hits": 56,
+      "bullish_pct": 62,
       "top_coin": "BTC",
       "top_posts": [
         "/gme/ - comfy wednesday after-hours and late night edition &gt;basic information &gt;gme.cac site redacted due to aids h",
-        "/smg/ stock market general hnggggggggggg ahhhhhhhhhhhhhhhhhhhhhhhhhh!!!!!!!! !!!!!!!!!!!!!!!!! edition &gt;educational s",
         "/smg/ stock market general friday edition &gt;educational sites: https://www.investopedia.com https://www.khanacademy.or",
         "/smg/ stock market general rddt won &gt;educational sites: https://www.investopedia.com https://www.khanacademy.org/econ",
-        "/pmg/ - precious metals general nigger silver &gt;why precious metals? https://youtu.be/i3s4rl6ehii https://youtu.be/gks"
+        "/pmg/ - precious metals general nigger silver &gt;why precious metals? https://youtu.be/i3s4rl6ehii https://youtu.be/gks",
+        "/xmr/ monero general welcome to /xmr/ monero general, dedicated to the discussion of the world&#039;s most widely adopte"
       ]
     },
     "cg_trending": [
       {
+        "symbol": "NIL",
+        "name": "Nillion",
+        "rank": 698,
+        "score": 0,
+        "change_24h": 7.51
+      },
+      {
         "symbol": "PENGU",
         "name": "Pudgy Penguins",
         "rank": 108,
-        "score": 0,
-        "change_24h": -0.51
-      },
-      {
-        "symbol": "COW",
-        "name": "CoW Protocol",
-        "rank": 281,
         "score": 1,
-        "change_24h": 40.43
+        "change_24h": -0.8
       },
       {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "rank": 1,
+        "symbol": "VVV",
+        "name": "Venice Token",
+        "rank": 88,
         "score": 2,
-        "change_24h": 0.26
+        "change_24h": 0.1
       },
       {
-        "symbol": "JUP",
-        "name": "Jupiter",
-        "rank": 91,
+        "symbol": "AVAX",
+        "name": "Avalanche",
+        "rank": 30,
         "score": 3,
-        "change_24h": -0.72
+        "change_24h": 1.17
       },
       {
-        "symbol": "LINK",
-        "name": "Chainlink",
-        "rank": 17,
+        "symbol": "MORPHO",
+        "name": "Morpho",
+        "rank": 55,
         "score": 4,
-        "change_24h": 6.67
-      },
-      {
-        "symbol": "VIRTUAL",
-        "name": "Virtuals Protocol",
-        "rank": 110,
-        "score": 5,
         "change_24h": 1.23
       },
       {
-        "symbol": "SOL",
-        "name": "Solana",
-        "rank": 7,
+        "symbol": "SUI",
+        "name": "Sui",
+        "rank": 32,
+        "score": 5,
+        "change_24h": 0.28
+      },
+      {
+        "symbol": "FET",
+        "name": "Artificial Superintelligence Alliance",
+        "rank": 128,
         "score": 6,
-        "change_24h": 0.71
+        "change_24h": -3.9
       }
     ]
   },
@@ -367,11 +451,6 @@
         "change_24h": -0.86
       },
       {
-        "symbol": "AMD",
-        "price_usd": 514.39,
-        "change_24h": 6.5
-      },
-      {
         "symbol": "PLTR",
         "price_usd": 174.04,
         "change_24h": -2.78
@@ -384,6 +463,16 @@
     ],
     "top_mentioned": [],
     "news": [
+      {
+        "title": "Bally’s Warns of Debt Covenant Breach Risk as It Seeks New Funds",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-14/bally-s-warns-of-going-concern-doubt-as-it-seeks-fresh-liquidity",
+        "published": "Fri, 14 Aug 2026 23:48:08 GMT",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
       {
         "title": "Bond Traders Agonize Over AI Companies’ $70 Billion of Shadow Credit Backstops",
         "source": "Bloomberg",
@@ -405,16 +494,6 @@
         "color": "red"
       },
       {
-        "title": "Pointed! Bloomberg's Weekly News Quiz For Risk-Takers",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-15/pointed-bloomberg-s-weekly-news-quiz-for-risk-takers-video",
-        "published": "Sat, 15 Aug 2026 15:37:06 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
         "title": "Depleted strategic oil reserve nears level that raises concerns about damage to caverns, operations",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/08/15/strategic-petroleum-reserve-spr-oil-iran-war-caverns.html",
@@ -425,23 +504,31 @@
         "color": "red"
       },
       {
+        "title": "Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
+        "published": "Sat, 15 Aug 2026 14:45:31 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
+      },
+      {
         "title": "Iran rebuffs Trump's claim over Strait of Hormuz amid report of another ship being struck",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/08/15/iran-rebuffs-trumps-claim-over-hormuz-amid-report-of-ship-strike.html",
-        "published": "Sat, 15 Aug 2026 11:00:36 GMT",
+        "published": "Sat, 15 Aug 2026 20:38:29 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Nvidia discloses $21 billion stake in SpaceX at end of second quarter",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/14/nvidia-discloses-21-billion-stake-in-spacex-at-end-of-second-quarter.html",
-        "published": "Fri, 14 Aug 2026 21:45:19 GMT",
-        "assets": [
-          "NVDA"
-        ],
+        "title": "‘It’s a double-edged sword’: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/its-a-double-edged-sword-my-husband-got-a-42-000-bonus-will-it-wipe-out-our-affordable-care-act-subsidy-32db285e?mod=mw_rss_topstories",
+        "published": "Sat, 15 Aug 2026 20:30:00 GMT",
+        "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
@@ -461,16 +548,6 @@
         "source": "MarketWatch",
         "url": "https://www.marketwatch.com/story/think-interest-rates-are-high-now-these-charts-offers-a-different-perspective-ae5f28c6?mod=mw_rss_topstories",
         "published": "Sat, 15 Aug 2026 19:01:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Owning a home is overrated. Renting is now often a much better money move.",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/owning-a-home-is-overrated-renting-is-now-often-a-much-better-money-move-711288a6?mod=mw_rss_topstories",
-        "published": "Sat, 15 Aug 2026 18:23:00 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
@@ -507,6 +584,16 @@
         "color": "yellow"
       },
       {
+        "title": "Trump administration tells Supreme Court that ballroom construction must go on despite order to stop, citing recent missile threat on Air Force One",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/15/trump-supreme-court-white-house-ballroom-construction-missile-threat-air-force-one/",
+        "published": "Sat, 15 Aug 2026 20:04:07 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
         "title": "‘I’ll never apologize’ — Trump brushes off Iran war’s impact on oil prices and calls aircraft carrier’s 240+ days at sea ‘not nearly long enough’",
         "source": "Fortune",
         "url": "https://fortune.com/2026/08/15/trump-iran-war-oil-prices-abraham-lincoln-aircraft-carriers-record-time-sea/",
@@ -525,83 +612,73 @@
         "sentiment": "Bullish",
         "score": 0.6,
         "color": "green"
-      },
-      {
-        "title": "Iran business leader admits U.S. blockade will inflict more economic damage than war, and the ‘worst thing that could happen’ is trying to evade it",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/08/15/iran-economic-crisis-us-naval-blockade-war-sanctions-hormuz-oil/",
-        "published": "Sat, 15 Aug 2026 17:32:32 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": -0.093,
+      "score": -0.138,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Will Sevilla FC win on 2026-08-15?",
-        "volume_24h": 1755765,
-        "yes_price": 0.16,
+        "volume_24h": 1870678,
+        "yes_price": 0.3,
         "url": "https://polymarket.com/market/lal-sev-ray-2026-08-15-sev"
       },
       {
         "title": "Will Rayo Vallecano de Madrid win on 2026-08-15?",
-        "volume_24h": 249338,
-        "yes_price": 0.57,
+        "volume_24h": 411643,
+        "yes_price": 0.15,
         "url": "https://polymarket.com/market/lal-sev-ray-2026-08-15-ray"
       },
       {
         "title": "US announces end of Iranian blockade by August 31, 2026?",
-        "volume_24h": 182400,
+        "volume_24h": 178944,
         "yes_price": 0.21,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729"
       },
       {
         "title": "Israel x Iran ceasefire continues through August 31?",
-        "volume_24h": 165571,
+        "volume_24h": 160102,
         "yes_price": 0.93,
         "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-31-20260716224448970-754-896-823"
       },
       {
-        "title": "US-Iran 60 day negotiation period extended?",
-        "volume_24h": 141111,
-        "yes_price": 0.17,
-        "url": "https://polymarket.com/market/us-iran-60-day-negotiation-period-extended-20260624044855448"
-      },
-      {
-        "title": "Will Fenerbahçe SK win on 2026-08-15?",
-        "volume_24h": 136116,
-        "yes_price": 0.14,
-        "url": "https://polymarket.com/market/tur-gen-fen-2026-08-15-fen"
-      },
-      {
-        "title": "US announces end of Iranian blockade by August 22, 2026?",
-        "volume_24h": 125896,
-        "yes_price": 0.1,
-        "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-22-2026"
-      },
-      {
         "title": "Will Iran announce withdrawal from MOU negotiations by August 15?",
-        "volume_24h": 125758,
+        "volume_24h": 129974,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/will-iran-announce-withdrawal-from-mou-negotiations-by-august-15-881-867"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 125618,
+        "volume_24h": 126363,
         "yes_price": 0.14,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
       },
       {
+        "title": "US announces end of Iranian blockade by August 22, 2026?",
+        "volume_24h": 125616,
+        "yes_price": 0.1,
+        "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-22-2026"
+      },
+      {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 118971,
+        "volume_24h": 118209,
         "yes_price": 0.73,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
+      },
+      {
+        "title": "Will TSG Hoffenheim win on 2026-08-16?",
+        "volume_24h": 115432,
+        "yes_price": 0.13,
+        "url": "https://polymarket.com/market/clf-tot-tsg-2026-08-16-tsg"
+      },
+      {
+        "title": "US-Iran 60 day negotiation period extended?",
+        "volume_24h": 111615,
+        "yes_price": 0.17,
+        "url": "https://polymarket.com/market/us-iran-60-day-negotiation-period-extended-20260624044855448"
       }
     ],
     "polymarket_summary": {
@@ -615,7 +692,7 @@
     },
     "news_summary": {
       "outlook": "Bearish",
-      "summary": "Bearish: 0 bullish vs 9 bearish signals detected across stock/finance news data."
+      "summary": "Bearish: 4 bullish vs 10 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -710,7 +787,7 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 50
+          "interest_score": 51
         },
         {
           "keyword": "Ethereum",
@@ -718,11 +795,11 @@
         },
         {
           "keyword": "Solana",
-          "interest_score": 9
+          "interest_score": 10
         },
         {
           "keyword": "crypto",
-          "interest_score": 33
+          "interest_score": 36
         }
       ]
     }
