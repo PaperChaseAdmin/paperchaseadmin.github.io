@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T06:20:19Z",
+  "updated_at": "2026-08-16T07:22:12Z",
   "crypto": {
     "fear_greed": {
       "value": 34,
@@ -11,77 +11,138 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 62997,
-        "change_24h": -0.1,
-        "market_cap": 1264389409121,
-        "volume_24h": 9409553438
+        "price_usd": 62999,
+        "change_24h": 0,
+        "market_cap": 1264467471114,
+        "volume_24h": 8976850906
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1878.33,
-        "change_24h": -0.2,
-        "market_cap": 226677879152,
-        "volume_24h": 2746102981
+        "price_usd": 1878.78,
+        "change_24h": 0,
+        "market_cap": 226738296275,
+        "volume_24h": 2738000308
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 604.71,
-        "change_24h": -0.8,
-        "market_cap": 80530921900,
-        "volume_24h": 442996335
+        "price_usd": 605.04,
+        "change_24h": -0.9,
+        "market_cap": 80571168485,
+        "volume_24h": 441336694
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 0.999761,
-        "change_24h": -0.5,
-        "market_cap": 62661359773,
-        "volume_24h": 392171808
+        "price_usd": 1.001,
+        "change_24h": -0.4,
+        "market_cap": 62718746499,
+        "volume_24h": 389207606
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 75.29,
-        "change_24h": -0.2,
-        "market_cap": 43874980544,
-        "volume_24h": 583671260
+        "price_usd": 75.37,
+        "change_24h": 0,
+        "market_cap": 43927593816,
+        "volume_24h": 582089626
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.069655,
-        "change_24h": -0.9,
-        "market_cap": 10831621503,
-        "volume_24h": 151494265
+        "price_usd": 0.069746,
+        "change_24h": -0.6,
+        "market_cap": 10847157084,
+        "volume_24h": 153378135
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 9.36,
+        "price_usd": 9.35,
         "change_24h": -1.3,
-        "market_cap": 7006599968,
-        "volume_24h": 330472353
+        "market_cap": 6991815717,
+        "volume_24h": 319651403
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.176751,
-        "change_24h": -1.9,
-        "market_cap": 6603567024,
-        "volume_24h": 119130253
+        "price_usd": 0.176841,
+        "change_24h": -1.6,
+        "market_cap": 6606586769,
+        "volume_24h": 119024558
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.32,
-        "change_24h": -5.7,
-        "market_cap": 2730533206,
-        "volume_24h": 168663048
+        "price_usd": 6.33,
+        "change_24h": -5.4,
+        "market_cap": 2731145259,
+        "volume_24h": 168702576
       }
     ],
-    "top_mentioned": [],
+    "top_mentioned": [
+      {
+        "symbol": "BTC",
+        "mentions": 2,
+        "price_usd": 62999,
+        "change_24h": 0
+      },
+      {
+        "symbol": "ETH",
+        "mentions": 0,
+        "price_usd": 1878.78,
+        "change_24h": 0
+      },
+      {
+        "symbol": "SOL",
+        "mentions": 0,
+        "price_usd": 75.37,
+        "change_24h": 0
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 0,
+        "price_usd": 605.04,
+        "change_24h": -0.9
+      },
+      {
+        "symbol": "XRP",
+        "mentions": 0,
+        "price_usd": 1.001,
+        "change_24h": -0.4
+      },
+      {
+        "symbol": "ADA",
+        "mentions": 0,
+        "price_usd": 0.176841,
+        "change_24h": -1.6
+      },
+      {
+        "symbol": "DOGE",
+        "mentions": 0,
+        "price_usd": 0.069746,
+        "change_24h": -0.6
+      },
+      {
+        "symbol": "AVAX",
+        "mentions": 0,
+        "price_usd": 6.33,
+        "change_24h": -5.4
+      },
+      {
+        "symbol": "LINK",
+        "mentions": 0,
+        "price_usd": 9.35,
+        "change_24h": -1.3
+      },
+      {
+        "symbol": "TON",
+        "mentions": 0,
+        "price_usd": null,
+        "change_24h": null
+      }
+    ],
     "news": [
       {
         "title": "Robot maker Unitree is going public. Hyperliquid traders see 4x upside from IPO price",
@@ -227,7 +288,28 @@
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [],
+    "reddit": [
+      {
+        "subreddit": "r/CryptoCurrency",
+        "mentions": {
+          "BTC": 2,
+          "ETH": 0,
+          "SOL": 0,
+          "BNB": 0,
+          "XRP": 0,
+          "ADA": 0,
+          "DOGE": 0,
+          "AVAX": 0,
+          "LINK": 0,
+          "TON": 0
+        },
+        "activity_score": 100,
+        "top_post": "Daily Crypto Discussion - August 15, 2026 (GMT+0)",
+        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vpgqr3/daily_crypto_discussion_august_15_2026_gmt0/",
+        "top_post_score": 0,
+        "posts": 25
+      }
+    ],
     "reddit_summary": {
       "outlook": "Mixed",
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
@@ -238,13 +320,13 @@
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 144,
+      "active_threads": 143,
       "mentions": {
         "BTC": 20,
         "XRP": 11,
-        "BNB": 1
+        "ETH": 1
       },
-      "bullish_hits": 82,
+      "bullish_hits": 84,
       "bearish_hits": 51,
       "bullish_pct": 62,
       "top_coin": "BTC",
@@ -258,53 +340,53 @@
     },
     "cg_trending": [
       {
-        "symbol": "AKE",
-        "name": "Akedo",
-        "rank": 145,
+        "symbol": "PENGU",
+        "name": "Pudgy Penguins",
+        "rank": 107,
         "score": 0,
-        "change_24h": -1.22
+        "change_24h": -0.91
       },
       {
-        "symbol": "RON",
-        "name": "Ronin",
-        "rank": 496,
+        "symbol": "FET",
+        "name": "Artificial Superintelligence Alliance",
+        "rank": 128,
         "score": 1,
-        "change_24h": 4.93
-      },
-      {
-        "symbol": "PI",
-        "name": "Pi Network",
-        "rank": 66,
-        "score": 2,
-        "change_24h": -2.65
-      },
-      {
-        "symbol": "ACE",
-        "name": "Fusionist",
-        "rank": 836,
-        "score": 3,
-        "change_24h": -39.97
-      },
-      {
-        "symbol": "COW",
-        "name": "CoW Protocol",
-        "rank": 286,
-        "score": 4,
-        "change_24h": 33.45
+        "change_24h": -6.89
       },
       {
         "symbol": "ONDO",
         "name": "Ondo",
         "rank": 46,
-        "score": 5,
-        "change_24h": -1.45
+        "score": 2,
+        "change_24h": -1.08
       },
       {
-        "symbol": "CASHCAT",
-        "name": "Cash Cat",
-        "rank": 218,
+        "symbol": "RON",
+        "name": "Ronin",
+        "rank": 492,
+        "score": 3,
+        "change_24h": 4.65
+      },
+      {
+        "symbol": "AKE",
+        "name": "Akedo",
+        "rank": 142,
+        "score": 4,
+        "change_24h": 8.67
+      },
+      {
+        "symbol": "SOL",
+        "name": "Solana",
+        "rank": 7,
+        "score": 5,
+        "change_24h": 0.03
+      },
+      {
+        "symbol": "PI",
+        "name": "Pi Network",
+        "rank": 67,
         "score": 6,
-        "change_24h": -1.14
+        "change_24h": -2.73
       }
     ]
   },
@@ -477,34 +559,34 @@
         "color": "yellow"
       },
       {
-        "title": "Teekay Tankers: Record Earnings And The Bull Case Is Still Intact",
+        "title": "Logan Energy: Earnings Surprise",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4937094-teekay-tankers-stock-record-earnings-bull-case-is-intact?source=feed_all_articles",
-        "published": "Sun, 16 Aug 2026 01:51:01 -0400",
+        "url": "https://seekingalpha.com/article/4937101-logan-energy-stock-earnings-surprise?source=feed_all_articles",
+        "published": "Sun, 16 Aug 2026 03:05:14 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Ituran Location and Control Ltd.: Strong Q2 Results Reveal The Data Opportunity Hidden Inside Its Telematics Network",
+        "title": "UTG: Retirees Got A Well-Supported Income Raise",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4937093-ituran-stock-strong-q2-reveal-data-opportunity-hidden-telematics-network?source=feed_all_articles",
-        "published": "Sun, 16 Aug 2026 01:06:09 -0400",
+        "url": "https://seekingalpha.com/article/4937100-utg-retirees-got-a-well-supported-income-raise?source=feed_all_articles",
+        "published": "Sun, 16 Aug 2026 03:04:19 -0400",
         "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
-        "title": "Treasury Yields Snapshot: August 14, 2026",
+        "title": "Xunlei Limited: What Needs To Happen If The Stock Is To Get Going",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4937000-treasury-yields-snapshot-august-14-2026?source=feed_all_articles",
-        "published": "Sun, 16 Aug 2026 00:30:00 -0400",
+        "url": "https://seekingalpha.com/article/4937099-xunlei-limited-stock-what-to-happen-if-stock-to-get-going?source=feed_all_articles",
+        "published": "Sun, 16 Aug 2026 02:50:52 -0400",
         "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
         "title": "Seven ways college students can manage their finances — because money decisions impact financial security when starting a first job after graduation",
@@ -541,70 +623,70 @@
       }
     ],
     "news_sentiment": {
-      "score": -0.111,
+      "score": -0.244,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Israel x Iran ceasefire continues through August 31?",
-        "volume_24h": 221365,
+        "volume_24h": 226059,
         "yes_price": 0.94,
         "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-31-20260716224448970-754-896-823"
       },
       {
         "title": "Will Iran announce withdrawal from MOU negotiations by August 15?",
-        "volume_24h": 195910,
-        "yes_price": 0.04,
+        "volume_24h": 200736,
+        "yes_price": 0.03,
         "url": "https://polymarket.com/market/will-iran-announce-withdrawal-from-mou-negotiations-by-august-15-881-867"
       },
       {
         "title": "Will Villarreal CF win on 2026-08-16?",
-        "volume_24h": 167562,
+        "volume_24h": 187917,
         "yes_price": 0.47,
         "url": "https://polymarket.com/market/lal-rrc-vil-2026-08-16-vil"
       },
       {
         "title": "US announces end of Iranian blockade by August 31, 2026?",
-        "volume_24h": 158572,
+        "volume_24h": 159573,
         "yes_price": 0.18,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729"
       },
       {
         "title": "US announces end of Iranian blockade by August 22, 2026?",
-        "volume_24h": 145173,
+        "volume_24h": 140021,
         "yes_price": 0.07,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-22-2026"
       },
       {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 118555,
+        "volume_24h": 118701,
         "yes_price": 0.73,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
         "title": "Will TSG Hoffenheim win on 2026-08-16?",
-        "volume_24h": 117512,
-        "yes_price": 0.14,
+        "volume_24h": 117668,
+        "yes_price": 0.15,
         "url": "https://polymarket.com/market/clf-tot-tsg-2026-08-16-tsg"
       },
       {
         "title": "Will Renan Santos win the 2026 Brazilian presidential election?",
-        "volume_24h": 92843,
-        "yes_price": 0.06,
+        "volume_24h": 107263,
+        "yes_price": 0.05,
         "url": "https://polymarket.com/market/will-renan-santos-win-the-2026-brazilian-presidential-election"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by December 31?",
-        "volume_24h": 87993,
+        "volume_24h": 87977,
         "yes_price": 0.45,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
       },
       {
-        "title": "Will Elon Musk post 140-159 tweets from August 11 to August 18, 2026?",
-        "volume_24h": 76261,
-        "yes_price": 0.03,
-        "url": "https://polymarket.com/market/elon-musk-of-tweets-august-11-august-18-140-159"
+        "title": "Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?",
+        "volume_24h": 83655,
+        "yes_price": 0.66,
+        "url": "https://polymarket.com/market/will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election"
       }
     ],
     "polymarket_summary": {
@@ -713,11 +795,11 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 54
+          "interest_score": 80
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 10
+          "interest_score": 14
         },
         {
           "keyword": "Solana",
@@ -725,7 +807,7 @@
         },
         {
           "keyword": "crypto",
-          "interest_score": 52
+          "interest_score": 48
         }
       ]
     }
@@ -737,29 +819,29 @@
       "type": "Bond Income",
       "price_usd": 47.36,
       "change_1d": -0.08,
-      "change_1w": 0.08,
-      "change_1m": 0.18,
-      "high_3m": 47.44,
-      "low_3m": 46.68,
+      "change_1w": 0.3,
+      "change_1m": 0.45,
+      "high_3m": 47.4,
+      "low_3m": 46.41,
       "week52_high": 48.89,
       "week52_low": 46.84,
-      "rsi": 61.0,
+      "rsi": 72.8,
       "div_yield": 7.55,
       "last_div": null,
       "outlook": {
-        "label": "Mild Bullish",
-        "color": "green",
-        "score": 1,
+        "label": "Neutral",
+        "color": "yellow",
+        "score": 0,
         "bull_count": 2,
-        "bear_count": 1,
-        "total": 5,
+        "bear_count": 2,
+        "total": 6,
         "confidence": "Low",
         "reasons": [
           "Price above 20-day moving average ↑",
-          "Short-term trend below long-term (bearish cross) ↓",
-          "RSI 61.0 — Above neutral, mild upward momentum ↑",
-          "5-day momentum +0.1% — consolidating sideways →",
-          "1-month return +0.2% — range-bound"
+          "Short-term trend above long-term (bullish cross) ↑",
+          "RSI 72.8 — Overbought zone, historically signals a pullback ↓",
+          "5-day momentum +0.3% — consolidating sideways →",
+          "1-month return +0.5% — range-bound"
         ]
       }
     },
