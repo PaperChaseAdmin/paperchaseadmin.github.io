@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T15:10:31Z",
+  "updated_at": "2026-08-16T16:10:31Z",
   "crypto": {
     "fear_greed": {
       "value": 34,
@@ -11,78 +11,149 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 63059,
-        "change_24h": 0.1,
-        "market_cap": 1265664305945,
-        "volume_24h": 8632538087
+        "price_usd": 63084,
+        "change_24h": 0.2,
+        "market_cap": 1266137049539,
+        "volume_24h": 8667069134
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1881.82,
+        "price_usd": 1882.51,
         "change_24h": 0,
-        "market_cap": 227100398861,
-        "volume_24h": 2596020314
+        "market_cap": 227186590980,
+        "volume_24h": 2660579016
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 607.36,
-        "change_24h": -0.3,
-        "market_cap": 80880241387,
-        "volume_24h": 457062367
+        "price_usd": 606.45,
+        "change_24h": -0.6,
+        "market_cap": 80753026336,
+        "volume_24h": 451186146
       },
       {
         "symbol": "XRP",
         "name": "XRP",
         "price_usd": 1.001,
-        "change_24h": -0.1,
-        "market_cap": 62718357343,
-        "volume_24h": 370452581
+        "change_24h": 0,
+        "market_cap": 62726193134,
+        "volume_24h": 370681990
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 75.37,
-        "change_24h": -0.2,
-        "market_cap": 43921545977,
-        "volume_24h": 522487461
+        "price_usd": 75.49,
+        "change_24h": 0.1,
+        "market_cap": 43990631328,
+        "volume_24h": 536936878
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.070013,
-        "change_24h": -0.1,
-        "market_cap": 10889090834,
-        "volume_24h": 161372453
+        "price_usd": 0.070027,
+        "change_24h": 0,
+        "market_cap": 10889323308,
+        "volume_24h": 166882599
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 9.35,
-        "change_24h": -1.3,
-        "market_cap": 6992392297,
-        "volume_24h": 252321073
+        "price_usd": 9.38,
+        "change_24h": -1.0,
+        "market_cap": 7013514687,
+        "volume_24h": 242938631
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.176182,
-        "change_24h": -1.5,
-        "market_cap": 6579209641,
-        "volume_24h": 120608414
+        "price_usd": 0.176794,
+        "change_24h": -1.0,
+        "market_cap": 6604570340,
+        "volume_24h": 117241138
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.41,
-        "change_24h": -2.3,
-        "market_cap": 2770329558,
-        "volume_24h": 162736759
+        "price_usd": 6.42,
+        "change_24h": -1.9,
+        "market_cap": 2771606852,
+        "volume_24h": 157396406
       }
     ],
-    "top_mentioned": [],
+    "top_mentioned": [
+      {
+        "symbol": "BTC",
+        "mentions": 2,
+        "price_usd": 63084,
+        "change_24h": 0.2
+      },
+      {
+        "symbol": "XRP",
+        "mentions": 1,
+        "price_usd": 1.001,
+        "change_24h": 0
+      },
+      {
+        "symbol": "LTC",
+        "mentions": 1,
+        "price_usd": null,
+        "change_24h": null
+      },
+      {
+        "symbol": "ETH",
+        "mentions": 0,
+        "price_usd": 1882.51,
+        "change_24h": 0
+      },
+      {
+        "symbol": "SOL",
+        "mentions": 0,
+        "price_usd": 75.49,
+        "change_24h": 0.1
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 0,
+        "price_usd": 606.45,
+        "change_24h": -0.6
+      },
+      {
+        "symbol": "ADA",
+        "mentions": 0,
+        "price_usd": 0.176794,
+        "change_24h": -1.0
+      },
+      {
+        "symbol": "DOGE",
+        "mentions": 0,
+        "price_usd": 0.070027,
+        "change_24h": 0
+      },
+      {
+        "symbol": "AVAX",
+        "mentions": 0,
+        "price_usd": 6.42,
+        "change_24h": -1.9
+      },
+      {
+        "symbol": "LINK",
+        "mentions": 0,
+        "price_usd": 9.38,
+        "change_24h": -1.0
+      }
+    ],
     "news": [
+      {
+        "title": "Crypto investors are looking past market-cap rankings and back to fundamentals",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/08/16/crypto-investors-are-looking-past-market-cap-rankings-and-back-to-fundamentals",
+        "published": "Sun, 16 Aug 2026 16:00:00 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
       {
         "title": "Crypto wallet SafePal reveals a data breach exposing nearly 40,000 customers' order info",
         "source": "CoinDesk",
@@ -103,16 +174,6 @@
         ],
         "sentiment": "Bearish",
         "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "The stablecoin yield clash that won't go away has banks, crypto battling over tradition",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition",
-        "published": "Sun, 16 Aug 2026 13:00:00 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -0.333,
         "color": "red"
       },
       {
@@ -150,6 +211,16 @@
         "color": "green"
       },
       {
+        "title": "Gemini 3.7 Flash Review: Google's Cheap Model Isn’t Dumb Anymore",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/375730/gemini-3-7-flash-review-google-cheap-model",
+        "published": "Sun, 16 Aug 2026 16:00:05 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
         "title": "People Are Turning to AI for Mental Health, California Wants It Banned",
         "source": "Decrypt",
         "url": "https://decrypt.co/375725/california-bill-ban-ai-chatbots-therapy-mental-health",
@@ -170,14 +241,14 @@
         "color": "green"
       },
       {
-        "title": "Meta Patents Cameras That Recognize Faces and Log Your Actions",
-        "source": "Decrypt",
-        "url": "https://decrypt.co/375698/meta-patents-cameras-recognize-faces-log-actions",
-        "published": "Sat, 15 Aug 2026 15:01:05 +0000",
+        "title": "Over 1.3 million staked tokens remain stranded onchain after a major validator missed its deadline to exit Aztec",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/over-1-3-million-staked-tokens-remain-stranded-onchain-after-a-major-validator-missed-its-deadline-to-exit-aztec/",
+        "published": "Sun, 16 Aug 2026 15:30:52 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
         "title": "A $48 billion Bitcoin leverage trap is about to trigger a massive forced exit the moment price boundaries break",
@@ -202,46 +273,55 @@
         "sentiment": "Bearish",
         "score": -0.5,
         "color": "red"
-      },
-      {
-        "title": "Texas refuses to sell as its $10 million Bitcoin bet sinks to $6.6 million",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/texas-refuses-to-sell-as-its-10-million-bitcoin-bet-sinks-to-6-6-million/",
-        "published": "Sun, 16 Aug 2026 12:00:34 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": -0.069,
+      "score": 0.042,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [],
+    "reddit": [
+      {
+        "subreddit": "r/CryptoCurrency",
+        "mentions": {
+          "BTC": 2,
+          "XRP": 1,
+          "LTC": 1,
+          "ETH": 0,
+          "SOL": 0,
+          "BNB": 0,
+          "ADA": 0,
+          "DOGE": 0,
+          "AVAX": 0,
+          "LINK": 0
+        },
+        "activity_score": 100,
+        "top_post": "Daily Crypto Discussion - August 15, 2026 (GMT+0)",
+        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vpgqr3/daily_crypto_discussion_august_15_2026_gmt0/",
+        "top_post_score": 0,
+        "posts": 25
+      }
+    ],
     "reddit_summary": {
       "outlook": "Mixed",
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
     },
     "news_summary": {
       "outlook": "Bullish",
-      "summary": "Bullish: 11 bullish vs 5 bearish signals detected across crypto news data."
+      "summary": "Bullish: 10 bullish vs 4 bearish signals detected across crypto news data."
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 143,
+      "active_threads": 146,
       "mentions": {
         "BTC": 17,
         "XRP": 11,
         "ETH": 2
       },
-      "bullish_hits": 86,
-      "bearish_hits": 51,
+      "bullish_hits": 87,
+      "bearish_hits": 52,
       "bullish_pct": 63,
       "top_coin": "BTC",
       "top_posts": [
@@ -256,51 +336,51 @@
       {
         "symbol": "CHIP",
         "name": "USD.AI",
-        "rank": 362,
+        "rank": 369,
         "score": 0,
-        "change_24h": 19.04
+        "change_24h": 15.79
+      },
+      {
+        "symbol": "PENGU",
+        "name": "Pudgy Penguins",
+        "rank": 108,
+        "score": 1,
+        "change_24h": 0.49
+      },
+      {
+        "symbol": "CYS",
+        "name": "Cysic",
+        "rank": 227,
+        "score": 2,
+        "change_24h": -51.42
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
         "rank": 1,
-        "score": 1,
-        "change_24h": 0.09
-      },
-      {
-        "symbol": "PENGU",
-        "name": "Pudgy Penguins",
-        "rank": 109,
-        "score": 2,
-        "change_24h": 0.28
-      },
-      {
-        "symbol": "CASHCAT",
-        "name": "Cash Cat",
-        "rank": 227,
         "score": 3,
-        "change_24h": 5.13
-      },
-      {
-        "symbol": "MARSCOIN",
-        "name": "MarsCoin",
-        "rank": 396,
-        "score": 4,
-        "change_24h": 14.34
-      },
-      {
-        "symbol": "H",
-        "name": "Humanity",
-        "rank": 140,
-        "score": 5,
-        "change_24h": -16.97
+        "change_24h": 0.06
       },
       {
         "symbol": "PLUME",
         "name": "Plume",
-        "rank": 280,
+        "rank": 281,
+        "score": 4,
+        "change_24h": -1.01
+      },
+      {
+        "symbol": "LINK",
+        "name": "Chainlink",
+        "rank": 16,
+        "score": 5,
+        "change_24h": -1.21
+      },
+      {
+        "symbol": "PI",
+        "name": "Pi Network",
+        "rank": 68,
         "score": 6,
-        "change_24h": 0.45
+        "change_24h": -2.7
       }
     ]
   },
@@ -383,30 +463,30 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Beef Prices Stay High as US Cattle Supply Shrinks",
+        "title": "Fed’s Internal Rate Debate Faces New Scrutiny",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-16/beef-prices-stay-high-as-us-cattle-supply-shrinks-video",
-        "published": "Sun, 16 Aug 2026 15:05:43 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Stock-Market Calm Masks Fast Shifting Investor Sentiment",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-16/stock-market-calm-masks-fast-shifting-investor-sentiment",
-        "published": "Sun, 16 Aug 2026 14:00:00 GMT",
+        "url": "https://www.bloomberg.com/news/videos/2026-08-16/fed-s-internal-rate-debate-faces-new-scrutiny-video",
+        "published": "Sun, 16 Aug 2026 15:34:42 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Longevity Boom Reaches America’s Pets",
+        "title": "Inside the Business of Ultra Luxury Travel",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-16/longevity-boom-reaches-america-s-pets-video",
-        "published": "Sun, 16 Aug 2026 13:52:42 GMT",
+        "url": "https://www.bloomberg.com/news/videos/2026-08-16/inside-the-business-of-ultra-luxury-travel-video",
+        "published": "Sun, 16 Aug 2026 15:26:07 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Donalds Looks to Build on DeSantis Legacy",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/videos/2026-08-16/donalds-looks-to-build-on-desantis-legacy-video",
+        "published": "Sun, 16 Aug 2026 15:17:25 GMT",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
@@ -473,131 +553,131 @@
         "color": "yellow"
       },
       {
-        "title": "American Century Growth Fund Q2 2026 Commentary",
+        "title": "Lord Abbett Global Equity Fund Q2 2026 Commentary",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4937146-american-century-growth-fund-q2-2026-commentary?source=feed_all_articles",
-        "published": "Sun, 16 Aug 2026 10:57:00 -0400",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Thornburg Developing World Fund Q2 2026 Commentary",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4937144-thornburg-developing-world-fund-q2-2026-commentary?source=feed_all_articles",
-        "published": "Sun, 16 Aug 2026 10:47:00 -0400",
+        "url": "https://seekingalpha.com/article/4937151-lord-abbett-global-equity-fund-q2-2026-commentary?source=feed_all_articles",
+        "published": "Sun, 16 Aug 2026 11:39:00 -0400",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "TTM Technologies: AI Has Turned This Boring PCB Maker Into A Growth Monster",
+        "title": "IYK: Consumer Staples Dashboard For August",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4937143-ttm-technologies-ai-turned-this-boring-pcb-maker-into-growth-monster?source=feed_all_articles",
-        "published": "Sun, 16 Aug 2026 10:42:16 -0400",
+        "url": "https://seekingalpha.com/article/4937149-iyk-consumer-staples-dashboard-august?source=feed_all_articles",
+        "published": "Sun, 16 Aug 2026 11:25:28 -0400",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Berkshire Hathaway: Greg Abel Gets Busier Buying",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4937147-berkshire-hathaway-greg-abel-gets-busier-buying?source=feed_all_articles",
+        "published": "Sun, 16 Aug 2026 11:09:36 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Centcom chief calls carrier’s mission ‘one of the most operationally intense and consequential of the modern era’ amid mental health and supply issues",
+        "title": "Covert mideast oil flows are keeping global prices in check",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/08/16/centcom-chief-brad-cooper-abraham-lincoln-aircraft-carrier-deployment-mental-health-supply-issues/",
-        "published": "Sun, 16 Aug 2026 14:21:09 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Gen Z is eyeing up ‘secure’ healthcare jobs to AI-proof their careers, but be warned: Chiropractors, doctors and paramedics are the unhappiest workers",
-        "source": "Fortune",
-        "url": "https://fortune.com/article/gen-z-is-eyeing-up-secure-healthcare-jobs-to-ai-proof-their-careers-but-be-warned-chiropractors-doctors-and-paramedics-are-the-unhappiest-workers/",
-        "published": "Sun, 16 Aug 2026 13:22:37 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "‘Godfather of AI’ says billionaires like Elon Musk are right about the future of work—but he predicts mass unemployment is on its way",
-        "source": "Fortune",
-        "url": "https://fortune.com/article/godfather-of-ai-geoffrey-hinton-massive-unemployment-warning-big-tech-replacing-workers/",
-        "published": "Sun, 16 Aug 2026 13:19:48 +0000",
+        "url": "https://fortune.com/2026/08/16/mideast-oil-flows-global-crude-prices-hormuz-iran-dark-tanker-shuttles/",
+        "published": "Sun, 16 Aug 2026 15:33:02 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
+      },
+      {
+        "title": "Trump’s grand plan to put American workers first may be backfiring as U.S.-born unemployment rises and wage growth stalls",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/16/trump-plan-american-workers-unemployment-rising/",
+        "published": "Sun, 16 Aug 2026 08:00:00 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Avocado pickers in Mexico restart exports as security alert is lifted but are ‘at the mercy of whatever the U.S. market and government decide’",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/16/avocado-pickers-mexico-exports-security-alert-mercy-us-market-government/",
+        "published": "Sun, 16 Aug 2026 15:24:54 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": -0.133,
+      "score": -0.067,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
-        "title": "Will Arsenal FC win on 2026-08-16?",
-        "volume_24h": 2345018,
-        "yes_price": 0.84,
-        "url": "https://polymarket.com/market/ecs-ars-mci-2026-08-16-ars"
-      },
-      {
         "title": "Will Villarreal CF win on 2026-08-16?",
-        "volume_24h": 1717177,
-        "yes_price": 0.49,
+        "volume_24h": 1904439,
+        "yes_price": 0.48,
         "url": "https://polymarket.com/market/lal-rrc-vil-2026-08-16-vil"
       },
       {
-        "title": "Will Manchester City win on 2026-08-16?",
-        "volume_24h": 1632072,
-        "yes_price": 0.04,
-        "url": "https://polymarket.com/market/ecs-ars-mci-2026-08-16-mci"
-      },
-      {
-        "title": "Exact Score: Real Racing Club 0 - 0 Villarreal CF?",
-        "volume_24h": 222260,
-        "yes_price": 0.06,
-        "url": "https://polymarket.com/market/lal-rrc-vil-2026-08-16-exact-score-0-0"
-      },
-      {
-        "title": "Israel x Iran ceasefire continues through August 31?",
-        "volume_24h": 205751,
-        "yes_price": 0.95,
-        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-31-20260716224448970-754-896-823"
+        "title": "Will Real Racing Club win on 2026-08-16?",
+        "volume_24h": 239456,
+        "yes_price": 0.2,
+        "url": "https://polymarket.com/market/lal-rrc-vil-2026-08-16-rrc"
       },
       {
         "title": "US announces end of Iranian blockade by August 31, 2026?",
-        "volume_24h": 199287,
+        "volume_24h": 209969,
         "yes_price": 0.15,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729"
       },
       {
+        "title": "Israel x Iran ceasefire continues through August 31?",
+        "volume_24h": 194644,
+        "yes_price": 0.95,
+        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-august-31-20260716224448970-754-896-823"
+      },
+      {
+        "title": "Will Real Madrid win on 2026-08-16?",
+        "volume_24h": 163371,
+        "yes_price": 0.95,
+        "url": "https://polymarket.com/market/clf-sch-rma-2026-08-16-rma"
+      },
+      {
         "title": "US announces end of Iranian blockade by August 22, 2026?",
-        "volume_24h": 140002,
-        "yes_price": 0.06,
+        "volume_24h": 145219,
+        "yes_price": 0.07,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-22-2026"
       },
       {
         "title": "Will Bitcoin dip to $45,000 by December 31, 2026?",
-        "volume_24h": 137764,
+        "volume_24h": 141755,
         "yes_price": 0.23,
         "url": "https://polymarket.com/market/will-bitcoin-dip-to-45000-by-december-31-2026-674-923-755-971-998-525-926-245-316-517-544-589-965-923-986-841-815-224-586-231-289-533-573"
       },
       {
-        "title": "Will Real Madrid win on 2026-08-16?",
-        "volume_24h": 127665,
-        "yes_price": 0.73,
-        "url": "https://polymarket.com/market/clf-sch-rma-2026-08-16-rma"
-      },
-      {
         "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 124213,
+        "volume_24h": 126659,
         "yes_price": 0.12,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+      },
+      {
+        "title": "Will West Ham United FC win on 2026-08-16?",
+        "volume_24h": 110453,
+        "yes_price": 0.67,
+        "url": "https://polymarket.com/market/elc-bur-whu-2026-08-16-whu"
+      },
+      {
+        "title": "Exact Score: RCD Espanyol de Barcelona 0 - 0 Levante UD?",
+        "volume_24h": 103035,
+        "yes_price": 0.1,
+        "url": "https://polymarket.com/market/lal-esp-lev-2026-08-16-exact-score-0-0"
       }
     ],
     "polymarket_summary": {
@@ -610,8 +690,8 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Mixed",
-      "summary": "Mixed: 6 bullish vs 8 bearish signals detected across stock/finance news data."
+      "outlook": "Bearish",
+      "summary": "Bearish: 4 bullish vs 7 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -706,19 +786,19 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 54
+          "interest_score": 85
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 8
+          "interest_score": 11
         },
         {
           "keyword": "Solana",
-          "interest_score": 8
+          "interest_score": 10
         },
         {
           "keyword": "crypto",
-          "interest_score": 38
+          "interest_score": 52
         }
       ]
     }
