@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-14T20:52:31Z",
-  "last_prediction_date": "2026-08-14",
+  "updated_at": "2026-08-17T13:22:21Z",
+  "last_prediction_date": "2026-08-17",
   "last_settle_date": "2026-08-14",
   "tools": {
     "market_sentinel": {
@@ -850,6 +850,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-08-17",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 66,
+          "signal": "Bearish market mood and rising Treasury yields suggest continued pressure.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-17",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 64,
+          "signal": "Tech-heavy index likely to follow negative sentiment and higher yields.",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-17",
+          "market": "DOW",
+          "prediction": "down",
+          "confidence": 62,
+          "signal": "Overall bearish mood and weak dollar support a downward bias.",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -1281,9 +1311,19 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-08-17",
+          "market": "Will MegaETH perform an airdrop by December 31, 2026?",
+          "prediction": "down",
+          "confidence": 82,
+          "signal": "Will MegaETH perform an airdrop by December 31, 20 | Yes 18% / No 82% | Vol $10,359",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     }
   },
-  "total_preds": 122
+  "total_preds": 126
 }
