@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-17T13:22:21Z",
+  "updated_at": "2026-08-17T20:49:52Z",
   "last_prediction_date": "2026-08-17",
-  "last_settle_date": "2026-08-14",
+  "last_settle_date": "2026-08-17",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 32,
-      "correct": 26,
-      "accuracy_pct": 81.2,
+      "total": 35,
+      "correct": 29,
+      "accuracy_pct": 82.9,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -857,9 +857,10 @@
           "prediction": "down",
           "confidence": 66,
           "signal": "Bearish market mood and rising Treasury yields suggest continued pressure.",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.52
         },
         {
           "date": "2026-08-17",
@@ -867,9 +868,10 @@
           "prediction": "down",
           "confidence": 64,
           "signal": "Tech-heavy index likely to follow negative sentiment and higher yields.",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.32
         },
         {
           "date": "2026-08-17",
@@ -877,9 +879,10 @@
           "prediction": "down",
           "confidence": 62,
           "signal": "Overall bearish mood and weak dollar support a downward bias.",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.51
         }
       ]
     },
