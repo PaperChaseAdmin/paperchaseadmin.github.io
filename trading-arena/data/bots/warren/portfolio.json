@@ -1,54 +1,79 @@
 {
-  "cash": 1311.11,
-  "total_value": 10217.2,
+  "cash": 1807.17,
+  "total_value": 10176.7,
   "positions": {
     "KO": {
       "shares": 29,
-      "current_price": 87.745,
+      "current_price": 87.25,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 7,
-      "current_price": 365.53,
+      "current_price": 363.325,
       "avg_cost": 361.6657
     },
     "MA": {
       "shares": 4,
-      "current_price": 568.5745,
+      "current_price": 565.6375,
       "avg_cost": 529.0675
     },
     "CVX": {
       "shares": 4,
       "avg_cost": 200.54,
-      "current_price": 200.69
+      "current_price": 201.249
     },
-    "JPM": {
+    "WMT": {
       "shares": 2,
-      "avg_cost": 365.51,
-      "current_price": 362.86
+      "avg_cost": 114.23,
+      "current_price": 114.23
     }
   },
-  "total_return_pct": 2.17,
+  "total_return_pct": 1.77,
   "total_return_usd": 0.0,
-  "today_pnl": -7.03,
-  "today_pnl_pct": -0.07,
-  "total_trades": 13,
-  "today_start_value": 10224.23,
-  "today_date": "2026-08-14",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-14T16:41:53Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 15,
+  "today_start_value": 10176.7,
+  "today_date": "2026-08-17",
+  "last_action": "Neutral",
+  "last_updated": "2026-08-17T13:37:09Z",
   "last_session": {
-    "at": "2026-08-14T16:41:53Z",
+    "at": "2026-08-17T13:37:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MCD",
+        -1.37
+      ],
+      [
+        "PG",
+        -0.86
+      ],
+      [
+        "WMT",
+        -0.76
+      ],
+      [
+        "MA",
+        -0.72
+      ],
+      [
+        "JNJ",
+        -0.66
+      ],
+      [
+        "AXP",
+        -0.57
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "The market is showing moderate sentiment. I am focusing on defensive, high-moat consumer staples like WMT and PG to bolster the portfolio's resilience. I am also trimming my banking exposure slightly to ensure I adhere to my strict cash reserve requirements while rotating into businesses with more predictable pricing power in the current environment.",
+    "outlook": "Neutral",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -830,6 +855,10 @@
     {
       "timestamp": "2026-08-14T16:41:53Z",
       "value": 10217.2
+    },
+    {
+      "timestamp": "2026-08-17T13:37:09Z",
+      "value": 10176.7
     }
   ]
 }
