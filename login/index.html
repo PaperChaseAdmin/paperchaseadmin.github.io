@@ -123,8 +123,13 @@ async function handleLogin(e) {
     return false;
   }
   
-  // Success — redirect to account
-  window.location.href = '/account/';
+  // Success — redirect to account (allowlist: same-origin relative paths only)
+  const params = new URLSearchParams(window.location.search);
+  let redirect = params.get('redirect');
+  if (!redirect || !redirect.startsWith('/') || redirect.startsWith('//') || redirect.includes('://') || redirect.startsWith('\\')) {
+    redirect = '/account/';
+  }
+  window.location.href = redirect;
   return false;
 }
 </script>
