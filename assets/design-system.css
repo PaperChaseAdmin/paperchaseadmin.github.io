@@ -139,7 +139,7 @@ body {
 
 /* ── Page headers ───────────────── */
 .page-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
-.page-title-wrap h1, .page-title { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; color: var(--pc-heading); line-height: 1.25; }
+.page-title-wrap h1, .page-title { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; color: var(--pc-heading); line-height: 1.25; margin: 0; }
 .page-sub { font-size: 13px; color: var(--pc-text-2); margin-top: 4px; }
 
 /* ── Cards ──────────────────────── */

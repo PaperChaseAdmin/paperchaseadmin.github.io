@@ -48,7 +48,7 @@
 
 <div class="pp">
   <div class="card">
-    <h1>Contact Us</h1>
+    <h1 class="page-title">Contact Us</h1>
     <div class="pd">We'd love to hear from you</div>
 
     <p>Have a question about our data, feedback on the platform, or a partnership inquiry? Send us a message and we'll get back to you as soon as we can.</p>
@@ -84,10 +84,15 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
   this.reset();
 });
 </script>
-<footer style="text-align:center;padding:24px 16px;border-top:1px solid var(--pc-border);margin-top:32px">
-  <a href="/about/" style="color:var(--pc-text-3);text-decoration:none;font-size:11px;margin:0 10px">About</a>
-  <a href="/contact/" style="color:var(--pc-text-3);text-decoration:none;font-size:11px;margin:0 10px">Contact</a>
-  <a href="/privacy/" style="color:var(--pc-text-3);text-decoration:none;font-size:11px;margin:0 10px">Privacy Policy</a>
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 PaperChase. Not financial advice.</span>
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy Policy</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
