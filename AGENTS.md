@@ -68,6 +68,17 @@ All design tokens are CSS custom properties in `assets/design-system.css` `:root
 - No emoji in headings or table cells on data pages (headers may use small icons).
 - Copy must be factual and transparent. No hype, no "revolutionary AI", no guaranteed profits.
 
+### Design judgment (Gogh: taste-skill / make-interfaces-feel-better distilled)
+- Design read: warm-white financial monitor, gold as the SINGLE accent, dense glanceable data,
+  restrained motion — not a marketing page with hero + feature cards.
+- One accent, one radius system, one light/dark strategy per page. Never add a second hue family.
+- Buttons need a press state (scale ~0.96) and hover state; animate only the properties that
+  change (never `transition: all`); hit targets ≥ 36px (40px preferred).
+- Motion must respect `prefers-reduced-motion`; no infinite loops except the countdown pulse dot.
+- No glassmorphism except the topbar blur; no gradient backgrounds except the topbar gold line;
+  no purple glow; no centered mesh heros; no three equal feature cards.
+- Tabular numbers (mono font) for prices, scores, timers — never proportional digits.
+
 ### Mobile
 - All responsive behavior comes from the design system's `@media` rules. Don't add per-page
   mobile hacks; keep the design-system breakpoints (768px) as the single source.
