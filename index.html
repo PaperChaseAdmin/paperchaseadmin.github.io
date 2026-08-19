@@ -24,7 +24,7 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200..700;1,9..40,300..500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/design-system.css">
 <script src="/assets/i18n.js"></script>
 <style>
@@ -79,6 +79,7 @@
   </div>
 </div></nav>
 
+<div class="ticker-wrap"><div class="ticker-track" id="tickerTrack"></div></div>
 <div class="container">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
     <div>
@@ -421,5 +422,6 @@ setInterval(tickCountdown, 1000);
 refreshData();
 setInterval(refreshData, 300000);
 </script>
+<script src="/assets/ticker.js"></script>
 </body>
 </html>
