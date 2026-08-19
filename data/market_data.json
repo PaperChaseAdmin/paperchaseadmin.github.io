@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T06:23:00Z",
+  "updated_at": "2026-08-19T07:29:46Z",
   "crypto": {
     "fear_greed": {
       "value": 46,
@@ -11,78 +11,90 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 64216,
-        "change_24h": 0.1,
-        "market_cap": 1288728353737,
-        "volume_24h": 16573602233
+        "price_usd": 64303,
+        "change_24h": 0.2,
+        "market_cap": 1290651100984,
+        "volume_24h": 16797345299
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1909.84,
-        "change_24h": 0.8,
-        "market_cap": 230448637904,
-        "volume_24h": 5883001244
+        "price_usd": 1917.34,
+        "change_24h": 1.1,
+        "market_cap": 231389460727,
+        "volume_24h": 5998275783
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 601.21,
-        "change_24h": -0.3,
-        "market_cap": 80057536720,
-        "volume_24h": 502959753
+        "price_usd": 601.71,
+        "change_24h": -0.2,
+        "market_cap": 80124362397,
+        "volume_24h": 503449164
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.001,
-        "change_24h": 0.5,
-        "market_cap": 62732290837,
-        "volume_24h": 754146990
+        "price_usd": 1.004,
+        "change_24h": 0.9,
+        "market_cap": 62937263223,
+        "volume_24h": 774348356
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 76.8,
-        "change_24h": 1.3,
-        "market_cap": 44763688077,
-        "volume_24h": 1346254222
+        "price_usd": 76.96,
+        "change_24h": 1.8,
+        "market_cap": 44865752361,
+        "volume_24h": 1336401939
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.069942,
-        "change_24h": 0.1,
-        "market_cap": 10879025620,
-        "volume_24h": 249745440
+        "price_usd": 0.070029,
+        "change_24h": 0.4,
+        "market_cap": 10893094820,
+        "volume_24h": 254639771
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 9.61,
-        "change_24h": 2.0,
-        "market_cap": 7188751112,
-        "volume_24h": 243591299
+        "price_usd": 9.65,
+        "change_24h": 2.6,
+        "market_cap": 7215665249,
+        "volume_24h": 245788353
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.175427,
-        "change_24h": 0.9,
-        "market_cap": 6578265517,
-        "volume_24h": 172231550
+        "price_usd": 0.175503,
+        "change_24h": 1.7,
+        "market_cap": 6578933272,
+        "volume_24h": 178336627
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 6.35,
-        "change_24h": 0.8,
-        "market_cap": 2740332944,
-        "volume_24h": 100201652
+        "price_usd": 6.36,
+        "change_24h": 0.6,
+        "market_cap": 2745348560,
+        "volume_24h": 99487229
       }
     ],
     "top_mentioned": [],
     "news": [
+      {
+        "title": "Maya Protocol exploit drains bitcoin and other assets as pool value drops $11 million",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million",
+        "published": "Wed, 19 Aug 2026 06:36:11 +0000",
+        "assets": [
+          "BTC"
+        ],
+        "sentiment": "Bearish",
+        "score": -0.5,
+        "color": "red"
+      },
       {
         "title": "Robot maker Unitree’s IPO surges 600%, outpacing crypto traders’ premarket bets",
         "source": "CoinDesk",
@@ -96,28 +108,17 @@
         "color": "green"
       },
       {
-        "title": "Solana leads bitcoin and ether higher while Korean chip stocks slide 7%",
+        "title": "Bitcoin holds $64,000 and solana leads gains amid 7% Korean chip stock slide",
         "source": "CoinDesk",
         "url": "https://www.coindesk.com/markets/2026/08/19/solana-leads-bitcoin-and-ether-higher-while-korean-chip-stocks-slide-7",
         "published": "Wed, 19 Aug 2026 04:25:42 +0000",
         "assets": [
           "BTC",
-          "ETH",
           "SOL"
         ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "‘It has to pass’: Andrew Cuomo warns U.S. is falling behind on crypto rules",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/policy/2026/08/18/it-has-to-pass-andrew-cuomo-warns-u-s-is-falling-behind-on-crypto-rules",
-        "published": "Wed, 19 Aug 2026 01:35:36 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
       },
       {
         "title": "Here’s what happened in crypto today",
@@ -180,6 +181,18 @@
         "color": "red"
       },
       {
+        "title": "Ethereum’s 12-GPU proving problem just got a 4-GPU answer",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/ethereums-12-gpu-proving-problem-just-got-a-4-gpu-answer/",
+        "published": "Wed, 19 Aug 2026 07:00:12 +0000",
+        "assets": [
+          "ETH"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
         "title": "Canaan counted paused Ethiopia mining as nearly 35% of its July operating hashrate total",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/canaan-counted-paused-ethiopia-mining-as-nearly-35-of-its-july-operating-hashrate-total/",
@@ -202,22 +215,10 @@
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
-      },
-      {
-        "title": "AsiaStrategy’s Astra deal lets insider-linked buyers take ownership before $8 million comes due",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/asiastrategys-astra-deal-lets-insider-linked-buyers-take-ownership-before-8-million-comes-due/",
-        "published": "Wed, 19 Aug 2026 01:00:37 +0000",
-        "assets": [
-          "LINK"
-        ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": -0.083,
+      "score": -0.097,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -230,19 +231,19 @@
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 6 bullish vs 8 bearish signals detected across crypto news data."
+      "summary": "Mixed: 8 bullish vs 8 bearish signals detected across crypto news data."
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 144,
+      "active_threads": 143,
       "mentions": {
         "BTC": 22,
         "XRP": 21,
         "BNB": 3
       },
-      "bullish_hits": 97,
+      "bullish_hits": 96,
       "bearish_hits": 51,
-      "bullish_pct": 66,
+      "bullish_pct": 65,
       "top_coin": "BTC",
       "top_posts": [
         "/smg/ stock market general &#039;killing your becauae of money is such a jewish reason&#039; edition previous &gt;&gt;62",
@@ -256,51 +257,51 @@
       {
         "symbol": "BTW",
         "name": "Bitway",
-        "rank": 51,
+        "rank": 47,
         "score": 0,
-        "change_24h": 57.62
-      },
-      {
-        "symbol": "PUMP",
-        "name": "Pump.fun",
-        "rank": 64,
-        "score": 1,
-        "change_24h": 4.95
+        "change_24h": 71.47
       },
       {
         "symbol": "HYPE",
         "name": "Hyperliquid",
         "rank": 10,
-        "score": 2,
-        "change_24h": -1.99
+        "score": 1,
+        "change_24h": -3.39
       },
       {
-        "symbol": "TRIA",
-        "name": "TRIA",
-        "rank": 820,
+        "symbol": "PUMP",
+        "name": "Pump.fun",
+        "rank": 62,
+        "score": 2,
+        "change_24h": 6.49
+      },
+      {
+        "symbol": "ONDO",
+        "name": "Ondo",
+        "rank": 49,
         "score": 3,
-        "change_24h": -3.14
+        "change_24h": -1.66
       },
       {
         "symbol": "SOL",
         "name": "Solana",
         "rank": 7,
         "score": 4,
-        "change_24h": 1.19
+        "change_24h": 1.18
       },
       {
-        "symbol": "VVV",
-        "name": "Venice Token",
-        "rank": 88,
+        "symbol": "TRIA",
+        "name": "TRIA",
+        "rank": 829,
         "score": 5,
-        "change_24h": 1.4
+        "change_24h": -3.02
       },
       {
-        "symbol": "WKC",
-        "name": "Wiki Cat",
-        "rank": 393,
+        "symbol": "CC",
+        "name": "Canton",
+        "rank": 26,
         "score": 6,
-        "change_24h": -13.99
+        "change_24h": -1.57
       }
     ]
   },
@@ -383,34 +384,44 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Horizons Middle East & Africa 8/19/2026 (Video)",
+        "title": "Evergrande Liquidators Challenge Hong Kong Watchdog in Court",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-19/horizons-middle-east-africa-8-19-2026-video",
-        "published": "Wed, 19 Aug 2026 06:20:02 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-19/evergrande-liquidators-challenge-hong-kong-watchdog-in-court",
+        "published": "Wed, 19 Aug 2026 00:51:41 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "India Stocks Top Indonesia as Asia’s Least-Favored in BofA Poll",
+        "title": "PHP/USD: Record-Low Philippine Peso Invites Central Bank Intervention",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/india-stocks-top-indonesia-as-asia-s-least-favored-in-bofa-poll",
-        "published": "Wed, 19 Aug 2026 06:09:26 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Bonds Traders Look to Hedge Risk of Fed Rate Cuts in 2027",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-19/bonds-traders-look-to-hedge-risk-of-fed-cuts-in-2027-video",
-        "published": "Wed, 19 Aug 2026 06:07:38 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-19/php-usd-philippine-peso-fell-to-new-record-low-as-oil-prices-rise",
+        "published": "Wed, 19 Aug 2026 01:41:01 GMT",
         "assets": [],
         "sentiment": "Bearish",
-        "score": -0.6,
+        "score": -1.0,
         "color": "red"
+      },
+      {
+        "title": "Copper Holds Loss as Deliveries to LME Mitigate Supply Crunch",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-19/copper-holds-loss-as-deliveries-to-lme-mitigate-supply-crunch",
+        "published": "Wed, 19 Aug 2026 03:07:45 GMT",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
+      },
+      {
+        "title": "Iran reportedly weighs attacks on U.S. targets in Europe as UAE severs trade with Tehran",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/08/19/us-iran-war-trump-hormuz.html",
+        "published": "Wed, 19 Aug 2026 07:08:19 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
         "title": "Trump pauses 50% scheduled tariffs on Canada for three days, announces 'deal' with Ottawa",
@@ -423,24 +434,14 @@
         "color": "red"
       },
       {
-        "title": "Seoul, Washington to halve joint drills as Trump reportedly seeks summit with North Korea's Kim",
+        "title": "Zelenskyy faces challenge to his wartime rule as former defense chief calls for election",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/19/south-korea-trump-military-drills-exercise-north-korea-kim-jong-un-.html",
-        "published": "Wed, 19 Aug 2026 01:57:05 GMT",
+        "url": "https://www.cnbc.com/2026/08/19/ukraine-war-fedorov-zelenskky-election.html",
+        "published": "Wed, 19 Aug 2026 07:06:09 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Nukes all around? A fraying U.S. nuclear umbrella is pushing allies to weigh defense options, raising risk of a proliferation cascade",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/19/nuclear-proliferation-defense-risk-trump-umbrella-.html",
-        "published": "Tue, 18 Aug 2026 23:25:38 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       },
       {
         "title": "Trump holds off on new 50% tariffs for Canadian goods",
@@ -473,131 +474,131 @@
         "color": "red"
       },
       {
-        "title": "Clover Health's High Valuation Ignores Low-Margin Structural Realities",
+        "title": "Diamond Hill Core Bond Fund Q2 2026 Commentary",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4938081-clover-healths-high-valuation-ignores-low-margin-structural-realities?source=feed_all_articles",
-        "published": "Wed, 19 Aug 2026 02:18:49 -0400",
+        "url": "https://seekingalpha.com/article/4938118-diamond-hill-core-bond-fund-q2-2026-commentary?source=feed_all_articles",
+        "published": "Wed, 19 Aug 2026 03:15:00 -0400",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "BWP Trust (BUNNF) Q4 2026 Earnings Call Transcript",
+        "title": "Lufax Holding Ltd (LU) Q2 2026 Earnings Call Transcript",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4938103-bwp-trust-bunnf-q4-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Wed, 19 Aug 2026 02:11:53 -0400",
+        "url": "https://seekingalpha.com/article/4938112-lufax-holding-ltd-lu-q2-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Wed, 19 Aug 2026 03:11:53 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Evolution Mining Limited (CAHPF) Q4 2026 Earnings Call Transcript",
+        "title": "H&R Block: Strong Rally, But The Buy Case Remains Intact",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4938099-evolution-mining-limited-cahpf-q4-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Wed, 19 Aug 2026 02:11:50 -0400",
+        "url": "https://seekingalpha.com/article/4938096-h-and-r-block-q4-strong-rally-but-the-buy-case-remains-intact?source=feed_all_articles",
+        "published": "Wed, 19 Aug 2026 02:59:27 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "The U.S. built its brand by attracting the world’s best and brightest. It must not lose that advantage",
+        "title": "Top economist on Trump’s ‘deadly cocktail’ for the bond market—and how the bond vigilantes have crossed Scott Bessent’s ‘red line’",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/08/18/us-built-brand-attracting-talent-must-not-lose-advantage-china/",
-        "published": "Tue, 18 Aug 2026 21:00:00 +0000",
+        "url": "https://fortune.com/2026/08/19/bond-market-steve-hanke-economist-red-line-scott-bessent/",
+        "published": "Wed, 19 Aug 2026 07:00:00 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "California’s billionaires just poured $40 million into blocking a wealth tax that threatens to force them to pay 5% of their net worth",
+        "title": "Nelson Peltz might take Wendy’s private following six straight quarterly sales declines as customers flee its poor franchise models and bad marketing",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/08/18/california-billionaires-chris-larsen-john-doerr-40-million-fresh-funds-building-a-better-california-proposition-40/",
-        "published": "Tue, 18 Aug 2026 07:00:00 +0000",
+        "url": "https://fortune.com/2026/08/19/wendys-nelson-peltz-take-private-customers/",
+        "published": "Wed, 19 Aug 2026 07:00:00 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
       },
       {
-        "title": "Exclusive: Accounting AI startup Rillet reaches unicorn status with $1 billion valuation. Its founder says he wants to give CFOs back their weekends",
+        "title": "Strait of Hormuz chaos has incentivized China to use an alternative trade route: a 3,400 mile frozen Arctic channel dubbed the ‘Ice Silk Road’",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/08/18/rillet-unicorn-1-billion-valuation-series-c-nicolas-kopp-accounting-ai/",
-        "published": "Tue, 18 Aug 2026 21:30:03 +0000",
+        "url": "https://fortune.com/2026/08/19/strait-of-hormuz-iran-war-china-trade-route-ice-silk-road/",
+        "published": "Wed, 19 Aug 2026 07:00:00 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": -0.107,
+      "score": -0.178,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 616509,
+        "volume_24h": 612044,
         "yes_price": 0.07,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
       },
       {
         "title": "Will Donald Trump win the 2028 US Presidential Election?",
-        "volume_24h": 287810,
+        "volume_24h": 280200,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/will-donald-trump-win-the-2028-us-presidential-election"
       },
       {
         "title": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
-        "volume_24h": 275701,
+        "volume_24h": 275941,
         "yes_price": 0.71,
         "url": "https://polymarket.com/market/will-united-russia-er-gain-the-most-seats-in-the-next-russian-parliamentary-election"
       },
       {
         "title": "Will Bitcoin dip to $45,000 by December 31, 2026?",
-        "volume_24h": 265015,
+        "volume_24h": 265030,
         "yes_price": 0.21,
         "url": "https://polymarket.com/market/will-bitcoin-dip-to-45000-by-december-31-2026-674-923-755-971-998-525-926-245-316-517-544-589-965-923-986-841-815-224-586-231-289-533-573"
       },
       {
         "title": "Bitcoin Up or Down on August 19?",
-        "volume_24h": 184144,
-        "yes_price": 0.1,
+        "volume_24h": 185572,
+        "yes_price": 0.14,
         "url": "https://polymarket.com/market/bitcoin-up-or-down-on-august-19-2026"
       },
       {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 170975,
+        "volume_24h": 178758,
         "yes_price": 0.71,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
+        "title": "Will the price of Bitcoin be above $66,000 on August 19?",
+        "volume_24h": 148710,
+        "yes_price": 0.02,
+        "url": "https://polymarket.com/market/bitcoin-above-66k-on-august-19-2026"
+      },
+      {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 140653,
+        "volume_24h": 140694,
         "yes_price": 0.28,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
-        "title": "Will James Fishback win less than 10% of votes in the Florida Republican Governor primary?",
-        "volume_24h": 137167,
-        "yes_price": 0.02,
-        "url": "https://polymarket.com/market/will-james-fishback-win-less-than-10-of-votes-in-the-florida-republican-governor-primary-20260701154239340"
+        "title": "US announces end of Iranian blockade by August 31, 2026?",
+        "volume_24h": 134115,
+        "yes_price": 0.07,
+        "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729"
       },
       {
-        "title": "Will Iran target a Arab country on August 18, 2026?",
-        "volume_24h": 122404,
-        "yes_price": 0.02,
-        "url": "https://polymarket.com/market/will-iran-target-a-arab-country-on-august-18-2026-20260801004719135"
-      },
-      {
-        "title": "Will Inter Milan win the 2026-27 UEFA Champions League Championship?",
-        "volume_24h": 111755,
-        "yes_price": 0.02,
-        "url": "https://polymarket.com/market/will-inter-milan-win-the-2026-27-uefa-champions-league-championship-20260701202025556"
+        "title": "Will Elon Musk post 65-89 tweets from August 17 to August 19, 2026?",
+        "volume_24h": 131876,
+        "yes_price": 0.97,
+        "url": "https://polymarket.com/market/elon-musk-of-tweets-august-17-august-19-65-89"
       }
     ],
     "polymarket_summary": {
@@ -610,8 +611,8 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Bearish",
-      "summary": "Bearish: 4 bullish vs 7 bearish signals detected across stock/finance news data."
+      "outlook": "Mixed",
+      "summary": "Mixed: 4 bullish vs 6 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -623,20 +624,20 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 99.51,
-        "change_24h": -0.14
+        "value": 99.5,
+        "change_24h": -0.16
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4392.8,
-        "change_24h": 0.61
+        "value": 4404.0,
+        "change_24h": 0.87
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 84.87,
-        "change_24h": -0.08
+        "value": 84.71,
+        "change_24h": -0.27
       }
     ],
     "most_active": [
@@ -706,19 +707,19 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 85
+          "interest_score": 74
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 13
-        },
-        {
-          "keyword": "Solana",
           "interest_score": 12
         },
         {
+          "keyword": "Solana",
+          "interest_score": 10
+        },
+        {
           "keyword": "crypto",
-          "interest_score": 69
+          "interest_score": 53
         }
       ]
     }
@@ -730,29 +731,29 @@
       "type": "Bond Income",
       "price_usd": 47.24,
       "change_1d": -0.08,
-      "change_1w": -0.08,
-      "change_1m": 0.36,
-      "high_3m": 47.4,
-      "low_3m": 46.41,
+      "change_1w": -0.09,
+      "change_1m": -0.38,
+      "high_3m": 47.44,
+      "low_3m": 46.68,
       "week52_high": 48.89,
       "week52_low": 46.84,
-      "rsi": 64.2,
+      "rsi": 51.5,
       "div_yield": 7.55,
       "last_div": null,
       "outlook": {
-        "label": "Bullish",
-        "color": "green",
-        "score": 3,
-        "bull_count": 3,
-        "bear_count": 0,
+        "label": "Mild Bearish",
+        "color": "red",
+        "score": -2,
+        "bull_count": 0,
+        "bear_count": 2,
         "total": 5,
-        "confidence": "Medium",
+        "confidence": "Low",
         "reasons": [
-          "Price above 20-day moving average ↑",
-          "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 64.2 — Above neutral, mild upward momentum ↑",
+          "Price below 20-day moving average ↓",
+          "Short-term trend below long-term (bearish cross) ↓",
+          "RSI 51.5 — In neutral range (45–55)",
           "5-day momentum -0.1% — consolidating sideways →",
-          "1-month return +0.4% — range-bound"
+          "1-month return -0.4% — range-bound"
         ]
       }
     },
