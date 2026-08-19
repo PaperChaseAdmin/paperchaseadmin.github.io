@@ -90,8 +90,11 @@ body {
   max-width: var(--pc-max-width); margin: 0 auto; padding: 0 24px;
   display: flex; align-items: center; height: var(--pc-topbar-height);
 }
-.logo { font-size: 16px; font-weight: 800; letter-spacing: -0.02em; color: var(--pc-heading); text-decoration: none; }
+.logo { font-size: 16px; font-weight: 800; letter-spacing: -0.02em; color: var(--pc-heading); text-decoration: none; display: inline-flex; align-items: center; }
 .logo span { color: var(--pc-brand); }
+.logo-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--pc-brand); margin-right: 3px; flex-shrink: 0; }
+/* gold signature line under the topbar */
+.topbar::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: linear-gradient(90deg, var(--pc-brand) 0%, rgba(184,134,59,0.25) 45%, transparent 75%); }
 .topbar-nav { display: flex; align-items: center; gap: 2px; margin-left: 32px; flex: 1; }
 .nav-link {
   font-size: 12.5px; font-weight: 500; color: var(--pc-text-2);
@@ -103,6 +106,24 @@ body {
 .nav-link.active { color: var(--pc-brand); background: var(--pc-brand-soft); font-weight: 600; }
 .topbar-spacer { flex: 1; }
 .topbar-auth { display: flex; align-items: center; gap: 10px; }
+
+/* Auth buttons — normalized across all pages (some pages use btn-login/btn-register,
+   others inline styles; these rules make every variant render identically) */
+.btn-login {
+  font-size: 12.5px; font-weight: 600; color: var(--pc-text-2); text-decoration: none;
+  padding: 7px 14px; border-radius: var(--pc-radius); border: 1px solid var(--pc-border);
+  background: transparent; transition: color 0.15s, border-color 0.15s, background 0.15s;
+  display: inline-flex; align-items: center; white-space: nowrap;
+}
+.btn-login:hover { color: var(--pc-heading); border-color: var(--pc-border-2); background: var(--pc-surface-hover); }
+.btn-register {
+  font-size: 12.5px; font-weight: 600; color: #fff; text-decoration: none;
+  padding: 7px 14px; border-radius: var(--pc-radius); border: none;
+  background: var(--pc-brand); box-shadow: 0 1px 2px rgba(184, 134, 59, 0.4);
+  transition: background 0.15s, box-shadow 0.15s;
+  display: inline-flex; align-items: center; white-space: nowrap;
+}
+.btn-register:hover { background: var(--pc-brand-hover); box-shadow: 0 2px 6px rgba(184, 134, 59, 0.4); }
 
 /* ── Container ──────────────────── */
 .container { max-width: var(--pc-max-width); margin: 0 auto; padding: 28px 24px 48px; }
@@ -123,8 +144,19 @@ body {
   box-shadow: var(--pc-shadow-sm);
   transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
 }
-.card:hover, .tool-card:hover { border-color: var(--pc-brand); box-shadow: var(--pc-shadow-md); }
+.card:hover, .tool-card:hover { border-color: var(--pc-brand); box-shadow: var(--pc-shadow-md); transform: translateY(-1px); }
 .card-title { font-size: 13px; font-weight: 600; color: var(--pc-heading); margin-bottom: 12px; }
+
+/* ── Guides & Insights list (homepage) ── */
+.guide-list { display: flex; flex-direction: column; }
+.guide-link {
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px; margin: 0 -12px;
+  border-radius: var(--pc-radius); text-decoration: none; color: var(--pc-heading);
+  font-size: 13px; font-weight: 600; transition: background 0.12s, color 0.12s;
+}
+.guide-link:hover { background: var(--pc-surface-hover); color: var(--pc-brand); }
+.guide-link .guide-arrow { margin-left: auto; color: var(--pc-text-3); font-size: 14px; transition: transform 0.12s, color 0.12s; }
+.guide-link:hover .guide-arrow { transform: translateX(3px); color: var(--pc-brand); }
 
 .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
 .tool-card-icon { width: 34px; height: 34px; border-radius: var(--pc-radius); display: flex; align-items: center; justify-content: center; font-size: 16px; margin-bottom: 10px; background: var(--pc-brand-soft); }
