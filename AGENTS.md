@@ -69,8 +69,12 @@ All design tokens are CSS custom properties in `assets/design-system.css` `:root
 - Copy must be factual and transparent. No hype, no "revolutionary AI", no guaranteed profits.
 
 ### Design judgment (Gogh: taste-skill / make-interfaces-feel-better distilled)
-- Design read: warm-white financial monitor, gold as the SINGLE accent, dense glanceable data,
-  restrained motion — not a marketing page with hero + feature cards.
+- Design read: DARK editorial financial monitor (kept.app-inspired) — deep charcoal-navy
+  surfaces, warm-light text, gold as the SINGLE accent, DM Sans UI type, JetBrains Mono
+  numbers, pill buttons, generous whitespace, restrained motion.
+- One accent, one radius system, one dark strategy per page. Never add a second hue family
+  and never reintroduce light-mode colors (white cards, dark text on light bg) — every page
+  is dark by default via the design-system tokens.
 - One accent, one radius system, one light/dark strategy per page. Never add a second hue family.
 - Buttons need a press state (scale ~0.96) and hover state; animate only the properties that
   change (never `transition: all`); hit targets ≥ 36px (40px preferred).
