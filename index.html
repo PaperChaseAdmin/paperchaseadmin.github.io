@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>PaperChase — AI Trading & Market Intelligence</title>
-<meta name="description" content="AI-powered trading & market intelligence dashboard. Real-time stock & crypto sentiment, prediction markets, and automated trading bots."/>
-<meta name="keywords" content="AI trading, market intelligence, stock sentiment, crypto analysis, paper trading"/>
-<meta property="og:title" content="Home · PaperChase"/>
-<meta property="og:description" content="AI-powered trading & market intelligence dashboard. Real-time stock & crypto sentiment, prediction markets, and automated trading bots."/>
-<meta property="og:url" content="https://paperchase.online/"/>
-<meta property="og:type" content="website"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<link rel="manifest" href="/manifest.json"/>
-
-
-
+<meta name="description" content="AI-powered trading bots, market sentiment analysis, prediction market intelligence, and crypto market pulse — all in one platform."/>
 <meta name="robots" content="index, follow"/>
-
 <link rel="canonical" href="https://paperchase.online/"/>
+<meta property="og:site_name" content="PaperChase"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="PaperChase — Free AI Trading Bots & Market Intelligence Platform"/>
+<meta property="og:description" content="Watch 20 AI trading bots compete in real-time paper trading. Free market sentiment, crypto fear & greed index, stock screener and prediction market scanner — all in one place."/>
+<meta property="og:url" content="https://paperchase.online/"/>
+<meta property="og:image" content="https://paperchase.online/assets/og-image.png"/>
+<meta property="og:locale" content="en_US"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="PaperChase — Free AI Trading Bots & Market Intelligence Platform"/>
+<meta name="twitter:description" content="Watch 20 AI trading bots compete in real-time paper trading. Free market sentiment, crypto fear & greed index, stock screener and prediction market scanner — all in one place."/>
+<meta name="twitter:image" content="https://paperchase.online/assets/og-image.png"/>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/design-system.css">
 <script src="/assets/i18n.js"></script>
-<script src="/assets/countdown.js"></script>
 <style>
 .live-stats { display: flex; gap: 24px; padding: 16px 0; }
 .live-stat { display: flex; align-items: center; gap: 8px; }
@@ -61,7 +60,7 @@
   .sent-grid { grid-template-columns: 1fr; }
 }
 </style>
-<!-- AdSense removed 2026-08-14 (account not approved yet). Re-add when approved: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238177146851721" crossorigin="anonymous"></script> -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "PaperChase", "description": "Watch 20 AI trading bots compete in real-time paper trading. Free market sentiment, crypto fear & greed index, stock screener and prediction market scanner — all in one place.", "url": "https://paperchase.online/", "alternateName": "PaperChase AI Trading", "publisher": {"@type": "Organization", "name": "PaperChase", "logo": {"@type": "ImageObject", "url": "https://paperchase.online/assets/og-image.png"}}}</script>
 </head>
 <body>
 <nav class="topbar"><div class="topbar-inner">
@@ -75,10 +74,8 @@
   </div>
   <div class="topbar-spacer"></div>
   <div class="topbar-auth">
-    <a class="nav-link" href="/login/" id="nav-login">Log In</a>
-    <a class="nav-link nav-reg" href="/register/" id="nav-register" style="background:var(--pc-brand);color:#fff;border-radius:var(--pc-radius);padding:6px 14px">Register</a>
-    <a class="nav-link" href="/account/" id="nav-account" style="display:none">Account</a>
-    <a class="nav-link" href="#" id="nav-logout" style="display:none" onclick="PaperChaseAuth.signOut();return false">Log Out</a>
+    <a class="nav-link" href="/login/" data-i18n="nav_login">Log In</a>
+    <a href="/register/" style="display:inline-flex;align-items:center;font-size:12px;font-weight:600;padding:6px 14px;border-radius:var(--pc-radius);background:var(--pc-brand);color:#fff;text-decoration:none">Register</a>
   </div>
 </div></nav>
 
@@ -88,7 +85,11 @@
       <h1 style="font-size:22px;font-weight:700;color:var(--pc-heading);letter-spacing:-0.03em;margin:0">Home</h1>
       <p style="font-size:12px;color:var(--pc-text-2);margin-top:1px">Market intelligence, sentiment &amp; real-time data</p>
     </div>
-    <div id="countdown-wrap" class="countdown-wrap"></div>
+    <div class="countdown" id="countdownBox">
+      <span class="dot"></span>
+      <span>Next update in</span>
+      <span class="num" id="cdMin">0</span><span>:<span class="num" id="cdSec">00</span></span>
+    </div>
   </div>
 
   <div class="indices-bar" id="indicesBar">
@@ -137,15 +138,27 @@
     </div>
     <div style="display:flex;flex-direction:column;gap:16px">
       <div class="news-card">
-        <div style="margin:20px 0">
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<h3>Crypto News</h3>
+        <h3>Crypto News</h3>
         <div id="cryptoNewsList"><div class="loading" style="padding:20px;color:var(--pc-text-3);font-size:12px">Loading...</div></div>
       </div>
     </div>
   </div>
+
+  <!-- ── Guides & Insights ── -->
+  <div class="dash-grid" style="margin-top:16px">
+    <div class="news-card dash-full" style="grid-column:1">
+      <h3 style="margin-bottom:8px">Guides &amp; Insights</h3>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="/blog/paper-trading-guide-2026" style="color:var(--pc-heading);text-decoration:none;font-weight:600">Paper Trading Guide 2026 — How to Practise Trading Risk-Free</a>
+        <a href="/blog/best-ai-trading-bots-2026" style="color:var(--pc-heading);text-decoration:none;font-weight:600">Best AI Trading Bots 2026 — Full Comparison &amp; Prices</a>
+        <a href="/blog/crypto-fear-greed-index" style="color:var(--pc-heading);text-decoration:none;font-weight:600">Crypto Fear &amp; Greed Index — How to Read Market Sentiment</a>
+        <a href="/blog/fed-rate-decision-september-2026" style="color:var(--pc-heading);text-decoration:none;font-weight:600">Fed Rate Decision September 2026 — What to Expect</a>
+        <a href="/blog/prediction-markets-guide" style="color:var(--pc-heading);text-decoration:none;font-weight:600">Prediction Markets Guide 2026 — How They Work &amp; Where to Trade</a>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <footer class="footer">
   <div class="footer-inner">
@@ -156,9 +169,6 @@
       <a href="/poly-watch/">Poly Watch</a>
       <a href="/stock-pick/">Stock Pick</a>
       <a href="/trading-arena/">Trading Arena</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-      <a href="/privacy/">Privacy Policy</a>
     </div>
   </div>
 </footer>
@@ -258,16 +268,24 @@ function snapMood(v) {
   saveH(h); return h;
 }
 
-// ── Countdown ──
-if (typeof window.startCountdown === 'function') {
-  startCountdown(document.getElementById('countdown-wrap'), 'Next Update', 'market-sentinel', refreshData);
+// ── Countdown timer (updates every 10 min at :00/:10/:20/:30/:40/:50) ──
+function tickCountdown() {
+  var now = new Date();
+  var min = now.getMinutes();
+  var sec = now.getSeconds();
+  var next = (Math.floor(min / 10) + 1) * 10;
+  var remMin = (next - min - 1 + 60) % 60;
+  var remSec = (60 - sec) % 60;
+  if (remSec === 60) { remSec = 0; remMin++; }
+  document.getElementById('cdMin').textContent = remMin;
+  document.getElementById('cdSec').textContent = String(remSec).padStart(2,'0');
 }
 
 // ── Background auto-refresh ──
 async function refreshData() {
   try {
     // ── Market data ──
-    var r = await fetch('https://paperchase.online/data/market_data.json');
+    var r = await fetch('https://raw.githubusercontent.com/PaperChaseAdmin/market-sentinel/main/data/market_data.json?t=' + Date.now());
     if (!r.ok) return;
     var d = await r.json();
     var st = d.stocks || {};
@@ -363,6 +381,8 @@ async function refreshData() {
 }
 
 // ── Initial load ──
+tickCountdown();
+setInterval(tickCountdown, 1000);
 
 // F&G 14-day (fetched once — updates slowly)
 (async function() {
@@ -401,7 +421,5 @@ async function refreshData() {
 refreshData();
 setInterval(refreshData, 300000);
 </script>
-<script src="/assets/supabase-client.js"></script>
-<script src="/assets/sw-register.js"></script>
 </body>
 </html>

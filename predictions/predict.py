@@ -15,23 +15,6 @@ POLY_DATA_URL = "https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/da
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
-# NYSE/NASDAQ market holidays — static list, add a new year's set each January.
-US_MARKET_HOLIDAYS = {
-    "2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03", "2026-05-25",
-    "2026-06-19", "2026-07-03", "2026-09-07", "2026-11-26", "2026-12-25",
-}
-
-
-def market_open_today(dt):
-    """Deterministic US market-open check: weekday + known NYSE holidays."""
-    if dt.weekday() >= 5:
-        return False
-    d = dt.strftime("%Y-%m-%d")
-    if d[:4] != "2026":
-        print("  ⚠️  No holiday list for this year — weekday check only")
-        return True
-    return d not in US_MARKET_HOLIDAYS
-
 
 def fetch_json(url):
     try:
@@ -49,7 +32,7 @@ def call_openrouter(prompt, model=None, max_tokens=500):
         print("  ⚠️  OPENROUTER_API_KEY not set")
         return None
 
-    models_to_try = model or ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-super-120b-a12b:free", "openai/gpt-oss-20b:free", "google/gemma-4-26b-a4b-it:free", "cohere/north-mini-code:free"]
+    models_to_try = model or ["deepseek/deepseek-chat", "mistralai/mistral-small-24b-instruct-2501", "qwen/qwen2.5-72b-instruct", "deepseek/deepseek-r1", "anthropic/claude-sonnet-4"]
 
     if isinstance(models_to_try, str):
         models_to_try = [models_to_try]
@@ -259,15 +242,14 @@ def main():
         print("  Already predicted today. Skipping.")
         return
 
-    # Check if market is open today (deterministic: weekday + NYSE holidays)
-    now = datetime.now(timezone.utc)
-    weekday = now.weekday()
-    today_str = now.strftime("%Y-%m-%d")
+    # Check if market is open today (simple weekday check, no AI dependency)
+    weekday = datetime.now(timezone.utc).weekday()
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     print(f"\n  Checking if US markets open on {today_str} (weekday={weekday})...")
-    if not market_open_today(now):
-        print(f"  🏝️  Market closed ({'weekend' if weekday >= 5 else 'holiday'}) — skipping predictions.")
+    if weekday >= 5:
+        print(f"  🏝️  Weekend — skipping predictions.")
         return
-    print(f"  ✅ Market open — generating predictions...\n")
+    print(f"  ✅ Weekday — generating predictions...\n")
 
     print("1️⃣  Fetching market data...")
     md = fetch_json(MARKET_DATA_URL)
@@ -345,13 +327,11 @@ def main():
 
     data["last_prediction_date"] = today
     data["updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    data["total_preds"] = sum(len(t.get("predictions", [])) for t in data.get("tools", {}).values())
-    data.pop("_force_update", None)  # debug residue cleanup
 
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-    total_preds = data["total_preds"]
+    total_preds = sum(len(t.get("predictions", [])) for t in data["tools"].values())
     print(f"\n✅ Predictions saved ({total_preds} total)")
     for p in ms_preds:
         print(f"    {p['market']}: {p['prediction'].upper()} ({p['confidence']}%) — {p['signal']}")
