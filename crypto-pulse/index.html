@@ -260,7 +260,7 @@ function render(d) {
     let html = '';
     d.poly_markets.slice(0,5).forEach(m => {
       const pct = (m.yes_price||0)*100;
-      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;max-width:180px;white-space:normal;line-height:1.3;font-family:var(--pc-font)">' + (m.title||m.question||'?') + '</span><span class="price-val" style="font-size:12px;text-align:right">' + pct.toFixed(1) + '%</span></div>';
+      html += '<div class="price-row"><span class="price-sym" style="font-size:11px;min-width:0;max-width:180px;white-space:normal;line-height:1.3;font-family:var(--pc-font)">' + esc(m.title||m.question||'?') + '</span><span class="price-val" style="font-size:12px;text-align:right">' + pct.toFixed(1) + '%</span></div>';
     });
     document.getElementById('crypto-polymarket').innerHTML = html || '<div style="color:var(--pc-text-3);font-size:12px;padding:8px 0">No crypto markets</div>';
   }
@@ -269,7 +269,7 @@ function render(d) {
   if (d.news && d.news.length) {
     let html = '';
     d.news.slice(0,6).forEach(n => {
-      html += '<div class="news-item"><span class="news-source">' + (n.source||'') + '</span><a class="news-title" href="' + (n.url||'#') + '" target="_blank">' + n.title + '</a></div>';
+      html += '<div class="news-item"><span class="news-source">' + esc(n.source||'') + '</span><a class="news-title" href="' + esc(n.url||'#') + '" target="_blank">' + esc(n.title) + '</a></div>';
     });
     document.getElementById('crypto-news').innerHTML = html;
   }
@@ -278,13 +278,13 @@ function render(d) {
   if (d.cg_trending && d.cg_trending.length) {
     let html = '';
     d.cg_trending.slice(0,8).forEach(t => {
-      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||'') + '</span></div>';
+      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + esc(t.name||'') + '</span></div>';
     });
     document.getElementById('crypto-cg-trending').innerHTML = html;
   } else if (d.trending_searches) {
     let html = '';
     d.trending_searches.slice(0,8).forEach(t => {
-      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + (t.name||t.symbol||'') + '</span></div>';
+      html += '<div class="trending-row"><span class="trending-sym">' + (t.symbol||'').toUpperCase() + '</span><span class="trending-name">' + esc(t.name||t.symbol||'') + '</span></div>';
     });
     document.getElementById('crypto-cg-trending').innerHTML = html;
   }
