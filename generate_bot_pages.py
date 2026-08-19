@@ -1,29 +1,17 @@
 """Generate bot detail + records pages with Stripe design for root repo."""
-import os, json, html, argparse
+import os, json
 
-# Read bot profiles from trade repo (sibling of this repo)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-BOT_PROFILES_PATH = os.path.join(BASE_DIR, "..", "paper_trading", "bot_profiles.py")
+# Read bot profiles from trade repo
+BOT_PROFILES_PATH = "/mnt/c/Hermes/paper_trading/bot_profiles.py"
 
 # Execute bot_profiles to get BOT_PROFILES
 exec(open(BOT_PROFILES_PATH).read())
 
-OUTPUT_DIR = os.path.join(BASE_DIR, "trading-arena")
-
-
-def js_val(v):
-    """JSON-encode a value for safe embedding in a JS expression."""
-    return json.dumps(v, ensure_ascii=False)
-
-
-def h_escape(v):
-    """HTML-escape a value for safe embedding in HTML attribute/text."""
-    return html.escape(str(v), quote=True)
+OUTPUT_DIR = "/mnt/c/Hermes/paperchase_site/trading-arena"
 
 DETAIL_TMPL = """<!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>BOTNAME · AI Trading Bot · PaperChase</title>
@@ -163,13 +151,14 @@ DETAIL_TMPL = """<!DOCTYPE html>
 /* ── Empty state ── */
 .empty{text-align:center;padding:40px;color:var(--pc-text-3);font-size:13px}
 </style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
-  const BOT_ID=JSBOTID,BOT_COLOR=JSBOTCOLOR,BOT_NAME=JSBOTNAME;
-  const BOT_AVATAR=JSBOTAVATAR,BOT_BIO=JSBOTBIO,BOT_STRATEGY=JSBOTSTRATEGY;
-  const BOT_RISK=JSBOTRISK,BOT_RISK_BAR=JSBOTRISKBAR;
-  const BOT_MODEL=JSBOTMODEL,BOT_FALLBACK=JSBOTFALLBACK;
-  const BOT_WATCHLIST=JSBOTWATCHLIST;
-  const BOT_MAX_POSITION=JSBOTMAXPOSITION,BOT_MAX_TRADES=JSBOTMAXTRADES,BOT_MIN_CASH=JSBOTMINCASH;
+  const BOT_ID='BOTID',BOT_COLOR='BOTCOLOR',BOT_NAME='BOTNAME';
+  const BOT_AVATAR='BOTAVATAR',BOT_BIO='BOTBIO',BOT_STRATEGY='BOTSTRATEGY';
+  const BOT_RISK='BOTRISK',BOT_RISK_BAR=BOTRISKBAR;
+  const BOT_MODEL='BOTMODEL',BOT_FALLBACK='BOTFALLBACK';
+  const BOT_WATCHLIST=BOTWATCHLIST;
+  const BOT_MAX_POSITION=BOTMAXPOSITION,BOT_MAX_TRADES=BOTMAXTRADES,BOT_MIN_CASH=BOTMINCASH;
 </script>
 </head>
 <body>
@@ -213,7 +202,7 @@ DETAIL_TMPL = """<!DOCTYPE html>
 </div>
 </div>
 
-<script src="/trading-arena/assets/bot-detail.js"></script>
+<script src="/assets/bot-detail.js"></script>
 <script>
 async function checkFavStatus() {
   if (!window.PaperChaseAuth) return;
@@ -242,7 +231,6 @@ checkFavStatus();
 RECORDS_TMPL = """<!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>BOTNAME Trade Records · PaperChase</title>
@@ -323,82 +311,55 @@ RECORDS_TMPL = """<!DOCTYPE html>
 </div>
 
 <script>
-  const BOT_ID=JSBOTID,BOT_COLOR=JSBOTCOLOR,BOT_NAME=JSBOTNAME,BOT_AVATAR=JSBOTAVATAR;
+  const BOT_ID='BOTID',BOT_COLOR='BOTCOLOR',BOT_NAME='BOTNAME',BOT_AVATAR='BOTAVATAR';
 </script>
-<script src="/trading-arena/assets/records.js"></script>
+<script src="/assets/records.js"></script>
 </body></html>"""
 
 # ── GENERATE ──
-parser = argparse.ArgumentParser(description="Generate bot detail + records pages.")
-parser.add_argument("--bots", nargs="*", default=None, help="Only generate these bot ids (default: all)")
-parser.add_argument("--out", default=OUTPUT_DIR, help="Output directory (default: repo trading-arena/)")
-args = parser.parse_args()
-
 count = 0
 for bot_id, p in BOT_PROFILES.items():
-    if args.bots and bot_id not in args.bots:
-        continue
-    os.makedirs(f"{args.out}/{bot_id}", exist_ok=True)
+    os.makedirs(f"{OUTPUT_DIR}/{bot_id}", exist_ok=True)
     
     replacements = {
-        # HTML context — escape for HTML
-        'BOTID': h_escape(bot_id),
-        'BOTNAME': h_escape(p["display_name"]),
-        'BOTCOLOR': h_escape(p["color"]),
-        'BOTAVATAR': h_escape(p["avatar"]),
-        'BOTBIO': h_escape(p["bio"]),
-        'BOTSTRATEGY': h_escape(p["strategy"]),
-        'BOTRISK': h_escape(p["risk_level"]),
-        'BOTMODEL': h_escape(p.get("model", "gemini")),
-        'BOTFALLBACK': h_escape(p.get("fallback_model", "")),
-        'BOTWATCHLIST': h_escape(p["watchlist"]),
+        'BOTID': bot_id,
+        'BOTNAME': p["display_name"],
+        'BOTCOLOR': p["color"],
+        'BOTAVATAR': p["avatar"],
+        'BOTBIO': p["bio"],
+        'BOTSTRATEGY': p["strategy"],
+        'BOTRISK': p["risk_level"],
         'BOTRISKBAR': str(p["risk_bar"]),
+        'BOTMODEL': p.get("model", "gemini"),
+        'BOTFALLBACK': p.get("fallback_model", ""),
+        'BOTWATCHLIST': str(p["watchlist"]),
         'BOTMAXPOSITION': str(p["max_position_pct"]),
         'BOTMAXTRADES': str(p["max_trades_per_session"]),
         'BOTMINCASH': str(p["min_cash_reserve"]),
-        # JS context — JSON-encode so every value is a valid JS expression
-        'JSBOTID': js_val(bot_id),
-        'JSBOTCOLOR': js_val(p["color"]),
-        'JSBOTNAME': js_val(p["display_name"]),
-        'JSBOTAVATAR': js_val(p["avatar"]),
-        'JSBOTBIO': js_val(p["bio"]),
-        'JSBOTSTRATEGY': js_val(p["strategy"]),
-        'JSBOTRISK': js_val(p["risk_level"]),
-        'JSBOTRISKBAR': js_val(p["risk_bar"]),
-        'JSBOTMODEL': js_val(p.get("model", "gemini")),
-        'JSBOTFALLBACK': js_val(p.get("fallback_model", "")),
-        'JSBOTWATCHLIST': js_val(p["watchlist"]),
-        'JSBOTMAXPOSITION': js_val(p["max_position_pct"]),
-        'JSBOTMAXTRADES': js_val(p["max_trades_per_session"]),
-        'JSBOTMINCASH': js_val(p["min_cash_reserve"]),
     }
     
-    html_doc = DETAIL_TMPL
+    html = DETAIL_TMPL
     for k, v in sorted(replacements.items(), key=lambda x: -len(x[0])):
-        html_doc = html_doc.replace(k, v)
+        html = html.replace(k, v)
     
-    with open(f"{args.out}/{bot_id}/index.html", "w", encoding="utf-8") as f:
-        f.write(html_doc)
+    with open(f"{OUTPUT_DIR}/{bot_id}/index.html", "w", encoding="utf-8") as f:
+        f.write(html)
     
-    os.makedirs(f"{args.out}/{bot_id}/records", exist_ok=True)
+    os.makedirs(f"{OUTPUT_DIR}/{bot_id}/records", exist_ok=True)
     
     rec_html = RECORDS_TMPL
     rec_replacements = {
-        'BOTID': h_escape(bot_id),
-        'BOTNAME': h_escape(p["display_name"]),
-        'BOTCOLOR': h_escape(p["color"]),
-        'BOTAVATAR': h_escape(p["avatar"]),
-        'JSBOTID': js_val(bot_id),
-        'JSBOTCOLOR': js_val(p["color"]),
-        'JSBOTNAME': js_val(p["display_name"]),
-        'JSBOTAVATAR': js_val(p["avatar"]),
+        'BOTID': bot_id,
+        'BOTNAME': p["display_name"],
+        'BOTCOLOR': p["color"],
+        'BOTAVATAR': p["avatar"],
     }
     for k, v in sorted(rec_replacements.items(), key=lambda x: -len(x[0])):
         rec_html = rec_html.replace(k, v)
     
-    with open(f"{args.out}/{bot_id}/records/index.html", "w", encoding="utf-8") as f:
+    with open(f"{OUTPUT_DIR}/{bot_id}/records/index.html", "w", encoding="utf-8") as f:
         f.write(rec_html)
     
     count += 1
 
-print(f"\n{count} bots × 2 pages = {count*2} HTML files generated in {args.out}")
+print(f"\n{count} bots × 2 pages = {count*2} HTML files generated in {OUTPUT_DIR}")

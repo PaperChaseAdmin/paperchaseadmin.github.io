@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="/assets/icons/icon-192.png"/>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title data-i18n-title="page_title_predictions">Predictions — AI Market Forecasts</title>
 <meta name="description" content="AI-powered market predictions for S&P 500, NASDAQ, DOW, and crypto — accuracy tracking and full history."/>
+<meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://paperchase.online/predictions/"/>
+<meta property="og:site_name" content="PaperChase"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="AI Market Predictions — S&P 500, NASDAQ & Crypto Forecasts with Tracked Accuracy | PaperChase"/>
+<meta property="og:description" content="AI-powered market predictions for S&P 500, NASDAQ, DOW and crypto. Daily forecasts with full accuracy tracking and history."/>
+<meta property="og:url" content="https://paperchase.online/predictions/"/>
+<meta property="og:image" content="https://paperchase.online/assets/og-image.png"/>
+<meta property="og:locale" content="en_US"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="AI Market Predictions — S&P 500, NASDAQ & Crypto Forecasts with Tracked Accuracy | PaperChase"/>
+<meta name="twitter:description" content="AI-powered market predictions for S&P 500, NASDAQ, DOW and crypto. Daily forecasts with full accuracy tracking and history."/>
+<meta name="twitter:image" content="https://paperchase.online/assets/og-image.png"/>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3V49QCMT0"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3V49QCMT0');</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
@@ -45,7 +57,7 @@ td.dir-neutral{color:var(--pc-text-3);font-weight:600}
 .tool-PW{background:#fef3c7;color:#92400e}
 @media(max-width:640px){.pred-stats,.pred-grid,.acc-grid{grid-template-columns:1fr 1fr}}
 </style>
-<!-- AdSense removed 2026-08-14 (account not approved yet). Re-add when approved: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238177146851721" crossorigin="anonymous"></script> -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "AI Market Predictions — S&P 500, NASDAQ & Crypto Forecasts with Tracked Accuracy | PaperChase", "description": "AI-powered market predictions for S&P 500, NASDAQ, DOW and crypto. Daily forecasts with full accuracy tracking and history.", "url": "https://paperchase.online/predictions/", "mainEntity": [{"@type": "Question", "name": "How accurate are the AI market predictions?", "acceptedAnswer": {"@type": "Answer", "text": "PaperChase tracks every prediction's outcome and publishes an accuracy score per market (S&P 500, NASDAQ, DOW, crypto) with full historical records."}}, {"@type": "Question", "name": "How often are market predictions updated?", "acceptedAnswer": {"@type": "Answer", "text": "Predictions are generated daily per trading session, covering direction, magnitude and confidence for major indices and crypto markets."}}]}</script>
 </head>
 <body>
 <nav class="nav-bar"><div class="nav-inner">
@@ -89,7 +101,7 @@ td.dir-neutral{color:var(--pc-text-3);font-weight:600}
 </div></footer>
 
 <script>
-const DATA_URL='https://paperchase.online/predictions/data/predictions.json';
+const DATA_URL='https://raw.githubusercontent.com/PaperChaseAdmin/paperchaseadmin.github.io/main/predictions/data/predictions.json?t='+Date.now();
 const DIR_EMOJI={up:'📈',down:'📉',neutral:'➡️'};
 const DIR_CLASS={up:'dir-up',down:'dir-down',neutral:'dir-neutral'};
 
@@ -123,12 +135,12 @@ fetch(DATA_URL).then(r=>r.json()).then(d=>{
     }
   }
 
-  renderStats(totalPreds,settledPreds,correctPreds,settledPreds);
+  renderStats(totalPreds,settledPreds,correctPreds,totalPreds);
   renderToday(todayPredictions);
   renderAccuracy(toolAcc);
   renderFilters();
   renderHistory();
-  if(window.startCountdown)startCountdown(document.getElementById('countdown')||document.querySelector('.page-desc'),'Next Update','predictions',loadData);
+  if(window.startCountdown)startCountdown(document.getElementById('countdown')||document.querySelector('.page-desc'),'Next Prediction','predictions',loadData);
 }).catch(e=>{console.error('Predictions load error:',e);});
 }
 
@@ -150,12 +162,12 @@ function renderToday(preds){
     const dirClass=p.prediction==='up'?'dir-up':p.prediction==='down'?'dir-down':'dir-neutral';
     const color=p.prediction==='up'?'var(--pc-green)':p.prediction==='down'?'var(--pc-red)':'var(--pc-text-3)';
     return `<div class="pred-card">
-      <div class="pred-card-title">${esc(p.market||'Market')}</div>
-      <div class="pred-card-index">${esc(p.toolLabel||'')}</div>
+      <div class="pred-card-title">${p.market||'Market'}</div>
+      <div class="pred-card-index">${p.toolLabel||''}</div>
       <div class="pred-card-dir" style="color:${color}">${DIR_EMOJI[p.prediction]||'➡️'} ${p.prediction?.toUpperCase()||'N/A'}</div>
       <div class="pred-card-conf">Confidence: ${p.confidence||'?'}%</div>
       <div class="pred-card-bar"><div class="pred-card-fill" style="width:${p.confidence||0}%;background:${color}"></div></div>
-      <div style="font-size:10px;color:var(--pc-text-3);margin-top:6px">${esc(p.signal||'').substring(0,80)}</div>
+      <div style="font-size:10px;color:var(--pc-text-3);margin-top:6px">${(p.signal||'').substring(0,80)}</div>
     </div>`;
   }).join('');
 }
@@ -173,7 +185,7 @@ function renderFilters(){
   const tools=[...new Set(allPredictions.map(p=>p.toolKey))];
   document.getElementById('filter-bar').innerHTML=
     `<button class="filter-btn active" onclick="setFilter('all')">All</button>`+
-    tools.map(t=>`<button class="filter-btn" onclick="setFilter('${t.replace(/'/g,"\\'")}')">${esc(allPredictions.find(p=>p.toolKey===t)?.toolLabel||t)}</button>`).join('');
+    tools.map(t=>`<button class="filter-btn" onclick="setFilter('${t}')">${allPredictions.find(p=>p.toolKey===t)?.toolLabel||t}</button>`).join('');
 }
 
 function setFilter(f){filter=f;
@@ -190,8 +202,8 @@ function renderHistory(){
     const toolTagClass=`tool-tag tool-${p.toolKey?.split('_').map(s=>s[0]?.toUpperCase()).join('')||'NA'}`;
     return `<tr>
       <td>${p.date||'—'}</td>
-      <td><span class="${toolTagClass}">${esc(p.toolLabel||p.toolKey||'—')}</span></td>
-      <td>${esc(p.market||'—')}</td>
+      <td><span class="${toolTagClass}">${p.toolLabel||p.toolKey||'—'}</span></td>
+      <td>${p.market||'—'}</td>
       <td class="${dc}">${DIR_EMOJI[p.prediction]||''} ${p.prediction?.toUpperCase()||'—'}</td>
       <td>${p.confidence||'—'}%</td>
       <td>${badge}</td>
