@@ -140,10 +140,12 @@ body {
 
 /* ── Page headers ───────────────── */
 .page-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
+.page-title-wrap { flex: 1; min-width: 0; }
 .page-title-wrap h1, .page-title {
   font-size: 28px; font-weight: 700; letter-spacing: -0.03em; color: var(--pc-heading); line-height: 1.2; margin: 0;
 }
 .page-sub { font-size: 13.5px; color: var(--pc-text-2); margin-top: 6px; }
+.seo-blurb { width: 100%; max-width: 640px; }
 
 /* ── Cards ──────────────────────── */
 .card, .tool-card {
@@ -159,9 +161,9 @@ body {
 .card-title { font-size: 13.5px; font-weight: 600; color: var(--pc-heading); margin-bottom: 14px; }
 
 /* ── Guides & Insights list (homepage) ── */
-.guide-list { display: flex; flex-direction: column; }
+.guide-list { display: flex; flex-direction: column; padding: 4px 6px 12px; }
 .guide-link {
-  display: flex; align-items: center; gap: 10px; padding: 11px 14px; margin: 0 -14px;
+  display: flex; align-items: center; gap: 10px; padding: 11px 12px; margin: 0 -6px;
   border-radius: var(--pc-radius); text-decoration: none; color: var(--pc-heading);
   font-size: 13.5px; font-weight: 500; transition: background 0.12s, color 0.12s;
 }
@@ -233,7 +235,8 @@ tbody tr:hover { background: var(--pc-surface-hover); }
 .news-item { display: flex; align-items: center; gap: 10px; padding: 11px 20px; text-decoration: none; transition: background 0.1s; }
 .news-item:hover { background: var(--pc-surface-hover); }
 .news-item .src { font-size: 10px; font-weight: 700; color: var(--pc-text-3); text-transform: uppercase; min-width: 44px; }
-.news-item .title { font-size: 13px; color: var(--pc-text); flex: 1; line-height: 1.45; }
+.news-item .title, .news-item .news-title { font-size: 13px; color: var(--pc-text); flex: 1; line-height: 1.45; text-decoration: none; }
+.news-item .title:hover, .news-item .news-title:hover { color: var(--pc-heading); }
 .news-item .sentiment { font-size: 11px; font-weight: 600; }
 
 .stat-card { background: var(--pc-surface); border: 1px solid var(--pc-border); border-radius: var(--pc-radius-lg); padding: 20px; text-align: center; box-shadow: var(--pc-shadow-sm); }
@@ -308,4 +311,6 @@ tbody tr:hover { background: var(--pc-surface-hover); }
   .container { padding: 22px 14px 44px; }
   .article h1, .article-body h1 { font-size: 26px; }
   .page-title-wrap h1, .page-title { font-size: 22px; }
+  .page-header { flex-direction: column; align-items: stretch; gap: 10px; }
+  .page-title-wrap { flex: none; }
 }
