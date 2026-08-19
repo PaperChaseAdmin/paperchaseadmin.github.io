@@ -75,7 +75,6 @@
   </div>
 </div></nav>
 
-<div class="wrap">
 <div class="container">
 
   <div class="page-header">
@@ -139,7 +138,6 @@
   <div id="marketList"><div class="loading"><div class="spinner"></div>Scanning Poly Watch…</div></div>
 
 </div>
-</div>
 
 <script>
 const DATA_URL = 'https://raw.githubusercontent.com/PaperChaseAdmin/trade/main/data/polymarket/scan_results.json';
@@ -196,5 +194,17 @@ function onDataLoaded(){clearInterval(_cdTimer);const el=document.getElementById
 async function loadData(){const today=new Date().toISOString().split('T')[0];const hist=JSON.parse(localStorage.getItem('polywatch_predictions')||'[]');localStorage.setItem('polywatch_predictions',JSON.stringify(hist.filter(h=>h.date>=today)));try{const resp=await fetch(DATA_URL+'?t='+Date.now());if(!resp.ok)throw new Error('HTTP '+resp.status);const data=await resp.json();allMarkets=data.markets||[];const total=allMarkets.length;const recommended=allMarkets.filter(m=>m.heuristic&&m.heuristic.score>=15).length;const avgYes=total?(allMarkets.reduce((s,m)=>s+m.yes_price,0)/total*100).toFixed(1):0;const totalVol=allMarkets.reduce((s,m)=>s+(m.volume||0),0);document.getElementById('statsBar').innerHTML='<div class="stat-item"><div class="stat-lbl">Markets</div><div class="stat-val">'+total+'</div></div><div class="stat-item"><div class="stat-lbl">Recommended</div><div class="stat-val" style="color:var(--pc-green)">'+recommended+'</div></div><div class="stat-item"><div class="stat-lbl">Avg Yes%</div><div class="stat-val">'+avgYes+'%</div></div><div class="stat-item"><div class="stat-lbl">Total Volume</div><div class="stat-val">'+fmt(totalVol)+'</div></div>';renderMarkets();renderTopPick(allMarkets);onDataLoaded();const history=JSON.parse(localStorage.getItem('polywatch_predictions')||'[]');renderPredHist(history);}catch(e){document.getElementById('marketList').innerHTML='<div class="loading" style="color:var(--pc-red)">⚠ Could not load: '+e.message+'</div>';}}
 loadData();
 </script>
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 PaperChase. Not financial advice.</span>
+    <div class="footer-links">
+      <a href="/market-sentinel/">Market Sentinel</a>
+      <a href="/crypto-pulse/">Crypto Pulse</a>
+      <a href="/poly-watch/">Poly Watch</a>
+      <a href="/stock-pick/">Stock Pick</a>
+      <a href="/trading-arena/">Trading Arena</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
