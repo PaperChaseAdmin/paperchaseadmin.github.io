@@ -294,8 +294,8 @@ function renderAll(d) {
   newsItems.slice(0,12).forEach(function(n) {
     var s = (n.sentiment||'neutral').toLowerCase();
     newsHtml += '<li>' +
-      '<span class="ms-news-src">' + (n.source||'') + '</span> ' +
-      '<span class="ms-news-title">' + n.title + '</span>' +
+      '<span class="ms-news-src">' + esc(n.source||'') + '</span> ' +
+      '<span class="ms-news-title">' + esc(n.title) + '</span>' +
       '<span class="ms-news-sent" style="color:' + sentColor(s) + '">' + s.toUpperCase() + '</span></li>';
   });
   document.getElementById('newsList').innerHTML = newsHtml || '<li style="color:var(--pc-text-3)">No recent news</li>';
@@ -324,7 +324,7 @@ function renderAll(d) {
   if (poly.length) {
     poly.slice(0,4).forEach(function(p) {
       var yesPrice = p.yes_price != null ? Math.round(p.yes_price * 100) : 0;
-      socialHtml += '<div class="poly-item"><span>' + (p.title||'').slice(0,40) + '</span><span style="font-weight:600;font-family:var(--pc-mono)">' + yesPrice + '%</span></div>';
+      socialHtml += '<div class="poly-item"><span>' + esc(p.title||'').slice(0,40) + '</span><span style="font-weight:600;font-family:var(--pc-mono)">' + yesPrice + '%</span></div>';
     });
   }
   document.getElementById('socialSection').innerHTML = socialHtml || '<div style="color:var(--pc-text-3);font-size:11px">Loading forum data...</div>';
@@ -355,8 +355,8 @@ function renderAll(d) {
   if (politicalNews.length) {
     politicalNews.slice(0,8).forEach(function(n) {
       var s = (n.sentiment||'neutral').toLowerCase();
-      polHtml += '<li><span class="ms-news-src">' + (n.source||'') + '</span> ' +
-        '<span class="ms-news-title">' + n.title + '</span>' +
+      polHtml += '<li><span class="ms-news-src">' + esc(n.source||'') + '</span> ' +
+        '<span class="ms-news-title">' + esc(n.title) + '</span>' +
         '<span class="ms-news-sent" style="color:' + sentColor(s) + '">' + s.toUpperCase() + '</span></li>';
     });
   } else {
