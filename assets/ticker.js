@@ -19,10 +19,16 @@
     .then(function (r) { return r.json(); })
     .then(function (d) {
       var items = [];
-      (d.indices || []).forEach(function (i) {
-        items.push({ sym: i.symbol || i.name, price: i.price, chg: i.change_pct });
+      // indices: stocks.indices = { sp500: {value, change_24h}, nasdaq, dow, vix }
+      var idx = (d.stocks && d.stocks.indices) || {};
+      Object.keys(idx).forEach(function (k) {
+        var v = idx[k];
+        if (v && v.value != null) {
+          items.push({ sym: k.toUpperCase(), price: v.value, chg: v.change_24h });
+        }
       });
-      (d.crypto || []).slice(0, 6).forEach(function (c) {
+      // crypto: crypto.prices = [ {symbol, price_usd, change_24h}, ... ]
+      (d.crypto && d.crypto.prices || []).slice(0, 6).forEach(function (c) {
         items.push({ sym: (c.symbol || '').toUpperCase(), price: c.price_usd, chg: c.change_24h });
       });
       if (!items.length) return;
