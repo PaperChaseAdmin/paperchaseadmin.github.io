@@ -1,5 +1,5 @@
 /* PaperChase Service Worker — cache-first for assets, network-first for data */
-const CACHE = 'paperchase-v2';
+const CACHE = 'paperchase-v3';
 const ASSETS = [
   '/', '/manifest.json',
   '/assets/design-system.css', '/assets/supabase-client.js', '/assets/countdown.js',
