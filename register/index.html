@@ -27,7 +27,7 @@
   gtag('js', new Date());
   gtag('config', 'G-W3V49QCMT0');
 </script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200..700;1,9..40,300..500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
 <link rel="stylesheet" href="/assets/design-system.css"/>
 <script src="/assets/i18n.js"></script>
 <script src="/assets/supabase-client.js"></script>
@@ -56,8 +56,6 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Register | PaperChase", "description": "Create a PaperChase account to track your favourite AI trading bots and personalise your experience.", "url": "https://paperchase.online/register/"}</script>
 </head>
 <body>
-<div class="wrap">
-
 <nav class="topbar"><div class="topbar-inner">
   <a class="logo" href="/">PaperChase<span>.</span></a>
   <div class="topbar-nav">
@@ -74,6 +72,7 @@
   </div>
 </div></nav>
 
+<div class="ticker-wrap"><div class="ticker-track" id="tickerTrack"></div></div>
 <div class="auth-container">
   <div class="auth-card">
     <div class="auth-title" data-i18n="register_title">Create Account</div>
@@ -143,5 +142,18 @@ async function handleRegister(e) {
 }
 
 </script>
+<script src="/assets/ticker.js"></script>
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 PaperChase. Not financial advice.</span>
+    <div class="footer-links">
+      <a href="/market-sentinel/">Market Sentinel</a>
+      <a href="/crypto-pulse/">Crypto Pulse</a>
+      <a href="/poly-watch/">Poly Watch</a>
+      <a href="/stock-pick/">Stock Pick</a>
+      <a href="/trading-arena/">Trading Arena</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
