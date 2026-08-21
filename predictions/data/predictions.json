@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-21T13:27:16Z",
+  "updated_at": "2026-08-21T20:45:53Z",
   "last_prediction_date": "2026-08-21",
-  "last_settle_date": "2026-08-20",
+  "last_settle_date": "2026-08-21",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 13,
+      "total": 16,
       "correct": 8,
-      "accuracy_pct": 61.5,
+      "accuracy_pct": 50.0,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -478,9 +478,10 @@
           "prediction": "down",
           "confidence": 68,
           "signal": "Negative sentiment and mixed macro indicators",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 0.43
         },
         {
           "date": "2026-08-21",
@@ -488,9 +489,10 @@
           "prediction": "down",
           "confidence": 70,
           "signal": "Tech sector weakness and broader market decline",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 0.43
         },
         {
           "date": "2026-08-21",
@@ -498,9 +500,10 @@
           "prediction": "down",
           "confidence": 72,
           "signal": "Broad market sell-off and negative sentiment",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": false,
+          "settled": true,
+          "change_pct": 0.98
         }
       ]
     },
