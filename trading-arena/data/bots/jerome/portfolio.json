@@ -1,84 +1,59 @@
 {
   "cash": 2677.38,
-  "total_value": 9966.35,
+  "total_value": 9951.36,
   "positions": {
     "SHY": {
       "shares": 25,
-      "current_price": 82.0201,
+      "current_price": 81.985,
       "avg_cost": 81.8316
     },
     "XLU": {
       "shares": 5,
       "avg_cost": 43.35,
-      "current_price": 43.82
+      "current_price": 43.195
     },
     "BIL": {
       "shares": 7,
       "avg_cost": 91.51,
-      "current_price": 91.595
+      "current_price": 91.5988
     },
     "XLF": {
       "shares": 30,
-      "current_price": 57.29,
+      "current_price": 57.46,
       "avg_cost": 58.1633
     },
     "GS": {
       "shares": 2,
       "avg_cost": 1019.0,
-      "current_price": 1019.0
+      "current_price": 1012.2675
     },
     "BAC": {
       "shares": 10,
       "avg_cost": 62.15,
-      "current_price": 62.15
+      "current_price": 61.885
     }
   },
-  "total_return_pct": -0.34,
+  "total_return_pct": -0.49,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -14.99,
+  "today_pnl_pct": -0.15,
   "total_trades": 12,
   "today_start_value": 9966.35,
   "today_date": "2026-08-21",
-  "last_action": "Neutral/Cautious",
-  "last_updated": "2026-08-21T14:31:08Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-08-21T17:07:23Z",
   "last_session": {
-    "at": "2026-08-21T14:31:08Z",
+    "at": "2026-08-21T17:07:23Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "GS",
-        1.68
-      ],
-      [
-        "XLF",
-        0.67
-      ],
-      [
-        "BAC",
-        0.65
-      ],
-      [
-        "JPM",
-        0.55
-      ],
-      [
-        "SPY",
-        0.34
-      ],
-      [
-        "TLT",
-        -0.26
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The data currently presents a lack of clear directionality in volatility indices. However, the strength in the XLF components\u2014specifically GS and BAC\u2014suggests a preference for financial stability. I am maintaining a high cash position to ensure we remain nimble should the VIX signal a shift toward recessionary fears or heightened inflation.",
-    "outlook": "Neutral/Cautious",
-    "trades_made": 3
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
+    "trades_made": 0
   },
   "portfolio_history": [
     {
@@ -912,6 +887,10 @@
     {
       "timestamp": "2026-08-21T14:31:08Z",
       "value": 9966.35
+    },
+    {
+      "timestamp": "2026-08-21T17:07:23Z",
+      "value": 9951.36
     }
   ]
 }
