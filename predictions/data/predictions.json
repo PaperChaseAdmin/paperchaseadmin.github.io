@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-20T20:52:56Z",
-  "last_prediction_date": "2026-08-20",
+  "updated_at": "2026-08-21T13:27:16Z",
+  "last_prediction_date": "2026-08-21",
   "last_settle_date": "2026-08-20",
   "tools": {
     "market_sentinel": {
@@ -471,6 +471,36 @@
           "correct": false,
           "settled": true,
           "change_pct": -1.32
+        },
+        {
+          "date": "2026-08-21",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 68,
+          "signal": "Negative sentiment and mixed macro indicators",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-21",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 70,
+          "signal": "Tech sector weakness and broader market decline",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-21",
+          "market": "DOW",
+          "prediction": "down",
+          "confidence": 72,
+          "signal": "Broad market sell-off and negative sentiment",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -768,6 +798,16 @@
           "prediction": "down",
           "confidence": 78,
           "signal": "Will MegaETH perform an airdrop by December 31, 20 | Yes 22% / No 78% | Vol $10,404",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-21",
+          "market": "Will MegaETH perform an airdrop by December 31, 2026?",
+          "prediction": "down",
+          "confidence": 80,
+          "signal": "Will MegaETH perform an airdrop by December 31, 20 | Yes 20% / No 80% | Vol $10,426",
           "actual": null,
           "correct": null,
           "settled": false
