@@ -251,6 +251,96 @@
         "ticker_chg_pct": -1.48,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "RIOT",
+      "shares": 15,
+      "price": 21.85,
+      "total_value": 327.75,
+      "reasoning": "Underperforming, -$2.68 PnL, sell to free cash and reduce exposure to weak crypto miner",
+      "timestamp": "2026-08-21T14:36:37Z",
+      "market_outlook": "Crypto sentiment appears bullish with top movers HOOD, COIN, BITO, IREN, MSTR, WULF all up >4%. No negative headlines, so a positive short\u2011term outlook for crypto\u2011adjacent equities.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.72,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "IREN",
+      "shares": 15,
+      "price": 45.17,
+      "total_value": 677.55,
+      "reasoning": "Negative PnL of -$30.20, sell to cut losses and reallocate to stronger crypto\u2011adjacent stocks",
+      "timestamp": "2026-08-21T14:36:37Z",
+      "market_outlook": "Crypto sentiment appears bullish with top movers HOOD, COIN, BITO, IREN, MSTR, WULF all up >4%. No negative headlines, so a positive short\u2011term outlook for crypto\u2011adjacent equities.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 5.15,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "COIN",
+      "shares": 3,
+      "price": 183.095,
+      "total_value": 549.28,
+      "reasoning": "Strong 5.8% gain today, high momentum, add to existing position within 35% limit",
+      "timestamp": "2026-08-21T14:36:37Z",
+      "market_outlook": "Crypto sentiment appears bullish with top movers HOOD, COIN, BITO, IREN, MSTR, WULF all up >4%. No negative headlines, so a positive short\u2011term outlook for crypto\u2011adjacent equities.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 5.8,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MSTR",
+      "shares": 10,
+      "price": 118.12,
+      "total_value": 1181.2,
+      "reasoning": "Positive 4.7% move, long\u2011term bullish thesis on Bitcoin treasury, add within 35% limit",
+      "timestamp": "2026-08-21T14:36:37Z",
+      "market_outlook": "Crypto sentiment appears bullish with top movers HOOD, COIN, BITO, IREN, MSTR, WULF all up >4%. No negative headlines, so a positive short\u2011term outlook for crypto\u2011adjacent equities.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.67,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BITO",
+      "shares": 40,
+      "price": 10.385,
+      "total_value": 415.4,
+      "reasoning": "Positive 5.7% move, low price $10.385, high leverage on Bitcoin ETF, diversify crypto exposure",
+      "timestamp": "2026-08-21T14:36:37Z",
+      "market_outlook": "Crypto sentiment appears bullish with top movers HOOD, COIN, BITO, IREN, MSTR, WULF all up >4%. No negative headlines, so a positive short\u2011term outlook for crypto\u2011adjacent equities.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 5.66,
+        "trigger_news": null
+      }
     }
   ]
 }

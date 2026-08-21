@@ -1,58 +1,83 @@
 {
   "cash": 2117.28,
-  "total_value": 9757.69,
+  "total_value": 9828.28,
   "positions": {
     "AAPL": {
       "shares": 5,
-      "current_price": 315.66,
+      "current_price": 312.01,
       "avg_cost": 299.3344
     },
     "EL": {
       "shares": 12,
-      "current_price": 97.08,
+      "current_price": 96.3,
       "avg_cost": 85.6584
     },
     "RL": {
       "shares": 6,
-      "current_price": 371.12,
+      "current_price": 379.57,
       "avg_cost": 381.1891
     },
     "RH": {
       "shares": 1,
       "avg_cost": 177.31,
-      "current_price": 155.47
+      "current_price": 155.87
     },
     "LULU": {
       "shares": 20,
-      "current_price": 115.215,
+      "current_price": 117.42,
       "avg_cost": 118.3838
     },
     "CAKE": {
       "shares": 2,
       "avg_cost": 110.23,
-      "current_price": 105.33
+      "current_price": 106.83
     }
   },
-  "total_return_pct": -2.42,
+  "total_return_pct": -1.72,
   "total_return_usd": 0.0,
-  "today_pnl": -53.5,
-  "today_pnl_pct": -0.55,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 8,
-  "today_start_value": 9811.19,
-  "today_date": "2026-08-20",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-20T19:38:39Z",
+  "today_start_value": 9828.28,
+  "today_date": "2026-08-21",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-08-21T14:17:06Z",
   "last_session": {
-    "at": "2026-08-20T19:38:39Z",
+    "at": "2026-08-21T14:17:06Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RL",
+        1.89
+      ],
+      [
+        "LULU",
+        1.68
+      ],
+      [
+        "CPRI",
+        0.94
+      ],
+      [
+        "LVS",
+        0.57
+      ],
+      [
+        "WYNN",
+        0.56
+      ],
+      [
+        "HD",
+        0.55
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -883,6 +908,10 @@
     {
       "timestamp": "2026-08-20T19:38:39Z",
       "value": 9757.69
+    },
+    {
+      "timestamp": "2026-08-21T14:17:06Z",
+      "value": 9828.28
     }
   ]
 }
