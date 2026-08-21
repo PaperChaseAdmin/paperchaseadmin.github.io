@@ -161,6 +161,60 @@
         "ticker_chg_pct": 0.04,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GS",
+      "shares": 2,
+      "price": 1019.0,
+      "total_value": 2038.0,
+      "reasoning": "Observing strength in the financial sector with GS leading the watchlist. Given the lack of immediate volatility signals, I am cautiously deploying cash into high-quality banking institutions to capture sector momentum.",
+      "timestamp": "2026-08-21T14:31:08Z",
+      "market_outlook": "Neutral/Cautious",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.68,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BAC",
+      "shares": 10,
+      "price": 62.15,
+      "total_value": 621.5,
+      "reasoning": "The financial sector shows positive price action. I am increasing exposure to banks to balance the current portfolio weightings while maintaining a significant cash reserve for data-dependent adjustments.",
+      "timestamp": "2026-08-21T14:31:08Z",
+      "market_outlook": "Neutral/Cautious",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.65,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TLT",
+      "shares": 3,
+      "price": 82.14,
+      "total_value": 246.42,
+      "reasoning": "Current price action in TLT is slightly negative and I am looking to reduce exposure to long-duration Treasuries until there is more clarity regarding the inflation trajectory and interest rate expectations.",
+      "timestamp": "2026-08-21T14:31:08Z",
+      "market_outlook": "Neutral/Cautious",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.26,
+        "trigger_news": null
+      }
     }
   ]
 }
