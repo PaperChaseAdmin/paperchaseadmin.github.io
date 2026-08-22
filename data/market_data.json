@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T10:12:47Z",
+  "updated_at": "2026-08-22T11:11:06Z",
   "crypto": {
     "fear_greed": {
       "value": 71,
@@ -11,77 +11,138 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 76829,
-        "change_24h": -1.7,
-        "market_cap": 1542631131322,
-        "volume_24h": 57472598482
+        "price_usd": 76964,
+        "change_24h": -1.1,
+        "market_cap": 1544788728727,
+        "volume_24h": 56845036671
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 2409.92,
-        "change_24h": 0.3,
-        "market_cap": 290925454862,
-        "volume_24h": 29834104789
+        "price_usd": 2412.62,
+        "change_24h": 0.5,
+        "market_cap": 291158673875,
+        "volume_24h": 30108814354
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.47,
-        "change_24h": 9.8,
-        "market_cap": 92531135329,
-        "volume_24h": 12673304131
+        "price_usd": 1.49,
+        "change_24h": 4.3,
+        "market_cap": 93528030352,
+        "volume_24h": 12895856967
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 691.55,
-        "change_24h": 2.9,
-        "market_cap": 92124128192,
-        "volume_24h": 2476136919
+        "price_usd": 691.29,
+        "change_24h": 2.0,
+        "market_cap": 92053908567,
+        "volume_24h": 2545078054
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 92.81,
-        "change_24h": 2.2,
-        "market_cap": 54166726424,
-        "volume_24h": 8365557608
+        "price_usd": 92.97,
+        "change_24h": 1.5,
+        "market_cap": 54219092403,
+        "volume_24h": 8648846010
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.08965,
-        "change_24h": 7.6,
-        "market_cap": 13958674120,
-        "volume_24h": 2716725474
+        "price_usd": 0.089735,
+        "change_24h": 6.1,
+        "market_cap": 13962456613,
+        "volume_24h": 2816985860
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 11.51,
-        "change_24h": -0.1,
-        "market_cap": 8620617480,
-        "volume_24h": 1047569857
+        "price_usd": 11.55,
+        "change_24h": 0.4,
+        "market_cap": 8636957232,
+        "volume_24h": 1066356009
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.221656,
-        "change_24h": 5.8,
-        "market_cap": 8315394160,
-        "volume_24h": 1315212942
+        "price_usd": 0.222737,
+        "change_24h": 3.0,
+        "market_cap": 8349541679,
+        "volume_24h": 1357541339
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 7.45,
-        "change_24h": 0.1,
-        "market_cap": 3219981770,
-        "volume_24h": 565817877
+        "price_usd": 7.49,
+        "change_24h": -1.2,
+        "market_cap": 3235078305,
+        "volume_24h": 609520554
       }
     ],
-    "top_mentioned": [],
+    "top_mentioned": [
+      {
+        "symbol": "BTC",
+        "mentions": 8,
+        "price_usd": 76964,
+        "change_24h": -1.1
+      },
+      {
+        "symbol": "XRP",
+        "mentions": 1,
+        "price_usd": 1.49,
+        "change_24h": 4.3
+      },
+      {
+        "symbol": "ETH",
+        "mentions": 0,
+        "price_usd": 2412.62,
+        "change_24h": 0.5
+      },
+      {
+        "symbol": "SOL",
+        "mentions": 0,
+        "price_usd": 92.97,
+        "change_24h": 1.5
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 0,
+        "price_usd": 691.29,
+        "change_24h": 2.0
+      },
+      {
+        "symbol": "ADA",
+        "mentions": 0,
+        "price_usd": 0.222737,
+        "change_24h": 3.0
+      },
+      {
+        "symbol": "DOGE",
+        "mentions": 0,
+        "price_usd": 0.089735,
+        "change_24h": 6.1
+      },
+      {
+        "symbol": "AVAX",
+        "mentions": 0,
+        "price_usd": 7.49,
+        "change_24h": -1.2
+      },
+      {
+        "symbol": "LINK",
+        "mentions": 0,
+        "price_usd": 11.55,
+        "change_24h": 0.4
+      },
+      {
+        "symbol": "TON",
+        "mentions": 0,
+        "price_usd": null,
+        "change_24h": null
+      }
+    ],
     "news": [
       {
         "title": "Zcash jumps 48% to over $800 as Grayscale spot ETF push adds to ‘next bitcoin’ buzz",
@@ -189,6 +250,18 @@
         "color": "green"
       },
       {
+        "title": "Bitcoin crash forced Riot to pledge 1,825 BTC, but this huge rally may now free up 1,500 BTC",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/bitcoin-crash-forced-riot-to-pledge-1825-btc-but-this-huge-rally-may-now-free-1500-btc/",
+        "published": "Sat, 22 Aug 2026 10:50:30 +0000",
+        "assets": [
+          "BTC"
+        ],
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
+      },
+      {
         "title": "Bitcoin hits $80,000’s doorstep just as the ETF bid disappears for the weekend",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/bitcoin-hits-80000s-doorstep-just-as-the-etf-bid-disappears-for-the-weekend/",
@@ -209,29 +282,37 @@
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
-      },
-      {
-        "title": "Adam Back’s Bitcoin treasury deal died, but its $15M obligation did not",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/adam-backs-bitcoin-treasury-deal-died-but-its-15m-obligation-did-not/",
-        "published": "Sat, 22 Aug 2026 07:00:55 +0000",
-        "assets": [
-          "BTC",
-          "ADA"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": 0.264,
+      "score": 0.292,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [],
+    "reddit": [
+      {
+        "subreddit": "r/CryptoCurrency",
+        "mentions": {
+          "BTC": 8,
+          "XRP": 1,
+          "ETH": 0,
+          "SOL": 0,
+          "BNB": 0,
+          "ADA": 0,
+          "DOGE": 0,
+          "AVAX": 0,
+          "LINK": 0,
+          "TON": 0
+        },
+        "activity_score": 100,
+        "top_post": "Daily Crypto Discussion - August 17, 2026 (GMT+0)",
+        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vr7srb/daily_crypto_discussion_august_17_2026_gmt0/",
+        "top_post_score": 0,
+        "posts": 25
+      }
+    ],
     "reddit_summary": {
       "outlook": "Mixed",
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
@@ -242,22 +323,22 @@
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 139,
+      "active_threads": 137,
       "mentions": {
-        "BTC": 27,
+        "BTC": 25,
         "XRP": 16,
         "ETH": 1
       },
-      "bullish_hits": 106,
-      "bearish_hits": 63,
-      "bullish_pct": 63,
+      "bullish_hits": 100,
+      "bearish_hits": 54,
+      "bullish_pct": 65,
       "top_coin": "BTC",
       "top_posts": [
-        "/gme/ - comfy wednesday after-hours and late night edition &gt;basic information &gt;gme.cac site redacted due to aids h",
         "/pmg/ - precious metals general &gt;why gold &amp; silver? https://youtu.be/i3s4rl6ehii https://youtu.be/gksena5al_a htt",
         "/smg/ - stock market general friday edition educational sites: https://www.investopedia.com https://www.khanacademy.org/",
         "/smg/ - stock market general fry-day edition &gt;educational sites: https://www.investopedia.com https://www.khanacademy",
-        "/xsg/ xrp schizo general #2556 previous: &gt;&gt;62576831 &gt;buy xrp on: coinbase, binance, bitrue, uphold, robinhood, "
+        "/xsg/ xrp schizo general #2556 previous: &gt;&gt;62576831 &gt;buy xrp on: coinbase, binance, bitrue, uphold, robinhood, ",
+        "58k support? what 58k support?"
       ]
     },
     "cg_trending": [
@@ -266,49 +347,49 @@
         "name": "Zcash",
         "rank": 12,
         "score": 0,
-        "change_24h": 23.01
-      },
-      {
-        "symbol": "TRUMP",
-        "name": "Official Trump",
-        "rank": 95,
-        "score": 1,
-        "change_24h": 40.62
-      },
-      {
-        "symbol": "SUI",
-        "name": "Sui",
-        "rank": 28,
-        "score": 2,
-        "change_24h": 4.45
+        "change_24h": 19.0
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
         "rank": 1,
-        "score": 3,
-        "change_24h": -0.98
+        "score": 1,
+        "change_24h": -1.18
       },
       {
         "symbol": "PIPEDOG",
         "name": "pipedog",
-        "rank": 679,
+        "rank": 680,
+        "score": 2,
+        "change_24h": -10.23
+      },
+      {
+        "symbol": "TRUMP",
+        "name": "Official Trump",
+        "rank": 91,
+        "score": 3,
+        "change_24h": 49.52
+      },
+      {
+        "symbol": "PI",
+        "name": "Pi Network",
+        "rank": 71,
         "score": 4,
-        "change_24h": -9.93
+        "change_24h": -3.75
       },
       {
-        "symbol": "PUMP",
-        "name": "Pump.fun",
-        "rank": 50,
+        "symbol": "XRP",
+        "name": "XRP",
+        "rank": 4,
         "score": 5,
-        "change_24h": 14.3
+        "change_24h": 6.57
       },
       {
-        "symbol": "HYPE",
-        "name": "Hyperliquid",
-        "rank": 10,
+        "symbol": "SUI",
+        "name": "Sui",
+        "rank": 30,
         "score": 6,
-        "change_24h": 4.46
+        "change_24h": 2.85
       }
     ]
   },
@@ -346,6 +427,11 @@
         "symbol": "TSLA",
         "price_usd": 362.86,
         "change_24h": 5.14
+      },
+      {
+        "symbol": "AAPL",
+        "price_usd": 309.35,
+        "change_24h": -0.63
       },
       {
         "symbol": "MSFT",
@@ -386,6 +472,26 @@
     "top_mentioned": [],
     "news": [
       {
+        "title": "India’s Foreign Minister to Visit Russia Amid US Tariff Threat",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-22/india-s-foreign-minister-to-visit-russia-amid-us-tariff-threat",
+        "published": "Sat, 22 Aug 2026 10:20:05 GMT",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
+        "title": "India’s Central Bank Says Forex Deposit Inflows at $65.4 Billion",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-22/india-s-central-bank-says-forex-deposit-inflows-at-65-4-billion",
+        "published": "Sat, 22 Aug 2026 09:58:03 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
         "title": "Vingroup Among Vietnam Stocks to Debut on FTSE’s EM Index",
         "source": "Bloomberg",
         "url": "https://www.bloomberg.com/news/articles/2026-08-21/vingroup-among-vietnam-stocks-to-make-debut-on-ftse-s-em-index",
@@ -396,20 +502,10 @@
         "color": "yellow"
       },
       {
-        "title": "Mexico Optimistic it Can Achieve Lower US Tariffs on Cars, Steel",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-22/mexico-optimistic-it-can-achieve-lower-us-tariffs-on-cars-steel",
-        "published": "Sat, 22 Aug 2026 00:16:57 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Wall Street Week | AI Hits Wages, USMCA Under Pressure, Colorado River Crisis",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-21/wall-street-week-ai-hits-wages-colorado-river-crisis-video",
-        "published": "Fri, 21 Aug 2026 23:12:20 GMT",
+        "title": "Ahead of tough new U.S. sanctions, Iran criticizes 'extraterritorial sovereignty'",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/08/22/iran-criticizes-us-sanctions-extraterritorial-sovereignty.html",
+        "published": "Sat, 22 Aug 2026 10:34:23 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
@@ -436,74 +532,74 @@
         "color": "red"
       },
       {
-        "title": "Supreme Court allows Trump to continue White House ballroom construction for now",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/21/supreme-court-trump-white-house-ballroom.html",
-        "published": "Fri, 21 Aug 2026 20:47:32 GMT",
+        "title": "‘The estrangement isn’t about politics’: My daughter hasn’t spoken to me for 4 years. Do I leave her a monthly annuity?",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/its-truly-a-tragedy-my-daughter-hasnt-spoken-to-me-for-4-years-but-it-has-nothing-to-do-with-politics-86c4bcf6?mod=mw_rss_topstories",
+        "published": "Sat, 22 Aug 2026 11:00:00 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "This has been one of the most affordable U.S. cities to buy a home for the past 134 years",
+        "title": "A massive ‘corporate welfare’ program is underway — and consumers want a bigger cut of it",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/this-has-been-one-of-the-most-affordable-u-s-cities-to-buy-a-home-for-the-past-134-years-0c52895a?mod=mw_rss_topstories",
-        "published": "Sat, 22 Aug 2026 10:00:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "You can now Venmo your kid’s college tuition. But should you?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/should-you-venmo-your-tuition-heres-what-to-know-as-colleges-add-new-payment-options-1a70ae96?mod=mw_rss_topstories",
-        "published": "Fri, 21 Aug 2026 21:20:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Soon you can buy Medicare Advantage plans at Costco. What you need to know.",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/soon-you-can-buy-medicare-advantage-plans-at-costco-what-you-need-to-know-34e03242?mod=mw_rss_topstories",
-        "published": "Fri, 21 Aug 2026 21:17:00 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Under Armour: Continued Revenue Declines Are A Major Red Flag",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4939325-under-armour-continued-revenue-declines-are-a-major-red-flag?source=feed_all_articles",
-        "published": "Sat, 22 Aug 2026 05:56:44 -0400",
+        "url": "https://www.marketwatch.com/story/a-massive-corporate-welfare-program-is-underway-and-consumers-want-a-bigger-cut-of-it-0ff06d67?mod=mw_rss_topstories",
+        "published": "Sat, 22 Aug 2026 11:00:00 GMT",
         "assets": [],
         "sentiment": "Bearish",
-        "score": -0.333,
+        "score": -1.0,
         "color": "red"
       },
       {
-        "title": "Flex: AI Infrastructure Growth Could Drive The Next Earnings Cycle",
+        "title": "‘She’s desperate’: My friend was laid off and lost her health insurance. How can she find affordable coverage?",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/shes-desperate-my-friend-was-laid-off-and-lost-her-health-insurance-how-can-she-find-affordable-coverage-3b17b553?mod=mw_rss_topstories",
+        "published": "Sat, 22 Aug 2026 10:16:00 GMT",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
+        "title": "9% Yields With Well-Covered And Growing Dividends For Early Retirement",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4939324-flex-ai-infrastructure-growth-could-drive-the-next-earnings-cycle?source=feed_all_articles",
-        "published": "Sat, 22 Aug 2026 05:55:15 -0400",
+        "url": "https://seekingalpha.com/article/4939306-9-percent-yields-with-well-covered-growing-dividends-for-early-retirement?source=feed_all_articles",
+        "published": "Sat, 22 Aug 2026 07:05:00 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Churchill Capital Corp XI: First To Market Humanoid Robotics",
+        "title": "Flash PMIs Signal Summer Growth Spurt For Advanced Economies: Assessing The Growth Drivers And Outlook",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4939321-churchill-capital-corp-xi-first-to-market-humanoid-robotics?source=feed_all_articles",
-        "published": "Sat, 22 Aug 2026 05:35:35 -0400",
+        "url": "https://seekingalpha.com/article/4939344-flash-pmis-signal-summer-growth-spurt-for-advanced-economies-assessing-growth-drivers-outlook?source=feed_all_articles",
+        "published": "Sat, 22 Aug 2026 07:05:00 -0400",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Applied Materials: I Am Reiterating My Strong Buy As AI Manufacturing Demand Accelerates",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4939337-applied-materials-i-am-reiterating-my-strong-buy-as-ai-manufacturing-demand-accelerates?source=feed_all_articles",
+        "published": "Sat, 22 Aug 2026 07:04:53 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "The AI boom is lifting economies across Asia. But for Southeast Asia, it might just be a ‘short-term blip’",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/21/asia-ai-boom-southeast-asia-economic-geopolitical-divide-short-term-blip/",
+        "published": "Fri, 21 Aug 2026 21:00:00 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
       },
       {
         "title": "Retired racer Jimmie Johnson credits his multimillion-dollar success to shining his shoes and arriving 10 minutes early: ‘Small things matter’",
@@ -524,83 +620,73 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Powering the cloud after 60 years underground: Ormat’s geothermal pivot to AI",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/08/22/after-60-years-underground-power-cloud-ormat-ai-pivot/",
-        "published": "Sat, 22 Aug 2026 07:11:00 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": 0.044,
+      "score": -0.111,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Will Brentford FC win on 2026-08-22?",
-        "volume_24h": 778749,
+        "volume_24h": 796147,
         "yes_price": 0.47,
         "url": "https://polymarket.com/market/epl-bre-tot-2026-08-22-bre"
       },
       {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 691180,
+        "volume_24h": 691635,
         "yes_price": 0.69,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 484938,
+        "volume_24h": 485555,
         "yes_price": 0.3,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
         "title": "Will Sunderland AFC win on 2026-08-22?",
-        "volume_24h": 419482,
+        "volume_24h": 420098,
         "yes_price": 0.36,
         "url": "https://polymarket.com/market/epl-ips-sun-2026-08-22-sun"
       },
       {
+        "title": "Will Manchester United FC win on 2026-08-22?",
+        "volume_24h": 338101,
+        "yes_price": 0.71,
+        "url": "https://polymarket.com/market/epl-hul-mun-2026-08-22-mun"
+      },
+      {
         "title": "Clarity Act (H.R.3633) signed into law in 2026?",
-        "volume_24h": 258289,
+        "volume_24h": 258571,
         "yes_price": 0.24,
         "url": "https://polymarket.com/market/clarity-act-signed-into-law-in-2026"
       },
       {
         "title": "Bitcoin Up or Down on August 22?",
-        "volume_24h": 246877,
-        "yes_price": 0.31,
+        "volume_24h": 253486,
+        "yes_price": 0.36,
         "url": "https://polymarket.com/market/bitcoin-up-or-down-on-august-22-2026"
       },
       {
         "title": "Will Renan Santos win the 2026 Brazilian presidential election?",
-        "volume_24h": 222563,
+        "volume_24h": 221533,
         "yes_price": 0.04,
         "url": "https://polymarket.com/market/will-renan-santos-win-the-2026-brazilian-presidential-election"
       },
       {
         "title": "Will SSC Napoli win on 2026-08-22?",
-        "volume_24h": 217945,
+        "volume_24h": 218064,
         "yes_price": 0.48,
         "url": "https://polymarket.com/market/sea-gen-nap-2026-08-22-nap"
       },
       {
         "title": "Will Bitcoin reach $80,000 in August?",
-        "volume_24h": 213827,
-        "yes_price": 0.55,
+        "volume_24h": 210914,
+        "yes_price": 0.56,
         "url": "https://polymarket.com/market/will-bitcoin-reach-80k-in-august-2026"
-      },
-      {
-        "title": "Will Tottenham Hotspur FC win on 2026-08-22?",
-        "volume_24h": 191094,
-        "yes_price": 0.28,
-        "url": "https://polymarket.com/market/epl-bre-tot-2026-08-22-tot"
       }
     ],
     "polymarket_summary": {
@@ -614,7 +700,7 @@
     },
     "news_summary": {
       "outlook": "Bearish",
-      "summary": "Bearish: 4 bullish vs 8 bearish signals detected across stock/finance news data."
+      "summary": "Bearish: 1 bullish vs 12 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -709,11 +795,11 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 60
+          "interest_score": 65
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 10
+          "interest_score": 9
         },
         {
           "keyword": "Solana",
@@ -721,7 +807,7 @@
         },
         {
           "keyword": "crypto",
-          "interest_score": 24
+          "interest_score": 25
         }
       ]
     }
