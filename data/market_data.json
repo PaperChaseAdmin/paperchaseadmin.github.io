@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T04:26:38Z",
+  "updated_at": "2026-08-23T05:19:42Z",
   "crypto": {
     "fear_greed": {
       "value": 66,
@@ -11,74 +11,74 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 76863,
-        "change_24h": -2.0,
-        "market_cap": 1542668577110,
-        "volume_24h": 33281351673
+        "price_usd": 76055,
+        "change_24h": -2.1,
+        "market_cap": 1526608556594,
+        "volume_24h": 30926634787
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 2407.55,
-        "change_24h": -4.0,
-        "market_cap": 290523395888,
-        "volume_24h": 18455651836
+        "price_usd": 2368.25,
+        "change_24h": -5.1,
+        "market_cap": 285837282307,
+        "volume_24h": 16578787613
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.47,
-        "change_24h": -4.7,
-        "market_cap": 92172555608,
-        "volume_24h": 9896842689
+        "price_usd": 1.45,
+        "change_24h": -6.5,
+        "market_cap": 91169402940,
+        "volume_24h": 9835530218
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 687.38,
-        "change_24h": -3.3,
-        "market_cap": 91543884969,
-        "volume_24h": 1798623890
+        "price_usd": 680.47,
+        "change_24h": -4.6,
+        "market_cap": 90618799870,
+        "volume_24h": 1578066013
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 93.36,
-        "change_24h": -2.0,
-        "market_cap": 54443170914,
-        "volume_24h": 7390729543
+        "price_usd": 92.25,
+        "change_24h": -3.7,
+        "market_cap": 53822812894,
+        "volume_24h": 6131888880
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.090944,
-        "change_24h": -2.7,
-        "market_cap": 14152887949,
-        "volume_24h": 2483196951
+        "price_usd": 0.089345,
+        "change_24h": -5.7,
+        "market_cap": 13905120135,
+        "volume_24h": 2087248335
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 11.45,
-        "change_24h": -6.2,
-        "market_cap": 8560600317,
-        "volume_24h": 797402114
+        "price_usd": 11.11,
+        "change_24h": -8.5,
+        "market_cap": 8307349005,
+        "volume_24h": 714740900
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.219128,
-        "change_24h": -9.2,
-        "market_cap": 8217295591,
-        "volume_24h": 995252552
+        "price_usd": 0.214916,
+        "change_24h": -11.3,
+        "market_cap": 8055942835,
+        "volume_24h": 808819533
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 7.39,
-        "change_24h": -8.1,
-        "market_cap": 3190988517,
-        "volume_24h": 440216243
+        "price_usd": 7.32,
+        "change_24h": -8.6,
+        "market_cap": 3161251566,
+        "volume_24h": 391468226
       }
     ],
     "top_mentioned": [],
@@ -180,6 +180,16 @@
         "color": "yellow"
       },
       {
+        "title": "Coldcard now requires 65 key presses after seed exploit, while exposed funds still must move",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/coldcard-now-requires-65-key-presses-after-seed-exploit-while-exposed-funds-still-must-move/",
+        "published": "Sun, 23 Aug 2026 05:00:07 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
         "title": "Grayscale’s Zcash ETF filing proposes a 2.5% fee and a potential 34% DCG stake",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/grayscales-zcash-etf-filing-proposes-a-2-5-fee-and-a-potential-34-dcg-stake/",
@@ -198,22 +208,10 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Reaching instant 27ms validation on Bitcoin will take 17 GPU years of compute power",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/reaching-instant-27ms-validation-on-bitcoin-will-take-17-gpu-years-of-compute-power/",
-        "published": "Sat, 22 Aug 2026 20:45:15 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": -0.056,
+      "score": -0.139,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -230,14 +228,14 @@
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 134,
+      "active_threads": 137,
       "mentions": {
         "XRP": 25,
-        "BTC": 23,
+        "BTC": 22,
         "ETH": 6
       },
-      "bullish_hits": 93,
-      "bearish_hits": 65,
+      "bullish_hits": 95,
+      "bearish_hits": 66,
       "bullish_pct": 59,
       "top_coin": "XRP",
       "top_posts": [
@@ -252,51 +250,51 @@
       {
         "symbol": "PIPEDOG",
         "name": "pipedog",
-        "rank": 677,
+        "rank": 678,
         "score": 0,
-        "change_24h": -9.08
-      },
-      {
-        "symbol": "FOLD",
-        "name": "The Interfold",
-        "rank": 520,
-        "score": 1,
-        "change_24h": 52.53
-      },
-      {
-        "symbol": "HYPE",
-        "name": "Hyperliquid",
-        "rank": 9,
-        "score": 2,
-        "change_24h": -3.88
-      },
-      {
-        "symbol": "TRUMP",
-        "name": "Official Trump",
-        "rank": 95,
-        "score": 3,
-        "change_24h": -15.11
-      },
-      {
-        "symbol": "PUMP",
-        "name": "Pump.fun",
-        "rank": 46,
-        "score": 4,
-        "change_24h": 10.89
+        "change_24h": -6.55
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
         "rank": 1,
-        "score": 5,
-        "change_24h": -1.89
+        "score": 1,
+        "change_24h": -1.29
       },
       {
-        "symbol": "SUI",
-        "name": "Sui",
-        "rank": 29,
+        "symbol": "ALIGN",
+        "name": "Aligned",
+        "rank": 746,
+        "score": 2,
+        "change_24h": -27.03
+      },
+      {
+        "symbol": "FOLD",
+        "name": "The Interfold",
+        "rank": 521,
+        "score": 3,
+        "change_24h": 25.3
+      },
+      {
+        "symbol": "PUMP",
+        "name": "Pump.fun",
+        "rank": 45,
+        "score": 4,
+        "change_24h": 22.59
+      },
+      {
+        "symbol": "TRUMP",
+        "name": "Official Trump",
+        "rank": 94,
+        "score": 5,
+        "change_24h": -24.56
+      },
+      {
+        "symbol": "HYPE",
+        "name": "Hyperliquid",
+        "rank": 9,
         "score": 6,
-        "change_24h": -14.77
+        "change_24h": -0.04
       }
     ]
   },
@@ -379,6 +377,26 @@
     "top_mentioned": [],
     "news": [
       {
+        "title": "Australia Reports First Bird Flu Case in a Mammal as Seal Dies",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-23/australia-reports-first-bird-flu-case-in-a-mammal-as-seal-dies",
+        "published": "Sun, 23 Aug 2026 04:21:40 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "India Rescues Two of Ship’s 24 Crew Members After Distress Alert",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-23/india-rescues-two-of-ship-s-24-crew-members-after-distress-alert",
+        "published": "Sun, 23 Aug 2026 04:09:01 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
         "title": "New Zealand Opposition Vows to Restore RBNZ Dual Mandate",
         "source": "Bloomberg",
         "url": "https://www.bloomberg.com/news/articles/2026-08-23/new-zealand-labour-opposition-vows-to-restore-rbnz-dual-mandate",
@@ -387,26 +405,6 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Malaysia Rules Out $1.9 Billion Takeover of Passport Supplier",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-23/malaysia-rules-out-1-9-billion-takeover-of-passport-supplier",
-        "published": "Sun, 23 Aug 2026 01:51:38 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Korean Traders Chase 40% Coupons as Risk Appetite Survives Rout",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-23/korean-traders-chase-40-coupons-as-risk-appetite-survives-rout",
-        "published": "Sun, 23 Aug 2026 00:00:00 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       },
       {
         "title": "Inside Coca-Cola’s secretive innovation labs: How the beverage giant wants to automate dirty soda and refreshers",
@@ -471,30 +469,30 @@
         "color": "red"
       },
       {
+        "title": "ABN AMRO: Improved Profitability And Surplus Capital Warrant An Upgrade",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4939389-abn-amro-improved-profitability-and-surplus-capital-warrant-an-upgrade?source=feed_all_articles",
+        "published": "Sun, 23 Aug 2026 00:46:05 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "What Happened In Philly?",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4939269-what-happened-in-philly?source=feed_all_articles",
+        "published": "Sun, 23 Aug 2026 00:30:00 -0400",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
         "title": "CEF Weekly Review: XFLT Gets New Sub-Adviser Over The Line",
         "source": "SeekingAlpha",
         "url": "https://seekingalpha.com/article/4939388-cef-weekly-review-xflt-gets-new-sub-adviser-over-the-line?source=feed_all_articles",
         "published": "Sun, 23 Aug 2026 00:18:48 -0400",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Politics And The Markets 08/23/26",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4931534-politics-and-the-markets-082326?source=feed_all_articles",
-        "published": "Sun, 23 Aug 2026 00:00:00 -0400",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Safe Pro Group: AI Takes Off, But A High-Risk Buy",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4939387-safe-pro-group-ai-takes-off-but-a-high-risk-buy?source=feed_all_articles",
-        "published": "Sat, 22 Aug 2026 23:59:00 -0400",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
@@ -532,11 +530,17 @@
       }
     ],
     "news_sentiment": {
-      "score": -0.178,
+      "score": -0.111,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
+      {
+        "title": "Will Liverpool FC win on 2026-08-23?",
+        "volume_24h": 413432,
+        "yes_price": 0.48,
+        "url": "https://polymarket.com/market/epl-new-liv-2026-08-23-liv"
+      },
       {
         "title": "Will Ethereum dip to $1,000 by December 31, 2026?",
         "volume_24h": 394874,
@@ -544,10 +548,10 @@
         "url": "https://polymarket.com/market/will-ethereum-dip-to-1000-by-december-31-2026-273-175"
       },
       {
-        "title": "Will Liverpool FC win on 2026-08-23?",
-        "volume_24h": 392442,
-        "yes_price": 0.48,
-        "url": "https://polymarket.com/market/epl-new-liv-2026-08-23-liv"
+        "title": "Will TEAM VISION Win The International 2026?",
+        "volume_24h": 366337,
+        "yes_price": 0.57,
+        "url": "https://polymarket.com/market/will-team-vision-win-the-international-2026-20260629212053622"
       },
       {
         "title": "Will Ethereum dip to $800 by December 31, 2026?",
@@ -557,45 +561,39 @@
       },
       {
         "title": "Will Aston Villa FC win on 2026-08-23?",
-        "volume_24h": 233882,
+        "volume_24h": 237125,
         "yes_price": 0.29,
         "url": "https://polymarket.com/market/epl-bri-ast-2026-08-23-ast"
       },
       {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 202249,
+        "volume_24h": 202119,
         "yes_price": 0.69,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
+        "title": "Will Team Spirit Win The International 2026?",
+        "volume_24h": 202082,
+        "yes_price": 0.42,
+        "url": "https://polymarket.com/market/will-team-spirit-win-the-international-2026-20260629212053621"
+      },
+      {
+        "title": "Will FC Barcelona win on 2026-08-23?",
+        "volume_24h": 183535,
+        "yes_price": 0.72,
+        "url": "https://polymarket.com/market/lal-elc-bar-2026-08-23-bar"
+      },
+      {
         "title": "Clarity Act (H.R.3633) signed into law in 2026?",
-        "volume_24h": 173233,
+        "volume_24h": 166763,
         "yes_price": 0.24,
         "url": "https://polymarket.com/market/clarity-act-signed-into-law-in-2026"
       },
       {
-        "title": "Will FC Barcelona win on 2026-08-23?",
-        "volume_24h": 150250,
-        "yes_price": 0.74,
-        "url": "https://polymarket.com/market/lal-elc-bar-2026-08-23-bar"
-      },
-      {
         "title": "Will Bitcoin reach $90,000 in August?",
-        "volume_24h": 148006,
-        "yes_price": 0.06,
+        "volume_24h": 141394,
+        "yes_price": 0.04,
         "url": "https://polymarket.com/market/will-bitcoin-reach-90k-in-august-2026"
-      },
-      {
-        "title": "Will Alexandria Ocasio-Cortez win the 2028 US Presidential Election?",
-        "volume_24h": 138650,
-        "yes_price": 0.14,
-        "url": "https://polymarket.com/market/will-alexandria-ocasio-cortez-win-the-2028-us-presidential-election"
-      },
-      {
-        "title": "Will Bitcoin reach $80,000 in August?",
-        "volume_24h": 137035,
-        "yes_price": 0.54,
-        "url": "https://polymarket.com/market/will-bitcoin-reach-80k-in-august-2026"
       }
     ],
     "polymarket_summary": {
@@ -609,7 +607,7 @@
     },
     "news_summary": {
       "outlook": "Bearish",
-      "summary": "Bearish: 6 bullish vs 11 bearish signals detected across stock/finance news data."
+      "summary": "Bearish: 5 bullish vs 8 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -701,24 +699,7 @@
     ],
     "google_trends": {
       "stocks": [],
-      "crypto": [
-        {
-          "keyword": "Bitcoin",
-          "interest_score": 54
-        },
-        {
-          "keyword": "Ethereum",
-          "interest_score": 9
-        },
-        {
-          "keyword": "Solana",
-          "interest_score": 8
-        },
-        {
-          "keyword": "crypto",
-          "interest_score": 33
-        }
-      ]
+      "crypto": []
     }
   },
   "portfolio": [
