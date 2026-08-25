@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-24T20:55:14Z",
-  "last_prediction_date": "2026-08-24",
+  "updated_at": "2026-08-25T13:29:16Z",
+  "last_prediction_date": "2026-08-25",
   "last_settle_date": "2026-08-24",
   "tools": {
     "market_sentinel": {
@@ -537,6 +537,36 @@
           "correct": true,
           "settled": true,
           "change_pct": 0.26
+        },
+        {
+          "date": "2026-08-25",
+          "market": "S&P 500",
+          "prediction": "down",
+          "confidence": 68,
+          "signal": "Mixed market mood and negative tech sector performance",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-25",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 72,
+          "signal": "Tech sector weakness and negative sentiment",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-25",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 58,
+          "signal": "Mixed performance across sectors",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -854,6 +884,16 @@
           "prediction": "down",
           "confidence": 85,
           "signal": "Will Hyperliquid perform an airdrop by December 31 | Yes 15% / No 85% | Vol $166,920",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-25",
+          "market": "Spain snap election called by August 31, 2026?",
+          "prediction": "down",
+          "confidence": 99,
+          "signal": "Spain snap election called by August 31, 2026? | Yes 1% / No 99% | Vol $11,895",
           "actual": null,
           "correct": null,
           "settled": false
