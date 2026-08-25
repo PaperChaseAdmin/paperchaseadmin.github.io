@@ -1,54 +1,84 @@
 {
-  "cash": 1807.17,
-  "total_value": 10564.58,
+  "cash": 1180.76,
+  "total_value": 10568.61,
   "positions": {
     "KO": {
       "shares": 29,
-      "current_price": 91.645,
+      "current_price": 92.01,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 7,
-      "current_price": 382.64,
+      "current_price": 382.005,
       "avg_cost": 361.6657
     },
     "MA": {
       "shares": 4,
-      "current_price": 598.99,
+      "current_price": 600.84,
       "avg_cost": 529.0675
     },
     "CVX": {
       "shares": 4,
       "avg_cost": 200.54,
-      "current_price": 203.11
+      "current_price": 201.03
     },
     "WMT": {
       "shares": 2,
       "avg_cost": 114.23,
-      "current_price": 106.415
+      "current_price": 105.82
+    },
+    "AAPL": {
+      "shares": 2,
+      "avg_cost": 313.205,
+      "current_price": 313.205
     }
   },
-  "total_return_pct": 5.65,
+  "total_return_pct": 5.69,
   "total_return_usd": 0.0,
-  "today_pnl": 62.98,
-  "today_pnl_pct": 0.6,
-  "total_trades": 15,
-  "today_start_value": 10501.6,
-  "today_date": "2026-08-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-24T19:56:30Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 16,
+  "today_start_value": 10568.61,
+  "today_date": "2026-08-25",
+  "last_action": "...",
+  "last_updated": "2026-08-25T13:36:22Z",
   "last_session": {
-    "at": "2026-08-24T19:56:30Z",
+    "at": "2026-08-25T13:36:22Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CVX",
+        -1.01
+      ],
+      [
+        "AAPL",
+        0.83
+      ],
+      [
+        "JNJ",
+        -0.63
+      ],
+      [
+        "WMT",
+        -0.57
+      ],
+      [
+        "PG",
+        -0.47
+      ],
+      [
+        "BRK-B",
+        -0.25
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -902,6 +932,10 @@
     {
       "timestamp": "2026-08-24T19:56:30Z",
       "value": 10564.58
+    },
+    {
+      "timestamp": "2026-08-25T13:36:22Z",
+      "value": 10568.61
     }
   ]
 }
