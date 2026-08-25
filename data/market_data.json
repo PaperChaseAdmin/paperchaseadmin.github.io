@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T00:33:05Z",
+  "updated_at": "2026-08-25T02:11:26Z",
   "crypto": {
     "fear_greed": {
       "value": 74,
@@ -11,77 +11,138 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 78768,
-        "change_24h": 1.8,
-        "market_cap": 1581297745658,
-        "volume_24h": 51375344807
+        "price_usd": 79805,
+        "change_24h": 3.5,
+        "market_cap": 1601519500681,
+        "volume_24h": 53259254289
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 2478.15,
-        "change_24h": 1.1,
-        "market_cap": 299070428754,
-        "volume_24h": 19934723932
-      },
-      {
-        "symbol": "BNB",
-        "name": "BNB",
-        "price_usd": 706.38,
-        "change_24h": 0.91,
-        "market_cap": 94052067133,
-        "volume_24h": 1204500109
+        "price_usd": 2494.13,
+        "change_24h": 2.43,
+        "market_cap": 300931334370,
+        "volume_24h": 20215907629
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.48,
-        "change_24h": -1.22,
-        "market_cap": 92981960355,
-        "volume_24h": 5769850269
+        "price_usd": 1.51,
+        "change_24h": 2.64,
+        "market_cap": 94430575974,
+        "volume_24h": 5773789737
+      },
+      {
+        "symbol": "BNB",
+        "name": "BNB",
+        "price_usd": 708.9,
+        "change_24h": 1.78,
+        "market_cap": 94395542180,
+        "volume_24h": 1193738634
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 99.66,
-        "change_24h": 5.47,
-        "market_cap": 58128874516,
-        "volume_24h": 6174550871
+        "price_usd": 100.35,
+        "change_24h": 6.74,
+        "market_cap": 58540779587,
+        "volume_24h": 6688250735
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.090033,
-        "change_24h": -2.5,
-        "market_cap": 14014162657,
-        "volume_24h": 1090689273
+        "price_usd": 0.090948,
+        "change_24h": -0.09,
+        "market_cap": 14154176644,
+        "volume_24h": 1093400338
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 11.64,
-        "change_24h": 1.77,
-        "market_cap": 8710950535,
-        "volume_24h": 505652120
+        "price_usd": 11.76,
+        "change_24h": 3.41,
+        "market_cap": 8791082327,
+        "volume_24h": 510126209
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.221717,
-        "change_24h": -0.57,
-        "market_cap": 8313584402,
-        "volume_24h": 576427733
+        "price_usd": 0.223741,
+        "change_24h": 2.32,
+        "market_cap": 8388867512,
+        "volume_24h": 579923183
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 7.54,
-        "change_24h": -0.0,
-        "market_cap": 3253576414,
-        "volume_24h": 275425307
+        "price_usd": 7.61,
+        "change_24h": 2.23,
+        "market_cap": 3284322394,
+        "volume_24h": 274193740
       }
     ],
-    "top_mentioned": [],
+    "top_mentioned": [
+      {
+        "symbol": "BTC",
+        "mentions": 7,
+        "price_usd": 79805,
+        "change_24h": 3.5
+      },
+      {
+        "symbol": "ETH",
+        "mentions": 5,
+        "price_usd": 2494.13,
+        "change_24h": 2.43
+      },
+      {
+        "symbol": "SOL",
+        "mentions": 0,
+        "price_usd": 100.35,
+        "change_24h": 6.74
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 0,
+        "price_usd": 708.9,
+        "change_24h": 1.78
+      },
+      {
+        "symbol": "XRP",
+        "mentions": 0,
+        "price_usd": 1.51,
+        "change_24h": 2.64
+      },
+      {
+        "symbol": "ADA",
+        "mentions": 0,
+        "price_usd": 0.223741,
+        "change_24h": 2.32
+      },
+      {
+        "symbol": "DOGE",
+        "mentions": 0,
+        "price_usd": 0.090948,
+        "change_24h": -0.09
+      },
+      {
+        "symbol": "AVAX",
+        "mentions": 0,
+        "price_usd": 7.61,
+        "change_24h": 2.23
+      },
+      {
+        "symbol": "LINK",
+        "mentions": 0,
+        "price_usd": 11.76,
+        "change_24h": 3.41
+      },
+      {
+        "symbol": "TON",
+        "mentions": 0,
+        "price_usd": null,
+        "change_24h": null
+      }
+    ],
     "news": [
       {
         "title": "Bitcoin nears $80,000, but analysts say the next pullback will be key",
@@ -116,6 +177,18 @@
         "color": "yellow"
       },
       {
+        "title": "Korean bank taps Ripple for payments, Pakistan opens crypto licensing: Asia Express",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/magazine/korean-bank-to-use-ripple-payments-japans-first-exchange-in-4-years-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Tue, 25 Aug 2026 02:03:55 +0000",
+        "assets": [
+          "XRP"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
         "title": "CFTC, US soldier accused of illegal Polymarket bet spar over interpretation of prediction markets",
         "source": "Cointelegraph",
         "url": "https://cointelegraph.com/news/cftc-us-soldier-polymarket-bet-prediction-market-regulations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -136,16 +209,6 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Bernstein sees new USDC growth cycle, sets $140 Circle price target",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/bernstein-circle-usdc-growth-140-price-target?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Mon, 24 Aug 2026 20:00:39 +0000",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       },
       {
         "title": "Hugging Face Explores $13 Billion Sale a Month After a Rogue OpenAI Agent Hacked It",
@@ -180,6 +243,16 @@
         "color": "green"
       },
       {
+        "title": "Datavault hits Nasdaq deadline 68% below $1 as extension or delisting decision looms",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/datavault-hits-nasdaq-deadline-68-below-1-as-extension-or-delisting-decision-looms/",
+        "published": "Tue, 25 Aug 2026 01:45:02 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
+      },
+      {
         "title": "AI scammers no longer need to hack your wallet if they can convince you to use it for them",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/ai-scammers-no-longer-need-to-hack-your-wallet-if-they-can-convince-you-to-use-it-for-them/",
@@ -198,45 +271,56 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Users warned to pull funds immediately as EU sanctions force crypto platform into withdrawal-only mode",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/users-warned-to-pull-funds-immediately-as-eu-sanctions-force-crypto-platform-into-withdrawal-only-mode/",
-        "published": "Mon, 24 Aug 2026 21:20:25 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": 0.056,
+      "score": 0.028,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [],
     "polymarket_summary": "",
-    "reddit": [],
+    "reddit": [
+      {
+        "subreddit": "r/CryptoCurrency",
+        "mentions": {
+          "BTC": 7,
+          "ETH": 5,
+          "SOL": 0,
+          "BNB": 0,
+          "XRP": 0,
+          "ADA": 0,
+          "DOGE": 0,
+          "AVAX": 0,
+          "LINK": 0,
+          "TON": 0
+        },
+        "activity_score": 100,
+        "top_post": "Daily Crypto Discussion - August 17, 2026 (GMT+0)",
+        "top_post_url": "https://old.reddit.com/r/CryptoCurrency/comments/1vr7srb/daily_crypto_discussion_august_17_2026_gmt0/",
+        "top_post_score": 0,
+        "posts": 25
+      }
+    ],
     "reddit_summary": {
       "outlook": "Mixed",
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 4 bullish vs 3 bearish signals detected across crypto news data."
+      "summary": "Mixed: 4 bullish vs 4 bearish signals detected across crypto news data."
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 137,
+      "active_threads": 136,
       "mentions": {
-        "BTC": 29,
+        "BTC": 30,
         "XRP": 12,
-        "ETH": 3
+        "ETH": 4
       },
-      "bullish_hits": 116,
-      "bearish_hits": 55,
-      "bullish_pct": 68,
+      "bullish_hits": 117,
+      "bearish_hits": 52,
+      "bullish_pct": 69,
       "top_coin": "BTC",
       "top_posts": [
         "/smg/ stock market general babe edition educational sites: https://www.investopedia.com https://www.khanacademy.org/econ",
@@ -248,53 +332,53 @@
     },
     "cg_trending": [
       {
-        "symbol": "AERO",
-        "name": "Aerodrome Finance",
-        "rank": 104,
+        "symbol": "PONS",
+        "name": "Pons",
+        "rank": 372,
         "score": 0,
-        "change_24h": 12.9
+        "change_24h": 31.61
+      },
+      {
+        "symbol": "ZANO",
+        "name": "Zano",
+        "rank": 220,
+        "score": 1,
+        "change_24h": 7.31
       },
       {
         "symbol": "SOL",
         "name": "Solana",
         "rank": 7,
-        "score": 1,
-        "change_24h": 5.41
+        "score": 2,
+        "change_24h": 6.98
+      },
+      {
+        "symbol": "CASHCAT",
+        "name": "Cash Cat",
+        "rank": 168,
+        "score": 3,
+        "change_24h": 45.17
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
         "rank": 1,
-        "score": 2,
-        "change_24h": 1.73
-      },
-      {
-        "symbol": "HYPE",
-        "name": "Hyperliquid",
-        "rank": 10,
-        "score": 3,
-        "change_24h": -3.17
-      },
-      {
-        "symbol": "ETH",
-        "name": "Ethereum",
-        "rank": 2,
         "score": 4,
-        "change_24h": 1.13
+        "change_24h": 3.68
+      },
+      {
+        "symbol": "LIT",
+        "name": "Lighter",
+        "rank": 77,
+        "score": 5,
+        "change_24h": -6.91
       },
       {
         "symbol": "PUMP",
         "name": "Pump.fun",
-        "rank": 50,
-        "score": 5,
-        "change_24h": -8.7
-      },
-      {
-        "symbol": "ZANO",
-        "name": "Zano",
-        "rank": 221,
+        "rank": 48,
         "score": 6,
-        "change_24h": 6.29
+        "change_24h": -2.35
       }
     ]
   },
@@ -339,11 +423,6 @@
         "change_24h": 0.32
       },
       {
-        "symbol": "MSFT",
-        "price_usd": 487.31,
-        "change_24h": 0.84
-      },
-      {
         "symbol": "GOOGL",
         "price_usd": 348.06,
         "change_24h": 0.94
@@ -377,17 +456,19 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Bessent Defends Buyback Plan, Stops Short of New Bond Measures",
+        "title": "Australia’s FireFly Metals Seeks $136 Million for Copper Project",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-25/bessent-defends-buyback-plan-stops-short-of-new-signals-video",
-        "published": "Tue, 25 Aug 2026 00:21:56 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 0.333,
-        "color": "green"
+        "url": "https://www.bloomberg.com/news/articles/2026-08-25/australia-s-firefly-metals-seeks-136-million-for-copper-project",
+        "published": "Tue, 25 Aug 2026 01:59:33 GMT",
+        "assets": [
+          "META"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       },
       {
-        "title": "Asian Stocks Dip After US Tech Selloff, Gold Gains: Markets Wrap",
+        "title": "Asian Stocks Slip as Chipmakers Fall, Gold Gains: Markets Wrap",
         "source": "Bloomberg",
         "url": "https://www.bloomberg.com/news/articles/2026-08-24/stock-market-today-dow-s-p-live-updates",
         "published": "Mon, 24 Aug 2026 22:09:52 GMT",
@@ -397,14 +478,14 @@
         "color": "red"
       },
       {
-        "title": "Latest Oil Market News and Analysis for Aug. 25",
+        "title": "Gold Advances to Near $4,700 as Debasement Trade Powers Rally",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-24/latest-oil-market-news-and-analysis-for-aug-25",
-        "published": "Mon, 24 Aug 2026 22:02:31 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-24/gold-holds-near-three-month-high-as-traders-weigh-treasury-moves",
+        "published": "Mon, 24 Aug 2026 23:57:26 GMT",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "Trump admin unveils anti-Iran global sanctions plan, signals China not exempt",
@@ -467,36 +548,44 @@
         "color": "green"
       },
       {
-        "title": "Acadia Pharmaceuticals: Another Bite At The Alzheimer's Apple",
+        "title": "Tyro Payments Limited (TYPMF) Q4 2026 Earnings Call Transcript",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4939775-acadia-pharmaceuticals-another-bite-at-the-alzheimers-apple?source=feed_all_articles",
-        "published": "Mon, 24 Aug 2026 19:42:17 -0400",
-        "assets": [
-          "AAPL"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "url": "https://seekingalpha.com/article/4939785-tyro-payments-limited-typmf-q4-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Mon, 24 Aug 2026 22:01:47 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
-        "title": "Kenvue Deserves Some Love As Its Purchase By Kimberly-Clark Looks Imminent",
+        "title": "Scentre Group 2026 Q2 - Results - Earnings Call Presentation",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4939774-kenvue-deserves-some-love-as-its-purchase-by-kimberly-clark-looks-imminent?source=feed_all_articles",
-        "published": "Mon, 24 Aug 2026 19:31:49 -0400",
+        "url": "https://seekingalpha.com/article/4939801-scentre-group-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
+        "published": "Mon, 24 Aug 2026 22:00:46 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Tracking John Rogers' Ariel Investments Portfolio - Q2 2026 Update",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4939782-tracking-john-rogers-ariel-investments-portfolio-q2-2026-update?source=feed_all_articles",
+        "published": "Mon, 24 Aug 2026 21:47:14 -0400",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Bangkok Dusit Medical Services Public Company Limited 2026 Q2 - Results - Earnings Call Presentation",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4939778-bangkok-dusit-medical-services-public-company-limited-2026-q2-results-earnings-call?source=feed_all_articles",
-        "published": "Mon, 24 Aug 2026 19:04:20 -0400",
+        "title": "Meet Flock, the $8 billion startup backed by a16z and Tiger facing growing backlash against surveillance capitalism",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/24/flock-8-billion-startup-backed-a16z-tiger-surveillance-camera/",
+        "published": "Mon, 24 Aug 2026 07:00:00 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "SEC subpoenas Wall Street banks over Situational Awareness",
@@ -517,83 +606,73 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Meet Flock, the $8 billion startup backed by a16z and Tiger facing growing backlash against surveillance capitalism",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/08/24/flock-8-billion-startup-backed-a16z-tiger-surveillance-camera/",
-        "published": "Mon, 24 Aug 2026 07:00:00 +0000",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": -0.011,
+      "score": 0.167,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Clarity Act (H.R.3633) signed into law in 2026?",
-        "volume_24h": 1937360,
+        "volume_24h": 1932210,
         "yes_price": 0.18,
         "url": "https://polymarket.com/market/clarity-act-signed-into-law-in-2026"
       },
       {
+        "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+        "volume_24h": 426932,
+        "yes_price": 0.65,
+        "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
+      },
+      {
         "title": "Will the Iranian regime fall before 2027?",
-        "volume_24h": 361492,
+        "volume_24h": 361214,
         "yes_price": 0.07,
         "url": "https://polymarket.com/market/will-the-iranian-regime-fall-by-the-end-of-2026"
       },
       {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 350616,
+        "volume_24h": 350838,
         "yes_price": 0.34,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
         "title": "Will Donald Trump publicly insult someone on August 23, 2026?",
-        "volume_24h": 321943,
+        "volume_24h": 337079,
         "yes_price": 0.04,
         "url": "https://polymarket.com/market/will-donald-trump-publicly-insult-someone-on-august-23-2026-20260724221849654"
       },
       {
-        "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 312301,
-        "yes_price": 0.65,
-        "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
-      },
-      {
         "title": "US announces end of Iranian blockade by August 31, 2026?",
-        "volume_24h": 311336,
-        "yes_price": 0.02,
+        "volume_24h": 311314,
+        "yes_price": 0.03,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729"
       },
       {
         "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 236704,
+        "volume_24h": 238710,
         "yes_price": 0.17,
         "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       },
       {
         "title": "Will Renan Santos win the 2026 Brazilian presidential election?",
-        "volume_24h": 207411,
+        "volume_24h": 210007,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/will-renan-santos-win-the-2026-brazilian-presidential-election"
       },
       {
         "title": "US ceasefire against Iran continues through August 31?",
-        "volume_24h": 200223,
+        "volume_24h": 180337,
         "yes_price": 0.93,
         "url": "https://polymarket.com/market/us-x-iran-ceasefire-continues-through-august-31"
       },
       {
-        "title": "Will Brentford FC win on 2026-08-30?",
-        "volume_24h": 172911,
-        "yes_price": 0.34,
-        "url": "https://polymarket.com/market/epl-lee-bre-2026-08-30-bre"
+        "title": "Strait of Hormuz traffic returns to normal by December 31?",
+        "volume_24h": 173269,
+        "yes_price": 0.33,
+        "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
       }
     ],
     "polymarket_summary": {
@@ -606,8 +685,8 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Bearish",
-      "summary": "Bearish: 6 bullish vs 10 bearish signals detected across stock/finance news data."
+      "outlook": "Mixed",
+      "summary": "Mixed: 10 bullish vs 9 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -619,20 +698,20 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 98.97,
-        "change_24h": 0.17
+        "value": 99.02,
+        "change_24h": 0.02
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4738.3,
-        "change_24h": 2.47
+        "value": 4715.5,
+        "change_24h": 1.61
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 85.14,
-        "change_24h": -2.21
+        "value": 85.48,
+        "change_24h": 0.55
       }
     ],
     "most_active": [
@@ -702,19 +781,19 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 67
+          "interest_score": 58
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 13
+          "interest_score": 9
         },
         {
           "keyword": "Solana",
-          "interest_score": 15
+          "interest_score": 10
         },
         {
           "keyword": "crypto",
-          "interest_score": 41
+          "interest_score": 30
         }
       ]
     }
@@ -757,30 +836,30 @@
       "name": "Global X S&P 500 Covered Call",
       "type": "Covered Call Income",
       "price_usd": 41.29,
-      "change_1d": -0.84,
-      "change_1w": -0.86,
-      "change_1m": 1.3,
-      "high_3m": 41.66,
-      "low_3m": 39.24,
+      "change_1d": -0.09,
+      "change_1w": -0.12,
+      "change_1m": 2.06,
+      "high_3m": 41.35,
+      "low_3m": 38.95,
       "week52_high": 41.71,
       "week52_low": 38.22,
-      "rsi": 31.5,
+      "rsi": 74.1,
       "div_yield": 9.49,
       "last_div": null,
       "outlook": {
-        "label": "Mild Bearish",
-        "color": "red",
-        "score": -1,
-        "bull_count": 1,
+        "label": "Neutral",
+        "color": "yellow",
+        "score": 0,
+        "bull_count": 2,
         "bear_count": 2,
-        "total": 5,
+        "total": 6,
         "confidence": "Low",
         "reasons": [
-          "Price below 20-day moving average ↓",
+          "Price above 20-day moving average ↑",
           "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 31.5 — Below neutral, mild downward pressure ↓",
-          "5-day momentum -0.9% — consolidating sideways →",
-          "1-month return +1.3% — range-bound"
+          "RSI 74.1 — Overbought zone, historically signals a pullback ↓",
+          "5-day momentum -0.1% — consolidating sideways →",
+          "1-month return +2.1% — range-bound"
         ]
       }
     },
