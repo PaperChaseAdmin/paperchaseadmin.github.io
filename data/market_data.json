@@ -1,84 +1,84 @@
 {
-  "updated_at": "2026-08-25T23:15:39Z",
+  "updated_at": "2026-08-26T00:34:17Z",
   "crypto": {
     "fear_greed": {
-      "value": 74,
+      "value": 65,
       "label": "Greed",
-      "previous_value": 73,
+      "previous_value": 74,
       "previous_label": "Greed"
     },
     "prices": [
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 78898,
-        "change_24h": 0.22,
-        "market_cap": 1583714804683,
-        "volume_24h": 42953445891
+        "price_usd": 78618,
+        "change_24h": -0.17,
+        "market_cap": 1578294656768,
+        "volume_24h": 42582847730
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 2453.65,
-        "change_24h": -0.94,
-        "market_cap": 296094883938,
-        "volume_24h": 15421902156
+        "price_usd": 2444.46,
+        "change_24h": -1.33,
+        "market_cap": 295038690280,
+        "volume_24h": 15213262169
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 696.67,
-        "change_24h": -0.66,
-        "market_cap": 92765847062,
-        "volume_24h": 1067526694
+        "price_usd": 693.62,
+        "change_24h": -1.74,
+        "market_cap": 92388916737,
+        "volume_24h": 1050058754
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.45,
-        "change_24h": -1.95,
-        "market_cap": 90668016570,
-        "volume_24h": 4109618722
+        "price_usd": 1.44,
+        "change_24h": -3.33,
+        "market_cap": 90135513023,
+        "volume_24h": 4519794465
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 97.06,
-        "change_24h": -0.53,
-        "market_cap": 56615495853,
-        "volume_24h": 6067263120
+        "price_usd": 96.63,
+        "change_24h": -3.12,
+        "market_cap": 56368613121,
+        "volume_24h": 5536189103
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.086736,
-        "change_24h": -2.98,
-        "market_cap": 13499384791,
-        "volume_24h": 879463892
+        "price_usd": 0.086187,
+        "change_24h": -4.28,
+        "market_cap": 13417427772,
+        "volume_24h": 886101060
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 11.38,
-        "change_24h": -1.83,
-        "market_cap": 8513660260,
-        "volume_24h": 463532490
+        "price_usd": 11.28,
+        "change_24h": -3.16,
+        "market_cap": 8442158148,
+        "volume_24h": 458906241
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.211945,
-        "change_24h": -3.44,
-        "market_cap": 7945456813,
-        "volume_24h": 506744121
+        "price_usd": 0.210181,
+        "change_24h": -5.28,
+        "market_cap": 7882071980,
+        "volume_24h": 510856102
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 7.39,
-        "change_24h": -1.82,
-        "market_cap": 3189168006,
-        "volume_24h": 239257205
+        "price_usd": 7.34,
+        "change_24h": -2.67,
+        "market_cap": 3169413724,
+        "volume_24h": 236683105
       }
     ],
     "top_mentioned": [],
@@ -182,6 +182,18 @@
         "color": "yellow"
       },
       {
+        "title": "Cardano has days to close two huge voting gaps before governance hits a 3-seat bottleneck",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/cardano-has-days-to-close-two-huge-voting-gaps-before-governance-hits-a-3-seat-bottleneck/",
+        "published": "Tue, 25 Aug 2026 23:35:48 +0000",
+        "assets": [
+          "ADA"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
         "title": "Bitcoin’s 7 million coin quantum problem just reached the US Treasury",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/bitcoins-7-million-coin-quantum-problem-just-reached-the-us-treasury/",
@@ -202,22 +214,10 @@
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
-      },
-      {
-        "title": "Strive bought 1,110 Bitcoin, but shareholders gained less than 2% real BTC yield",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/strive-bought-1110-bitcoin-but-shareholders-gained-less-than-2-real-btc-yield/",
-        "published": "Tue, 25 Aug 2026 19:40:42 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": 0.083,
+      "score": -0.083,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -234,14 +234,14 @@
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 133,
+      "active_threads": 132,
       "mentions": {
-        "BTC": 29,
+        "BTC": 30,
         "XRP": 11,
         "ETH": 5
       },
-      "bullish_hits": 99,
-      "bearish_hits": 57,
+      "bullish_hits": 100,
+      "bearish_hits": 58,
       "bullish_pct": 63,
       "top_coin": "BTC",
       "top_posts": [
@@ -254,53 +254,53 @@
     },
     "cg_trending": [
       {
+        "symbol": "HYPE",
+        "name": "Hyperliquid",
+        "rank": 10,
+        "score": 0,
+        "change_24h": 2.09
+      },
+      {
+        "symbol": "DOG",
+        "name": "Dog (Bitcoin)",
+        "rank": 229,
+        "score": 1,
+        "change_24h": 4.88
+      },
+      {
         "symbol": "PUMP",
         "name": "Pump.fun",
         "rank": 50,
-        "score": 0,
-        "change_24h": -3.32
-      },
-      {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "rank": 1,
-        "score": 1,
-        "change_24h": 0.29
-      },
-      {
-        "symbol": "LIT",
-        "name": "Lighter",
-        "rank": 80,
         "score": 2,
-        "change_24h": -1.48
-      },
-      {
-        "symbol": "XRP",
-        "name": "XRP",
-        "rank": 5,
-        "score": 3,
-        "change_24h": -1.55
+        "change_24h": -4.63
       },
       {
         "symbol": "AERO",
         "name": "Aerodrome Finance",
         "rank": 103,
+        "score": 3,
+        "change_24h": -4.01
+      },
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "rank": 1,
         "score": 4,
-        "change_24h": -4.99
+        "change_24h": -0.37
       },
       {
         "symbol": "MON",
         "name": "Monad",
-        "rank": 122,
+        "rank": 124,
         "score": 5,
-        "change_24h": -8.83
+        "change_24h": -11.05
       },
       {
-        "symbol": "HYPE",
-        "name": "Hyperliquid",
-        "rank": 10,
+        "symbol": "PONS",
+        "name": "Pons",
+        "rank": 351,
         "score": 6,
-        "change_24h": 3.28
+        "change_24h": 20.27
       }
     ]
   },
@@ -338,6 +338,11 @@
         "symbol": "TSLA",
         "price_usd": 350.25,
         "change_24h": 0.37
+      },
+      {
+        "symbol": "AAPL",
+        "price_usd": 309.9,
+        "change_24h": -0.14
       },
       {
         "symbol": "MSFT",
@@ -378,6 +383,26 @@
     "top_mentioned": [],
     "news": [
       {
+        "title": "Xi Signals Defiance as US Threatens Sanctions Over Iran",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/videos/2026-08-26/xi-signals-defiance-as-us-threatens-sanctions-over-iran-video",
+        "published": "Wed, 26 Aug 2026 00:17:43 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "China Banks Use Overnight Rate for Bonds as PBOC Reform Widens",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-banks-use-overnight-rate-for-bonds-as-pboc-reform-widens",
+        "published": "Wed, 26 Aug 2026 00:14:42 GMT",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
         "title": "Latest Oil Market News and Analysis for Aug. 26",
         "source": "Bloomberg",
         "url": "https://www.bloomberg.com/news/articles/2026-08-25/latest-oil-market-news-and-analysis-for-aug-26",
@@ -386,26 +411,6 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Xi’s Unprecedented Tax Clawback Hammers Chinese Listed Companies",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-25/xi-s-unpredecented-tax-clawback-hammers-chinese-listed-companies",
-        "published": "Tue, 25 Aug 2026 23:00:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Asian Stocks Set to Gain as Oil Extends Declines: Markets Wrap",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-25/asian-stocks-set-to-gain-as-oil-extends-declines-markets-wrap",
-        "published": "Tue, 25 Aug 2026 22:08:45 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -0.333,
-        "color": "red"
       },
       {
         "title": "Oil drops more than 3% as U.S. shifts to economic pressure on Iran, easing fears of renewed war",
@@ -428,14 +433,34 @@
         "color": "red"
       },
       {
-        "title": "Canada unveils retaliatory tariffs on about $20 billion of U.S. goods",
+        "title": "From military alliance to economic partnership: How Trump is redefining U.S.-South Korea ties",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html",
-        "published": "Tue, 25 Aug 2026 21:26:01 GMT",
+        "url": "https://www.cnbc.com/2026/08/26/trump-us-south-korea-alliance-military-drills-.html",
+        "published": "Wed, 26 Aug 2026 00:06:25 GMT",
         "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "My father-in-law passed away, leaving a house with tenants. Do I evict them?",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/my-father-in-law-passed-away-leaving-a-house-with-tenants-do-i-evict-them-f974428c?mod=mw_rss_topstories",
+        "published": "Wed, 26 Aug 2026 00:30:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "‘My main goal is to help people’: I’m single, 74, with $10 million burning a hole in my pocket. What should I do?",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/my-main-goal-is-to-help-people-im-single-74-with-10-million-burning-a-hole-in-my-pocket-what-should-i-do-0e6112e1?mod=mw_rss_topstories",
+        "published": "Wed, 26 Aug 2026 00:01:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "‘It’s the ultimate regifting’: My mom gave me a house. Should I transfer it back to her to reduce capital gains?",
@@ -448,50 +473,40 @@
         "color": "red"
       },
       {
-        "title": "Dick’s Sporting Goods’ epic drop hits other footwear giants, as shoppers sour on retro sneakers",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/dicks-sporting-goods-stock-is-having-its-worst-day-ever-as-sneakers-arent-selling-without-deeper-discounts-5a868358?mod=mw_rss_topstories",
-        "published": "Tue, 25 Aug 2026 22:57:00 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Am I too old for Roth conversions? I’m 84 and my wife is 77. We have $8 million saved.",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/am-i-too-old-for-roth-conversions-im-84-and-my-wife-is-77-we-have-8-million-saved-fb08fccd?mod=mw_rss_topstories",
-        "published": "Tue, 25 Aug 2026 22:45:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "UNIQA Insurance Group AG 2026 Q2 - Results - Earnings Call Presentation",
+        "title": "QumulusAI, Inc. (QMLS) Q2 2026 Earnings Call Transcript",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4940154-uniqa-insurance-group-ag-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
-        "published": "Tue, 25 Aug 2026 19:06:00 -0400",
+        "url": "https://seekingalpha.com/article/4940145-qumulusai-inc-qmls-q2-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Tue, 25 Aug 2026 20:29:14 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Hua Medicine (Shanghai) Ltd. 2026 Q2 - Results - Earnings Call Presentation",
+        "title": "Perseus Mining Limited 2026 Q4 - Results - Earnings Call Presentation",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4940153-hua-medicine-shanghai-ltd-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
-        "published": "Tue, 25 Aug 2026 19:04:58 -0400",
+        "url": "https://seekingalpha.com/article/4940161-perseus-mining-limited-2026-q4-results-earnings-call-presentation?source=feed_all_articles",
+        "published": "Tue, 25 Aug 2026 20:19:37 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "G City Ltd 2026 Q2 - Results - Earnings Call Presentation",
+        "title": "EHang Holdings Limited (EH) Q2 2026 Earnings Call Transcript",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4940152-g-city-ltd-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
-        "published": "Tue, 25 Aug 2026 19:03:25 -0400",
+        "url": "https://seekingalpha.com/article/4939999-ehang-holdings-limited-eh-q2-2026-earnings-call-transcript?source=feed_all_articles",
+        "published": "Tue, 25 Aug 2026 20:19:18 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "How IHH Healthcare CEO Prem Kumar Nair is planning for a longer-lived Asia",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/08/25/ihh-healthcare-ceo-prem-kumar-nair-longevity-covid/",
+        "published": "Wed, 26 Aug 2026 00:00:00 +0000",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
@@ -516,83 +531,73 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "The Trump administration proposes $103,000 fee for H-1B visas that DHS itself estimates would paralyze 76% of small businesses",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/08/25/trump-h1b-visas-fee-startups/",
-        "published": "Tue, 25 Aug 2026 17:42:08 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": -0.084,
+      "score": 0.271,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Clarity Act (H.R.3633) signed into law in 2026?",
-        "volume_24h": 1019591,
+        "volume_24h": 1006855,
         "yes_price": 0.14,
         "url": "https://polymarket.com/market/clarity-act-signed-into-law-in-2026"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 488000,
-        "yes_price": 0.1,
+        "volume_24h": 775581,
+        "yes_price": 0.12,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
       },
       {
-        "title": "US announces end of Iranian blockade by August 31, 2026?",
-        "volume_24h": 487832,
-        "yes_price": 0.09,
-        "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729"
-      },
-      {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 429265,
-        "yes_price": 0.66,
+        "volume_24h": 523780,
+        "yes_price": 0.68,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
-        "title": "Will Ralph Norman be the new Republican nominee for Senate in South Carolina?",
-        "volume_24h": 393856,
-        "yes_price": 0.14,
-        "url": "https://polymarket.com/market/will-ralph-norman-be-the-new-republican-nominee-for-senate-in-south-carolina-20260712140628829"
+        "title": "US announces end of Iranian blockade by August 31, 2026?",
+        "volume_24h": 517540,
+        "yes_price": 0.1,
+        "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729"
       },
       {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
-        "volume_24h": 360093,
+        "volume_24h": 351291,
         "yes_price": 0.33,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
-        "title": "Will Darline Graham Nordone be the new republican nominee for Senate in South Carolina?",
-        "volume_24h": 347769,
-        "yes_price": 0.84,
-        "url": "https://polymarket.com/market/will-person-f-be-the-new-republican-nominee-for-senate-in-south-carolina-20260712140628838"
-      },
-      {
         "title": "US announces end of Iranian blockade by September 30, 2026?",
-        "volume_24h": 342553,
-        "yes_price": 0.39,
+        "volume_24h": 348622,
+        "yes_price": 0.43,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-september-30-2026-20260727171615364-722-649-646-561-213-644-414-831"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by December 31?",
-        "volume_24h": 338001,
-        "yes_price": 0.39,
+        "volume_24h": 331908,
+        "yes_price": 0.4,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
       },
       {
         "title": "Will Tucker Carlson win the 2028 Republican presidential nomination?",
-        "volume_24h": 300774,
+        "volume_24h": 300779,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/will-tucker-carlson-win-the-2028-republican-presidential-nomination"
+      },
+      {
+        "title": "Will the U.S. invade Iran before 2027?",
+        "volume_24h": 294737,
+        "yes_price": 0.15,
+        "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
+      },
+      {
+        "title": "US announces end of Iranian blockade by September 7, 2026?",
+        "volume_24h": 250485,
+        "yes_price": 0.17,
+        "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-september-7-2026"
       }
     ],
     "polymarket_summary": {
@@ -605,8 +610,8 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Bearish",
-      "summary": "Bearish: 2 bullish vs 13 bearish signals detected across stock/finance news data."
+      "outlook": "Mixed",
+      "summary": "Mixed: 7 bullish vs 10 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -618,20 +623,20 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 98.9,
-        "change_24h": -0.1
+        "value": 98.92,
+        "change_24h": -0.08
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4729.5,
-        "change_24h": 1.91
+        "value": 4703.0,
+        "change_24h": 1.34
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 80.99,
-        "change_24h": -4.73
+        "value": 80.84,
+        "change_24h": -4.91
       }
     ],
     "most_active": [
@@ -701,19 +706,19 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 80
+          "interest_score": 68
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 9
+          "interest_score": 11
         },
         {
           "keyword": "Solana",
-          "interest_score": 14
+          "interest_score": 8
         },
         {
           "keyword": "crypto",
-          "interest_score": 53
+          "interest_score": 42
         }
       ]
     }
