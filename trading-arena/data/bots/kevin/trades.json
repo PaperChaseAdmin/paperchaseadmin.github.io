@@ -233,6 +233,42 @@
         "ticker_chg_pct": -0.09,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "IBM",
+      "shares": 1,
+      "price": 230.88,
+      "total_value": 230.88,
+      "reasoning": "IBM is down 1.6% today. While it pays a dividend, I'd rather deploy this capital into higher-yielding opportunities like BTI or ENB to maximize my yield-on-cost.",
+      "timestamp": "2026-08-26T13:55:41Z",
+      "market_outlook": "Neutral. I don't care about the S&P 500 or the VIX; I care about the yield. As long as the dividend payers are stable, I am happy.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.58,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "OHI",
+      "shares": 5,
+      "price": 46.95,
+      "total_value": 234.75,
+      "reasoning": "Reit exposure is essential. OHI is steady and provides the reliable monthly/quarterly income I demand.",
+      "timestamp": "2026-08-26T13:55:41Z",
+      "market_outlook": "Neutral. I don't care about the S&P 500 or the VIX; I care about the yield. As long as the dividend payers are stable, I am happy.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.0,
+        "trigger_news": null
+      }
     }
   ]
 }
