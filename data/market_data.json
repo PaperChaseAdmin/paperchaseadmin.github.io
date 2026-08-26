@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T03:43:36Z",
+  "updated_at": "2026-08-26T04:29:10Z",
   "crypto": {
     "fear_greed": {
       "value": 65,
@@ -11,78 +11,92 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 79002,
-        "change_24h": -2.19,
-        "market_cap": 1586148060745,
-        "volume_24h": 36730964837
+        "price_usd": 79036,
+        "change_24h": -1.5,
+        "market_cap": 1587369843541,
+        "volume_24h": 36086260667
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 2463.05,
-        "change_24h": -1.65,
-        "market_cap": 297290202406,
-        "volume_24h": 13743745136
+        "price_usd": 2467.05,
+        "change_24h": -1.07,
+        "market_cap": 297887190530,
+        "volume_24h": 13320883612
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 695.59,
-        "change_24h": -2.89,
-        "market_cap": 92635343515,
-        "volume_24h": 946827664
+        "price_usd": 696.26,
+        "change_24h": -2.59,
+        "market_cap": 92748696163,
+        "volume_24h": 919935883
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.44,
-        "change_24h": -5.75,
-        "market_cap": 90203176554,
-        "volume_24h": 3959363403
+        "price_usd": 1.45,
+        "change_24h": -4.18,
+        "market_cap": 90732744947,
+        "volume_24h": 3918890437
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 96.98,
-        "change_24h": -4.66,
-        "market_cap": 56586786567,
-        "volume_24h": 4487793788
+        "price_usd": 97.1,
+        "change_24h": -4.26,
+        "market_cap": 56676364438,
+        "volume_24h": 4376586594
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.086595,
-        "change_24h": -6.48,
-        "market_cap": 13480014927,
-        "volume_24h": 803513673
+        "price_usd": 0.086775,
+        "change_24h": -5.58,
+        "market_cap": 13512882530,
+        "volume_24h": 803856230
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 11.4,
-        "change_24h": -3.42,
-        "market_cap": 8528247695,
-        "volume_24h": 417166565
+        "price_usd": 11.44,
+        "change_24h": -2.49,
+        "market_cap": 8565111441,
+        "volume_24h": 406138752
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.211391,
-        "change_24h": -7.01,
-        "market_cap": 7925552113,
-        "volume_24h": 467064692
+        "price_usd": 0.211415,
+        "change_24h": -6.52,
+        "market_cap": 7932634834,
+        "volume_24h": 445104551
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
         "price_usd": 7.36,
-        "change_24h": -4.01,
-        "market_cap": 3178091626,
-        "volume_24h": 220976627
+        "change_24h": -3.76,
+        "market_cap": 3180410950,
+        "volume_24h": 214488684
       }
     ],
     "top_mentioned": [],
     "news": [
+      {
+        "title": "Bitcoin holds $79,000, ether, solana slip as traders bank a week of gains",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2026/08/26/bitcoin-holds-usd79-000-ether-solana-slip-4-as-traders-bank-a-week-of-gains",
+        "published": "Wed, 26 Aug 2026 04:13:10 +0000",
+        "assets": [
+          "BTC",
+          "ETH",
+          "SOL"
+        ],
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
+      },
       {
         "title": "U.S. state banking associations plan to launch their own nationwide blockchain network",
         "source": "CoinDesk",
@@ -104,16 +118,14 @@
         "color": "red"
       },
       {
-        "title": "South Korea trade giant POSCO brings trade receivables to Avalanche in latest tokenization move",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/08/25/south-korea-trade-giant-posco-brings-trade-receivables-to-avalanche-in-latest-tokenization-move",
-        "published": "Tue, 25 Aug 2026 19:40:00 +0000",
-        "assets": [
-          "AVAX"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "title": "US banking groups plan nationwide blockchain network for 2027",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/us-banking-groups-nationwide-blockchain-network-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Wed, 26 Aug 2026 04:17:39 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
         "title": "World Liberty Financial launches USD1 natively on Canton Network",
@@ -136,18 +148,6 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Bitcoin enters ‘initial phase’ of new bull market, but $83K remains key: CryptoQuant",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/markets/bitcoin-enters-initial-phase-of-new-bull-market-but-83k-remains-key-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Tue, 25 Aug 2026 18:13:11 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
       },
       {
         "title": "Elon Musk’s SpaceX Plans $100 Billion Louisiana Spaceport",
@@ -182,6 +182,16 @@
         "color": "yellow"
       },
       {
+        "title": "40 malicious Firefox add-ons targeted crypto wallets, and 9 began as sports-score tools",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/firefox-crypto-wallet-malware-hid-behind-nine-sports-add-ons-turning-routine-updates-into-a-key-rotation-trap/",
+        "published": "Wed, 26 Aug 2026 04:00:18 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
         "title": "Soluna’s 1 billion-share proposal exposes the funding challenge behind its AI and Bitcoin expansion",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/solunas-1-billion-share-proposal-exposes-the-funding-challenge-behind-its-ai-and-bitcoin-expansion/",
@@ -203,22 +213,10 @@
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
-      },
-      {
-        "title": "Bitcoin miner Sphere 3D faces $2.2M tariff claim equal to 77% of its cash",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/bitcoin-miner-sphere-3d-faces-2-2m-tariff-claim-equal-to-77-of-its-cash/",
-        "published": "Wed, 26 Aug 2026 00:40:50 +0000",
-        "assets": [
-          "BTC"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": 0.0,
+      "score": -0.111,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -231,19 +229,19 @@
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 4 bullish vs 4 bearish signals detected across crypto news data."
+      "summary": "Mixed: 4 bullish vs 5 bearish signals detected across crypto news data."
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 134,
+      "active_threads": 132,
       "mentions": {
         "BTC": 30,
         "XRP": 10,
         "ETH": 5
       },
-      "bullish_hits": 93,
+      "bullish_hits": 92,
       "bearish_hits": 58,
-      "bullish_pct": 62,
+      "bullish_pct": 61,
       "top_coin": "BTC",
       "top_posts": [
         "/pmg/ - precious metals general delivered edition &gt;why precious metals? https://youtu.be/i3s4rl6ehii https://youtu.be",
@@ -257,51 +255,51 @@
       {
         "symbol": "DOG",
         "name": "Dog (Bitcoin)",
-        "rank": 221,
+        "rank": 224,
         "score": 0,
-        "change_24h": 8.78
+        "change_24h": 6.78
       },
       {
         "symbol": "PONS",
         "name": "Pons",
-        "rank": 286,
+        "rank": 292,
         "score": 1,
-        "change_24h": 42.25
-      },
-      {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "rank": 1,
-        "score": 2,
-        "change_24h": -2.21
+        "change_24h": 42.41
       },
       {
         "symbol": "CASHCAT",
         "name": "Cash Cat",
-        "rank": 175,
+        "rank": 165,
+        "score": 2,
+        "change_24h": -4.45
+      },
+      {
+        "symbol": "HYPE",
+        "name": "Hyperliquid",
+        "rank": 10,
         "score": 3,
-        "change_24h": -11.21
+        "change_24h": 0.98
       },
       {
         "symbol": "PUMP",
         "name": "Pump.fun",
         "rank": 49,
         "score": 4,
-        "change_24h": -4.18
+        "change_24h": -3.52
+      },
+      {
+        "symbol": "INDEX",
+        "name": "The Index",
+        "rank": 871,
+        "score": 5,
+        "change_24h": 3.33
       },
       {
         "symbol": "SOL",
         "name": "Solana",
         "rank": 7,
-        "score": 5,
-        "change_24h": -4.82
-      },
-      {
-        "symbol": "HYPE",
-        "name": "Hyperliquid",
-        "rank": 10,
         "score": 6,
-        "change_24h": 0.59
+        "change_24h": -4.46
       }
     ]
   },
@@ -384,34 +382,34 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Why China Is Defiant Even as US Threatens Iran Sanctions",
+        "title": "H&H Group CEO on Earnings, Business Outlook",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-08-26/why-china-is-defiant-even-as-us-threatens-iran-sanctions-video",
-        "published": "Wed, 26 Aug 2026 03:34:29 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Latest Oil Market News and Analysis for Aug. 26",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-25/latest-oil-market-news-and-analysis-for-aug-26",
-        "published": "Tue, 25 Aug 2026 22:06:21 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Copper Climbs From Record-High Close With Supply Still Tight",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-26/copper-climbs-from-record-high-close-with-supply-still-tight",
-        "published": "Wed, 26 Aug 2026 03:06:12 GMT",
+        "url": "https://www.bloomberg.com/news/videos/2026-08-26/h-h-group-ceo-on-earnings-business-outlook-video",
+        "published": "Wed, 26 Aug 2026 04:20:16 GMT",
         "assets": [],
         "sentiment": "Bullish",
-        "score": 0.333,
+        "score": 1.0,
         "color": "green"
+      },
+      {
+        "title": "Insurer Great Eastern Invests in Granite Private Credit Fund",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-26/insurer-great-eastern-invests-in-granite-private-credit-fund",
+        "published": "Wed, 26 Aug 2026 04:11:28 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Asian Shares Rise as Oil’s Decline Lifts Sentiment: Markets Wrap",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-25/asian-stocks-set-to-gain-as-oil-extends-declines-markets-wrap",
+        "published": "Tue, 25 Aug 2026 22:08:45 GMT",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
       },
       {
         "title": "Trump's Saudi nuclear deal reaches Congress as experts warn of proliferation risk",
@@ -437,7 +435,7 @@
         "title": "HP partners with U.S.-blacklisted Huawei for licensing the Chinese company's WiFi tech",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/08/25/hp-partners-huawei-wifi-tech-us-entity-list.html",
-        "published": "Wed, 26 Aug 2026 02:01:01 GMT",
+        "published": "Wed, 26 Aug 2026 04:20:31 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
@@ -474,34 +472,34 @@
         "color": "green"
       },
       {
-        "title": "Wolfspeed: Riding Out The Volatility",
+        "title": "DRNZ: Buy The Drone Buildout Before The Rules Change (For The Better)",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4940182-wolfspeed-q4-riding-out-the-volatility?source=feed_all_articles",
-        "published": "Tue, 25 Aug 2026 23:41:05 -0400",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Paladin Energy Ltd (PALAF) Q4 2026 Earnings Call Transcript",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4940181-paladin-energy-ltd-palaf-q4-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Tue, 25 Aug 2026 23:39:14 -0400",
+        "url": "https://seekingalpha.com/article/4940192-drnz-buy-the-drone-buildout-before-the-rules-change-for-the-better?source=feed_all_articles",
+        "published": "Wed, 26 Aug 2026 00:24:54 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Pilbara Gold Limited (KAIFF) Presents at RIU Resources Investor Roadshow- Melbourne - Slideshow",
+        "title": "Ecovyst Inc. (ECVT) Presents at 18th Annual BWS Financial Growth and Value Summer Investor Series - Slideshow",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4940196-pilbara-gold-limited-kaiff-presents-at-riu-resources-investor-roadshow-melbourne-slideshow?source=feed_all_articles",
-        "published": "Tue, 25 Aug 2026 23:33:03 -0400",
+        "url": "https://seekingalpha.com/article/4940206-ecovyst-inc-ecvt-presents-at-18th-annual-bws-financial-growth-and-value-summer-investor?source=feed_all_articles",
+        "published": "Wed, 26 Aug 2026 00:03:38 -0400",
         "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
+      },
+      {
+        "title": "Xtep International Holdings Limited 2026 Q2 - Results - Earnings Call Presentation",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4940205-xtep-international-holdings-limited-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
+        "published": "Wed, 26 Aug 2026 00:03:11 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "How IHH Healthcare CEO Prem Kumar Nair is planning for a longer-lived Asia",
@@ -535,46 +533,40 @@
       }
     ],
     "news_sentiment": {
-      "score": 0.089,
-      "label": "Neutral",
-      "color": "yellow"
+      "score": 0.333,
+      "label": "Bullish",
+      "color": "green"
     },
     "polymarket": [
       {
         "title": "Clarity Act (H.R.3633) signed into law in 2026?",
-        "volume_24h": 1005869,
+        "volume_24h": 1005826,
         "yes_price": 0.14,
         "url": "https://polymarket.com/market/clarity-act-signed-into-law-in-2026"
       },
       {
         "title": "Strait of Hormuz traffic returns to normal by September 30?",
-        "volume_24h": 823365,
-        "yes_price": 0.1,
+        "volume_24h": 888820,
+        "yes_price": 0.12,
         "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
       },
       {
         "title": "US announces end of Iranian blockade by August 31, 2026?",
-        "volume_24h": 524208,
+        "volume_24h": 522716,
         "yes_price": 0.07,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729"
       },
       {
         "title": "Will there be no change in Fed interest rates after the September 2026 meeting?",
-        "volume_24h": 389915,
+        "volume_24h": 389912,
         "yes_price": 0.68,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615"
       },
       {
         "title": "US announces end of Iranian blockade by September 30, 2026?",
-        "volume_24h": 351723,
-        "yes_price": 0.4,
+        "volume_24h": 350562,
+        "yes_price": 0.41,
         "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-september-30-2026-20260727171615364-722-649-646-561-213-644-414-831"
-      },
-      {
-        "title": "Strait of Hormuz traffic returns to normal by December 31?",
-        "volume_24h": 348170,
-        "yes_price": 0.38,
-        "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
       },
       {
         "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
@@ -583,22 +575,28 @@
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649"
       },
       {
+        "title": "Strait of Hormuz traffic returns to normal by December 31?",
+        "volume_24h": 336992,
+        "yes_price": 0.38,
+        "url": "https://polymarket.com/market/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+      },
+      {
         "title": "Will Tucker Carlson win the 2028 Republican presidential nomination?",
-        "volume_24h": 300787,
+        "volume_24h": 300794,
         "yes_price": 0.03,
         "url": "https://polymarket.com/market/will-tucker-carlson-win-the-2028-republican-presidential-nomination"
       },
       {
         "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 291680,
+        "volume_24h": 291480,
         "yes_price": 0.15,
         "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       },
       {
-        "title": "US announces end of Iranian blockade by September 7, 2026?",
-        "volume_24h": 245423,
-        "yes_price": 0.17,
-        "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-september-7-2026"
+        "title": "Will Real Madrid CF win on 2026-08-26?",
+        "volume_24h": 244798,
+        "yes_price": 0.74,
+        "url": "https://polymarket.com/market/lal-rea-rso-2026-08-26-rea"
       }
     ],
     "polymarket_summary": {
@@ -624,87 +622,104 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 98.97,
-        "change_24h": -0.03
+        "value": 98.99,
+        "change_24h": 0.07
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4706.7,
-        "change_24h": 1.42
+        "value": 4698.8,
+        "change_24h": 1.31
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 80.29,
-        "change_24h": -5.55
+        "value": 80.4,
+        "change_24h": -2.38
       }
     ],
     "most_active": [
       {
         "symbol": "NVDA",
-        "volume": 120441439,
+        "volume": 121722500,
         "price_usd": 213.05,
         "change_24h": 2.19
       },
       {
         "symbol": "TSLA",
-        "volume": 29715710,
+        "volume": 29766300,
         "price_usd": 350.25,
         "change_24h": 0.37
       },
       {
         "symbol": "SPY",
-        "volume": 27030487,
+        "volume": 27387900,
         "price_usd": 765.91,
         "change_24h": 0.32
       },
       {
         "symbol": "AAPL",
-        "volume": 25666176,
+        "volume": 25842000,
         "price_usd": 309.9,
         "change_24h": -0.14
       },
       {
         "symbol": "AMZN",
-        "volume": 25452240,
+        "volume": 25500900,
         "price_usd": 261.06,
         "change_24h": -0.39
       },
       {
         "symbol": "PLTR",
-        "volume": 24473108,
+        "volume": 24504300,
         "price_usd": 172.73,
         "change_24h": -1.8
       },
       {
         "symbol": "QQQ",
-        "volume": 23450911,
+        "volume": 23713600,
         "price_usd": 710.72,
         "change_24h": 0.62
       },
       {
         "symbol": "BAC",
-        "volume": 23379206,
+        "volume": 23386900,
         "price_usd": 62.43,
         "change_24h": 0.16
       },
       {
         "symbol": "GOOGL",
-        "volume": 20600170,
+        "volume": 20619300,
         "price_usd": 346.96,
         "change_24h": -0.32
       },
       {
         "symbol": "MSFT",
-        "volume": 19144017,
+        "volume": 19498800,
         "price_usd": 491.71,
         "change_24h": 0.9
       }
     ],
     "google_trends": {
       "stocks": [],
-      "crypto": []
+      "crypto": [
+        {
+          "keyword": "Bitcoin",
+          "interest_score": 64
+        },
+        {
+          "keyword": "Ethereum",
+          "interest_score": 12
+        },
+        {
+          "keyword": "Solana",
+          "interest_score": 11
+        },
+        {
+          "keyword": "crypto",
+          "interest_score": 42
+        }
+      ]
     }
   },
   "portfolio": [
