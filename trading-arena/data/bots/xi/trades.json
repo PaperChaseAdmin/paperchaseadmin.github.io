@@ -215,6 +215,42 @@
         "ticker_chg_pct": 0.81,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BIDU",
+      "shares": 10,
+      "price": 96.26,
+      "total_value": 962.6,
+      "reasoning": "BIDU is showing strong relative strength with a 3.32% gain today. While others in the sector are lagging, Baidu's momentum suggests it is leading the recovery in tech. I will use my cash to accumulate this national champion.",
+      "timestamp": "2026-08-27T14:23:08Z",
+      "market_outlook": "Bullish on Chinese ADRs. The market is seeing selective strength in AI and tech leaders like BIDU, while others face temporary pullbacks. The long-term rejuvenation of the Chinese economy remains the dominant theme.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.32,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "NTES",
+      "shares": 10,
+      "price": 122.44,
+      "total_value": 1224.4,
+      "reasoning": "NTES is currently underperforming my cost basis and showing weakness. I will liquidate this position to free up capital for higher-momentum plays like BIDU and to strengthen my core positions.",
+      "timestamp": "2026-08-27T14:23:08Z",
+      "market_outlook": "Bullish on Chinese ADRs. The market is seeing selective strength in AI and tech leaders like BIDU, while others face temporary pullbacks. The long-term rejuvenation of the Chinese economy remains the dominant theme.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.66,
+        "trigger_news": null
+      }
     }
   ]
 }
