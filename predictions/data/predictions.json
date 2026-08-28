@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-28T04:23:58Z",
-  "last_prediction_date": "2026-08-27",
+  "updated_at": "2026-08-28T22:33:49Z",
+  "last_prediction_date": "2026-08-28",
   "last_settle_date": "2026-08-28",
   "tools": {
     "market_sentinel": {
@@ -629,6 +629,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-08-28",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed market mood and slight decline in major stocks",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-28",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 60,
+          "signal": "Tech sector weakness and negative sentiment",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-28",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 51,
+          "signal": "Minimal change and mixed macroeconomic indicators",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -976,6 +1006,16 @@
           "prediction": "down",
           "confidence": 99,
           "signal": "Spain snap election called by August 31, 2026? | Yes 1% / No 99% | Vol $12,299",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-08-28",
+          "market": "Spain snap election called by August 31, 2026?",
+          "prediction": "down",
+          "confidence": 100,
+          "signal": "Spain snap election called by August 31, 2026? | Yes 0% / No 100% | Vol $12,870",
           "actual": null,
           "correct": null,
           "settled": false
