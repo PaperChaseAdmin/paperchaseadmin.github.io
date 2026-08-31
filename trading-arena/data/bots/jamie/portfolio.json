@@ -1,69 +1,89 @@
 {
-  "cash": 1572.9,
-  "total_value": 10149.58,
+  "cash": 1042.64,
+  "total_value": 10091.43,
   "positions": {
     "MA": {
       "shares": 4,
-      "current_price": 597.64,
+      "current_price": 592.505,
       "avg_cost": 539.4013
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 96.83
+      "current_price": 96.395
     },
     "JPM": {
-      "shares": 3,
-      "current_price": 358.32,
-      "avg_cost": 342.9006
+      "shares": 5,
+      "current_price": 356.155,
+      "avg_cost": 348.2024
     },
     "BAC": {
-      "shares": 36,
-      "current_price": 62.405,
-      "avg_cost": 60.7334
+      "shares": 39,
+      "current_price": 62.17,
+      "avg_cost": 60.8439
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 132.7
+      "current_price": 132.32
     },
     "PGR": {
       "shares": 5,
       "avg_cost": 209.88,
-      "current_price": 220.02
+      "current_price": 217.35
     },
     "V": {
       "shares": 2,
       "avg_cost": 366.48,
-      "current_price": 383.445
-    },
-    "TRV": {
-      "shares": 1,
-      "avg_cost": 372.01,
-      "current_price": 369.96
+      "current_price": 380.47
     }
   },
-  "total_return_pct": 1.5,
+  "total_return_pct": 0.91,
   "total_return_usd": 0.0,
-  "today_pnl": 55.56,
-  "today_pnl_pct": 0.55,
-  "total_trades": 13,
-  "today_start_value": 10094.02,
-  "today_date": "2026-08-28",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-28T16:31:53Z",
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
+  "total_trades": 16,
+  "today_start_value": 10091.42,
+  "today_date": "2026-08-31",
+  "last_action": "Financial sector poised to benefit from steady interest rates; banks and payment processors should outperform as credit quality remains stable.",
+  "last_updated": "2026-08-31T13:55:36Z",
   "last_session": {
-    "at": "2026-08-28T16:31:53Z",
+    "at": "2026-08-31T13:55:36Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AXP",
+        -0.79
+      ],
+      [
+        "MA",
+        -0.7
+      ],
+      [
+        "MS",
+        -0.68
+      ],
+      [
+        "PGR",
+        -0.59
+      ],
+      [
+        "COF",
+        -0.59
+      ],
+      [
+        "GS",
+        -0.52
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio is overweight in insurers and underweight in core banks. Selling TRV reduces exposure to a lagging insurance stock. Adding to JPM, BAC, and V increases bank and payment network exposure, aligning with the strategy of buying strength in financials and maintaining cash reserve above $1000.",
+    "outlook": "Financial sector poised to benefit from steady interest rates; banks and payment processors should outperform as credit quality remains stable.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -973,6 +993,10 @@
     {
       "timestamp": "2026-08-28T16:31:53Z",
       "value": 10149.58
+    },
+    {
+      "timestamp": "2026-08-31T13:55:36Z",
+      "value": 10091.43
     }
   ]
 }
