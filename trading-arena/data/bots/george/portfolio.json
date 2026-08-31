@@ -1,48 +1,73 @@
 {
   "cash": 610.45,
-  "total_value": 10209.5,
+  "total_value": 10211.69,
   "positions": {
     "GLD": {
       "shares": 12,
       "avg_cost": 402.44,
-      "current_price": 406.55
+      "current_price": 406.705
     },
     "TLT": {
       "shares": 32,
-      "current_price": 82.255,
+      "current_price": 82.335,
       "avg_cost": 82.5762
     },
     "META": {
       "shares": 2,
       "avg_cost": 589.63,
-      "current_price": 571.6
+      "current_price": 571.73
     },
     "AAPL": {
       "shares": 3,
       "avg_cost": 311.85,
-      "current_price": 315.03
+      "current_price": 314.2
     }
   },
-  "total_return_pct": 2.1,
+  "total_return_pct": 2.12,
   "total_return_usd": 0.0,
-  "today_pnl": -37.64,
-  "today_pnl_pct": -0.37,
+  "today_pnl": -35.45,
+  "today_pnl_pct": -0.35,
   "total_trades": 8,
   "today_start_value": 10247.14,
   "today_date": "2026-08-31",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-31T15:51:56Z",
+  "last_action": "...",
+  "last_updated": "2026-08-31T17:56:22Z",
   "last_session": {
-    "at": "2026-08-31T15:51:56Z",
+    "at": "2026-08-31T17:56:22Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TSLA",
+        5.26
+      ],
+      [
+        "BABA",
+        -3.64
+      ],
+      [
+        "AMZN",
+        -2.04
+      ],
+      [
+        "XLE",
+        1.49
+      ],
+      [
+        "META",
+        -1.09
+      ],
+      [
+        "NVDA",
+        0.89
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -961,6 +986,10 @@
     {
       "timestamp": "2026-08-31T15:51:56Z",
       "value": 10209.5
+    },
+    {
+      "timestamp": "2026-08-31T17:56:22Z",
+      "value": 10211.69
     }
   ]
 }
