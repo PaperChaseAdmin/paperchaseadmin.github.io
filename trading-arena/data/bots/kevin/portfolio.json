@@ -1,84 +1,104 @@
 {
-  "cash": 527.42,
-  "total_value": 10028.66,
+  "cash": 1258.92,
+  "total_value": 10027.88,
   "positions": {
     "T": {
       "shares": 95,
       "avg_cost": 20.83,
-      "current_price": 26.035
+      "current_price": 26.135
     },
     "VZ": {
       "shares": 22,
-      "current_price": 50.305,
+      "current_price": 50.415,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 190.7901
+      "current_price": 189.465
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 70.355
+      "current_price": 70.15
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 88.445
+      "current_price": 88.145
     },
     "CVX": {
       "shares": 6,
-      "current_price": 209.04,
+      "current_price": 209.225,
       "avg_cost": 193.7867
-    },
-    "MAIN": {
-      "shares": 15,
-      "current_price": 58.56,
-      "avg_cost": 59.0083
     },
     "MO": {
       "shares": 4,
       "avg_cost": 65.9025,
-      "current_price": 70.365
+      "current_price": 70.31
     },
     "O": {
       "shares": 5,
-      "current_price": 61.455,
+      "current_price": 61.33,
       "avg_cost": 63.036
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 250.6,
-      "current_price": 260.29
+      "current_price": 259.625
     },
     "OHI": {
-      "shares": 5,
-      "avg_cost": 46.95,
-      "current_price": 46.44
+      "shares": 8,
+      "current_price": 46.915,
+      "avg_cost": 46.9369
     }
   },
-  "total_return_pct": 0.29,
+  "total_return_pct": 0.28,
   "total_return_usd": 0.0,
-  "today_pnl": -20.65,
+  "today_pnl": -21.43,
   "today_pnl_pct": -0.21,
-  "total_trades": 15,
+  "total_trades": 17,
   "today_start_value": 10049.31,
   "today_date": "2026-09-01",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-01T15:54:56Z",
+  "last_action": "Neutral. I don't care about the S&P 500 or the VIX; I care about yield and payout ratios. The market is stable enough to continue building my income stream.",
+  "last_updated": "2026-09-01T17:41:10Z",
   "last_session": {
-    "at": "2026-09-01T15:54:56Z",
+    "at": "2026-09-01T17:41:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MO",
+        2.67
+      ],
+      [
+        "OHI",
+        2.64
+      ],
+      [
+        "CVX",
+        1.51
+      ],
+      [
+        "IBM",
+        -1.41
+      ],
+      [
+        "BTI",
+        1.39
+      ],
+      [
+        "JNJ",
+        1.35
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "The watchlist is showing healthy movement in my favorite sectors: Tobacco and Healthcare. I am rotating out of MAIN to capture the momentum in MO and OHI. I am also adding JNJ to increase my defensive dividend posture. My goal remains the same: maximize yield and reinvest everything.",
+    "outlook": "Neutral. I don't care about the S&P 500 or the VIX; I care about yield and payout ratios. The market is stable enough to continue building my income stream.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1012,6 +1032,10 @@
     {
       "timestamp": "2026-09-01T15:54:56Z",
       "value": 10028.66
+    },
+    {
+      "timestamp": "2026-09-01T17:41:10Z",
+      "value": 10027.88
     }
   ]
 }
