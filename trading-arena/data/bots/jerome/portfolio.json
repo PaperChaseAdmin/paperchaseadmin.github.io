@@ -1,59 +1,84 @@
 {
-  "cash": 2677.38,
-  "total_value": 9908.96,
+  "cash": 2577.1,
+  "total_value": 9968.21,
   "positions": {
     "SHY": {
       "shares": 25,
-      "current_price": 81.63,
+      "current_price": 81.6499,
       "avg_cost": 81.8316
     },
     "XLU": {
-      "shares": 5,
-      "avg_cost": 43.35,
-      "current_price": 42.415
+      "shares": 8,
+      "current_price": 42.4805,
+      "avg_cost": 43.0239
     },
     "BIL": {
-      "shares": 7,
-      "avg_cost": 91.51,
-      "current_price": 91.3935
+      "shares": 13,
+      "current_price": 91.4,
+      "avg_cost": 91.4592
     },
     "XLF": {
-      "shares": 30,
-      "current_price": 57.41,
+      "shares": 20,
+      "current_price": 57.5564,
       "avg_cost": 58.1633
     },
     "GS": {
       "shares": 2,
       "avg_cost": 1019.0,
-      "current_price": 999.5
+      "current_price": 1023.37
     },
     "BAC": {
       "shares": 10,
       "avg_cost": 62.15,
-      "current_price": 61.77
+      "current_price": 62.395
     }
   },
-  "total_return_pct": -0.91,
+  "total_return_pct": -0.32,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 12,
+  "today_pnl": 59.25,
+  "today_pnl_pct": 0.6,
+  "total_trades": 15,
   "today_start_value": 9908.96,
   "today_date": "2026-09-01",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-01T14:23:05Z",
+  "last_action": "Uncertain; awaiting clarity on inflation trajectory and labor market. VIX unavailable but mixed price action suggests balanced risks. Policy remains data-dependent.",
+  "last_updated": "2026-09-01T16:17:43Z",
   "last_session": {
-    "at": "2026-09-01T14:23:05Z",
+    "at": "2026-09-01T16:17:43Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PFF",
+        -0.87
+      ],
+      [
+        "BAC",
+        0.72
+      ],
+      [
+        "JPM",
+        0.67
+      ],
+      [
+        "XLU",
+        0.57
+      ],
+      [
+        "IEF",
+        -0.52
+      ],
+      [
+        "SPY",
+        -0.52
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio carries 27% cash reserve with defensive tilt (SHY, BIL, XLU). Financials (XLF, GS, BAC) represent ~44% allocation but show divergent performance. Reducing XLF lowers cyclical beta while maintaining GS/BAC quality. Adding BIL and XLU reinforces defensive posture consistent with 'higher for longer' rate uncertainty.",
+    "outlook": "Uncertain; awaiting clarity on inflation trajectory and labor market. VIX unavailable but mixed price action suggests balanced risks. Policy remains data-dependent.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -983,6 +1008,10 @@
     {
       "timestamp": "2026-09-01T14:23:05Z",
       "value": 9908.96
+    },
+    {
+      "timestamp": "2026-09-01T16:17:43Z",
+      "value": 9968.21
     }
   ]
 }
