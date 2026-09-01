@@ -233,6 +233,60 @@
         "ticker_chg_pct": -0.05,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 10,
+      "price": 81.955,
+      "total_value": 819.55,
+      "reasoning": "Gold and mining stocks (GDX/GLD) are seeing a pullback today. To maintain my All Weather balance and hedge against potential growth slowdowns, I am deploying cash into long-term Treasuries (TLT) to increase my bond exposure.",
+      "timestamp": "2026-09-01T13:50:09Z",
+      "market_outlook": "Neutral to Inflationary. While equities and gold are seeing a minor pullback, commodities remain resilient. I am positioning for a regime where inflation persists but growth volatility increases.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.68,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PDBC",
+      "shares": 6,
+      "price": 18.77,
+      "total_value": 112.62,
+      "reasoning": "Commodities are showing relative strength (+0.64%) while precious metals are dipping. I am adding to my PDBC position to capture inflation-linked growth and rebalance my commodity sleeve.",
+      "timestamp": "2026-09-01T13:50:09Z",
+      "market_outlook": "Neutral to Inflationary. While equities and gold are seeing a minor pullback, commodities remain resilient. I am positioning for a regime where inflation persists but growth volatility increases.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.64,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GDX",
+      "shares": 2,
+      "price": 95.04,
+      "total_value": 190.08,
+      "reasoning": "Taking profits on GDX after the recent run-up, especially given the -3.6% intraday drop. I prefer the stability of physical gold (GLD/IAU) over the higher volatility of miners during these minor corrections.",
+      "timestamp": "2026-09-01T13:50:09Z",
+      "market_outlook": "Neutral to Inflationary. While equities and gold are seeing a minor pullback, commodities remain resilient. I am positioning for a regime where inflation persists but growth volatility increases.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -3.61,
+        "trigger_news": null
+      }
     }
   ]
 }

@@ -1,74 +1,99 @@
 {
-  "cash": 1205.61,
-  "total_value": 8588.25,
+  "cash": 572.96,
+  "total_value": 8500.38,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 366.7
+      "current_price": 360.58
     },
     "CRSP": {
       "shares": 22,
-      "current_price": 56.73,
+      "current_price": 56.32,
       "avg_cost": 56.1316
     },
     "NTLA": {
       "shares": 44,
-      "current_price": 12.715,
+      "current_price": 12.525,
       "avg_cost": 14.0902
     },
     "PATH": {
       "shares": 12,
-      "current_price": 18.48,
+      "current_price": 18.6016,
       "avg_cost": 13.7371
     },
     "PLTR": {
       "shares": 4,
       "avg_cost": 176.145,
-      "current_price": 187.16
+      "current_price": 182.95
     },
     "ROKU": {
       "shares": 5,
       "avg_cost": 156.82,
-      "current_price": 156.86
+      "current_price": 156.13
     },
     "BEAM": {
       "shares": 20,
       "avg_cost": 26.39,
-      "current_price": 29.399
+      "current_price": 28.94
     },
     "AAPL": {
-      "shares": 2,
-      "avg_cost": 311.85,
-      "current_price": 315.92
+      "shares": 4,
+      "current_price": 316.325,
+      "avg_cost": 314.0875
     },
     "RXRX": {
       "shares": 10,
       "avg_cost": 3.365,
-      "current_price": 3.37
+      "current_price": 3.345
     }
   },
-  "total_return_pct": -14.12,
+  "total_return_pct": -15.0,
   "total_return_usd": 0.0,
-  "today_pnl": 155.8,
-  "today_pnl_pct": 1.85,
-  "total_trades": 19,
-  "today_start_value": 8432.45,
-  "today_date": "2026-08-31",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-08-31T19:48:24Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 20,
+  "today_start_value": 8500.38,
+  "today_date": "2026-09-01",
+  "last_action": "...",
+  "last_updated": "2026-09-01T13:47:36Z",
   "last_session": {
-    "at": "2026-08-31T19:48:24Z",
+    "at": "2026-09-01T13:47:36Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AFRM",
+        -3.56
+      ],
+      [
+        "COIN",
+        -3.39
+      ],
+      [
+        "PACB",
+        -2.57
+      ],
+      [
+        "TSLA",
+        -2.06
+      ],
+      [
+        "RXRX",
+        -1.91
+      ],
+      [
+        "PLTR",
+        -1.69
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -994,6 +1019,10 @@
     {
       "timestamp": "2026-08-31T19:48:24Z",
       "value": 8588.25
+    },
+    {
+      "timestamp": "2026-09-01T13:47:36Z",
+      "value": 8500.38
     }
   ]
 }
