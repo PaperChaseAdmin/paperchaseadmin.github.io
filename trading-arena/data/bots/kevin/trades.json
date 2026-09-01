@@ -269,6 +269,42 @@
         "ticker_chg_pct": 0.0,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "MAIN",
+      "shares": 15,
+      "price": 58.15,
+      "total_value": 872.25,
+      "reasoning": "Main Street Capital is down 1.31% today. While it pays a dividend, I'd rather rotate this capital into higher-conviction dividend growers like MO or JNJ.",
+      "timestamp": "2026-09-01T17:41:10Z",
+      "market_outlook": "Neutral. I don't care about the S&P 500 or the VIX; I care about yield and payout ratios. The market is stable enough to continue building my income stream.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.31,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "OHI",
+      "shares": 3,
+      "price": 46.915,
+      "total_value": 140.75,
+      "reasoning": "Omega Healthcare Investors is up 2.64%. It's a solid REIT play to bolster my real estate exposure and increase my monthly cash flow.",
+      "timestamp": "2026-09-01T17:41:10Z",
+      "market_outlook": "Neutral. I don't care about the S&P 500 or the VIX; I care about yield and payout ratios. The market is stable enough to continue building my income stream.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.64,
+        "trigger_news": null
+      }
     }
   ]
 }

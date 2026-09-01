@@ -143,6 +143,60 @@
         "ticker_chg_pct": -0.66,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 3,
+      "price": 325.24,
+      "total_value": 975.72,
+      "reasoning": "Taking profits on the AAPL position. While it's a winner, I need to consolidate capital to prepare for a massive macro play. I don't do incrementalism; I do conviction.",
+      "timestamp": "2026-09-01T17:34:14Z",
+      "market_outlook": "Bearish/Volatile. The tech-heavy indices are showing signs of exhaustion, and the weakness in GLD today looks like a liquidity flush rather than a trend reversal. I expect a violent move toward safety as the feedback loop of selling begins to accelerate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.62,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "META",
+      "shares": 2,
+      "price": 581.2,
+      "total_value": 1162.4,
+      "reasoning": "Exiting the META position. It's a distraction from the systemic shifts I'm tracking. I'm clearing the deck of small, non-core equity positions.",
+      "timestamp": "2026-09-01T17:34:14Z",
+      "market_outlook": "Bearish/Volatile. The tech-heavy indices are showing signs of exhaustion, and the weakness in GLD today looks like a liquidity flush rather than a trend reversal. I expect a violent move toward safety as the feedback loop of selling begins to accelerate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.54,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 15,
+      "price": 81.97,
+      "total_value": 1229.55,
+      "reasoning": "Increasing exposure to long-duration Treasuries. The weakness in growth stocks suggests a rotation or a macro shock is brewing. I want to be positioned for the inevitable yield volatility.",
+      "timestamp": "2026-09-01T17:34:14Z",
+      "market_outlook": "Bearish/Volatile. The tech-heavy indices are showing signs of exhaustion, and the weakness in GLD today looks like a liquidity flush rather than a trend reversal. I expect a violent move toward safety as the feedback loop of selling begins to accelerate.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.67,
+        "trigger_news": null
+      }
     }
   ]
 }

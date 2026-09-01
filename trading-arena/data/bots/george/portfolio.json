@@ -1,49 +1,64 @@
 {
-  "cash": 610.45,
-  "total_value": 10165.88,
+  "cash": 1519.02,
+  "total_value": 10154.93,
   "positions": {
     "GLD": {
       "shares": 12,
       "avg_cost": 402.44,
-      "current_price": 399.68
+      "current_price": 398.61
     },
     "TLT": {
-      "shares": 32,
-      "current_price": 82.105,
-      "avg_cost": 82.5762
-    },
-    "META": {
-      "shares": 2,
-      "avg_cost": 589.63,
-      "current_price": 580.39
-    },
-    "AAPL": {
-      "shares": 3,
-      "avg_cost": 311.85,
-      "current_price": 323.71
+      "shares": 47,
+      "current_price": 81.97,
+      "avg_cost": 82.3827
     }
   },
-  "total_return_pct": 1.66,
+  "total_return_pct": 1.55,
   "total_return_usd": 0.0,
-  "today_pnl": 82.25,
-  "today_pnl_pct": 0.82,
-  "total_trades": 8,
+  "today_pnl": 71.3,
+  "today_pnl_pct": 0.71,
+  "total_trades": 11,
   "today_start_value": 10083.63,
   "today_date": "2026-09-01",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-01T15:44:11Z",
+  "last_action": "Bearish/Volatile. The tech-heavy indices are showing signs of exhaustion, and the weakness in GLD today looks like a liquidity flush rather than a trend reversal. I expect a violent move toward safety",
+  "last_updated": "2026-09-01T17:34:14Z",
   "last_session": {
-    "at": "2026-09-01T15:44:11Z",
+    "at": "2026-09-01T17:34:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TSLA",
+        -2.92
+      ],
+      [
+        "GLD",
+        -2.41
+      ],
+      [
+        "AMZN",
+        -1.94
+      ],
+      [
+        "META",
+        1.54
+      ],
+      [
+        "QQQ",
+        -1.16
+      ],
+      [
+        "NVDA",
+        -1.03
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The current market structure is fragile. We see a divergence where META is holding up while the heavyweights (TSLA, AMZN, NVDA) are bleeding. This is a classic sign of a crumbling consensus. I am liquidating my 'retail' equity positions to build a massive, concentrated fortress in Gold and Bonds. When the dislocation hits, I won't be nibbling; I'll be dominant.",
+    "outlook": "Bearish/Volatile. The tech-heavy indices are showing signs of exhaustion, and the weakness in GLD today looks like a liquidity flush rather than a trend reversal. I expect a violent move toward safety as the feedback loop of selling begins to accelerate.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -977,6 +992,10 @@
     {
       "timestamp": "2026-09-01T15:44:11Z",
       "value": 10165.88
+    },
+    {
+      "timestamp": "2026-09-01T17:34:14Z",
+      "value": 10154.93
     }
   ]
 }
