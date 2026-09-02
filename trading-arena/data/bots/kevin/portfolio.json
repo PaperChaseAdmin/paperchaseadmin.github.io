@@ -1,79 +1,119 @@
 {
-  "cash": 1258.92,
-  "total_value": 10033.09,
+  "cash": 517.06,
+  "total_value": 10055.14,
   "positions": {
     "T": {
-      "shares": 95,
+      "shares": 76,
       "avg_cost": 20.83,
-      "current_price": 26.165
+      "current_price": 26.17
     },
     "VZ": {
       "shares": 22,
-      "current_price": 50.435,
+      "current_price": 50.43,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 188.24
+      "current_price": 188.22
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 70.81,
-      "current_price": 69.795
+      "current_price": 70.2625
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 88.085
+      "current_price": 88.01
     },
     "CVX": {
       "shares": 6,
-      "current_price": 210.095,
+      "current_price": 210.775,
       "avg_cost": 193.7867
     },
     "MO": {
       "shares": 4,
       "avg_cost": 65.9025,
-      "current_price": 69.74
+      "current_price": 69.82
     },
     "O": {
       "shares": 5,
-      "current_price": 61.0876,
+      "current_price": 61.32,
       "avg_cost": 63.036
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 250.6,
-      "current_price": 260.29
+      "current_price": 262.465
     },
     "OHI": {
       "shares": 8,
-      "current_price": 46.63,
+      "current_price": 46.78,
       "avg_cost": 46.9369
+    },
+    "MAIN": {
+      "shares": 10,
+      "avg_cost": 58.165,
+      "current_price": 58.165
+    },
+    "BTI": {
+      "shares": 10,
+      "avg_cost": 55.61,
+      "current_price": 55.61
+    },
+    "ENB": {
+      "shares": 2,
+      "avg_cost": 50.67,
+      "current_price": 50.67
     }
   },
-  "total_return_pct": 0.33,
+  "total_return_pct": 0.55,
   "total_return_usd": 0.0,
-  "today_pnl": -16.22,
-  "today_pnl_pct": -0.16,
-  "total_trades": 17,
-  "today_start_value": 10049.31,
-  "today_date": "2026-09-01",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-01T19:29:59Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 21,
+  "today_start_value": 10055.14,
+  "today_date": "2026-09-02",
+  "last_action": "Neutral sentiment (Fear & Greed 50) favors defensive dividend payers. Focus on quality yield with growth. REITs and telecoms showing resilience. Tobacco remains cash cow.",
+  "last_updated": "2026-09-02T14:07:02Z",
   "last_session": {
-    "at": "2026-09-01T19:29:59Z",
+    "at": "2026-09-02T14:07:02Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "JNJ",
+        1.19
+      ],
+      [
+        "ABBV",
+        0.95
+      ],
+      [
+        "T",
+        0.69
+      ],
+      [
+        "BTI",
+        -0.63
+      ],
+      [
+        "PM",
+        0.57
+      ],
+      [
+        "IBM",
+        -0.53
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "outlook": "Neutral sentiment (Fear & Greed 50) favors defensive dividend payers. Focus on quality yield with growth. REITs and telecoms showing resilience. Tobacco remains cash cow.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1015,6 +1055,10 @@
     {
       "timestamp": "2026-09-01T19:29:59Z",
       "value": 10033.09
+    },
+    {
+      "timestamp": "2026-09-02T14:07:02Z",
+      "value": 10055.14
     }
   ]
 }

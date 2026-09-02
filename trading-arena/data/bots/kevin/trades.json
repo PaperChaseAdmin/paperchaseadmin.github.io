@@ -305,6 +305,78 @@
         "ticker_chg_pct": 2.64,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "T",
+      "shares": 19,
+      "price": 26.17,
+      "total_value": 497.23,
+      "reasoning": "Trim T position from 24.8% to ~19.8% of portfolio to respect 20% max position rule. Taking profits on 25.6% gain since purchase at $20.83.",
+      "timestamp": "2026-09-02T14:07:02Z",
+      "market_outlook": "Neutral sentiment (Fear & Greed 50) favors defensive dividend payers. Focus on quality yield with growth. REITs and telecoms showing resilience. Tobacco remains cash cow.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.69,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MAIN",
+      "shares": 10,
+      "price": 58.165,
+      "total_value": 581.65,
+      "reasoning": "Add MAIN (Main Street Capital) - monthly dividend BDC yielding ~6.5% with strong dividend growth history. Fits income machine strategy perfectly.",
+      "timestamp": "2026-09-02T14:07:02Z",
+      "market_outlook": "Neutral sentiment (Fear & Greed 50) favors defensive dividend payers. Focus on quality yield with growth. REITs and telecoms showing resilience. Tobacco remains cash cow.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.34,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BTI",
+      "shares": 10,
+      "price": 55.61,
+      "total_value": 556.1,
+      "reasoning": "Buy British American Tobacco - 9%+ yield, global tobacco giant with pricing power. Cheap valuation, reliable cash flows for dividends.",
+      "timestamp": "2026-09-02T14:07:02Z",
+      "market_outlook": "Neutral sentiment (Fear & Greed 50) favors defensive dividend payers. Focus on quality yield with growth. REITs and telecoms showing resilience. Tobacco remains cash cow.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.63,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "ENB",
+      "shares": 2,
+      "price": 50.67,
+      "total_value": 101.34,
+      "reasoning": "Add Enbridge - 7%+ yield, pipeline monopoly with 28 years dividend growth. Regulated assets provide stable cash flows.",
+      "timestamp": "2026-09-02T14:07:02Z",
+      "market_outlook": "Neutral sentiment (Fear & Greed 50) favors defensive dividend payers. Focus on quality yield with growth. REITs and telecoms showing resilience. Tobacco remains cash cow.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.2,
+        "trigger_news": null
+      }
     }
   ]
 }
