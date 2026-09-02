@@ -1,59 +1,89 @@
 {
-  "cash": 706.78,
-  "total_value": 7516.78,
+  "cash": 379.3,
+  "total_value": 7521.22,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 68.785
+      "current_price": 68.68
     },
     "NVDA": {
       "shares": 1,
       "avg_cost": 206.06,
-      "current_price": 217.248
+      "current_price": 219.22
     },
     "SOXL": {
       "shares": 15,
-      "current_price": 104.26,
+      "current_price": 104.045,
       "avg_cost": 137.0733
     },
     "SMCI": {
       "shares": 10,
       "avg_cost": 38.6247,
-      "current_price": 36.505
+      "current_price": 37.37
     },
     "AMD": {
       "shares": 2,
       "avg_cost": 490.7,
-      "current_price": 456.35
+      "current_price": 458.77
     },
     "RKLB": {
       "shares": 5,
       "avg_cost": 81.2,
-      "current_price": 62.3699
+      "current_price": 61.86
+    },
+    "AAPL": {
+      "shares": 1,
+      "avg_cost": 327.48,
+      "current_price": 327.48
     }
   },
-  "total_return_pct": -24.83,
+  "total_return_pct": -24.79,
   "total_return_usd": 0.0,
-  "today_pnl": -50.93,
-  "today_pnl_pct": -0.67,
-  "total_trades": 12,
-  "today_start_value": 7567.71,
-  "today_date": "2026-09-01",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-01T19:33:06Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 13,
+  "today_start_value": 7521.22,
+  "today_date": "2026-09-02",
+  "last_action": "...",
+  "last_updated": "2026-09-02T14:10:44Z",
   "last_session": {
-    "at": "2026-09-01T19:33:06Z",
+    "at": "2026-09-02T14:10:44Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PLTR",
+        -2.85
+      ],
+      [
+        "MRVL",
+        -2.51
+      ],
+      [
+        "CRWD",
+        -2.36
+      ],
+      [
+        "SMCI",
+        2.1
+      ],
+      [
+        "SOXL",
+        -1.85
+      ],
+      [
+        "IONQ",
+        -1.83
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -995,6 +1025,10 @@
     {
       "timestamp": "2026-09-01T19:33:06Z",
       "value": 7516.78
+    },
+    {
+      "timestamp": "2026-09-02T14:10:44Z",
+      "value": 7521.22
     }
   ]
 }

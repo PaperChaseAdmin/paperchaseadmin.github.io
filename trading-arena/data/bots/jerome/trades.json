@@ -305,6 +305,78 @@
         "ticker_chg_pct": -0.29,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BIL",
+      "shares": 4,
+      "price": 91.4,
+      "total_value": 365.6,
+      "reasoning": "Increase short-term Treasury allocation; cash-like safety with Fed policy uncertain",
+      "timestamp": "2026-09-02T14:30:05Z",
+      "market_outlook": "Data-dependent stance maintained. Banks rallying (+0.9%) suggests risk-on but VIX unavailable. Core positions in SHY/BIL reflect restrictive policy stance. Adding TLT duration and XLU defensives as portfolio insurance.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.01,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 5,
+      "price": 81.93,
+      "total_value": 409.65,
+      "reasoning": "Initiate long-duration Treasury position at 81.93; hedge against growth slowdown if VIX rises",
+      "timestamp": "2026-09-02T14:30:05Z",
+      "market_outlook": "Data-dependent stance maintained. Banks rallying (+0.9%) suggests risk-on but VIX unavailable. Core positions in SHY/BIL reflect restrictive policy stance. Adding TLT duration and XLU defensives as portfolio insurance.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.08,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "XLF",
+      "shares": 5,
+      "price": 57.44,
+      "total_value": 287.2,
+      "reasoning": "Trim financial sector ETF after -$14.47 unrealized loss; reduce cyclical exposure",
+      "timestamp": "2026-09-02T14:30:05Z",
+      "market_outlook": "Data-dependent stance maintained. Banks rallying (+0.9%) suggests risk-on but VIX unavailable. Core positions in SHY/BIL reflect restrictive policy stance. Adding TLT duration and XLU defensives as portfolio insurance.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.44,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLU",
+      "shares": 3,
+      "price": 42.34,
+      "total_value": 127.02,
+      "reasoning": "Add to utilities at 42.34 (-0.56% today); defensive yield play if recession risks materialize",
+      "timestamp": "2026-09-02T14:30:05Z",
+      "market_outlook": "Data-dependent stance maintained. Banks rallying (+0.9%) suggests risk-on but VIX unavailable. Core positions in SHY/BIL reflect restrictive policy stance. Adding TLT duration and XLU defensives as portfolio insurance.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.56,
+        "trigger_news": null
+      }
     }
   ]
 }

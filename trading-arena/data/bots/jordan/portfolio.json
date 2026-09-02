@@ -1,53 +1,78 @@
 {
   "cash": 208.13,
-  "total_value": 8594.28,
+  "total_value": 8506.79,
   "positions": {
     "PLTR": {
       "shares": 22,
-      "current_price": 180.84,
+      "current_price": 174.8099,
       "avg_cost": 175.8018
     },
     "RBLX": {
       "shares": 10,
       "avg_cost": 38.795,
-      "current_price": 40.305
+      "current_price": 40.07
     },
     "TSLA": {
       "shares": 5,
       "avg_cost": 344.13,
-      "current_price": 354.265
+      "current_price": 358.88
     },
     "GME": {
       "shares": 27,
-      "current_price": 18.5086,
+      "current_price": 18.87,
       "avg_cost": 18.34
     },
     "META": {
       "shares": 3,
       "avg_cost": 581.2,
-      "current_price": 577.855
+      "current_price": 582.75
     }
   },
-  "total_return_pct": -14.06,
+  "total_return_pct": -14.93,
   "total_return_usd": 0.0,
-  "today_pnl": -90.52,
-  "today_pnl_pct": -1.04,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 20,
-  "today_start_value": 8684.8,
-  "today_date": "2026-09-01",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-01T19:39:20Z",
+  "today_start_value": 8506.79,
+  "today_date": "2026-09-02",
+  "last_action": "...",
+  "last_updated": "2026-09-02T14:18:05Z",
   "last_session": {
-    "at": "2026-09-01T19:39:20Z",
+    "at": "2026-09-02T14:18:05Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PLTR",
+        -2.85
+      ],
+      [
+        "COIN",
+        -1.88
+      ],
+      [
+        "MSTR",
+        -1.56
+      ],
+      [
+        "RBLX",
+        -1.48
+      ],
+      [
+        "MARA",
+        -1.47
+      ],
+      [
+        "RIOT",
+        -1.35
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -990,6 +1015,10 @@
     {
       "timestamp": "2026-09-01T19:39:20Z",
       "value": 8594.28
+    },
+    {
+      "timestamp": "2026-09-02T14:18:05Z",
+      "value": 8506.79
     }
   ]
 }
