@@ -1,39 +1,69 @@
 {
-  "cash": 1519.02,
-  "total_value": 10170.09,
+  "cash": 542.02,
+  "total_value": 10172.62,
   "positions": {
     "GLD": {
       "shares": 12,
       "avg_cost": 402.44,
-      "current_price": 400.03
+      "current_price": 400.75
     },
     "TLT": {
       "shares": 47,
-      "current_price": 81.93,
+      "current_price": 81.8,
       "avg_cost": 82.3827
+    },
+    "AAPL": {
+      "shares": 3,
+      "avg_cost": 325.665,
+      "current_price": 325.665
     }
   },
-  "total_return_pct": 1.7,
+  "total_return_pct": 1.73,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 11,
+  "today_pnl": 2.53,
+  "today_pnl_pct": 0.02,
+  "total_trades": 12,
   "today_start_value": 10170.09,
   "today_date": "2026-09-02",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-02T13:56:41Z",
+  "last_action": "...",
+  "last_updated": "2026-09-02T15:50:29Z",
   "last_session": {
-    "at": "2026-09-02T13:56:41Z",
+    "at": "2026-09-02T15:50:29Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        4.3
+      ],
+      [
+        "META",
+        3.08
+      ],
+      [
+        "BAC",
+        1.75
+      ],
+      [
+        "XLF",
+        1.12
+      ],
+      [
+        "GLD",
+        1.02
+      ],
+      [
+        "BABA",
+        -0.78
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -979,6 +1009,10 @@
     {
       "timestamp": "2026-09-02T13:56:41Z",
       "value": 10170.09
+    },
+    {
+      "timestamp": "2026-09-02T15:50:29Z",
+      "value": 10172.62
     }
   ]
 }
