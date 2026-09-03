@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-03T16:38:04Z",
+  "updated_at": "2026-09-03T22:40:30Z",
   "last_prediction_date": "2026-09-03",
-  "last_settle_date": "2026-09-02",
+  "last_settle_date": "2026-09-03",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 27,
-      "correct": 15,
-      "accuracy_pct": 55.6,
+      "total": 30,
+      "correct": 18,
+      "accuracy_pct": 60.0,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -732,9 +732,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Positive market mood and strong earnings",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.06
         },
         {
           "date": "2026-09-03",
@@ -742,9 +743,10 @@
           "prediction": "up",
           "confidence": 75,
           "signal": "Tech stocks leading gains with strong momentum",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.4
         },
         {
           "date": "2026-09-03",
@@ -752,9 +754,10 @@
           "prediction": "up",
           "confidence": 68,
           "signal": "Broad market optimism and easing Fed hike bets",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.18
         }
       ]
     },
