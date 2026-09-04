@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-04T16:33:15Z",
+  "updated_at": "2026-09-04T22:25:34Z",
   "last_prediction_date": "2026-09-04",
-  "last_settle_date": "2026-09-03",
+  "last_settle_date": "2026-09-04",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 30,
-      "correct": 18,
-      "accuracy_pct": 60.0,
+      "total": 33,
+      "correct": 21,
+      "accuracy_pct": 63.6,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -765,9 +765,10 @@
           "prediction": "down",
           "confidence": 68,
           "signal": "Negative market mood and mixed macro indicators",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.38
         },
         {
           "date": "2026-09-04",
@@ -775,9 +776,10 @@
           "prediction": "down",
           "confidence": 70,
           "signal": "Tech sector weakness and higher Treasury yields",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.29
         },
         {
           "date": "2026-09-04",
@@ -785,9 +787,10 @@
           "prediction": "down",
           "confidence": 65,
           "signal": "Broad market decline and strong dollar pressure",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.51
         }
       ]
     },
