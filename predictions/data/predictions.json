@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-07T17:52:08Z",
+  "updated_at": "2026-09-07T22:53:59Z",
   "last_prediction_date": "2026-09-07",
-  "last_settle_date": "2026-09-04",
+  "last_settle_date": "2026-09-07",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 33,
-      "correct": 21,
-      "accuracy_pct": 63.6,
+      "total": 35,
+      "correct": 22,
+      "accuracy_pct": 62.9,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -808,9 +808,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Tech sector resilience despite broader market caution",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": false,
+          "settled": true,
+          "change_pct": -0.29
         },
         {
           "date": "2026-09-07",
@@ -818,9 +819,10 @@
           "prediction": "down",
           "confidence": 65,
           "signal": "Continued pressure from industrial and financial stocks",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.51
         }
       ]
     },
