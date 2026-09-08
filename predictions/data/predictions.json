@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-08T16:48:25Z",
+  "updated_at": "2026-09-08T22:48:10Z",
   "last_prediction_date": "2026-09-08",
-  "last_settle_date": "2026-09-07",
+  "last_settle_date": "2026-09-08",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 35,
-      "correct": 22,
-      "accuracy_pct": 62.9,
+      "total": 37,
+      "correct": 23,
+      "accuracy_pct": 62.2,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -840,9 +840,10 @@
           "prediction": "up",
           "confidence": 68,
           "signal": "Tech sector shows resilience despite minor losses",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": false,
+          "settled": true,
+          "change_pct": -0.32
         },
         {
           "date": "2026-09-08",
@@ -850,9 +851,10 @@
           "prediction": "down",
           "confidence": 55,
           "signal": "Continued pressure from treasury yield rise",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.18
         }
       ]
     },
