@@ -1,58 +1,83 @@
 {
   "cash": 851.98,
-  "total_value": 9490.84,
+  "total_value": 9416.8,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 318.755,
+      "current_price": 316.36,
       "avg_cost": 306.8858
     },
     "EL": {
       "shares": 12,
-      "current_price": 104.1001,
+      "current_price": 101.76,
       "avg_cost": 85.6584
     },
     "RL": {
       "shares": 6,
-      "current_price": 354.875,
+      "current_price": 349.98,
       "avg_cost": 381.1891
     },
     "RH": {
       "shares": 1,
       "avg_cost": 177.31,
-      "current_price": 145.6
+      "current_price": 144.51
     },
     "LULU": {
       "shares": 20,
-      "current_price": 101.56,
+      "current_price": 101.71,
       "avg_cost": 118.3838
     },
     "CAKE": {
       "shares": 2,
       "avg_cost": 110.23,
-      "current_price": 107.405
+      "current_price": 108.935
     }
   },
-  "total_return_pct": -5.09,
+  "total_return_pct": -5.83,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -74.04,
+  "today_pnl_pct": -0.78,
   "total_trades": 9,
   "today_start_value": 9490.84,
   "today_date": "2026-09-08",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-08T14:20:35Z",
+  "last_action": "...",
+  "last_updated": "2026-09-08T16:19:52Z",
   "last_session": {
-    "at": "2026-09-08T14:20:35Z",
+    "at": "2026-09-08T16:19:52Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TPR",
+        -3.54
+      ],
+      [
+        "CPRI",
+        -2.77
+      ],
+      [
+        "RH",
+        -2.35
+      ],
+      [
+        "EL",
+        -2.02
+      ],
+      [
+        "CAKE",
+        1.26
+      ],
+      [
+        "HD",
+        -1.22
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1039,6 +1064,10 @@
     {
       "timestamp": "2026-09-08T14:20:35Z",
       "value": 9490.84
+    },
+    {
+      "timestamp": "2026-09-08T16:19:52Z",
+      "value": 9416.8
     }
   ]
 }
