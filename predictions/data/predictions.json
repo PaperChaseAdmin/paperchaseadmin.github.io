@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-09T16:50:43Z",
+  "updated_at": "2026-09-09T22:38:59Z",
   "last_prediction_date": "2026-09-09",
-  "last_settle_date": "2026-09-08",
+  "last_settle_date": "2026-09-09",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 37,
-      "correct": 23,
-      "accuracy_pct": 62.2,
+      "total": 40,
+      "correct": 26,
+      "accuracy_pct": 65.0,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -862,9 +862,10 @@
           "prediction": "down",
           "confidence": 72,
           "signal": "Bearish market mood and disappointing Treasury buyback news",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.48
         },
         {
           "date": "2026-09-09",
@@ -872,9 +873,10 @@
           "prediction": "down",
           "confidence": 75,
           "signal": "Tech sector under pressure despite META's gains",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.64
         },
         {
           "date": "2026-09-09",
@@ -882,9 +884,10 @@
           "prediction": "down",
           "confidence": 70,
           "signal": "Broad market decline and negative sentiment",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.77
         }
       ]
     },
