@@ -1,54 +1,84 @@
 {
-  "cash": 2130.5,
-  "total_value": 9380.83,
+  "cash": 572.06,
+  "total_value": 9304.32,
   "positions": {
     "BABA": {
       "shares": 26,
-      "current_price": 109.495,
+      "current_price": 108.625,
       "avg_cost": 100.8292
     },
     "PDD": {
       "shares": 35,
-      "current_price": 78.82,
+      "current_price": 78.07,
       "avg_cost": 85.64
     },
     "TME": {
-      "shares": 40,
-      "current_price": 7.8795,
-      "avg_cost": 8.7576
+      "shares": 90,
+      "current_price": 7.8,
+      "avg_cost": 8.2256
     },
     "BIDU": {
-      "shares": 10,
-      "avg_cost": 96.26,
-      "current_price": 92.39
+      "shares": 15,
+      "current_price": 90.275,
+      "avg_cost": 94.265
     },
     "JD": {
-      "shares": 15,
-      "avg_cost": 27.93,
-      "current_price": 27.045
+      "shares": 35,
+      "current_price": 26.825,
+      "avg_cost": 27.2986
+    },
+    "NIO": {
+      "shares": 50,
+      "avg_cost": 3.6112,
+      "current_price": 3.6112
     }
   },
-  "total_return_pct": -6.19,
+  "total_return_pct": -6.96,
   "total_return_usd": 0.0,
-  "today_pnl": -80.66,
-  "today_pnl_pct": -0.85,
-  "total_trades": 16,
-  "today_start_value": 9461.49,
-  "today_date": "2026-09-09",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-09T20:53:54Z",
+  "today_pnl": -0.01,
+  "today_pnl_pct": -0.0,
+  "total_trades": 20,
+  "today_start_value": 9304.33,
+  "today_date": "2026-09-10",
+  "last_action": "All Chinese ADRs selling off together - classic risk-off. But fundamentals unchanged: stimulus coming, property sector stabilizing, tech crackdown ending. This is accumulation zone. The West fears Chi",
+  "last_updated": "2026-09-10T14:21:15Z",
   "last_session": {
-    "at": "2026-09-09T20:53:54Z",
+    "at": "2026-09-10T14:21:15Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BILI",
+        -2.83
+      ],
+      [
+        "NIO",
+        -2.3
+      ],
+      [
+        "FUTU",
+        -2.26
+      ],
+      [
+        "BIDU",
+        -1.98
+      ],
+      [
+        "XPEV",
+        -1.42
+      ],
+      [
+        "TIGR",
+        -1.39
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio down 6.19% but BABA shows green. PDD, TME, BIDU, JD all underwater - paper losses only. Today's broad weakness across watchlist (BILI -2.8%, NIO -2.3%, FUTU -2.3%) creates entry points. Deploying $1558 of $1630 available cash into four high-conviction names. Maintaining $500+ reserve. No sells - conviction remains on all holdings. China's rejuvenation timeline is years, not days.",
+    "outlook": "All Chinese ADRs selling off together - classic risk-off. But fundamentals unchanged: stimulus coming, property sector stabilizing, tech crackdown ending. This is accumulation zone. The West fears China; we see opportunity.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1062,6 +1092,10 @@
     {
       "timestamp": "2026-09-09T20:53:54Z",
       "value": 9380.83
+    },
+    {
+      "timestamp": "2026-09-10T14:21:15Z",
+      "value": 9304.32
     }
   ]
 }
