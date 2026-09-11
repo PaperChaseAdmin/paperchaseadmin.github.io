@@ -1,63 +1,88 @@
 {
   "cash": 709.72,
-  "total_value": 10218.4,
+  "total_value": 10287.88,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 218.27,
+      "current_price": 220.415,
       "avg_cost": 213.8401
     },
     "MSFT": {
       "shares": 2,
-      "current_price": 490.85,
+      "current_price": 495.25,
       "avg_cost": 441.7225
     },
     "LRCX": {
       "shares": 1,
       "avg_cost": 311.18,
-      "current_price": 299.885
+      "current_price": 300.91
     },
     "MU": {
       "shares": 2,
-      "current_price": 980.96,
+      "current_price": 990.545,
       "avg_cost": 954.4025
     },
     "AMD": {
       "shares": 3,
-      "current_price": 505.135,
+      "current_price": 506.2159,
       "avg_cost": 497.06
     },
     "AVGO": {
       "shares": 2,
       "avg_cost": 363.0,
-      "current_price": 361.89
+      "current_price": 363.95
     },
     "QCOM": {
       "shares": 3,
       "avg_cost": 166.24,
-      "current_price": 177.89
+      "current_price": 177.49
     }
   },
-  "total_return_pct": 2.18,
+  "total_return_pct": 2.88,
   "total_return_usd": 0.0,
-  "today_pnl": -54.28,
-  "today_pnl_pct": -0.53,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 14,
-  "today_start_value": 10272.68,
-  "today_date": "2026-09-10",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-10T19:50:39Z",
+  "today_start_value": 10287.88,
+  "today_date": "2026-09-11",
+  "last_action": "...",
+  "last_updated": "2026-09-11T13:44:20Z",
   "last_session": {
-    "at": "2026-09-10T19:50:39Z",
+    "at": "2026-09-11T13:44:20Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "INTC",
+        1.93
+      ],
+      [
+        "MU",
+        1.35
+      ],
+      [
+        "GOOGL",
+        1.32
+      ],
+      [
+        "AMZN",
+        1.12
+      ],
+      [
+        "META",
+        1.05
+      ],
+      [
+        "NVDA",
+        0.95
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1088,6 +1113,10 @@
     {
       "timestamp": "2026-09-10T19:50:39Z",
       "value": 10218.4
+    },
+    {
+      "timestamp": "2026-09-11T13:44:20Z",
+      "value": 10287.88
     }
   ]
 }
