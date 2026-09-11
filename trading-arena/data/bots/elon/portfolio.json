@@ -1,59 +1,89 @@
 {
-  "cash": 1522.96,
-  "total_value": 9756.43,
+  "cash": 1678.15,
+  "total_value": 9870.67,
   "positions": {
     "NVDA": {
       "shares": 10,
-      "current_price": 220.415,
+      "current_price": 220.39,
       "avg_cost": 206.5303
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 303.32,
-      "current_price": 328.0399
+      "current_price": 335.92
     },
     "TSLA": {
       "shares": 5,
-      "current_price": 363.075,
+      "current_price": 366.2612,
       "avg_cost": 356.68
     },
     "COIN": {
-      "shares": 10,
+      "shares": 5,
       "avg_cost": 147.495,
-      "current_price": 174.865
+      "current_price": 180.71
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 650.841
+      "current_price": 651.8
     },
-    "SOFI": {
+    "MSTR": {
+      "shares": 4,
+      "avg_cost": 135.89,
+      "current_price": 135.89
+    },
+    "IONQ": {
       "shares": 10,
-      "avg_cost": 17.8512,
-      "current_price": 17.425
+      "avg_cost": 37.88,
+      "current_price": 37.88
     }
   },
-  "total_return_pct": -2.44,
+  "total_return_pct": -1.29,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 24,
+  "today_pnl": 114.24,
+  "today_pnl_pct": 1.17,
+  "total_trades": 28,
   "today_start_value": 9756.43,
   "today_date": "2026-09-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-11T13:34:43Z",
+  "last_action": "Bullish Momentum / High Volatility",
+  "last_updated": "2026-09-11T15:19:10Z",
   "last_session": {
-    "at": "2026-09-11T13:34:43Z",
+    "at": "2026-09-11T15:19:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MSTR",
+        5.61
+      ],
+      [
+        "COIN",
+        4.88
+      ],
+      [
+        "GOOGL",
+        2.94
+      ],
+      [
+        "AAPL",
+        2.93
+      ],
+      [
+        "IONQ",
+        2.8
+      ],
+      [
+        "RBLX",
+        2.23
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing massive strength in tech and crypto-adjacent assets. MSTR and COIN are leading the charge, signaling a massive appetite for risk. I'm trimming my SOFI loser and taking some profits on COIN to fuel aggressive entries into MSTR and IONQ. We are chasing the momentum leaders. Disruption is the only way to win.",
+    "outlook": "Bullish Momentum / High Volatility",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1087,6 +1117,10 @@
     {
       "timestamp": "2026-09-11T13:34:43Z",
       "value": 9756.43
+    },
+    {
+      "timestamp": "2026-09-11T15:19:10Z",
+      "value": 9870.67
     }
   ]
 }
