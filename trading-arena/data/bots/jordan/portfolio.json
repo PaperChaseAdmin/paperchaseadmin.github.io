@@ -1,58 +1,83 @@
 {
   "cash": 232.87,
-  "total_value": 8754.17,
+  "total_value": 8850.73,
   "positions": {
     "PLTR": {
       "shares": 22,
-      "current_price": 165.76,
+      "current_price": 169.35,
       "avg_cost": 175.8018
     },
     "RBLX": {
       "shares": 10,
       "avg_cost": 38.795,
-      "current_price": 45.9
+      "current_price": 47.24
     },
     "GME": {
       "shares": 37,
-      "current_price": 20.895,
+      "current_price": 20.82,
       "avg_cost": 18.6332
     },
     "META": {
       "shares": 3,
       "avg_cost": 581.2,
-      "current_price": 651.8
+      "current_price": 657.37
     },
     "AMC": {
       "shares": 3,
       "avg_cost": 2.6082,
-      "current_price": 2.49
+      "current_price": 2.4518
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 318.755,
-      "current_price": 335.92
+      "current_price": 333.99
     }
   },
-  "total_return_pct": -12.46,
+  "total_return_pct": -11.49,
   "total_return_usd": 0.0,
-  "today_pnl": 20.8,
-  "today_pnl_pct": 0.24,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 24,
-  "today_start_value": 8733.37,
-  "today_date": "2026-09-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-11T15:57:05Z",
+  "today_start_value": 8850.73,
+  "today_date": "2026-09-14",
+  "last_action": "...",
+  "last_updated": "2026-09-14T14:09:33Z",
   "last_session": {
-    "at": "2026-09-11T15:57:05Z",
+    "at": "2026-09-14T14:09:33Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MARA",
+        -7.85
+      ],
+      [
+        "RIOT",
+        -5.6
+      ],
+      [
+        "NVDA",
+        -3.62
+      ],
+      [
+        "COIN",
+        3.44
+      ],
+      [
+        "RBLX",
+        3.41
+      ],
+      [
+        "GME",
+        -1.44
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1091,6 +1116,10 @@
     {
       "timestamp": "2026-09-11T15:57:05Z",
       "value": 8754.17
+    },
+    {
+      "timestamp": "2026-09-14T14:09:33Z",
+      "value": 8850.73
     }
   ]
 }

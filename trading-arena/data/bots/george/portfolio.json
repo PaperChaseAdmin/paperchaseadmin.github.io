@@ -1,48 +1,73 @@
 {
   "cash": 327.28,
-  "total_value": 10107.28,
+  "total_value": 9977.28,
   "positions": {
     "GLD": {
       "shares": 12,
       "avg_cost": 402.44,
-      "current_price": 400.09
+      "current_price": 392.1
     },
     "TLT": {
       "shares": 47,
-      "current_price": 81.175,
+      "current_price": 80.83,
       "avg_cost": 82.3827
     },
     "TSLA": {
       "shares": 3,
       "avg_cost": 366.35,
-      "current_price": 366.2612
+      "current_price": 359.955
     },
     "XLE": {
       "shares": 1,
       "avg_cost": 64.77,
-      "current_price": 64.91
+      "current_price": 65.92
     }
   },
-  "total_return_pct": 1.07,
+  "total_return_pct": -0.23,
   "total_return_usd": 0.0,
-  "today_pnl": -23.46,
-  "today_pnl_pct": -0.23,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 15,
-  "today_start_value": 10130.74,
-  "today_date": "2026-09-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-11T15:38:24Z",
+  "today_start_value": 9977.28,
+  "today_date": "2026-09-14",
+  "last_action": "...",
+  "last_updated": "2026-09-14T13:52:35Z",
   "last_session": {
-    "at": "2026-09-11T15:38:24Z",
+    "at": "2026-09-14T13:52:35Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        -3.62
+      ],
+      [
+        "EEM",
+        -2.68
+      ],
+      [
+        "AMZN",
+        -2.07
+      ],
+      [
+        "GLD",
+        -1.7
+      ],
+      [
+        "QQQ",
+        -1.65
+      ],
+      [
+        "META",
+        1.44
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1081,6 +1106,10 @@
     {
       "timestamp": "2026-09-11T15:38:24Z",
       "value": 10107.28
+    },
+    {
+      "timestamp": "2026-09-14T13:52:35Z",
+      "value": 9977.28
     }
   ]
 }
