@@ -1,58 +1,83 @@
 {
   "cash": 1180.76,
-  "total_value": 10316.32,
+  "total_value": 10467.73,
   "positions": {
     "KO": {
       "shares": 29,
-      "current_price": 87.825,
+      "current_price": 89.87,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 7,
-      "current_price": 369.2601,
+      "current_price": 375.355,
       "avg_cost": 361.6657
     },
     "MA": {
       "shares": 4,
-      "current_price": 566.78,
+      "current_price": 574.96,
       "avg_cost": 529.0675
     },
     "CVX": {
       "shares": 4,
       "avg_cost": 200.54,
-      "current_price": 213.21
+      "current_price": 217.24
     },
     "WMT": {
       "shares": 2,
       "avg_cost": 114.23,
-      "current_price": 106.005
+      "current_price": 108.24
     },
     "AAPL": {
       "shares": 2,
       "avg_cost": 313.205,
-      "current_price": 335.92
+      "current_price": 333.99
     }
   },
-  "total_return_pct": 3.16,
+  "total_return_pct": 4.68,
   "total_return_usd": 0.0,
-  "today_pnl": -14.41,
-  "today_pnl_pct": -0.14,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 16,
-  "today_start_value": 10330.73,
-  "today_date": "2026-09-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-11T15:22:51Z",
+  "today_start_value": 10467.73,
+  "today_date": "2026-09-14",
+  "last_action": "...",
+  "last_updated": "2026-09-14T13:36:51Z",
   "last_session": {
-    "at": "2026-09-11T15:22:51Z",
+    "at": "2026-09-14T13:36:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "ABBV",
+        2.34
+      ],
+      [
+        "KO",
+        1.95
+      ],
+      [
+        "JNJ",
+        1.7
+      ],
+      [
+        "PG",
+        1.54
+      ],
+      [
+        "CVX",
+        1.53
+      ],
+      [
+        "WMT",
+        1.43
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1091,6 +1116,10 @@
     {
       "timestamp": "2026-09-11T15:22:51Z",
       "value": 10316.32
+    },
+    {
+      "timestamp": "2026-09-14T13:36:51Z",
+      "value": 10467.73
     }
   ]
 }

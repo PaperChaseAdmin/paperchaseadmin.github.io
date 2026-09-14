@@ -1,109 +1,139 @@
 {
-  "cash": 1374.82,
-  "total_value": 10283.01,
+  "cash": 231.42,
+  "total_value": 10352.25,
   "positions": {
     "T": {
       "shares": 81,
-      "current_price": 26.15,
+      "current_price": 26.45,
       "avg_cost": 22.4695
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 56.08,
+      "current_price": 56.16,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 50.415,
+      "current_price": 51.26,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 400.09,
+      "current_price": 392.1,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 192.34,
+      "current_price": 194.76,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 256.61,
+      "current_price": 262.815,
       "avg_cost": 252.3579
     },
     "WPC": {
       "shares": 2,
       "avg_cost": 70.81,
-      "current_price": 69.07
+      "current_price": 69.54
     },
     "ARCC": {
       "shares": 7,
       "avg_cost": 18.595,
-      "current_price": 19.765
+      "current_price": 19.78
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 34.045
+      "current_price": 34.425
     },
     "HTGC": {
       "shares": 20,
-      "current_price": 17.385,
+      "current_price": 17.465,
       "avg_cost": 16.239
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 162.79
+      "current_price": 162.6
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 56.575
+      "current_price": 56.46
     },
     "MO": {
       "shares": 5,
-      "current_price": 68.675,
+      "current_price": 70.4101,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 2,
       "avg_cost": 63.13,
-      "current_price": 59.37
+      "current_price": 60.06
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 47.15
+      "current_price": 47.45
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 47.765
+      "current_price": 47.94
+    },
+    "BTI": {
+      "shares": 20,
+      "avg_cost": 57.17,
+      "current_price": 57.17
     }
   },
-  "total_return_pct": 2.83,
+  "total_return_pct": 3.52,
   "total_return_usd": 0.0,
-  "today_pnl": 17.74,
-  "today_pnl_pct": 0.17,
-  "total_trades": 19,
-  "today_start_value": 10265.27,
-  "today_date": "2026-09-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-11T16:03:18Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 20,
+  "today_start_value": 10352.25,
+  "today_date": "2026-09-14",
+  "last_action": "Neutral and steady. The market is behaving, which allows a wise investor to focus on the only thing that matters: the incoming dividend checks!",
+  "last_updated": "2026-09-14T14:14:09Z",
   "last_session": {
-    "at": "2026-09-11T16:03:18Z",
+    "at": "2026-09-14T14:14:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BTI",
+        3.61
+      ],
+      [
+        "IBM",
+        2.58
+      ],
+      [
+        "ABBV",
+        2.34
+      ],
+      [
+        "MO",
+        2.12
+      ],
+      [
+        "PM",
+        1.94
+      ],
+      [
+        "GLD",
+        -1.7
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "The market is showing moderate sentiment, so I'm ignoring the noise and hunting for yield. BTI is a standout performer today, and I'm seizing the opportunity to expand my tobacco holdings. I'm also taking advantage of the dip in GLD and O to stack more assets that produce cash flow. Every cent must work for me!",
+    "outlook": "Neutral and steady. The market is behaving, which allows a wise investor to focus on the only thing that matters: the incoming dividend checks!",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1141,6 +1171,10 @@
     {
       "timestamp": "2026-09-11T16:03:18Z",
       "value": 10283.01
+    },
+    {
+      "timestamp": "2026-09-14T14:14:09Z",
+      "value": 10352.25
     }
   ]
 }
