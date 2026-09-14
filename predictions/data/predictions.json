@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-14T18:09:08Z",
+  "updated_at": "2026-09-14T23:14:15Z",
   "last_prediction_date": "2026-09-14",
-  "last_settle_date": "2026-09-11",
+  "last_settle_date": "2026-09-14",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 46,
-      "correct": 32,
-      "accuracy_pct": 69.6,
+      "total": 48,
+      "correct": 34,
+      "accuracy_pct": 70.8,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -961,9 +961,10 @@
           "prediction": "down",
           "confidence": 68,
           "signal": "Bearish market mood and negative index performance",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.48
         },
         {
           "date": "2026-09-14",
@@ -981,9 +982,10 @@
           "prediction": "down",
           "confidence": 71,
           "signal": "Negative performance and bearish sentiment",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.29
         }
       ]
     },
