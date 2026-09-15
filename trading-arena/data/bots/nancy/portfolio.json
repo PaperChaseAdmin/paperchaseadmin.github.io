@@ -1,64 +1,79 @@
 {
-  "cash": 709.72,
-  "total_value": 9971.82,
+  "cash": 2662.35,
+  "total_value": 10007.61,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 212.249,
+      "current_price": 213.07,
       "avg_cost": 213.8401
     },
     "MSFT": {
       "shares": 2,
-      "current_price": 506.662,
+      "current_price": 501.1106,
       "avg_cost": 441.7225
-    },
-    "LRCX": {
-      "shares": 1,
-      "avg_cost": 311.18,
-      "current_price": 276.38
-    },
-    "MU": {
-      "shares": 2,
-      "current_price": 927.585,
-      "avg_cost": 954.4025
     },
     "AMD": {
       "shares": 3,
-      "current_price": 495.6,
+      "current_price": 500.6,
       "avg_cost": 497.06
     },
     "AVGO": {
       "shares": 2,
       "avg_cost": 363.0,
-      "current_price": 345.945
+      "current_price": 346.7
     },
     "QCOM": {
-      "shares": 3,
-      "avg_cost": 166.24,
-      "current_price": 180.85
+      "shares": 4,
+      "current_price": 184.68,
+      "avg_cost": 170.85
     }
   },
-  "total_return_pct": -0.28,
+  "total_return_pct": 0.08,
   "total_return_usd": 0.0,
-  "today_pnl": 126.11,
-  "today_pnl_pct": 1.28,
-  "total_trades": 14,
-  "today_start_value": 9845.71,
-  "today_date": "2026-09-14",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-14T19:27:17Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 17,
+  "today_start_value": 10007.61,
+  "today_date": "2026-09-15",
+  "last_action": "Bullish on Semiconductors",
+  "last_updated": "2026-09-15T13:49:14Z",
   "last_session": {
-    "at": "2026-09-14T19:27:17Z",
+    "at": "2026-09-15T13:49:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "QCOM",
+        2.64
+      ],
+      [
+        "INTC",
+        1.51
+      ],
+      [
+        "AMD",
+        0.89
+      ],
+      [
+        "NVDA",
+        0.87
+      ],
+      [
+        "MSFT",
+        -0.83
+      ],
+      [
+        "MU",
+        0.71
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The semiconductor sector is decoupling from the broader tech dip seen in MSFT and AAPL. While the giants are seeing slight pullbacks, the chipmakers like QCOM and INTC are showing significant relative strength. I am rotating out of my laggards (LRCX, MU) to double down on the momentum leaders. My instincts tell me a major sector-wide surge is imminent.",
+    "outlook": "Bullish on Semiconductors",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1112,6 +1127,10 @@
     {
       "timestamp": "2026-09-14T19:27:17Z",
       "value": 9971.82
+    },
+    {
+      "timestamp": "2026-09-15T13:49:14Z",
+      "value": 10007.61
     }
   ]
 }
