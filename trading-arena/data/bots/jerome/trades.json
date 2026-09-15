@@ -377,6 +377,42 @@
         "ticker_chg_pct": -0.56,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLU",
+      "shares": 12,
+      "price": 41.455,
+      "total_value": 497.46,
+      "reasoning": "Utilities provide defensive characteristics amid financial sector weakness. XLU down 0.87% today, offering better entry for rate-sensitive defensive allocation.",
+      "timestamp": "2026-09-15T16:21:32Z",
+      "market_outlook": "Financial sector under pressure (GS -3%, JPM -1.6%, BAC -0.9%) suggests credit conditions tightening. Broad market decline (SPY -0.47%) with VIX data unavailable requires caution. Maintaining defensive posture with utilities and short-duration treasuries until inflation and labor data clarify policy path.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.87,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "SHY",
+      "shares": 5,
+      "price": 81.355,
+      "total_value": 406.78,
+      "reasoning": "Short-term treasuries remain core reserve asset. SHY flat today (+0.02%), adding modestly to maintain liquidity buffer while earning ~5% yield.",
+      "timestamp": "2026-09-15T16:21:32Z",
+      "market_outlook": "Financial sector under pressure (GS -3%, JPM -1.6%, BAC -0.9%) suggests credit conditions tightening. Broad market decline (SPY -0.47%) with VIX data unavailable requires caution. Maintaining defensive posture with utilities and short-duration treasuries until inflation and labor data clarify policy path.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.02,
+        "trigger_news": null
+      }
     }
   ]
 }
