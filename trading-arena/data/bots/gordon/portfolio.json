@@ -1,54 +1,79 @@
 {
-  "cash": 1999.24,
-  "total_value": 9213.2,
+  "cash": 680.24,
+  "total_value": 9169.61,
   "positions": {
     "INTC": {
       "shares": 15,
       "avg_cost": 104.44,
-      "current_price": 98.91
+      "current_price": 98.273
     },
     "PYPL": {
       "shares": 25,
       "avg_cost": 53.165,
-      "current_price": 54.09
+      "current_price": 53.67
     },
     "AAPL": {
-      "shares": 5,
-      "avg_cost": 316.07,
-      "current_price": 330.4075
+      "shares": 9,
+      "current_price": 329.75,
+      "avg_cost": 322.15
     },
     "NKE": {
       "shares": 30,
       "avg_cost": 37.59,
-      "current_price": 36.71
+      "current_price": 36.375
     },
     "DIS": {
       "shares": 15,
       "avg_cost": 104.425,
-      "current_price": 108.315
+      "current_price": 107.635
     }
   },
-  "total_return_pct": -7.87,
+  "total_return_pct": -8.3,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 27,
+  "today_pnl": -43.59,
+  "today_pnl_pct": -0.47,
+  "total_trades": 28,
   "today_start_value": 9213.2,
   "today_date": "2026-09-15",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-15T14:24:10Z",
+  "last_action": "...",
+  "last_updated": "2026-09-15T16:13:54Z",
   "last_session": {
-    "at": "2026-09-15T14:24:10Z",
+    "at": "2026-09-15T16:13:54Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BBWI",
+        -5.72
+      ],
+      [
+        "NOK",
+        3.16
+      ],
+      [
+        "SBUX",
+        -2.64
+      ],
+      [
+        "GM",
+        -2.04
+      ],
+      [
+        "VFC",
+        -2.03
+      ],
+      [
+        "F",
+        -1.98
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1106,6 +1131,10 @@
     {
       "timestamp": "2026-09-15T14:24:10Z",
       "value": 9213.2
+    },
+    {
+      "timestamp": "2026-09-15T16:13:54Z",
+      "value": 9169.61
     }
   ]
 }

@@ -305,6 +305,60 @@
         "ticker_chg_pct": 0.71,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "QCOM",
+      "shares": 8,
+      "price": 187.4318,
+      "total_value": 1499.45,
+      "reasoning": "QCOM is showing massive strength with a 4.05% move today. The momentum in semiconductors is undeniable, and I'm doubling down on this breakout to capitalize on the sector rotation.",
+      "timestamp": "2026-09-15T15:57:12Z",
+      "market_outlook": "Bullish on Semiconductors",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.05,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMD",
+      "shares": 1,
+      "price": 503.65,
+      "total_value": 503.65,
+      "reasoning": "AMD is up over 2% and showing strong relative strength compared to the broader tech pullback. I'm increasing my position size here to ride the semiconductor wave.",
+      "timestamp": "2026-09-15T15:57:12Z",
+      "market_outlook": "Bullish on Semiconductors",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.07,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AVGO",
+      "shares": 2,
+      "price": 339.3,
+      "total_value": 678.6,
+      "reasoning": "AVGO is lagging the sector with a -1.56% move. I'm cutting this loser to free up capital for higher-conviction setups like QCOM and AMD.",
+      "timestamp": "2026-09-15T15:57:12Z",
+      "market_outlook": "Bullish on Semiconductors",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.56,
+        "trigger_news": null
+      }
     }
   ]
 }
