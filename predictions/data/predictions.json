@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-15T17:13:24Z",
+  "updated_at": "2026-09-15T22:59:23Z",
   "last_prediction_date": "2026-09-15",
-  "last_settle_date": "2026-09-14",
+  "last_settle_date": "2026-09-15",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 48,
-      "correct": 34,
-      "accuracy_pct": 70.8,
+      "total": 51,
+      "correct": 37,
+      "accuracy_pct": 72.5,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -993,9 +993,10 @@
           "prediction": "down",
           "confidence": 70,
           "signal": "Bearish market mood and high Treasury yields pressure stocks",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.45
         },
         {
           "date": "2026-09-15",
@@ -1003,9 +1004,10 @@
           "prediction": "down",
           "confidence": 75,
           "signal": "Tech sector weakness and negative sentiment weigh on index",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.78
         },
         {
           "date": "2026-09-15",
@@ -1013,9 +1015,10 @@
           "prediction": "down",
           "confidence": 68,
           "signal": "Broad market decline and rising yields impact blue-chip stocks",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.63
         }
       ]
     },
