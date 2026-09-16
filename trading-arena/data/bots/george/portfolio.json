@@ -1,73 +1,48 @@
 {
   "cash": 327.28,
-  "total_value": 10058.5,
+  "total_value": 10089.23,
   "positions": {
     "GLD": {
       "shares": 12,
       "avg_cost": 402.44,
-      "current_price": 398.99
+      "current_price": 399.1744
     },
     "TLT": {
       "shares": 47,
-      "current_price": 80.97,
+      "current_price": 81.17,
       "avg_cost": 82.3827
     },
     "TSLA": {
       "shares": 3,
       "avg_cost": 366.35,
-      "current_price": 357.6399
+      "current_price": 364.265
     },
     "XLE": {
       "shares": 1,
       "avg_cost": 64.77,
-      "current_price": 64.835
+      "current_price": 64.075
     }
   },
-  "total_return_pct": 0.58,
+  "total_return_pct": 0.89,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 30.73,
+  "today_pnl_pct": 0.31,
   "total_trades": 15,
   "today_start_value": 10058.5,
   "today_date": "2026-09-16",
-  "last_action": "...",
-  "last_updated": "2026-09-16T13:47:45Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-09-16T15:31:04Z",
   "last_session": {
-    "at": "2026-09-16T13:47:45Z",
+    "at": "2026-09-16T15:31:04Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "META",
-        1.87
-      ],
-      [
-        "XLE",
-        -1.74
-      ],
-      [
-        "GLD",
-        1.24
-      ],
-      [
-        "BAC",
-        -1.15
-      ],
-      [
-        "EEM",
-        0.97
-      ],
-      [
-        "BABA",
-        -0.97
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1142,6 +1117,10 @@
     {
       "timestamp": "2026-09-16T13:47:45Z",
       "value": 10058.5
+    },
+    {
+      "timestamp": "2026-09-16T15:31:04Z",
+      "value": 10089.23
     }
   ]
 }
