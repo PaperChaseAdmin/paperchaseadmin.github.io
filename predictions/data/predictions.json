@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-16T17:14:09Z",
+  "updated_at": "2026-09-16T23:04:10Z",
   "last_prediction_date": "2026-09-16",
-  "last_settle_date": "2026-09-15",
+  "last_settle_date": "2026-09-16",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 51,
-      "correct": 37,
-      "accuracy_pct": 72.5,
+      "total": 53,
+      "correct": 38,
+      "accuracy_pct": 71.7,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1036,9 +1036,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Tech stocks showing strength despite mixed market mood",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": false,
+          "settled": true,
+          "change_pct": -0.01
         },
         {
           "date": "2026-09-16",
@@ -1046,9 +1047,10 @@
           "prediction": "down",
           "confidence": 60,
           "signal": "Weakness in industrial stocks and mixed macro indicators",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.21
         }
       ]
     },
