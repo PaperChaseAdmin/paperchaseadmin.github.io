@@ -287,6 +287,42 @@
         "ticker_chg_pct": -0.16,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "BAC",
+      "shares": 10,
+      "price": 58.815,
+      "total_value": 588.15,
+      "reasoning": "Bank of America is showing weakness and underperforming the broader banking sector today. I prefer to rotate capital out of this laggard and into more robust institutional players.",
+      "timestamp": "2026-09-16T13:54:09Z",
+      "market_outlook": "Bullish on institutional stability; cautious on consumer-facing retail banking volatility.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.15,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BRK-B",
+      "shares": 1,
+      "price": 517.34,
+      "total_value": 517.34,
+      "reasoning": "Berkshire Hathaway represents the ultimate stability and fundamental strength. It is a fortress of American industry and a perfect hedge against market noise.",
+      "timestamp": "2026-09-16T13:54:09Z",
+      "market_outlook": "Bullish on institutional stability; cautious on consumer-facing retail banking volatility.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.11,
+        "trigger_news": null
+      }
     }
   ]
 }
