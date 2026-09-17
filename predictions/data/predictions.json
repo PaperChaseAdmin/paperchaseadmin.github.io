@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-17T17:13:15Z",
+  "updated_at": "2026-09-17T22:56:49Z",
   "last_prediction_date": "2026-09-17",
-  "last_settle_date": "2026-09-16",
+  "last_settle_date": "2026-09-17",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 53,
-      "correct": 38,
-      "accuracy_pct": 71.7,
+      "total": 55,
+      "correct": 40,
+      "accuracy_pct": 72.7,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1058,9 +1058,10 @@
           "prediction": "up",
           "confidence": 68,
           "signal": "Positive market mood and strong performance in most active stocks",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.14
         },
         {
           "date": "2026-09-17",
@@ -1068,9 +1069,10 @@
           "prediction": "up",
           "confidence": 72,
           "signal": "Tech stocks leading gains with strong momentum",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.69
         },
         {
           "date": "2026-09-17",
