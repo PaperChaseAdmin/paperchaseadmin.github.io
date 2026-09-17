@@ -1,64 +1,94 @@
 {
-  "cash": 1678.15,
-  "total_value": 9800.72,
+  "cash": 744.36,
+  "total_value": 9772.79,
   "positions": {
     "NVDA": {
       "shares": 10,
-      "current_price": 217.87,
+      "current_price": 218.795,
       "avg_cost": 206.5303
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 303.32,
-      "current_price": 334.39
+      "current_price": 332.17
     },
     "TSLA": {
       "shares": 5,
-      "current_price": 367.9299,
+      "current_price": 364.66,
       "avg_cost": 356.68
     },
     "COIN": {
       "shares": 5,
       "avg_cost": 147.495,
-      "current_price": 168.94
+      "current_price": 167.62
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 678.93
-    },
-    "MSTR": {
-      "shares": 4,
-      "avg_cost": 135.89,
-      "current_price": 130.96
+      "current_price": 673.05
     },
     "IONQ": {
+      "shares": 15,
+      "current_price": 39.9275,
+      "avg_cost": 38.5625
+    },
+    "AMD": {
+      "shares": 2,
+      "avg_cost": 543.86,
+      "current_price": 543.86
+    },
+    "RIVN": {
       "shares": 10,
-      "avg_cost": 37.88,
-      "current_price": 38.4799
+      "avg_cost": 15.855,
+      "current_price": 15.855
     }
   },
-  "total_return_pct": -1.99,
+  "total_return_pct": -2.27,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 28,
+  "today_pnl": -27.93,
+  "today_pnl_pct": -0.28,
+  "total_trades": 32,
   "today_start_value": 9800.72,
   "today_date": "2026-09-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-17T13:33:34Z",
+  "last_action": "Bullish Momentum",
+  "last_updated": "2026-09-17T15:17:08Z",
   "last_session": {
-    "at": "2026-09-17T13:33:34Z",
+    "at": "2026-09-17T15:17:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IONQ",
+        8.35
+      ],
+      [
+        "AMD",
+        6.15
+      ],
+      [
+        "RIVN",
+        4.07
+      ],
+      [
+        "AMZN",
+        2.33
+      ],
+      [
+        "NVDA",
+        2.32
+      ],
+      [
+        "TSLA",
+        1.85
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The tech sector is on fire today. AMD and IONQ are leading the charge with massive percentage gains. I'm purging my underperforming MSTR position to fuel these high-velocity plays. We are chasing the momentum in AI and next-gen hardware. Let's go!",
+    "outlook": "Bullish Momentum",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1148,6 +1178,10 @@
     {
       "timestamp": "2026-09-17T13:33:34Z",
       "value": 9800.72
+    },
+    {
+      "timestamp": "2026-09-17T15:17:08Z",
+      "value": 9772.79
     }
   ]
 }
