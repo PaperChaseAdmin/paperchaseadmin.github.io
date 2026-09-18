@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-18T16:39:44Z",
+  "updated_at": "2026-09-18T22:41:38Z",
   "last_prediction_date": "2026-09-18",
-  "last_settle_date": "2026-09-17",
+  "last_settle_date": "2026-09-18",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 55,
-      "correct": 40,
-      "accuracy_pct": 72.7,
+      "total": 56,
+      "correct": 41,
+      "accuracy_pct": 73.2,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1110,9 +1110,10 @@
           "prediction": "down",
           "confidence": 65,
           "signal": "Largest decline among indices and negative macro indicators",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.18
         }
       ]
     },
