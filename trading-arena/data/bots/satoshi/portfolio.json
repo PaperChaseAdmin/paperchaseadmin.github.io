@@ -1,78 +1,103 @@
 {
   "cash": 366.49,
-  "total_value": 10593.45,
+  "total_value": 11377.19,
   "positions": {
     "MSTR": {
       "shares": 20,
-      "current_price": 147.93,
+      "current_price": 165.68,
       "avg_cost": 109.4095
     },
     "COIN": {
       "shares": 18,
-      "current_price": 192.3513,
+      "current_price": 206.35,
       "avg_cost": 161.2922
     },
     "CLSK": {
       "shares": 41,
-      "current_price": 13.83,
+      "current_price": 15.06,
       "avg_cost": 13.0222
     },
     "CIFR": {
       "shares": 10,
       "avg_cost": 17.255,
-      "current_price": 17.4001
+      "current_price": 18.79
     },
     "MARA": {
       "shares": 20,
-      "current_price": 12.665,
+      "current_price": 13.8429,
       "avg_cost": 9.7125
     },
     "BTBT": {
       "shares": 70,
-      "current_price": 1.63,
+      "current_price": 1.81,
       "avg_cost": 1.5286
     },
     "HOOD": {
       "shares": 5,
       "avg_cost": 97.32,
-      "current_price": 118.669
+      "current_price": 126.12
     },
     "WULF": {
       "shares": 20,
       "avg_cost": 16.4,
-      "current_price": 16.43
+      "current_price": 17.46
     },
     "BITO": {
       "shares": 40,
       "avg_cost": 10.385,
-      "current_price": 10.8899
+      "current_price": 11.395
     },
     "AAPL": {
       "shares": 4,
       "avg_cost": 334.39,
-      "current_price": 335.0172
+      "current_price": 334.57
     }
   },
-  "total_return_pct": 5.93,
+  "total_return_pct": 13.77,
   "total_return_usd": 0.0,
-  "today_pnl": 493.0,
-  "today_pnl_pct": 4.88,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 20,
-  "today_start_value": 10100.45,
-  "today_date": "2026-09-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-18T16:07:43Z",
+  "today_start_value": 11377.19,
+  "today_date": "2026-09-21",
+  "last_action": "...",
+  "last_updated": "2026-09-21T14:21:03Z",
   "last_session": {
-    "at": "2026-09-18T16:07:43Z",
+    "at": "2026-09-21T14:21:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MSTR",
+        7.9
+      ],
+      [
+        "COIN",
+        6.53
+      ],
+      [
+        "HUT",
+        5.22
+      ],
+      [
+        "HOOD",
+        5.13
+      ],
+      [
+        "MARA",
+        4.53
+      ],
+      [
+        "BITO",
+        4.4
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1183,6 +1208,10 @@
     {
       "timestamp": "2026-09-18T16:07:43Z",
       "value": 10593.45
+    },
+    {
+      "timestamp": "2026-09-21T14:21:03Z",
+      "value": 11377.19
     }
   ]
 }
