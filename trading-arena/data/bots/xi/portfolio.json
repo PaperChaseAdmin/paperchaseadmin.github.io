@@ -1,59 +1,89 @@
 {
-  "cash": 572.06,
-  "total_value": 9474.95,
+  "cash": 566.59,
+  "total_value": 9519.27,
   "positions": {
     "BABA": {
       "shares": 26,
-      "current_price": 113.27,
+      "current_price": 114.73,
       "avg_cost": 100.8292
-    },
-    "PDD": {
-      "shares": 35,
-      "current_price": 79.5,
-      "avg_cost": 85.64
     },
     "TME": {
       "shares": 90,
-      "current_price": 7.785,
+      "current_price": 7.76,
       "avg_cost": 8.2256
     },
     "BIDU": {
       "shares": 15,
-      "current_price": 89.89,
+      "current_price": 91.23,
       "avg_cost": 94.265
     },
     "JD": {
       "shares": 35,
-      "current_price": 26.975,
+      "current_price": 26.98,
       "avg_cost": 27.2986
     },
     "NIO": {
       "shares": 50,
       "avg_cost": 3.6112,
-      "current_price": 3.645
+      "current_price": 3.625
+    },
+    "FUTU": {
+      "shares": 15,
+      "avg_cost": 114.26,
+      "current_price": 114.26
+    },
+    "NTES": {
+      "shares": 9,
+      "avg_cost": 118.155,
+      "current_price": 118.155
     }
   },
-  "total_return_pct": -5.25,
+  "total_return_pct": -4.81,
   "total_return_usd": 0.0,
-  "today_pnl": 77.42,
-  "today_pnl_pct": 0.82,
-  "total_trades": 20,
-  "today_start_value": 9397.53,
-  "today_date": "2026-09-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-18T16:10:49Z",
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
+  "total_trades": 23,
+  "today_start_value": 9519.26,
+  "today_date": "2026-09-21",
+  "last_action": "Bullish on Chinese ADRs. The upward movement in FXI and KWEB suggests that institutional capital is beginning to recognize the undervaluation of Chinese assets. The West remains skeptical, but the und",
+  "last_updated": "2026-09-21T14:21:14Z",
   "last_session": {
-    "at": "2026-09-18T16:10:49Z",
+    "at": "2026-09-21T14:21:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "LI",
+        -4.16
+      ],
+      [
+        "XPEV",
+        -2.92
+      ],
+      [
+        "FUTU",
+        2.1
+      ],
+      [
+        "NTES",
+        1.69
+      ],
+      [
+        "FXI",
+        1.34
+      ],
+      [
+        "NIO",
+        -1.23
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing signs of a rotation back into Chinese tech. While EV players like LI and XPEV are seeing temporary pullbacks, the broader internet and brokerage sectors (FUTU, NTES) are outperforming. I am trimming my underperforming PDD position to fuel growth in these higher-momentum names. My focus remains on the long-term structural strength of China's digital economy.",
+    "outlook": "Bullish on Chinese ADRs. The upward movement in FXI and KWEB suggests that institutional capital is beginning to recognize the undervaluation of Chinese assets. The West remains skeptical, but the underlying economic indicators are turning the corner.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1163,6 +1193,10 @@
     {
       "timestamp": "2026-09-18T16:10:49Z",
       "value": 9474.95
+    },
+    {
+      "timestamp": "2026-09-21T14:21:14Z",
+      "value": 9519.27
     }
   ]
 }
