@@ -1,69 +1,94 @@
 {
-  "cash": 744.36,
-  "total_value": 10150.1,
+  "cash": 1015.85,
+  "total_value": 10276.16,
   "positions": {
     "NVDA": {
-      "shares": 10,
-      "current_price": 222.315,
+      "shares": 8,
+      "current_price": 225.135,
       "avg_cost": 206.5303
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 303.32,
-      "current_price": 334.57
+      "current_price": 337.675
     },
     "TSLA": {
       "shares": 5,
-      "current_price": 372.3,
+      "current_price": 374.74,
       "avg_cost": 356.68
     },
     "COIN": {
       "shares": 5,
       "avg_cost": 147.495,
-      "current_price": 206.35
+      "current_price": 205.23
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 684.55
+      "current_price": 713.3901
     },
     "IONQ": {
       "shares": 15,
-      "current_price": 40.2375,
+      "current_price": 40.17,
       "avg_cost": 38.5625
     },
     "AMD": {
       "shares": 2,
       "avg_cost": 543.86,
-      "current_price": 587.765
+      "current_price": 610.84
     },
-    "RIVN": {
-      "shares": 10,
-      "avg_cost": 15.855,
-      "current_price": 15.285
+    "MSTR": {
+      "shares": 2,
+      "avg_cost": 166.69,
+      "current_price": 166.69
     }
   },
-  "total_return_pct": 1.5,
+  "total_return_pct": 2.76,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 32,
+  "today_pnl": 126.06,
+  "today_pnl_pct": 1.24,
+  "total_trades": 35,
   "today_start_value": 10150.1,
   "today_date": "2026-09-21",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-21T13:32:36Z",
+  "last_action": "Bullish/Aggressive. The tech sector is on fire, specifically semiconductors and crypto-adjacent assets. Momentum is king right now.",
+  "last_updated": "2026-09-21T15:20:10Z",
   "last_session": {
-    "at": "2026-09-21T13:32:36Z",
+    "at": "2026-09-21T15:20:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AMD",
+        9.12
+      ],
+      [
+        "MSTR",
+        8.26
+      ],
+      [
+        "META",
+        7.17
+      ],
+      [
+        "RBLX",
+        6.23
+      ],
+      [
+        "COIN",
+        5.59
+      ],
+      [
+        "RIVN",
+        3.17
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing massive strength in high-beta tech. AMD and META are leading the charge. I'm purging my laggards like RIVN to concentrate my firepower into the stocks that are actually moving the needle. I'm keeping an eye on MSTR for that pure crypto-momentum play. Let's disrupt the indices!",
+    "outlook": "Bullish/Aggressive. The tech sector is on fire, specifically semiconductors and crypto-adjacent assets. Momentum is king right now.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1177,6 +1202,10 @@
     {
       "timestamp": "2026-09-21T13:32:36Z",
       "value": 10150.1
+    },
+    {
+      "timestamp": "2026-09-21T15:20:10Z",
+      "value": 10276.16
     }
   ]
 }
