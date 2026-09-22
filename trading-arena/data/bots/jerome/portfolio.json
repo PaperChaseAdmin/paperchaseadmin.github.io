@@ -1,63 +1,88 @@
 {
   "cash": 1080.09,
-  "total_value": 9792.49,
+  "total_value": 9787.62,
   "positions": {
     "SHY": {
       "shares": 30,
-      "current_price": 81.2801,
+      "current_price": 81.305,
       "avg_cost": 81.7522
     },
     "XLU": {
       "shares": 23,
-      "current_price": 40.6755,
+      "current_price": 40.56,
       "avg_cost": 42.1161
     },
     "BIL": {
       "shares": 27,
-      "current_price": 91.57,
+      "current_price": 91.5735,
       "avg_cost": 91.4267
     },
     "XLF": {
       "shares": 12,
-      "current_price": 55.985,
+      "current_price": 55.88,
       "avg_cost": 58.1633
     },
     "GS": {
       "shares": 1,
       "avg_cost": 1019.0,
-      "current_price": 958.835
+      "current_price": 957.46
     },
     "BAC": {
       "shares": 10,
       "avg_cost": 62.15,
-      "current_price": 58.19
+      "current_price": 57.98
     },
     "TLT": {
       "shares": 8,
-      "current_price": 81.69,
+      "current_price": 81.9,
       "avg_cost": 81.6488
     }
   },
-  "total_return_pct": -2.08,
+  "total_return_pct": -2.12,
   "total_return_usd": 0.0,
-  "today_pnl": -2.17,
-  "today_pnl_pct": -0.02,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 25,
-  "today_start_value": 9794.66,
-  "today_date": "2026-09-21",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-21T20:01:17Z",
+  "today_start_value": 9787.62,
+  "today_date": "2026-09-22",
+  "last_action": "Insufficient data for policy action. VIX and Fear & Greed indices unavailable. Portfolio remains defensively positioned with duration exposure via TLT/SHY, short-term liquidity in BIL, and financial/u",
+  "last_updated": "2026-09-22T14:14:31Z",
   "last_session": {
-    "at": "2026-09-21T20:01:17Z",
+    "at": "2026-09-22T14:14:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "XLU",
+        -0.25
+      ],
+      [
+        "JPM",
+        -0.2
+      ],
+      [
+        "BAC",
+        0.18
+      ],
+      [
+        "XLRE",
+        -0.16
+      ],
+      [
+        "TLT",
+        0.13
+      ],
+      [
+        "GS",
+        -0.13
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Current holdings reflect restrictive policy bias: long duration (TLT, SHY), front-end cash (BIL), rate-sensitive sectors (XLU, XLF, banks). All positions within 25% concentration limits. Cash reserve $1,080 exceeds $1,000 floor. No catalyst to rotate given absent volatility metrics. Will monitor VIX reappearance; >30 triggers defensive addition, <15 permits risk rotation. Meme/speculative assets remain excluded per mandate.",
+    "outlook": "Insufficient data for policy action. VIX and Fear & Greed indices unavailable. Portfolio remains defensively positioned with duration exposure via TLT/SHY, short-term liquidity in BIL, and financial/utility overweight. Awaiting clarity on inflation trajectory and labor market before adjusting stance.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1184,6 +1209,10 @@
     {
       "timestamp": "2026-09-21T20:01:17Z",
       "value": 9792.49
+    },
+    {
+      "timestamp": "2026-09-22T14:14:31Z",
+      "value": 9787.62
     }
   ]
 }
