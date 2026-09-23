@@ -1,6 +1,6 @@
 {
   "cash": 1008.75,
-  "total_value": 10700.7,
+  "total_value": 10655.25,
   "positions": {
     "TIPS": {
       "shares": 26867,
@@ -9,75 +9,100 @@
     },
     "DJP": {
       "shares": 10,
-      "current_price": 52.665,
+      "current_price": 52.475,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 111,
-      "current_price": 19.44,
+      "current_price": 19.4376,
       "avg_cost": 16.5267
     },
     "FXI": {
       "shares": 5,
       "avg_cost": 33.365,
-      "current_price": 34.53
+      "current_price": 34.445
     },
     "IAU": {
       "shares": 10,
-      "current_price": 80.9986,
+      "current_price": 80.6559,
       "avg_cost": 81.4195
     },
     "GSG": {
       "shares": 30,
-      "current_price": 35.8399,
+      "current_price": 35.805,
       "avg_cost": 32.0725
     },
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 395.12
+      "current_price": 393.34
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 310.135,
-      "current_price": 341.57
+      "current_price": 338.365
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 81.955,
-      "current_price": 81.485
+      "current_price": 80.71
     },
     "GDX": {
       "shares": 4,
       "avg_cost": 95.63,
-      "current_price": 95.04
+      "current_price": 93.74
     },
     "EEM": {
       "shares": 1,
       "avg_cost": 66.9,
-      "current_price": 68.485
+      "current_price": 67.97
     }
   },
-  "total_return_pct": 7.01,
+  "total_return_pct": 6.55,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -45.45,
+  "today_pnl_pct": -0.42,
   "total_trades": 18,
   "today_start_value": 10700.7,
   "today_date": "2026-09-23",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-23T13:44:43Z",
+  "last_action": "...",
+  "last_updated": "2026-09-23T15:19:27Z",
   "last_session": {
-    "at": "2026-09-23T13:44:43Z",
+    "at": "2026-09-23T15:19:27Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "VWO",
+        -1.35
+      ],
+      [
+        "TLT",
+        -1.33
+      ],
+      [
+        "FXI",
+        -1.33
+      ],
+      [
+        "IAU",
+        -1.25
+      ],
+      [
+        "GLD",
+        -1.24
+      ],
+      [
+        "EEM",
+        -1.24
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1224,6 +1249,10 @@
     {
       "timestamp": "2026-09-23T13:44:43Z",
       "value": 10700.7
+    },
+    {
+      "timestamp": "2026-09-23T15:19:27Z",
+      "value": 10655.25
     }
   ]
 }
