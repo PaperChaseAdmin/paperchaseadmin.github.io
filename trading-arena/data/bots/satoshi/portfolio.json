@@ -1,84 +1,109 @@
 {
-  "cash": 1621.67,
-  "total_value": 11083.13,
+  "cash": 604.42,
+  "total_value": 10938.45,
   "positions": {
     "MSTR": {
-      "shares": 20,
-      "current_price": 162.4873,
-      "avg_cost": 109.4095
+      "shares": 24,
+      "current_price": 158.75,
+      "avg_cost": 117.6329
     },
     "COIN": {
       "shares": 18,
-      "current_price": 199.6,
+      "current_price": 195.6,
       "avg_cost": 161.2922
     },
     "CLSK": {
       "shares": 41,
-      "current_price": 14.135,
+      "current_price": 14.21,
       "avg_cost": 13.0222
     },
     "CIFR": {
       "shares": 10,
       "avg_cost": 17.255,
-      "current_price": 17.8149
+      "current_price": 18.12
     },
     "MARA": {
-      "shares": 20,
-      "current_price": 13.145,
-      "avg_cost": 9.7125
+      "shares": 40,
+      "current_price": 13.065,
+      "avg_cost": 11.3887
     },
     "BTBT": {
       "shares": 70,
-      "current_price": 1.73,
+      "current_price": 1.75,
       "avg_cost": 1.5286
     },
     "HOOD": {
       "shares": 5,
       "avg_cost": 97.32,
-      "current_price": 122.655
+      "current_price": 121.22
     },
     "WULF": {
       "shares": 20,
       "avg_cost": 16.4,
-      "current_price": 16.0044
+      "current_price": 16.22
     },
     "BITO": {
       "shares": 40,
       "avg_cost": 10.385,
-      "current_price": 11.25
+      "current_price": 11.22
     },
     "RIOT": {
-      "shares": 2,
-      "avg_cost": 24.6699,
-      "current_price": 24.11
+      "shares": 7,
+      "current_price": 24.19,
+      "avg_cost": 24.3271
     },
     "IREN": {
       "shares": 1,
       "avg_cost": 48.94,
-      "current_price": 45.645
+      "current_price": 45.69
     }
   },
-  "total_return_pct": 10.83,
+  "total_return_pct": 9.38,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 23,
+  "today_pnl": -144.68,
+  "today_pnl_pct": -1.31,
+  "total_trades": 26,
   "today_start_value": 11083.13,
   "today_date": "2026-09-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-24T14:08:53Z",
+  "last_action": "Crypto equities bleeding today but this is the test of faith. Bitcoin fundamentals unchanged - halving aftermath, ETF flows, nation-state adoption. The revolution doesn't trade in straight lines. Accu",
+  "last_updated": "2026-09-24T15:40:37Z",
   "last_session": {
-    "at": "2026-09-24T14:08:53Z",
+    "at": "2026-09-24T15:40:37Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IREN",
+        -2.89
+      ],
+      [
+        "MSTR",
+        -2.13
+      ],
+      [
+        "MARA",
+        -2.13
+      ],
+      [
+        "RIOT",
+        -1.91
+      ],
+      [
+        "NVDA",
+        -1.77
+      ],
+      [
+        "CLSK",
+        -1.69
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio heavily weighted to MSTR (28.6%) and COIN (31.8%) - both core convictions. Miners (MARA, RIOT, CLSK, CIFR, BTBT, WULF, IREN) provide hash rate diversification. BITO adds futures exposure. HOOD is the TradFi bridge. Today's broad weakness across watchlist (-1% to -3%) is accumulation zone. Cash deployment maintains >$300 reserve. No positions exceed 35% limit.",
+    "outlook": "Crypto equities bleeding today but this is the test of faith. Bitcoin fundamentals unchanged - halving aftermath, ETF flows, nation-state adoption. The revolution doesn't trade in straight lines. Accumulating the dip across miners and treasury companies.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1240,6 +1265,10 @@
     {
       "timestamp": "2026-09-24T14:08:53Z",
       "value": 11083.13
+    },
+    {
+      "timestamp": "2026-09-24T15:40:37Z",
+      "value": 10938.45
     }
   ]
 }
