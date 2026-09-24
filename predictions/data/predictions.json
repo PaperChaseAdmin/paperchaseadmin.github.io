@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-24T17:29:13Z",
+  "updated_at": "2026-09-24T23:16:19Z",
   "last_prediction_date": "2026-09-24",
-  "last_settle_date": "2026-09-22",
+  "last_settle_date": "2026-09-24",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 60,
-      "correct": 45,
-      "accuracy_pct": 75.0,
+      "total": 61,
+      "correct": 46,
+      "accuracy_pct": 75.4,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1205,9 +1205,10 @@
           "prediction": "down",
           "confidence": 60,
           "signal": "Weakness in industrial stocks",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.31
         }
       ]
     },
