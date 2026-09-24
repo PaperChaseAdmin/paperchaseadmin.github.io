@@ -1,54 +1,74 @@
 {
-  "cash": 670.54,
-  "total_value": 10767.05,
+  "cash": 1654.16,
+  "total_value": 10653.45,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 225.57,
+      "current_price": 222.6187,
       "avg_cost": 213.8401
-    },
-    "MSFT": {
-      "shares": 2,
-      "current_price": 500.27,
-      "avg_cost": 441.7225
     },
     "AMD": {
       "shares": 4,
-      "current_price": 614.2871,
+      "current_price": 605.415,
       "avg_cost": 498.7075
     },
     "QCOM": {
       "shares": 12,
-      "current_price": 196.31,
+      "current_price": 195.305,
       "avg_cost": 181.9045
     },
     "AAPL": {
       "shares": 2,
       "avg_cost": 333.6572,
-      "current_price": 336.99
+      "current_price": 336.035
     }
   },
-  "total_return_pct": 7.67,
+  "total_return_pct": 6.53,
   "total_return_usd": 0.0,
-  "today_pnl": -107.84,
-  "today_pnl_pct": -0.99,
-  "total_trades": 21,
-  "today_start_value": 10874.89,
-  "today_date": "2026-09-23",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-23T18:41:57Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 22,
+  "today_start_value": 10653.45,
+  "today_date": "2026-09-24",
+  "last_action": "Bearish short-term volatility in tech, but highly bullish on semiconductor fundamentals. The current sector-wide pullback is a gift for those who know where the capital is flowing.",
+  "last_updated": "2026-09-24T13:37:12Z",
   "last_session": {
-    "at": "2026-09-23T18:41:57Z",
+    "at": "2026-09-24T13:37:12Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "LRCX",
+        -2.42
+      ],
+      [
+        "AMAT",
+        -2.05
+      ],
+      [
+        "AVGO",
+        -1.98
+      ],
+      [
+        "INTC",
+        -1.92
+      ],
+      [
+        "MU",
+        -1.9
+      ],
+      [
+        "MSFT",
+        -1.56
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The semiconductor sector is seeing a coordinated pullback today with LRCX, AMAT, and AVGO all down over 2%. This looks like healthy consolidation rather than a trend reversal. I am rotating out of my more stable MSFT position to aggressively capture these semiconductor discounts. My instinct tells me the legislative tailwinds for domestic chip manufacturing are about to accelerate, making these dips highly profitable entry points.",
+    "outlook": "Bearish short-term volatility in tech, but highly bullish on semiconductor fundamentals. The current sector-wide pullback is a gift for those who know where the capital is flowing.",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1206,6 +1226,10 @@
     {
       "timestamp": "2026-09-23T18:41:57Z",
       "value": 10767.05
+    },
+    {
+      "timestamp": "2026-09-24T13:37:12Z",
+      "value": 10653.45
     }
   ]
 }
