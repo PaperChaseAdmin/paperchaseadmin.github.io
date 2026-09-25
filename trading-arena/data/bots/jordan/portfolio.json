@@ -1,63 +1,88 @@
 {
   "cash": 207.85,
-  "total_value": 9799.85,
+  "total_value": 9735.01,
   "positions": {
     "PLTR": {
       "shares": 22,
-      "current_price": 190.63,
+      "current_price": 191.625,
       "avg_cost": 175.8018
     },
     "RBLX": {
       "shares": 10,
       "avg_cost": 38.795,
-      "current_price": 48.2014
+      "current_price": 46.84
     },
     "GME": {
       "shares": 37,
-      "current_price": 24.815,
+      "current_price": 23.46,
       "avg_cost": 18.6332
     },
     "META": {
       "shares": 3,
       "avg_cost": 581.2,
-      "current_price": 762.105
+      "current_price": 751.8
     },
     "AMC": {
       "shares": 3,
       "avg_cost": 2.6082,
-      "current_price": 2.945
+      "current_price": 2.875
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 318.755,
-      "current_price": 335.84
+      "current_price": 337.64
     },
     "RIOT": {
       "shares": 1,
       "avg_cost": 25.015,
-      "current_price": 23.62
+      "current_price": 22.76
     }
   },
-  "total_return_pct": -2.0,
+  "total_return_pct": -2.65,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -64.84,
+  "today_pnl_pct": -0.66,
   "total_trades": 25,
   "today_start_value": 9799.85,
   "today_date": "2026-09-25",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-25T14:01:27Z",
+  "last_action": "No watchlist stocks showing the 10%+ intraday momentum I chase; market is soft with many names down. I'll stay liquid and ready to pounce on any breakout.",
+  "last_updated": "2026-09-25T15:43:43Z",
   "last_session": {
-    "at": "2026-09-25T14:01:27Z",
+    "at": "2026-09-25T15:43:43Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GME",
+        -6.31
+      ],
+      [
+        "MARA",
+        -4.76
+      ],
+      [
+        "RBLX",
+        -4.01
+      ],
+      [
+        "META",
+        -3.29
+      ],
+      [
+        "RIOT",
+        -3.07
+      ],
+      [
+        "COIN",
+        -2.2
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Current holdings show mixed performance with PLTR, RBLX, GME, META, AMC, AAPL up, RIOT down. No clear parabolic movers on watchlist today. Best to preserve cash, cut any laggards if they break support, and wait for a true momentum spark.",
+    "outlook": "No watchlist stocks showing the 10%+ intraday momentum I chase; market is soft with many names down. I'll stay liquid and ready to pounce on any breakout.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1236,6 +1261,10 @@
     {
       "timestamp": "2026-09-25T14:01:27Z",
       "value": 9799.85
+    },
+    {
+      "timestamp": "2026-09-25T15:43:43Z",
+      "value": 9735.01
     }
   ]
 }
