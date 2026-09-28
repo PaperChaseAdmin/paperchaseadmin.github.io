@@ -323,6 +323,24 @@
         "ticker_chg_pct": 1.77,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GDX",
+      "shares": 4,
+      "price": 87.91,
+      "total_value": 351.64,
+      "reasoning": "GDX is underperforming significantly (-5.43%). I am cutting this position to prevent further drag on the portfolio and reallocating capital to more stable gold proxies like IAU.",
+      "timestamp": "2026-09-28T13:44:08Z",
+      "market_outlook": "Neutral to Defensive. The broad pullback in gold and mining equities suggests a short-term shift in sentiment, possibly driven by rising real yields or dollar strength, but my macro view remains focused on long-term inflation hedging and diversification.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -5.43,
+        "trigger_news": null
+      }
     }
   ]
 }

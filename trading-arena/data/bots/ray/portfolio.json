@@ -1,6 +1,6 @@
 {
-  "cash": 1008.75,
-  "total_value": 10651.12,
+  "cash": 1360.39,
+  "total_value": 10542.46,
   "positions": {
     "TIPS": {
       "shares": 26867,
@@ -9,22 +9,22 @@
     },
     "DJP": {
       "shares": 10,
-      "current_price": 52.565,
+      "current_price": 52.17,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 111,
-      "current_price": 19.63,
+      "current_price": 19.5243,
       "avg_cost": 16.5267
     },
     "FXI": {
       "shares": 5,
       "avg_cost": 33.365,
-      "current_price": 33.945
+      "current_price": 34.22
     },
     "IAU": {
       "shares": 10,
-      "current_price": 80.41,
+      "current_price": 77.8399,
       "avg_cost": 81.4195
     },
     "GSG": {
@@ -35,50 +35,70 @@
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 392.23
+      "current_price": 379.67
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 310.135,
-      "current_price": 337.64
+      "current_price": 340.91
     },
     "TLT": {
       "shares": 10,
       "avg_cost": 81.955,
-      "current_price": 78.975
-    },
-    "GDX": {
-      "shares": 4,
-      "avg_cost": 95.63,
-      "current_price": 92.49
+      "current_price": 78.645
     },
     "EEM": {
       "shares": 1,
       "avg_cost": 66.9,
-      "current_price": 67.72
+      "current_price": 67.14
     }
   },
-  "total_return_pct": 6.51,
+  "total_return_pct": 5.42,
   "total_return_usd": 0.0,
-  "today_pnl": 18.01,
-  "today_pnl_pct": 0.17,
-  "total_trades": 18,
-  "today_start_value": 10633.11,
-  "today_date": "2026-09-25",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-25T15:23:39Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 19,
+  "today_start_value": 10542.46,
+  "today_date": "2026-09-28",
+  "last_action": "Neutral to Defensive. The broad pullback in gold and mining equities suggests a short-term shift in sentiment, possibly driven by rising real yields or dollar strength, but my macro view remains focus",
+  "last_updated": "2026-09-28T13:44:08Z",
   "last_session": {
-    "at": "2026-09-25T15:23:39Z",
+    "at": "2026-09-28T13:44:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GDX",
+        -5.43
+      ],
+      [
+        "IAU",
+        -3.54
+      ],
+      [
+        "GLD",
+        -3.48
+      ],
+      [
+        "EEM",
+        -1.25
+      ],
+      [
+        "DJP",
+        -1.16
+      ],
+      [
+        "TLT",
+        -0.87
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The portfolio is currently seeing volatility in the commodities and precious metals sleeve. While PDBC and GSG have provided good returns, the recent dip in GLD and IAU presents a rebalancing opportunity. I am trimming the high-beta GDX to reduce volatility and increasing exposure to IAU and TLT to align with my All Weather mandate of balancing growth and inflation risks.",
+    "outlook": "Neutral to Defensive. The broad pullback in gold and mining equities suggests a short-term shift in sentiment, possibly driven by rising real yields or dollar strength, but my macro view remains focused on long-term inflation hedging and diversification.",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1260,6 +1280,10 @@
     {
       "timestamp": "2026-09-25T15:23:39Z",
       "value": 10651.12
+    },
+    {
+      "timestamp": "2026-09-28T13:44:08Z",
+      "value": 10542.46
     }
   ]
 }
