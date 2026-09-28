@@ -1,79 +1,109 @@
 {
-  "cash": 1111.66,
-  "total_value": 9574.35,
+  "cash": 1087.58,
+  "total_value": 9609.8,
   "positions": {
     "MA": {
       "shares": 4,
-      "current_price": 564.845,
+      "current_price": 565.63,
       "avg_cost": 539.4013
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 97.09
+      "current_price": 97.495
     },
     "JPM": {
       "shares": 5,
-      "current_price": 340.04,
+      "current_price": 340.44,
       "avg_cost": 348.2024
     },
     "BAC": {
-      "shares": 19,
-      "current_price": 56.01,
+      "shares": 14,
+      "current_price": 56.48,
       "avg_cost": 60.8439
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 133.17
+      "current_price": 133.68
     },
     "PGR": {
       "shares": 5,
       "avg_cost": 209.88,
-      "current_price": 203.465
+      "current_price": 206.395
     },
     "V": {
       "shares": 2,
       "avg_cost": 366.48,
-      "current_price": 366.19
+      "current_price": 366.795
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 517.34,
-      "current_price": 504.005
+      "current_price": 504.255
     },
     "TRV": {
       "shares": 1,
       "avg_cost": 380.16,
-      "current_price": 360.3
+      "current_price": 362.985
     },
     "MS": {
       "shares": 1,
       "avg_cost": 207.58,
-      "current_price": 195.135
+      "current_price": 195.275
+    },
+    "AXP": {
+      "shares": 1,
+      "avg_cost": 306.4804,
+      "current_price": 306.4804
     }
   },
-  "total_return_pct": -4.26,
+  "total_return_pct": -3.9,
   "total_return_usd": 0.0,
-  "today_pnl": -10.79,
-  "today_pnl_pct": -0.11,
-  "total_trades": 21,
-  "today_start_value": 9585.14,
-  "today_date": "2026-09-25",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-25T15:31:40Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 23,
+  "today_start_value": 9609.8,
+  "today_date": "2026-09-28",
+  "last_action": "Cautiously Bullish on Financials",
+  "last_updated": "2026-09-28T13:50:07Z",
   "last_session": {
-    "at": "2026-09-25T15:31:40Z",
+    "at": "2026-09-28T13:50:07Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GS",
+        -0.95
+      ],
+      [
+        "JPM",
+        -0.87
+      ],
+      [
+        "AXP",
+        -0.71
+      ],
+      [
+        "MS",
+        -0.53
+      ],
+      [
+        "COF",
+        -0.53
+      ],
+      [
+        "WFC",
+        -0.51
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is seeing some minor pullbacks in the banking sector today, but this is merely noise. These institutions are the bedrock of the global economy. While the 'disruptors' and crypto-enthusiasts scream about volatility, I see a buying opportunity in high-quality, dividend-paying financial giants. I am rotating out of some of my more sluggish retail banking positions to consolidate strength in premier investment banking and premium credit networks.",
+    "outlook": "Cautiously Bullish on Financials",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1255,6 +1285,10 @@
     {
       "timestamp": "2026-09-25T15:31:40Z",
       "value": 9574.35
+    },
+    {
+      "timestamp": "2026-09-28T13:50:07Z",
+      "value": 9609.8
     }
   ]
 }

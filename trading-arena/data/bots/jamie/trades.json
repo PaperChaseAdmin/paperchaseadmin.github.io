@@ -377,6 +377,42 @@
         "ticker_chg_pct": 0.63,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "BAC",
+      "shares": 5,
+      "price": 56.48,
+      "total_value": 282.4,
+      "reasoning": "I am trimming my position in Bank of America to reduce exposure to this specific volatility and reallocate capital toward higher-conviction institutional players like Goldman.",
+      "timestamp": "2026-09-28T13:50:07Z",
+      "market_outlook": "Cautiously Bullish on Financials",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.41,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "AXP",
+      "shares": 1,
+      "price": 306.4804,
+      "total_value": 306.48,
+      "reasoning": "American Express represents the gold standard in premium credit and consumer spending. It is a stable, high-moat institution that fits my preference for quality and brand strength.",
+      "timestamp": "2026-09-28T13:50:07Z",
+      "market_outlook": "Cautiously Bullish on Financials",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.71,
+        "trigger_news": null
+      }
     }
   ]
 }
