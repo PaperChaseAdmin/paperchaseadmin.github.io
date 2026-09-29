@@ -1,48 +1,73 @@
 {
   "cash": 645.37,
-  "total_value": 10736.11,
+  "total_value": 10678.56,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 230.938,
+      "current_price": 230.075,
       "avg_cost": 213.8401
     },
     "AMD": {
       "shares": 4,
-      "current_price": 614.105,
+      "current_price": 613.75,
       "avg_cost": 498.7075
     },
     "QCOM": {
       "shares": 12,
-      "current_price": 189.43,
+      "current_price": 186.555,
       "avg_cost": 181.9045
     },
     "AAPL": {
       "shares": 5,
-      "current_price": 333.23,
+      "current_price": 331.665,
       "avg_cost": 335.2219
     }
   },
-  "total_return_pct": 7.36,
+  "total_return_pct": 6.79,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -57.55,
+  "today_pnl_pct": -0.54,
   "total_trades": 23,
   "today_start_value": 10736.11,
   "today_date": "2026-09-29",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-29T13:42:11Z",
+  "last_action": "...",
+  "last_updated": "2026-09-29T15:41:18Z",
   "last_session": {
-    "at": "2026-09-29T13:42:11Z",
+    "at": "2026-09-29T15:41:18Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AMAT",
+        2.71
+      ],
+      [
+        "LRCX",
+        2.58
+      ],
+      [
+        "AVGO",
+        2.21
+      ],
+      [
+        "AAPL",
+        -1.99
+      ],
+      [
+        "GOOGL",
+        -1.12
+      ],
+      [
+        "TSLA",
+        -1.11
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1245,6 +1270,10 @@
     {
       "timestamp": "2026-09-29T13:42:11Z",
       "value": 10736.11
+    },
+    {
+      "timestamp": "2026-09-29T15:41:18Z",
+      "value": 10678.56
     }
   ]
 }
