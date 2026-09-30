@@ -1,69 +1,94 @@
 {
-  "cash": 1015.85,
-  "total_value": 10118.5,
+  "cash": 1912.79,
+  "total_value": 10193.45,
   "positions": {
     "NVDA": {
       "shares": 8,
-      "current_price": 228.05,
+      "current_price": 229.705,
       "avg_cost": 206.5303
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 303.32,
-      "current_price": 330.39
-    },
-    "TSLA": {
-      "shares": 5,
-      "current_price": 352.92,
-      "avg_cost": 356.68
+      "current_price": 331.67
     },
     "COIN": {
       "shares": 5,
       "avg_cost": 147.495,
-      "current_price": 188.9314
+      "current_price": 197.25
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 732.745
+      "current_price": 727.26
     },
     "IONQ": {
       "shares": 15,
-      "current_price": 43.95,
+      "current_price": 44.605,
       "avg_cost": 38.5625
     },
     "AMD": {
       "shares": 2,
       "avg_cost": 543.86,
-      "current_price": 608.625
+      "current_price": 611.18
     },
     "MSTR": {
+      "shares": 5,
+      "current_price": 161.005,
+      "avg_cost": 163.279
+    },
+    "PLTR": {
       "shares": 2,
-      "avg_cost": 166.69,
-      "current_price": 153.9
+      "avg_cost": 187.35,
+      "current_price": 187.35
     }
   },
-  "total_return_pct": 1.19,
+  "total_return_pct": 1.93,
   "total_return_usd": 0.0,
-  "today_pnl": -129.49,
-  "today_pnl_pct": -1.26,
-  "total_trades": 35,
-  "today_start_value": 10247.99,
-  "today_date": "2026-09-29",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-29T19:31:50Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 38,
+  "today_start_value": 10193.45,
+  "today_date": "2026-09-30",
+  "last_action": "Bullish Momentum / High Volatility",
+  "last_updated": "2026-09-30T13:32:10Z",
   "last_session": {
-    "at": "2026-09-29T19:31:50Z",
+    "at": "2026-09-30T13:32:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MSTR",
+        4.69
+      ],
+      [
+        "COIN",
+        3.94
+      ],
+      [
+        "IONQ",
+        1.67
+      ],
+      [
+        "META",
+        -1.28
+      ],
+      [
+        "GOOGL",
+        1.28
+      ],
+      [
+        "NVDA",
+        1.09
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is clearly favoring the crypto-adjacent and AI sectors today. MSTR and COIN are leading the charge, showing massive strength. I'm trimming my TSLA position to stop the bleeding and rotating that capital into the high-velocity momentum plays. NVDA and IONQ are also showing healthy strength, so I'm staying concentrated in the winners.",
+    "outlook": "Bullish Momentum / High Volatility",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1277,6 +1302,10 @@
     {
       "timestamp": "2026-09-29T19:31:50Z",
       "value": 10118.5
+    },
+    {
+      "timestamp": "2026-09-30T13:32:10Z",
+      "value": 10193.45
     }
   ]
 }
