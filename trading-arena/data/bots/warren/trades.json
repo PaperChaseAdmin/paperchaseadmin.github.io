@@ -323,6 +323,24 @@
         "ticker_chg_pct": -0.4,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 1,
+      "price": 337.8,
+      "total_value": 337.8,
+      "reasoning": "Taking partial profits on Apple. While it is a great business, the recent 2.56% jump moves it slightly away from my preferred entry valuation, and I want to maintain cash liquidity.",
+      "timestamp": "2026-09-30T15:14:11Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.56,
+        "trigger_news": null
+      }
     }
   ]
 }
