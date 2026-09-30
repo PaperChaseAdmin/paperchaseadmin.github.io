@@ -1,48 +1,73 @@
 {
   "cash": 645.37,
-  "total_value": 10652.24,
+  "total_value": 10663.65,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 229.705,
+      "current_price": 230.78,
       "avg_cost": 213.8401
     },
     "AMD": {
       "shares": 4,
-      "current_price": 611.18,
+      "current_price": 603.72,
       "avg_cost": 498.7075
     },
     "QCOM": {
       "shares": 12,
-      "current_price": 185.71,
+      "current_price": 185.16,
       "avg_cost": 181.9045
     },
     "AAPL": {
       "shares": 5,
-      "current_price": 331.67,
+      "current_price": 337.8,
       "avg_cost": 335.2219
     }
   },
-  "total_return_pct": 6.52,
+  "total_return_pct": 6.64,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 11.41,
+  "today_pnl_pct": 0.11,
   "total_trades": 23,
   "today_start_value": 10652.24,
   "today_date": "2026-09-30",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-30T13:40:17Z",
+  "last_action": "...",
+  "last_updated": "2026-09-30T15:18:44Z",
   "last_session": {
-    "at": "2026-09-30T13:40:17Z",
+    "at": "2026-09-30T15:18:44Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CRM",
+        3.39
+      ],
+      [
+        "AAPL",
+        2.56
+      ],
+      [
+        "INTC",
+        2.37
+      ],
+      [
+        "GOOGL",
+        2.24
+      ],
+      [
+        "AMZN",
+        2.11
+      ],
+      [
+        "MSFT",
+        1.7
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1261,6 +1286,10 @@
     {
       "timestamp": "2026-09-30T13:40:17Z",
       "value": 10652.24
+    },
+    {
+      "timestamp": "2026-09-30T15:18:44Z",
+      "value": 10663.65
     }
   ]
 }
