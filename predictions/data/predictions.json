@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-01T18:32:30Z",
+  "updated_at": "2026-10-01T23:59:07Z",
   "last_prediction_date": "2026-10-01",
-  "last_settle_date": "2026-09-30",
+  "last_settle_date": "2026-10-01",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 66,
-      "correct": 50,
-      "accuracy_pct": 75.8,
+      "total": 68,
+      "correct": 52,
+      "accuracy_pct": 76.5,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1341,9 +1341,10 @@
           "prediction": "up",
           "confidence": 68,
           "signal": "Positive momentum in tech and neutral market mood",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.19
         },
         {
           "date": "2026-10-01",
@@ -1351,9 +1352,10 @@
           "prediction": "up",
           "confidence": 72,
           "signal": "Tech sector strength and positive BTC movement",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.04
         },
         {
           "date": "2026-10-01",
