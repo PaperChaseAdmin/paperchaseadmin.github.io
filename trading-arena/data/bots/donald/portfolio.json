@@ -1,83 +1,108 @@
 {
   "cash": 885.91,
-  "total_value": 8857.07,
+  "total_value": 8807.33,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 509.044
+      "current_price": 509.38
     },
     "NOC": {
       "shares": 1,
       "avg_cost": 548.38,
-      "current_price": 483.3246
+      "current_price": 484.725
     },
     "RTX": {
       "shares": 8,
-      "current_price": 186.27,
+      "current_price": 185.395,
       "avg_cost": 200.4213
     },
     "XOM": {
       "shares": 4,
-      "current_price": 163.5,
+      "current_price": 161.6302,
       "avg_cost": 154.0776
     },
     "GM": {
       "shares": 1,
       "avg_cost": 82.99,
-      "current_price": 77.08
+      "current_price": 77.1
     },
     "CVX": {
       "shares": 1,
       "avg_cost": 192.8551,
-      "current_price": 205.75
+      "current_price": 203.3
     },
     "F": {
       "shares": 22,
-      "current_price": 12.055,
+      "current_price": 12.02,
       "avg_cost": 13.9486
     },
     "LHX": {
       "shares": 1,
       "avg_cost": 291.71,
-      "current_price": 237.15
+      "current_price": 237.38
     },
     "HAL": {
       "shares": 3,
       "avg_cost": 33.11,
-      "current_price": 31.805
+      "current_price": 31.77
     },
     "NUE": {
       "shares": 1,
       "avg_cost": 250.79,
-      "current_price": 235.3
+      "current_price": 232.48
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 334.57,
-      "current_price": 336.51
+      "current_price": 330.02
     }
   },
-  "total_return_pct": -11.43,
+  "total_return_pct": -11.93,
   "total_return_usd": 0.0,
-  "today_pnl": 26.32,
-  "today_pnl_pct": 0.3,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 22,
-  "today_start_value": 8830.75,
-  "today_date": "2026-09-30",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-30T19:16:26Z",
+  "today_start_value": 8807.33,
+  "today_date": "2026-10-01",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-10-01T13:36:10Z",
   "last_session": {
-    "at": "2026-09-30T19:16:26Z",
+    "at": "2026-10-01T13:36:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "XOM",
+        -0.83
+      ],
+      [
+        "NUE",
+        -0.54
+      ],
+      [
+        "CVX",
+        -0.39
+      ],
+      [
+        "F",
+        -0.33
+      ],
+      [
+        "RTX",
+        -0.3
+      ],
+      [
+        "NOC",
+        0.25
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1308,6 +1333,10 @@
     {
       "timestamp": "2026-09-30T19:16:26Z",
       "value": 8857.07
+    },
+    {
+      "timestamp": "2026-10-01T13:36:10Z",
+      "value": 8807.33
     }
   ]
 }
