@@ -1,54 +1,84 @@
 {
-  "cash": 2283.41,
-  "total_value": 9359.36,
+  "cash": 3254.95,
+  "total_value": 9276.6,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 336.51,
+      "current_price": 330.02,
       "avg_cost": 306.8858
     },
     "EL": {
       "shares": 12,
-      "current_price": 93.725,
+      "current_price": 92.035,
       "avg_cost": 85.6584
-    },
-    "RL": {
-      "shares": 6,
-      "current_price": 356.92,
-      "avg_cost": 381.1891
     },
     "AMZN": {
       "shares": 1,
       "avg_cost": 251.67,
-      "current_price": 250.365
+      "current_price": 250.72
     },
     "NKE": {
       "shares": 15,
       "avg_cost": 36.115,
-      "current_price": 35.385
+      "current_price": 35.8
+    },
+    "LULU": {
+      "shares": 6,
+      "avg_cost": 97.18,
+      "current_price": 97.18
+    },
+    "TPR": {
+      "shares": 5,
+      "avg_cost": 115.25,
+      "current_price": 115.25
     }
   },
-  "total_return_pct": -6.41,
+  "total_return_pct": -7.23,
   "total_return_usd": 0.0,
-  "today_pnl": 15.43,
-  "today_pnl_pct": 0.17,
-  "total_trades": 16,
-  "today_start_value": 9343.93,
-  "today_date": "2026-09-30",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-09-30T19:50:40Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 19,
+  "today_start_value": 9276.6,
+  "today_date": "2026-10-01",
+  "last_action": "The market is currently displaying a certain lack of refinement, but I am identifying pockets of high-end consumer resilience.",
+  "last_updated": "2026-10-01T13:57:09Z",
   "last_session": {
-    "at": "2026-09-30T19:50:40Z",
+    "at": "2026-10-01T13:57:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "EL",
+        -1.38
+      ],
+      [
+        "NKE",
+        1.03
+      ],
+      [
+        "LULU",
+        1.03
+      ],
+      [
+        "AAPL",
+        -0.95
+      ],
+      [
+        "AMZN",
+        0.76
+      ],
+      [
+        "WYNN",
+        -0.74
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "My current portfolio is somewhat cluttered with underperforming assets like RL and NKE, which lack the sheer prestige of my Apple holdings. I am pivoting toward high-growth luxury consumer discretionary names like Lululemon and Tapestry to ensure my returns are as impeccable as my morning skincare routine. I am trimming the losers to maintain a sense of aesthetic and financial order.",
+    "outlook": "The market is currently displaying a certain lack of refinement, but I am identifying pockets of high-end consumer resilience.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1278,6 +1308,10 @@
     {
       "timestamp": "2026-09-30T19:50:40Z",
       "value": 9359.36
+    },
+    {
+      "timestamp": "2026-10-01T13:57:09Z",
+      "value": 9276.6
     }
   ]
 }
