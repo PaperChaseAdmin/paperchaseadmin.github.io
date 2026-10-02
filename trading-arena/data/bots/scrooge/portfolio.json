@@ -1,10 +1,10 @@
 {
   "cash": 233.57,
-  "total_value": 9801.12,
+  "total_value": 9778.44,
   "positions": {
     "T": {
       "shares": 81,
-      "current_price": 24.3924,
+      "current_price": 24.295,
       "avg_cost": 22.4695
     },
     "MAIN": {
@@ -14,95 +14,120 @@
     },
     "VZ": {
       "shares": 29,
-      "current_price": 45.955,
+      "current_price": 46.015,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 383.02,
+      "current_price": 384.52,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 188.77,
+      "current_price": 186.705,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 260.375,
+      "current_price": 258.5625,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 19.17,
+      "current_price": 19.25,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 32.695
+      "current_price": 32.7299
     },
     "HTGC": {
       "shares": 20,
-      "current_price": 16.925,
+      "current_price": 17.04,
       "avg_cost": 16.239
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 155.4
+      "current_price": 156.1
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 55.965
+      "current_price": 56.145
     },
     "MO": {
       "shares": 5,
-      "current_price": 66.84,
+      "current_price": 66.68,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 53.685,
+      "current_price": 53.66,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 45.42
+      "current_price": 45.1511
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 46.245
+      "current_price": 46.175
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 53.185
+      "current_price": 52.59
     }
   },
-  "total_return_pct": -1.99,
+  "total_return_pct": -2.22,
   "total_return_usd": 0.0,
-  "today_pnl": -15.12,
-  "today_pnl_pct": -0.15,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 23,
-  "today_start_value": 9816.24,
-  "today_date": "2026-10-01",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-01T20:09:45Z",
+  "today_start_value": 9778.44,
+  "today_date": "2026-10-02",
+  "last_action": "...",
+  "last_updated": "2026-10-02T13:59:25Z",
   "last_session": {
-    "at": "2026-10-01T20:09:45Z",
+    "at": "2026-10-02T13:59:25Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BTI",
+        -1.09
+      ],
+      [
+        "PM",
+        -0.72
+      ],
+      [
+        "ABBV",
+        -0.72
+      ],
+      [
+        "HTGC",
+        0.59
+      ],
+      [
+        "ARCC",
+        0.57
+      ],
+      [
+        "VYM",
+        0.48
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1349,6 +1374,10 @@
     {
       "timestamp": "2026-10-01T20:09:45Z",
       "value": 9801.12
+    },
+    {
+      "timestamp": "2026-10-02T13:59:25Z",
+      "value": 9778.44
     }
   ]
 }
