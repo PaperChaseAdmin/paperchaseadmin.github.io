@@ -1,89 +1,114 @@
 {
-  "cash": 585.92,
-  "total_value": 9626.11,
+  "cash": 637.06,
+  "total_value": 9632.23,
   "positions": {
     "T": {
       "shares": 76,
       "avg_cost": 20.83,
-      "current_price": 24.3501
+      "current_price": 24.285
     },
     "VZ": {
       "shares": 22,
-      "current_price": 46.15,
+      "current_price": 45.825,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 188.28
+      "current_price": 185.53
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 85.455
+      "current_price": 85.7
     },
     "CVX": {
       "shares": 6,
-      "current_price": 206.27,
+      "current_price": 206.505,
       "avg_cost": 193.7867
     },
     "MO": {
       "shares": 4,
       "avg_cost": 65.9025,
-      "current_price": 67.34
-    },
-    "O": {
-      "shares": 5,
-      "current_price": 54.22,
-      "avg_cost": 63.036
+      "current_price": 66.78
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 250.6,
-      "current_price": 259.21
+      "current_price": 262.0254
     },
     "OHI": {
       "shares": 8,
-      "current_price": 45.79,
+      "current_price": 46.0,
       "avg_cost": 46.9369
     },
     "MAIN": {
-      "shares": 10,
-      "avg_cost": 58.165,
-      "current_price": 55.27
+      "shares": 11,
+      "current_price": 55.56,
+      "avg_cost": 57.9282
     },
     "BTI": {
       "shares": 10,
       "avg_cost": 55.61,
-      "current_price": 52.735
+      "current_price": 52.4301
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.67,
-      "current_price": 46.265
+      "current_price": 45.92
+    },
+    "SCHD": {
+      "shares": 5,
+      "avg_cost": 32.64,
+      "current_price": 32.64
     }
   },
-  "total_return_pct": -3.74,
+  "total_return_pct": -3.68,
   "total_return_usd": 0.0,
-  "today_pnl": 28.2,
-  "today_pnl_pct": 0.29,
-  "total_trades": 22,
-  "today_start_value": 9597.91,
-  "today_date": "2026-10-02",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-02T15:21:37Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 25,
+  "today_start_value": 9632.23,
+  "today_date": "2026-10-05",
+  "last_action": "Neutral. The market is sideways, which is perfect for a dividend investor. While the speculators are chasing ghosts, I am focused on the cash flow that actually matters.",
+  "last_updated": "2026-10-05T13:44:14Z",
   "last_session": {
-    "at": "2026-10-02T15:21:37Z",
+    "at": "2026-10-05T13:44:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MO",
+        -0.96
+      ],
+      [
+        "MAIN",
+        0.82
+      ],
+      [
+        "OHI",
+        0.72
+      ],
+      [
+        "PM",
+        -0.71
+      ],
+      [
+        "ABBV",
+        -0.49
+      ],
+      [
+        "BTI",
+        -0.46
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "My portfolio is currently down 3.74%, but I'm not sweating the price fluctuations; I'm watching the yields. I am trimming my position in O to free up capital and rotating into MAIN and JNJ to strengthen the foundation of my income machine. I'm also adding SCHD to ensure I'm not overly concentrated in single names. If anyone asks about the tech hype, I'll tell them: if it doesn't pay a dividend, it's dead to me.",
+    "outlook": "Neutral. The market is sideways, which is perfect for a dividend investor. While the speculators are chasing ghosts, I am focused on the cash flow that actually matters.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1337,6 +1362,10 @@
     {
       "timestamp": "2026-10-02T15:21:37Z",
       "value": 9626.11
+    },
+    {
+      "timestamp": "2026-10-05T13:44:14Z",
+      "value": 9632.23
     }
   ]
 }
