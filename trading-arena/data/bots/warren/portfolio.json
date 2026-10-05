@@ -1,84 +1,59 @@
 {
   "cash": 1111.34,
-  "total_value": 10100.08,
+  "total_value": 10180.78,
   "positions": {
     "KO": {
       "shares": 29,
-      "current_price": 85.7,
+      "current_price": 86.035,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 7,
-      "current_price": 359.375,
+      "current_price": 364.815,
       "avg_cost": 361.6657
     },
     "MA": {
       "shares": 4,
-      "current_price": 551.8525,
+      "current_price": 560.355,
       "avg_cost": 529.0675
     },
     "CVX": {
       "shares": 4,
       "avg_cost": 200.54,
-      "current_price": 206.505
+      "current_price": 205.11
     },
     "AAPL": {
       "shares": 2,
-      "current_price": 331.97,
+      "current_price": 333.8257,
       "avg_cost": 322.5875
     },
     "PG": {
       "shares": 2,
       "avg_cost": 145.55,
-      "current_price": 145.22
+      "current_price": 145.605
     }
   },
-  "total_return_pct": 1.0,
+  "total_return_pct": 1.81,
   "total_return_usd": 0.0,
-  "today_pnl": 0.01,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 80.71,
+  "today_pnl_pct": 0.8,
   "total_trades": 20,
   "today_start_value": 10100.07,
   "today_date": "2026-10-05",
-  "last_action": "...",
-  "last_updated": "2026-10-05T13:32:54Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-10-05T14:42:46Z",
   "last_session": {
-    "at": "2026-10-05T13:32:54Z",
+    "at": "2026-10-05T14:42:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "BAC",
-        0.63
-      ],
-      [
-        "WMT",
-        -0.52
-      ],
-      [
-        "ABBV",
-        -0.49
-      ],
-      [
-        "AAPL",
-        -0.46
-      ],
-      [
-        "USB",
-        0.32
-      ],
-      [
-        "PG",
-        0.28
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
-    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "...",
-    "outlook": "...",
-    "trades_made": 1
+    "domain_extra": "",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
+    "trades_made": 0
   },
   "portfolio_history": [
     {
@@ -1336,6 +1311,10 @@
     {
       "timestamp": "2026-10-05T13:32:54Z",
       "value": 10100.08
+    },
+    {
+      "timestamp": "2026-10-05T14:42:46Z",
+      "value": 10180.78
     }
   ]
 }
