@@ -1,89 +1,109 @@
 {
-  "cash": 637.06,
-  "total_value": 9626.34,
+  "cash": 1664.73,
+  "total_value": 9664.77,
   "positions": {
     "T": {
       "shares": 76,
       "avg_cost": 20.83,
-      "current_price": 24.03
+      "current_price": 24.205
     },
     "VZ": {
       "shares": 22,
-      "current_price": 45.5699,
+      "current_price": 45.69,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 189.04
+      "current_price": 189.01
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 86.315
+      "current_price": 86.45
     },
     "CVX": {
       "shares": 6,
-      "current_price": 206.71,
+      "current_price": 205.905,
       "avg_cost": 193.7867
     },
     "MO": {
       "shares": 4,
       "avg_cost": 65.9025,
-      "current_price": 67.67
+      "current_price": 67.645
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 250.6,
-      "current_price": 263.65
+      "current_price": 266.99
     },
     "OHI": {
       "shares": 8,
-      "current_price": 45.31,
+      "current_price": 45.38,
       "avg_cost": 46.9369
-    },
-    "MAIN": {
-      "shares": 11,
-      "current_price": 55.045,
-      "avg_cost": 57.9282
-    },
-    "BTI": {
-      "shares": 10,
-      "avg_cost": 55.61,
-      "current_price": 52.815
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.67,
-      "current_price": 46.115
+      "current_price": 46.05
     },
     "SCHD": {
       "shares": 5,
       "avg_cost": 32.64,
-      "current_price": 32.685
+      "current_price": 32.755
+    },
+    "O": {
+      "shares": 2,
+      "avg_cost": 53.96,
+      "current_price": 53.96
     }
   },
-  "total_return_pct": -3.74,
+  "total_return_pct": -3.35,
   "total_return_usd": 0.0,
-  "today_pnl": -5.89,
-  "today_pnl_pct": -0.06,
-  "total_trades": 25,
-  "today_start_value": 9632.23,
-  "today_date": "2026-10-05",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-05T19:21:31Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 28,
+  "today_start_value": 9664.77,
+  "today_date": "2026-10-06",
+  "last_action": "Neutral. I don't care about the S&P 500 or the VIX; I care about cash flow. The market is sideways, which is perfect for accumulating high-yield dividend aristocrats.",
+  "last_updated": "2026-10-06T13:49:24Z",
   "last_session": {
-    "at": "2026-10-05T19:21:31Z",
+    "at": "2026-10-06T13:49:24Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "WPC",
+        0.53
+      ],
+      [
+        "IBM",
+        0.51
+      ],
+      [
+        "ABBV",
+        0.45
+      ],
+      [
+        "MO",
+        -0.41
+      ],
+      [
+        "O",
+        0.33
+      ],
+      [
+        "PM",
+        -0.27
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "My focus remains entirely on yield and payout ratios. I am trimming underperforming positions like BTI and MAIN to consolidate capital into stronger dividend payers like O and WPC. I am maintaining a healthy cash reserve to ensure I can pounce on any dip in my favorite pharma or telecom names. If it doesn't pay me to own it, I don't want it.",
+    "outlook": "Neutral. I don't care about the S&P 500 or the VIX; I care about cash flow. The market is sideways, which is perfect for accumulating high-yield dividend aristocrats.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1353,6 +1373,10 @@
     {
       "timestamp": "2026-10-05T19:21:31Z",
       "value": 9626.34
+    },
+    {
+      "timestamp": "2026-10-06T13:49:24Z",
+      "value": 9664.77
     }
   ]
 }
