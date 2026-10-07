@@ -449,6 +449,42 @@
         "ticker_chg_pct": -0.73,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GS",
+      "shares": 1,
+      "price": 879.57,
+      "total_value": 879.57,
+      "reasoning": "The significant drawdown in GS and the broader decline in the XLF sector suggest heightened volatility. I am reducing exposure to individual equity risk to maintain a prudent posture.",
+      "timestamp": "2026-10-07T13:59:13Z",
+      "market_outlook": "Cautious and data-dependent. The current movement in financial equities suggests a period of uncertainty that requires a defensive tilt.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.92,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 4,
+      "price": 76.4495,
+      "total_value": 305.8,
+      "reasoning": "With TLT showing weakness and the financial sector under pressure, I am cautiously increasing my position in long-duration Treasuries to hedge against potential economic deceleration.",
+      "timestamp": "2026-10-07T13:59:13Z",
+      "market_outlook": "Cautious and data-dependent. The current movement in financial equities suggests a period of uncertainty that requires a defensive tilt.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.06,
+        "trigger_news": null
+      }
     }
   ]
 }
