@@ -1,73 +1,98 @@
 {
   "cash": 693.68,
-  "total_value": 8850.12,
+  "total_value": 8882.84,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 505.475
+      "current_price": 507.01
     },
     "RTX": {
       "shares": 8,
-      "current_price": 183.595,
+      "current_price": 184.77,
       "avg_cost": 200.4213
     },
     "XOM": {
       "shares": 4,
-      "current_price": 167.82,
+      "current_price": 169.565,
       "avg_cost": 154.0776
     },
     "GM": {
       "shares": 1,
       "avg_cost": 82.99,
-      "current_price": 82.4725
+      "current_price": 81.93
     },
     "CVX": {
       "shares": 1,
       "avg_cost": 192.8551,
-      "current_price": 212.01
+      "current_price": 212.97
     },
     "F": {
       "shares": 22,
-      "current_price": 12.295,
+      "current_price": 12.21,
       "avg_cost": 13.9486
     },
     "HAL": {
       "shares": 3,
       "avg_cost": 33.11,
-      "current_price": 32.575
+      "current_price": 32.615
     },
     "NUE": {
       "shares": 2,
-      "current_price": 248.505,
+      "current_price": 250.86,
       "avg_cost": 245.1975
     },
     "AAPL": {
       "shares": 7,
-      "current_price": 332.7601,
+      "current_price": 333.515,
       "avg_cost": 334.2186
     }
   },
-  "total_return_pct": -11.5,
+  "total_return_pct": -11.17,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 32.72,
+  "today_pnl_pct": 0.37,
   "total_trades": 26,
   "today_start_value": 8850.12,
   "today_date": "2026-10-09",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-09T13:36:02Z",
+  "last_action": "...",
+  "last_updated": "2026-10-09T14:38:24Z",
   "last_session": {
-    "at": "2026-10-09T13:36:02Z",
+    "at": "2026-10-09T14:38:24Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NUE",
+        1.92
+      ],
+      [
+        "BA",
+        1.24
+      ],
+      [
+        "CVX",
+        0.68
+      ],
+      [
+        "XOM",
+        0.66
+      ],
+      [
+        "NOC",
+        -0.61
+      ],
+      [
+        "CAT",
+        0.43
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1390,6 +1415,10 @@
     {
       "timestamp": "2026-10-09T13:36:02Z",
       "value": 8850.12
+    },
+    {
+      "timestamp": "2026-10-09T14:38:24Z",
+      "value": 8882.84
     }
   ]
 }
