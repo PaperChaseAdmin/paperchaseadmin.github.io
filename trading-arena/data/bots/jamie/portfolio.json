@@ -1,83 +1,108 @@
 {
   "cash": 1087.58,
-  "total_value": 9708.06,
+  "total_value": 9774.96,
   "positions": {
     "MA": {
       "shares": 4,
-      "current_price": 586.2475,
+      "current_price": 592.9,
       "avg_cost": 539.4013
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 98.06
+      "current_price": 99.25
     },
     "JPM": {
       "shares": 5,
-      "current_price": 332.77,
+      "current_price": 334.71,
       "avg_cost": 348.2024
     },
     "BAC": {
       "shares": 14,
-      "current_price": 54.0299,
+      "current_price": 54.65,
       "avg_cost": 60.8439
     },
     "C": {
       "shares": 4,
       "avg_cost": 131.12,
-      "current_price": 128.73
+      "current_price": 130.2
     },
     "PGR": {
       "shares": 5,
       "avg_cost": 209.88,
-      "current_price": 218.485
+      "current_price": 219.125
     },
     "V": {
       "shares": 2,
       "avg_cost": 366.48,
-      "current_price": 384.45
+      "current_price": 386.92
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 517.34,
-      "current_price": 515.5792
+      "current_price": 516.36
     },
     "TRV": {
       "shares": 1,
       "avg_cost": 380.16,
-      "current_price": 368.71
+      "current_price": 369.795
     },
     "MS": {
       "shares": 1,
       "avg_cost": 207.58,
-      "current_price": 189.07
+      "current_price": 191.8663
     },
     "AXP": {
       "shares": 1,
       "avg_cost": 306.4804,
-      "current_price": 307.56
+      "current_price": 309.59
     }
   },
-  "total_return_pct": -2.92,
+  "total_return_pct": -2.25,
   "total_return_usd": 0.0,
-  "today_pnl": 84.75,
-  "today_pnl_pct": 0.88,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 23,
-  "today_start_value": 9623.31,
-  "today_date": "2026-10-09",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-09T16:59:21Z",
+  "today_start_value": 9774.96,
+  "today_date": "2026-10-12",
+  "last_action": "...",
+  "last_updated": "2026-10-12T13:48:17Z",
   "last_session": {
-    "at": "2026-10-09T16:59:21Z",
+    "at": "2026-10-12T13:48:17Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MS",
+        1.01
+      ],
+      [
+        "MET",
+        0.94
+      ],
+      [
+        "PGR",
+        0.78
+      ],
+      [
+        "WFC",
+        0.74
+      ],
+      [
+        "JPM",
+        0.64
+      ],
+      [
+        "BAC",
+        0.64
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1408,6 +1433,10 @@
     {
       "timestamp": "2026-10-09T16:59:21Z",
       "value": 9708.06
+    },
+    {
+      "timestamp": "2026-10-12T13:48:17Z",
+      "value": 9774.96
     }
   ]
 }

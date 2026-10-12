@@ -269,6 +269,42 @@
         "ticker_chg_pct": 1.09,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TSLA",
+      "shares": 3,
+      "price": 380.42,
+      "total_value": 1141.26,
+      "reasoning": "Taking profits on TSLA. While it's up, it's a momentum play that doesn't fit my current macro view of systemic risk and rotation. I need liquidity to position for a major dislocation.",
+      "timestamp": "2026-10-12T13:45:12Z",
+      "market_outlook": "Cautiously bearish on equities, bullish on hard assets and domestic financials. I see a divergence forming between US strength and global weakness.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.59,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLF",
+      "shares": 5,
+      "price": 54.995,
+      "total_value": 274.97,
+      "reasoning": "The banking sector (BAC/XLF) is showing strength while EM (EEM) and China (BABA) are faltering. This suggests a rotation into domestic financial stability. I'm playing the divergence.",
+      "timestamp": "2026-10-12T13:45:12Z",
+      "market_outlook": "Cautiously bearish on equities, bullish on hard assets and domestic financials. I see a divergence forming between US strength and global weakness.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.49,
+        "trigger_news": null
+      }
     }
   ]
 }
