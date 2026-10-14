@@ -341,6 +341,78 @@
         "ticker_chg_pct": -5.43,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TIPS",
+      "shares": 5000,
+      "price": 0.0009,
+      "total_value": 4.5,
+      "reasoning": "Inflationary signals are strengthening as evidenced by the 12.5% surge in TIPS. Increasing exposure to inflation-protected securities to hedge against rising price levels.",
+      "timestamp": "2026-10-14T15:06:10Z",
+      "market_outlook": "Transitioning toward a high-inflation/moderate-growth regime. Increasing focus on real assets and inflation-linked bonds.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 12.5,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "IAU",
+      "shares": 10,
+      "price": 76.955,
+      "total_value": 769.55,
+      "reasoning": "Taking a small loss on IAU to reallocate capital toward more efficient inflation hedges and to maintain portfolio balance as gold faces short-term pressure.",
+      "timestamp": "2026-10-14T15:06:10Z",
+      "market_outlook": "Transitioning toward a high-inflation/moderate-growth regime. Increasing focus on real assets and inflation-linked bonds.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.65,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IEF",
+      "shares": 5,
+      "price": 89.255,
+      "total_value": 446.27,
+      "reasoning": "Diversifying into intermediate-term Treasuries to bolster the bond component of the All Weather strategy as market volatility increases.",
+      "timestamp": "2026-10-14T15:06:10Z",
+      "market_outlook": "Transitioning toward a high-inflation/moderate-growth regime. Increasing focus on real assets and inflation-linked bonds.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.32,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 2,
+      "price": 344.76,
+      "total_value": 689.52,
+      "reasoning": "Trimming equity exposure to lock in gains and ensure cash reserves remain above the $1000 threshold while reducing single-stock concentration risk.",
+      "timestamp": "2026-10-14T15:06:10Z",
+      "market_outlook": "Transitioning toward a high-inflation/moderate-growth regime. Increasing focus on real assets and inflation-linked bonds.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.02,
+        "trigger_news": null
+      }
     }
   ]
 }

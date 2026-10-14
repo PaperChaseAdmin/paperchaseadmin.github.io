@@ -1,84 +1,59 @@
 {
   "cash": 1121.62,
-  "total_value": 9228.5,
+  "total_value": 9218.85,
   "positions": {
     "INTC": {
       "shares": 15,
       "avg_cost": 104.44,
-      "current_price": 100.55
+      "current_price": 100.3488
     },
     "PYPL": {
       "shares": 25,
       "avg_cost": 53.165,
-      "current_price": 55.81
+      "current_price": 55.84
     },
     "DIS": {
       "shares": 15,
       "avg_cost": 104.425,
-      "current_price": 108.28
+      "current_price": 108.15
     },
     "T": {
       "shares": 10,
       "avg_cost": 22.26,
-      "current_price": 23.01
+      "current_price": 22.935
     },
     "HPQ": {
       "shares": 8,
       "avg_cost": 31.195,
-      "current_price": 30.825
+      "current_price": 30.1951
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 344.72,
+      "current_price": 344.76,
       "avg_cost": 345.8228
     }
   },
-  "total_return_pct": -7.71,
+  "total_return_pct": -7.81,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -9.65,
+  "today_pnl_pct": -0.1,
   "total_trades": 34,
   "today_start_value": 9228.5,
   "today_date": "2026-10-14",
-  "last_action": "...",
-  "last_updated": "2026-10-14T13:56:08Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-10-14T15:23:03Z",
   "last_session": {
-    "at": "2026-10-14T13:56:08Z",
+    "at": "2026-10-14T15:23:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "INTC",
-        -2.09
-      ],
-      [
-        "CVS",
-        1.47
-      ],
-      [
-        "F",
-        -1.03
-      ],
-      [
-        "NOK",
-        -1.02
-      ],
-      [
-        "GM",
-        -0.88
-      ],
-      [
-        "PYPL",
-        -0.66
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
-    "trades_made": 1
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
+    "trades_made": 0
   },
   "portfolio_history": [
     {
@@ -1444,6 +1419,10 @@
     {
       "timestamp": "2026-10-14T13:56:08Z",
       "value": 9228.5
+    },
+    {
+      "timestamp": "2026-10-14T15:23:03Z",
+      "value": 9218.85
     }
   ]
 }
