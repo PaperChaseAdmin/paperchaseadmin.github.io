@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-14T17:30:57Z",
+  "updated_at": "2026-10-14T23:19:34Z",
   "last_prediction_date": "2026-10-14",
-  "last_settle_date": "2026-10-13",
+  "last_settle_date": "2026-10-14",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 70,
-      "correct": 54,
-      "accuracy_pct": 77.1,
+      "total": 72,
+      "correct": 56,
+      "accuracy_pct": 77.8,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1615,9 +1615,10 @@
           "prediction": "down",
           "confidence": 72,
           "signal": "Bearish mood and inflation concerns weigh on the market",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.11
         },
         {
           "date": "2026-10-14",
@@ -1625,9 +1626,10 @@
           "prediction": "down",
           "confidence": 78,
           "signal": "Tech sector weakness and chip rout continue",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.88
         },
         {
           "date": "2026-10-14",
