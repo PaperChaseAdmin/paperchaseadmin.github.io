@@ -323,6 +323,42 @@
         "ticker_chg_pct": 1.77,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "UUP",
+      "shares": 6,
+      "price": 29.19,
+      "total_value": 175.14,
+      "reasoning": "The massive 8% drop in BAC and general weakness in tech (NVDA, META, TSLA) suggests a sudden shift in risk appetite. I am betting on a flight to safety. UUP provides the necessary dollar strength to hedge against this emerging systemic volatility.",
+      "timestamp": "2026-10-14T13:45:13Z",
+      "market_outlook": "Bearish/Volatile",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.59,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "XLF",
+      "shares": 5,
+      "price": 54.13,
+      "total_value": 270.65,
+      "reasoning": "BAC is cratering. The financial sector is showing signs of a breakdown. I am cutting my XLF position to preserve capital and pivot toward defensive macro plays.",
+      "timestamp": "2026-10-14T13:45:13Z",
+      "market_outlook": "Bearish/Volatile",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.21,
+        "trigger_news": null
+      }
     }
   ]
 }

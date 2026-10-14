@@ -1,108 +1,133 @@
 {
   "cash": 211.31,
-  "total_value": 9746.82,
+  "total_value": 9745.64,
   "positions": {
     "T": {
       "shares": 82,
-      "current_price": 22.955,
+      "current_price": 23.01,
       "avg_cost": 22.4669
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 53.74,
+      "current_price": 53.43,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 43.555,
+      "current_price": 43.71,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 381.69,
+      "current_price": 375.17,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 201.095,
+      "current_price": 201.38,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 273.81,
+      "current_price": 276.3,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 18.575,
+      "current_price": 18.48,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 33.4
+      "current_price": 33.4573
     },
     "HTGC": {
       "shares": 20,
-      "current_price": 16.425,
+      "current_price": 16.29,
       "avg_cost": 16.239
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 159.245
+      "current_price": 158.57
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 56.9101
+      "current_price": 56.88
     },
     "MO": {
       "shares": 5,
-      "current_price": 71.81,
+      "current_price": 72.64,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 54.9041,
+      "current_price": 54.8762,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 45.12
+      "current_price": 45.32
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 47.415
+      "current_price": 47.655
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 56.06
+      "current_price": 56.27
     }
   },
-  "total_return_pct": -2.53,
+  "total_return_pct": -2.54,
   "total_return_usd": 0.0,
-  "today_pnl": 8.9,
-  "today_pnl_pct": 0.09,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 24,
-  "today_start_value": 9737.92,
-  "today_date": "2026-10-13",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-13T19:44:32Z",
+  "today_start_value": 9745.64,
+  "today_date": "2026-10-14",
+  "last_action": "Market sentiment is neutral (Fear & Greed ~50). Dividend-focused investors should stay the course, as high-yield names continue to provide cash flow. No immediate signs of dividend cuts in the watchli",
+  "last_updated": "2026-10-14T13:58:29Z",
   "last_session": {
-    "at": "2026-10-13T19:44:32Z",
+    "at": "2026-10-14T13:58:29Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GLD",
+        -1.75
+      ],
+      [
+        "MO",
+        1.41
+      ],
+      [
+        "PM",
+        1.12
+      ],
+      [
+        "BTI",
+        1.0
+      ],
+      [
+        "ABBV",
+        0.73
+      ],
+      [
+        "HTGC",
+        -0.67
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "Current portfolio holds a mix of high-yield equities (REITs, BDCs, telecoms, tobacco) and a gold reserve. Winners include PM, ABBV, MO, and T, while losers are mainly MLPs and some REITs facing price pressure. Dividend payments are being reinvested per DRIP strategy. Cash reserves are $211.31, but a $200 minimum must be kept, leaving only $11.31 available for new purchases\u2014insufficient to acquire a full share of any watchlist stock. Consequently, no trades are executed this session; the focus remains on monitoring for dividend sustainability and waiting for adequate cash to rebalance into higher-yielding opportunities.",
+    "outlook": "Market sentiment is neutral (Fear & Greed ~50). Dividend-focused investors should stay the course, as high-yield names continue to provide cash flow. No immediate signs of dividend cuts in the watchlist; thus, the priority is to preserve existing income streams and await better deployment opportunities when cash reserves allow.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1465,6 +1490,10 @@
     {
       "timestamp": "2026-10-13T19:44:32Z",
       "value": 9746.82
+    },
+    {
+      "timestamp": "2026-10-14T13:58:29Z",
+      "value": 9745.64
     }
   ]
 }
