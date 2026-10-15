@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-14T23:19:34Z",
-  "last_prediction_date": "2026-10-14",
+  "updated_at": "2026-10-15T17:16:52Z",
+  "last_prediction_date": "2026-10-15",
   "last_settle_date": "2026-10-14",
   "tools": {
     "market_sentinel": {
@@ -1640,6 +1640,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-10-15",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals from macro data and most active stocks",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-10-15",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 60,
+          "signal": "Tech stocks showing weakness and negative NASDAQ movement",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-10-15",
+          "market": "DOW",
+          "prediction": "up",
+          "confidence": 70,
+          "signal": "Strong gains in DOW and positive market mood",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -2307,6 +2337,16 @@
           "prediction": "down",
           "confidence": 80,
           "signal": "Will OpenAI launch a new consumer hardware product | Yes 20% / No 80% | Vol $84,789",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-10-15",
+          "market": "Will OpenAI launch a new consumer hardware product by Decemb",
+          "prediction": "down",
+          "confidence": 65,
+          "signal": "Will OpenAI launch a new consumer hardware product | Yes 35% / No 65% | Vol $85,126",
           "actual": null,
           "correct": null,
           "settled": false
