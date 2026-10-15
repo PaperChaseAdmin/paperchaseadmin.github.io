@@ -1,74 +1,74 @@
 {
-  "cash": 645.37,
-  "total_value": 10024.72,
+  "cash": 2223.13,
+  "total_value": 10129.44,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 215.095,
+      "current_price": 216.544,
       "avg_cost": 213.8401
     },
     "AMD": {
       "shares": 4,
-      "current_price": 541.0,
+      "current_price": 544.75,
       "avg_cost": 498.7075
-    },
-    "QCOM": {
-      "shares": 12,
-      "current_price": 169.79,
-      "avg_cost": 181.9045
     },
     "AAPL": {
       "shares": 5,
-      "current_price": 347.27,
+      "current_price": 344.93,
       "avg_cost": 335.2219
+    },
+    "MSFT": {
+      "shares": 1,
+      "avg_cost": 537.96,
+      "current_price": 537.96
     }
   },
-  "total_return_pct": 0.25,
+  "total_return_pct": 1.29,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 23,
+  "today_pnl": 104.72,
+  "today_pnl_pct": 1.04,
+  "total_trades": 25,
   "today_start_value": 10024.72,
   "today_date": "2026-10-15",
-  "last_action": "...",
-  "last_updated": "2026-10-15T13:42:08Z",
+  "last_action": "Bullish on Tech/Semis (Short-term volatility, Long-term dominance)",
+  "last_updated": "2026-10-15T15:19:18Z",
   "last_session": {
-    "at": "2026-10-15T13:42:08Z",
+    "at": "2026-10-15T15:19:18Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "INTC",
-        -5.82
-      ],
-      [
-        "AMD",
-        -5.57
-      ],
-      [
-        "MU",
-        -4.26
-      ],
-      [
         "LRCX",
-        -4.24
+        -5.83
+      ],
+      [
+        "INTC",
+        -5.04
       ],
       [
         "AMAT",
-        -3.76
+        -4.92
+      ],
+      [
+        "AMD",
+        -4.63
+      ],
+      [
+        "CRM",
+        4.6
       ],
       [
         "NVDA",
-        -3.26
+        -2.25
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
-    "trades_made": 0
+    "ai_analysis": "The semiconductor sector is seeing a broad-based pullback today with LRCX, INTC, and AMAT down significantly. This is classic market noise. The underlying demand for silicon and AI infrastructure remains unprecedented. I am using this volatility to rotate out of laggards like QCOM and aggressively accumulate more NVDA and AMD at these discounted levels. My instincts tell me this dip is being driven by temporary macro fears rather than fundamental shifts in the semiconductor landscape.",
+    "outlook": "Bullish on Tech/Semis (Short-term volatility, Long-term dominance)",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1450,6 +1450,10 @@
     {
       "timestamp": "2026-10-15T13:42:08Z",
       "value": 10024.72
+    },
+    {
+      "timestamp": "2026-10-15T15:19:18Z",
+      "value": 10129.44
     }
   ]
 }

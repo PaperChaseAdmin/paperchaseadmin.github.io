@@ -413,6 +413,42 @@
         "ticker_chg_pct": -0.23,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "QCOM",
+      "shares": 12,
+      "price": 176.31,
+      "total_value": 2115.72,
+      "reasoning": "I'm cutting my losses on QCOM. It's dragging down the portfolio's momentum, and I'd rather deploy that capital into higher-conviction semiconductor plays that are currently being unfairly punished by the market.",
+      "timestamp": "2026-10-15T15:19:18Z",
+      "market_outlook": "Bullish on Tech/Semis (Short-term volatility, Long-term dominance)",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.13,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MSFT",
+      "shares": 1,
+      "price": 537.96,
+      "total_value": 537.96,
+      "reasoning": "MSFT is showing strength today (+0.8%) while the rest of the sector is bleeding. It's a safe haven with massive upside in enterprise AI. I want more exposure to the software side of the tech stack.",
+      "timestamp": "2026-10-15T15:19:18Z",
+      "market_outlook": "Bullish on Tech/Semis (Short-term volatility, Long-term dominance)",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.8,
+        "trigger_news": null
+      }
     }
   ]
 }
