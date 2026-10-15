@@ -1,84 +1,84 @@
 {
-  "updated_at": "2026-10-14T22:46:27Z",
+  "updated_at": "2026-10-15T01:03:09Z",
   "crypto": {
     "fear_greed": {
-      "value": 62,
-      "label": "Greed",
-      "previous_value": 57,
+      "value": 53,
+      "label": "Neutral",
+      "previous_value": 62,
       "previous_label": "Greed"
     },
     "prices": [
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 81400,
-        "change_24h": -2.47,
-        "market_cap": 1635989960281,
-        "volume_24h": 33635334340
+        "price_usd": 81545,
+        "change_24h": -2.1,
+        "market_cap": 1638633012089,
+        "volume_24h": 34296023182
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 2409.36,
-        "change_24h": -4.0,
-        "market_cap": 294264372953,
-        "volume_24h": 13760830191
+        "price_usd": 2415.52,
+        "change_24h": -3.48,
+        "market_cap": 294992174748,
+        "volume_24h": 14244410304
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 727.28,
-        "change_24h": -2.07,
-        "market_cap": 96843771898,
-        "volume_24h": 655097377
+        "price_usd": 729.2,
+        "change_24h": -1.84,
+        "market_cap": 97092520004,
+        "volume_24h": 677538606
       },
       {
         "symbol": "XRP",
         "name": "XRP",
         "price_usd": 1.33,
-        "change_24h": -2.93,
-        "market_cap": 83951195891,
-        "volume_24h": 1959875250
+        "change_24h": -3.12,
+        "market_cap": 83721822821,
+        "volume_24h": 1967782124
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 104.13,
-        "change_24h": -2.47,
-        "market_cap": 61355004960,
-        "volume_24h": 3242088621
+        "price_usd": 104.23,
+        "change_24h": -2.8,
+        "market_cap": 61396371004,
+        "volume_24h": 3273126773
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.081651,
-        "change_24h": -3.4,
-        "market_cap": 12764143087,
-        "volume_24h": 700971991
+        "price_usd": 0.081558,
+        "change_24h": -3.44,
+        "market_cap": 12749012845,
+        "volume_24h": 742867688
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 12.36,
-        "change_24h": -4.34,
-        "market_cap": 9476061421,
-        "volume_24h": 298051158
+        "price_usd": 12.42,
+        "change_24h": -3.91,
+        "market_cap": 9527911684,
+        "volume_24h": 302304091
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
         "price_usd": 0.228451,
-        "change_24h": -3.48,
-        "market_cap": 8579127181,
-        "volume_24h": 351206122
+        "change_24h": -3.65,
+        "market_cap": 8578506317,
+        "volume_24h": 364725894
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 9.99,
-        "change_24h": -2.85,
-        "market_cap": 4427605703,
-        "volume_24h": 295497869
+        "price_usd": 9.95,
+        "change_24h": -3.31,
+        "market_cap": 4411135229,
+        "volume_24h": 301734696
       }
     ],
     "top_mentioned": [],
@@ -176,6 +176,18 @@
         "color": "yellow"
       },
       {
+        "title": "Solana sets October 21 for massive Alpenglow upgrade that could make transactions 99% faster to finalize",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/solana-sets-october-21-for-massive-alpenglow-upgrade-that-could-make-transactions-99-faster-to-finalize/",
+        "published": "Thu, 15 Oct 2026 00:00:17 +0000",
+        "assets": [
+          "SOL"
+        ],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
         "title": "Coins.ph users face app lockout as central bank intervenes",
         "source": "CryptoSlate",
         "url": "https://cryptoslate.com/coins-ph-users-face-app-lockout-as-central-bank-intervenes/",
@@ -196,20 +208,10 @@
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
-      },
-      {
-        "title": "Kraken moves to acquire $181 million European bank in major push beyond crypto trading",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/kraken-moves-to-acquire-181-million-european-bank-in-major-push-beyond-crypto-trading/",
-        "published": "Wed, 14 Oct 2026 19:50:24 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": -0.194,
+      "score": -0.028,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -226,15 +228,15 @@
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 148,
+      "active_threads": 147,
       "mentions": {
-        "BTC": 17,
-        "XRP": 7,
-        "BNB": 1
+        "BTC": 19,
+        "XRP": 8,
+        "ETH": 1
       },
-      "bullish_hits": 77,
-      "bearish_hits": 51,
-      "bullish_pct": 60,
+      "bullish_hits": 85,
+      "bearish_hits": 53,
+      "bullish_pct": 62,
       "top_coin": "BTC",
       "top_posts": [
         "/gme/ - christopher columbus snes edition &gt;basic information &gt;gme.cac site redacted due to aids https://finra-mark",
@@ -246,53 +248,53 @@
     },
     "cg_trending": [
       {
-        "symbol": "WAL",
-        "name": "Walrus",
-        "rank": 203,
-        "score": 0,
-        "change_24h": 66.46
-      },
-      {
         "symbol": "PRL",
         "name": "Pearl",
         "rank": 100,
+        "score": 0,
+        "change_24h": 4.63
+      },
+      {
+        "symbol": "BTW",
+        "name": "Bitway",
+        "rank": 33,
         "score": 1,
-        "change_24h": 4.31
-      },
-      {
-        "symbol": "SUI",
-        "name": "Sui",
-        "rank": 29,
-        "score": 2,
-        "change_24h": -2.64
-      },
-      {
-        "symbol": "QTC",
-        "name": "Quantus",
-        "rank": 628,
-        "score": 3,
-        "change_24h": -7.52
-      },
-      {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "rank": 1,
-        "score": 4,
-        "change_24h": -2.37
+        "change_24h": 9.55
       },
       {
         "symbol": "PENGU",
         "name": "Pudgy Penguins",
         "rank": 119,
-        "score": 5,
-        "change_24h": -1.91
+        "score": 2,
+        "change_24h": -3.67
       },
       {
-        "symbol": "SOL",
-        "name": "Solana",
-        "rank": 7,
+        "symbol": "WAL",
+        "name": "Walrus",
+        "rank": 222,
+        "score": 3,
+        "change_24h": 41.26
+      },
+      {
+        "symbol": "QTC",
+        "name": "Quantus",
+        "rank": 628,
+        "score": 4,
+        "change_24h": -7.79
+      },
+      {
+        "symbol": "AERO",
+        "name": "Aerodrome Finance",
+        "rank": 83,
+        "score": 5,
+        "change_24h": -2.59
+      },
+      {
+        "symbol": "MON",
+        "name": "Monad",
+        "rank": 151,
         "score": 6,
-        "change_24h": -2.32
+        "change_24h": -3.15
       }
     ]
   },
@@ -353,8 +355,8 @@
       },
       {
         "symbol": "META",
-        "price_usd": 737.54,
-        "change_24h": -3.27
+        "price_usd": 762.5,
+        "change_24h": 2.63
       },
       {
         "symbol": "AMD",
@@ -363,52 +365,52 @@
       },
       {
         "symbol": "PLTR",
-        "price_usd": 200.97,
-        "change_24h": -3.69
+        "price_usd": 208.67,
+        "change_24h": -0.16
       },
       {
         "symbol": "COIN",
-        "price_usd": 172.89,
-        "change_24h": -4.9
+        "price_usd": 181.79,
+        "change_24h": 0.78
       }
     ],
     "top_mentioned": [],
     "news": [
       {
-        "title": "Woman Admits Trying to Scam Wes Edens for $1.2 Billion",
+        "title": "TSMC Results Face High Bar to Calm AI Stock Jitters",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-10-14/woman-pleads-guilty-to-trying-to-scam-wes-edens-for-1-2-billion",
-        "published": "Wed, 14 Oct 2026 17:44:54 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-14/tsmc-results-face-high-bar-to-calm-global-ai-stock-trade-jitters",
+        "published": "Wed, 14 Oct 2026 16:01:00 GMT",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Japan’s Katayama Renews Warnings on Yen After US CPI Heats Up",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-15/japan-s-katayama-renews-warnings-on-yen-after-us-cpi-heats-up",
+        "published": "Thu, 15 Oct 2026 00:53:06 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "Huel CEO on Danone Deal and Expansion to US Retail",
+        "title": "Australia’s Higher Unemployment Sees Traders Pare Rate Bets",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-10-14/huel-ceo-on-danone-deal-and-expansion-to-us-retail-video",
-        "published": "Wed, 14 Oct 2026 22:09:55 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-15/australian-unemployment-rate-was-4-7-in-september-on-job-losses",
+        "published": "Thu, 15 Oct 2026 00:34:53 GMT",
         "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
-        "title": "Loop Capital CEO on Expanding Athlete Wealth Platform",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-10-14/loop-capital-ceo-on-expanding-athlete-wealth-platform-video",
-        "published": "Wed, 14 Oct 2026 22:05:43 GMT",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
+        "title": "How high inflation became a 'fact of life' in the U.S.",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html",
-        "published": "Wed, 14 Oct 2026 19:22:00 GMT",
+        "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+        "published": "Wed, 14 Oct 2026 17:20:23 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
@@ -425,173 +427,173 @@
         "color": "yellow"
       },
       {
-        "title": "Dell stock plunges 11%, leading data center sell-off as fears mount about 'enterprise AI timing'",
+        "title": "SK Hynix shares plunge 10% amid Asia tech rout as Fed rate hike fears, AI funding worries mount",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/10/14/dell-stock-barclays-enterprise-ai.html",
-        "published": "Wed, 14 Oct 2026 20:19:25 GMT",
+        "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
+        "published": "Thu, 15 Oct 2026 01:01:09 GMT",
         "assets": [],
         "sentiment": "Bearish",
-        "score": -0.429,
+        "score": -1.0,
         "color": "red"
       },
       {
         "title": "Rocket Lab’s stock slides as the company pushes back Neutron’s first launch",
         "source": "MarketWatch",
         "url": "https://www.marketwatch.com/story/rocket-labs-stock-slides-as-the-company-pushes-back-neutrons-first-launch-afd2932a?mod=mw_rss_topstories",
-        "published": "Wed, 14 Oct 2026 22:33:00 GMT",
+        "published": "Thu, 15 Oct 2026 00:02:00 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
+        "title": "The AI trade is splintering as inflation fears rattle hyped-up tech stocks",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-        "published": "Wed, 14 Oct 2026 22:30:00 GMT",
+        "url": "https://www.marketwatch.com/story/the-ai-trade-is-splintering-as-inflation-fears-rattle-hyped-up-tech-stocks-dbf49369?mod=mw_rss_topstories",
+        "published": "Wed, 14 Oct 2026 23:36:00 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "You’re probably too invested in equities. Why a 60-40 portfolio is still the smart way to go.",
+        "title": "My sister moved in with our mother, 78, and says she deserves the $925,000 family home. Is she right?",
         "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/youre-probably-too-invested-in-equities-why-a-60-40-portfolio-is-still-the-smart-way-to-go-853daade?mod=mw_rss_topstories",
-        "published": "Wed, 14 Oct 2026 22:25:00 GMT",
+        "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
+        "published": "Wed, 14 Oct 2026 22:45:00 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Taking A Brief Ride In Uber Technologies",
+        "title": "Arrowhead Pharmaceuticals, Inc. (ARWR) Discusses ARO-MAPT Interim Results and TRiM CNS Delivery Platform in Investigational CNS Pipeline Transcript",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4954246-taking-a-brief-ride-in-uber-technologies?source=feed_all_articles",
-        "published": "Wed, 14 Oct 2026 18:29:37 -0400",
+        "url": "https://seekingalpha.com/article/4954238-arrowhead-pharmaceuticals-inc-arwr-discusses-aro-mapt-interim-results-and-trim-cns-delivery?source=feed_all_articles",
+        "published": "Wed, 14 Oct 2026 20:44:39 -0400",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Arrowhead Pharmaceuticals, Inc. (ARWR) Discusses ARO-MAPT Interim Results and TRiM CNS Delivery Platform in Investigational CNS Pipeline - Slideshow",
+        "title": "Consumer Price Index: Inflation At 3.7% In September",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4954249-arrowhead-pharmaceuticals-inc-arwr-discusses-aro-mapt-interim-results-and-trim-cns-delivery?source=feed_all_articles",
-        "published": "Wed, 14 Oct 2026 18:01:31 -0400",
+        "url": "https://seekingalpha.com/article/4954267-consumer-price-index-inflation-at-3-7-percent-in-september?source=feed_all_articles",
+        "published": "Wed, 14 Oct 2026 20:30:00 -0400",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "Badger Meter: Project Recovery And Software Growth Support A Buy",
+        "title": "Electro Optic Systems: Turning Counter-UAS Tailwinds Into Multi-Layer Defense Scale",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4954244-badger-meter-project-recovery-and-software-growth-support-a-buy?source=feed_all_articles",
-        "published": "Wed, 14 Oct 2026 17:55:41 -0400",
+        "url": "https://seekingalpha.com/article/4954261-electro-optic-systems-turning-counter-uas-tailwinds-into-multi-layer-defense-scale?source=feed_all_articles",
+        "published": "Wed, 14 Oct 2026 20:24:15 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Nvidia CEO Huang says society shouldn’t tolerate AI cyber incidents, says AI doomers “ought to stop working on” the technology",
+        "title": "Nvidia’s Jensen Huang responds to Pope Leo’s AI safety criticism: ‘We all care about the same thing’",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/10/14/nvidia-ceo-huang-says-society-shouldnt-tolerate-ai-cyber-incidents-says-ai-doomers-ought-to-stop-working-on-the-technology/",
-        "published": "Wed, 14 Oct 2026 18:03:36 +0000",
+        "url": "https://fortune.com/2026/10/14/nvidias-jensen-huang-responds-to-pope-leos-ai-safety-criticism-we-all-care-about-the-same-thing/",
+        "published": "Wed, 14 Oct 2026 19:21:46 +0000",
         "assets": [
           "NVDA"
         ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
-        "title": "Exclusive: Koch’s venture arm backs a16z-backed Emanate’s push to bring AI to industrial sales",
+        "title": "Hailey Bieber sold Rhode to e.l.f. Beauty after she and cofounder Lauren Ratner addressed their main fear in an acquisition",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/10/14/exclusive-koch-venture-emanate-a16z-industrial-ai/",
-        "published": "Wed, 14 Oct 2026 16:00:00 +0000",
+        "url": "https://fortune.com/2026/10/14/hailey-bieber-sold-rhode-e-l-f-beauty-after-she-and-co-founder-lauren-ratner-addressed-their-main-fear-in-an-acquisition/",
+        "published": "Wed, 14 Oct 2026 18:55:45 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
       },
       {
-        "title": "An Ohio police lieutenant allegedly used Flock cameras 29 times to track someone he knew. Now he’s facing a felony",
+        "title": "Tina Knowles launched hair care line Cécred with daughter Beyoncé after years of mixing custom hair treatments",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/10/14/ohio-police-lieutenant-flock-cameras-indicted-felony-charge/",
-        "published": "Wed, 14 Oct 2026 22:04:49 +0000",
+        "url": "https://fortune.com/2026/10/14/tina-knowles-cecred-daughter-beyonce-hair-salon/",
+        "published": "Wed, 14 Oct 2026 18:33:54 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": -0.095,
+      "score": -0.222,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Will there be no change in Fed interest rates after the October 2026 meeting?",
-        "volume_24h": 2347170,
-        "yes_price": 0.68,
+        "volume_24h": 2499851,
+        "yes_price": 0.74,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031"
       },
       {
+        "title": "Will Indiana enact a data center moratorium by December 31, 2027?",
+        "volume_24h": 1603345,
+        "yes_price": 0.12,
+        "url": "https://polymarket.com/market/will-indiana-enact-a-data-center-moratorium-by-december-31-2027"
+      },
+      {
         "title": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
-        "volume_24h": 1364739,
-        "yes_price": 0.32,
+        "volume_24h": 1427869,
+        "yes_price": 0.24,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324032"
       },
       {
         "title": "Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?",
-        "volume_24h": 459331,
+        "volume_24h": 459557,
         "yes_price": 0.15,
         "url": "https://polymarket.com/market/will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election"
       },
       {
         "title": "Will Flávio Bolsonaro win the 2026 Brazilian presidential election?",
-        "volume_24h": 328855,
-        "yes_price": 0.85,
+        "volume_24h": 378471,
+        "yes_price": 0.83,
         "url": "https://polymarket.com/market/will-flvio-bolsonaro-win-the-2026-brazilian-presidential-election"
       },
       {
-        "title": "US x Iran ceasefire continues through October 31?",
-        "volume_24h": 321345,
-        "yes_price": 0.8,
-        "url": "https://polymarket.com/market/us-x-iran-ceasefire-continues-through-october-31-20260917"
+        "title": "Will St. Louis City SC win on 2026-10-14?",
+        "volume_24h": 358453,
+        "yes_price": 0.33,
+        "url": "https://polymarket.com/market/mls-stl-vwh-2026-10-14-stl"
+      },
+      {
+        "title": "Will Philadelphia Union win on 2026-10-14?",
+        "volume_24h": 357549,
+        "yes_price": 0.38,
+        "url": "https://polymarket.com/market/mls-chi-phi-2026-10-14-phi"
       },
       {
         "title": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
-        "volume_24h": 313431,
+        "volume_24h": 344065,
         "yes_price": 0.27,
         "url": "https://polymarket.com/market/will-benjamin-netanyahu-be-the-next-prime-minister-of-israel"
       },
       {
-        "title": "US x Iran ceasefire continues through October 15?",
-        "volume_24h": 269586,
-        "yes_price": 0.97,
-        "url": "https://polymarket.com/market/us-x-iran-ceasefire-continues-through-october-15"
+        "title": "Will FC Cincinnati win on 2026-10-14?",
+        "volume_24h": 318800,
+        "yes_price": 0.06,
+        "url": "https://polymarket.com/market/mls-fcc-ner-2026-10-14-fcc"
       },
       {
-        "title": "Will the Democratic Party control the House after the 2026 Midterm elections?",
-        "volume_24h": 250237,
-        "yes_price": 0.91,
-        "url": "https://polymarket.com/market/will-the-democratic-party-control-the-house-after-the-2026-midterm-elections"
-      },
-      {
-        "title": "2026 Balance of Power: D Senate, D House",
-        "volume_24h": 245132,
-        "yes_price": 0.62,
-        "url": "https://polymarket.com/market/2026-balance-of-power-d-senate-d-house-949"
-      },
-      {
-        "title": "Israel x Iran ceasefire continues through October 31?",
-        "volume_24h": 220379,
-        "yes_price": 0.82,
-        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-october-31"
+        "title": "US x Iran ceasefire continues through October 31?",
+        "volume_24h": 313247,
+        "yes_price": 0.8,
+        "url": "https://polymarket.com/market/us-x-iran-ceasefire-continues-through-october-31-20260917"
       }
     ],
     "polymarket_summary": {
@@ -605,7 +607,7 @@
     },
     "news_summary": {
       "outlook": "Bearish",
-      "summary": "Bearish: 9 bullish vs 15 bearish signals detected across stock/finance news data."
+      "summary": "Bearish: 1 bullish vs 15 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -617,80 +619,80 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 102.53,
-        "change_24h": 0.34
+        "value": 102.19,
+        "change_24h": 0.01
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4128.0,
-        "change_24h": -1.18
+        "value": 4160.8,
+        "change_24h": -0.39
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 95.08,
-        "change_24h": 1.0
+        "value": 94.53,
+        "change_24h": 0.41
       }
     ],
     "most_active": [
       {
         "symbol": "BAC",
-        "volume": 117950601,
+        "volume": 117950000,
         "price_usd": 51.39,
         "change_24h": -4.76
       },
       {
         "symbol": "NVDA",
-        "volume": 117762243,
+        "volume": 117249000,
         "price_usd": 221.3,
         "change_24h": -3.16
       },
       {
         "symbol": "SPY",
-        "volume": 55376546,
+        "volume": 55376100,
         "price_usd": 769.6,
         "change_24h": -1.08
       },
       {
         "symbol": "QQQ",
-        "volume": 51534028,
+        "volume": 51067700,
         "price_usd": 728.95,
         "change_24h": -1.97
       },
       {
         "symbol": "AAPL",
-        "volume": 49893047,
+        "volume": 49861700,
         "price_usd": 342.96,
         "change_24h": 0.5
       },
       {
         "symbol": "AMZN",
-        "volume": 34598204,
+        "volume": 34483900,
         "price_usd": 254.08,
         "change_24h": -1.74
       },
       {
         "symbol": "TSLA",
-        "volume": 30868569,
+        "volume": 30803500,
         "price_usd": 367.16,
         "change_24h": -2.15
       },
       {
         "symbol": "GOOGL",
-        "volume": 27871114,
+        "volume": 27835000,
         "price_usd": 347.64,
         "change_24h": -1.74
       },
       {
         "symbol": "PLTR",
         "volume": 24103301,
-        "price_usd": 200.97,
-        "change_24h": -3.69
+        "price_usd": null,
+        "change_24h": null
       },
       {
         "symbol": "MSFT",
-        "volume": 22251503,
+        "volume": 22200800,
         "price_usd": 533.69,
         "change_24h": -1.8
       }
@@ -700,7 +702,7 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 50
+          "interest_score": 44
         },
         {
           "keyword": "Ethereum",
@@ -712,7 +714,7 @@
         },
         {
           "keyword": "crypto",
-          "interest_score": 20
+          "interest_score": 23
         }
       ]
     }
@@ -722,31 +724,31 @@
       "symbol": "BKHY",
       "name": "BlackRock High Yield Bond",
       "type": "Bond Income",
-      "price_usd": 45.53,
-      "change_1d": -0.38,
-      "change_1w": -0.44,
-      "change_1m": -1.55,
+      "price_usd": 45.7,
+      "change_1d": -0.27,
+      "change_1w": -0.15,
+      "change_1m": -1.37,
       "high_3m": 46.9,
-      "low_3m": 45.53,
+      "low_3m": 45.55,
       "week52_high": 48.73,
       "week52_low": 45.29,
-      "rsi": 29.9,
+      "rsi": 31.2,
       "div_yield": 7.59,
       "last_div": null,
       "outlook": {
-        "label": "Neutral",
-        "color": "yellow",
-        "score": 0,
-        "bull_count": 2,
-        "bear_count": 2,
-        "total": 6,
-        "confidence": "Low",
+        "label": "Bearish",
+        "color": "red",
+        "score": -3,
+        "bull_count": 0,
+        "bear_count": 3,
+        "total": 5,
+        "confidence": "Medium",
         "reasons": [
           "Price below 20-day moving average ↓",
           "Short-term trend below long-term (bearish cross) ↓",
-          "RSI 29.9 — Oversold zone, historically signals a bounce ↑",
-          "5-day momentum -0.4% — consolidating sideways →",
-          "1-month return -1.5% — range-bound"
+          "RSI 31.2 — Below neutral, mild downward pressure ↓",
+          "5-day momentum -0.1% — consolidating sideways →",
+          "1-month return -1.4% — range-bound"
         ]
       }
     },
@@ -754,15 +756,15 @@
       "symbol": "XYLD",
       "name": "Global X S&P 500 Covered Call",
       "type": "Covered Call Income",
-      "price_usd": 41.93,
-      "change_1d": -0.05,
-      "change_1w": 0.07,
-      "change_1m": 1.95,
+      "price_usd": 41.95,
+      "change_1d": 0.0,
+      "change_1w": 0.12,
+      "change_1m": 1.78,
       "high_3m": 41.95,
       "low_3m": 39.93,
       "week52_high": 41.99,
       "week52_low": 38.22,
-      "rsi": 75.0,
+      "rsi": 77.8,
       "div_yield": 6.38,
       "last_div": null,
       "outlook": {
@@ -776,9 +778,9 @@
         "reasons": [
           "Price above 20-day moving average ↑",
           "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 75.0 — Overbought zone, historically signals a pullback ↓",
+          "RSI 77.8 — Overbought zone, historically signals a pullback ↓",
           "5-day momentum +0.1% — consolidating sideways →",
-          "1-month return +2.0% — range-bound"
+          "1-month return +1.8% — range-bound"
         ]
       }
     },
@@ -786,31 +788,31 @@
       "symbol": "JEPQ",
       "name": "JPMorgan Nasdaq Equity Premium",
       "type": "Equity Income",
-      "price_usd": 60.09,
-      "change_1d": -1.36,
-      "change_1w": -1.93,
-      "change_1m": 2.66,
+      "price_usd": 60.92,
+      "change_1d": -0.02,
+      "change_1w": -0.54,
+      "change_1m": 3.6,
       "high_3m": 61.27,
       "low_3m": 54.32,
       "week52_high": 61.72,
       "week52_low": 53.51,
-      "rsi": 40.9,
+      "rsi": 61.6,
       "div_yield": 11.05,
       "last_div": null,
       "outlook": {
-        "label": "Mild Bearish",
-        "color": "red",
-        "score": -2,
-        "bull_count": 1,
-        "bear_count": 3,
+        "label": "Bullish",
+        "color": "green",
+        "score": 4,
+        "bull_count": 4,
+        "bear_count": 0,
         "total": 5,
-        "confidence": "Medium",
+        "confidence": "High",
         "reasons": [
-          "Price below 20-day moving average ↓",
+          "Price above 20-day moving average ↑",
           "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 40.9 — Below neutral, mild downward pressure ↓",
-          "5-day momentum -1.9% — short-term selling pressure ↓",
-          "1-month return +2.7% — range-bound"
+          "RSI 61.6 — Above neutral, mild upward momentum ↑",
+          "5-day momentum -0.5% — consolidating sideways →",
+          "1-month return +3.6% — sustained uptrend ↑"
         ]
       }
     },
@@ -850,31 +852,31 @@
       "symbol": "QQQM",
       "name": "Invesco Nasdaq 100",
       "type": "Growth",
-      "price_usd": 300.13,
-      "change_1d": -1.97,
-      "change_1w": -3.79,
-      "change_1m": 3.57,
+      "price_usd": 306.16,
+      "change_1d": -0.34,
+      "change_1w": -2.11,
+      "change_1m": 4.95,
       "high_3m": 312.76,
       "low_3m": 272.22,
       "week52_high": 314.115,
       "week52_low": 228.75,
-      "rsi": 41.6,
+      "rsi": 52.1,
       "div_yield": 43.0,
       "last_div": null,
       "outlook": {
-        "label": "Mild Bearish",
-        "color": "red",
-        "score": -1,
-        "bull_count": 2,
-        "bear_count": 3,
+        "label": "Mild Bullish",
+        "color": "green",
+        "score": 2,
+        "bull_count": 3,
+        "bear_count": 1,
         "total": 5,
         "confidence": "Medium",
         "reasons": [
-          "Price below 20-day moving average ↓",
+          "Price above 20-day moving average ↑",
           "Short-term trend above long-term (bullish cross) ↑",
-          "RSI 41.6 — Below neutral, mild downward pressure ↓",
-          "5-day momentum -3.8% — short-term selling pressure ↓",
-          "1-month return +3.6% — sustained uptrend ↑"
+          "RSI 52.1 — In neutral range (45–55)",
+          "5-day momentum -2.1% — short-term selling pressure ↓",
+          "1-month return +5.0% — sustained uptrend ↑"
         ]
       }
     }
