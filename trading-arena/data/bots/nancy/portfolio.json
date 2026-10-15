@@ -1,48 +1,73 @@
 {
   "cash": 645.37,
-  "total_value": 10230.04,
+  "total_value": 10024.72,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 220.27,
+      "current_price": 215.095,
       "avg_cost": 213.8401
     },
     "AMD": {
       "shares": 4,
-      "current_price": 570.01,
+      "current_price": 541.0,
       "avg_cost": 498.7075
     },
     "QCOM": {
       "shares": 12,
-      "current_price": 172.055,
+      "current_price": 169.79,
       "avg_cost": 181.9045
     },
     "AAPL": {
       "shares": 5,
-      "current_price": 343.13,
+      "current_price": 347.27,
       "avg_cost": 335.2219
     }
   },
-  "total_return_pct": 2.3,
+  "total_return_pct": 0.25,
   "total_return_usd": 0.0,
-  "today_pnl": -191.96,
-  "today_pnl_pct": -1.84,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 23,
-  "today_start_value": 10422.0,
-  "today_date": "2026-10-14",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-14T19:12:31Z",
+  "today_start_value": 10024.72,
+  "today_date": "2026-10-15",
+  "last_action": "...",
+  "last_updated": "2026-10-15T13:42:08Z",
   "last_session": {
-    "at": "2026-10-14T19:12:31Z",
+    "at": "2026-10-15T13:42:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "INTC",
+        -5.82
+      ],
+      [
+        "AMD",
+        -5.57
+      ],
+      [
+        "MU",
+        -4.26
+      ],
+      [
+        "LRCX",
+        -4.24
+      ],
+      [
+        "AMAT",
+        -3.76
+      ],
+      [
+        "NVDA",
+        -3.26
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1421,6 +1446,10 @@
     {
       "timestamp": "2026-10-14T19:12:31Z",
       "value": 10230.04
+    },
+    {
+      "timestamp": "2026-10-15T13:42:08Z",
+      "value": 10024.72
     }
   ]
 }
