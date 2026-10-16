@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-16T16:52:44Z",
+  "updated_at": "2026-10-16T22:54:42Z",
   "last_prediction_date": "2026-10-16",
-  "last_settle_date": "2026-10-15",
+  "last_settle_date": "2026-10-16",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 74,
-      "correct": 57,
-      "accuracy_pct": 77.0,
+      "total": 76,
+      "correct": 59,
+      "accuracy_pct": 77.6,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1679,9 +1679,10 @@
           "prediction": "down",
           "confidence": 72,
           "signal": "Bearish mood and negative performance in tech stocks",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.09
         },
         {
           "date": "2026-10-16",
@@ -1689,9 +1690,10 @@
           "prediction": "down",
           "confidence": 78,
           "signal": "Significant drop in tech sector and AI-related jitters",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -2.15
         },
         {
           "date": "2026-10-16",
