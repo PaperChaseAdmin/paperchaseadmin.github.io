@@ -1,88 +1,98 @@
 {
-  "updated_at": "2026-10-18T23:55:33Z",
+  "updated_at": "2026-10-19T02:07:42Z",
   "crypto": {
     "fear_greed": {
-      "value": 53,
-      "label": "Neutral",
-      "previous_value": 55,
-      "previous_label": "Greed"
+      "value": 59,
+      "label": "Greed",
+      "previous_value": 53,
+      "previous_label": "Neutral"
     },
     "prices": [
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 81969,
-        "change_24h": 0.7,
-        "market_cap": 1647423961555,
-        "volume_24h": 20138075479
+        "price_usd": 82408,
+        "change_24h": 0.98,
+        "market_cap": 1656343543639,
+        "volume_24h": 21511135717
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 2407.54,
-        "change_24h": 0.34,
-        "market_cap": 294033481962,
-        "volume_24h": 8452266743
+        "price_usd": 2423.71,
+        "change_24h": 0.75,
+        "market_cap": 296042637422,
+        "volume_24h": 8773040883
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 722.27,
-        "change_24h": 0.71,
-        "market_cap": 96179257832,
-        "volume_24h": 590856713
+        "price_usd": 726.06,
+        "change_24h": 0.99,
+        "market_cap": 96678202051,
+        "volume_24h": 611180487
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.3,
-        "change_24h": 0.93,
-        "market_cap": 82363149396,
-        "volume_24h": 1217116037
+        "price_usd": 1.31,
+        "change_24h": 0.98,
+        "market_cap": 82684493769,
+        "volume_24h": 1234405564
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 104.04,
-        "change_24h": 0.67,
-        "market_cap": 61322167269,
-        "volume_24h": 2310153220
+        "price_usd": 104.91,
+        "change_24h": 1.37,
+        "market_cap": 61835142502,
+        "volume_24h": 2400890979
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.079331,
-        "change_24h": 0.09,
-        "market_cap": 12405722230,
-        "volume_24h": 551543747
+        "price_usd": 0.079818,
+        "change_24h": 0.71,
+        "market_cap": 12482327482,
+        "volume_24h": 556296166
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 12.03,
-        "change_24h": 0.42,
-        "market_cap": 9223983074,
-        "volume_24h": 264247541
+        "price_usd": 12.2,
+        "change_24h": 2.03,
+        "market_cap": 9351915606,
+        "volume_24h": 277333694
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.221066,
-        "change_24h": 0.68,
-        "market_cap": 8303271170,
-        "volume_24h": 250950736
+        "price_usd": 0.221658,
+        "change_24h": 0.81,
+        "market_cap": 8325799013,
+        "volume_24h": 251928843
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 9.77,
-        "change_24h": 0.13,
-        "market_cap": 4334406469,
-        "volume_24h": 245642803
+        "price_usd": 9.78,
+        "change_24h": -0.31,
+        "market_cap": 4336961280,
+        "volume_24h": 247318073
       }
     ],
     "top_mentioned": [],
     "news": [
+      {
+        "title": "Deutsche Bank targets Asia crypto custody expansion in 2027 as German launch nears",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/10/18/deutsche-bank-targets-asia-crypto-custody-expansion-in-2027-as-german-launch-nears",
+        "published": "Mon, 19 Oct 2026 02:00:00 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
+      },
       {
         "title": "SEC tokenized stock framework faces issuer pushback as Broadcom, Verizon object to OKX-ICE listing",
         "source": "CoinDesk",
@@ -104,13 +114,11 @@
         "color": "yellow"
       },
       {
-        "title": "Wall Street freaked out Friday, but VIX and bitcoin trades say the fear may fade Monday.",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last",
-        "published": "Sun, 18 Oct 2026 16:33:00 +0000",
-        "assets": [
-          "BTC"
-        ],
+        "title": "Qubic freezes chain after attacker drains 1.4K wallets with weak seeds",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/qubic-freezes-chain-after-attacker-drains-14k-wallets-with-weak-seeds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Mon, 19 Oct 2026 01:03:27 +0000",
+        "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
@@ -130,16 +138,6 @@
         "source": "Cointelegraph",
         "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Sun, 18 Oct 2026 13:54:00 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Most Americans polled oppose betting on elections: Reuters",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/most-americans-polled-oppose-betting-on-elections-reuters?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Sun, 18 Oct 2026 13:48:00 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
@@ -209,7 +207,7 @@
       }
     ],
     "news_sentiment": {
-      "score": -0.194,
+      "score": -0.167,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -221,78 +219,78 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Bearish",
-      "summary": "Bearish: 4 bullish vs 8 bearish signals detected across crypto news data."
+      "outlook": "Mixed",
+      "summary": "Mixed: 6 bullish vs 8 bearish signals detected across crypto news data."
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 147,
+      "active_threads": 143,
       "mentions": {
         "XRP": 14,
-        "BTC": 10,
+        "BTC": 11,
         "BNB": 4
       },
-      "bullish_hits": 83,
-      "bearish_hits": 49,
-      "bullish_pct": 63,
+      "bullish_hits": 88,
+      "bearish_hits": 50,
+      "bullish_pct": 64,
       "top_coin": "XRP",
       "top_posts": [
         "/smg/ - stock market general where is smigstradamus edition &gt;educational sites: https://www.investopedia.com https://",
         "/smg/ - stock market general dating recession edition https://www.dorelish.com/the-edit/2 026/8/5/the-dating-recession-w",
         "/smg/ - stock market general waterpark edition &gt;educational sites: https://www.investopedia.com https://www.khanacade",
-        "/smg/ - stock market general fell for it again, edition &gt;educational sites: https://www.investopedia.com https://www.",
-        "/smg/ - stock market general spanish edition &gt;educational sites: https://www.investopedia.com https://www.khanacademy"
+        "/smg/ - stock market general spanish edition &gt;educational sites: https://www.investopedia.com https://www.khanacademy",
+        "/pmg/ - precious metals general chonky edition &gt;why precious metals? https://youtu.be/i3s4rl6ehii https://youtu.be/gk"
       ]
     },
     "cg_trending": [
       {
         "symbol": "COVENANT",
         "name": "Covenant x402",
-        "rank": 661,
+        "rank": 732,
         "score": 0,
-        "change_24h": 97.11
-      },
-      {
-        "symbol": "DOPE",
-        "name": "Doge Pepe",
-        "rank": 632,
-        "score": 1,
-        "change_24h": 13.08
+        "change_24h": 57.08
       },
       {
         "symbol": "TSI",
         "name": "Tetsuo Super Intelligence",
-        "rank": 875,
-        "score": 2,
+        "rank": 913,
+        "score": 1,
         "change_24h": 0
       },
       {
-        "symbol": "CLAUDIA",
-        "name": "Claudia",
-        "rank": 797,
-        "score": 3,
-        "change_24h": 0
+        "symbol": "DOPE",
+        "name": "Doge Pepe",
+        "rank": 692,
+        "score": 2,
+        "change_24h": 10.8
       },
       {
         "symbol": "HI",
         "name": "hi",
-        "rank": 821,
+        "rank": 843,
+        "score": 3,
+        "change_24h": 364.72
+      },
+      {
+        "symbol": "PENGU",
+        "name": "Pudgy Penguins",
+        "rank": 119,
         "score": 4,
-        "change_24h": 0
+        "change_24h": 1.41
       },
       {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "rank": 1,
+        "symbol": "BOOMER",
+        "name": "Boomer",
+        "rank": 907,
         "score": 5,
-        "change_24h": 0.84
+        "change_24h": 84.05
       },
       {
-        "symbol": "PRL",
-        "name": "Pearl",
-        "rank": 96,
+        "symbol": "QTC",
+        "name": "Quantus",
+        "rank": 651,
         "score": 6,
-        "change_24h": 3.62
+        "change_24h": -6.51
       }
     ]
   },
@@ -375,24 +373,24 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "Latest Oil Market News and Analysis for Oct. 19",
+        "title": "RBA’s Kent Says Labor Market Loosening Faster than Predicted",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-10-18/latest-oil-market-news-and-analysis-for-oct-19",
-        "published": "Sun, 18 Oct 2026 22:02:51 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-19/rba-s-kent-says-labor-market-loosening-faster-than-predicted",
+        "published": "Mon, 19 Oct 2026 01:52:30 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Putin Proposes Summit with US, China on Ukraine, WSJ Reports",
+        "title": "Traders Grow Wary of Copper Bull Market With No Sign of Tariffs",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-10-18/putin-proposes-summit-with-us-china-on-ukraine-wsj-reports",
-        "published": "Sun, 18 Oct 2026 23:28:10 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-18/traders-grow-wary-of-copper-bull-market-with-no-sign-of-tariffs",
+        "published": "Sun, 18 Oct 2026 20:00:04 GMT",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
       },
       {
         "title": "US Stock Futures Bounce After Chip Rout, Oil Slips: Markets Wrap",
@@ -415,6 +413,16 @@
         "color": "yellow"
       },
       {
+        "title": "China's CXMT sees shares drop over 6% as investors look past chipmaker's profit turnaround",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
+        "published": "Mon, 19 Oct 2026 01:56:34 GMT",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -0.333,
+        "color": "red"
+      },
+      {
         "title": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
@@ -423,16 +431,6 @@
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
-      },
-      {
-        "title": "Why hedge funds could be making a bond market shock more likely",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/10/18/hedge-funds-bond-market-turmoil.html",
-        "published": "Sun, 18 Oct 2026 06:13:05 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
       },
       {
         "title": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
@@ -465,34 +463,51 @@
         "color": "yellow"
       },
       {
-        "title": "SH: A Tactical Hedge, But Not Yet A Short Call",
+        "title": "Bonds Already Discounted A 3rd Hike, Stocks Have Followed, Stay Long",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4955077-sh-a-tactical-hedge-but-not-yet-a-short-call?source=feed_all_articles",
-        "published": "Sun, 18 Oct 2026 16:01:22 -0400",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "WCLD: Why Small Cloud Computing Stocks Are Breaking Out (Rating Upgrade)",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4955076-wcld-why-small-cloud-computing-stocks-are-breaking-out-rating-upgrade?source=feed_all_articles",
-        "published": "Sun, 18 Oct 2026 15:46:49 -0400",
+        "url": "https://seekingalpha.com/article/4955080-bonds-already-discounted-a-3rd-hike-stocks-have-followed-stay-long?source=feed_all_articles",
+        "published": "Sun, 18 Oct 2026 21:48:22 -0400",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Wall Street Brunch: SpaceX, Tesla, Meta On The Earnings Card",
+        "title": "Brunswick Keeps Navigating Tough Waters (Rating Upgrade)",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4955072-wall-street-brunch-spacex-tesla-meta-on-the-earnings-card?source=feed_all_articles",
-        "published": "Sun, 18 Oct 2026 15:35:00 -0400",
-        "assets": [
-          "TSLA",
-          "META"
-        ],
+        "url": "https://seekingalpha.com/article/4955079-brunswick-stock-keeps-navigating-tough-waters-rating-upgrade?source=feed_all_articles",
+        "published": "Sun, 18 Oct 2026 21:31:25 -0400",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Undercovered Dozen: Hess Midstream, Iovance Biotherapeutics, Netlist, And More",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4955078-undercovered-dozen-hess-midstream-iovance-biotherapeutics-netlist-and-more?source=feed_all_articles",
+        "published": "Sun, 18 Oct 2026 20:50:23 -0400",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Zoom and big financial firms add ‘Proof of Human’ badges from Sam Altman’s World to stop fraud and deep fakes",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/10/18/zoom-adds-proof-of-human-feature-to-stop-deep-fakes-toowith-tech/",
+        "published": "Mon, 19 Oct 2026 01:00:00 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Anthropic commits 5% of its stock to a new ‘public benefit’ fund and may give large donations to traditional nonprofits or to specific populations",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/10/18/anthropic-5-percent-stock-public-benefit-fund-large-donations-traditional-nonprofits-specific-populations/",
+        "published": "Mon, 19 Oct 2026 00:00:58 +0000",
+        "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
@@ -506,68 +521,42 @@
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
-      },
-      {
-        "title": "Trump to close historic DC golf course for 15 months of renovations, citing ‘disease infested trees,’ despite judge’s order to halt development plans",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/10/18/trump-historic-dc-golf-course-closure-renovations-judge-order-halt-development/",
-        "published": "Sun, 18 Oct 2026 21:41:22 +0000",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "The next AI race will be won at the credit desk",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/10/18/nvidia-ai-financing-capital-markets/",
-        "published": "Sun, 18 Oct 2026 21:00:00 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": -0.167,
+      "score": 0.1,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Will Flávio Bolsonaro win the 2026 Brazilian presidential election?",
-        "volume_24h": 1189876,
+        "volume_24h": 578804,
         "yes_price": 0.79,
         "url": "https://polymarket.com/market/will-flvio-bolsonaro-win-the-2026-brazilian-presidential-election"
       },
       {
-        "title": "Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?",
-        "volume_24h": 1001250,
-        "yes_price": 0.2,
-        "url": "https://polymarket.com/market/will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election"
-      },
-      {
         "title": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
-        "volume_24h": 545336,
-        "yes_price": 0.3,
+        "volume_24h": 550852,
+        "yes_price": 0.29,
         "url": "https://polymarket.com/market/will-benjamin-netanyahu-be-the-next-prime-minister-of-israel"
       },
       {
-        "title": "Will Red Bull Bragantino win on 2026-10-18?",
-        "volume_24h": 420080,
-        "yes_price": 0.68,
-        "url": "https://polymarket.com/market/bra-cre-bra-2026-10-18-bra"
+        "title": "Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?",
+        "volume_24h": 541888,
+        "yes_price": 0.21,
+        "url": "https://polymarket.com/market/will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election"
       },
       {
         "title": "Will there be no change in Fed interest rates after the October 2026 meeting?",
-        "volume_24h": 223898,
+        "volume_24h": 221704,
         "yes_price": 0.88,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031"
       },
       {
         "title": "US x Iran ceasefire continues through October 31?",
-        "volume_24h": 193489,
-        "yes_price": 0.83,
+        "volume_24h": 212865,
+        "yes_price": 0.82,
         "url": "https://polymarket.com/market/us-x-iran-ceasefire-continues-through-october-31-20260917"
       },
       {
@@ -577,27 +566,33 @@
         "url": "https://polymarket.com/market/will-the-iranian-regime-fall-by-the-end-of-2026"
       },
       {
+        "title": "US x Iran ceasefire continues through October 22?",
+        "volume_24h": 171197,
+        "yes_price": 0.94,
+        "url": "https://polymarket.com/market/us-x-iran-ceasefire-continues-through-october-22"
+      },
+      {
         "title": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
-        "volume_24h": 166211,
+        "volume_24h": 166146,
         "yes_price": 0.12,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324032"
       },
       {
         "title": "Will Ron DeSantis win the 2028 Republican presidential nomination?",
         "volume_24h": 163823,
-        "yes_price": 0.03,
+        "yes_price": 0.04,
         "url": "https://polymarket.com/market/will-ron-desantis-win-the-2028-republican-presidential-nomination"
       },
       {
-        "title": "Will Raphael Warnock win the 2028 Democratic presidential nomination?",
-        "volume_24h": 149721,
-        "yes_price": 0.02,
-        "url": "https://polymarket.com/market/will-raphael-warnock-win-the-2028-democratic-presidential-nomination-914"
+        "title": "Israel x Iran ceasefire continues through October 21?",
+        "volume_24h": 154781,
+        "yes_price": 0.98,
+        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-october-21"
       }
     ],
     "polymarket_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 3 bullish vs 2 bearish signals detected across finance prediction markets data."
+      "summary": "Mixed: 2 bullish vs 2 bearish signals detected across finance prediction markets data."
     },
     "reddit": [],
     "reddit_summary": {
@@ -606,7 +601,7 @@
     },
     "news_summary": {
       "outlook": "Bearish",
-      "summary": "Bearish: 5 bullish vs 12 bearish signals detected across stock/finance news data."
+      "summary": "Bearish: 7 bullish vs 14 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -618,20 +613,20 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 101.83,
-        "change_24h": -0.01
+        "value": 101.82,
+        "change_24h": -0.02
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 4203.4,
-        "change_24h": 0.53
+        "value": 4196.1,
+        "change_24h": 0.36
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 97.85,
-        "change_24h": -3.51
+        "value": 97.66,
+        "change_24h": -3.7
       }
     ],
     "most_active": [
@@ -701,19 +696,19 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 40
+          "interest_score": 46
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 7
-        },
-        {
-          "keyword": "Solana",
           "interest_score": 6
         },
         {
+          "keyword": "Solana",
+          "interest_score": 7
+        },
+        {
           "keyword": "crypto",
-          "interest_score": 22
+          "interest_score": 28
         }
       ]
     }
