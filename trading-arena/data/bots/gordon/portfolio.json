@@ -1,58 +1,83 @@
 {
   "cash": 3053.42,
-  "total_value": 9175.16,
+  "total_value": 9192.0,
   "positions": {
     "DIS": {
       "shares": 15,
       "avg_cost": 104.425,
-      "current_price": 111.245
+      "current_price": 111.6
     },
     "T": {
       "shares": 10,
       "avg_cost": 22.26,
-      "current_price": 23.505
+      "current_price": 23.5
     },
     "HPQ": {
       "shares": 8,
       "avg_cost": 31.195,
-      "current_price": 30.575
+      "current_price": 30.745
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 340.48,
+      "current_price": 340.735,
       "avg_cost": 345.8228
     },
     "NKE": {
       "shares": 15,
       "avg_cost": 37.65,
-      "current_price": 37.68
+      "current_price": 38.08
     },
     "VFC": {
       "shares": 20,
       "avg_cost": 17.3,
-      "current_price": 17.1946
+      "current_price": 17.29
     }
   },
-  "total_return_pct": -8.25,
+  "total_return_pct": -8.08,
   "total_return_usd": 0.0,
-  "today_pnl": 21.13,
-  "today_pnl_pct": 0.23,
+  "today_pnl": 37.97,
+  "today_pnl_pct": 0.41,
   "total_trades": 38,
   "today_start_value": 9154.03,
   "today_date": "2026-10-20",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-20T15:58:06Z",
+  "last_action": "...",
+  "last_updated": "2026-10-20T17:05:46Z",
   "last_session": {
-    "at": "2026-10-20T15:58:06Z",
+    "at": "2026-10-20T17:05:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GM",
+        -8.04
+      ],
+      [
+        "BBWI",
+        2.85
+      ],
+      [
+        "NKE",
+        2.41
+      ],
+      [
+        "CVS",
+        2.11
+      ],
+      [
+        "DIS",
+        1.84
+      ],
+      [
+        "HPQ",
+        1.75
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1483,6 +1508,10 @@
     {
       "timestamp": "2026-10-20T15:58:06Z",
       "value": 9175.16
+    },
+    {
+      "timestamp": "2026-10-20T17:05:46Z",
+      "value": 9192.0
     }
   ]
 }
