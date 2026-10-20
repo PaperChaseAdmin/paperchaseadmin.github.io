@@ -1,68 +1,93 @@
 {
   "cash": 561.35,
-  "total_value": 9616.16,
+  "total_value": 9563.33,
   "positions": {
     "NVDA": {
       "shares": 8,
-      "current_price": 217.575,
+      "current_price": 216.515,
       "avg_cost": 206.5303
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 342.34,
+      "current_price": 340.48,
       "avg_cost": 318.6712
     },
     "COIN": {
       "shares": 5,
       "avg_cost": 147.495,
-      "current_price": 173.6593
+      "current_price": 171.0774
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 692.96
+      "current_price": 693.205
     },
     "IONQ": {
       "shares": 15,
-      "current_price": 31.62,
+      "current_price": 31.39,
       "avg_cost": 38.5625
     },
     "AMD": {
       "shares": 2,
       "avg_cost": 543.86,
-      "current_price": 545.76
+      "current_price": 539.0
     },
     "MSTR": {
       "shares": 5,
-      "current_price": 143.25,
+      "current_price": 143.915,
       "avg_cost": 163.279
     },
     "PLTR": {
       "shares": 2,
       "avg_cost": 187.35,
-      "current_price": 194.91
+      "current_price": 194.26
     }
   },
-  "total_return_pct": -3.84,
+  "total_return_pct": -4.37,
   "total_return_usd": 0.0,
-  "today_pnl": 160.22,
-  "today_pnl_pct": 1.69,
+  "today_pnl": 107.39,
+  "today_pnl_pct": 1.14,
   "total_trades": 39,
   "today_start_value": 9455.94,
   "today_date": "2026-10-20",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-20T14:35:52Z",
+  "last_action": "...",
+  "last_updated": "2026-10-20T15:39:03Z",
   "last_session": {
-    "at": "2026-10-20T14:35:52Z",
+    "at": "2026-10-20T15:39:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MSTR",
+        5.79
+      ],
+      [
+        "SOFI",
+        3.6
+      ],
+      [
+        "RBLX",
+        2.0
+      ],
+      [
+        "IONQ",
+        2.0
+      ],
+      [
+        "META",
+        -1.72
+      ],
+      [
+        "TSLA",
+        1.54
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1489,6 +1514,10 @@
     {
       "timestamp": "2026-10-20T14:35:52Z",
       "value": 9616.16
+    },
+    {
+      "timestamp": "2026-10-20T15:39:03Z",
+      "value": 9563.33
     }
   ]
 }
