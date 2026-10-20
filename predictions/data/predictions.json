@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-20T17:27:05Z",
+  "updated_at": "2026-10-20T23:14:53Z",
   "last_prediction_date": "2026-10-20",
-  "last_settle_date": "2026-10-19",
+  "last_settle_date": "2026-10-20",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 78,
-      "correct": 61,
-      "accuracy_pct": 78.2,
+      "total": 80,
+      "correct": 63,
+      "accuracy_pct": 78.8,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1743,9 +1743,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Positive market mood and strong earnings",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.28
         },
         {
           "date": "2026-10-20",
@@ -1763,9 +1764,10 @@
           "prediction": "up",
           "confidence": 75,
           "signal": "Strong gains in blue-chip stocks",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.02
         }
       ]
     },
