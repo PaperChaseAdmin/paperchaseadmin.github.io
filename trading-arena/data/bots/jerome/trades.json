@@ -503,6 +503,78 @@
         "ticker_chg_pct": -0.9,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "BAC",
+      "shares": 5,
+      "price": 50.865,
+      "total_value": 254.33,
+      "reasoning": "Cutting loser in financial sector; BAC down 18% from avg cost, no clear macro catalyst for recovery without rate clarity",
+      "timestamp": "2026-10-21T15:07:52Z",
+      "market_outlook": "Data vacuum persists \u2014 no VIX, no Fear & Greed, no headlines. Financial sector weakness suggests market pricing credit concerns or yield curve anxiety. Until inflation/employment data clarifies, bias remains defensive: duration + cash equivalents > cyclical beta.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.43,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "XLF",
+      "shares": 5,
+      "price": 55.905,
+      "total_value": 279.52,
+      "reasoning": "Reducing financial sector exposure; XLF down 4%, banks sensitive to yield curve flattening and credit concerns",
+      "timestamp": "2026-10-21T15:07:52Z",
+      "market_outlook": "Data vacuum persists \u2014 no VIX, no Fear & Greed, no headlines. Financial sector weakness suggests market pricing credit concerns or yield curve anxiety. Until inflation/employment data clarifies, bias remains defensive: duration + cash equivalents > cyclical beta.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.33,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 3,
+      "price": 80.235,
+      "total_value": 240.7,
+      "reasoning": "Adding long-duration exposure as defensive hedge; TLT positive today, provides convexity if recession fears materialize",
+      "timestamp": "2026-10-21T15:07:52Z",
+      "market_outlook": "Data vacuum persists \u2014 no VIX, no Fear & Greed, no headlines. Financial sector weakness suggests market pricing credit concerns or yield curve anxiety. Until inflation/employment data clarifies, bias remains defensive: duration + cash equivalents > cyclical beta.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.12,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLU",
+      "shares": 2,
+      "price": 42.0257,
+      "total_value": 84.05,
+      "reasoning": "Increasing utilities allocation; defensive sector with rate sensitivity, up 0.4% today, provides income and stability",
+      "timestamp": "2026-10-21T15:07:52Z",
+      "market_outlook": "Data vacuum persists \u2014 no VIX, no Fear & Greed, no headlines. Financial sector weakness suggests market pricing credit concerns or yield curve anxiety. Until inflation/employment data clarifies, bias remains defensive: duration + cash equivalents > cyclical beta.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.38,
+        "trigger_news": null
+      }
     }
   ]
 }

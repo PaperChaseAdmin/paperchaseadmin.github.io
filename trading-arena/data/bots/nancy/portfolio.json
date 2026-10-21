@@ -1,48 +1,73 @@
 {
   "cash": 514.86,
-  "total_value": 10181.58,
+  "total_value": 10134.95,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 221.86,
+      "current_price": 219.1199,
       "avg_cost": 213.8401
     },
     "AMD": {
       "shares": 4,
-      "current_price": 549.05,
+      "current_price": 546.18,
       "avg_cost": 498.7075
     },
     "AAPL": {
       "shares": 10,
-      "current_price": 339.34,
+      "current_price": 340.0,
       "avg_cost": 338.4384
     },
     "MSFT": {
       "shares": 1,
       "avg_cost": 537.96,
-      "current_price": 527.36
+      "current_price": 529.45
     }
   },
-  "total_return_pct": 1.82,
+  "total_return_pct": 1.35,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -46.63,
+  "today_pnl_pct": -0.46,
   "total_trades": 26,
   "today_start_value": 10181.58,
   "today_date": "2026-10-21",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-21T13:37:29Z",
+  "last_action": "...",
+  "last_updated": "2026-10-21T14:42:33Z",
   "last_session": {
-    "at": "2026-10-21T13:37:29Z",
+    "at": "2026-10-21T14:42:33Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TSLA",
+        3.13
+      ],
+      [
+        "GOOGL",
+        -2.42
+      ],
+      [
+        "AMD",
+        2.1
+      ],
+      [
+        "META",
+        1.76
+      ],
+      [
+        "LRCX",
+        1.68
+      ],
+      [
+        "MU",
+        1.49
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1489,6 +1514,10 @@
     {
       "timestamp": "2026-10-21T13:37:29Z",
       "value": 10181.58
+    },
+    {
+      "timestamp": "2026-10-21T14:42:33Z",
+      "value": 10134.95
     }
   ]
 }
