@@ -1,54 +1,74 @@
 {
-  "cash": 595.67,
-  "total_value": 9835.77,
+  "cash": 467.49,
+  "total_value": 9831.56,
   "positions": {
     "GLD": {
       "shares": 12,
       "avg_cost": 402.44,
-      "current_price": 378.96
+      "current_price": 378.58
     },
     "TLT": {
       "shares": 47,
-      "current_price": 80.265,
+      "current_price": 80.235,
       "avg_cost": 82.3827
-    },
-    "XLE": {
-      "shares": 1,
-      "avg_cost": 64.77,
-      "current_price": 67.96
-    },
-    "AAPL": {
-      "shares": 2,
-      "avg_cost": 346.705,
-      "current_price": 339.34
     },
     "UUP": {
       "shares": 6,
       "avg_cost": 29.19,
-      "current_price": 28.915
+      "current_price": 28.931
+    },
+    "NVDA": {
+      "shares": 4,
+      "avg_cost": 219.1199,
+      "current_price": 219.1199
     }
   },
-  "total_return_pct": -1.64,
+  "total_return_pct": -1.68,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 20,
+  "today_pnl": -4.21,
+  "today_pnl_pct": -0.04,
+  "total_trades": 23,
   "today_start_value": 9835.77,
   "today_date": "2026-10-21",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-21T13:42:12Z",
+  "last_action": "Aggressive Divergence. We are seeing a massive bifurcation between AI-driven growth reflexivity and broader macro fragility.",
+  "last_updated": "2026-10-21T14:47:12Z",
   "last_session": {
-    "at": "2026-10-21T13:42:12Z",
+    "at": "2026-10-21T14:47:12Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BABA",
+        -4.23
+      ],
+      [
+        "TSLA",
+        3.13
+      ],
+      [
+        "FXI",
+        -1.87
+      ],
+      [
+        "META",
+        1.76
+      ],
+      [
+        "NVDA",
+        1.27
+      ],
+      [
+        "AMZN",
+        -0.69
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is currently trapped in a high-velocity feedback loop centered on NVDA and the Mag 7. While the broader indices look stable, the weakness in FXI and BABA suggests a decoupling from global growth. I am playing both sides of the dislocation: riding the AI momentum with a heavy NVDA position while aggressively building a gold hedge to catch the systemic breakdown when the tech bubble meets the macro reality.",
+    "outlook": "Aggressive Divergence. We are seeing a massive bifurcation between AI-driven growth reflexivity and broader macro fragility.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1494,6 +1514,10 @@
     {
       "timestamp": "2026-10-21T13:42:12Z",
       "value": 9835.77
+    },
+    {
+      "timestamp": "2026-10-21T14:47:12Z",
+      "value": 9831.56
     }
   ]
 }
