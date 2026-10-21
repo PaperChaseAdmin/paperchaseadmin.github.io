@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-21T17:35:00Z",
+  "updated_at": "2026-10-21T23:28:36Z",
   "last_prediction_date": "2026-10-21",
-  "last_settle_date": "2026-10-20",
+  "last_settle_date": "2026-10-21",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 80,
-      "correct": 63,
-      "accuracy_pct": 78.8,
+      "total": 82,
+      "correct": 65,
+      "accuracy_pct": 79.3,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1775,9 +1775,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Bullish mood and strong earnings drive optimism",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.58
         },
         {
           "date": "2026-10-21",
@@ -1785,9 +1786,10 @@
           "prediction": "up",
           "confidence": 75,
           "signal": "Tech sector gains fueled by AI and strong earnings",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.05
         },
         {
           "date": "2026-10-21",
