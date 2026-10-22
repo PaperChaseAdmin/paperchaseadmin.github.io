@@ -1,58 +1,83 @@
 {
   "cash": 513.3,
-  "total_value": 10197.69,
+  "total_value": 10121.17,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 378.13
+      "current_price": 375.99
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 723.145,
+      "current_price": 713.3612,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 770.89
+      "current_price": 766.6199
     },
     "VXUS": {
       "shares": 4,
-      "current_price": 83.68,
+      "current_price": 83.085,
       "avg_cost": 87.4107
     },
     "VEA": {
       "shares": 4,
-      "current_price": 69.835,
+      "current_price": 69.52,
       "avg_cost": 72.9338
     },
     "SCHD": {
       "shares": 2,
       "avg_cost": 34.645,
-      "current_price": 34.575
+      "current_price": 34.805
     }
   },
-  "total_return_pct": 1.98,
+  "total_return_pct": 1.21,
   "total_return_usd": 0.0,
-  "today_pnl": -1.97,
-  "today_pnl_pct": -0.02,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 7,
-  "today_start_value": 10199.66,
-  "today_date": "2026-10-21",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-21T19:29:15Z",
+  "today_start_value": 10121.17,
+  "today_date": "2026-10-22",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-10-22T13:59:08Z",
   "last_session": {
-    "at": "2026-10-21T19:29:15Z",
+    "at": "2026-10-22T13:59:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "VWO",
+        -1.91
+      ],
+      [
+        "QQQ",
+        -1.64
+      ],
+      [
+        "GLD",
+        -1.42
+      ],
+      [
+        "VXUS",
+        -1.11
+      ],
+      [
+        "SCHB",
+        -0.89
+      ],
+      [
+        "VEA",
+        -0.88
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1519,6 +1544,10 @@
     {
       "timestamp": "2026-10-21T19:29:15Z",
       "value": 10197.69
+    },
+    {
+      "timestamp": "2026-10-22T13:59:08Z",
+      "value": 10121.17
     }
   ]
 }
