@@ -413,6 +413,60 @@
         "ticker_chg_pct": 0.47,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 2,
+      "price": 81.04,
+      "total_value": 162.08,
+      "reasoning": "The market is showing signs of a massive rotation out of high-beta tech (META, TSLA, NVDA) and into defensive postures. TLT is up nearly 1% while equities are bleeding. I am betting on a flight to quality as the equity feedback loop turns negative. I am concentrating this bet to capture the volatili",
+      "timestamp": "2026-10-22T13:43:11Z",
+      "market_outlook": "Bearish Equity / Bullish Defensive",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.99,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "NVDA",
+      "shares": 4,
+      "price": 216.96,
+      "total_value": 867.84,
+      "reasoning": "The AI narrative is hitting a reflexive wall. NVDA is down over 2% and the broader tech sector is collapsing. I am cutting this loser to preserve capital and reallocate to the macro trend of rising yields/bond strength.",
+      "timestamp": "2026-10-22T13:43:11Z",
+      "market_outlook": "Bearish Equity / Bullish Defensive",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.14,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "UUP",
+      "shares": 15,
+      "price": 28.9403,
+      "total_value": 434.1,
+      "reasoning": "As equities face a drawdown, the dollar typically acts as the ultimate safe haven. I am increasing my UUP position to hedge against systemic equity risk and capitalize on the strengthening USD during this period of dislocation.",
+      "timestamp": "2026-10-22T13:43:11Z",
+      "market_outlook": "Bearish Equity / Bullish Defensive",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.07,
+        "trigger_news": null
+      }
     }
   ]
 }
