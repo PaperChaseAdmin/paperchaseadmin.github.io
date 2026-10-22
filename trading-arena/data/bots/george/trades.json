@@ -485,6 +485,42 @@
         "ticker_chg_pct": 1.3,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GLD",
+      "shares": 12,
+      "price": 371.375,
+      "total_value": 4456.5,
+      "reasoning": "Gold is bleeding (-2.01%) and fighting the current momentum. I am cutting this loser to free up liquidity for the bond move. I don't hold dead weight when a better macro dislocation is presenting itself in fixed income.",
+      "timestamp": "2026-10-22T16:10:44Z",
+      "market_outlook": "Bearish/Risk-Off",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.01,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "UUP",
+      "shares": 15,
+      "price": 28.925,
+      "total_value": 433.88,
+      "reasoning": "As the equity markets destabilize, the dollar will likely see a reflexive surge. I am adding to my UUP position to hedge against the systemic volatility emerging in the tech sector.",
+      "timestamp": "2026-10-22T16:10:44Z",
+      "market_outlook": "Bearish/Risk-Off",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.0,
+        "trigger_news": null
+      }
     }
   ]
 }
