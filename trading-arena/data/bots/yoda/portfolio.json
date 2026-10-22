@@ -1,59 +1,79 @@
 {
-  "cash": 513.3,
-  "total_value": 10063.15,
+  "cash": 790.36,
+  "total_value": 10046.81,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 374.355
+      "current_price": 373.9598
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 706.19,
+      "current_price": 703.86,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 762.94
+      "current_price": 761.99
     },
     "VXUS": {
       "shares": 4,
-      "current_price": 82.745,
+      "current_price": 82.71,
       "avg_cost": 87.4107
-    },
-    "VEA": {
-      "shares": 4,
-      "current_price": 69.29,
-      "avg_cost": 72.9338
     },
     "SCHD": {
       "shares": 2,
       "avg_cost": 34.645,
-      "current_price": 35.175
+      "current_price": 35.265
     }
   },
-  "total_return_pct": 0.63,
+  "total_return_pct": 0.47,
   "total_return_usd": 0.0,
-  "today_pnl": -58.02,
-  "today_pnl_pct": -0.57,
-  "total_trades": 7,
+  "today_pnl": -74.36,
+  "today_pnl_pct": -0.73,
+  "total_trades": 8,
   "today_start_value": 10121.17,
   "today_date": "2026-10-22",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-22T17:48:38Z",
+  "last_action": "...Yoda style...",
+  "last_updated": "2026-10-22T19:06:38Z",
   "last_session": {
-    "at": "2026-10-22T17:48:38Z",
+    "at": "2026-10-22T19:06:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "QQQ",
+        -2.94
+      ],
+      [
+        "GLD",
+        -2.46
+      ],
+      [
+        "VWO",
+        -2.36
+      ],
+      [
+        "SCHD",
+        1.74
+      ],
+      [
+        "VXUS",
+        -1.55
+      ],
+      [
+        "IVV",
+        -1.45
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "...Yoda style...",
+    "outlook": "...Yoda style...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1535,6 +1555,10 @@
     {
       "timestamp": "2026-10-22T17:48:38Z",
       "value": 10063.15
+    },
+    {
+      "timestamp": "2026-10-22T19:06:38Z",
+      "value": 10046.81
     }
   ]
 }
