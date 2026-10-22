@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-22T17:31:57Z",
+  "updated_at": "2026-10-22T23:28:42Z",
   "last_prediction_date": "2026-10-22",
-  "last_settle_date": "2026-10-21",
+  "last_settle_date": "2026-10-22",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 82,
-      "correct": 65,
-      "accuracy_pct": 79.3,
+      "total": 84,
+      "correct": 67,
+      "accuracy_pct": 79.8,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1807,9 +1807,10 @@
           "prediction": "down",
           "confidence": 70,
           "signal": "Bearish market mood and negative macro indicators",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.21
         },
         {
           "date": "2026-10-22",
@@ -1817,9 +1818,10 @@
           "prediction": "down",
           "confidence": 75,
           "signal": "Tech stocks under pressure due to negative earnings and high volatility",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -2.6
         },
         {
           "date": "2026-10-22",
