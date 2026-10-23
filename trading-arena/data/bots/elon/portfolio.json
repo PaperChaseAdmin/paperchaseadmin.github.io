@@ -1,69 +1,89 @@
 {
-  "cash": 561.35,
-  "total_value": 9479.04,
+  "cash": 629.92,
+  "total_value": 9487.99,
   "positions": {
     "NVDA": {
       "shares": 8,
-      "current_price": 212.32,
+      "current_price": 210.49,
       "avg_cost": 206.5303
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 347.57,
+      "current_price": 350.42,
       "avg_cost": 318.6712
     },
     "COIN": {
       "shares": 5,
       "avg_cost": 147.495,
-      "current_price": 168.485
+      "current_price": 169.01
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 645.68
-    },
-    "IONQ": {
-      "shares": 15,
-      "current_price": 31.12,
-      "avg_cost": 38.5625
+      "current_price": 638.555
     },
     "AMD": {
       "shares": 2,
       "avg_cost": 543.86,
-      "current_price": 507.635
-    },
-    "MSTR": {
-      "shares": 5,
-      "current_price": 145.98,
-      "avg_cost": 163.279
+      "current_price": 511.69
     },
     "PLTR": {
+      "shares": 4,
+      "current_price": 193.475,
+      "avg_cost": 190.4125
+    },
+    "TSLA": {
       "shares": 2,
-      "avg_cost": 187.35,
-      "current_price": 195.46
+      "avg_cost": 369.74,
+      "current_price": 369.74
     }
   },
-  "total_return_pct": -5.21,
+  "total_return_pct": -5.12,
   "total_return_usd": 0.0,
-  "today_pnl": -101.53,
-  "today_pnl_pct": -1.06,
-  "total_trades": 39,
-  "today_start_value": 9580.57,
-  "today_date": "2026-10-22",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-22T19:55:27Z",
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
+  "total_trades": 43,
+  "today_start_value": 9487.98,
+  "today_date": "2026-10-23",
+  "last_action": "Aggressive but selective. Tech is seeing some intraday pullbacks, which I view as a gift for accumulation.",
+  "last_updated": "2026-10-23T13:32:51Z",
   "last_session": {
-    "at": "2026-10-22T19:55:27Z",
+    "at": "2026-10-23T13:32:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "SOFI",
+        -2.47
+      ],
+      [
+        "RIVN",
+        -1.66
+      ],
+      [
+        "META",
+        -1.57
+      ],
+      [
+        "TSLA",
+        -1.45
+      ],
+      [
+        "PLTR",
+        -1.23
+      ],
+      [
+        "IONQ",
+        -1.19
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio is currently dragging due to IONQ and MSTR. I am aggressively pruning the losers to free up liquidity. I'm focusing on high-conviction AI and EV plays. Even with the slight dip in TSLA and PLTR, the momentum remains intact for the long-term disruption thesis.",
+    "outlook": "Aggressive but selective. Tech is seeing some intraday pullbacks, which I view as a gift for accumulation.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1553,6 +1573,10 @@
     {
       "timestamp": "2026-10-22T19:55:27Z",
       "value": 9479.04
+    },
+    {
+      "timestamp": "2026-10-23T13:32:51Z",
+      "value": 9487.99
     }
   ]
 }

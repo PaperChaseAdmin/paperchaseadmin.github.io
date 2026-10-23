@@ -575,6 +575,60 @@
         "ticker_chg_pct": 0.38,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "BAC",
+      "shares": 5,
+      "price": 50.415,
+      "total_value": 252.07,
+      "reasoning": "Cutting individual bank exposure - deeply uncomfortable with single-name financial risk. Position down 58.7%, inconsistent with data-dependent macro approach.",
+      "timestamp": "2026-10-23T14:00:59Z",
+      "market_outlook": "Financial sector selling off (XLF -0.7%, major banks -1.3% to -1.6%) while real estate rallies (XLRE +1.4%, VNQ +1.0%). Mixed signals without VIX/Fear&Greed data. Maintaining defensive posture with bias toward duration exposure.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.29,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "SHY",
+      "shares": 3,
+      "price": 81.5323,
+      "total_value": 244.6,
+      "reasoning": "Trimming SHY to bring position under 25% portfolio limit (currently 25.1%). Taking modest loss on short-term Treasury ETF.",
+      "timestamp": "2026-10-23T14:00:59Z",
+      "market_outlook": "Financial sector selling off (XLF -0.7%, major banks -1.3% to -1.6%) while real estate rallies (XLRE +1.4%, VNQ +1.0%). Mixed signals without VIX/Fear&Greed data. Maintaining defensive posture with bias toward duration exposure.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.02,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 5,
+      "price": 81.755,
+      "total_value": 408.77,
+      "reasoning": "Adding long-duration Treasuries as defensive hedge. Financial sector weakness suggests rate cut expectations; TLT benefits from falling yields. Position currently 12.6% of portfolio, well under 25% limit.",
+      "timestamp": "2026-10-23T14:00:59Z",
+      "market_outlook": "Financial sector selling off (XLF -0.7%, major banks -1.3% to -1.6%) while real estate rallies (XLRE +1.4%, VNQ +1.0%). Mixed signals without VIX/Fear&Greed data. Maintaining defensive posture with bias toward duration exposure.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.0,
+        "trigger_news": null
+      }
     }
   ]
 }
