@@ -1,84 +1,99 @@
 {
-  "cash": 604.42,
-  "total_value": 9166.33,
+  "cash": 648.22,
+  "total_value": 9191.35,
   "positions": {
     "MSTR": {
       "shares": 24,
-      "current_price": 145.98,
+      "current_price": 146.035,
       "avg_cost": 117.6329
     },
     "COIN": {
       "shares": 18,
-      "current_price": 168.485,
+      "current_price": 169.01,
       "avg_cost": 161.2922
     },
     "CLSK": {
       "shares": 41,
-      "current_price": 8.125,
+      "current_price": 8.17,
       "avg_cost": 13.0222
     },
     "CIFR": {
       "shares": 10,
       "avg_cost": 17.255,
-      "current_price": 8.1843
+      "current_price": 8.33
     },
     "MARA": {
-      "shares": 40,
-      "current_price": 7.2312,
-      "avg_cost": 11.3887
-    },
-    "BTBT": {
-      "shares": 70,
-      "current_price": 0.9042,
-      "avg_cost": 1.5286
+      "shares": 55,
+      "current_price": 7.305,
+      "avg_cost": 10.275
     },
     "HOOD": {
       "shares": 5,
       "avg_cost": 97.32,
-      "current_price": 96.53
+      "current_price": 97.26
     },
     "WULF": {
       "shares": 20,
       "avg_cost": 16.4,
-      "current_price": 11.25
+      "current_price": 11.3697
     },
     "BITO": {
       "shares": 40,
       "avg_cost": 10.385,
-      "current_price": 10.865
-    },
-    "RIOT": {
-      "shares": 7,
-      "current_price": 12.915,
-      "avg_cost": 24.3271
+      "current_price": 10.9199
     },
     "IREN": {
       "shares": 1,
       "avg_cost": 48.94,
-      "current_price": 25.495
+      "current_price": 25.575
     }
   },
-  "total_return_pct": -8.34,
+  "total_return_pct": -8.09,
   "total_return_usd": 0.0,
-  "today_pnl": -69.2,
-  "today_pnl_pct": -0.75,
-  "total_trades": 26,
-  "today_start_value": 9235.53,
-  "today_date": "2026-10-22",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-22T20:25:52Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 29,
+  "today_start_value": 9191.35,
+  "today_date": "2026-10-23",
+  "last_action": "Bullish on the underlying protocol, cautious on inefficient legacy miners.",
+  "last_updated": "2026-10-23T14:03:12Z",
   "last_session": {
-    "at": "2026-10-22T20:25:52Z",
+    "at": "2026-10-23T14:03:12Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MARA",
+        0.9
+      ],
+      [
+        "PYPL",
+        -0.86
+      ],
+      [
+        "NVDA",
+        -0.73
+      ],
+      [
+        "HUT",
+        -0.72
+      ],
+      [
+        "BTBT",
+        -0.66
+      ],
+      [
+        "WULF",
+        0.66
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The traditional markets are noise. I am focused on the accumulation of Bitcoin through proxy assets. While some miners are struggling, the core thesis of MSTR and COIN remains unshakable. I am pruning the dead weight (RIOT, BTBT) to double down on the leaders of the decentralized future.",
+    "outlook": "Bullish on the underlying protocol, cautious on inefficient legacy miners.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1568,6 +1583,10 @@
     {
       "timestamp": "2026-10-22T20:25:52Z",
       "value": 9166.33
+    },
+    {
+      "timestamp": "2026-10-23T14:03:12Z",
+      "value": 9191.35
     }
   ]
 }
