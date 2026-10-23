@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-23T17:22:34Z",
+  "updated_at": "2026-10-23T23:16:00Z",
   "last_prediction_date": "2026-10-23",
-  "last_settle_date": "2026-10-22",
+  "last_settle_date": "2026-10-23",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 84,
-      "correct": 67,
-      "accuracy_pct": 79.8,
+      "total": 86,
+      "correct": 69,
+      "accuracy_pct": 80.2,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1839,9 +1839,10 @@
           "prediction": "down",
           "confidence": 70,
           "signal": "Bearish market mood and negative macro indicators",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -0.52
         },
         {
           "date": "2026-10-23",
@@ -1859,9 +1860,10 @@
           "prediction": "down",
           "confidence": 75,
           "signal": "Significant drop in consumer sentiment and broader market weakness",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "down",
+          "correct": true,
+          "settled": true,
+          "change_pct": -1.23
         }
       ]
     },
