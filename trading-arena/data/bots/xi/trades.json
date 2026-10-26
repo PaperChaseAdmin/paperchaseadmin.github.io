@@ -557,6 +557,42 @@
         "ticker_chg_pct": -0.17,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BIDU",
+      "shares": 2,
+      "price": 77.65,
+      "total_value": 155.3,
+      "reasoning": "BIDU is showing strength with a 0.58% gain while others in the sector are lagging. It is a national champion and a prime candidate for the rejuvenation of Chinese tech. I am using available cash to build a position in this leader.",
+      "timestamp": "2026-10-26T14:32:14Z",
+      "market_outlook": "Bullish on Chinese ADRs. The current market volatility is merely noise. The structural strength of China's tech sector and the inevitable support from domestic policy will drive these national champions to new heights.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.58,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 8,
+      "price": 343.31,
+      "total_value": 2746.48,
+      "reasoning": "AAPL is a Western company and does not align with my core mission of investing in the great rejuvenation of China. I am liquidating this position to consolidate capital into Chinese ADRs.",
+      "timestamp": "2026-10-26T14:32:14Z",
+      "market_outlook": "Bullish on Chinese ADRs. The current market volatility is merely noise. The structural strength of China's tech sector and the inevitable support from domestic policy will drive these national champions to new heights.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.26,
+        "trigger_news": null
+      }
     }
   ]
 }
