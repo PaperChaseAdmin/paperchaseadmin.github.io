@@ -1,44 +1,34 @@
 {
-  "cash": 1854.78,
-  "total_value": 9792.07,
+  "cash": 2058.66,
+  "total_value": 9809.01,
   "positions": {
     "TLT": {
-      "shares": 54,
-      "current_price": 81.765,
-      "avg_cost": 82.2318
+      "shares": 55,
+      "current_price": 81.695,
+      "avg_cost": 82.222
     },
     "UUP": {
       "shares": 36,
-      "current_price": 29.025,
+      "current_price": 29.015,
       "avg_cost": 28.9755
     },
-    "TSLA": {
-      "shares": 1,
-      "avg_cost": 386.78,
-      "current_price": 394.24
-    },
     "GLD": {
-      "shares": 1,
-      "avg_cost": 367.32,
-      "current_price": 366.29
-    },
-    "AAPL": {
-      "shares": 5,
-      "avg_cost": 343.31,
-      "current_price": 343.31
+      "shares": 6,
+      "current_price": 368.765,
+      "avg_cost": 368.5242
     }
   },
-  "total_return_pct": -2.08,
+  "total_return_pct": -1.91,
   "total_return_usd": 0.0,
-  "today_pnl": 10.82,
-  "today_pnl_pct": 0.11,
-  "total_trades": 36,
+  "today_pnl": 27.76,
+  "today_pnl_pct": 0.28,
+  "total_trades": 40,
   "today_start_value": 9781.25,
   "today_date": "2026-10-26",
-  "last_action": "...",
-  "last_updated": "2026-10-26T14:12:16Z",
+  "last_action": "Cautiously Bearish / Macro Divergence",
+  "last_updated": "2026-10-26T15:15:16Z",
   "last_session": {
-    "at": "2026-10-26T14:12:16Z",
+    "at": "2026-10-26T15:15:16Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,34 +36,34 @@
     "top_movers": [
       [
         "TSLA",
-        5.91
-      ],
-      [
-        "META",
-        -1.77
+        5.96
       ],
       [
         "NVDA",
-        1.76
+        3.14
+      ],
+      [
+        "QQQ",
+        1.42
       ],
       [
         "BAC",
-        1.3
+        1.09
       ],
       [
-        "EEM",
-        -1.14
+        "SPY",
+        0.96
       ],
       [
-        "XLE",
-        0.74
+        "BABA",
+        0.89
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
-    "trades_made": 1
+    "ai_analysis": "The market is currently trapped in a positive feedback loop driven by AI-centric momentum (NVDA, TSLA, QQQ). While the price action looks strong, it is decoupled from systemic risk indicators. I am positioning for the 'snap-back'\u2014the moment when the greed-driven rally hits a liquidity wall and triggers a massive rotation into safe havens. I am liquidating my 'retail-style' small positions to fund heavy, concentrated bets in Gold and Long-Duration Treasuries.",
+    "outlook": "Cautiously Bearish / Macro Divergence",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1583,6 +1573,10 @@
     {
       "timestamp": "2026-10-26T14:12:16Z",
       "value": 9792.07
+    },
+    {
+      "timestamp": "2026-10-26T15:15:16Z",
+      "value": 9809.01
     }
   ]
 }
