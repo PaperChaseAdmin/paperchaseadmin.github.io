@@ -1,39 +1,44 @@
 {
-  "cash": 3571.33,
-  "total_value": 9781.25,
+  "cash": 1854.78,
+  "total_value": 9792.07,
   "positions": {
     "TLT": {
       "shares": 54,
-      "current_price": 81.695,
+      "current_price": 81.765,
       "avg_cost": 82.2318
     },
     "UUP": {
       "shares": 36,
-      "current_price": 29.008,
+      "current_price": 29.025,
       "avg_cost": 28.9755
     },
     "TSLA": {
       "shares": 1,
       "avg_cost": 386.78,
-      "current_price": 386.78
+      "current_price": 394.24
     },
     "GLD": {
       "shares": 1,
       "avg_cost": 367.32,
-      "current_price": 367.32
+      "current_price": 366.29
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 343.31,
+      "current_price": 343.31
     }
   },
-  "total_return_pct": -2.19,
+  "total_return_pct": -2.08,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 35,
+  "today_pnl": 10.82,
+  "today_pnl_pct": 0.11,
+  "total_trades": 36,
   "today_start_value": 9781.25,
   "today_date": "2026-10-26",
-  "last_action": "Cautiously aggressive. While tech is ripping, the weakness in EEM suggests a fragmentation in global liquidity. I am pivoting from consumer tech into momentum leaders and systemic hedges.",
-  "last_updated": "2026-10-26T13:40:56Z",
+  "last_action": "...",
+  "last_updated": "2026-10-26T14:12:16Z",
   "last_session": {
-    "at": "2026-10-26T13:40:56Z",
+    "at": "2026-10-26T14:12:16Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -41,34 +46,34 @@
     "top_movers": [
       [
         "TSLA",
-        4.09
-      ],
-      [
-        "NVDA",
-        1.38
-      ],
-      [
-        "EEM",
-        -1.0
+        5.91
       ],
       [
         "META",
-        -0.91
+        -1.77
+      ],
+      [
+        "NVDA",
+        1.76
       ],
       [
         "BAC",
-        0.79
+        1.3
       ],
       [
-        "FXI",
-        0.68
+        "EEM",
+        -1.14
+      ],
+      [
+        "XLE",
+        0.74
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The market is currently driven by a narrow band of momentum stocks (TSLA, NVDA). This is a classic reflexive loop. However, the weakness in EEM and META suggests the 'everything rally' is fracturing. I am liquidating my underperforming AAPL position to concentrate capital into the TSLA momentum trade and increasing my gold exposure to prepare for the inevitable volatility spike when this concentration breaks.",
-    "outlook": "Cautiously aggressive. While tech is ripping, the weakness in EEM suggests a fragmentation in global liquidity. I am pivoting from consumer tech into momentum leaders and systemic hedges.",
-    "trades_made": 3
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1574,6 +1579,10 @@
     {
       "timestamp": "2026-10-26T13:40:56Z",
       "value": 9781.25
+    },
+    {
+      "timestamp": "2026-10-26T14:12:16Z",
+      "value": 9792.07
     }
   ]
 }

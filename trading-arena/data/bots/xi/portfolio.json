@@ -1,69 +1,94 @@
 {
-  "cash": 663.97,
-  "total_value": 8815.84,
+  "cash": 3255.15,
+  "total_value": 8793.7,
   "positions": {
     "BABA": {
       "shares": 26,
-      "current_price": 100.0,
+      "current_price": 99.8,
       "avg_cost": 100.8292
     },
     "JD": {
       "shares": 35,
-      "current_price": 25.335,
+      "current_price": 25.235,
       "avg_cost": 27.2986
     },
     "NIO": {
       "shares": 50,
       "avg_cost": 3.6112,
-      "current_price": 3.2701
+      "current_price": 3.275
     },
     "NTES": {
       "shares": 9,
       "avg_cost": 118.155,
-      "current_price": 118.145
+      "current_price": 117.705
     },
     "XPEV": {
       "shares": 7,
       "avg_cost": 9.475,
-      "current_price": 9.0705
+      "current_price": 9.14
     },
     "PDD": {
       "shares": 5,
       "avg_cost": 77.42,
-      "current_price": 78.64
+      "current_price": 78.35
     },
     "LI": {
       "shares": 20,
       "avg_cost": 11.39,
-      "current_price": 11.27
+      "current_price": 11.32
     },
-    "AAPL": {
-      "shares": 8,
-      "current_price": 344.53,
-      "avg_cost": 341.9119
+    "BIDU": {
+      "shares": 2,
+      "avg_cost": 77.65,
+      "current_price": 77.65
     }
   },
-  "total_return_pct": -11.84,
+  "total_return_pct": -12.06,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 31,
+  "today_pnl": -22.14,
+  "today_pnl_pct": -0.25,
+  "total_trades": 33,
   "today_start_value": 8815.84,
   "today_date": "2026-10-26",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-26T13:58:04Z",
+  "last_action": "Bullish on Chinese ADRs. The current market volatility is merely noise. The structural strength of China's tech sector and the inevitable support from domestic policy will drive these national champio",
+  "last_updated": "2026-10-26T14:32:14Z",
   "last_session": {
-    "at": "2026-10-26T13:58:04Z",
+    "at": "2026-10-26T14:32:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IQ",
+        -3.27
+      ],
+      [
+        "TIGR",
+        -1.11
+      ],
+      [
+        "BILI",
+        -0.93
+      ],
+      [
+        "PDD",
+        -0.9
+      ],
+      [
+        "XPEV",
+        -0.76
+      ],
+      [
+        "NTES",
+        -0.76
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The watchlist shows a general pullback in several EV and tech names (PDD, XPEV, NIO), which I view as a buying opportunity rather than a reason for fear. I am rotating out of non-aligned Western assets like AAPL to maximize my exposure to the Chinese recovery. BIDU's relative strength suggests it is leading the next leg up.",
+    "outlook": "Bullish on Chinese ADRs. The current market volatility is merely noise. The structural strength of China's tech sector and the inevitable support from domestic policy will drive these national champions to new heights.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1569,6 +1594,10 @@
     {
       "timestamp": "2026-10-26T13:58:04Z",
       "value": 8815.84
+    },
+    {
+      "timestamp": "2026-10-26T14:32:14Z",
+      "value": 8793.7
     }
   ]
 }
