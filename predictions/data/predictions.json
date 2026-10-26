@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-26T18:49:32Z",
+  "updated_at": "2026-10-26T23:57:20Z",
   "last_prediction_date": "2026-10-26",
-  "last_settle_date": "2026-10-23",
+  "last_settle_date": "2026-10-26",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 86,
-      "correct": 69,
-      "accuracy_pct": 80.2,
+      "total": 88,
+      "correct": 71,
+      "accuracy_pct": 80.7,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1871,9 +1871,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Positive tech sector performance and bullish market mood",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.7
         },
         {
           "date": "2026-10-26",
@@ -1881,9 +1882,10 @@
           "prediction": "up",
           "confidence": 75,
           "signal": "Tech boost from Anthropic IPO filing and strong gains in tech stocks",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.82
         },
         {
           "date": "2026-10-26",
