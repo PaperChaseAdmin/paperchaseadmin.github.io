@@ -413,6 +413,60 @@
         "ticker_chg_pct": 1.02,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 15,
+      "price": 81.695,
+      "total_value": 1225.42,
+      "reasoning": "Increasing long-term treasury exposure as a hedge against recessionary risks. TLT is showing positive momentum today (+0.47%).",
+      "timestamp": "2026-10-26T13:40:15Z",
+      "market_outlook": "Neutral to Cautious. Transitioning toward a defensive posture as emerging markets show weakness and bond yields stabilize.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.47,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "EEM",
+      "shares": 1,
+      "price": 61.31,
+      "total_value": 61.31,
+      "reasoning": "Cutting exposure to emerging markets due to negative momentum (-1.0%) and lack of clear macro tailwinds in the current cycle.",
+      "timestamp": "2026-10-26T13:40:15Z",
+      "market_outlook": "Neutral to Cautious. Transitioning toward a defensive posture as emerging markets show weakness and bond yields stabilize.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.0,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IAU",
+      "shares": 2,
+      "price": 75.26,
+      "total_value": 150.52,
+      "reasoning": "Diversifying precious metals exposure through a lower-cost gold ETF to balance the GLD position.",
+      "timestamp": "2026-10-26T13:40:15Z",
+      "market_outlook": "Neutral to Cautious. Transitioning toward a defensive posture as emerging markets show weakness and bond yields stabilize.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.25,
+        "trigger_news": null
+      }
     }
   ]
 }

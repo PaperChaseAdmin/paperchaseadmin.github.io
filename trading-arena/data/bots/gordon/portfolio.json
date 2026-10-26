@@ -1,59 +1,84 @@
 {
-  "cash": 1418.9,
-  "total_value": 9285.09,
+  "cash": 4920.04,
+  "total_value": 9258.9,
   "positions": {
-    "DIS": {
-      "shares": 15,
-      "avg_cost": 104.425,
-      "current_price": 112.68
-    },
     "HPQ": {
       "shares": 8,
       "avg_cost": 31.195,
-      "current_price": 33.145
-    },
-    "AAPL": {
-      "shares": 9,
-      "current_price": 347.44,
-      "avg_cost": 345.8228
+      "current_price": 34.14
     },
     "NKE": {
       "shares": 15,
       "avg_cost": 37.65,
-      "current_price": 37.695
+      "current_price": 37.43
     },
     "INTC": {
       "shares": 15,
       "avg_cost": 85.965,
-      "current_price": 87.54
+      "current_price": 87.27
     },
     "GM": {
       "shares": 12,
       "avg_cost": 75.52,
-      "current_price": 75.445
+      "current_price": 76.5384
+    },
+    "PYPL": {
+      "shares": 15,
+      "avg_cost": 56.66,
+      "current_price": 56.66
+    },
+    "VFC": {
+      "shares": 25,
+      "avg_cost": 17.075,
+      "current_price": 17.075
     }
   },
-  "total_return_pct": -7.15,
+  "total_return_pct": -7.41,
   "total_return_usd": 0.0,
-  "today_pnl": -1.13,
-  "today_pnl_pct": -0.01,
-  "total_trades": 42,
-  "today_start_value": 9286.22,
-  "today_date": "2026-10-23",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-23T16:31:15Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 46,
+  "today_start_value": 9258.9,
+  "today_date": "2026-10-26",
+  "last_action": "Opportunistic and predatory. The market is providing enough noise to hide the real value being eroded by mediocre management teams.",
+  "last_updated": "2026-10-26T13:46:54Z",
   "last_session": {
-    "at": "2026-10-23T16:31:15Z",
+    "at": "2026-10-26T13:46:54Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NOK",
+        2.7
+      ],
+      [
+        "CMCSA",
+        -2.2
+      ],
+      [
+        "HPQ",
+        1.68
+      ],
+      [
+        "PYPL",
+        -1.37
+      ],
+      [
+        "VFC",
+        -1.22
+      ],
+      [
+        "GM",
+        0.79
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The portfolio is currently too heavy on 'safe' tech and consumer staples. I am pivoting toward companies that are being punished by the market\u2014companies that are structurally broken but possess immense underlying asset value. I'm cutting the slow-movers like AAPL to hunt for the real meat: undervalued fintech and consumer brands that are begging for a corporate overhaul.",
+    "outlook": "Opportunistic and predatory. The market is providing enough noise to hide the real value being eroded by mediocre management teams.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1555,6 +1580,10 @@
     {
       "timestamp": "2026-10-23T16:31:15Z",
       "value": 9285.09
+    },
+    {
+      "timestamp": "2026-10-26T13:46:54Z",
+      "value": 9258.9
     }
   ]
 }
