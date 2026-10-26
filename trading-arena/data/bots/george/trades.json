@@ -575,6 +575,60 @@
         "ticker_chg_pct": 0.67,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 11,
+      "price": 344.53,
+      "total_value": 3789.83,
+      "reasoning": "AAPL is a laggard in this momentum environment. I am cutting this dead weight to free up capital for high-conviction macro plays.",
+      "timestamp": "2026-10-26T13:40:56Z",
+      "market_outlook": "Cautiously aggressive. While tech is ripping, the weakness in EEM suggests a fragmentation in global liquidity. I am pivoting from consumer tech into momentum leaders and systemic hedges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.2,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TSLA",
+      "shares": 1,
+      "price": 386.78,
+      "total_value": 386.78,
+      "reasoning": "TSLA is showing massive relative strength with a 4% move. I am riding the momentum feedback loop while the trend is clearly established.",
+      "timestamp": "2026-10-26T13:40:56Z",
+      "market_outlook": "Cautiously aggressive. While tech is ripping, the weakness in EEM suggests a fragmentation in global liquidity. I am pivoting from consumer tech into momentum leaders and systemic hedges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.09,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GLD",
+      "shares": 1,
+      "price": 367.32,
+      "total_value": 367.32,
+      "reasoning": "I am building a hedge. The divergence between US tech strength and emerging market weakness (EEM -1.0%) suggests a systemic rotation is brewing. I need gold to protect against the eventual dislocation.",
+      "timestamp": "2026-10-26T13:40:56Z",
+      "market_outlook": "Cautiously aggressive. While tech is ripping, the weakness in EEM suggests a fragmentation in global liquidity. I am pivoting from consumer tech into momentum leaders and systemic hedges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.21,
+        "trigger_news": null
+      }
     }
   ]
 }

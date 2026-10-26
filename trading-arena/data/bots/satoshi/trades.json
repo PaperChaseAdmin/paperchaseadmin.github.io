@@ -521,6 +521,42 @@
         "ticker_chg_pct": 0.9,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "CIFR",
+      "shares": 10,
+      "price": 7.67,
+      "total_value": 76.7,
+      "reasoning": "Cutting the dead weight. CIFR has been underperforming and dragging down the portfolio. I will reallocate this capital into higher conviction assets.",
+      "timestamp": "2026-10-26T13:56:43Z",
+      "market_outlook": "Bearish short-term volatility, Bullish long-term decentralization.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.93,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "RIOT",
+      "shares": 15,
+      "price": 12.125,
+      "total_value": 181.88,
+      "reasoning": "Diversifying my mining exposure. RIOT is down 2.47% today, providing a better entry point than my current heavy positions in CLSK and MARA. The revolution needs infrastructure.",
+      "timestamp": "2026-10-26T13:56:43Z",
+      "market_outlook": "Bearish short-term volatility, Bullish long-term decentralization.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.47,
+        "trigger_news": null
+      }
     }
   ]
 }

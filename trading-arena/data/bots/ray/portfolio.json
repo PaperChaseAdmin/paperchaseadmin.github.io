@@ -1,6 +1,6 @@
 {
-  "cash": 2368.69,
-  "total_value": 10661.69,
+  "cash": 1054.06,
+  "total_value": 10629.53,
   "positions": {
     "TIPS": {
       "shares": 31867,
@@ -14,66 +14,91 @@
     },
     "PDBC": {
       "shares": 111,
-      "current_price": 20.305,
+      "current_price": 20.13,
       "avg_cost": 16.5267
     },
     "FXI": {
       "shares": 5,
       "avg_cost": 33.365,
-      "current_price": 32.38
+      "current_price": 32.555
     },
     "GSG": {
       "shares": 30,
-      "current_price": 37.605,
+      "current_price": 37.32,
       "avg_cost": 32.0725
     },
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 366.93
+      "current_price": 367.32
     },
     "AAPL": {
       "shares": 3,
       "avg_cost": 310.135,
-      "current_price": 347.44
+      "current_price": 344.53
     },
     "TLT": {
-      "shares": 10,
-      "avg_cost": 81.955,
-      "current_price": 81.4999
-    },
-    "EEM": {
-      "shares": 1,
-      "avg_cost": 66.9,
-      "current_price": 62.02
+      "shares": 25,
+      "current_price": 81.695,
+      "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 91.075
+      "current_price": 91.17
+    },
+    "IAU": {
+      "shares": 2,
+      "avg_cost": 75.26,
+      "current_price": 75.26
     }
   },
-  "total_return_pct": 6.62,
+  "total_return_pct": 6.3,
   "total_return_usd": 0.0,
-  "today_pnl": 4.27,
-  "today_pnl_pct": 0.04,
-  "total_trades": 23,
-  "today_start_value": 10657.42,
-  "today_date": "2026-10-23",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-23T16:21:24Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 26,
+  "today_start_value": 10629.53,
+  "today_date": "2026-10-26",
+  "last_action": "Neutral to Cautious. Transitioning toward a defensive posture as emerging markets show weakness and bond yields stabilize.",
+  "last_updated": "2026-10-26T13:40:15Z",
   "last_session": {
-    "at": "2026-10-23T16:21:24Z",
+    "at": "2026-10-26T13:40:15Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "VWO",
+        -1.16
+      ],
+      [
+        "EEM",
+        -1.0
+      ],
+      [
+        "GSG",
+        -0.99
+      ],
+      [
+        "PDBC",
+        -0.93
+      ],
+      [
+        "FXI",
+        0.68
+      ],
+      [
+        "TLT",
+        0.47
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is exhibiting mixed signals. While equities like FXI show slight strength, the weakness in VWO and EEM suggests capital is rotating out of riskier growth assets. I am rebalancing my All Weather portfolio by increasing my gold and long-term bond weightings to protect against volatility and potential deflationary shocks, while trimming underperforming emerging market positions.",
+    "outlook": "Neutral to Cautious. Transitioning toward a defensive posture as emerging markets show weakness and bond yields stabilize.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1575,6 +1600,10 @@
     {
       "timestamp": "2026-10-23T16:21:24Z",
       "value": 10661.69
+    },
+    {
+      "timestamp": "2026-10-26T13:40:15Z",
+      "value": 10629.53
     }
   ]
 }
