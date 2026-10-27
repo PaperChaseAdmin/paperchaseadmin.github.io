@@ -1,36 +1,31 @@
 {
-  "cash": 1216.78,
-  "total_value": 9911.73,
+  "cash": 1690.73,
+  "total_value": 9917.02,
   "positions": {
     "MA": {
       "shares": 4,
-      "current_price": 614.015,
+      "current_price": 611.515,
       "avg_cost": 539.4013
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 100.055
+      "current_price": 100.23
     },
     "JPM": {
       "shares": 5,
-      "current_price": 334.77,
+      "current_price": 336.83,
       "avg_cost": 348.2024
-    },
-    "C": {
-      "shares": 4,
-      "avg_cost": 131.12,
-      "current_price": 121.37
     },
     "PGR": {
       "shares": 5,
       "avg_cost": 209.88,
-      "current_price": 229.17
+      "current_price": 228.3
     },
     "V": {
       "shares": 2,
       "avg_cost": 366.48,
-      "current_price": 403.91
+      "current_price": 402.68
     },
     "BRK-B": {
       "shares": 1,
@@ -40,45 +35,70 @@
     "TRV": {
       "shares": 1,
       "avg_cost": 380.16,
-      "current_price": 399.42
-    },
-    "MS": {
-      "shares": 1,
-      "avg_cost": 207.58,
-      "current_price": 184.4146
+      "current_price": 400.15
     },
     "AXP": {
       "shares": 1,
       "avg_cost": 306.4804,
-      "current_price": 314.91
+      "current_price": 316.09
     },
     "PRU": {
       "shares": 5,
       "avg_cost": 115.965,
-      "current_price": 115.9
+      "current_price": 116.225
+    },
+    "BAC": {
+      "shares": 4,
+      "avg_cost": 51.01,
+      "current_price": 51.01
     }
   },
-  "total_return_pct": -0.88,
+  "total_return_pct": -0.83,
   "total_return_usd": 0.0,
-  "today_pnl": -22.0,
-  "today_pnl_pct": -0.22,
-  "total_trades": 25,
-  "today_start_value": 9933.73,
-  "today_date": "2026-10-26",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-26T19:50:06Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 28,
+  "today_start_value": 9917.02,
+  "today_date": "2026-10-27",
+  "last_action": "Bullish on Financials",
+  "last_updated": "2026-10-27T13:44:30Z",
   "last_session": {
-    "at": "2026-10-26T19:50:06Z",
+    "at": "2026-10-27T13:44:30Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MS",
+        2.33
+      ],
+      [
+        "GS",
+        2.08
+      ],
+      [
+        "C",
+        1.35
+      ],
+      [
+        "BAC",
+        1.03
+      ],
+      [
+        "JPM",
+        0.85
+      ],
+      [
+        "WFC",
+        0.77
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The banking sector is showing synchronized strength today, with GS, MS, and C all posting positive moves. This suggests a rotation back into core financial institutions. I am trimming my weaker positions in Citigroup to fund more aggressive entries into Goldman Sachs and Bank of America. The fundamentals of the American banking system remain the bedrock of the economy, and I intend to capitalize on this momentum.",
+    "outlook": "Bullish on Financials",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1608,6 +1628,10 @@
     {
       "timestamp": "2026-10-26T19:50:06Z",
       "value": 9911.73
+    },
+    {
+      "timestamp": "2026-10-27T13:44:30Z",
+      "value": 9917.02
     }
   ]
 }
