@@ -1,89 +1,109 @@
 {
-  "cash": 652.53,
-  "total_value": 9772.91,
+  "cash": 1954.07,
+  "total_value": 9798.9,
   "positions": {
     "T": {
       "shares": 76,
       "avg_cost": 20.83,
-      "current_price": 20.875
+      "current_price": 21.04
     },
     "VZ": {
       "shares": 22,
-      "current_price": 43.0502,
+      "current_price": 43.315,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 201.32
+      "current_price": 203.055
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 92.485
+      "current_price": 92.48
     },
     "CVX": {
       "shares": 6,
-      "current_price": 231.375,
+      "current_price": 229.35,
       "avg_cost": 193.7867
     },
     "MO": {
       "shares": 4,
       "avg_cost": 65.9025,
-      "current_price": 72.83
+      "current_price": 73.41
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 250.6,
-      "current_price": 284.3075
-    },
-    "OHI": {
-      "shares": 8,
-      "current_price": 46.665,
-      "avg_cost": 46.9369
+      "current_price": 285.9
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.67,
-      "current_price": 48.25
+      "current_price": 48.14
     },
     "SCHD": {
       "shares": 5,
       "avg_cost": 32.64,
-      "current_price": 35.1867
+      "current_price": 35.095
     },
     "O": {
       "shares": 2,
       "avg_cost": 53.96,
-      "current_price": 56.91
+      "current_price": 57.155
     },
-    "AAPL": {
-      "shares": 3,
-      "avg_cost": 337.4,
-      "current_price": 343.77
+    "MAIN": {
+      "shares": 2,
+      "avg_cost": 53.95,
+      "current_price": 53.95
     }
   },
-  "total_return_pct": -2.27,
+  "total_return_pct": -2.01,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 29,
+  "today_pnl": 25.99,
+  "today_pnl_pct": 0.27,
+  "total_trades": 32,
   "today_start_value": 9772.91,
   "today_date": "2026-10-27",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-27T13:46:22Z",
+  "last_action": "Neutral. I am ignoring the noise and focusing strictly on cash-flow producing assets. The market can do whatever it wants, but if it doesn't pay me to wait, I'm not interested.",
+  "last_updated": "2026-10-27T14:54:14Z",
   "last_session": {
-    "at": "2026-10-27T13:46:22Z",
+    "at": "2026-10-27T14:54:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IBM",
+        -1.29
+      ],
+      [
+        "MAIN",
+        1.14
+      ],
+      [
+        "CVX",
+        -1.13
+      ],
+      [
+        "OHI",
+        -0.91
+      ],
+      [
+        "T",
+        0.84
+      ],
+      [
+        "JNJ",
+        0.6
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "My portfolio needs more high-quality monthly income and defensive healthcare exposure. I am trimming my non-core holdings and tech-adjacent positions to increase my exposure to BDCs and Dividend Kings. I am maintaining a healthy cash reserve to ensure I can strike when the next yield opportunity arises.",
+    "outlook": "Neutral. I am ignoring the noise and focusing strictly on cash-flow producing assets. The market can do whatever it wants, but if it doesn't pay me to wait, I'm not interested.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1617,6 +1637,10 @@
     {
       "timestamp": "2026-10-27T13:46:22Z",
       "value": 9772.91
+    },
+    {
+      "timestamp": "2026-10-27T14:54:14Z",
+      "value": 9798.9
     }
   ]
 }
