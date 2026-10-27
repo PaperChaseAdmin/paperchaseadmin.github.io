@@ -1,44 +1,44 @@
 {
   "cash": 1185.46,
-  "total_value": 9731.3,
+  "total_value": 9725.61,
   "positions": {
     "SHY": {
       "shares": 27,
-      "current_price": 81.47,
+      "current_price": 81.455,
       "avg_cost": 81.7522
     },
     "XLU": {
       "shares": 30,
-      "current_price": 42.645,
+      "current_price": 42.575,
       "avg_cost": 42.1749
     },
     "BIL": {
       "shares": 27,
-      "current_price": 91.65,
+      "current_price": 91.6565,
       "avg_cost": 91.4267
     },
     "TLT": {
       "shares": 19,
-      "current_price": 81.595,
+      "current_price": 81.58,
       "avg_cost": 80.4235
     },
     "AAPL": {
       "shares": 3,
-      "current_price": 347.315,
+      "current_price": 346.29,
       "avg_cost": 342.1767
     }
   },
-  "total_return_pct": -2.69,
+  "total_return_pct": -2.74,
   "total_return_usd": 0.0,
-  "today_pnl": 7.29,
-  "today_pnl_pct": 0.07,
+  "today_pnl": 1.6,
+  "today_pnl_pct": 0.02,
   "total_trades": 39,
   "today_start_value": 9724.01,
   "today_date": "2026-10-27",
-  "last_action": "Insufficient data for conviction. VIX and Fear & Greed unavailable. Mixed signals: financials advancing (GS +2.1%, JPM +0.6%) while rate-sensitive REITs decline (XLRE -0.6%, VNQ -0.5%). Awaiting clear",
-  "last_updated": "2026-10-27T16:13:46Z",
+  "last_action": "...",
+  "last_updated": "2026-10-27T17:25:50Z",
   "last_session": {
-    "at": "2026-10-27T16:13:46Z",
+    "at": "2026-10-27T17:25:50Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,34 +46,34 @@
     "top_movers": [
       [
         "GS",
-        2.13
+        1.98
       ],
       [
-        "SPY",
-        0.62
+        "XLRE",
+        -1.02
+      ],
+      [
+        "VNQ",
+        -0.97
       ],
       [
         "JPM",
         0.6
       ],
       [
-        "XLRE",
-        -0.56
-      ],
-      [
-        "VNQ",
-        -0.53
+        "SPY",
+        0.52
       ],
       [
         "BAC",
-        0.45
+        0.3
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "Portfolio remains defensively positioned with 77% in short/intermediate treasuries and utilities. TLT profit-taking reduces duration risk. BIL purchase maintains liquidity. AAPL position small but positive. SHY slight loss acceptable given role as cash alternative. No meme stock or crypto exposure. Ready to rotate based on incoming data.",
-    "outlook": "Insufficient data for conviction. VIX and Fear & Greed unavailable. Mixed signals: financials advancing (GS +2.1%, JPM +0.6%) while rate-sensitive REITs decline (XLRE -0.6%, VNQ -0.5%). Awaiting clearer inflation and labor market signals before adjusting policy stance.",
-    "trades_made": 1
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 0
   },
   "portfolio_history": [
     {
@@ -1615,6 +1615,10 @@
     {
       "timestamp": "2026-10-27T16:13:46Z",
       "value": 9731.3
+    },
+    {
+      "timestamp": "2026-10-27T17:25:50Z",
+      "value": 9725.61
     }
   ]
 }
