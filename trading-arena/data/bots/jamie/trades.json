@@ -449,6 +449,60 @@
         "ticker_chg_pct": -1.9,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BAC",
+      "shares": 4,
+      "price": 51.01,
+      "total_value": 204.04,
+      "reasoning": "Bank of America is showing solid upward movement. It is a foundational institution with a massive balance sheet. I want to increase my exposure to retail banking stability.",
+      "timestamp": "2026-10-27T13:44:30Z",
+      "market_outlook": "Bullish on Financials",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.03,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "C",
+      "shares": 4,
+      "price": 122.672,
+      "total_value": 490.69,
+      "reasoning": "Citigroup has been an underperformer in my portfolio. While the price is up slightly today, I prefer to rotate capital out of laggards and into higher-conviction institutional leaders like GS.",
+      "timestamp": "2026-10-27T13:44:30Z",
+      "market_outlook": "Bullish on Financials",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.35,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "MS",
+      "shares": 1,
+      "price": 187.3,
+      "total_value": 187.3,
+      "reasoning": "Taking a small profit/rebalancing. While Morgan Stanley is up 2.33%, I want to consolidate my banking weight into more efficient movers.",
+      "timestamp": "2026-10-27T13:44:30Z",
+      "market_outlook": "Bullish on Financials",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.33,
+        "trigger_news": null
+      }
     }
   ]
 }
