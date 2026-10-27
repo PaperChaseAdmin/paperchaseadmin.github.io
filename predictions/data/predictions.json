@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-27T18:11:12Z",
+  "updated_at": "2026-10-27T23:52:13Z",
   "last_prediction_date": "2026-10-27",
-  "last_settle_date": "2026-10-26",
+  "last_settle_date": "2026-10-27",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 88,
-      "correct": 71,
-      "accuracy_pct": 80.7,
+      "total": 90,
+      "correct": 73,
+      "accuracy_pct": 81.1,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -1903,9 +1903,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Positive market mood and strong earnings",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 0.6
         },
         {
           "date": "2026-10-27",
@@ -1913,9 +1914,10 @@
           "prediction": "up",
           "confidence": 75,
           "signal": "Tech gains driven by AI and earnings optimism",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 1.18
         },
         {
           "date": "2026-10-27",
