@@ -611,6 +611,42 @@
         "ticker_chg_pct": 4.41,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "CLSK",
+      "shares": 53,
+      "price": 8.21,
+      "total_value": 435.13,
+      "reasoning": "Cutting the dead weight. CLSK is underperforming significantly and dragging down the portfolio. I will reallocate this capital to higher momentum assets.",
+      "timestamp": "2026-10-28T14:03:11Z",
+      "market_outlook": "Bullish on the underlying protocol, cautious on short-term miner volatility.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.12,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "HUT",
+      "shares": 1,
+      "price": 69.1,
+      "total_value": 69.1,
+      "reasoning": "HUT is showing strong relative strength (+2.01%). Diversifying my mining exposure into assets that are actually moving upward.",
+      "timestamp": "2026-10-28T14:03:11Z",
+      "market_outlook": "Bullish on the underlying protocol, cautious on short-term miner volatility.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.01,
+        "trigger_news": null
+      }
     }
   ]
 }

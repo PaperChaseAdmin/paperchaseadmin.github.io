@@ -1,64 +1,89 @@
 {
-  "cash": 381.08,
-  "total_value": 7815.2,
+  "cash": 554.84,
+  "total_value": 7899.92,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 71.1801
+      "current_price": 71.835
     },
     "NVDA": {
       "shares": 1,
       "avg_cost": 206.06,
-      "current_price": 217.805
+      "current_price": 219.33
     },
     "SOXL": {
       "shares": 16,
-      "current_price": 100.74,
+      "current_price": 103.87,
       "avg_cost": 134.5912
     },
     "SMCI": {
       "shares": 10,
       "avg_cost": 38.6247,
-      "current_price": 35.035
+      "current_price": 35.52
     },
     "AAPL": {
       "shares": 3,
-      "current_price": 346.82,
+      "current_price": 346.08,
       "avg_cost": 338.2333
-    },
-    "AXON": {
-      "shares": 1,
-      "avg_cost": 461.43,
-      "current_price": 428.39
     },
     "ARM": {
       "shares": 1,
       "avg_cost": 229.21,
-      "current_price": 226.27
+      "current_price": 230.04
+    },
+    "MRVL": {
+      "shares": 1,
+      "avg_cost": 248.6,
+      "current_price": 248.6
     }
   },
-  "total_return_pct": -21.85,
+  "total_return_pct": -21.0,
   "total_return_usd": 0.0,
-  "today_pnl": 236.24,
-  "today_pnl_pct": 3.12,
-  "total_trades": 20,
-  "today_start_value": 7578.96,
-  "today_date": "2026-10-27",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-27T19:39:40Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 22,
+  "today_start_value": 7899.92,
+  "today_date": "2026-10-28",
+  "last_action": "Aggressive Bullish on Semi-conductors and AI Infrastructure.",
+  "last_updated": "2026-10-28T13:49:15Z",
   "last_session": {
-    "at": "2026-10-27T19:39:40Z",
+    "at": "2026-10-28T13:49:15Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "SOXL",
+        3.04
+      ],
+      [
+        "MRVL",
+        2.13
+      ],
+      [
+        "AVGO",
+        1.87
+      ],
+      [
+        "ANET",
+        1.78
+      ],
+      [
+        "SMCI",
+        1.58
+      ],
+      [
+        "AMD",
+        1.53
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing a clear rotation back into high-beta semiconductor plays. SOXL and MRVL are leading the charge. My current portfolio is a bit too heavy on laggards like AXON, so I'm reallocating that capital into the high-velocity movers. The Jarvis algorithm suggests the semiconductor bounce is just getting started. We're going big on the infrastructure that powers the AI era.",
+    "outlook": "Aggressive Bullish on Semi-conductors and AI Infrastructure.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1612,6 +1637,10 @@
     {
       "timestamp": "2026-10-27T19:39:40Z",
       "value": 7815.2
+    },
+    {
+      "timestamp": "2026-10-28T13:49:15Z",
+      "value": 7899.92
     }
   ]
 }
