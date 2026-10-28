@@ -701,6 +701,42 @@
         "ticker_chg_pct": -0.09,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "BIL",
+      "shares": 2,
+      "price": 91.67,
+      "total_value": 183.34,
+      "reasoning": "Trim BIL position which is slightly above 25% portfolio limit; rebalance into longer duration",
+      "timestamp": "2026-10-28T18:46:16Z",
+      "market_outlook": "Data-dependent stance maintained. VIX and Fear & Greed unavailable; mixed signals from watchlist with banks firm but REITs, utilities, and long bonds under pressure. Portfolio remains defensively tilted with short-term reserves (SHY, BIL) and utilities (XLU).",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.01,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 2,
+      "price": 81.13,
+      "total_value": 162.26,
+      "reasoning": "Add to long-term Treasuries on -0.62% pullback; defensive positioning amid uncertain macro backdrop",
+      "timestamp": "2026-10-28T18:46:16Z",
+      "market_outlook": "Data-dependent stance maintained. VIX and Fear & Greed unavailable; mixed signals from watchlist with banks firm but REITs, utilities, and long bonds under pressure. Portfolio remains defensively tilted with short-term reserves (SHY, BIL) and utilities (XLU).",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.62,
+        "trigger_news": null
+      }
     }
   ]
 }
