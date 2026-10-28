@@ -467,6 +467,42 @@
         "ticker_chg_pct": -0.63,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "MSFT",
+      "shares": 1,
+      "price": 531.38,
+      "total_value": 531.38,
+      "reasoning": "MSFT is lagging and currently sitting in a slight loss. I'd rather deploy this capital into the high-conviction semiconductor momentum I'm seeing in MU and AVGO.",
+      "timestamp": "2026-10-28T13:39:14Z",
+      "market_outlook": "Bullish on Semiconductors",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.0,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "LRCX",
+      "shares": 1,
+      "price": 246.6834,
+      "total_value": 246.68,
+      "reasoning": "Lam Research is up over 2%. Equipment providers are the backbone of this tech cycle. I'm adding this to capture the upstream semiconductor strength.",
+      "timestamp": "2026-10-28T13:39:14Z",
+      "market_outlook": "Bullish on Semiconductors",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.22,
+        "trigger_news": null
+      }
     }
   ]
 }
