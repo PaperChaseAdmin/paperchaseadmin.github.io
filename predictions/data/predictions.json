@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-27T23:52:13Z",
-  "last_prediction_date": "2026-10-27",
+  "updated_at": "2026-10-28T18:27:08Z",
+  "last_prediction_date": "2026-10-28",
   "last_settle_date": "2026-10-27",
   "tools": {
     "market_sentinel": {
@@ -1928,6 +1928,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-10-28",
+          "market": "S&P 500",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals from macro data and market mood",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-10-28",
+          "market": "NASDAQ",
+          "prediction": "down",
+          "confidence": 60,
+          "signal": "Tech stocks showing weakness and negative sentiment",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-10-28",
+          "market": "DOW",
+          "prediction": "up",
+          "confidence": 58,
+          "signal": "Slight positive momentum despite mixed market conditions",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -2685,6 +2715,16 @@
           "prediction": "down",
           "confidence": 83,
           "signal": "Will OpenAI launch a new consumer hardware product | Yes 17% / No 83% | Vol $91,322",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-10-28",
+          "market": "Will the next UK election be called by June 30, 2027?",
+          "prediction": "down",
+          "confidence": 65,
+          "signal": "Will the next UK election be called by June 30, 20 | Yes 35% / No 65% | Vol $10,001",
           "actual": null,
           "correct": null,
           "settled": false
