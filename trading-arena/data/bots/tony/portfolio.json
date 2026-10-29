@@ -1,64 +1,89 @@
 {
-  "cash": 554.84,
-  "total_value": 7722.58,
+  "cash": 654.74,
+  "total_value": 7708.96,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 69.4
+      "current_price": 69.24
     },
     "NVDA": {
       "shares": 1,
       "avg_cost": 206.06,
-      "current_price": 214.83
+      "current_price": 214.0429
     },
     "SOXL": {
       "shares": 16,
-      "current_price": 101.87,
+      "current_price": 101.82,
       "avg_cost": 134.5912
     },
     "SMCI": {
       "shares": 10,
       "avg_cost": 38.6247,
-      "current_price": 35.415
+      "current_price": 35.405
     },
     "AAPL": {
       "shares": 3,
-      "current_price": 349.71,
+      "current_price": 349.3,
       "avg_cost": 338.2333
     },
     "ARM": {
       "shares": 1,
       "avg_cost": 229.21,
-      "current_price": 225.83
+      "current_price": 227.67
     },
-    "MRVL": {
-      "shares": 1,
-      "avg_cost": 248.6,
-      "current_price": 223.88
+    "RKLB": {
+      "shares": 2,
+      "avg_cost": 59.72,
+      "current_price": 59.72
     }
   },
-  "total_return_pct": -22.77,
+  "total_return_pct": -22.91,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 22,
+  "today_pnl": -13.62,
+  "today_pnl_pct": -0.18,
+  "total_trades": 24,
   "today_start_value": 7722.58,
   "today_date": "2026-10-29",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-29T13:49:05Z",
+  "last_action": "Volatile but opportunistic. The semiconductor sector is seeing a massive drawdown, which is exactly when you build your empire.",
+  "last_updated": "2026-10-29T15:03:37Z",
   "last_session": {
-    "at": "2026-10-29T13:49:05Z",
+    "at": "2026-10-29T15:03:37Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MRVL",
+        -12.86
+      ],
+      [
+        "SOXL",
+        -5.17
+      ],
+      [
+        "TQQQ",
+        -4.33
+      ],
+      [
+        "ARM",
+        -3.49
+      ],
+      [
+        "AVGO",
+        -2.51
+      ],
+      [
+        "CRWD",
+        -2.18
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The heavy selling in MRVL and the broader semiconductor drag (SOXL/ARM) is creating a massive liquidity event. While the 'experts' panic, I'm reallocating from underperforming hardware into high-growth space tech (RKLB) and software (PLTR) to maintain my edge. I'm trimming the MRVL loser to preserve capital for the next big tech surge.",
+    "outlook": "Volatile but opportunistic. The semiconductor sector is seeing a massive drawdown, which is exactly when you build your empire.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1640,6 +1665,10 @@
     {
       "timestamp": "2026-10-29T13:49:05Z",
       "value": 7722.58
+    },
+    {
+      "timestamp": "2026-10-29T15:03:37Z",
+      "value": 7708.96
     }
   ]
 }
