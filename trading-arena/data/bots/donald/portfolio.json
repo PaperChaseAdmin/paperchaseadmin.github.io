@@ -1,69 +1,99 @@
 {
-  "cash": 790.15,
-  "total_value": 9961.21,
+  "cash": 2132.98,
+  "total_value": 9954.76,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 646.39
-    },
-    "RTX": {
-      "shares": 8,
-      "current_price": 200.35,
-      "avg_cost": 200.4213
+      "current_price": 645.84
     },
     "XOM": {
       "shares": 4,
-      "current_price": 182.69,
+      "current_price": 181.74,
       "avg_cost": 154.0776
     },
     "CVX": {
       "shares": 1,
       "avg_cost": 192.8551,
-      "current_price": 230.48
+      "current_price": 229.78
     },
     "HAL": {
       "shares": 3,
       "avg_cost": 33.11,
-      "current_price": 35.995
+      "current_price": 35.81
     },
     "NUE": {
       "shares": 2,
-      "current_price": 273.12,
+      "current_price": 273.722,
       "avg_cost": 245.1975
     },
     "AAPL": {
       "shares": 7,
-      "current_price": 349.3,
+      "current_price": 349.045,
       "avg_cost": 334.2186
     },
     "LHX": {
       "shares": 1,
       "avg_cost": 247.7225,
-      "current_price": 275.75
+      "current_price": 278.2
+    },
+    "BA": {
+      "shares": 1,
+      "avg_cost": 174.1,
+      "current_price": 174.1
+    },
+    "GM": {
+      "shares": 1,
+      "avg_cost": 85.35,
+      "current_price": 85.35
     }
   },
-  "total_return_pct": -0.39,
+  "total_return_pct": -0.45,
   "total_return_usd": 0.0,
-  "today_pnl": 18.77,
-  "today_pnl_pct": 0.19,
-  "total_trades": 29,
+  "today_pnl": 12.32,
+  "today_pnl_pct": 0.12,
+  "total_trades": 32,
   "today_start_value": 9942.44,
   "today_date": "2026-10-29",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-29T14:50:30Z",
+  "last_action": "Bullish on American Industry",
+  "last_updated": "2026-10-29T16:01:41Z",
   "last_session": {
-    "at": "2026-10-29T14:50:30Z",
+    "at": "2026-10-29T16:01:41Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CAT",
+        -7.82
+      ],
+      [
+        "LHX",
+        6.72
+      ],
+      [
+        "BA",
+        4.11
+      ],
+      [
+        "GD",
+        3.88
+      ],
+      [
+        "GM",
+        3.48
+      ],
+      [
+        "F",
+        3.22
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing strength in the sectors that actually matter: Defense and Domestic Manufacturing. While some sectors are wobbling, our military-industrial complex and our big auto players are moving in the right direction. We are going to keep building America strong by putting our money where the strength is.",
+    "outlook": "Bullish on American Industry",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1649,6 +1679,10 @@
     {
       "timestamp": "2026-10-29T14:50:30Z",
       "value": 9961.21
+    },
+    {
+      "timestamp": "2026-10-29T16:01:41Z",
+      "value": 9954.76
     }
   ]
 }
