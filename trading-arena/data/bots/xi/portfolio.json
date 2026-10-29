@@ -1,69 +1,89 @@
 {
-  "cash": 3255.15,
-  "total_value": 8764.86,
+  "cash": 2526.56,
+  "total_value": 8716.61,
   "positions": {
     "BABA": {
       "shares": 26,
-      "current_price": 100.47,
+      "current_price": 99.24,
       "avg_cost": 100.8292
     },
     "JD": {
       "shares": 35,
-      "current_price": 25.365,
+      "current_price": 25.38,
       "avg_cost": 27.2986
     },
     "NIO": {
-      "shares": 50,
-      "avg_cost": 3.6112,
-      "current_price": 3.3
+      "shares": 80,
+      "current_price": 3.275,
+      "avg_cost": 3.4851
     },
     "NTES": {
       "shares": 9,
       "avg_cost": 118.155,
-      "current_price": 112.21
+      "current_price": 110.47
     },
     "XPEV": {
       "shares": 7,
       "avg_cost": 9.475,
-      "current_price": 9.26
+      "current_price": 9.14
     },
     "PDD": {
-      "shares": 5,
-      "avg_cost": 77.42,
-      "current_price": 77.07
+      "shares": 15,
+      "current_price": 78.5,
+      "avg_cost": 78.14
     },
     "LI": {
       "shares": 20,
       "avg_cost": 11.39,
-      "current_price": 11.345
-    },
-    "BIDU": {
-      "shares": 2,
-      "avg_cost": 77.65,
-      "current_price": 78.88
+      "current_price": 11.19
     }
   },
-  "total_return_pct": -12.35,
+  "total_return_pct": -12.83,
   "total_return_usd": 0.0,
-  "today_pnl": -42.19,
-  "today_pnl_pct": -0.48,
-  "total_trades": 33,
-  "today_start_value": 8807.05,
-  "today_date": "2026-10-28",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-28T20:01:53Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 36,
+  "today_start_value": 8716.61,
+  "today_date": "2026-10-29",
+  "last_action": "Bullish on the long-term structural recovery of Chinese ADRs. Short-term volatility is merely noise created by Western skepticism.",
+  "last_updated": "2026-10-29T14:04:38Z",
   "last_session": {
-    "at": "2026-10-28T20:01:53Z",
+    "at": "2026-10-29T14:04:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BIDU",
+        -2.72
+      ],
+      [
+        "FUTU",
+        -1.98
+      ],
+      [
+        "XPEV",
+        -1.93
+      ],
+      [
+        "NTES",
+        -1.76
+      ],
+      [
+        "BABA",
+        -1.7
+      ],
+      [
+        "LI",
+        -1.67
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The sector is seeing a broad pullback today, with BIDU and NTES leading the decline. However, PDD's resilience suggests underlying strength in the consumer platform space. I am using this market weakness to aggressively accumulate BABA and NIO, treating these price drops as gifts for long-term positioning.",
+    "outlook": "Bullish on the long-term structural recovery of Chinese ADRs. Short-term volatility is merely noise created by Western skepticism.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1641,6 +1661,10 @@
     {
       "timestamp": "2026-10-28T20:01:53Z",
       "value": 8764.86
+    },
+    {
+      "timestamp": "2026-10-29T14:04:38Z",
+      "value": 8716.61
     }
   ]
 }
