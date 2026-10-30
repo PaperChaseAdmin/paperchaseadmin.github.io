@@ -1,74 +1,104 @@
 {
-  "cash": 642.33,
-  "total_value": 8627.79,
+  "cash": 529.97,
+  "total_value": 8502.92,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 404.29
+      "current_price": 391.9601
     },
     "CRSP": {
       "shares": 22,
-      "current_price": 54.14,
+      "current_price": 53.795,
       "avg_cost": 56.1316
     },
     "PATH": {
       "shares": 17,
-      "current_price": 13.725,
+      "current_price": 13.8,
       "avg_cost": 13.9882
     },
     "PLTR": {
       "shares": 4,
       "avg_cost": 176.145,
-      "current_price": 193.93
+      "current_price": 192.09
     },
     "BEAM": {
       "shares": 20,
       "avg_cost": 26.39,
-      "current_price": 28.83
+      "current_price": 28.605
     },
     "RXRX": {
       "shares": 35,
-      "current_price": 4.255,
+      "current_price": 4.1186,
       "avg_cost": 4.0357
     },
     "AAPL": {
       "shares": 6,
-      "current_price": 350.14,
+      "current_price": 347.93,
       "avg_cost": 340.7833
     },
     "NTLA": {
       "shares": 7,
       "avg_cost": 11.23,
-      "current_price": 13.08
+      "current_price": 12.94
     },
     "PACB": {
       "shares": 13,
-      "current_price": 2.875,
+      "current_price": 2.77,
       "avg_cost": 2.7573
+    },
+    "RKLB": {
+      "shares": 2,
+      "avg_cost": 56.18,
+      "current_price": 56.18
     }
   },
-  "total_return_pct": -13.72,
+  "total_return_pct": -14.97,
   "total_return_usd": 0.0,
-  "today_pnl": -9.81,
-  "today_pnl_pct": -0.11,
-  "total_trades": 37,
-  "today_start_value": 8637.6,
-  "today_date": "2026-10-29",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-29T19:41:44Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 38,
+  "today_start_value": 8502.92,
+  "today_date": "2026-10-30",
+  "last_action": "Bullish on innovation, Bearish on short-termism.",
+  "last_updated": "2026-10-30T13:37:15Z",
   "last_session": {
-    "at": "2026-10-29T19:41:44Z",
+    "at": "2026-10-30T13:37:15Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TWLO",
+        -22.7
+      ],
+      [
+        "ILMN",
+        -13.57
+      ],
+      [
+        "COIN",
+        -8.87
+      ],
+      [
+        "HOOD",
+        -8.43
+      ],
+      [
+        "PACB",
+        -4.31
+      ],
+      [
+        "RKLB",
+        -4.27
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is currently exhibiting typical short-term volatility, punishing high-growth names like TWLO and ILMN. This is exactly what I want to see. While the 'paper hands' are selling, I am identifying massive dislocations in the genomics and fintech sectors. I am deploying my cash to capture these 'sales' in COIN and RKLB, reinforcing my conviction that the future belongs to the disruptors.",
+    "outlook": "Bullish on innovation, Bearish on short-termism.",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1670,6 +1700,10 @@
     {
       "timestamp": "2026-10-29T19:41:44Z",
       "value": 8627.79
+    },
+    {
+      "timestamp": "2026-10-30T13:37:15Z",
+      "value": 8502.92
     }
   ]
 }
