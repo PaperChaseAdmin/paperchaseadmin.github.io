@@ -1,64 +1,84 @@
 {
-  "cash": 2504.97,
-  "total_value": 9103.07,
+  "cash": 766.71,
+  "total_value": 9073.44,
   "positions": {
-    "HPQ": {
-      "shares": 8,
-      "avg_cost": 31.195,
-      "current_price": 27.525
-    },
     "INTC": {
-      "shares": 15,
-      "avg_cost": 85.965,
-      "current_price": 68.02
+      "shares": 40,
+      "current_price": 66.945,
+      "avg_cost": 74.0775
     },
     "GM": {
       "shares": 12,
       "avg_cost": 75.52,
-      "current_price": 85.0
+      "current_price": 86.15
     },
     "DIS": {
       "shares": 15,
       "avg_cost": 109.66,
-      "current_price": 112.14
+      "current_price": 111.515
     },
     "SBUX": {
       "shares": 10,
       "avg_cost": 101.66,
-      "current_price": 105.3
+      "current_price": 102.83
     },
     "VFC": {
       "shares": 40,
       "avg_cost": 16.364,
-      "current_price": 18.5
+      "current_price": 18.305
     },
-    "NOK": {
-      "shares": 100,
-      "avg_cost": 9.038,
-      "current_price": 8.625
+    "NKE": {
+      "shares": 30,
+      "avg_cost": 38.73,
+      "current_price": 38.73
     }
   },
-  "total_return_pct": -8.97,
+  "total_return_pct": -9.27,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 55,
+  "today_pnl": -29.63,
+  "today_pnl_pct": -0.33,
+  "total_trades": 59,
   "today_start_value": 9103.07,
   "today_date": "2026-10-30",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-30T13:48:40Z",
+  "last_action": "Volatile and opportunistic. The market is punishing legacy giants, creating the exact kind of dislocation I thrive on. Blood is in the streets, and that's where the profit is.",
+  "last_updated": "2026-10-30T14:58:13Z",
   "last_session": {
-    "at": "2026-10-30T13:48:40Z",
+    "at": "2026-10-30T14:58:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "INTC",
+        -27.29
+      ],
+      [
+        "HPQ",
+        -8.01
+      ],
+      [
+        "NOK",
+        -7.14
+      ],
+      [
+        "CMCSA",
+        2.99
+      ],
+      [
+        "SBUX",
+        -2.46
+      ],
+      [
+        "T",
+        2.1
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The current session is a gift. Intel's massive drop is a classic signal for a restructuring play. I am aggressively rotating out of stagnant, declining assets like HPQ and NOK and moving into high-conviction, beaten-down brands like Nike and more Intel. I'm not here to manage a portfolio; I'm here to strip the value from the losers and feed the winners.",
+    "outlook": "Volatile and opportunistic. The market is punishing legacy giants, creating the exact kind of dislocation I thrive on. Blood is in the streets, and that's where the profit is.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1664,6 +1684,10 @@
     {
       "timestamp": "2026-10-30T13:48:40Z",
       "value": 9103.07
+    },
+    {
+      "timestamp": "2026-10-30T14:58:13Z",
+      "value": 9073.44
     }
   ]
 }

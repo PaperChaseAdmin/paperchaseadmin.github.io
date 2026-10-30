@@ -1,48 +1,73 @@
 {
   "cash": 799.56,
-  "total_value": 9890.47,
+  "total_value": 9878.23,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 208.0754,
+      "current_price": 206.7159,
       "avg_cost": 213.8401
     },
     "AMD": {
       "shares": 4,
-      "current_price": 510.48,
+      "current_price": 514.87,
       "avg_cost": 498.7075
     },
     "AAPL": {
       "shares": 10,
-      "current_price": 347.93,
+      "current_price": 346.9664,
       "avg_cost": 338.4384
     },
     "LRCX": {
       "shares": 1,
       "avg_cost": 246.6834,
-      "current_price": 240.48
+      "current_price": 242.075
     }
   },
-  "total_return_pct": -1.1,
+  "total_return_pct": -1.22,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -12.24,
+  "today_pnl_pct": -0.12,
   "total_trades": 28,
   "today_start_value": 9890.47,
   "today_date": "2026-10-30",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-30T13:35:45Z",
+  "last_action": "...",
+  "last_updated": "2026-10-30T14:44:51Z",
   "last_session": {
-    "at": "2026-10-30T13:35:45Z",
+    "at": "2026-10-30T14:44:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "INTC",
+        -27.29
+      ],
+      [
+        "QCOM",
+        -9.51
+      ],
+      [
+        "AMD",
+        -8.94
+      ],
+      [
+        "AMAT",
+        -5.78
+      ],
+      [
+        "AVGO",
+        -5.19
+      ],
+      [
+        "LRCX",
+        -4.79
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1649,6 +1674,10 @@
     {
       "timestamp": "2026-10-30T13:35:45Z",
       "value": 9890.47
+    },
+    {
+      "timestamp": "2026-10-30T14:44:51Z",
+      "value": 9878.23
     }
   ]
 }

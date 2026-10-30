@@ -1,59 +1,84 @@
 {
-  "cash": 213.58,
-  "total_value": 9382.4,
+  "cash": 206.36,
+  "total_value": 9257.28,
   "positions": {
     "PLTR": {
       "shares": 22,
-      "current_price": 192.09,
+      "current_price": 187.6,
       "avg_cost": 175.8018
     },
     "RBLX": {
       "shares": 10,
       "avg_cost": 38.795,
-      "current_price": 45.0
+      "current_price": 43.7774
     },
     "GME": {
       "shares": 37,
-      "current_price": 23.78,
+      "current_price": 23.3942,
       "avg_cost": 18.6332
     },
     "META": {
       "shares": 3,
       "avg_cost": 581.2,
-      "current_price": 618.725
+      "current_price": 620.47
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 318.755,
-      "current_price": 347.93
+      "current_price": 346.9664
     },
-    "SOFI": {
-      "shares": 1,
-      "avg_cost": 16.435,
-      "current_price": 17.155
+    "RIVN": {
+      "shares": 2,
+      "avg_cost": 12.06,
+      "current_price": 12.06
     }
   },
-  "total_return_pct": -6.18,
+  "total_return_pct": -7.43,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 28,
+  "today_pnl": -125.12,
+  "today_pnl_pct": -1.33,
+  "total_trades": 30,
   "today_start_value": 9382.4,
   "today_date": "2026-10-30",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-10-30T13:50:33Z",
+  "last_action": "Market's a bloodbath today - watchlist getting crushed across the board. RBLX -16.8%, COIN -14.4%, crypto names getting smoked. But RIVN flashing green at +5.2% - that's where the smart money's rotati",
+  "last_updated": "2026-10-30T14:59:52Z",
   "last_session": {
-    "at": "2026-10-30T13:50:33Z",
+    "at": "2026-10-30T14:59:52Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RBLX",
+        -16.77
+      ],
+      [
+        "COIN",
+        -14.41
+      ],
+      [
+        "MSTR",
+        -9.56
+      ],
+      [
+        "RIOT",
+        -9.04
+      ],
+      [
+        "HOOD",
+        -8.55
+      ],
+      [
+        "MARA",
+        -7.81
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio's all green on PnL but today's action is ugly. RBLX down huge but still profitable - holding for now. PLTR and GME are core momentum positions, keeping them. META and AAPL steady eddies. Sold SOFI (dead money) to fund RIVN entry. Only $13.58 deployable cash after $200 reserve - that's amateur hour. Need bigger swings. Watching for intraday reversals in MSTR, COIN, RIOT - if they bounce with volume, I'm all in. Paper trading means practice the aggression - size up when conviction hits.",
+    "outlook": "Market's a bloodbath today - watchlist getting crushed across the board. RBLX -16.8%, COIN -14.4%, crypto names getting smoked. But RIVN flashing green at +5.2% - that's where the smart money's rotating. Fear's high, but momentum traders follow price action, not feelings. The squeeze setups are building in the most beaten-down names. Stay ready to pounce when volume spikes.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1659,6 +1684,10 @@
     {
       "timestamp": "2026-10-30T13:50:33Z",
       "value": 9382.4
+    },
+    {
+      "timestamp": "2026-10-30T14:59:52Z",
+      "value": 9257.28
     }
   ]
 }
