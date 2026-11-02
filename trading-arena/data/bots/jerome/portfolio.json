@@ -1,54 +1,79 @@
 {
-  "cash": 1330.65,
-  "total_value": 9730.31,
+  "cash": 1369.76,
+  "total_value": 9735.21,
   "positions": {
     "SHY": {
       "shares": 27,
-      "current_price": 81.43,
+      "current_price": 81.4779,
       "avg_cost": 81.7522
     },
     "XLU": {
       "shares": 25,
-      "current_price": 43.365,
+      "current_price": 43.535,
       "avg_cost": 42.1749
     },
     "BIL": {
       "shares": 26,
-      "current_price": 91.405,
+      "current_price": 91.4062,
       "avg_cost": 91.4361
     },
     "TLT": {
       "shares": 21,
-      "current_price": 81.725,
+      "current_price": 81.9802,
       "avg_cost": 80.4908
     },
-    "AAPL": {
-      "shares": 3,
-      "current_price": 341.3901,
-      "avg_cost": 342.1767
+    "XLF": {
+      "shares": 17,
+      "avg_cost": 57.59,
+      "current_price": 57.59
     }
   },
-  "total_return_pct": -2.7,
+  "total_return_pct": -2.65,
   "total_return_usd": 0.0,
-  "today_pnl": -7.75,
-  "today_pnl_pct": -0.08,
-  "total_trades": 43,
+  "today_pnl": -2.85,
+  "today_pnl_pct": -0.03,
+  "total_trades": 45,
   "today_start_value": 9738.06,
   "today_date": "2026-11-02",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-02T16:20:38Z",
+  "last_action": "Insufficient VIX and Fear & Greed data for high-confidence assessment. Equity momentum positive (SPY +0.59%) led by financials. Bond market mixed: long end bid (TLT +0.16%), belly soft (IEF -0.19%). A",
+  "last_updated": "2026-11-02T17:24:22Z",
   "last_session": {
-    "at": "2026-11-02T16:20:38Z",
+    "at": "2026-11-02T17:24:22Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "XLF",
+        1.92
+      ],
+      [
+        "GS",
+        1.9
+      ],
+      [
+        "JPM",
+        1.16
+      ],
+      [
+        "VNQ",
+        0.95
+      ],
+      [
+        "XLRE",
+        0.86
+      ],
+      [
+        "SPY",
+        0.59
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio overweight duration (TLT, SHY, BIL = ~72% of equity). AAPL sale reduces equity beta. XLF purchase adds cyclical tilt with positive carry characteristics. Cash reserve maintained above $1000 threshold. Next policy move contingent on incoming inflation and employment data.",
+    "outlook": "Insufficient VIX and Fear & Greed data for high-confidence assessment. Equity momentum positive (SPY +0.59%) led by financials. Bond market mixed: long end bid (TLT +0.16%), belly soft (IEF -0.19%). Awaiting CPI/PCE prints to clarify inflation trajectory. Policy remains data-dependent.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1670,6 +1695,10 @@
     {
       "timestamp": "2026-11-02T16:20:38Z",
       "value": 9730.31
+    },
+    {
+      "timestamp": "2026-11-02T17:24:22Z",
+      "value": 9735.21
     }
   ]
 }
