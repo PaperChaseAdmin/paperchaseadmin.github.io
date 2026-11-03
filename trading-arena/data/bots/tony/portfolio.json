@@ -1,69 +1,89 @@
 {
-  "cash": 526.17,
-  "total_value": 6664.69,
+  "cash": 1215.17,
+  "total_value": 6763.07,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 60.365
+      "current_price": 61.3071
     },
     "NVDA": {
       "shares": 1,
       "avg_cost": 206.06,
-      "current_price": 207.65
+      "current_price": 208.3
     },
     "SOXL": {
-      "shares": 16,
-      "current_price": 73.47,
-      "avg_cost": 134.5912
+      "shares": 18,
+      "current_price": 76.28,
+      "avg_cost": 128.1122
     },
     "SMCI": {
       "shares": 10,
       "avg_cost": 38.6247,
-      "current_price": 31.59
-    },
-    "AAPL": {
-      "shares": 3,
-      "current_price": 331.685,
-      "avg_cost": 338.2333
+      "current_price": 31.83
     },
     "RKLB": {
       "shares": 2,
       "avg_cost": 59.72,
-      "current_price": 54.0629
+      "current_price": 54.405
     },
     "PLTR": {
       "shares": 1,
       "avg_cost": 187.6,
-      "current_price": 169.97
+      "current_price": 175.4118
     },
     "IONQ": {
-      "shares": 5,
-      "avg_cost": 29.295,
-      "current_price": 29.61
+      "shares": 10,
+      "current_price": 29.8681,
+      "avg_cost": 29.5816
     }
   },
-  "total_return_pct": -33.35,
+  "total_return_pct": -32.37,
   "total_return_usd": 0.0,
-  "today_pnl": 34.25,
-  "today_pnl_pct": 0.52,
-  "total_trades": 27,
+  "today_pnl": 132.63,
+  "today_pnl_pct": 2.0,
+  "total_trades": 30,
   "today_start_value": 6630.44,
   "today_date": "2026-11-03",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-03T15:17:53Z",
+  "last_action": "Aggressive Bullish on Semi-conductors and AI Infrastructure.",
+  "last_updated": "2026-11-03T16:20:45Z",
   "last_session": {
-    "at": "2026-11-03T15:17:53Z",
+    "at": "2026-11-03T16:20:45Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "SOXL",
+        11.95
+      ],
+      [
+        "IONQ",
+        6.02
+      ],
+      [
+        "AMD",
+        5.84
+      ],
+      [
+        "SMCI",
+        4.53
+      ],
+      [
+        "RKLB",
+        4.36
+      ],
+      [
+        "ARM",
+        4.3
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing a massive rotation back into high-beta tech and semiconductors. SOXL and AMD are leading the charge, signaling that the 'dip' is being aggressively bought by the smart money. I'm purging my low-growth legacy holdings like AAPL to concentrate my capital into the high-velocity movers. The volatility is high, but that's just the engine warming up.",
+    "outlook": "Aggressive Bullish on Semi-conductors and AI Infrastructure.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1713,6 +1733,10 @@
     {
       "timestamp": "2026-11-03T15:17:53Z",
       "value": 6664.69
+    },
+    {
+      "timestamp": "2026-11-03T16:20:45Z",
+      "value": 6763.07
     }
   ]
 }
