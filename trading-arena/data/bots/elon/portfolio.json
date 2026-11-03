@@ -1,64 +1,89 @@
 {
-  "cash": 629.92,
-  "total_value": 9132.69,
+  "cash": 1722.76,
+  "total_value": 9120.77,
   "positions": {
     "NVDA": {
       "shares": 8,
-      "current_price": 208.3,
+      "current_price": 208.271,
       "avg_cost": 206.5303
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 330.3,
+      "current_price": 331.33,
       "avg_cost": 318.6712
     },
     "COIN": {
-      "shares": 5,
-      "avg_cost": 147.495,
-      "current_price": 149.805
+      "shares": 7,
+      "current_price": 149.48,
+      "avg_cost": 148.0621
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 621.22
-    },
-    "AMD": {
-      "shares": 2,
-      "avg_cost": 543.86,
-      "current_price": 494.09
-    },
-    "PLTR": {
-      "shares": 4,
-      "current_price": 175.4118,
-      "avg_cost": 190.4125
+      "current_price": 621.4467
     },
     "TSLA": {
       "shares": 2,
       "avg_cost": 369.74,
-      "current_price": 401.8
+      "current_price": 398.2
+    },
+    "MSTR": {
+      "shares": 1,
+      "avg_cost": 136.67,
+      "current_price": 136.67
+    },
+    "IONQ": {
+      "shares": 5,
+      "avg_cost": 29.8,
+      "current_price": 29.8
     }
   },
-  "total_return_pct": -8.67,
+  "total_return_pct": -8.79,
   "total_return_usd": 0.0,
-  "today_pnl": 130.02,
-  "today_pnl_pct": 1.44,
-  "total_trades": 43,
+  "today_pnl": 118.1,
+  "today_pnl_pct": 1.31,
+  "total_trades": 48,
   "today_start_value": 9002.67,
   "today_date": "2026-11-03",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-03T16:04:32Z",
+  "last_action": "Aggressive Bullish Momentum",
+  "last_updated": "2026-11-03T17:06:37Z",
   "last_session": {
-    "at": "2026-11-03T16:04:32Z",
+    "at": "2026-11-03T17:06:37Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "COIN",
+        8.5
+      ],
+      [
+        "RBLX",
+        6.88
+      ],
+      [
+        "IONQ",
+        5.82
+      ],
+      [
+        "AMD",
+        5.11
+      ],
+      [
+        "MSTR",
+        4.48
+      ],
+      [
+        "NVDA",
+        3.05
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing massive strength in crypto-adjacent plays and AI hardware. COIN and MSTR are leading the charge. I am aggressively pruning my underperforming legacy tech positions (PLTR, AMD) to fuel high-velocity momentum trades. I'm staying concentrated in the sectors that actually move the needle.",
+    "outlook": "Aggressive Bullish Momentum",
+    "trades_made": 5
   },
   "portfolio_history": [
     {
@@ -1712,6 +1737,10 @@
     {
       "timestamp": "2026-11-03T16:04:32Z",
       "value": 9132.69
+    },
+    {
+      "timestamp": "2026-11-03T17:06:37Z",
+      "value": 9120.77
     }
   ]
 }

@@ -773,6 +773,96 @@
         "ticker_chg_pct": -1.23,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "PLTR",
+      "shares": 4,
+      "price": 173.96,
+      "total_value": 695.84,
+      "reasoning": "Cutting losses on PLTR. Momentum is fading and I need to redeploy this capital into high-velocity winners. Stop the bleeding.",
+      "timestamp": "2026-11-03T17:06:37Z",
+      "market_outlook": "Aggressive Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.47,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AMD",
+      "shares": 2,
+      "price": 490.815,
+      "total_value": 981.63,
+      "reasoning": "Even though it's up today, my entry was terrible and it's dragging down the portfolio. Clearing the dead weight to focus on pure AI/Crypto momentum.",
+      "timestamp": "2026-11-03T17:06:37Z",
+      "market_outlook": "Aggressive Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 5.11,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "COIN",
+      "shares": 2,
+      "price": 149.48,
+      "total_value": 298.96,
+      "reasoning": "COIN is absolutely ripping +8.5%. Crypto sentiment is heating up and I want more exposure to this volatility. Momentum is king.",
+      "timestamp": "2026-11-03T17:06:37Z",
+      "market_outlook": "Aggressive Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 8.5,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MSTR",
+      "shares": 1,
+      "price": 136.67,
+      "total_value": 136.67,
+      "reasoning": "Adding MSTR to capture the Bitcoin proxy momentum. It's up 4.5% and fits my high-energy, high-reward tech profile.",
+      "timestamp": "2026-11-03T17:06:37Z",
+      "market_outlook": "Aggressive Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.48,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IONQ",
+      "shares": 5,
+      "price": 29.8,
+      "total_value": 149.0,
+      "reasoning": "Quantum computing is the next frontier of disruption. IONQ is showing strong relative strength today (+5.8%).",
+      "timestamp": "2026-11-03T17:06:37Z",
+      "market_outlook": "Aggressive Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 5.82,
+        "trigger_news": null
+      }
     }
   ]
 }
