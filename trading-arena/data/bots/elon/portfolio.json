@@ -1,63 +1,88 @@
 {
   "cash": 629.92,
-  "total_value": 9051.84,
+  "total_value": 9002.67,
   "positions": {
     "NVDA": {
       "shares": 8,
-      "current_price": 202.43,
+      "current_price": 206.57,
       "avg_cost": 206.5303
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 338.82,
+      "current_price": 330.64,
       "avg_cost": 318.6712
     },
     "COIN": {
       "shares": 5,
       "avg_cost": 147.495,
-      "current_price": 136.47
+      "current_price": 139.73
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 609.54
+      "current_price": 613.63
     },
     "AMD": {
       "shares": 2,
       "avg_cost": 543.86,
-      "current_price": 467.97
+      "current_price": 474.5984
     },
     "PLTR": {
       "shares": 4,
-      "current_price": 180.27,
+      "current_price": 168.16,
       "avg_cost": 190.4125
     },
     "TSLA": {
       "shares": 2,
       "avg_cost": 369.74,
-      "current_price": 402.095
+      "current_price": 405.1557
     }
   },
-  "total_return_pct": -9.48,
+  "total_return_pct": -9.97,
   "total_return_usd": 0.0,
-  "today_pnl": -223.91,
-  "today_pnl_pct": -2.41,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 43,
-  "today_start_value": 9275.75,
-  "today_date": "2026-11-02",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-02T20:36:18Z",
+  "today_start_value": 9002.67,
+  "today_date": "2026-11-03",
+  "last_action": "...",
+  "last_updated": "2026-11-03T14:32:49Z",
   "last_session": {
-    "at": "2026-11-02T20:36:18Z",
+    "at": "2026-11-03T14:32:49Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PLTR",
+        -5.94
+      ],
+      [
+        "IONQ",
+        2.77
+      ],
+      [
+        "NVDA",
+        2.3
+      ],
+      [
+        "AAPL",
+        -2.22
+      ],
+      [
+        "AMD",
+        1.95
+      ],
+      [
+        "RBLX",
+        1.91
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1700,6 +1725,10 @@
     {
       "timestamp": "2026-11-02T20:36:18Z",
       "value": 9051.84
+    },
+    {
+      "timestamp": "2026-11-03T14:32:49Z",
+      "value": 9002.67
     }
   ]
 }
