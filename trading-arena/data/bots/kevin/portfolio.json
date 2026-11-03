@@ -1,98 +1,123 @@
 {
   "cash": 686.56,
-  "total_value": 9879.02,
+  "total_value": 9880.12,
   "positions": {
     "T": {
       "shares": 76,
       "avg_cost": 20.83,
-      "current_price": 21.375
+      "current_price": 21.28
     },
     "VZ": {
       "shares": 22,
-      "current_price": 44.92,
+      "current_price": 44.895,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 206.53
+      "current_price": 208.1
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 94.76
+      "current_price": 94.575
     },
     "CVX": {
       "shares": 6,
-      "current_price": 225.81,
+      "current_price": 225.61,
       "avg_cost": 193.7867
     },
     "MO": {
       "shares": 4,
       "avg_cost": 65.9025,
-      "current_price": 76.5366
+      "current_price": 76.5925
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 250.6,
-      "current_price": 288.7
+      "current_price": 289.74
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.67,
-      "current_price": 49.07
+      "current_price": 49.145
     },
     "SCHD": {
       "shares": 5,
       "avg_cost": 32.64,
-      "current_price": 35.66
+      "current_price": 35.525
     },
     "O": {
       "shares": 2,
       "avg_cost": 53.96,
-      "current_price": 56.9698
+      "current_price": 57.425
     },
     "MAIN": {
       "shares": 2,
       "avg_cost": 53.95,
-      "current_price": 56.5999
+      "current_price": 56.49
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 63.895,
-      "current_price": 64.435
+      "current_price": 64.43
     },
     "BTI": {
       "shares": 3,
       "avg_cost": 61.67,
-      "current_price": 61.25
+      "current_price": 61.1
     },
     "AAPL": {
       "shares": 3,
       "avg_cost": 336.7001,
-      "current_price": 330.64
+      "current_price": 331.685
     }
   },
-  "total_return_pct": -1.21,
+  "total_return_pct": -1.2,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 1.1,
+  "today_pnl_pct": 0.01,
   "total_trades": 37,
   "today_start_value": 9879.02,
   "today_date": "2026-11-03",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-03T14:46:05Z",
+  "last_action": "...",
+  "last_updated": "2026-11-03T15:16:22Z",
   "last_session": {
-    "at": "2026-11-03T14:46:05Z",
+    "at": "2026-11-03T15:16:22Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IBM",
+        -2.65
+      ],
+      [
+        "KO",
+        -1.38
+      ],
+      [
+        "BTI",
+        -1.31
+      ],
+      [
+        "SCHD",
+        -1.06
+      ],
+      [
+        "CVX",
+        -0.95
+      ],
+      [
+        "OHI",
+        0.83
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1739,6 +1764,10 @@
     {
       "timestamp": "2026-11-03T14:46:05Z",
       "value": 9879.02
+    },
+    {
+      "timestamp": "2026-11-03T15:16:22Z",
+      "value": 9880.12
     }
   ]
 }
