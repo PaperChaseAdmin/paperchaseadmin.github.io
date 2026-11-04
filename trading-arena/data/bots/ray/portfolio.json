@@ -1,79 +1,99 @@
 {
-  "cash": 1060.56,
-  "total_value": 10489.87,
+  "cash": 1026.2,
+  "total_value": 10468.2,
   "positions": {
-    "TIPS": {
-      "shares": 26867,
-      "current_price": 0.0013,
-      "avg_cost": 0.0004
-    },
     "DJP": {
       "shares": 10,
-      "current_price": 49.43,
+      "current_price": 49.23,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 111,
-      "current_price": 19.13,
+      "current_price": 18.98,
       "avg_cost": 16.5267
     },
     "FXI": {
-      "shares": 5,
-      "avg_cost": 33.365,
-      "current_price": 34.495
+      "shares": 7,
+      "current_price": 34.645,
+      "avg_cost": 33.7307
     },
     "GSG": {
       "shares": 30,
-      "current_price": 35.14,
+      "current_price": 34.85,
       "avg_cost": 32.0725
     },
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 370.15
+      "current_price": 370.7261
     },
     "AAPL": {
       "shares": 3,
       "avg_cost": 310.135,
-      "current_price": 352.4
+      "current_price": 352.51
     },
     "TLT": {
       "shares": 25,
-      "current_price": 81.335,
+      "current_price": 81.385,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 91.37
+      "current_price": 91.42
     },
     "IAU": {
       "shares": 2,
       "avg_cost": 75.26,
-      "current_price": 75.9
+      "current_price": 76.01
     }
   },
-  "total_return_pct": 4.9,
+  "total_return_pct": 4.68,
   "total_return_usd": 0.0,
-  "today_pnl": 32.27,
-  "today_pnl_pct": 0.31,
-  "total_trades": 27,
+  "today_pnl": 10.6,
+  "today_pnl_pct": 0.1,
+  "total_trades": 29,
   "today_start_value": 10457.6,
   "today_date": "2026-11-04",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-04T15:10:25Z",
+  "last_action": "Inflationary/Growth tilt. Gold and precious metals are leading the market today, suggesting a shift in sentiment toward hard assets. Equities in emerging markets are also showing strength.",
+  "last_updated": "2026-11-04T16:21:14Z",
   "last_session": {
-    "at": "2026-11-04T15:10:25Z",
+    "at": "2026-11-04T16:21:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TIPS",
+        -7.14
+      ],
+      [
+        "GDX",
+        6.71
+      ],
+      [
+        "FXI",
+        4.38
+      ],
+      [
+        "GLD",
+        3.18
+      ],
+      [
+        "IAU",
+        3.18
+      ],
+      [
+        "GSG",
+        -2.27
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The significant move in GLD and GDX suggests the market is pricing in higher inflation or geopolitical risk. I am rebalancing away from TIPS, which are struggling, and moving into direct gold exposure (GDX, IAU) and emerging market equities (FXI) to capture the current momentum while adhering to my All Weather diversification principles.",
+    "outlook": "Inflationary/Growth tilt. Gold and precious metals are leading the market today, suggesting a shift in sentiment toward hard assets. Equities in emerging markets are also showing strength.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1751,6 +1771,10 @@
     {
       "timestamp": "2026-11-04T15:10:25Z",
       "value": 10489.87
+    },
+    {
+      "timestamp": "2026-11-04T16:21:14Z",
+      "value": 10468.2
     }
   ]
 }
