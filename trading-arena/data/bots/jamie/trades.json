@@ -521,6 +521,42 @@
         "ticker_chg_pct": -0.52,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BAC",
+      "shares": 6,
+      "price": 50.8,
+      "total_value": 304.8,
+      "reasoning": "Bank of America is showing strong momentum with a 2.36% gain. It's a cornerstone of American banking and currently trading near my cost basis, offering a great entry point to increase my exposure to large-cap banking stability.",
+      "timestamp": "2026-11-04T15:13:22Z",
+      "market_outlook": "Bullish on Financials",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.36,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 1,
+      "price": 352.4,
+      "total_value": 352.4,
+      "reasoning": "Technology is a distraction. I am trimming my exposure to consumer electronics to reallocate capital into the bedrock of the economy: financial services and insurance.",
+      "timestamp": "2026-11-04T15:13:22Z",
+      "market_outlook": "Bullish on Financials",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 6.14,
+        "trigger_news": null
+      }
     }
   ]
 }
