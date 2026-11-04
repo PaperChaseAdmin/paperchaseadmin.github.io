@@ -485,6 +485,42 @@
         "ticker_chg_pct": -7.14,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TIPS",
+      "shares": 26867,
+      "price": 0.0013,
+      "total_value": 34.93,
+      "reasoning": "TIPS are down 7.14% today. The deflationary/recessionary hedge is underperforming; rotating capital out of underperforming inflation-protected securities into more direct gold plays.",
+      "timestamp": "2026-11-04T16:21:14Z",
+      "market_outlook": "Inflationary/Growth tilt. Gold and precious metals are leading the market today, suggesting a shift in sentiment toward hard assets. Equities in emerging markets are also showing strength.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -7.14,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "FXI",
+      "shares": 2,
+      "price": 34.645,
+      "total_value": 69.29,
+      "reasoning": "FXI is up 4.38%. Increasing exposure to Chinese equities to maintain global diversification and capture momentum in emerging markets.",
+      "timestamp": "2026-11-04T16:21:14Z",
+      "market_outlook": "Inflationary/Growth tilt. Gold and precious metals are leading the market today, suggesting a shift in sentiment toward hard assets. Equities in emerging markets are also showing strength.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.38,
+        "trigger_news": null
+      }
     }
   ]
 }
