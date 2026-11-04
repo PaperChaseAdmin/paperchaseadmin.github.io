@@ -1,15 +1,15 @@
 {
   "cash": 511.36,
-  "total_value": 9740.92,
+  "total_value": 9725.31,
   "positions": {
     "NVDA": {
       "shares": 16,
-      "current_price": 203.9699,
+      "current_price": 203.705,
       "avg_cost": 213.8401
     },
     "AMD": {
       "shares": 4,
-      "current_price": 483.1775,
+      "current_price": 481.25,
       "avg_cost": 498.7075
     },
     "AAPL": {
@@ -19,35 +19,60 @@
     },
     "LRCX": {
       "shares": 2,
-      "current_price": 222.86,
+      "current_price": 221.22,
       "avg_cost": 237.0767
     },
     "INTC": {
       "shares": 1,
       "avg_cost": 60.73,
-      "current_price": 58.41
+      "current_price": 58.025
     }
   },
-  "total_return_pct": -2.59,
+  "total_return_pct": -2.75,
   "total_return_usd": 0.0,
-  "today_pnl": 80.21,
-  "today_pnl_pct": 0.83,
+  "today_pnl": 64.6,
+  "today_pnl_pct": 0.67,
   "total_trades": 30,
   "today_start_value": 9660.71,
   "today_date": "2026-11-04",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-04T18:32:30Z",
+  "last_action": "...",
+  "last_updated": "2026-11-04T19:38:51Z",
   "last_session": {
-    "at": "2026-11-04T18:32:30Z",
+    "at": "2026-11-04T19:38:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AMZN",
+        6.9
+      ],
+      [
+        "MSFT",
+        6.46
+      ],
+      [
+        "AAPL",
+        6.31
+      ],
+      [
+        "MU",
+        -6.17
+      ],
+      [
+        "INTC",
+        -4.23
+      ],
+      [
+        "LRCX",
+        -4.18
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1738,6 +1763,10 @@
     {
       "timestamp": "2026-11-04T18:32:30Z",
       "value": 9740.92
+    },
+    {
+      "timestamp": "2026-11-04T19:38:51Z",
+      "value": 9725.31
     }
   ]
 }
