@@ -1,84 +1,104 @@
 {
-  "cash": 1343.76,
-  "total_value": 10275.12,
+  "cash": 1391.36,
+  "total_value": 10280.46,
   "positions": {
     "MA": {
       "shares": 4,
-      "current_price": 656.84,
+      "current_price": 659.46,
       "avg_cost": 539.4013
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 102.69
+      "current_price": 100.565
     },
     "JPM": {
       "shares": 5,
-      "current_price": 343.91,
+      "current_price": 344.0975,
       "avg_cost": 348.2024
     },
     "PGR": {
       "shares": 5,
       "avg_cost": 209.88,
-      "current_price": 231.395
+      "current_price": 231.3
     },
     "V": {
       "shares": 2,
       "avg_cost": 366.48,
-      "current_price": 423.84
+      "current_price": 427.0
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 517.34,
-      "current_price": 563.885
+      "current_price": 567.065
     },
     "TRV": {
       "shares": 1,
       "avg_cost": 380.16,
-      "current_price": 399.49
+      "current_price": 402.475
     },
     "AXP": {
       "shares": 1,
       "avg_cost": 306.4804,
-      "current_price": 334.115
+      "current_price": 325.94
     },
     "PRU": {
       "shares": 5,
       "avg_cost": 115.965,
-      "current_price": 126.95
+      "current_price": 123.245
     },
     "BAC": {
-      "shares": 4,
-      "avg_cost": 51.01,
-      "current_price": 50.83
-    },
-    "AAPL": {
-      "shares": 1,
-      "avg_cost": 346.9664,
-      "current_price": 341.54
+      "shares": 10,
+      "current_price": 50.8,
+      "avg_cost": 50.884
     }
   },
-  "total_return_pct": 2.75,
+  "total_return_pct": 2.8,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 29,
+  "today_pnl": 5.34,
+  "today_pnl_pct": 0.05,
+  "total_trades": 31,
   "today_start_value": 10275.12,
   "today_date": "2026-11-04",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-04T14:42:36Z",
+  "last_action": "Bullish on Financials",
+  "last_updated": "2026-11-04T15:13:22Z",
   "last_session": {
-    "at": "2026-11-04T14:42:36Z",
+    "at": "2026-11-04T15:13:22Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "COF",
+        -4.12
+      ],
+      [
+        "PRU",
+        3.62
+      ],
+      [
+        "BAC",
+        2.36
+      ],
+      [
+        "JPM",
+        1.85
+      ],
+      [
+        "MA",
+        1.84
+      ],
+      [
+        "BRK-B",
+        1.82
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The banking sector is showing significant strength today, with JPM, BAC, and MA all posting solid gains. This suggests a healthy appetite for traditional financial institutions. While some might chase 'disruptive' tech, I see the real value in the widening margins and stability of our major banks and insurers. I am rotating out of non-core holdings like AAPL to double down on the winners in my watchlist, specifically BAC and PRU, to maximize my exposure to this sector-wide strength.",
+    "outlook": "Bullish on Financials",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1752,6 +1772,10 @@
     {
       "timestamp": "2026-11-04T14:42:36Z",
       "value": 10275.12
+    },
+    {
+      "timestamp": "2026-11-04T15:13:22Z",
+      "value": 10280.46
     }
   ]
 }

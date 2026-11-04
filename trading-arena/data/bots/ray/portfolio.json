@@ -1,45 +1,45 @@
 {
   "cash": 1060.56,
-  "total_value": 10457.6,
+  "total_value": 10489.87,
   "positions": {
     "TIPS": {
       "shares": 26867,
-      "current_price": 0.0014,
+      "current_price": 0.0013,
       "avg_cost": 0.0004
     },
     "DJP": {
       "shares": 10,
-      "current_price": 49.825,
+      "current_price": 49.43,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 111,
-      "current_price": 19.1,
+      "current_price": 19.13,
       "avg_cost": 16.5267
     },
     "FXI": {
       "shares": 5,
       "avg_cost": 33.365,
-      "current_price": 34.32
+      "current_price": 34.495
     },
     "GSG": {
       "shares": 30,
-      "current_price": 35.105,
+      "current_price": 35.14,
       "avg_cost": 32.0725
     },
     "GLD": {
       "shares": 5,
       "avg_cost": 373.15,
-      "current_price": 369.74
+      "current_price": 370.15
     },
     "AAPL": {
       "shares": 3,
       "avg_cost": 310.135,
-      "current_price": 341.54
+      "current_price": 352.4
     },
     "TLT": {
       "shares": 25,
-      "current_price": 81.38,
+      "current_price": 81.335,
       "avg_cost": 81.799
     },
     "IEF": {
@@ -50,54 +50,29 @@
     "IAU": {
       "shares": 2,
       "avg_cost": 75.26,
-      "current_price": 75.83
+      "current_price": 75.9
     }
   },
-  "total_return_pct": 4.58,
+  "total_return_pct": 4.9,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 32.27,
+  "today_pnl_pct": 0.31,
   "total_trades": 27,
   "today_start_value": 10457.6,
   "today_date": "2026-11-04",
-  "last_action": "Analysed \u2014 no trades",
-  "last_updated": "2026-11-04T14:38:45Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-11-04T15:10:25Z",
   "last_session": {
-    "at": "2026-11-04T14:38:45Z",
+    "at": "2026-11-04T15:10:25Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "GDX",
-        5.26
-      ],
-      [
-        "FXI",
-        3.45
-      ],
-      [
-        "IAU",
-        2.89
-      ],
-      [
-        "GLD",
-        2.88
-      ],
-      [
-        "VWO",
-        1.71
-      ],
-      [
-        "GSG",
-        -1.56
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1772,6 +1747,10 @@
     {
       "timestamp": "2026-11-04T14:38:45Z",
       "value": 10457.6
+    },
+    {
+      "timestamp": "2026-11-04T15:10:25Z",
+      "value": 10489.87
     }
   ]
 }

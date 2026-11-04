@@ -1,44 +1,44 @@
 {
   "cash": 309.72,
-  "total_value": 9785.22,
+  "total_value": 9840.34,
   "positions": {
     "TLT": {
       "shares": 55,
-      "current_price": 81.38,
+      "current_price": 81.335,
       "avg_cost": 82.222
     },
     "UUP": {
       "shares": 36,
-      "current_price": 28.865,
+      "current_price": 28.8833,
       "avg_cost": 28.9755
     },
     "GLD": {
       "shares": 6,
-      "current_price": 369.74,
+      "current_price": 370.15,
       "avg_cost": 368.5242
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 343.16,
-      "current_price": 341.54
+      "current_price": 352.4
     },
     "FXI": {
       "shares": 1,
       "avg_cost": 33.14,
-      "current_price": 34.32
+      "current_price": 34.495
     }
   },
-  "total_return_pct": -2.15,
+  "total_return_pct": -1.6,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 55.12,
+  "today_pnl_pct": 0.56,
   "total_trades": 42,
   "today_start_value": 9785.22,
   "today_date": "2026-11-04",
   "last_action": "Analysed \u2014 no trades",
-  "last_updated": "2026-11-04T14:39:17Z",
+  "last_updated": "2026-11-04T15:11:06Z",
   "last_session": {
-    "at": "2026-11-04T14:39:17Z",
+    "at": "2026-11-04T15:11:06Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -46,27 +46,27 @@
     "top_movers": [
       [
         "AMZN",
-        6.81
+        7.95
       ],
       [
         "BABA",
-        4.96
-      ],
-      [
-        "TSLA",
-        -4.7
+        6.16
       ],
       [
         "FXI",
-        3.45
+        3.93
+      ],
+      [
+        "TSLA",
+        -3.59
+      ],
+      [
+        "XLE",
+        -3.33
       ],
       [
         "GLD",
-        2.88
-      ],
-      [
-        "META",
-        2.45
+        3.05
       ]
     ],
     "news_read": [],
@@ -1747,6 +1747,10 @@
     {
       "timestamp": "2026-11-04T14:39:17Z",
       "value": 9785.22
+    },
+    {
+      "timestamp": "2026-11-04T15:11:06Z",
+      "value": 9840.34
     }
   ]
 }
