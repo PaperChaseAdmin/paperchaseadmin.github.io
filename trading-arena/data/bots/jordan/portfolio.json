@@ -1,64 +1,79 @@
 {
-  "cash": 225.67,
-  "total_value": 8786.88,
+  "cash": 632.2,
+  "total_value": 9470.02,
   "positions": {
     "RBLX": {
       "shares": 10,
       "avg_cost": 38.795,
-      "current_price": 45.58
+      "current_price": 46.94
     },
     "META": {
       "shares": 3,
       "avg_cost": 581.2,
-      "current_price": 619.018
+      "current_price": 635.69
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 318.755,
-      "current_price": 330.5139
+      "current_price": 341.54
     },
     "RIVN": {
-      "shares": 2,
-      "avg_cost": 12.06,
-      "current_price": 13.17
-    },
-    "NVDA": {
-      "shares": 1,
-      "avg_cost": 206.57,
-      "current_price": 206.8094
-    },
-    "MARA": {
-      "shares": 60,
-      "current_price": 7.0981,
-      "avg_cost": 6.9508
+      "shares": 17,
+      "current_price": 13.85,
+      "avg_cost": 13.6394
     },
     "RIOT": {
       "shares": 290,
       "avg_cost": 13.625,
-      "current_price": 13.575
+      "current_price": 15.58
     }
   },
-  "total_return_pct": -12.13,
+  "total_return_pct": -5.3,
   "total_return_usd": 0.0,
-  "today_pnl": 28.95,
-  "today_pnl_pct": 0.33,
-  "total_trades": 36,
-  "today_start_value": 8757.93,
-  "today_date": "2026-11-03",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-03T20:29:31Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 39,
+  "today_start_value": 9470.02,
+  "today_date": "2026-11-04",
+  "last_action": "Aggressive momentum play. We are hunting for the squeeze and riding the volatility. If it's not pumping, it's nothing.",
+  "last_updated": "2026-11-04T14:47:46Z",
   "last_session": {
-    "at": "2026-11-03T20:29:31Z",
+    "at": "2026-11-04T14:47:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RIOT",
+        11.91
+      ],
+      [
+        "TSLA",
+        -4.7
+      ],
+      [
+        "MARA",
+        -4.68
+      ],
+      [
+        "RIVN",
+        4.23
+      ],
+      [
+        "PLTR",
+        -3.87
+      ],
+      [
+        "UPST",
+        2.98
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is separating the winners from the losers. RIOT is absolutely exploding and that's where the money is being made. I'm dumping the laggards like MARA and NVDA to fuel the fire in the high-velocity plays. We are chasing the heat!",
+    "outlook": "Aggressive momentum play. We are hunting for the squeeze and riding the volatility. If it's not pumping, it's nothing.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1728,6 +1743,10 @@
     {
       "timestamp": "2026-11-03T20:29:31Z",
       "value": 8786.88
+    },
+    {
+      "timestamp": "2026-11-04T14:47:46Z",
+      "value": 9470.02
     }
   ]
 }
