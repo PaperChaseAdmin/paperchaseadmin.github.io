@@ -1,69 +1,74 @@
 {
-  "cash": 3920.05,
-  "total_value": 9913.53,
+  "cash": 2185.08,
+  "total_value": 9894.51,
   "positions": {
     "UUP": {
       "shares": 36,
-      "current_price": 28.9424,
+      "current_price": 28.915,
       "avg_cost": 28.9755
     },
     "GLD": {
       "shares": 13,
-      "current_price": 378.18,
+      "current_price": 376.82,
       "avg_cost": 373.7235
     },
     "FXI": {
       "shares": 1,
       "avg_cost": 33.14,
-      "current_price": 35.21
+      "current_price": 34.855
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 346.995,
+      "current_price": 346.995
     }
   },
-  "total_return_pct": -0.86,
+  "total_return_pct": -1.05,
   "total_return_usd": 0.0,
-  "today_pnl": 0.01,
-  "today_pnl_pct": 0.0,
-  "total_trades": 45,
+  "today_pnl": -19.01,
+  "today_pnl_pct": -0.19,
+  "total_trades": 46,
   "today_start_value": 9913.52,
   "today_date": "2026-11-05",
-  "last_action": "Cautiously Bullish on China/Hard Assets; Bearish on Tech Momentum.",
-  "last_updated": "2026-11-05T14:41:24Z",
+  "last_action": "Traded",
+  "last_updated": "2026-11-05T16:40:54Z",
   "last_session": {
-    "at": "2026-11-05T14:41:24Z",
+    "at": "2026-11-05T16:40:54Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "BABA",
-        4.8
-      ],
-      [
         "TSLA",
-        -3.17
+        -9.23
       ],
       [
         "NVDA",
-        -2.33
+        -6.92
       ],
       [
-        "AMZN",
-        2.3
+        "QQQ",
+        -4.47
       ],
       [
-        "BAC",
-        2.01
+        "EEM",
+        -4.17
       ],
       [
-        "FXI",
-        1.85
+        "META",
+        -3.41
+      ],
+      [
+        "SPY",
+        -2.8
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "We are seeing a clear divergence. While NVDA and TSLA are getting hammered, BABA and the broader Chinese basket (FXI) are exploding upward. This is a classic rotation. I am exiting my stagnant bond position (TLT) and tech holdings to concentrate heavily on the emerging momentum in Chinese equities and the safety of Gold. The reflexivity is kicking in for the China trade.",
-    "outlook": "Cautiously Bullish on China/Hard Assets; Bearish on Tech Momentum.",
-    "trades_made": 3
+    "ai_analysis": "",
+    "outlook": "",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1765,6 +1770,14 @@
     {
       "timestamp": "2026-11-05T14:41:24Z",
       "value": 9913.53
+    },
+    {
+      "timestamp": "2026-11-05T15:42:07Z",
+      "value": 9882.08
+    },
+    {
+      "timestamp": "2026-11-05T16:40:54Z",
+      "value": 9894.51
     }
   ]
 }
