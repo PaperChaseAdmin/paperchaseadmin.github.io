@@ -1,64 +1,89 @@
 {
-  "cash": 1215.17,
-  "total_value": 5777.03,
+  "cash": 615.76,
+  "total_value": 5617.46,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 53.965
+      "current_price": 52.22
     },
     "NVDA": {
       "shares": 1,
       "avg_cost": 206.06,
-      "current_price": 186.37
+      "current_price": 184.5
     },
     "SOXL": {
-      "shares": 18,
-      "current_price": 49.32,
-      "avg_cost": 128.1122
+      "shares": 27,
+      "current_price": 46.1918,
+      "avg_cost": 100.8054
     },
     "SMCI": {
       "shares": 10,
       "avg_cost": 38.6247,
-      "current_price": 27.21
+      "current_price": 26.715
     },
     "RKLB": {
-      "shares": 2,
-      "avg_cost": 59.72,
-      "current_price": 47.2138
+      "shares": 6,
+      "current_price": 45.92,
+      "avg_cost": 50.52
     },
     "PLTR": {
       "shares": 1,
       "avg_cost": 187.6,
-      "current_price": 157.355
+      "current_price": 155.4525
     },
     "IONQ": {
       "shares": 10,
-      "current_price": 26.56,
+      "current_price": 26.09,
       "avg_cost": 29.5816
     }
   },
-  "total_return_pct": -42.23,
+  "total_return_pct": -43.83,
   "total_return_usd": 0.0,
-  "today_pnl": -478.34,
-  "today_pnl_pct": -7.65,
-  "total_trades": 30,
+  "today_pnl": -637.91,
+  "today_pnl_pct": -10.2,
+  "total_trades": 32,
   "today_start_value": 6255.37,
   "today_date": "2026-11-05",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-05T16:47:39Z",
+  "last_action": "Market panic creating generational entry points in AI, semis, and defense tech. VIX spike means fear is maxed - historically the best time to be aggressive. The fundamentals haven't changed: AI capex ",
+  "last_updated": "2026-11-05T17:49:02Z",
   "last_session": {
-    "at": "2026-11-05T16:47:39Z",
+    "at": "2026-11-05T17:49:02Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "SOXL",
+        -30.56
+      ],
+      [
+        "TQQQ",
+        -16.05
+      ],
+      [
+        "AMD",
+        -14.53
+      ],
+      [
+        "MRVL",
+        -13.25
+      ],
+      [
+        "RKLB",
+        -12.25
+      ],
+      [
+        "ARM",
+        -11.66
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio down 42% but every position is a conviction name in secular growth themes. Today's washout (-30% SOXL, -16% TQQQ) is capitulation. Adding to SOXL and TQQQ leverages the recovery. RKLB adds space/defense diversification. Keeping $300+ cash reserve. Concentrated bets on the future - diversification is for people who don't know what they own.",
+    "outlook": "Market panic creating generational entry points in AI, semis, and defense tech. VIX spike means fear is maxed - historically the best time to be aggressive. The fundamentals haven't changed: AI capex accelerating, semiconductor demand structural, defense spending rising. This is the moment legends are made.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1768,6 +1793,10 @@
     {
       "timestamp": "2026-11-05T16:47:39Z",
       "value": 5777.03
+    },
+    {
+      "timestamp": "2026-11-05T17:49:02Z",
+      "value": 5617.46
     }
   ]
 }

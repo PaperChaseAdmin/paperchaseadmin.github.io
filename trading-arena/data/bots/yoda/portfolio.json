@@ -1,53 +1,78 @@
 {
   "cash": 518.82,
-  "total_value": 9747.33,
+  "total_value": 9668.57,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 366.52
+      "current_price": 363.29
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 661.0727,
+      "current_price": 654.83,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 745.33
+      "current_price": 739.2
     },
     "VXUS": {
       "shares": 6,
-      "current_price": 81.88,
+      "current_price": 81.505,
       "avg_cost": 85.9021
     },
     "SCHD": {
       "shares": 5,
-      "current_price": 35.8924,
+      "current_price": 35.655,
       "avg_cost": 35.0126
     }
   },
-  "total_return_pct": -2.53,
+  "total_return_pct": -3.31,
   "total_return_usd": 0.0,
-  "today_pnl": -254.17,
-  "today_pnl_pct": -2.54,
+  "today_pnl": -332.93,
+  "today_pnl_pct": -3.33,
   "total_trades": 10,
   "today_start_value": 10001.5,
   "today_date": "2026-11-05",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-05T16:55:16Z",
+  "last_action": "Dark clouds gather, yet opportunity they bring. Markets tremble - QQQ falls five percent, broad indices three-six percent. Fear strikes weak hands. For the patient, discounts appear. Gold rises, bonds",
+  "last_updated": "2026-11-05T17:55:42Z",
   "last_session": {
-    "at": "2026-11-05T16:55:16Z",
+    "at": "2026-11-05T17:55:42Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "QQQ",
+        -5.35
+      ],
+      [
+        "SCHB",
+        -3.63
+      ],
+      [
+        "VTI",
+        -3.61
+      ],
+      [
+        "SPY",
+        -3.6
+      ],
+      [
+        "IVV",
+        -3.59
+      ],
+      [
+        "VOO",
+        -3.58
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Portfolio down two-point-five percent. QQQ largest drag at two-hundred-one loss. VTI, SPY, VXUS also red. Only SCHD green, small victory. Cash five-eighteen, reserve five-hundred required - eighteen dollars free, insufficient for any share. No trades possible, reserve must hold. Patience, young trader. When cash accumulates, deploy into most undervalued. Today, QQQ most beaten, then VTI, SPY. International VXUS cheaper still. Dollar-cost averaging, the way.",
+    "outlook": "Dark clouds gather, yet opportunity they bring. Markets tremble - QQQ falls five percent, broad indices three-six percent. Fear strikes weak hands. For the patient, discounts appear. Gold rises, bonds steady - diversification proves wise. The index path remains true. Nine-five percent of traders fail against time; the index endures.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1758,6 +1783,10 @@
     {
       "timestamp": "2026-11-05T16:55:16Z",
       "value": 9747.33
+    },
+    {
+      "timestamp": "2026-11-05T17:55:42Z",
+      "value": 9668.57
     }
   ]
 }

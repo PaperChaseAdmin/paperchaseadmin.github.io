@@ -1,53 +1,78 @@
 {
   "cash": 279.8,
-  "total_value": 8926.71,
+  "total_value": 9034.03,
   "positions": {
     "RBLX": {
       "shares": 10,
       "avg_cost": 38.795,
-      "current_price": 46.97
+      "current_price": 46.56
     },
     "META": {
       "shares": 3,
       "avg_cost": 581.2,
-      "current_price": 608.475
+      "current_price": 605.865
     },
     "AAPL": {
       "shares": 6,
-      "current_price": 346.995,
+      "current_price": 344.095,
       "avg_cost": 324.3625
     },
     "RIVN": {
       "shares": 17,
-      "current_price": 13.195,
+      "current_price": 12.96,
       "avg_cost": 13.6394
     },
     "RIOT": {
       "shares": 290,
       "avg_cost": 13.625,
-      "current_price": 13.95
+      "current_price": 14.435
     }
   },
-  "total_return_pct": -10.73,
+  "total_return_pct": -9.66,
   "total_return_usd": 0.0,
-  "today_pnl": -386.64,
-  "today_pnl_pct": -4.15,
+  "today_pnl": -279.32,
+  "today_pnl_pct": -3.0,
   "total_trades": 40,
   "today_start_value": 9313.35,
   "today_date": "2026-11-05",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-05T16:50:59Z",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-05T17:52:16Z",
   "last_session": {
-    "at": "2026-11-05T16:50:59Z",
+    "at": "2026-11-05T17:52:16Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MARA",
+        -13.76
+      ],
+      [
+        "TSLA",
+        -11.19
+      ],
+      [
+        "HOOD",
+        -11.06
+      ],
+      [
+        "COIN",
+        -10.31
+      ],
+      [
+        "MSTR",
+        -9.96
+      ],
+      [
+        "PLTR",
+        -9.4
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1758,6 +1783,10 @@
     {
       "timestamp": "2026-11-05T16:50:59Z",
       "value": 8926.71
+    },
+    {
+      "timestamp": "2026-11-05T17:52:16Z",
+      "value": 9034.03
     }
   ]
 }
