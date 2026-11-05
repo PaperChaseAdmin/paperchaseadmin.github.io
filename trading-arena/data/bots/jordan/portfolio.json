@@ -1,54 +1,74 @@
 {
-  "cash": 279.8,
-  "total_value": 9078.32,
+  "cash": 678.71,
+  "total_value": 9111.53,
   "positions": {
     "RBLX": {
       "shares": 10,
       "avg_cost": 38.795,
-      "current_price": 46.61
+      "current_price": 47.455
     },
     "META": {
       "shares": 3,
       "avg_cost": 581.2,
-      "current_price": 603.27
+      "current_price": 602.495
     },
     "AAPL": {
       "shares": 6,
-      "current_price": 342.2,
+      "current_price": 343.8,
       "avg_cost": 324.3625
     },
-    "RIVN": {
-      "shares": 17,
-      "current_price": 12.995,
-      "avg_cost": 13.6394
-    },
     "RIOT": {
-      "shares": 290,
+      "shares": 278,
       "avg_cost": 13.625,
-      "current_price": 14.65
+      "current_price": 14.705
     }
   },
-  "total_return_pct": -9.22,
+  "total_return_pct": -8.88,
   "total_return_usd": 0.0,
-  "today_pnl": -235.03,
-  "today_pnl_pct": -2.52,
-  "total_trades": 40,
+  "today_pnl": -201.82,
+  "today_pnl_pct": -2.17,
+  "total_trades": 42,
   "today_start_value": 9313.35,
   "today_date": "2026-11-05",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-05T18:52:39Z",
+  "last_action": "Everything's getting smashed today - MARA -12.7%, TSLA -11.4%, HOOD -11.2%. This is a bloodbath, not a launchpad. No momentum plays worth chasing right now. Cash is king until something rips double di",
+  "last_updated": "2026-11-05T19:47:08Z",
   "last_session": {
-    "at": "2026-11-05T18:52:39Z",
+    "at": "2026-11-05T19:47:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MARA",
+        -12.68
+      ],
+      [
+        "TSLA",
+        -11.45
+      ],
+      [
+        "HOOD",
+        -11.19
+      ],
+      [
+        "AMC",
+        -10.51
+      ],
+      [
+        "MSTR",
+        -10.16
+      ],
+      [
+        "COIN",
+        -10.12
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio heavy on RIOT (47% - trimmed to 45%). RBLX, META, AAPL all green but not parabolic. RIVN cut. $279 cash -> ~$500 after sells. Waiting for the next GME-style explosion. When the meme names turn green, I'll be first in with max size.",
+    "outlook": "Everything's getting smashed today - MARA -12.7%, TSLA -11.4%, HOOD -11.2%. This is a bloodbath, not a launchpad. No momentum plays worth chasing right now. Cash is king until something rips double digits green.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1766,6 +1786,10 @@
     {
       "timestamp": "2026-11-05T18:52:39Z",
       "value": 9078.32
+    },
+    {
+      "timestamp": "2026-11-05T19:47:08Z",
+      "value": 9111.53
     }
   ]
 }
