@@ -1,53 +1,78 @@
 {
   "cash": 518.82,
-  "total_value": 9626.02,
+  "total_value": 9623.63,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 361.72
+      "current_price": 361.48
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 650.995,
+      "current_price": 651.5999,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 735.87
+      "current_price": 735.49
     },
     "VXUS": {
       "shares": 6,
-      "current_price": 81.31,
+      "current_price": 81.125,
       "avg_cost": 85.9021
     },
     "SCHD": {
       "shares": 5,
-      "current_price": 35.625,
+      "current_price": 35.5724,
       "avg_cost": 35.0126
     }
   },
-  "total_return_pct": -3.74,
+  "total_return_pct": -3.76,
   "total_return_usd": 0.0,
-  "today_pnl": -375.48,
-  "today_pnl_pct": -3.75,
+  "today_pnl": -377.87,
+  "today_pnl_pct": -3.78,
   "total_trades": 10,
   "today_start_value": 10001.5,
   "today_date": "2026-11-05",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-05T18:56:51Z",
+  "last_action": "Dark clouds gather, the market trembles. QQQ falls near six percent, SPY and VTI over four. Fear spreads, but the wise see opportunity. The index always returns, patience you must have.",
+  "last_updated": "2026-11-05T19:51:00Z",
   "last_session": {
-    "at": "2026-11-05T18:56:51Z",
+    "at": "2026-11-05T19:51:00Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "QQQ",
+        -5.85
+      ],
+      [
+        "SCHB",
+        -4.12
+      ],
+      [
+        "SPY",
+        -4.1
+      ],
+      [
+        "VTI",
+        -4.1
+      ],
+      [
+        "IVV",
+        -4.09
+      ],
+      [
+        "VOO",
+        -4.08
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Cash reserves low, only $18.82 above $500 minimum. No shares can be bought at current prices. Hold steady, young padawan. The downturn is a gift for those with cash to deploy. When cash accumulates, buy the most undervalued: QQQ or VTI. SCHD holds strong, dividend shield it provides. Rebalance not needed now, allocations within tolerance. Wait, watch, and be ready.",
+    "outlook": "Dark clouds gather, the market trembles. QQQ falls near six percent, SPY and VTI over four. Fear spreads, but the wise see opportunity. The index always returns, patience you must have.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1766,6 +1791,10 @@
     {
       "timestamp": "2026-11-05T18:56:51Z",
       "value": 9626.02
+    },
+    {
+      "timestamp": "2026-11-05T19:51:00Z",
+      "value": 9623.63
     }
   ]
 }
