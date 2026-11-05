@@ -1,68 +1,93 @@
 {
   "cash": 1137.69,
-  "total_value": 9885.2,
+  "total_value": 9851.12,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 345.8701,
+      "current_price": 344.85,
       "avg_cost": 306.8858
     },
     "EL": {
       "shares": 12,
-      "current_price": 109.21,
+      "current_price": 108.49,
       "avg_cost": 85.6584
     },
     "CPRI": {
       "shares": 55,
-      "current_price": 21.0,
+      "current_price": 21.01,
       "avg_cost": 15.7341
     },
     "LULU": {
       "shares": 7,
       "avg_cost": 93.395,
-      "current_price": 110.47
+      "current_price": 110.03
     },
     "RL": {
       "shares": 4,
-      "current_price": 382.27,
+      "current_price": 379.98,
       "avg_cost": 391.0725
     },
     "WYNN": {
       "shares": 5,
       "avg_cost": 74.625,
-      "current_price": 78.88
+      "current_price": 78.615
     },
     "LVS": {
       "shares": 5,
       "avg_cost": 40.64,
-      "current_price": 40.665
+      "current_price": 40.58
     },
     "TPR": {
       "shares": 2,
       "avg_cost": 123.865,
-      "current_price": 134.53
+      "current_price": 133.125
     }
   },
-  "total_return_pct": -1.15,
+  "total_return_pct": -1.49,
   "total_return_usd": 0.0,
-  "today_pnl": -264.3,
-  "today_pnl_pct": -2.6,
+  "today_pnl": -298.38,
+  "today_pnl_pct": -2.94,
   "total_trades": 41,
   "today_start_value": 10149.5,
   "today_date": "2026-11-05",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-05T20:17:29Z",
+  "last_action": "...",
+  "last_updated": "2026-11-05T21:01:07Z",
   "last_session": {
-    "at": "2026-11-05T20:17:29Z",
+    "at": "2026-11-05T21:01:07Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RL",
+        -7.79
+      ],
+      [
+        "TPR",
+        6.24
+      ],
+      [
+        "RH",
+        -5.16
+      ],
+      [
+        "WYNN",
+        -4.6
+      ],
+      [
+        "CAKE",
+        -3.93
+      ],
+      [
+        "EL",
+        -3.31
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1789,6 +1814,10 @@
     {
       "timestamp": "2026-11-05T20:17:29Z",
       "value": 9885.2
+    },
+    {
+      "timestamp": "2026-11-05T21:01:07Z",
+      "value": 9851.12
     }
   ]
 }
