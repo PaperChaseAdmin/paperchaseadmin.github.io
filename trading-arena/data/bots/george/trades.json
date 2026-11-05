@@ -755,6 +755,60 @@
         "ticker_chg_pct": -0.19,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TLT",
+      "shares": 55,
+      "price": 81.5601,
+      "total_value": 4485.81,
+      "reasoning": "My TLT position is a drag and the price action is weak. I am cutting the loser to free up capital for higher conviction momentum plays.",
+      "timestamp": "2026-11-05T14:41:24Z",
+      "market_outlook": "Cautiously Bullish on China/Hard Assets; Bearish on Tech Momentum.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.24,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GLD",
+      "shares": 7,
+      "price": 378.18,
+      "total_value": 2647.26,
+      "reasoning": "Gold is up 1.55% and showing strength. In a regime of potential systemic volatility, I want to increase my weight in hard assets to hedge against equity drawdown.",
+      "timestamp": "2026-11-05T14:41:24Z",
+      "market_outlook": "Cautiously Bullish on China/Hard Assets; Bearish on Tech Momentum.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.55,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 5,
+      "price": 354.355,
+      "total_value": 1771.78,
+      "reasoning": "Taking profits on AAPL. It's a steady winner, but I need to rotate this capital into the high-velocity moves I see in BABA and GLD.",
+      "timestamp": "2026-11-05T14:41:24Z",
+      "market_outlook": "Cautiously Bullish on China/Hard Assets; Bearish on Tech Momentum.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.27,
+        "trigger_news": null
+      }
     }
   ]
 }
