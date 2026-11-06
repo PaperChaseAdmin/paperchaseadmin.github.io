@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-06T00:59:53Z",
-  "last_prediction_date": "2026-11-05",
+  "updated_at": "2026-11-06T19:38:17Z",
+  "last_prediction_date": "2026-11-06",
   "last_settle_date": "2026-11-06",
   "tools": {
     "market_sentinel": {
@@ -2138,6 +2138,36 @@
           "actual": null,
           "correct": null,
           "settled": false
+        },
+        {
+          "date": "2026-11-06",
+          "market": "S&P 500",
+          "prediction": "up",
+          "confidence": 70,
+          "signal": "Positive earnings and bullish market mood",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-11-06",
+          "market": "NASDAQ",
+          "prediction": "up",
+          "confidence": 75,
+          "signal": "Tech sector strength and positive earnings",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-11-06",
+          "market": "DOW",
+          "prediction": "neutral",
+          "confidence": 55,
+          "signal": "Mixed signals from macro data and market mood",
+          "actual": null,
+          "correct": null,
+          "settled": false
         }
       ]
     },
@@ -2965,6 +2995,16 @@
           "prediction": "down",
           "confidence": 74,
           "signal": "Will the next UK election be called by June 30, 20 | Yes 26% / No 74% | Vol $10,756",
+          "actual": null,
+          "correct": null,
+          "settled": false
+        },
+        {
+          "date": "2026-11-06",
+          "market": "Will the next UK election be called by June 30, 2027?",
+          "prediction": "down",
+          "confidence": 74,
+          "signal": "Will the next UK election be called by June 30, 20 | Yes 26% / No 74% | Vol $10,762",
           "actual": null,
           "correct": null,
           "settled": false
