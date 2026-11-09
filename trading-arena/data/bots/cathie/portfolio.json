@@ -1,73 +1,98 @@
 {
   "cash": 500.41,
-  "total_value": 7987.35,
+  "total_value": 8211.05,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 361.08
+      "current_price": 377.5399
     },
     "CRSP": {
       "shares": 12,
-      "current_price": 50.665,
+      "current_price": 51.35,
       "avg_cost": 56.1316
     },
     "PATH": {
       "shares": 17,
-      "current_price": 12.955,
+      "current_price": 13.005,
       "avg_cost": 13.9882
     },
     "PLTR": {
       "shares": 5,
-      "current_price": 161.53,
+      "current_price": 167.98,
       "avg_cost": 173.785
     },
     "BEAM": {
       "shares": 20,
       "avg_cost": 26.39,
-      "current_price": 26.84
+      "current_price": 27.17
     },
     "RXRX": {
       "shares": 42,
-      "current_price": 3.54,
+      "current_price": 3.765,
       "avg_cost": 4.0156
     },
     "AAPL": {
       "shares": 7,
-      "current_price": 345.14,
+      "current_price": 350.53,
       "avg_cost": 340.5028
     },
     "NTLA": {
       "shares": 10,
-      "current_price": 11.33,
+      "current_price": 11.81,
       "avg_cost": 11.449
     },
     "RKLB": {
       "shares": 2,
       "avg_cost": 56.18,
-      "current_price": 54.375
+      "current_price": 58.6699
     }
   },
-  "total_return_pct": -20.13,
+  "total_return_pct": -17.89,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 223.7,
+  "today_pnl_pct": 2.8,
   "total_trades": 44,
   "today_start_value": 7987.35,
   "today_date": "2026-11-09",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-09T14:37:41Z",
+  "last_action": "...",
+  "last_updated": "2026-11-09T15:45:46Z",
   "last_session": {
-    "at": "2026-11-09T14:37:41Z",
+    "at": "2026-11-09T15:45:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RKLB",
+        10.59
+      ],
+      [
+        "RXRX",
+        6.96
+      ],
+      [
+        "TSLA",
+        5.41
+      ],
+      [
+        "HOOD",
+        5.02
+      ],
+      [
+        "PLTR",
+        4.81
+      ],
+      [
+        "NTLA",
+        4.05
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1810,6 +1835,10 @@
     {
       "timestamp": "2026-11-09T14:37:41Z",
       "value": 7987.35
+    },
+    {
+      "timestamp": "2026-11-09T15:45:46Z",
+      "value": 8211.05
     }
   ]
 }

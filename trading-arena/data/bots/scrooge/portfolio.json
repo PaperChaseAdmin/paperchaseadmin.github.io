@@ -1,108 +1,133 @@
 {
   "cash": 211.31,
-  "total_value": 9952.78,
+  "total_value": 9932.32,
   "positions": {
     "T": {
       "shares": 82,
-      "current_price": 21.68,
+      "current_price": 21.652,
       "avg_cost": 22.4669
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 57.16,
+      "current_price": 57.0,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 45.825,
+      "current_price": 46.085,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 378.26,
+      "current_price": 377.455,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 197.765,
+      "current_price": 194.075,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 291.01,
+      "current_price": 290.75,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 19.21,
+      "current_price": 19.19,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 35.28
+      "current_price": 35.4798
     },
     "HTGC": {
       "shares": 20,
-      "current_price": 16.23,
+      "current_price": 16.27,
       "avg_cost": 16.239
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 160.585
+      "current_price": 161.85
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 56.91
+      "current_price": 57.305
     },
     "MO": {
       "shares": 5,
-      "current_price": 75.99,
+      "current_price": 75.28,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 59.24,
+      "current_price": 59.3,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 48.345
+      "current_price": 48.375
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 46.825
+      "current_price": 47.27
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 60.76
+      "current_price": 60.19
     }
   },
-  "total_return_pct": -0.47,
+  "total_return_pct": -0.68,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -20.46,
+  "today_pnl_pct": -0.21,
   "total_trades": 24,
   "today_start_value": 9952.78,
   "today_date": "2026-11-09",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-09T14:55:12Z",
+  "last_action": "Neutral but ripe for dividend harvesting. The market is wobbling, but the income-payers are holding steady.",
+  "last_updated": "2026-11-09T16:00:11Z",
   "last_session": {
-    "at": "2026-11-09T14:55:12Z",
+    "at": "2026-11-09T16:00:11Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PM",
+        -1.94
+      ],
+      [
+        "VYM",
+        1.74
+      ],
+      [
+        "JEPI",
+        1.54
+      ],
+      [
+        "GLD",
+        1.32
+      ],
+      [
+        "IBM",
+        1.16
+      ],
+      [
+        "BTI",
+        -1.15
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "I'm seeing some movement in my favorite income vehicles. JEPI and VYM are showing strength, so I'm deploying my cash to increase my dividend stream. I'm also eyeing WPC to expand my REIT holdings. I won't touch those growth-hungry fools; I'm here for the cold, hard cash flow!",
+    "outlook": "Neutral but ripe for dividend harvesting. The market is wobbling, but the income-payers are holding steady.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1845,6 +1870,10 @@
     {
       "timestamp": "2026-11-09T14:55:12Z",
       "value": 9952.78
+    },
+    {
+      "timestamp": "2026-11-09T16:00:11Z",
+      "value": 9932.32
     }
   ]
 }
