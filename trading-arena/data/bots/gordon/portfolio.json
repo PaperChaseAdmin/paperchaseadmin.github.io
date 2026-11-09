@@ -1,69 +1,99 @@
 {
-  "cash": 975.57,
-  "total_value": 9476.51,
+  "cash": 626.45,
+  "total_value": 9495.59,
   "positions": {
     "DIS": {
       "shares": 15,
       "avg_cost": 109.66,
-      "current_price": 117.89
+      "current_price": 118.025
     },
     "SBUX": {
       "shares": 10,
       "avg_cost": 101.66,
-      "current_price": 109.635
+      "current_price": 109.93
     },
     "VFC": {
       "shares": 40,
       "avg_cost": 16.364,
-      "current_price": 20.9
+      "current_price": 20.86
     },
     "NKE": {
       "shares": 30,
       "avg_cost": 38.73,
-      "current_price": 39.655
+      "current_price": 39.87
     },
     "PYPL": {
       "shares": 4,
       "avg_cost": 58.84,
-      "current_price": 60.265
+      "current_price": 60.535
     },
     "INTC": {
       "shares": 35,
-      "current_price": 58.2424,
+      "current_price": 58.38,
       "avg_cost": 54.0886
     },
     "NOK": {
       "shares": 100,
       "avg_cost": 7.4901,
-      "current_price": 8.2
+      "current_price": 8.205
     },
     "CVS": {
       "shares": 6,
       "avg_cost": 83.51,
-      "current_price": 85.175
+      "current_price": 85.65
+    },
+    "AAPL": {
+      "shares": 1,
+      "avg_cost": 349.12,
+      "current_price": 349.12
     }
   },
-  "total_return_pct": -5.23,
+  "total_return_pct": -5.04,
   "total_return_usd": 0.0,
-  "today_pnl": 142.86,
-  "today_pnl_pct": 1.53,
-  "total_trades": 70,
+  "today_pnl": 161.94,
+  "today_pnl_pct": 1.74,
+  "total_trades": 71,
   "today_start_value": 9333.65,
   "today_date": "2026-11-09",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-09T17:02:21Z",
+  "last_action": "...",
+  "last_updated": "2026-11-09T18:06:56Z",
   "last_session": {
-    "at": "2026-11-09T17:02:21Z",
+    "at": "2026-11-09T18:06:56Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NOK",
+        7.16
+      ],
+      [
+        "SBUX",
+        4.31
+      ],
+      [
+        "INTC",
+        3.74
+      ],
+      [
+        "GM",
+        3.71
+      ],
+      [
+        "NKE",
+        3.33
+      ],
+      [
+        "VFC",
+        2.51
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1813,6 +1843,10 @@
     {
       "timestamp": "2026-11-09T17:02:21Z",
       "value": 9476.51
+    },
+    {
+      "timestamp": "2026-11-09T18:06:56Z",
+      "value": 9495.59
     }
   ]
 }
