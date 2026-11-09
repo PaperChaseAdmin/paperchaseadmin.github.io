@@ -971,6 +971,42 @@
         "ticker_chg_pct": 1.14,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLF",
+      "shares": 10,
+      "price": 58.085,
+      "total_value": 580.85,
+      "reasoning": "Financial sector leading risk-on move with steepening yield curve; XLF at 13.7% allocation has room to 25% limit. Data supports continued economic resilience.",
+      "timestamp": "2026-11-09T18:13:33Z",
+      "market_outlook": "Risk-on tone evident in financial leadership and broad equity gains. VIX likely suppressed below 15 given price action. Curve steepening favors banks. Maintaining barbell: short-term liquidity (BIL/SHY) + long duration (TLT) + cyclical exposure (XLF/XLU).",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.64,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 5,
+      "price": 81.94,
+      "total_value": 409.7,
+      "reasoning": "Long duration hedge at 10.9% allocation; modest addition maintains portfolio balance as curve steepens slightly. Insurance against growth scare.",
+      "timestamp": "2026-11-09T18:13:33Z",
+      "market_outlook": "Risk-on tone evident in financial leadership and broad equity gains. VIX likely suppressed below 15 given price action. Curve steepening favors banks. Maintaining barbell: short-term liquidity (BIL/SHY) + long duration (TLT) + cyclical exposure (XLF/XLU).",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.02,
+        "trigger_news": null
+      }
     }
   ]
 }
