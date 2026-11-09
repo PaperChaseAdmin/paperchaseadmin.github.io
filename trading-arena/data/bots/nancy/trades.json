@@ -539,6 +539,60 @@
         "ticker_chg_pct": -7.69,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "LRCX",
+      "shares": 2,
+      "price": 205.25,
+      "total_value": 410.5,
+      "reasoning": "Cutting loser position down 27% - freeing capital for higher conviction semiconductor plays",
+      "timestamp": "2026-11-09T14:36:04Z",
+      "market_outlook": "Bullish on semiconductors - NVDA pullback is gift wrapping for accumulation. Sector rotation into tech accelerating.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.4,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "INTC",
+      "shares": 1,
+      "price": 57.0499,
+      "total_value": 57.05,
+      "reasoning": "Exiting small underperformer - minimal position drag, better deployed in sector leaders",
+      "timestamp": "2026-11-09T14:36:04Z",
+      "market_outlook": "Bullish on semiconductors - NVDA pullback is gift wrapping for accumulation. Sector rotation into tech accelerating.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.19,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "NVDA",
+      "shares": 2,
+      "price": 173.38,
+      "total_value": 346.76,
+      "reasoning": "Buying the -7.8% dip aggressively - semiconductor leader on sale, government AI spending tailwinds intact",
+      "timestamp": "2026-11-09T14:36:04Z",
+      "market_outlook": "Bullish on semiconductors - NVDA pullback is gift wrapping for accumulation. Sector rotation into tech accelerating.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -7.77,
+        "trigger_news": null
+      }
     }
   ]
 }
