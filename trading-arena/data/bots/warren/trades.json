@@ -629,6 +629,42 @@
         "ticker_chg_pct": -0.59,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "JPM",
+      "shares": 2,
+      "price": 342.275,
+      "total_value": 684.55,
+      "reasoning": "JPMorgan Chase offers a fortress balance sheet and a dominant position in the banking sector. At current levels, it provides a solid entry point for a high-quality financial institution with a wide moat.",
+      "timestamp": "2026-11-10T17:17:16Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.06,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "KO",
+      "shares": 4,
+      "price": 96.83,
+      "total_value": 387.32,
+      "reasoning": "Taking some profits on Coca-Cola. The position has performed well, and I want to reallocate some capital toward other high-quality opportunities while maintaining a healthy cash reserve.",
+      "timestamp": "2026-11-10T17:17:16Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.85,
+        "trigger_news": null
+      }
     }
   ]
 }
