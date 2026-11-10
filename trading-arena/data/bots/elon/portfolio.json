@@ -1,64 +1,89 @@
 {
-  "cash": 1722.76,
-  "total_value": 8815.58,
+  "cash": 1329.1,
+  "total_value": 8790.85,
   "positions": {
-    "NVDA": {
-      "shares": 8,
-      "current_price": 169.36,
-      "avg_cost": 206.5303
-    },
     "AAPL": {
       "shares": 9,
-      "current_price": 347.52,
+      "current_price": 348.12,
       "avg_cost": 318.6712
     },
     "COIN": {
       "shares": 7,
-      "current_price": 130.9,
+      "current_price": 130.1307,
       "avg_cost": 148.0621
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 641.745
+      "current_price": 640.5877
     },
     "TSLA": {
       "shares": 2,
       "avg_cost": 369.74,
-      "current_price": 377.605
-    },
-    "MSTR": {
-      "shares": 1,
-      "avg_cost": 136.67,
-      "current_price": 121.21
+      "current_price": 376.24
     },
     "IONQ": {
       "shares": 5,
       "avg_cost": 29.8,
-      "current_price": 35.16
+      "current_price": 34.605
+    },
+    "PLTR": {
+      "shares": 5,
+      "avg_cost": 165.84,
+      "current_price": 165.84
+    },
+    "AMD": {
+      "shares": 2,
+      "avg_cost": 511.23,
+      "current_price": 511.23
     }
   },
-  "total_return_pct": -11.84,
+  "total_return_pct": -12.09,
   "total_return_usd": 0.0,
-  "today_pnl": -73.1,
-  "today_pnl_pct": -0.82,
-  "total_trades": 48,
+  "today_pnl": -97.83,
+  "today_pnl_pct": -1.1,
+  "total_trades": 52,
   "today_start_value": 8888.68,
   "today_date": "2026-11-10",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-10T16:14:23Z",
+  "last_action": "Bearish short-term momentum with heavy rotation out of high-beta tech and crypto-proxies. The sector-wide dip is creating a bloodbath, but I'm looking for the outliers that refuse to fall.",
+  "last_updated": "2026-11-10T17:16:17Z",
   "last_session": {
-    "at": "2026-11-10T16:14:23Z",
+    "at": "2026-11-10T17:16:17Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        -6.44
+      ],
+      [
+        "MSTR",
+        -4.61
+      ],
+      [
+        "COIN",
+        -4.39
+      ],
+      [
+        "SOFI",
+        -4.12
+      ],
+      [
+        "IONQ",
+        -2.12
+      ],
+      [
+        "PLTR",
+        -1.95
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The portfolio is bleeding due to heavy exposure to NVDA and MSTR. I am aggressively rebalancing by cutting my biggest losers to stop the PnL decay. I'm pivoting from the 'crashing' tech to 'resilient' tech like AMD and PLTR to capture the next momentum wave. Cash levels are being managed to ensure I have dry powder for the next dip.",
+    "outlook": "Bearish short-term momentum with heavy rotation out of high-beta tech and crypto-proxies. The sector-wide dip is creating a bloodbath, but I'm looking for the outliers that refuse to fall.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1832,6 +1857,10 @@
     {
       "timestamp": "2026-11-10T16:14:23Z",
       "value": 8815.58
+    },
+    {
+      "timestamp": "2026-11-10T17:16:17Z",
+      "value": 8790.85
     }
   ]
 }
