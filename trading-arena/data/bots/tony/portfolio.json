@@ -1,64 +1,89 @@
 {
-  "cash": 615.76,
-  "total_value": 6411.17,
+  "cash": 383.3,
+  "total_value": 6166.12,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 58.11
+      "current_price": 55.99
     },
     "NVDA": {
       "shares": 1,
       "avg_cost": 206.06,
-      "current_price": 177.775
+      "current_price": 174.0
     },
     "SOXL": {
-      "shares": 27,
-      "current_price": 56.88,
-      "avg_cost": 100.8054
-    },
-    "SMCI": {
-      "shares": 10,
-      "avg_cost": 38.6247,
-      "current_price": 29.0525
+      "shares": 30,
+      "current_price": 53.57,
+      "avg_cost": 96.0819
     },
     "RKLB": {
       "shares": 6,
-      "current_price": 59.14,
+      "current_price": 55.46,
       "avg_cost": 50.52
     },
     "PLTR": {
-      "shares": 1,
-      "avg_cost": 187.6,
-      "current_price": 170.51
+      "shares": 2,
+      "current_price": 168.215,
+      "avg_cost": 177.9075
     },
     "IONQ": {
       "shares": 10,
-      "current_price": 36.05,
+      "current_price": 35.05,
       "avg_cost": 29.5816
+    },
+    "ARM": {
+      "shares": 1,
+      "avg_cost": 182.525,
+      "current_price": 182.525
     }
   },
-  "total_return_pct": -35.89,
+  "total_return_pct": -38.34,
   "total_return_usd": 0.0,
-  "today_pnl": 539.62,
-  "today_pnl_pct": 9.19,
-  "total_trades": 32,
-  "today_start_value": 5871.55,
-  "today_date": "2026-11-09",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-09T20:33:57Z",
+  "today_pnl": -0.01,
+  "today_pnl_pct": -0.0,
+  "total_trades": 36,
+  "today_start_value": 6166.13,
+  "today_date": "2026-11-10",
+  "last_action": "High volatility, high opportunity. The market is currently experiencing a localized correction in tech, which I view as a systemic inefficiency ripe for exploitation.",
+  "last_updated": "2026-11-10T14:45:13Z",
   "last_session": {
-    "at": "2026-11-09T20:33:57Z",
+    "at": "2026-11-10T14:45:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RKLB",
+        -5.86
+      ],
+      [
+        "SOXL",
+        -4.96
+      ],
+      [
+        "TQQQ",
+        -3.42
+      ],
+      [
+        "SMCI",
+        -3.15
+      ],
+      [
+        "MRVL",
+        -2.98
+      ],
+      [
+        "NVDA",
+        -2.92
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The heavy selling in SOXL and TQQQ is creating a massive divergence between current price and long-term technological trajectory. My portfolio is currently heavy on underperforming tech, so I'm trimming SMCI to free up cash and rotating into ARM and more PLTR to capture the AI infrastructure upside. I'm not afraid of the red; I'm looking for the signal in the noise.",
+    "outlook": "High volatility, high opportunity. The market is currently experiencing a localized correction in tech, which I view as a systemic inefficiency ripe for exploitation.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1820,6 +1845,10 @@
     {
       "timestamp": "2026-11-09T20:33:57Z",
       "value": 6411.17
+    },
+    {
+      "timestamp": "2026-11-10T14:45:13Z",
+      "value": 6166.12
     }
   ]
 }

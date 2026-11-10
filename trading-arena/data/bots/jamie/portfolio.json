@@ -1,20 +1,20 @@
 {
-  "cash": 1047.56,
-  "total_value": 10256.87,
+  "cash": 1056.36,
+  "total_value": 10258.87,
   "positions": {
     "MA": {
       "shares": 4,
-      "current_price": 658.61,
+      "current_price": 657.735,
       "avg_cost": 539.4013
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 102.45
+      "current_price": 102.11
     },
     "JPM": {
       "shares": 5,
-      "current_price": 342.81,
+      "current_price": 343.8,
       "avg_cost": 348.2024
     },
     "PGR": {
@@ -25,60 +25,85 @@
     "V": {
       "shares": 2,
       "avg_cost": 366.48,
-      "current_price": 423.45
+      "current_price": 422.98
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 517.34,
-      "current_price": 577.265
+      "current_price": 575.495
     },
     "TRV": {
       "shares": 1,
       "avg_cost": 380.16,
-      "current_price": 393.94
+      "current_price": 397.181
     },
     "AXP": {
       "shares": 1,
       "avg_cost": 306.4804,
-      "current_price": 325.43
+      "current_price": 327.02
     },
     "PRU": {
       "shares": 5,
       "avg_cost": 115.965,
-      "current_price": 123.15
+      "current_price": 122.7
     },
     "BAC": {
       "shares": 10,
-      "current_price": 50.835,
+      "current_price": 50.84,
       "avg_cost": 50.884
     },
-    "AAPL": {
-      "shares": 1,
-      "avg_cost": 343.8,
-      "current_price": 351.14
+    "WFC": {
+      "shares": 4,
+      "avg_cost": 85.825,
+      "current_price": 85.825
     }
   },
-  "total_return_pct": 2.57,
+  "total_return_pct": 2.59,
   "total_return_usd": 0.0,
-  "today_pnl": 67.34,
-  "today_pnl_pct": 0.66,
-  "total_trades": 32,
-  "today_start_value": 10189.53,
-  "today_date": "2026-11-09",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-09T20:31:55Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 34,
+  "today_start_value": 10258.87,
+  "today_date": "2026-11-10",
+  "last_action": "Bullish on Financials",
+  "last_updated": "2026-11-10T14:42:10Z",
   "last_session": {
-    "at": "2026-11-09T20:31:55Z",
+    "at": "2026-11-10T14:42:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AXP",
+        0.84
+      ],
+      [
+        "BAC",
+        0.78
+      ],
+      [
+        "MET",
+        0.78
+      ],
+      [
+        "BRK-B",
+        0.76
+      ],
+      [
+        "JPM",
+        0.59
+      ],
+      [
+        "PRU",
+        0.53
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The financial sector is showing robust strength today, with major players like AXP, BAC, and MET all posting gains. This confirms my thesis that the bedrock of the American economy\u2014our banks and insurance providers\u2014remains incredibly resilient. While the masses chase speculative tech or digital nonsense, I am focused on the institutions that hold the world's capital. I am rotating out of consumer tech and doubling down on premium credit and investment banking to maximize my exposure to this sector-wide momentum.",
+    "outlook": "Bullish on Financials",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1840,6 +1865,10 @@
     {
       "timestamp": "2026-11-09T20:31:55Z",
       "value": 10256.87
+    },
+    {
+      "timestamp": "2026-11-10T14:42:10Z",
+      "value": 10258.87
     }
   ]
 }
