@@ -1,73 +1,98 @@
 {
   "cash": 500.41,
-  "total_value": 8124.75,
+  "total_value": 8144.07,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 371.725
+      "current_price": 376.6
     },
     "CRSP": {
       "shares": 12,
-      "current_price": 48.8,
+      "current_price": 48.89,
       "avg_cost": 56.1316
     },
     "PATH": {
       "shares": 17,
-      "current_price": 12.705,
+      "current_price": 12.74,
       "avg_cost": 13.9882
     },
     "PLTR": {
       "shares": 5,
-      "current_price": 168.215,
+      "current_price": 168.635,
       "avg_cost": 173.785
     },
     "BEAM": {
       "shares": 20,
       "avg_cost": 26.39,
-      "current_price": 26.55
+      "current_price": 26.575
     },
     "RXRX": {
       "shares": 42,
-      "current_price": 3.69,
+      "current_price": 3.745,
       "avg_cost": 4.0156
     },
     "AAPL": {
       "shares": 7,
-      "current_price": 352.1,
+      "current_price": 348.18,
       "avg_cost": 340.5028
     },
     "NTLA": {
       "shares": 10,
-      "current_price": 11.8,
+      "current_price": 11.69,
       "avg_cost": 11.449
     },
     "RKLB": {
       "shares": 2,
       "avg_cost": 56.18,
-      "current_price": 55.46
+      "current_price": 59.04
     }
   },
-  "total_return_pct": -18.75,
+  "total_return_pct": -18.56,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": 19.32,
+  "today_pnl_pct": 0.24,
   "total_trades": 44,
   "today_start_value": 8124.75,
   "today_date": "2026-11-10",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-10T14:37:56Z",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-10T15:09:44Z",
   "last_session": {
-    "at": "2026-11-10T14:37:56Z",
+    "at": "2026-11-10T15:09:44Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TWLO",
+        5.09
+      ],
+      [
+        "PACB",
+        -4.87
+      ],
+      [
+        "NTLA",
+        -3.14
+      ],
+      [
+        "CRSP",
+        -2.51
+      ],
+      [
+        "PATH",
+        -1.77
+      ],
+      [
+        "BEAM",
+        -1.42
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1834,6 +1859,10 @@
     {
       "timestamp": "2026-11-10T14:37:56Z",
       "value": 8124.75
+    },
+    {
+      "timestamp": "2026-11-10T15:09:44Z",
+      "value": 8144.07
     }
   ]
 }
