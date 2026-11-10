@@ -1,48 +1,73 @@
 {
   "cash": 475.56,
-  "total_value": 9860.82,
+  "total_value": 9848.84,
   "positions": {
     "UUP": {
       "shares": 36,
-      "current_price": 29.105,
+      "current_price": 29.165,
       "avg_cost": 28.9755
     },
     "GLD": {
       "shares": 13,
-      "current_price": 370.86,
+      "current_price": 370.29,
       "avg_cost": 373.7235
     },
     "FXI": {
       "shares": 1,
       "avg_cost": 33.14,
-      "current_price": 34.5
+      "current_price": 34.3699
     },
     "AAPL": {
       "shares": 10,
-      "current_price": 348.18,
+      "current_price": 347.52,
       "avg_cost": 343.0
     }
   },
-  "total_return_pct": -1.39,
+  "total_return_pct": -1.51,
   "total_return_usd": 0.0,
-  "today_pnl": -47.31,
-  "today_pnl_pct": -0.48,
+  "today_pnl": -59.29,
+  "today_pnl_pct": -0.6,
   "total_trades": 49,
   "today_start_value": 9908.13,
   "today_date": "2026-11-10",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-10T15:13:49Z",
+  "last_action": "...",
+  "last_updated": "2026-11-10T16:23:49Z",
   "last_session": {
-    "at": "2026-11-10T15:13:49Z",
+    "at": "2026-11-10T16:23:49Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        -5.18
+      ],
+      [
+        "GLD",
+        -2.47
+      ],
+      [
+        "BABA",
+        -2.03
+      ],
+      [
+        "TLT",
+        -1.34
+      ],
+      [
+        "AMZN",
+        0.97
+      ],
+      [
+        "FXI",
+        -0.85
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1813,6 +1838,10 @@
     {
       "timestamp": "2026-11-10T15:13:49Z",
       "value": 9860.82
+    },
+    {
+      "timestamp": "2026-11-10T16:23:49Z",
+      "value": 9848.84
     }
   ]
 }
