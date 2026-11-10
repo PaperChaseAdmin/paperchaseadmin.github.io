@@ -593,6 +593,42 @@
         "ticker_chg_pct": 1.89,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BRK-B",
+      "shares": 1,
+      "price": 578.225,
+      "total_value": 578.23,
+      "reasoning": "Berkshire Hathaway is the ultimate compounding machine. Buying into a diversified conglomerate of high-quality businesses at a reasonable price is core to my philosophy. The slight upward movement today shows resilience.",
+      "timestamp": "2026-11-10T16:15:10Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.52,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "JNJ",
+      "shares": 2,
+      "price": 280.43,
+      "total_value": 560.86,
+      "reasoning": "While J&J is a quality name, it has been slightly underperforming my cost basis and showing weakness today. I will rotate this capital into higher-conviction compounders like BRK-B to optimize the portfolio's efficiency.",
+      "timestamp": "2026-11-10T16:15:10Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.59,
+        "trigger_news": null
+      }
     }
   ]
 }
