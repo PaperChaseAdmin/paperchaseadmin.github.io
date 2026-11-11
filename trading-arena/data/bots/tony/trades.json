@@ -701,6 +701,42 @@
         "ticker_chg_pct": 10.87,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "PLTR",
+      "shares": 2,
+      "price": 173.135,
+      "total_value": 346.27,
+      "reasoning": "PLTR is lagging behind the massive semiconductor rally. I'm cutting this dead weight to free up capital for the real movers like MRVL and SMCI. Efficiency is everything.",
+      "timestamp": "2026-11-11T17:40:57Z",
+      "market_outlook": "Aggressive Bullish Momentum in Semi/AI Infrastructure",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.56,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MRVL",
+      "shares": 1,
+      "price": 173.895,
+      "total_value": 173.9,
+      "reasoning": "Marvell is up 12.65%. Networking and data center connectivity are the unsung heroes of the AI revolution. I'm adding this to the arsenal to capture the infrastructure play.",
+      "timestamp": "2026-11-11T17:40:57Z",
+      "market_outlook": "Aggressive Bullish Momentum in Semi/AI Infrastructure",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 12.65,
+        "trigger_news": null
+      }
     }
   ]
 }

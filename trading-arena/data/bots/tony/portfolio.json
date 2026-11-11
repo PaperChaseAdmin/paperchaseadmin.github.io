@@ -1,64 +1,89 @@
 {
-  "cash": 338.03,
-  "total_value": 6997.05,
+  "cash": 510.4,
+  "total_value": 7010.71,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 61.2746
+      "current_price": 61.395
     },
     "SOXL": {
       "shares": 31,
-      "current_price": 68.875,
+      "current_price": 69.18,
       "avg_cost": 95.1535
     },
     "RKLB": {
       "shares": 6,
-      "current_price": 67.62,
+      "current_price": 67.0851,
       "avg_cost": 50.52
-    },
-    "PLTR": {
-      "shares": 2,
-      "current_price": 172.82,
-      "avg_cost": 177.9075
     },
     "IONQ": {
       "shares": 10,
-      "current_price": 34.825,
+      "current_price": 34.77,
       "avg_cost": 29.5816
     },
     "ARM": {
       "shares": 1,
       "avg_cost": 182.525,
-      "current_price": 205.91
+      "current_price": 206.22
     },
     "SMCI": {
       "shares": 5,
       "avg_cost": 30.81,
-      "current_price": 30.93
+      "current_price": 31.1299
+    },
+    "MRVL": {
+      "shares": 1,
+      "avg_cost": 173.895,
+      "current_price": 173.895
     }
   },
-  "total_return_pct": -30.03,
+  "total_return_pct": -29.89,
   "total_return_usd": 0.0,
-  "today_pnl": 246.66,
-  "today_pnl_pct": 3.65,
-  "total_trades": 39,
+  "today_pnl": 260.32,
+  "today_pnl_pct": 3.86,
+  "total_trades": 41,
   "today_start_value": 6750.39,
   "today_date": "2026-11-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-11T17:12:30Z",
+  "last_action": "Aggressive Bullish Momentum in Semi/AI Infrastructure",
+  "last_updated": "2026-11-11T17:40:57Z",
   "last_session": {
-    "at": "2026-11-11T17:12:30Z",
+    "at": "2026-11-11T17:40:57Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "SOXL",
+        23.38
+      ],
+      [
+        "ARM",
+        13.69
+      ],
+      [
+        "MRVL",
+        12.65
+      ],
+      [
+        "SMCI",
+        12.0
+      ],
+      [
+        "TQQQ",
+        8.58
+      ],
+      [
+        "AMD",
+        8.08
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is waking up, and it's choosing the high-octane tech sector. We're seeing massive green candles across the semiconductor landscape (SOXL, ARM, SMCI, MRVL). My current portfolio was too heavy on underperforming tech; I'm reallocating capital from slower movers into the high-velocity momentum leaders. The volatility is beautiful\u2014it's just the engine warming up.",
+    "outlook": "Aggressive Bullish Momentum in Semi/AI Infrastructure",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1872,6 +1897,10 @@
     {
       "timestamp": "2026-11-11T17:12:30Z",
       "value": 6997.05
+    },
+    {
+      "timestamp": "2026-11-11T17:40:57Z",
+      "value": 7010.71
     }
   ]
 }
