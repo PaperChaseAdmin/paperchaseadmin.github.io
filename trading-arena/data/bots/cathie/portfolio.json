@@ -1,73 +1,98 @@
 {
   "cash": 500.41,
-  "total_value": 8266.97,
+  "total_value": 8277.35,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 392.735
+      "current_price": 393.29
     },
     "CRSP": {
       "shares": 12,
-      "current_price": 45.3405,
+      "current_price": 45.4895,
       "avg_cost": 56.1316
     },
     "PATH": {
       "shares": 17,
-      "current_price": 13.055,
+      "current_price": 13.09,
       "avg_cost": 13.9882
     },
     "PLTR": {
       "shares": 5,
-      "current_price": 172.82,
+      "current_price": 173.135,
       "avg_cost": 173.785
     },
     "BEAM": {
       "shares": 20,
       "avg_cost": 26.39,
-      "current_price": 25.24
+      "current_price": 25.49
     },
     "RXRX": {
       "shares": 42,
-      "current_price": 3.615,
+      "current_price": 3.605,
       "avg_cost": 4.0156
     },
     "AAPL": {
       "shares": 7,
-      "current_price": 354.51,
+      "current_price": 354.265,
       "avg_cost": 340.5028
     },
     "NTLA": {
       "shares": 10,
-      "current_price": 11.385,
+      "current_price": 11.46,
       "avg_cost": 11.449
     },
     "RKLB": {
       "shares": 2,
       "avg_cost": 56.18,
-      "current_price": 67.62
+      "current_price": 67.0851
     }
   },
-  "total_return_pct": -17.33,
+  "total_return_pct": -17.23,
   "total_return_usd": 0.0,
-  "today_pnl": 56.75,
-  "today_pnl_pct": 0.69,
+  "today_pnl": 67.13,
+  "today_pnl_pct": 0.82,
   "total_trades": 44,
   "today_start_value": 8210.22,
   "today_date": "2026-11-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-11T17:06:29Z",
+  "last_action": "...",
+  "last_updated": "2026-11-11T17:36:03Z",
   "last_session": {
-    "at": "2026-11-11T17:06:29Z",
+    "at": "2026-11-11T17:36:03Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RKLB",
+        6.97
+      ],
+      [
+        "TWLO",
+        5.29
+      ],
+      [
+        "HOOD",
+        5.17
+      ],
+      [
+        "COIN",
+        4.57
+      ],
+      [
+        "AFRM",
+        4.18
+      ],
+      [
+        "TSLA",
+        3.56
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1882,6 +1907,10 @@
     {
       "timestamp": "2026-11-11T17:06:29Z",
       "value": 8266.97
+    },
+    {
+      "timestamp": "2026-11-11T17:36:03Z",
+      "value": 8277.35
     }
   ]
 }
