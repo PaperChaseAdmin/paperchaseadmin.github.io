@@ -1,10 +1,10 @@
 {
   "cash": 617.24,
-  "total_value": 9888.36,
+  "total_value": 9890.83,
   "positions": {
     "UUP": {
       "shares": 36,
-      "current_price": 29.355,
+      "current_price": 29.345,
       "avg_cost": 28.9755
     },
     "FXI": {
@@ -15,39 +15,64 @@
     "GLD": {
       "shares": 12,
       "avg_cost": 366.86,
-      "current_price": 365.285
+      "current_price": 365.47
     },
     "TLT": {
       "shares": 25,
       "avg_cost": 80.58,
-      "current_price": 80.85
+      "current_price": 80.92
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 354.265,
-      "current_price": 355.15
+      "current_price": 354.92
     }
   },
-  "total_return_pct": -1.12,
+  "total_return_pct": -1.09,
   "total_return_usd": 0.0,
-  "today_pnl": 16.26,
-  "today_pnl_pct": 0.16,
+  "today_pnl": 18.73,
+  "today_pnl_pct": 0.19,
   "total_trades": 58,
   "today_start_value": 9872.1,
   "today_date": "2026-11-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-11T19:08:29Z",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-11T19:37:58Z",
   "last_session": {
-    "at": "2026-11-11T19:08:29Z",
+    "at": "2026-11-11T19:37:58Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        3.84
+      ],
+      [
+        "TSLA",
+        3.34
+      ],
+      [
+        "QQQ",
+        2.63
+      ],
+      [
+        "EEM",
+        2.62
+      ],
+      [
+        "AMZN",
+        -1.57
+      ],
+      [
+        "FXI",
+        -1.41
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1878,6 +1903,10 @@
     {
       "timestamp": "2026-11-11T19:08:29Z",
       "value": 9888.36
+    },
+    {
+      "timestamp": "2026-11-11T19:37:58Z",
+      "value": 9890.83
     }
   ]
 }

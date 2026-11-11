@@ -1,63 +1,88 @@
 {
   "cash": 2444.17,
-  "total_value": 9092.81,
+  "total_value": 9066.98,
   "positions": {
     "AAPL": {
       "shares": 6,
-      "current_price": 355.15,
+      "current_price": 354.92,
       "avg_cost": 318.6712
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 637.26
+      "current_price": 635.2292
     },
     "TSLA": {
       "shares": 2,
       "avg_cost": 369.74,
-      "current_price": 394.15
+      "current_price": 392.44
     },
     "IONQ": {
       "shares": 5,
       "avg_cost": 29.8,
-      "current_price": 34.6062
+      "current_price": 34.445
     },
     "PLTR": {
       "shares": 5,
       "avg_cost": 165.84,
-      "current_price": 173.72
+      "current_price": 173.135
     },
     "AMD": {
       "shares": 3,
-      "current_price": 565.65,
+      "current_price": 561.48,
       "avg_cost": 519.1017
     },
     "NVDA": {
       "shares": 2,
       "avg_cost": 173.025,
-      "current_price": 176.7999
+      "current_price": 175.4199
     }
   },
-  "total_return_pct": -9.07,
+  "total_return_pct": -9.33,
   "total_return_usd": 0.0,
-  "today_pnl": 125.39,
-  "today_pnl_pct": 1.4,
+  "today_pnl": 99.56,
+  "today_pnl_pct": 1.11,
   "total_trades": 56,
   "today_start_value": 8967.42,
   "today_date": "2026-11-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-11T19:02:07Z",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-11T19:31:56Z",
   "last_session": {
-    "at": "2026-11-11T19:02:07Z",
+    "at": "2026-11-11T19:31:56Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AMD",
+        8.97
+      ],
+      [
+        "RBLX",
+        4.55
+      ],
+      [
+        "COIN",
+        4.04
+      ],
+      [
+        "NVDA",
+        3.84
+      ],
+      [
+        "TSLA",
+        3.34
+      ],
+      [
+        "PLTR",
+        2.58
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1888,6 +1913,10 @@
     {
       "timestamp": "2026-11-11T19:02:07Z",
       "value": 9092.81
+    },
+    {
+      "timestamp": "2026-11-11T19:31:56Z",
+      "value": 9066.98
     }
   ]
 }
