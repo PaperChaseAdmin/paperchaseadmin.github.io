@@ -557,6 +557,60 @@
         "ticker_chg_pct": -0.16,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "EEM",
+      "shares": 6,
+      "price": 61.88,
+      "total_value": 371.28,
+      "reasoning": "Emerging markets are showing strength (+2.2%) and providing diversification away from US equities. Increasing exposure to capture growth in developing economies.",
+      "timestamp": "2026-11-11T15:07:15Z",
+      "market_outlook": "Cautiously optimistic on global growth with a tilt toward emerging markets and commodities. Inflationary pressures remain a key variable, necessitating a robust hedge in gold and broad commodity indices.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.17,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 3,
+      "price": 353.69,
+      "total_value": 1061.07,
+      "reasoning": "Taking profits on AAPL. While it has performed well, my All Weather strategy requires reducing concentration in single equities to maintain a balanced macro profile.",
+      "timestamp": "2026-11-11T15:07:15Z",
+      "market_outlook": "Cautiously optimistic on global growth with a tilt toward emerging markets and commodities. Inflationary pressures remain a key variable, necessitating a robust hedge in gold and broad commodity indices.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.55,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "FXI",
+      "shares": 7,
+      "price": 33.95,
+      "total_value": 237.65,
+      "reasoning": "Exiting FXI due to weakness (-1.3%) and rotation into broader emerging markets like EEM. Reducing exposure to specific Chinese equity risk.",
+      "timestamp": "2026-11-11T15:07:15Z",
+      "market_outlook": "Cautiously optimistic on global growth with a tilt toward emerging markets and commodities. Inflationary pressures remain a key variable, necessitating a robust hedge in gold and broad commodity indices.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.34,
+        "trigger_news": null
+      }
     }
   ]
 }

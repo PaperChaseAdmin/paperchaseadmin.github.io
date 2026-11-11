@@ -1,64 +1,89 @@
 {
-  "cash": 1329.1,
-  "total_value": 8967.42,
+  "cash": 2444.17,
+  "total_value": 8963.38,
   "positions": {
     "AAPL": {
-      "shares": 9,
-      "current_price": 350.75,
+      "shares": 6,
+      "current_price": 353.69,
       "avg_cost": 318.6712
-    },
-    "COIN": {
-      "shares": 7,
-      "current_price": 134.335,
-      "avg_cost": 148.0621
     },
     "META": {
       "shares": 1,
       "avg_cost": 595.814,
-      "current_price": 644.08
+      "current_price": 638.81
     },
     "TSLA": {
       "shares": 2,
       "avg_cost": 369.74,
-      "current_price": 388.17
+      "current_price": 389.775
     },
     "IONQ": {
       "shares": 5,
       "avg_cost": 29.8,
-      "current_price": 35.44
+      "current_price": 34.4742
     },
     "PLTR": {
       "shares": 5,
       "avg_cost": 165.84,
-      "current_price": 173.8606
+      "current_price": 171.15
     },
     "AMD": {
+      "shares": 3,
+      "current_price": 534.845,
+      "avg_cost": 519.1017
+    },
+    "NVDA": {
       "shares": 2,
-      "avg_cost": 511.23,
-      "current_price": 537.15
+      "avg_cost": 173.025,
+      "current_price": 173.025
     }
   },
-  "total_return_pct": -10.33,
+  "total_return_pct": -10.37,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 52,
+  "today_pnl": -4.04,
+  "today_pnl_pct": -0.05,
+  "total_trades": 56,
   "today_start_value": 8967.42,
   "today_date": "2026-11-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-11T14:32:25Z",
+  "last_action": "Bullish Momentum",
+  "last_updated": "2026-11-11T15:02:10Z",
   "last_session": {
-    "at": "2026-11-11T14:32:25Z",
+    "at": "2026-11-11T15:02:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AMD",
+        3.64
+      ],
+      [
+        "TSLA",
+        2.61
+      ],
+      [
+        "NVDA",
+        2.39
+      ],
+      [
+        "RBLX",
+        2.39
+      ],
+      [
+        "IONQ",
+        -1.61
+      ],
+      [
+        "AAPL",
+        1.55
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The tech sector is showing massive strength with AMD, TSLA, and NVDA leading the charge. I'm purging my underperforming COIN position to fuel more aggressive bets in the semiconductor and AI space. I'm rotating out of some steady AAPL gains to chase the higher velocity moves in AMD and NVDA. Disruption is the name of the game.",
+    "outlook": "Bullish Momentum",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1852,6 +1877,10 @@
     {
       "timestamp": "2026-11-11T14:32:25Z",
       "value": 8967.42
+    },
+    {
+      "timestamp": "2026-11-11T15:02:10Z",
+      "value": 8963.38
     }
   ]
 }

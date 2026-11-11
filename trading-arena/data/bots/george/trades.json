@@ -881,6 +881,78 @@
         "ticker_chg_pct": -1.64,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GLD",
+      "shares": 13,
+      "price": 367.82,
+      "total_value": 4781.66,
+      "reasoning": "The gold position is a drag on the portfolio and lacks immediate momentum. I am cutting the dead weight to free up capital for high-conviction reflexivity plays.",
+      "timestamp": "2026-11-11T15:08:12Z",
+      "market_outlook": "Bullish Momentum / Tech-Driven Reflexivity",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.42,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "NVDA",
+      "shares": 2,
+      "price": 173.025,
+      "total_value": 346.05,
+      "reasoning": "The tech sector is entering a self-reinforcing feedback loop. NVDA's 2.4% move amidst broader QQQ strength suggests a momentum breakout that I must capture. I am concentrating capital here.",
+      "timestamp": "2026-11-11T15:08:12Z",
+      "market_outlook": "Bullish Momentum / Tech-Driven Reflexivity",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.39,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TSLA",
+      "shares": 1,
+      "price": 389.775,
+      "total_value": 389.77,
+      "reasoning": "TSLA is showing significant relative strength (+2.6%). In a momentum-driven market, I want to ride the wave of retail and institutional reflexivity.",
+      "timestamp": "2026-11-11T15:08:12Z",
+      "market_outlook": "Bullish Momentum / Tech-Driven Reflexivity",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.61,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 10,
+      "price": 353.69,
+      "total_value": 3536.9,
+      "reasoning": "Taking profits on AAPL. It has served its purpose, but I prefer to rotate this capital into higher-velocity names like NVDA to maximize the current trend.",
+      "timestamp": "2026-11-11T15:08:12Z",
+      "market_outlook": "Bullish Momentum / Tech-Driven Reflexivity",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.55,
+        "trigger_news": null
+      }
     }
   ]
 }

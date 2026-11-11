@@ -935,6 +935,78 @@
         "ticker_chg_pct": 0.42,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "COIN",
+      "shares": 7,
+      "price": 133.5568,
+      "total_value": 934.9,
+      "reasoning": "Cutting the loser. COIN is dragging the portfolio down and I need to redeploy this capital into high-momentum AI and semiconductor plays. Stop loss hit.",
+      "timestamp": "2026-11-11T15:02:10Z",
+      "market_outlook": "Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.09,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "NVDA",
+      "shares": 2,
+      "price": 173.025,
+      "total_value": 346.05,
+      "reasoning": "Aggressive momentum play. NVDA is up 2.4% and is the undisputed king of the AI revolution. Need more exposure to the hardware backbone.",
+      "timestamp": "2026-11-11T15:02:10Z",
+      "market_outlook": "Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.39,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMD",
+      "shares": 1,
+      "price": 534.845,
+      "total_value": 534.85,
+      "reasoning": "AMD is ripping +3.6% today. Doubling down on the semiconductor strength to ride the wave.",
+      "timestamp": "2026-11-11T15:02:10Z",
+      "market_outlook": "Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.64,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 3,
+      "price": 353.69,
+      "total_value": 1061.07,
+      "reasoning": "Taking partial profits on AAPL. It's up significantly from my cost basis and I need to free up cash to concentrate on higher-beta tech movers.",
+      "timestamp": "2026-11-11T15:02:10Z",
+      "market_outlook": "Bullish Momentum",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.55,
+        "trigger_news": null
+      }
     }
   ]
 }
