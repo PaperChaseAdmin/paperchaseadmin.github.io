@@ -1,74 +1,99 @@
 {
-  "cash": 511.41,
-  "total_value": 9613.98,
+  "cash": 2503.88,
+  "total_value": 9656.98,
   "positions": {
-    "DIS": {
-      "shares": 15,
-      "avg_cost": 109.66,
-      "current_price": 118.7701
-    },
     "SBUX": {
       "shares": 10,
       "avg_cost": 101.66,
-      "current_price": 108.9901
+      "current_price": 108.975
     },
     "VFC": {
       "shares": 40,
       "avg_cost": 16.364,
-      "current_price": 20.585
-    },
-    "NKE": {
-      "shares": 30,
-      "avg_cost": 38.73,
-      "current_price": 38.095
+      "current_price": 20.635
     },
     "PYPL": {
       "shares": 4,
       "avg_cost": 58.84,
-      "current_price": 58.905
+      "current_price": 58.91
     },
     "INTC": {
       "shares": 37,
-      "current_price": 62.1399,
+      "current_price": 63.1401,
       "avg_cost": 54.2741
     },
     "NOK": {
       "shares": 100,
       "avg_cost": 7.4901,
-      "current_price": 8.465
+      "current_price": 8.54
     },
     "CVS": {
       "shares": 6,
       "avg_cost": 83.51,
-      "current_price": 88.325
+      "current_price": 87.58
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 349.12,
-      "current_price": 353.62
+      "current_price": 353.67
+    },
+    "HPQ": {
+      "shares": 15,
+      "avg_cost": 29.36,
+      "current_price": 29.36
+    },
+    "CMCSA": {
+      "shares": 20,
+      "avg_cost": 24.629,
+      "current_price": 24.629
     }
   },
-  "total_return_pct": -3.86,
+  "total_return_pct": -3.43,
   "total_return_usd": 0.0,
-  "today_pnl": -0.1,
-  "today_pnl_pct": -0.0,
-  "total_trades": 72,
+  "today_pnl": 42.9,
+  "today_pnl_pct": 0.45,
+  "total_trades": 76,
   "today_start_value": 9614.08,
   "today_date": "2026-11-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-11T15:44:01Z",
+  "last_action": "Opportunistic. The market is providing volatility, and volatility is where the profit lives. I'm looking for the cracks in the giants.",
+  "last_updated": "2026-11-11T16:13:13Z",
   "last_session": {
-    "at": "2026-11-11T15:44:01Z",
+    "at": "2026-11-11T16:13:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "INTC",
+        8.63
+      ],
+      [
+        "NOK",
+        3.52
+      ],
+      [
+        "HPQ",
+        3.33
+      ],
+      [
+        "NKE",
+        -1.71
+      ],
+      [
+        "CVS",
+        -1.58
+      ],
+      [
+        "SBUX",
+        -0.89
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The portfolio needs tightening. I'm purging the laggards like NKE and harvesting gains from DIS to pivot into assets with higher immediate velocity or better restructuring potential like HPQ and CMCSA. Intel is performing well, so I'll let that run for now. Greed is the only driver here.",
+    "outlook": "Opportunistic. The market is providing volatility, and volatility is where the profit lives. I'm looking for the cracks in the giants.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1870,6 +1895,10 @@
     {
       "timestamp": "2026-11-11T15:44:01Z",
       "value": 9613.98
+    },
+    {
+      "timestamp": "2026-11-11T16:13:13Z",
+      "value": 9656.98
     }
   ]
 }
