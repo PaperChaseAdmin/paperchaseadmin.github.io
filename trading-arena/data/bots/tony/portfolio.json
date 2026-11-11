@@ -1,64 +1,89 @@
 {
-  "cash": 383.3,
-  "total_value": 6779.22,
+  "cash": 338.03,
+  "total_value": 6918.73,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 59.8099
-    },
-    "NVDA": {
-      "shares": 1,
-      "avg_cost": 206.06,
-      "current_price": 174.015
+      "current_price": 60.815
     },
     "SOXL": {
-      "shares": 30,
-      "current_price": 64.745,
-      "avg_cost": 96.0819
+      "shares": 31,
+      "current_price": 67.3,
+      "avg_cost": 95.1535
     },
     "RKLB": {
       "shares": 6,
-      "current_price": 67.12,
+      "current_price": 67.625,
       "avg_cost": 50.52
     },
     "PLTR": {
       "shares": 2,
-      "current_price": 172.22,
+      "current_price": 173.3,
       "avg_cost": 177.9075
     },
     "IONQ": {
       "shares": 10,
-      "current_price": 34.39,
+      "current_price": 34.545,
       "avg_cost": 29.5816
     },
     "ARM": {
       "shares": 1,
       "avg_cost": 182.525,
-      "current_price": 198.0
+      "current_price": 201.8
+    },
+    "SMCI": {
+      "shares": 5,
+      "avg_cost": 30.81,
+      "current_price": 30.81
     }
   },
-  "total_return_pct": -32.21,
+  "total_return_pct": -30.81,
   "total_return_usd": 0.0,
-  "today_pnl": 28.83,
-  "today_pnl_pct": 0.43,
-  "total_trades": 36,
+  "today_pnl": 168.34,
+  "today_pnl_pct": 2.49,
+  "total_trades": 39,
   "today_start_value": 6750.39,
   "today_date": "2026-11-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-11T15:42:54Z",
+  "last_action": "Bullish Aggressive. The tech sector is undergoing a massive liquidity injection and momentum surge. We are seeing a concentrated rotation into high-beta semiconductor and AI infrastructure plays.",
+  "last_updated": "2026-11-11T16:12:17Z",
   "last_session": {
-    "at": "2026-11-11T15:42:54Z",
+    "at": "2026-11-11T16:12:17Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "SOXL",
+        19.91
+      ],
+      [
+        "MRVL",
+        12.29
+      ],
+      [
+        "ARM",
+        11.18
+      ],
+      [
+        "SMCI",
+        10.87
+      ],
+      [
+        "RKLB",
+        7.91
+      ],
+      [
+        "AMD",
+        7.63
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The data is clear: the semiconductor sector is on fire. With SOXL up 20% and MRVL/ARM/SMCI all showing double-digit gains, the Jarvis algorithm is signaling a massive momentum breakout. My current portfolio was too heavy on underperforming laggards; I'm pivoting aggressively into the highest-velocity movers to recover that -32% drawdown. Diversification is for people who like losing slowly; I'm doubling down on the winners.",
+    "outlook": "Bullish Aggressive. The tech sector is undergoing a massive liquidity injection and momentum surge. We are seeing a concentrated rotation into high-beta semiconductor and AI infrastructure plays.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1860,6 +1885,10 @@
     {
       "timestamp": "2026-11-11T15:42:54Z",
       "value": 6779.22
+    },
+    {
+      "timestamp": "2026-11-11T16:12:17Z",
+      "value": 6918.73
     }
   ]
 }

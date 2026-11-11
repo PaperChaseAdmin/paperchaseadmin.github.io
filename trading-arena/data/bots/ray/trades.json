@@ -629,6 +629,60 @@
         "ticker_chg_pct": 1.45,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "EEM",
+      "shares": 4,
+      "price": 62.305,
+      "total_value": 249.22,
+      "reasoning": "Emerging markets are showing strong momentum (+2.88%) and I need to increase exposure to non-US equities to maintain my global diversification as part of the growth component of my All Weather strategy.",
+      "timestamp": "2026-11-11T16:07:18Z",
+      "market_outlook": "Neutral to Bullish Growth / Inflationary Hedge",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.88,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TIPS",
+      "shares": 50,
+      "price": 0.0008,
+      "total_value": 0.04,
+      "reasoning": "TIPS is down over 11% today and my current position is negligible; cutting the loser to clean up the portfolio and reallocate capital to more productive assets.",
+      "timestamp": "2026-11-11T16:07:18Z",
+      "market_outlook": "Neutral to Bullish Growth / Inflationary Hedge",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -11.11,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "PDBC",
+      "shares": 20,
+      "price": 18.485,
+      "total_value": 369.7,
+      "reasoning": "Taking partial profits on PDBC which has a strong PnL of $178.21 to maintain liquidity and rebalance my commodity weightings.",
+      "timestamp": "2026-11-11T16:07:18Z",
+      "market_outlook": "Neutral to Bullish Growth / Inflationary Hedge",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.01,
+        "trigger_news": null
+      }
     }
   ]
 }

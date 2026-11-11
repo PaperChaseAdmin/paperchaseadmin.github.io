@@ -953,6 +953,78 @@
         "ticker_chg_pct": 1.55,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "NVDA",
+      "shares": 2,
+      "price": 176.08,
+      "total_value": 352.16,
+      "reasoning": "NVDA is up 4.3% today, fueling a momentum loop that is becoming overextended. I am taking profits to build dry powder for a more systemic macro play.",
+      "timestamp": "2026-11-11T16:08:17Z",
+      "market_outlook": "Extremely Bullish on Equities (Short-term) / Extremely Bearish on Systemic Stability (Medium-term). The current tech rally is a classic reflexivity loop that is reaching a crescendo.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.28,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TSLA",
+      "shares": 1,
+      "price": 394.915,
+      "total_value": 394.92,
+      "reasoning": "TSLA's 4% jump is a retail-driven reflexivity spike. I'm exiting this position to rotate into assets that hedge against the inevitable mean reversion.",
+      "timestamp": "2026-11-11T16:08:17Z",
+      "market_outlook": "Extremely Bullish on Equities (Short-term) / Extremely Bearish on Systemic Stability (Medium-term). The current tech rally is a classic reflexivity loop that is reaching a crescendo.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.99,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GLD",
+      "shares": 12,
+      "price": 366.86,
+      "total_value": 4402.32,
+      "reasoning": "The market is showing extreme greed in tech (QQQ +2.5%, NVDA +4.3%). This creates a massive dislocation between equity euphoria and systemic risk. I am deploying a significant portion of my cash into Gold to position for the inevitable liquidity shock when this bubble pops.",
+      "timestamp": "2026-11-11T16:08:17Z",
+      "market_outlook": "Extremely Bullish on Equities (Short-term) / Extremely Bearish on Systemic Stability (Medium-term). The current tech rally is a classic reflexivity loop that is reaching a crescendo.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.67,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 25,
+      "price": 80.58,
+      "total_value": 2014.5,
+      "reasoning": "As equity markets overheat, the flight to quality becomes a self-fulfilling prophecy. I am building a massive long bond position to capture the volatility spike when the current momentum breaks.",
+      "timestamp": "2026-11-11T16:08:17Z",
+      "market_outlook": "Extremely Bullish on Equities (Short-term) / Extremely Bearish on Systemic Stability (Medium-term). The current tech rally is a classic reflexivity loop that is reaching a crescendo.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.37,
+        "trigger_news": null
+      }
     }
   ]
 }
