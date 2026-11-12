@@ -1,104 +1,139 @@
 {
-  "cash": 532.31,
-  "total_value": 9997.89,
+  "cash": 208.07,
+  "total_value": 10007.6,
   "positions": {
     "T": {
       "shares": 82,
-      "current_price": 22.23,
+      "current_price": 22.265,
       "avg_cost": 22.4669
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 56.15,
+      "current_price": 56.2195,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 46.645,
+      "current_price": 46.675,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 355.245,
+      "current_price": 354.7,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 199.565,
+      "current_price": 200.03,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 297.3987,
+      "current_price": 297.15,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 19.2199,
+      "current_price": 19.225,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 36.12
+      "current_price": 36.155
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 165.98
+      "current_price": 166.0899
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 58.3601
+      "current_price": 58.3545
     },
     "MO": {
       "shares": 5,
-      "current_price": 78.48,
+      "current_price": 78.68,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 59.455,
+      "current_price": 59.5299,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 47.39
+      "current_price": 47.4
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 48.295
+      "current_price": 48.29
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 61.225
+      "current_price": 61.43
+    },
+    "WPC": {
+      "shares": 3,
+      "avg_cost": 65.48,
+      "current_price": 65.48
+    },
+    "HTGC": {
+      "shares": 8,
+      "avg_cost": 15.975,
+      "current_price": 15.975
     }
   },
-  "total_return_pct": -0.02,
+  "total_return_pct": 0.08,
   "total_return_usd": 0.0,
-  "today_pnl": -60.11,
-  "today_pnl_pct": -0.6,
-  "total_trades": 25,
+  "today_pnl": -50.4,
+  "today_pnl_pct": -0.5,
+  "total_trades": 27,
   "today_start_value": 10058.0,
   "today_date": "2026-11-12",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-12T17:22:01Z",
+  "last_action": "Neutral but ripe for dividend harvesting. The market is moving, but I only care about the movement of the cash flowing into my pockets.",
+  "last_updated": "2026-11-12T17:50:13Z",
   "last_session": {
-    "at": "2026-11-12T17:22:01Z",
+    "at": "2026-11-12T17:50:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GLD",
+        -2.86
+      ],
+      [
+        "PM",
+        1.87
+      ],
+      [
+        "MO",
+        1.67
+      ],
+      [
+        "OHI",
+        -1.5
+      ],
+      [
+        "ARCC",
+        -1.21
+      ],
+      [
+        "WPC",
+        0.99
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "The market is behaving predictably. While some of my gold (GLD) is losing shine temporarily, I won't panic\u2014gold is for the long term. I am focusing on the strength in Tobacco (PM, MO) and looking to expand my REIT and BDC holdings with WPC and HTGC to ensure my dividend snowball never stops rolling!",
+    "outlook": "Neutral but ripe for dividend harvesting. The market is moving, but I only care about the movement of the cash flowing into my pockets.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1960,6 +1995,10 @@
     {
       "timestamp": "2026-11-12T17:22:01Z",
       "value": 9997.89
+    },
+    {
+      "timestamp": "2026-11-12T17:50:13Z",
+      "value": 10007.6
     }
   ]
 }
