@@ -1,69 +1,99 @@
 {
-  "cash": 832.31,
-  "total_value": 8923.17,
+  "cash": 518.54,
+  "total_value": 8697.76,
   "positions": {
     "BABA": {
-      "shares": 26,
-      "current_price": 101.6936,
-      "avg_cost": 100.8292
+      "shares": 27,
+      "current_price": 95.51,
+      "avg_cost": 100.6322
     },
     "JD": {
       "shares": 55,
-      "current_price": 27.795,
+      "current_price": 27.45,
       "avg_cost": 27.2137
     },
     "NTES": {
       "shares": 9,
       "avg_cost": 118.155,
-      "current_price": 122.04
+      "current_price": 123.3
     },
     "XPEV": {
       "shares": 7,
       "avg_cost": 9.475,
-      "current_price": 9.885
+      "current_price": 9.6098
     },
     "PDD": {
-      "shares": 15,
-      "current_price": 78.87,
-      "avg_cost": 78.14
+      "shares": 17,
+      "current_price": 77.68,
+      "avg_cost": 78.0859
     },
     "LI": {
       "shares": 50,
-      "current_price": 12.165,
+      "current_price": 11.94,
       "avg_cost": 12.197
     },
     "BIDU": {
       "shares": 5,
       "avg_cost": 77.2,
-      "current_price": 80.05
+      "current_price": 77.935
     },
     "BILI": {
       "shares": 40,
       "avg_cost": 14.4,
-      "current_price": 13.975
+      "current_price": 13.59
+    },
+    "NIO": {
+      "shares": 20,
+      "avg_cost": 3.145,
+      "current_price": 3.145
     }
   },
-  "total_return_pct": -10.77,
+  "total_return_pct": -13.02,
   "total_return_usd": 0.0,
-  "today_pnl": -7.88,
-  "today_pnl_pct": -0.09,
-  "total_trades": 44,
-  "today_start_value": 8931.05,
-  "today_date": "2026-11-11",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-11T20:26:50Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 47,
+  "today_start_value": 8697.76,
+  "today_date": "2026-11-12",
+  "last_action": "Chinese equities selling off broadly today but this is noise. The great rejuvenation continues. Beijing's stimulus pipeline is building - property support, consumption boost, tech sector normalization",
+  "last_updated": "2026-11-12T14:57:37Z",
   "last_session": {
-    "at": "2026-11-11T20:26:50Z",
+    "at": "2026-11-12T14:57:37Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BABA",
+        -6.07
+      ],
+      [
+        "NIO",
+        -3.09
+      ],
+      [
+        "FUTU",
+        -2.91
+      ],
+      [
+        "TIGR",
+        -2.61
+      ],
+      [
+        "BILI",
+        -2.22
+      ],
+      [
+        "XPEV",
+        -2.14
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio down 10.77% but unrealized losses are temporary. BABA -6% today creates excellent entry. NIO at $3 is absurdly cheap for China's EV leader. PDD's international growth just beginning. Maintaining $500+ cash reserve after trades. Conviction remains: China wins the 21st century.",
+    "outlook": "Chinese equities selling off broadly today but this is noise. The great rejuvenation continues. Beijing's stimulus pipeline is building - property support, consumption boost, tech sector normalization. Every dip is an opportunity to increase ownership of national champions. The West's pessimism is our alpha.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -1901,6 +1931,10 @@
     {
       "timestamp": "2026-11-11T20:26:50Z",
       "value": 8923.17
+    },
+    {
+      "timestamp": "2026-11-12T14:57:37Z",
+      "value": 8697.76
     }
   ]
 }
