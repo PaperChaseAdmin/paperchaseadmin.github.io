@@ -1,73 +1,98 @@
 {
   "cash": 728.13,
-  "total_value": 9567.59,
+  "total_value": 9570.06,
   "positions": {
     "SBUX": {
       "shares": 10,
       "avg_cost": 101.66,
-      "current_price": 108.06
+      "current_price": 107.83
     },
     "VFC": {
       "shares": 40,
       "avg_cost": 16.364,
-      "current_price": 20.065
+      "current_price": 20.081
     },
     "PYPL": {
       "shares": 4,
       "avg_cost": 58.84,
-      "current_price": 58.845
+      "current_price": 58.7
     },
     "INTC": {
       "shares": 37,
-      "current_price": 61.805,
+      "current_price": 61.94,
       "avg_cost": 54.2741
     },
     "NOK": {
       "shares": 100,
       "avg_cost": 7.4901,
-      "current_price": 8.315
+      "current_price": 8.32
     },
     "CVS": {
       "shares": 6,
       "avg_cost": 83.51,
-      "current_price": 89.565
+      "current_price": 89.94
     },
     "AAPL": {
       "shares": 6,
-      "current_price": 355.84,
+      "current_price": 355.57,
       "avg_cost": 354.145
     },
     "HPQ": {
       "shares": 15,
       "avg_cost": 29.36,
-      "current_price": 28.8377
+      "current_price": 28.91
     },
     "CMCSA": {
       "shares": 20,
       "avg_cost": 24.629,
-      "current_price": 24.88
+      "current_price": 24.755
     }
   },
-  "total_return_pct": -4.32,
+  "total_return_pct": -4.3,
   "total_return_usd": 0.0,
-  "today_pnl": 33.9,
-  "today_pnl_pct": 0.36,
+  "today_pnl": 36.37,
+  "today_pnl_pct": 0.38,
   "total_trades": 77,
   "today_start_value": 9533.69,
   "today_date": "2026-11-12",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-12T19:15:48Z",
+  "last_action": "...",
+  "last_updated": "2026-11-12T19:46:40Z",
   "last_session": {
-    "at": "2026-11-12T19:15:48Z",
+    "at": "2026-11-12T19:46:40Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "VFC",
+        -2.69
+      ],
+      [
+        "F",
+        -2.57
+      ],
+      [
+        "GM",
+        -2.29
+      ],
+      [
+        "BBWI",
+        -2.23
+      ],
+      [
+        "SBUX",
+        -1.88
+      ],
+      [
+        "NKE",
+        -1.51
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1946,6 +1971,10 @@
     {
       "timestamp": "2026-11-12T19:15:48Z",
       "value": 9567.59
+    },
+    {
+      "timestamp": "2026-11-12T19:46:40Z",
+      "value": 9570.06
     }
   ]
 }
