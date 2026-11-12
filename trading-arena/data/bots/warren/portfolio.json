@@ -1,64 +1,94 @@
 {
-  "cash": 1720.53,
-  "total_value": 11502.58,
+  "cash": 1008.98,
+  "total_value": 11494.05,
   "positions": {
     "KO": {
       "shares": 20,
-      "current_price": 98.17,
+      "current_price": 98.045,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 7,
-      "current_price": 424.66,
+      "current_price": 424.09,
       "avg_cost": 361.6657
     },
     "MA": {
       "shares": 4,
-      "current_price": 657.93,
+      "current_price": 658.06,
       "avg_cost": 529.0675
     },
     "WMT": {
       "shares": 3,
       "avg_cost": 118.06,
-      "current_price": 126.035
+      "current_price": 125.965
     },
     "PG": {
       "shares": 4,
       "avg_cost": 159.16,
-      "current_price": 168.86
+      "current_price": 168.665
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 578.225,
-      "current_price": 591.65
+      "current_price": 590.49
     },
     "JNJ": {
       "shares": 2,
       "avg_cost": 281.56,
-      "current_price": 284.555
+      "current_price": 284.355
+    },
+    "AAPL": {
+      "shares": 2,
+      "avg_cost": 355.775,
+      "current_price": 355.775
     }
   },
-  "total_return_pct": 15.03,
+  "total_return_pct": 14.94,
   "total_return_usd": 0.0,
-  "today_pnl": -67.82,
-  "today_pnl_pct": -0.59,
-  "total_trades": 41,
+  "today_pnl": -76.35,
+  "today_pnl_pct": -0.66,
+  "total_trades": 42,
   "today_start_value": 11570.4,
   "today_date": "2026-11-12",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-12T18:03:58Z",
+  "last_action": "...",
+  "last_updated": "2026-11-12T18:34:01Z",
   "last_session": {
-    "at": "2026-11-12T18:03:58Z",
+    "at": "2026-11-12T18:34:01Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CVX",
+        1.96
+      ],
+      [
+        "JNJ",
+        1.4
+      ],
+      [
+        "PG",
+        0.59
+      ],
+      [
+        "AXP",
+        -0.58
+      ],
+      [
+        "KO",
+        0.49
+      ],
+      [
+        "MA",
+        -0.4
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1928,6 +1958,10 @@
     {
       "timestamp": "2026-11-12T18:03:58Z",
       "value": 11502.58
+    },
+    {
+      "timestamp": "2026-11-12T18:34:01Z",
+      "value": 11494.05
     }
   ]
 }
