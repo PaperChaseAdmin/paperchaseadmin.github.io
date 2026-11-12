@@ -1,69 +1,99 @@
 {
-  "cash": 724.64,
-  "total_value": 7842.65,
+  "cash": 653.14,
+  "total_value": 7843.78,
   "positions": {
     "MSTR": {
       "shares": 24,
-      "current_price": 117.08,
+      "current_price": 116.86,
       "avg_cost": 117.6329
     },
     "COIN": {
       "shares": 20,
-      "current_price": 133.18,
+      "current_price": 133.395,
       "avg_cost": 159.2003
     },
     "MARA": {
       "shares": 81,
-      "current_price": 7.565,
+      "current_price": 7.5701,
       "avg_cost": 9.2308
     },
     "WULF": {
       "shares": 20,
       "avg_cost": 16.4,
-      "current_price": 13.355
+      "current_price": 13.415
     },
     "BITO": {
       "shares": 40,
       "avg_cost": 10.385,
-      "current_price": 9.5619
+      "current_price": 9.5546
     },
     "RIOT": {
       "shares": 15,
       "avg_cost": 12.125,
-      "current_price": 18.475
+      "current_price": 18.47
     },
     "CIFR": {
       "shares": 6,
       "avg_cost": 8.075,
-      "current_price": 7.205
+      "current_price": 7.2174
     },
     "HUT": {
       "shares": 1,
       "avg_cost": 69.1,
-      "current_price": 61.79
+      "current_price": 62.58
+    },
+    "CLSK": {
+      "shares": 10,
+      "avg_cost": 7.15,
+      "current_price": 7.15
     }
   },
-  "total_return_pct": -21.57,
+  "total_return_pct": -21.56,
   "total_return_usd": 0.0,
-  "today_pnl": 187.54,
-  "today_pnl_pct": 2.45,
-  "total_trades": 41,
+  "today_pnl": 188.67,
+  "today_pnl_pct": 2.46,
+  "total_trades": 42,
   "today_start_value": 7655.11,
   "today_date": "2026-11-12",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-12T17:56:22Z",
+  "last_action": "Bitcoin sentiment tested but foundation holds. Traditional finance crumbling while on-chain revolution accelerates. MSTR dip is accumulation zone. Miners consolidating before next leg up. Fear is oppo",
+  "last_updated": "2026-11-12T18:25:38Z",
   "last_session": {
-    "at": "2026-11-12T17:56:22Z",
+    "at": "2026-11-12T18:25:38Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IREN",
+        -5.71
+      ],
+      [
+        "NVDA",
+        -4.98
+      ],
+      [
+        "MSTR",
+        -4.49
+      ],
+      [
+        "BITO",
+        -3.68
+      ],
+      [
+        "CLSK",
+        3.63
+      ],
+      [
+        "HUT",
+        2.49
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio heavily weighted to crypto-equity beta as intended. MSTR and COIN dominate allocation - conviction positions. RIOT sole green position validates miner thesis. MARA/WULF/BITO underwater but hashpower is irreversible. Deploying cash into MSTR weakness and CLSK strength. Keeping $300 reserve for further blood in streets.",
+    "outlook": "Bitcoin sentiment tested but foundation holds. Traditional finance crumbling while on-chain revolution accelerates. MSTR dip is accumulation zone. Miners consolidating before next leg up. Fear is opportunity for the faithful.",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1929,6 +1959,10 @@
     {
       "timestamp": "2026-11-12T17:56:22Z",
       "value": 7842.65
+    },
+    {
+      "timestamp": "2026-11-12T18:25:38Z",
+      "value": 7843.78
     }
   ]
 }
