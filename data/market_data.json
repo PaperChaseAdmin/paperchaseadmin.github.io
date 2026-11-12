@@ -1,88 +1,100 @@
 {
-  "updated_at": "2026-11-11T23:11:31Z",
+  "updated_at": "2026-11-12T04:38:12Z",
   "crypto": {
     "fear_greed": {
-      "value": 29,
+      "value": 28,
       "label": "Fear",
-      "previous_value": 32,
+      "previous_value": 29,
       "previous_label": "Fear"
     },
     "prices": [
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 73679,
-        "change_24h": 0.21,
-        "market_cap": 1481742382789,
-        "volume_24h": 25925810830
+        "price_usd": 73572,
+        "change_24h": -0.21,
+        "market_cap": 1479613834109,
+        "volume_24h": 25612304990
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 2048.45,
-        "change_24h": 0.23,
-        "market_cap": 250340160582,
-        "volume_24h": 8914173109
+        "price_usd": 2046.32,
+        "change_24h": -0.96,
+        "market_cap": 250077396179,
+        "volume_24h": 9135135349
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 679.4,
-        "change_24h": 0.48,
-        "market_cap": 89348343985,
-        "volume_24h": 502639950
+        "price_usd": 675.75,
+        "change_24h": -0.75,
+        "market_cap": 88872793750,
+        "volume_24h": 500397043
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 1.05,
-        "change_24h": -0.29,
-        "market_cap": 66683286476,
-        "volume_24h": 1558305925
+        "price_usd": 1.042,
+        "change_24h": -1.26,
+        "market_cap": 66191410923,
+        "volume_24h": 1544879473
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 82.97,
-        "change_24h": 0.4,
-        "market_cap": 49074502003,
-        "volume_24h": 2008147625
+        "price_usd": 82.79,
+        "change_24h": -0.33,
+        "market_cap": 48970033577,
+        "volume_24h": 2102128140
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.067154,
-        "change_24h": -0.71,
-        "market_cap": 10523455745,
-        "volume_24h": 408838769
+        "price_usd": 0.067012,
+        "change_24h": -1.92,
+        "market_cap": 10501881701,
+        "volume_24h": 458683708
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 10.13,
-        "change_24h": -1.11,
-        "market_cap": 7767000111,
-        "volume_24h": 217879977
+        "price_usd": 10.08,
+        "change_24h": -2.87,
+        "market_cap": 7730926560,
+        "volume_24h": 236504166
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.173687,
-        "change_24h": 0.43,
-        "market_cap": 6524895976,
-        "volume_24h": 169410741
+        "price_usd": 0.172449,
+        "change_24h": -1.6,
+        "market_cap": 6479842500,
+        "volume_24h": 187509445
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
-        "price_usd": 8.45,
-        "change_24h": 1.36,
-        "market_cap": 3768930385,
-        "volume_24h": 228780501
+        "price_usd": 8.54,
+        "change_24h": 0.99,
+        "market_cap": 3810070196,
+        "volume_24h": 249699351
       }
     ],
     "top_mentioned": [],
     "news": [
+      {
+        "title": "Bitcoin listless, Nvidia perps crash 7% as CEO Jensen Huang reportedly faces the axe",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2026/11/12/bitcoin-listless-nvidia-perps-crash-7-as-ceo-jensen-huang-reportedly-faces-the-axe",
+        "published": "Thu, 12 Nov 2026 04:03:47 +0000",
+        "assets": [
+          "BTC"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
       {
         "title": "Crypto Long & Short: The GENIUS Act’s guarantees don’t cover DeFi lending",
         "source": "CoinDesk",
@@ -104,40 +116,30 @@
         "color": "yellow"
       },
       {
-        "title": "Meet Spiko, the largest tokenized fund in the world you’ve probably never heard about",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/11/11/meet-spiko-the-largest-tokenized-fund-in-the-world-you-ve-probably-never-heard-about",
-        "published": "Wed, 11 Nov 2026 12:57:36 +0000",
+        "title": "MSCI confirms Strategy’s removal from indexes at end of November",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Thu, 12 Nov 2026 00:09:13 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
+      },
+      {
+        "title": "Suiet wallet to shut down in latest exit from Sui ecosystem",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/suiet-wallet-shut-down-latest-exit-sui-ecosystem?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Wed, 11 Nov 2026 23:18:44 +0000",
+        "assets": [],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
         "title": "Nvidia preparing to oust CEO Jensen Huang after affairs: WSJ",
         "source": "Cointelegraph",
         "url": "https://cointelegraph.com/news/nvidia-preparing-to-oust-ceo-jensen-huang-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "published": "Wed, 11 Nov 2026 22:44:47 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Here’s what happened in crypto today",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Wed, 11 Nov 2026 22:15:26 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Uncalled US House races could send more crypto allies to Congress",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/uncalled-midterm-races-add-more-crypto-supporters-congress?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Wed, 11 Nov 2026 22:05:17 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
@@ -178,45 +180,42 @@
         "color": "red"
       },
       {
-        "title": "Bitcoin faces $70,000 test as $14.2 billion stablecoin contraction exposes demand weakness",
+        "title": "BitMine posts $2.8B quarterly profit driven by Ethereum gains, but yearly net loss surpasses $6B",
         "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/bitcoin-faces-70000-test-as-14-2-billion-stablecoin-contraction-exposes-demand-weakness/",
-        "published": "Wed, 11 Nov 2026 22:50:27 +0000",
+        "url": "https://cryptoslate.com/bitmine-posts-2-8b-quarterly-profit-but-yearly-net-loss-surpasses-6b/",
+        "published": "Thu, 12 Nov 2026 03:20:49 +0000",
         "assets": [
-          "BTC"
+          "ETH"
         ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Novig loses court shield, and New York gambling laws strike back",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/novig-loses-court-shield-and-new-york-gambling-laws-strike-back/",
+        "published": "Thu, 12 Nov 2026 01:40:47 +0000",
+        "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "Binance hacker’s XRP stockpile rapidly crashes driven by Bitcoin swaps",
+        "title": "Bitcoin whales stack coins while ETF investors dump millions daily",
         "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/binance-hackers-xrp-stockpile-rapidly-crashes-driven-by-bitcoin-swaps/",
-        "published": "Wed, 11 Nov 2026 22:30:57 +0000",
-        "assets": [
-          "BTC",
-          "XRP"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Buying Bitcoin without betting on a rally may not pay",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/bitcoin-hedged-trade-borrowing-costs/",
-        "published": "Wed, 11 Nov 2026 21:10:08 +0000",
+        "url": "https://cryptoslate.com/bitcoin-whales-stack-coins-while-etf-investors-dump-millions-daily/",
+        "published": "Wed, 11 Nov 2026 23:50:44 +0000",
         "assets": [
           "BTC"
         ],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": -0.014,
+      "score": -0.181,
       "label": "Neutral",
       "color": "yellow"
     },
@@ -228,26 +227,26 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across crypto Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Bullish",
-      "summary": "Bullish: 9 bullish vs 2 bearish signals detected across crypto news data."
+      "outlook": "Mixed",
+      "summary": "Mixed: 9 bullish vs 6 bearish signals detected across crypto news data."
     },
     "fourchain": {
       "thread_count": 201,
-      "active_threads": 153,
+      "active_threads": 142,
       "mentions": {
-        "XRP": 38,
-        "BTC": 14,
+        "XRP": 29,
+        "BTC": 12,
         "ETH": 10
       },
-      "bullish_hits": 91,
-      "bearish_hits": 50,
-      "bullish_pct": 65,
+      "bullish_hits": 90,
+      "bearish_hits": 59,
+      "bullish_pct": 60,
       "top_coin": "XRP",
       "top_posts": [
+        "/smg/ - stock market general this is sparta edition &gt;educational sites: https://www.investopedia.com https://www.khan",
         "/smg/ - stock market general ai baggies edition &gt;educational sites: https://www.investopedia.com https://www.khanacad",
-        "/smg/ - stock market general we&#039;re so back edition &gt;educational sites: https://www.investopedia.com https://www.",
-        "/smg/ futureman edition ballhorne edition &gt;educational sites: https://www.investopedia.com &gt;financial tv streams-w",
         "/smg/ - stock market general soxl edition &gt;educational sites: https://www.investopedia.com https://www.khanacademy.or",
+        "/pmg/ - precious metals general phd edition &gt;why precious metals? https://youtu.be/i3s4rl6ehii https://youtu.be/gksen",
         "/smg/ - stock market general jensen edition &gt;educational sites: https://www.investopedia.com https://www.khanacademy."
       ]
     },
@@ -255,51 +254,51 @@
       {
         "symbol": "ZIG",
         "name": "ZIG Finance",
-        "rank": 418,
+        "rank": 415,
         "score": 0,
-        "change_24h": -2.03
+        "change_24h": -1.46
+      },
+      {
+        "symbol": "ONDO",
+        "name": "Ondo",
+        "rank": 51,
+        "score": 1,
+        "change_24h": -3.2
       },
       {
         "symbol": "BTC",
         "name": "Bitcoin",
         "rank": 1,
-        "score": 1,
-        "change_24h": 0.49
-      },
-      {
-        "symbol": "PENGU",
-        "name": "Pudgy Penguins",
-        "rank": 116,
         "score": 2,
-        "change_24h": 1.51
+        "change_24h": 0.27
       },
       {
-        "symbol": "DOGE",
-        "name": "Dogecoin",
-        "rank": 13,
+        "symbol": "VVV",
+        "name": "Venice Token",
+        "rank": 73,
         "score": 3,
-        "change_24h": -0.09
+        "change_24h": 3.16
       },
       {
-        "symbol": "GRAM",
-        "name": "Gram (prev. Toncoin)",
-        "rank": 29,
+        "symbol": "ZEC",
+        "name": "Zcash",
+        "rank": 11,
         "score": 4,
-        "change_24h": 3.64
+        "change_24h": -3.23
       },
       {
-        "symbol": "AERO",
-        "name": "Aero",
-        "rank": 117,
+        "symbol": "KNTQ",
+        "name": "Kinetiq",
+        "rank": 259,
         "score": 5,
-        "change_24h": -0.36
+        "change_24h": 5.85
       },
       {
-        "symbol": "PEARL",
-        "name": "Pearl",
-        "rank": 92,
+        "symbol": "QTC",
+        "name": "Quantus",
+        "rank": 848,
         "score": 6,
-        "change_24h": 6.0
+        "change_24h": -5.71
       }
     ]
   },
@@ -314,7 +313,7 @@
         "change_24h": 1.6
       },
       "dow": {
-        "value": 52486.49,
+        "value": 52486.5,
         "change_24h": 0.49
       },
       "vix": {
@@ -345,18 +344,13 @@
       },
       {
         "symbol": "MSFT",
-        "price_usd": 521.12,
+        "price_usd": 521.13,
         "change_24h": -2.26
       },
       {
         "symbol": "GOOGL",
         "price_usd": 293.45,
         "change_24h": 2.11
-      },
-      {
-        "symbol": "AMZN",
-        "price_usd": 266.17,
-        "change_24h": -1.74
       },
       {
         "symbol": "META",
@@ -382,76 +376,96 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "US Stock Futures Fall as Nvidia Turmoil Deepens: Markets Wrap",
+        "title": "Latest Oil Market News and Analysis for Nov. 12",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-11/stock-market-today-dow-s-p-live-updates",
-        "published": "Wed, 11 Nov 2026 22:08:05 GMT",
-        "assets": [
-          "NVDA"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Woodside Energy CEO on LNG Development in the US",
-        "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/videos/2026-11-11/woodside-energy-ceo-on-lng-development-in-the-us-video",
-        "published": "Wed, 11 Nov 2026 22:53:43 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-11/latest-oil-market-news-and-analysis-for-nov-12",
+        "published": "Wed, 11 Nov 2026 23:04:06 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "BHP Names New CFO as Second Top Executive Exits in a Year",
+        "title": "Japan 5-Year Bond Sale Sees Firm Demand as Yields Entice Buyers",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-11/bhp-names-adrian-wood-as-cfo-to-succeed-vandita-pant-mwcnk5t7",
-        "published": "Wed, 11 Nov 2026 21:50:10 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-12/japan-5-year-bond-sale-sees-firmer-demand-than-12-month-average-mwd011h1",
+        "published": "Thu, 12 Nov 2026 03:39:12 GMT",
         "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
-        "title": "Nvidia prepares to oust Jensen Huang, WSJ reports — stock sinks",
+        "title": "New Zealand Bond Auction Demand Climbs to Highest Since 2013",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-12/new-zealand-bond-auction-demand-climbs-to-highest-since-2013",
+        "published": "Thu, 12 Nov 2026 04:12:33 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Nvidia board meeting to decide CEO Jensen Huang’s fate stretches into evening",
         "source": "CNBC",
         "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
-        "published": "Wed, 11 Nov 2026 23:08:34 GMT",
+        "published": "Thu, 12 Nov 2026 03:46:56 GMT",
         "assets": [
           "NVDA"
         ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "What we know so far about Nvidia partner Megaspeed’s Asia footprint",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html",
+        "published": "Thu, 12 Nov 2026 03:02:03 GMT",
+        "assets": [
+          "NVDA"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramer-jensen-huang-nvidia-stock-advice.html",
+        "published": "Thu, 12 Nov 2026 01:14:21 GMT",
+        "assets": [
+          "NVDA"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "‘The thought of living to 100 terrifies me’: Is Social Security a giant Ponzi scheme?",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
+        "published": "Thu, 12 Nov 2026 03:15:00 GMT",
+        "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "Jensen Huang affair in D.C.: Resignation calls and moves to tighten Nvidia China exports",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html",
-        "published": "Wed, 11 Nov 2026 22:46:29 GMT",
-        "assets": [
-          "NVDA"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Feds arrest top official of healthcare company, alleging illegal drug importation",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/11/11/canarx-official-arrested-drug-importation.html",
-        "published": "Wed, 11 Nov 2026 22:58:11 GMT",
+        "title": "Here’s how Bernie Sanders wants to keep Social Security solvent ‘for generations’",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/heres-how-bernie-sanders-wants-to-keep-social-security-solvent-for-generations-f5666a38?mod=mw_rss_topstories",
+        "published": "Thu, 12 Nov 2026 03:10:00 GMT",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
         "title": "Nvidia’s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
         "source": "MarketWatch",
         "url": "https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories",
-        "published": "Wed, 11 Nov 2026 23:08:00 GMT",
+        "published": "Thu, 12 Nov 2026 02:52:00 GMT",
         "assets": [
           "NVDA"
         ],
@@ -460,156 +474,140 @@
         "color": "red"
       },
       {
-        "title": "I’m 63 and spending $95,000 on a roof deck for my $500,000 home. Am I being extravagant?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
-        "published": "Wed, 11 Nov 2026 22:30:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "CoreWeave just gave a shot in the arm to Micron, Lumentum and the rest of the AI trade",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/micron-and-other-ai-stocks-surge-as-coreweave-calms-wall-streets-worst-fears-0a18152a?mod=mw_rss_topstories",
-        "published": "Wed, 11 Nov 2026 22:05:00 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Technoprobe S.p.A. (THNBY) Q3 2026 Earnings Call Transcript",
+        "title": "Long Cast Advisers Q3 2026 Letter",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4966632-technoprobe-s-p-a-thnby-q3-2026-earnings-call-transcript?source=feed_all_articles",
-        "published": "Wed, 11 Nov 2026 18:08:52 -0500",
+        "url": "https://seekingalpha.com/article/4966783-long-cast-advisers-q3-2026-letter?source=feed_all_articles",
+        "published": "Wed, 11 Nov 2026 23:35:00 -0500",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Avio S.p.A. 2026 Q3 - Results - Earnings Call Presentation",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4966784-avio-s-p-a-2026-q3-results-earnings-call-presentation?source=feed_all_articles",
+        "published": "Wed, 11 Nov 2026 23:32:32 -0500",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "CP ALL Public Company Limited 2026 Q3 - Results - Earnings Call Presentation",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4966782-cp-all-public-company-limited-2026-q3-results-earnings-call-presentation?source=feed_all_articles",
+        "published": "Wed, 11 Nov 2026 23:31:36 -0500",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "How Megaspeed built a network in Singapore and Malaysia to move $7.5 billion of Nvidia chips to Chinese companies",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/11/11/megaspeed-nvidia-chips-china-singapore-malaysia/",
+        "published": "Thu, 12 Nov 2026 02:48:36 +0000",
+        "assets": [
+          "NVDA"
+        ],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Nvidia has lost $450 billion since Jensen Huang admitted to an affair. Millions of 401(k)s are exposed",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/11/11/nvidia-jensen-huang-board-401k-retirement-exposure/",
+        "published": "Thu, 12 Nov 2026 02:01:21 +0000",
+        "assets": [
+          "NVDA"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
+      {
+        "title": "Mississippi elects first Democratic senator in 44 years as Dems finally find a winning strategy: Spend nothing and let the other candidate talk beef",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/11/11/mississippi-senate-race-democrats-beef-prices-scott-colom-cindy-hyde-smith/",
+        "published": "Thu, 12 Nov 2026 00:39:46 +0000",
         "assets": [],
         "sentiment": "Bullish",
         "score": 0.333,
         "color": "green"
-      },
-      {
-        "title": "CoreWeave May Have Just Saved AI Stocks",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4966687-coreweave-may-have-just-saved-ai-stocks?source=feed_all_articles",
-        "published": "Wed, 11 Nov 2026 18:03:30 -0500",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Arista Networks, Inc. 2026 Q3 - Results - Earnings Call Presentation",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4966707-arista-networks-inc-2026-q3-results-earnings-call-presentation?source=feed_all_articles",
-        "published": "Wed, 11 Nov 2026 18:02:13 -0500",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "A day after Anthropic’s office push, Databricks jumps in with AI agents that never sleep",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/11/11/databricks/",
-        "published": "Wed, 11 Nov 2026 22:07:04 +0000",
-        "assets": [],
-        "sentiment": "Bullish",
-        "score": 1.0,
-        "color": "green"
-      },
-      {
-        "title": "Inside Dan Schulman’s war on the old Verizon",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/11/11/verizon-ceo-dan-schulman-turnaround-strategy-layoffs-customer-growth-ai/",
-        "published": "Wed, 11 Nov 2026 08:00:00 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "David Ellison’s Skydance replaces DC Studios bosses James Gunn and Peter Safran with a Marvel veteran",
-        "source": "Fortune",
-        "url": "https://fortune.com/2026/11/11/skydance-dc-studios-james-gunn-peter-safran-out-jeremy-latcham/",
-        "published": "Wed, 11 Nov 2026 20:40:28 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
       }
     ],
     "news_sentiment": {
-      "score": -0.111,
+      "score": 0.089,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
         "title": "Jensen Huang announced resignation or removal by December 31, 2026?",
-        "volume_24h": 1827059,
-        "yes_price": 0.73,
+        "volume_24h": 3436341,
+        "yes_price": 0.83,
         "url": "https://polymarket.com/market/jensen-huang-announced-resignation-or-removal-by-december-31"
       },
       {
+        "title": "Jensen Huang announced resignation or removal by November 11, 2026?",
+        "volume_24h": 3230355,
+        "yes_price": 0.07,
+        "url": "https://polymarket.com/market/jensen-huang-announced-resignation-or-removal-by-november-11-2026"
+      },
+      {
+        "title": "Jensen Huang announced resignation or removal by November 12, 2026?",
+        "volume_24h": 1161480,
+        "yes_price": 0.62,
+        "url": "https://polymarket.com/market/jensen-huang-announced-resignation-or-removal-by-november-12-2026"
+      },
+      {
         "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
-        "volume_24h": 659311,
-        "yes_price": 0.11,
+        "volume_24h": 643001,
+        "yes_price": 0.1,
         "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808637"
       },
       {
         "title": "Jensen Huang announced resignation or removal by March 31, 2027?",
-        "volume_24h": 331527,
-        "yes_price": 0.77,
+        "volume_24h": 539576,
+        "yes_price": 0.88,
         "url": "https://polymarket.com/market/jensen-huang-announced-resignation-or-removal-by-march-31-2027"
       },
       {
-        "title": "Will David Lisnard win the 2027 French presidential election?",
-        "volume_24h": 275377,
-        "yes_price": 0.15,
-        "url": "https://polymarket.com/market/will-david-lisnard-win-the-2027-french-presidential-election"
+        "title": "Jensen Huang announced resignation or removal by November 13, 2026?",
+        "volume_24h": 463708,
+        "yes_price": 0.66,
+        "url": "https://polymarket.com/market/jensen-huang-announced-resignation-or-removal-by-november-13-2026"
       },
       {
-        "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 243089,
-        "yes_price": 0.07,
-        "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
+        "title": "Jensen Huang announced resignation or removal by December 31, 2027?",
+        "volume_24h": 414610,
+        "yes_price": 0.89,
+        "url": "https://polymarket.com/market/jensen-huang-announced-resignation-or-removal-by-december-31-2027"
+      },
+      {
+        "title": "Jensen Huang announced resignation or removal by November 30, 2026?",
+        "volume_24h": 390592,
+        "yes_price": 0.79,
+        "url": "https://polymarket.com/market/jensen-huang-announced-resignation-or-removal-by-november-30-2026"
       },
       {
         "title": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-        "volume_24h": 229486,
-        "yes_price": 0.03,
+        "volume_24h": 347165,
+        "yes_price": 0.04,
         "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635"
       },
       {
-        "title": "US announces end of Iranian blockade by November 30, 2026?",
-        "volume_24h": 224747,
-        "yes_price": 0.12,
-        "url": "https://polymarket.com/market/us-announces-end-of-iranian-blockade-by-november-30-2026"
-      },
-      {
-        "title": "Israel x Iran ceasefire continues through November 15?",
-        "volume_24h": 220538,
-        "yes_price": 0.97,
-        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-november-15"
-      },
-      {
-        "title": "Will Anthropic's market cap be less than $1.25T at market close on IPO day?",
-        "volume_24h": 212176,
-        "yes_price": 0.2,
-        "url": "https://polymarket.com/market/will-anthropics-market-cap-be-less-than-1pt25t-at-market-close-on-ipo-day"
-      },
-      {
-        "title": "Russia x Ukraine ceasefire by December 31, 2026?",
-        "volume_24h": 207622,
-        "yes_price": 0.05,
-        "url": "https://polymarket.com/market/russia-x-ukraine-ceasefire-by-december-31-2026"
+        "title": "Will David Lisnard win the 2027 French presidential election?",
+        "volume_24h": 286173,
+        "yes_price": 0.16,
+        "url": "https://polymarket.com/market/will-david-lisnard-win-the-2027-french-presidential-election"
       }
     ],
     "polymarket_summary": {
       "outlook": "Bullish",
-      "summary": "Bullish: 3 bullish vs 1 bearish signals detected across finance prediction markets data."
+      "summary": "Bullish: 2 bullish vs 0 bearish signals detected across finance prediction markets data."
     },
     "reddit": [],
     "reddit_summary": {
@@ -617,8 +615,8 @@
       "summary": "Mixed: 0 bullish vs 0 bearish signals detected across stock Reddit discussion data."
     },
     "news_summary": {
-      "outlook": "Bearish",
-      "summary": "Bearish: 0 bullish vs 11 bearish signals detected across stock/finance news data."
+      "outlook": "Bullish",
+      "summary": "Bullish: 6 bullish vs 3 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -630,80 +628,80 @@
       {
         "symbol": "DX-Y.NYB",
         "name": "US Dollar Index",
-        "value": 102.87,
-        "change_24h": 0.62
+        "value": 103.0,
+        "change_24h": 0.75
       },
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "value": 3999.0,
-        "change_24h": -0.77
+        "value": 3983.1,
+        "change_24h": -1.17
       },
       {
         "symbol": "CL=F",
         "name": "Crude Oil",
-        "value": 86.38,
-        "change_24h": 0.4
+        "value": 85.28,
+        "change_24h": -0.88
       }
     ],
     "most_active": [
       {
         "symbol": "NVDA",
-        "volume": 281514030,
+        "volume": 313417400,
         "price_usd": 173.73,
         "change_24h": 2.87
       },
       {
         "symbol": "AMD",
-        "volume": 43171056,
+        "volume": 44707100,
         "price_usd": 552.9,
         "change_24h": 7.32
       },
       {
         "symbol": "QQQ",
-        "volume": 42821615,
+        "volume": 44294400,
         "price_usd": 690.38,
         "change_24h": 2.31
       },
       {
         "symbol": "SPY",
-        "volume": 37707134,
+        "volume": 38854000,
         "price_usd": 759.81,
         "change_24h": 1.32
       },
       {
         "symbol": "AMZN",
-        "volume": 37223624,
+        "volume": 37649400,
         "price_usd": 266.17,
         "change_24h": -1.74
       },
       {
         "symbol": "AAPL",
-        "volume": 34023762,
+        "volume": 34284700,
         "price_usd": 355.63,
         "change_24h": 2.04
       },
       {
         "symbol": "MSFT",
-        "volume": 28565538,
-        "price_usd": 521.12,
+        "volume": 28990100,
+        "price_usd": 521.13,
         "change_24h": -2.26
       },
       {
         "symbol": "TSLA",
-        "volume": 27590811,
+        "volume": 27735900,
         "price_usd": 390.84,
         "change_24h": 2.91
       },
       {
         "symbol": "GOOGL",
-        "volume": 24971153,
+        "volume": 25668800,
         "price_usd": 293.45,
         "change_24h": 2.11
       },
       {
         "symbol": "BAC",
-        "volume": 19797737,
+        "volume": 19824900,
         "price_usd": 50.67,
         "change_24h": -0.02
       }
@@ -713,7 +711,7 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 14
+          "interest_score": 12
         },
         {
           "keyword": "Ethereum",
@@ -721,7 +719,7 @@
         },
         {
           "keyword": "Solana",
-          "interest_score": 2
+          "interest_score": 1
         },
         {
           "keyword": "crypto",
