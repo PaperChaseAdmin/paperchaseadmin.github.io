@@ -683,6 +683,42 @@
         "ticker_chg_pct": -0.81,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 1,
+      "price": 358.63,
+      "total_value": 358.63,
+      "reasoning": "While a great company, my entry price is significantly higher than current market value, and I prefer to rotate capital into businesses with more predictable dividend growth and lower volatility.",
+      "timestamp": "2026-11-12T15:04:11Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.84,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "JNJ",
+      "shares": 2,
+      "price": 281.56,
+      "total_value": 563.12,
+      "reasoning": "Johnson & Johnson provides essential stability through its healthcare moat. I am looking to increase my defensive posture with a reliable dividend payer.",
+      "timestamp": "2026-11-12T15:04:11Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.46,
+        "trigger_news": null
+      }
     }
   ]
 }
