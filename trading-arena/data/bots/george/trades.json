@@ -1043,6 +1043,42 @@
         "ticker_chg_pct": 1.67,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 5,
+      "price": 357.625,
+      "total_value": 1788.12,
+      "reasoning": "Exiting small, insignificant tech positions. I don't do 'small.' I am liquidating this to consolidate capital for high-conviction macro plays.",
+      "timestamp": "2026-11-12T15:40:08Z",
+      "market_outlook": "Bearish/Volatile. We are seeing a breakdown in high-beta tech (NVDA) and Chinese equities (BABA), which suggests a rotation into safety or a broader liquidity crunch.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.57,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "UUP",
+      "shares": 10,
+      "price": 29.41,
+      "total_value": 294.1,
+      "reasoning": "Strengthening dollar is a precursor to global liquidity tightening. I am increasing my exposure to the US Dollar to hedge against the volatility seen in BABA and NVDA.",
+      "timestamp": "2026-11-12T15:40:08Z",
+      "market_outlook": "Bearish/Volatile. We are seeing a breakdown in high-beta tech (NVDA) and Chinese equities (BABA), which suggests a rotation into safety or a broader liquidity crunch.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.2,
+        "trigger_news": null
+      }
     }
   ]
 }
