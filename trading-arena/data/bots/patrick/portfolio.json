@@ -1,64 +1,89 @@
 {
-  "cash": 1317.05,
-  "total_value": 9900.92,
+  "cash": 1198.21,
+  "total_value": 9907.6,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 357.34,
+      "current_price": 356.385,
       "avg_cost": 306.8858
     },
     "EL": {
       "shares": 12,
-      "current_price": 111.03,
+      "current_price": 111.025,
       "avg_cost": 85.6584
     },
     "CPRI": {
       "shares": 70,
-      "current_price": 20.655,
+      "current_price": 20.7,
       "avg_cost": 16.9986
-    },
-    "LULU": {
-      "shares": 7,
-      "avg_cost": 93.395,
-      "current_price": 104.27
-    },
-    "WYNN": {
-      "shares": 5,
-      "avg_cost": 74.625,
-      "current_price": 83.624
     },
     "TPR": {
       "shares": 2,
       "avg_cost": 123.865,
-      "current_price": 133.44
+      "current_price": 133.91
     },
     "RL": {
       "shares": 3,
       "avg_cost": 401.705,
-      "current_price": 391.57
+      "current_price": 393.62
+    },
+    "AMZN": {
+      "shares": 3,
+      "avg_cost": 269.44,
+      "current_price": 269.44
+    },
+    "DRI": {
+      "shares": 2,
+      "avg_cost": 231.81,
+      "current_price": 231.81
     }
   },
-  "total_return_pct": -0.99,
+  "total_return_pct": -0.92,
   "total_return_usd": 0.0,
-  "today_pnl": -101.11,
-  "today_pnl_pct": -1.01,
-  "total_trades": 49,
+  "today_pnl": -94.43,
+  "today_pnl_pct": -0.94,
+  "total_trades": 53,
   "today_start_value": 10002.03,
   "today_date": "2026-11-12",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-12T17:20:36Z",
+  "last_action": "The market is showing signs of unrefined volatility. While some luxury sectors are dipping, the core pillars of prestige remain intact for those with the discipline to curate them correctly.",
+  "last_updated": "2026-11-12T17:49:17Z",
   "last_session": {
-    "at": "2026-11-12T17:20:36Z",
+    "at": "2026-11-12T17:49:17Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RH",
+        -4.01
+      ],
+      [
+        "WYNN",
+        -2.23
+      ],
+      [
+        "LULU",
+        -2.19
+      ],
+      [
+        "DRI",
+        1.25
+      ],
+      [
+        "AMZN",
+        1.24
+      ],
+      [
+        "LVS",
+        -1.21
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "My portfolio is currently a bit cluttered with mid-tier volatility. I am trimming Lululemon and Wynn to shed the weakness and reallocating into Amazon and Darden to capture more stable, high-margin consumer dominance. My taste remains superior to the average trader's, and these adjustments will ensure my returns reflect my standards.",
+    "outlook": "The market is showing signs of unrefined volatility. While some luxury sectors are dipping, the core pillars of prestige remain intact for those with the discipline to curate them correctly.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1920,6 +1945,10 @@
     {
       "timestamp": "2026-11-12T17:20:36Z",
       "value": 9900.92
+    },
+    {
+      "timestamp": "2026-11-12T17:49:17Z",
+      "value": 9907.6
     }
   ]
 }

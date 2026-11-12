@@ -683,6 +683,42 @@
         "ticker_chg_pct": 1.01,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "PDBC",
+      "shares": 15,
+      "price": 18.34,
+      "total_value": 275.1,
+      "reasoning": "Taking partial profits on PDBC. It has performed well (current 18.34 vs avg 16.52), and I need to rebalance to ensure no single commodity position exceeds my 20% risk threshold.",
+      "timestamp": "2026-11-12T17:40:18Z",
+      "market_outlook": "Neutral to Cautious. The broad pullback in gold and emerging markets suggests a momentary shift in sentiment, possibly driven by rising real yields or a strengthening dollar. I am positioning for a regime of volatility by rebalancing between inflation hedges and recession hedges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.05,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "EEM",
+      "shares": 10,
+      "price": 61.07,
+      "total_value": 610.7,
+      "reasoning": "Emerging markets are showing weakness today. I am deploying some cash to increase diversification into non-US equities to balance my current heavy tilt toward commodities and US-centric assets.",
+      "timestamp": "2026-11-12T17:40:18Z",
+      "market_outlook": "Neutral to Cautious. The broad pullback in gold and emerging markets suggests a momentary shift in sentiment, possibly driven by rising real yields or a strengthening dollar. I am positioning for a regime of volatility by rebalancing between inflation hedges and recession hedges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.55,
+        "trigger_news": null
+      }
     }
   ]
 }
