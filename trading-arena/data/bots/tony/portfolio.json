@@ -1,6 +1,6 @@
 {
   "cash": 510.4,
-  "total_value": 6731.62,
+  "total_value": 6744.71,
   "positions": {
     "TQQQ": {
       "shares": 50,
@@ -9,55 +9,80 @@
     },
     "SOXL": {
       "shares": 31,
-      "current_price": 65.14,
+      "current_price": 65.5704,
       "avg_cost": 95.1535
     },
     "RKLB": {
       "shares": 6,
-      "current_price": 65.205,
+      "current_price": 64.7501,
       "avg_cost": 50.52
     },
     "IONQ": {
       "shares": 10,
-      "current_price": 31.01,
+      "current_price": 30.935,
       "avg_cost": 29.5816
     },
     "ARM": {
       "shares": 1,
       "avg_cost": 182.525,
-      "current_price": 200.2214
+      "current_price": 200.1201
     },
     "SMCI": {
       "shares": 5,
       "avg_cost": 30.81,
-      "current_price": 27.15
+      "current_price": 27.75
     },
     "MRVL": {
       "shares": 1,
       "avg_cost": 173.895,
-      "current_price": 165.575
+      "current_price": 165.91
     }
   },
-  "total_return_pct": -32.68,
+  "total_return_pct": -32.55,
   "total_return_usd": 0.0,
-  "today_pnl": 280.68,
-  "today_pnl_pct": 4.35,
+  "today_pnl": 293.77,
+  "today_pnl_pct": 4.55,
   "total_trades": 41,
   "today_start_value": 6450.94,
   "today_date": "2026-11-12",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-12T19:14:24Z",
+  "last_action": "...",
+  "last_updated": "2026-11-12T19:45:48Z",
   "last_session": {
-    "at": "2026-11-12T19:14:24Z",
+    "at": "2026-11-12T19:45:48Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IONQ",
+        -9.17
+      ],
+      [
+        "SMCI",
+        -9.0
+      ],
+      [
+        "AVGO",
+        5.58
+      ],
+      [
+        "AMD",
+        5.53
+      ],
+      [
+        "NVDA",
+        -5.38
+      ],
+      [
+        "ANET",
+        4.69
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1936,6 +1961,10 @@
     {
       "timestamp": "2026-11-12T19:14:24Z",
       "value": 6731.62
+    },
+    {
+      "timestamp": "2026-11-12T19:45:48Z",
+      "value": 6744.71
     }
   ]
 }

@@ -1,44 +1,64 @@
 {
-  "cash": 1955.82,
-  "total_value": 10132.23,
+  "cash": 5577.82,
+  "total_value": 10104.51,
   "positions": {
     "RBLX": {
       "shares": 5,
       "avg_cost": 38.795,
-      "current_price": 52.065
+      "current_price": 51.97
     },
     "AAPL": {
       "shares": 12,
-      "current_price": 355.84,
+      "current_price": 355.57,
       "avg_cost": 340.3275
-    },
-    "RIOT": {
-      "shares": 200,
-      "avg_cost": 18.5932,
-      "current_price": 18.23
     }
   },
-  "total_return_pct": 1.32,
+  "total_return_pct": 1.05,
   "total_return_usd": 0.0,
-  "today_pnl": -68.77,
-  "today_pnl_pct": -0.67,
-  "total_trades": 56,
+  "today_pnl": -96.49,
+  "today_pnl_pct": -0.95,
+  "total_trades": 57,
   "today_start_value": 10201.0,
   "today_date": "2026-11-12",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-12T19:16:49Z",
+  "last_action": "Market is RED across the board. Nothing on watchlist showing the parabolic momentum I need. UPST -6%, MSTR -5.5%, NVDA -5.4% - these are falling knives, not rockets. Waiting for the next GME-style squ",
+  "last_updated": "2026-11-12T19:48:00Z",
   "last_session": {
-    "at": "2026-11-12T19:16:49Z",
+    "at": "2026-11-12T19:48:00Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "UPST",
+        -5.98
+      ],
+      [
+        "MSTR",
+        -5.53
+      ],
+      [
+        "NVDA",
+        -5.38
+      ],
+      [
+        "RIVN",
+        -4.62
+      ],
+      [
+        "SOFI",
+        -3.56
+      ],
+      [
+        "MARA",
+        -3.33
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio has two winners (RBLX +34%, AAPL +4.5%) and one loser (RIOT -2.6%). Selling RIOT frees up ~$3600 cash, bringing total cash to ~$5500. Will deploy aggressively when something shows 10%+ intraday momentum with volume. No forced trades in a down market - that's how you lose the dream.",
+    "outlook": "Market is RED across the board. Nothing on watchlist showing the parabolic momentum I need. UPST -6%, MSTR -5.5%, NVDA -5.4% - these are falling knives, not rockets. Waiting for the next GME-style squeeze. Cash heavy, trigger ready.",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1916,6 +1936,10 @@
     {
       "timestamp": "2026-11-12T19:16:49Z",
       "value": 10132.23
+    },
+    {
+      "timestamp": "2026-11-12T19:48:00Z",
+      "value": 10104.51
     }
   ]
 }
