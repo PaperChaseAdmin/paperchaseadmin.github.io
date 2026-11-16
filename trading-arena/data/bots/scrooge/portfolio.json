@@ -1,104 +1,104 @@
 {
   "cash": 208.07,
-  "total_value": 9980.73,
+  "total_value": 9976.19,
   "positions": {
     "T": {
       "shares": 82,
-      "current_price": 22.31,
+      "current_price": 22.32,
       "avg_cost": 22.4669
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 56.14,
+      "current_price": 56.16,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 46.315,
+      "current_price": 46.3401,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 354.15,
+      "current_price": 353.93,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 196.0,
+      "current_price": 195.78,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 295.3078,
+      "current_price": 294.53,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 19.05,
+      "current_price": 19.065,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 35.905
+      "current_price": 35.895
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 162.94
+      "current_price": 163.02
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 57.24
+      "current_price": 57.245
     },
     "MO": {
       "shares": 5,
-      "current_price": 78.72,
+      "current_price": 78.58,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 58.565,
+      "current_price": 58.585,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 46.94
+      "current_price": 46.96
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 47.385
+      "current_price": 47.345
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 62.27
+      "current_price": 62.175
     },
     "WPC": {
       "shares": 3,
       "avg_cost": 65.48,
-      "current_price": 66.01
+      "current_price": 65.95
     },
     "HTGC": {
       "shares": 8,
       "avg_cost": 15.975,
-      "current_price": 15.735
+      "current_price": 15.72
     }
   },
-  "total_return_pct": -0.19,
+  "total_return_pct": -0.24,
   "total_return_usd": 0.0,
-  "today_pnl": -79.32,
-  "today_pnl_pct": -0.79,
+  "today_pnl": -83.86,
+  "today_pnl_pct": -0.83,
   "total_trades": 27,
   "today_start_value": 10060.05,
   "today_date": "2026-11-16",
-  "last_action": "...",
-  "last_updated": "2026-11-16T19:46:46Z",
+  "last_action": "Market neutral per Fear & Greed at 50. Dividend aristocrats holding steady. Gold dipping slightly but treasure reserve stays locked in the vault. Cash position thin at $208 - barely above $200 reserve",
+  "last_updated": "2026-11-16T20:20:08Z",
   "last_session": {
-    "at": "2026-11-16T19:46:46Z",
+    "at": "2026-11-16T20:20:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -106,33 +106,33 @@
     "top_movers": [
       [
         "IBM",
-        -1.62
+        -2.01
       ],
       [
         "PM",
-        -1.49
+        -1.6
       ],
       [
         "JEPI",
-        -1.24
+        -1.23
       ],
       [
         "VYM",
-        -1.2
+        -1.15
       ],
       [
         "HTGC",
-        -0.85
+        -0.95
       ],
       [
-        "BTI",
-        0.65
+        "ENB",
+        -0.68
       ]
     ],
     "news_read": [],
     "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "...",
-    "outlook": "...",
+    "ai_analysis": "Portfolio yielding strong across the board: ARCC ~9.5%, HTGC ~10%, JEPI ~8%, MO ~8%, BTI ~8%, OHI ~8%, ENB ~7%, T ~6%, VZ ~6.5%, WPC ~6%, O ~5%, MAIN ~6%, PM ~4.5%. All dividend payers intact - no cuts detected. GLD down 0.43% today but treasure never sells. Winners: ABBV +126, BTI +100, MO +65, VZ +46, PM +32, SCHD +31. Losers: GLD -123, T -12, ENB -6. No trades possible with only $8 deployable cash after reserve. Waiting for quarterly dividends to rebuild war chest. DRIP discipline remains absolute.",
+    "outlook": "Market neutral per Fear & Greed at 50. Dividend aristocrats holding steady. Gold dipping slightly but treasure reserve stays locked in the vault. Cash position thin at $208 - barely above $200 reserve. No dry powder for new positions until dividends flow in.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -2071,6 +2071,10 @@
     {
       "timestamp": "2026-11-16T19:46:46Z",
       "value": 9980.73
+    },
+    {
+      "timestamp": "2026-11-16T20:20:08Z",
+      "value": 9976.19
     }
   ]
 }
