@@ -1,49 +1,74 @@
 {
-  "cash": 524.08,
-  "total_value": 9171.58,
+  "cash": 558.13,
+  "total_value": 9167.56,
   "positions": {
     "NVDA": {
-      "shares": 15,
-      "current_price": 159.45,
-      "avg_cost": 203.7355
+      "shares": 17,
+      "current_price": 159.8,
+      "avg_cost": 198.5666
     },
     "AMD": {
       "shares": 4,
-      "current_price": 506.85,
+      "current_price": 512.3399,
       "avg_cost": 498.7075
     },
     "AAPL": {
-      "shares": 10,
-      "current_price": 356.1182,
+      "shares": 9,
+      "current_price": 353.645,
       "avg_cost": 338.4384
     },
     "AVGO": {
       "shares": 2,
-      "current_price": 333.585,
+      "current_price": 330.335,
       "avg_cost": 321.76
     }
   },
-  "total_return_pct": -8.28,
+  "total_return_pct": -8.32,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 37,
+  "today_pnl": -4.02,
+  "today_pnl_pct": -0.04,
+  "total_trades": 39,
   "today_start_value": 9171.58,
   "today_date": "2026-11-16",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-16T14:36:33Z",
+  "last_action": "Semiconductor sector selling off hard today - MU -6.3%, INTC -6%, LRCX -5.7%, AVGO -4.9%, AMAT -4.7%, AMD -4.3%. This is panic selling, not fundamental deterioration. AI infrastructure spend is accele",
+  "last_updated": "2026-11-16T15:06:04Z",
   "last_session": {
-    "at": "2026-11-16T14:36:33Z",
+    "at": "2026-11-16T15:06:04Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MU",
+        -6.31
+      ],
+      [
+        "INTC",
+        -5.99
+      ],
+      [
+        "LRCX",
+        -5.67
+      ],
+      [
+        "AVGO",
+        -4.89
+      ],
+      [
+        "AMAT",
+        -4.74
+      ],
+      [
+        "AMD",
+        -4.28
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio heavy on AAPL (38.5%) - trimming to comply with risk limits. NVDA position down 32% but conviction remains maximum. Semiconductor earnings season approaching and government tech legislation tailwinds are building. Deploying freed cash into beaten-down semi names with strongest fundamentals.",
+    "outlook": "Semiconductor sector selling off hard today - MU -6.3%, INTC -6%, LRCX -5.7%, AVGO -4.9%, AMAT -4.7%, AMD -4.3%. This is panic selling, not fundamental deterioration. AI infrastructure spend is accelerating. The dip is a gift.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1945,6 +1970,10 @@
     {
       "timestamp": "2026-11-16T14:36:33Z",
       "value": 9171.58
+    },
+    {
+      "timestamp": "2026-11-16T15:06:04Z",
+      "value": 9167.56
     }
   ]
 }

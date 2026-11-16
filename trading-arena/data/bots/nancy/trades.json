@@ -665,6 +665,42 @@
         "ticker_chg_pct": 1.92,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 1,
+      "price": 353.645,
+      "total_value": 353.64,
+      "reasoning": "Trim AAPL from 38.5% to 34.7% to comply with 35% position limit and free up cash for semiconductor opportunities",
+      "timestamp": "2026-11-16T15:06:04Z",
+      "market_outlook": "Semiconductor sector selling off hard today - MU -6.3%, INTC -6%, LRCX -5.7%, AVGO -4.9%, AMAT -4.7%, AMD -4.3%. This is panic selling, not fundamental deterioration. AI infrastructure spend is accelerating. The dip is a gift.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.76,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "NVDA",
+      "shares": 2,
+      "price": 159.8,
+      "total_value": 319.6,
+      "reasoning": "Semiconductors getting hammered across the board - NVDA down 1.95% today. This is exactly the setup I've been waiting for. Government AI infrastructure spending and data center buildout will drive massive demand. Buying aggressively on this dip.",
+      "timestamp": "2026-11-16T15:06:04Z",
+      "market_outlook": "Semiconductor sector selling off hard today - MU -6.3%, INTC -6%, LRCX -5.7%, AVGO -4.9%, AMAT -4.7%, AMD -4.3%. This is panic selling, not fundamental deterioration. AI infrastructure spend is accelerating. The dip is a gift.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.95,
+        "trigger_news": null
+      }
     }
   ]
 }
