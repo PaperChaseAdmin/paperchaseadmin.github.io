@@ -1,94 +1,119 @@
 {
-  "cash": 502.39,
-  "total_value": 10138.78,
+  "cash": 993.6,
+  "total_value": 10126.84,
   "positions": {
     "XLB": {
       "shares": 18,
-      "current_price": 52.22,
+      "current_price": 52.16,
       "avg_cost": 52.5513
     },
     "TLT": {
       "shares": 12,
-      "current_price": 79.31,
+      "current_price": 79.54,
       "avg_cost": 82.4097
     },
     "XLI": {
       "shares": 5,
       "avg_cost": 185.43,
-      "current_price": 168.53
-    },
-    "XLV": {
-      "shares": 4,
-      "current_price": 188.29,
-      "avg_cost": 168.4586
+      "current_price": 167.485
     },
     "GLD": {
       "shares": 2,
-      "current_price": 356.465,
+      "current_price": 354.56,
       "avg_cost": 381.115
     },
     "XLU": {
       "shares": 10,
       "avg_cost": 42.4805,
-      "current_price": 43.87
+      "current_price": 44.26
     },
     "XLP": {
-      "shares": 8,
-      "current_price": 91.95,
+      "shares": 4,
+      "current_price": 93.32,
       "avg_cost": 84.8565
     },
     "XLC": {
       "shares": 8,
       "avg_cost": 114.17,
-      "current_price": 108.94
+      "current_price": 108.45
     },
     "XLRE": {
       "shares": 14,
-      "current_price": 44.375,
+      "current_price": 44.56,
       "avg_cost": 42.8093
     },
     "XLK": {
-      "shares": 6,
-      "current_price": 170.0099,
-      "avg_cost": 183.5189
+      "shares": 7,
+      "current_price": 166.1858,
+      "avg_cost": 181.0427
     },
     "XLE": {
       "shares": 17,
-      "current_price": 64.475,
+      "current_price": 64.3652,
       "avg_cost": 68.2094
     },
     "XLF": {
       "shares": 5,
       "avg_cost": 54.915,
-      "current_price": 58.52
+      "current_price": 58.69
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 352.51,
-      "current_price": 360.17
+      "current_price": 356.1182
+    },
+    "XLY": {
+      "shares": 4,
+      "avg_cost": 119.735,
+      "current_price": 119.735
     }
   },
-  "total_return_pct": 1.39,
+  "total_return_pct": 1.27,
   "total_return_usd": 0.0,
-  "today_pnl": -35.25,
-  "today_pnl_pct": -0.35,
-  "total_trades": 47,
-  "today_start_value": 10174.03,
-  "today_date": "2026-11-13",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-13T15:26:17Z",
+  "today_pnl": -0.01,
+  "today_pnl_pct": -0.0,
+  "total_trades": 51,
+  "today_start_value": 10126.85,
+  "today_date": "2026-11-16",
+  "last_action": "The scales are tipping. Tech is retreating while Staples and Healthcare ascend. This imbalance is an affront to the universe.",
+  "last_updated": "2026-11-16T14:55:14Z",
   "last_session": {
-    "at": "2026-11-13T15:26:17Z",
+    "at": "2026-11-16T14:55:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "XLK",
+        -2.44
+      ],
+      [
+        "QQQ",
+        -1.58
+      ],
+      [
+        "XLP",
+        1.08
+      ],
+      [
+        "XLV",
+        0.97
+      ],
+      [
+        "XLE",
+        -0.82
+      ],
+      [
+        "SPY",
+        -0.81
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The portfolio is currently chaotic. XLV and XLP are overextended, while XLY and XLK are lagging. I am executing a rebalancing maneuver to ensure all 11 sectors and my hedges (GLD/TLT) move toward a state of perfect, equalized weight. Chaos will be corrected.",
+    "outlook": "The scales are tipping. Tech is retreating while Staples and Healthcare ascend. This imbalance is an affront to the universe.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1986,6 +2011,10 @@
     {
       "timestamp": "2026-11-13T15:26:17Z",
       "value": 10138.78
+    },
+    {
+      "timestamp": "2026-11-16T14:55:14Z",
+      "value": 10126.84
     }
   ]
 }
