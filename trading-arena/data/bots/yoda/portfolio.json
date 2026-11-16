@@ -1,53 +1,78 @@
 {
   "cash": 518.82,
-  "total_value": 9808.94,
+  "total_value": 9775.99,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 368.2
+      "current_price": 367.11
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 670.0,
+      "current_price": 666.82,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 748.29
+      "current_price": 745.87
     },
     "VXUS": {
       "shares": 6,
-      "current_price": 81.7301,
+      "current_price": 81.51,
       "avg_cost": 85.9021
     },
     "SCHD": {
       "shares": 5,
-      "current_price": 36.195,
+      "current_price": 36.095,
       "avg_cost": 35.0126
     }
   },
-  "total_return_pct": -1.91,
+  "total_return_pct": -2.24,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -32.95,
+  "today_pnl_pct": -0.34,
   "total_trades": 10,
   "today_start_value": 9808.94,
   "today_date": "2026-11-16",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-16T14:52:29Z",
+  "last_action": "The markets dip, a chance to acquire more index exposure, this is. Patience, the correction shall pass.",
+  "last_updated": "2026-11-16T15:20:04Z",
   "last_session": {
-    "at": "2026-11-16T14:52:29Z",
+    "at": "2026-11-16T15:20:04Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "VWO",
+        -2.43
+      ],
+      [
+        "QQQ",
+        -1.97
+      ],
+      [
+        "VXUS",
+        -1.37
+      ],
+      [
+        "SCHB",
+        -1.17
+      ],
+      [
+        "SPY",
+        -1.16
+      ],
+      [
+        "IVV",
+        -1.15
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Limited buying power is, cash we have but a reserve of $500 we must keep. The watchlist shows many ETFs lower, yet without enough cash we cannot act now. We hold VTI, QQQ, SPY, VXUS, SCHD, and these we will monitor. When the dip deepens, we will deploy the spare cash, but for now we wait, as the wise do.",
+    "outlook": "The markets dip, a chance to acquire more index exposure, this is. Patience, the correction shall pass.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -1950,6 +1975,10 @@
     {
       "timestamp": "2026-11-16T14:52:29Z",
       "value": 9808.94
+    },
+    {
+      "timestamp": "2026-11-16T15:20:04Z",
+      "value": 9775.99
     }
   ]
 }
