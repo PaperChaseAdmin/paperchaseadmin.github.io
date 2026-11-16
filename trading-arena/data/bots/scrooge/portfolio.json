@@ -1,113 +1,138 @@
 {
   "cash": 208.07,
-  "total_value": 10038.45,
+  "total_value": 10052.7,
   "positions": {
     "T": {
       "shares": 82,
-      "current_price": 22.465,
+      "current_price": 22.535,
       "avg_cost": 22.4669
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 56.6167,
+      "current_price": 56.35,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 46.635,
+      "current_price": 46.8302,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 355.46,
+      "current_price": 354.0,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 196.13,
+      "current_price": 197.52,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 297.725,
+      "current_price": 298.165,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 19.2299,
+      "current_price": 19.16,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 36.095
+      "current_price": 36.145
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 164.05
+      "current_price": 164.04
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 57.605
+      "current_price": 57.575
     },
     "MO": {
       "shares": 5,
-      "current_price": 79.15,
+      "current_price": 79.4,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 59.13,
+      "current_price": 59.18,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 47.28
+      "current_price": 47.37
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 47.33
+      "current_price": 47.705
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 62.51
+      "current_price": 62.685
     },
     "WPC": {
       "shares": 3,
       "avg_cost": 65.48,
-      "current_price": 66.1
+      "current_price": 66.36
     },
     "HTGC": {
       "shares": 8,
       "avg_cost": 15.975,
-      "current_price": 15.915
+      "current_price": 15.805
     }
   },
-  "total_return_pct": 0.38,
+  "total_return_pct": 0.53,
   "total_return_usd": 0.0,
-  "today_pnl": -21.6,
-  "today_pnl_pct": -0.21,
+  "today_pnl": -7.35,
+  "today_pnl_pct": -0.07,
   "total_trades": 27,
   "today_start_value": 10060.05,
   "today_date": "2026-11-16",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-16T15:19:10Z",
+  "last_action": "Neutral but ripe for dividend harvesting. The market is moving, and I must ensure every penny is working to generate more pennies!",
+  "last_updated": "2026-11-16T15:50:10Z",
   "last_session": {
-    "at": "2026-11-16T15:19:10Z",
+    "at": "2026-11-16T15:50:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "T",
+        1.62
+      ],
+      [
+        "BTI",
+        1.26
+      ],
+      [
+        "ABBV",
+        1.04
+      ],
+      [
+        "WPC",
+        1.01
+      ],
+      [
+        "VZ",
+        1.0
+      ],
+      [
+        "MO",
+        0.94
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "The watchlist is showing positive movement in my favorite sectors: Telecoms, Tobacco, and REITs. I am deploying a small portion of my cash to increase my positions in T, BTI, and WPC to maximize my dividend income. I am keeping my cash reserve above $200 to ensure I'm ready for the next golden opportunity. Every cent must be put to work!",
+    "outlook": "Neutral but ripe for dividend harvesting. The market is moving, and I must ensure every penny is working to generate more pennies!",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -2014,6 +2039,10 @@
     {
       "timestamp": "2026-11-16T15:19:10Z",
       "value": 10038.45
+    },
+    {
+      "timestamp": "2026-11-16T15:50:10Z",
+      "value": 10052.7
     }
   ]
 }
