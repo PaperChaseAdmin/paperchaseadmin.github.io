@@ -1,94 +1,119 @@
 {
-  "cash": 993.6,
-  "total_value": 10090.01,
+  "cash": 640.61,
+  "total_value": 10079.57,
   "positions": {
     "XLB": {
       "shares": 18,
-      "current_price": 51.89,
+      "current_price": 51.87,
       "avg_cost": 52.5513
     },
     "TLT": {
       "shares": 12,
-      "current_price": 79.365,
+      "current_price": 79.38,
       "avg_cost": 82.4097
     },
     "XLI": {
       "shares": 5,
       "avg_cost": 185.43,
-      "current_price": 167.06
+      "current_price": 166.82
     },
     "GLD": {
       "shares": 2,
-      "current_price": 354.35,
+      "current_price": 354.37,
       "avg_cost": 381.115
     },
     "XLU": {
       "shares": 10,
       "avg_cost": 42.4805,
-      "current_price": 44.035
+      "current_price": 44.075
     },
     "XLP": {
       "shares": 4,
-      "current_price": 92.61,
+      "current_price": 92.79,
       "avg_cost": 84.8565
     },
     "XLC": {
       "shares": 8,
       "avg_cost": 114.17,
-      "current_price": 107.665
+      "current_price": 107.34
     },
     "XLRE": {
       "shares": 14,
-      "current_price": 44.275,
+      "current_price": 44.315,
       "avg_cost": 42.8093
     },
     "XLK": {
       "shares": 7,
-      "current_price": 166.51,
+      "current_price": 165.58,
       "avg_cost": 181.0427
     },
     "XLE": {
       "shares": 17,
-      "current_price": 64.005,
+      "current_price": 64.045,
       "avg_cost": 68.2094
     },
     "XLF": {
       "shares": 5,
       "avg_cost": 54.915,
-      "current_price": 58.435
+      "current_price": 58.395
     },
     "AAPL": {
-      "shares": 1,
-      "avg_cost": 352.51,
-      "current_price": 353.44
+      "shares": 2,
+      "current_price": 352.99,
+      "avg_cost": 352.75
     },
     "XLY": {
       "shares": 4,
       "avg_cost": 119.735,
-      "current_price": 118.695
+      "current_price": 118.27
     }
   },
-  "total_return_pct": 0.9,
+  "total_return_pct": 0.8,
   "total_return_usd": 0.0,
-  "today_pnl": -36.84,
-  "today_pnl_pct": -0.36,
-  "total_trades": 51,
+  "today_pnl": -47.28,
+  "today_pnl_pct": -0.47,
+  "total_trades": 52,
   "today_start_value": 10126.85,
   "today_date": "2026-11-16",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-16T17:25:23Z",
+  "last_action": "...",
+  "last_updated": "2026-11-16T17:53:58Z",
   "last_session": {
-    "at": "2026-11-16T17:25:23Z",
+    "at": "2026-11-16T17:53:58Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "XLK",
+        -2.75
+      ],
+      [
+        "QQQ",
+        -2.21
+      ],
+      [
+        "SPY",
+        -1.47
+      ],
+      [
+        "XLY",
+        -1.43
+      ],
+      [
+        "XLE",
+        -1.42
+      ],
+      [
+        "XLC",
+        -1.25
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -2010,6 +2035,10 @@
     {
       "timestamp": "2026-11-16T17:25:23Z",
       "value": 10090.01
+    },
+    {
+      "timestamp": "2026-11-16T17:53:58Z",
+      "value": 10079.57
     }
   ]
 }
