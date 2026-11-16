@@ -755,6 +755,24 @@
         "ticker_chg_pct": 0.04,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 2,
+      "price": 355.49,
+      "total_value": 710.98,
+      "reasoning": "My entry price is significantly above current market value, and I prefer to reallocate this capital into businesses with more predictable near-term cash flow profiles.",
+      "timestamp": "2026-11-16T16:03:11Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.2,
+        "trigger_news": null
+      }
     }
   ]
 }
