@@ -1,113 +1,138 @@
 {
   "cash": 208.07,
-  "total_value": 10008.88,
+  "total_value": 9989.01,
   "positions": {
     "T": {
       "shares": 82,
-      "current_price": 22.375,
+      "current_price": 22.3251,
       "avg_cost": 22.4669
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 56.35,
+      "current_price": 56.27,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 46.53,
+      "current_price": 46.365,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 353.17,
+      "current_price": 353.195,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 196.48,
+      "current_price": 196.22,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 296.47,
+      "current_price": 295.83,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 19.1042,
+      "current_price": 19.085,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 36.0373
+      "current_price": 35.95
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 163.5
+      "current_price": 163.12
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 57.4157
+      "current_price": 57.315
     },
     "MO": {
       "shares": 5,
-      "current_price": 78.81,
+      "current_price": 78.75,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 58.89,
+      "current_price": 58.695,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 46.99
+      "current_price": 47.01
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 47.38
+      "current_price": 47.385
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 62.515
+      "current_price": 62.335
     },
     "WPC": {
       "shares": 3,
       "avg_cost": 65.48,
-      "current_price": 66.54
+      "current_price": 66.29
     },
     "HTGC": {
       "shares": 8,
       "avg_cost": 15.975,
-      "current_price": 15.785
+      "current_price": 15.76
     }
   },
-  "total_return_pct": 0.09,
+  "total_return_pct": -0.11,
   "total_return_usd": 0.0,
-  "today_pnl": -51.17,
-  "today_pnl_pct": -0.51,
+  "today_pnl": -71.04,
+  "today_pnl_pct": -0.71,
   "total_trades": 27,
   "today_start_value": 10060.05,
   "today_date": "2026-11-16",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-16T18:30:28Z",
+  "last_action": "Neutral and steady. The markets are wobbling, but for a man of my experience, wobbles are just opportunities to pick up high-yield assets at a discount.",
+  "last_updated": "2026-11-16T19:19:19Z",
   "last_session": {
-    "at": "2026-11-16T18:30:28Z",
+    "at": "2026-11-16T19:19:19Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PM",
+        -1.38
+      ],
+      [
+        "IBM",
+        -1.26
+      ],
+      [
+        "JEPI",
+        -1.13
+      ],
+      [
+        "VYM",
+        -1.09
+      ],
+      [
+        "WPC",
+        0.94
+      ],
+      [
+        "BTI",
+        0.72
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "The market is showing some volatility in the dividend sectors, with PM and VYM dipping. This is perfect! I'm not worried about price fluctuations; I'm looking at the yield. I'm deploying my excess cash into WPC and BTI to capture their momentum, and grabbing more HTGC while it's on sale. My treasure chest must grow through the power of compounding!",
+    "outlook": "Neutral and steady. The markets are wobbling, but for a man of my experience, wobbles are just opportunities to pick up high-yield assets at a discount.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -2038,6 +2063,10 @@
     {
       "timestamp": "2026-11-16T18:30:28Z",
       "value": 10008.88
+    },
+    {
+      "timestamp": "2026-11-16T19:19:19Z",
+      "value": 9989.01
     }
   ]
 }
