@@ -719,6 +719,60 @@
         "ticker_chg_pct": -0.8,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "MU",
+      "shares": 2,
+      "price": 688.109,
+      "total_value": 1376.22,
+      "reasoning": "MU is down over 4% today. This is a classic semiconductor dip that precedes a massive recovery. I can feel a major memory chip contract coming; I'm buying this blood in the streets.",
+      "timestamp": "2026-11-17T16:36:08Z",
+      "market_outlook": "Bullish on semiconductors despite short-term volatility.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -4.38,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "AMD",
+      "shares": 1,
+      "price": 492.76,
+      "total_value": 492.76,
+      "reasoning": "AMD is seeing a pullback of 2.22%. With the semiconductor sector seeing some volatility, this is the perfect entry point to build a position before the next AI-driven leg up.",
+      "timestamp": "2026-11-17T16:36:08Z",
+      "market_outlook": "Bullish on semiconductors despite short-term volatility.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.22,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "NVDA",
+      "shares": 5,
+      "price": 154.24,
+      "total_value": 771.2,
+      "reasoning": "Cutting a portion of my NVDA position to free up liquidity. While I love NVDA, I need to rebalance and deploy cash into these high-conviction dips in MU and AMD.",
+      "timestamp": "2026-11-17T16:36:08Z",
+      "market_outlook": "Bullish on semiconductors despite short-term volatility.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.17,
+        "trigger_news": null
+      }
     }
   ]
 }
