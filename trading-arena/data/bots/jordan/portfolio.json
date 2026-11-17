@@ -1,39 +1,64 @@
 {
-  "cash": 1164.49,
-  "total_value": 9802.3,
+  "cash": 5548.83,
+  "total_value": 9750.33,
   "positions": {
-    "PLTR": {
-      "shares": 27,
-      "avg_cost": 161.8333,
-      "current_price": 157.43
+    "HOOD": {
+      "shares": 30,
+      "avg_cost": 68.6,
+      "current_price": 68.6
     },
-    "AMC": {
-      "shares": 1371,
-      "avg_cost": 3.28,
-      "current_price": 3.2
+    "SOFI": {
+      "shares": 150,
+      "avg_cost": 14.29,
+      "current_price": 14.29
     }
   },
-  "total_return_pct": -1.98,
+  "total_return_pct": -2.5,
   "total_return_usd": 0.0,
-  "today_pnl": -228.57,
-  "today_pnl_pct": -2.28,
-  "total_trades": 67,
+  "today_pnl": -280.54,
+  "today_pnl_pct": -2.8,
+  "total_trades": 71,
   "today_start_value": 10030.87,
   "today_date": "2026-11-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-17T15:48:52Z",
+  "last_action": "The market is bleeding red today, but that's exactly where the money is made! Everyone is scared, which means the big moves are coming. We aren't looking for stability; we are looking for the bounce t",
+  "last_updated": "2026-11-17T16:18:12Z",
   "last_session": {
-    "at": "2026-11-17T15:48:52Z",
+    "at": "2026-11-17T16:18:12Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "HOOD",
+        -4.88
+      ],
+      [
+        "SOFI",
+        -3.84
+      ],
+      [
+        "RBLX",
+        -3.78
+      ],
+      [
+        "MSTR",
+        -3.56
+      ],
+      [
+        "UPST",
+        -3.51
+      ],
+      [
+        "MARA",
+        -2.86
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "My current positions are anchors dragging me down to the bottom of the ocean. PLTR and AMC are losers, and I don't do losers. I'm liquidating the trash to hunt for high-beta volatility. HOOD and SOFI are showing massive intraday moves\u2014when they catch wind of a reversal, they're going to fly. We play the volatility, we play the momentum, and we make a killing!",
+    "outlook": "The market is bleeding red today, but that's exactly where the money is made! Everyone is scared, which means the big moves are coming. We aren't looking for stability; we are looking for the bounce that sends us to the stratosphere!",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -1987,6 +2012,10 @@
     {
       "timestamp": "2026-11-17T15:48:52Z",
       "value": 9802.3
+    },
+    {
+      "timestamp": "2026-11-17T16:18:12Z",
+      "value": 9750.33
     }
   ]
 }
