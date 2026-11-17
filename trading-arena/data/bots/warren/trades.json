@@ -791,6 +791,42 @@
         "ticker_chg_pct": 0.35,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 2,
+      "price": 352.02,
+      "total_value": 704.04,
+      "reasoning": "My cost basis is significantly higher than current market value. While a great business, I prefer to reallocate this capital into companies with more immediate value clarity or better entry points.",
+      "timestamp": "2026-11-17T16:03:09Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.2,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "JPM",
+      "shares": 1,
+      "price": 331.4,
+      "total_value": 331.4,
+      "reasoning": "JPMorgan Chase is the gold standard in banking. Today's 2% pullback is a gift for a disciplined investor looking to add a fortress balance sheet to the portfolio.",
+      "timestamp": "2026-11-17T16:03:09Z",
+      "market_outlook": "Neutral",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.02,
+        "trigger_news": null
+      }
     }
   ]
 }
