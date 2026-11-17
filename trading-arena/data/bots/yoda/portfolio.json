@@ -1,53 +1,78 @@
 {
   "cash": 518.82,
-  "total_value": 9583.1,
+  "total_value": 9594.72,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 359.525
+      "current_price": 359.86
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 652.225,
+      "current_price": 653.68,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 730.52
+      "current_price": 731.2
     },
     "VXUS": {
       "shares": 6,
-      "current_price": 79.955,
+      "current_price": 80.025,
       "avg_cost": 85.9021
     },
     "SCHD": {
       "shares": 5,
-      "current_price": 35.475,
+      "current_price": 35.4699,
       "avg_cost": 35.0126
     }
   },
-  "total_return_pct": -4.17,
+  "total_return_pct": -4.05,
   "total_return_usd": 0.0,
-  "today_pnl": -106.94,
-  "today_pnl_pct": -1.1,
+  "today_pnl": -95.32,
+  "today_pnl_pct": -0.98,
   "total_trades": 10,
   "today_start_value": 9690.04,
   "today_date": "2026-11-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-17T17:29:32Z",
+  "last_action": "Down the market goes, 1.2% across the board. Opportunity knocks, but cash reserves thin they are. Patience, young trader. The index rewards those who wait.",
+  "last_updated": "2026-11-17T18:36:10Z",
   "last_session": {
-    "at": "2026-11-17T17:29:32Z",
+    "at": "2026-11-17T18:36:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "QQQ",
+        -1.24
+      ],
+      [
+        "VTI",
+        -1.22
+      ],
+      [
+        "VEA",
+        -1.22
+      ],
+      [
+        "VOO",
+        -1.22
+      ],
+      [
+        "VXUS",
+        -1.2
+      ],
+      [
+        "SPY",
+        -1.19
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Portfolio down 4.17%, all broad market ETFs in the red. SCHD only green shoot, up 0.65%. Cash $518.82, reserve $500 required leaves but $18.82 to deploy. No share purchasable at current prices. Rebalance not needed - all positions equally wounded. Dollar-cost averaging continues when cash accumulates. The dark side of panic selling, avoid we must. Time in the market beats timing the market, hmm?",
+    "outlook": "Down the market goes, 1.2% across the board. Opportunity knocks, but cash reserves thin they are. Patience, young trader. The index rewards those who wait.",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -2014,6 +2039,10 @@
     {
       "timestamp": "2026-11-17T17:29:32Z",
       "value": 9583.1
+    },
+    {
+      "timestamp": "2026-11-17T18:36:10Z",
+      "value": 9594.72
     }
   ]
 }
