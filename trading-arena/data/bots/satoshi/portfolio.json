@@ -1,73 +1,98 @@
 {
   "cash": 311.01,
-  "total_value": 7056.13,
+  "total_value": 6970.85,
   "positions": {
     "MSTR": {
       "shares": 24,
-      "current_price": 102.7,
+      "current_price": 101.67,
       "avg_cost": 117.6329
     },
     "COIN": {
       "shares": 20,
-      "current_price": 120.23,
+      "current_price": 118.625,
       "avg_cost": 159.2003
     },
     "MARA": {
       "shares": 106,
-      "current_price": 6.765,
+      "current_price": 6.63,
       "avg_cost": 8.7855
     },
     "WULF": {
       "shares": 20,
       "avg_cost": 16.4,
-      "current_price": 12.11
+      "current_price": 11.845
     },
     "BITO": {
       "shares": 40,
       "avg_cost": 10.385,
-      "current_price": 8.621
+      "current_price": 8.625
     },
     "RIOT": {
       "shares": 15,
       "avg_cost": 12.125,
-      "current_price": 17.3901
+      "current_price": 17.14
     },
     "CIFR": {
       "shares": 6,
       "avg_cost": 8.075,
-      "current_price": 6.565
+      "current_price": 6.435
     },
     "CLSK": {
       "shares": 17,
-      "current_price": 6.3383,
+      "current_price": 6.2372,
       "avg_cost": 7.0398
     },
     "IREN": {
       "shares": 10,
       "avg_cost": 16.405,
-      "current_price": 16.36
+      "current_price": 16.0834
     }
   },
-  "total_return_pct": -29.44,
+  "total_return_pct": -30.29,
   "total_return_usd": 0.0,
-  "today_pnl": 36.23,
-  "today_pnl_pct": 0.52,
+  "today_pnl": -49.05,
+  "today_pnl_pct": -0.7,
   "total_trades": 47,
   "today_start_value": 7019.9,
   "today_date": "2026-11-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-17T15:26:09Z",
+  "last_action": "...",
+  "last_updated": "2026-11-17T15:56:28Z",
   "last_session": {
-    "at": "2026-11-17T15:26:09Z",
+    "at": "2026-11-17T15:56:28Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BTBT",
+        3.94
+      ],
+      [
+        "HOOD",
+        -2.95
+      ],
+      [
+        "IREN",
+        -1.86
+      ],
+      [
+        "NVDA",
+        -1.75
+      ],
+      [
+        "CIFR",
+        -1.53
+      ],
+      [
+        "HUT",
+        1.36
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -2018,6 +2043,10 @@
     {
       "timestamp": "2026-11-17T15:26:09Z",
       "value": 7056.13
+    },
+    {
+      "timestamp": "2026-11-17T15:56:28Z",
+      "value": 6970.85
     }
   ]
 }
