@@ -1,53 +1,64 @@
 {
-  "cash": 10030.87,
+  "cash": 1164.49,
   "total_value": 10030.87,
-  "positions": {},
+  "positions": {
+    "PLTR": {
+      "shares": 27,
+      "avg_cost": 161.8333,
+      "current_price": 161.8333
+    },
+    "AMC": {
+      "shares": 1371,
+      "avg_cost": 3.28,
+      "current_price": 3.28
+    }
+  },
   "total_return_pct": 0.31,
   "total_return_usd": 0.0,
-  "today_pnl": -64.37,
-  "today_pnl_pct": -0.64,
-  "total_trades": 65,
-  "today_start_value": 10095.24,
-  "today_date": "2026-11-16",
-  "last_action": "All watchlist stocks are down today, no clear momentum or breakout. Market appears weak with no stocks gaining 10%+, so staying on the sidelines.",
-  "last_updated": "2026-11-16T20:17:39Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 67,
+  "today_start_value": 10030.87,
+  "today_date": "2026-11-17",
+  "last_action": "Market's showing pulse with PLTR and AMC leading. Momentum is the only fundamental that matters. Chasing the fastest horses - when they run, you ride them. Cash is trash, momentum is king.",
+  "last_updated": "2026-11-17T14:48:14Z",
   "last_session": {
-    "at": "2026-11-16T20:17:39Z",
+    "at": "2026-11-17T14:48:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "RBLX",
-        -7.81
+        "PLTR",
+        1.26
+      ],
+      [
+        "AMC",
+        1.24
       ],
       [
         "HOOD",
-        -7.46
+        -0.82
       ],
       [
-        "MSTR",
-        -6.88
+        "META",
+        -0.7
       ],
       [
         "COIN",
-        -5.67
+        -0.67
       ],
       [
-        "PLTR",
-        -4.79
-      ],
-      [
-        "NVDA",
-        -4.08
+        "GME",
+        0.66
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "No stocks meet the Jordan Belfort criteria of +10% daily gains. With cash reserve maintained and no high-momentum setups, the optimal move is to hold cash and wait for a breakout. Portfolio remains unchanged.",
-    "outlook": "All watchlist stocks are down today, no clear momentum or breakout. Market appears weak with no stocks gaining 10%+, so staying on the sidelines.",
-    "trades_made": 0
+    "ai_analysis": "PLTR breaking out on AI hype wave, AMC showing classic meme stock reversal pattern. Both have the volume and retail interest to sustain parabolic moves. Deploying maximum conviction into the day's strongest momentum names. No fundamentals, pure price action.",
+    "outlook": "Market's showing pulse with PLTR and AMC leading. Momentum is the only fundamental that matters. Chasing the fastest horses - when they run, you ride them. Cash is trash, momentum is king.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -1988,6 +1999,10 @@
     },
     {
       "timestamp": "2026-11-16T20:17:39Z",
+      "value": 10030.87
+    },
+    {
+      "timestamp": "2026-11-17T14:48:14Z",
       "value": 10030.87
     }
   ]

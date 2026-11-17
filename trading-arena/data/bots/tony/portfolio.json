@@ -1,63 +1,88 @@
 {
   "cash": 309.81,
-  "total_value": 5816.97,
+  "total_value": 5776.71,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 53.51
+      "current_price": 53.16
     },
     "SOXL": {
       "shares": 35,
-      "current_price": 50.55,
+      "current_price": 49.732,
       "avg_cost": 90.01
     },
     "RKLB": {
       "shares": 6,
-      "current_price": 57.525,
+      "current_price": 57.895,
       "avg_cost": 50.52
     },
     "IONQ": {
       "shares": 10,
-      "current_price": 26.76,
+      "current_price": 26.795,
       "avg_cost": 29.5816
     },
     "ARM": {
       "shares": 1,
       "avg_cost": 182.525,
-      "current_price": 176.56
+      "current_price": 178.495
     },
     "SMCI": {
       "shares": 5,
       "avg_cost": 30.81,
-      "current_price": 25.165
+      "current_price": 25.025
     },
     "MRVL": {
       "shares": 1,
       "avg_cost": 173.895,
-      "current_price": 147.275
+      "current_price": 149.34
     }
   },
-  "total_return_pct": -41.83,
+  "total_return_pct": -42.23,
   "total_return_usd": 0.0,
-  "today_pnl": -74.08,
-  "today_pnl_pct": -1.26,
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
   "total_trades": 42,
-  "today_start_value": 5891.05,
-  "today_date": "2026-11-16",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-16T20:15:30Z",
+  "today_start_value": 5776.71,
+  "today_date": "2026-11-17",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-17T14:45:31Z",
   "last_session": {
-    "at": "2026-11-16T20:15:30Z",
+    "at": "2026-11-17T14:45:31Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MRVL",
+        2.62
+      ],
+      [
+        "SOXL",
+        1.67
+      ],
+      [
+        "ARM",
+        1.63
+      ],
+      [
+        "IONQ",
+        1.32
+      ],
+      [
+        "PLTR",
+        1.26
+      ],
+      [
+        "RKLB",
+        0.93
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
@@ -2000,6 +2025,10 @@
     {
       "timestamp": "2026-11-16T20:15:30Z",
       "value": 5816.97
+    },
+    {
+      "timestamp": "2026-11-17T14:45:31Z",
+      "value": 5776.71
     }
   ]
 }
