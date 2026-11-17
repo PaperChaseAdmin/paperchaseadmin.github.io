@@ -1,79 +1,104 @@
 {
-  "cash": 2045.68,
-  "total_value": 10270.92,
+  "cash": 3181.81,
+  "total_value": 10268.77,
   "positions": {
     "OXY": {
       "shares": 15,
-      "current_price": 57.47,
+      "current_price": 57.2199,
       "avg_cost": 59.2767
-    },
-    "KR": {
-      "shares": 10,
-      "avg_cost": 62.11,
-      "current_price": 70.82
     },
     "PFE": {
       "shares": 32,
-      "current_price": 28.52,
+      "current_price": 28.46,
       "avg_cost": 28.7307
     },
     "KHC": {
       "shares": 21,
-      "current_price": 25.305,
+      "current_price": 25.225,
       "avg_cost": 23.9845
     },
     "BAC": {
       "shares": 15,
       "avg_cost": 50.325,
-      "current_price": 49.42
+      "current_price": 49.28
     },
     "CVS": {
       "shares": 20,
-      "current_price": 85.985,
+      "current_price": 86.19,
       "avg_cost": 85.6623
-    },
-    "WFC": {
-      "shares": 12,
-      "avg_cost": 86.13,
-      "current_price": 82.9
     },
     "CMCSA": {
       "shares": 25,
       "avg_cost": 25.695,
-      "current_price": 25.57
+      "current_price": 25.75
     },
     "BABA": {
       "shares": 4,
       "avg_cost": 88.01,
-      "current_price": 87.1906
+      "current_price": 87.075
     },
     "NUE": {
       "shares": 3,
       "avg_cost": 258.66,
-      "current_price": 255.71
+      "current_price": 255.805
+    },
+    "JD": {
+      "shares": 1,
+      "avg_cost": 25.7999,
+      "current_price": 25.7999
+    },
+    "INTC": {
+      "shares": 10,
+      "avg_cost": 53.995,
+      "current_price": 53.995
     }
   },
-  "total_return_pct": 2.71,
+  "total_return_pct": 2.69,
   "total_return_usd": 0.0,
-  "today_pnl": -22.6,
-  "today_pnl_pct": -0.22,
-  "total_trades": 65,
+  "today_pnl": -24.75,
+  "today_pnl_pct": -0.24,
+  "total_trades": 69,
   "today_start_value": 10293.52,
   "today_date": "2026-11-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-17T16:12:17Z",
+  "last_action": "Neutral to Bearish. The market is showing signs of rotation and weakness in several sectors. I am staying cautious and avoiding any momentum-driven tech hype, focusing instead on the blood in the stre",
+  "last_updated": "2026-11-17T16:41:09Z",
   "last_session": {
-    "at": "2026-11-17T16:12:17Z",
+    "at": "2026-11-17T16:41:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "JD",
+        -6.34
+      ],
+      [
+        "BABA",
+        -3.92
+      ],
+      [
+        "INTC",
+        -2.81
+      ],
+      [
+        "CVS",
+        -2.7
+      ],
+      [
+        "WFC",
+        -2.43
+      ],
+      [
+        "BAC",
+        -1.66
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "The current market sentiment is neutral, but the volatility in my watchlist\u2014specifically the heavy selling in JD and BABA\u2014suggests a flight from risk or specific sector weakness. I am capitalizing on this by rotating out of my winners (KR) and underperformers (WFC) to increase my exposure to high-conviction, low-valuation plays (JD, INTC). I am maintaining a healthy cash position to ensure I can weather any sudden market shifts.",
+    "outlook": "Neutral to Bearish. The market is showing signs of rotation and weakness in several sectors. I am staying cautious and avoiding any momentum-driven tech hype, focusing instead on the blood in the streets.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -2031,6 +2056,10 @@
     {
       "timestamp": "2026-11-17T16:12:17Z",
       "value": 10270.92
+    },
+    {
+      "timestamp": "2026-11-17T16:41:09Z",
+      "value": 10268.77
     }
   ]
 }
