@@ -719,6 +719,42 @@
         "ticker_chg_pct": -1.55,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "EEM",
+      "shares": 20,
+      "price": 58.0,
+      "total_value": 1160.0,
+      "reasoning": "Exiting emerging markets position due to recent weakness (-1.5%) and to reduce volatility in the equity sleeve. Reallocating capital to more stable macro hedges.",
+      "timestamp": "2026-11-17T17:09:13Z",
+      "market_outlook": "Cautious/Transitionary. Equities are showing signs of short-term weakness, while commodities and gold are showing resilience. This suggests a shift toward an inflationary or stagflationary regime where traditional growth assets struggle.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.52,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 3,
+      "price": 351.9001,
+      "total_value": 1055.7,
+      "reasoning": "Reducing single-stock equity risk. My All Weather strategy favors broad asset classes over individual tech stocks to minimize idiosyncratic risk.",
+      "timestamp": "2026-11-17T17:09:13Z",
+      "market_outlook": "Cautious/Transitionary. Equities are showing signs of short-term weakness, while commodities and gold are showing resilience. This suggests a shift toward an inflationary or stagflationary regime where traditional growth assets struggle.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.26,
+        "trigger_news": null
+      }
     }
   ]
 }
