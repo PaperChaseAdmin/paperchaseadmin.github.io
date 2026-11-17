@@ -1,64 +1,94 @@
 {
-  "cash": 1384.71,
-  "total_value": 8293.24,
+  "cash": 683.93,
+  "total_value": 8294.4,
   "positions": {
     "BABA": {
       "shares": 27,
-      "current_price": 87.01,
+      "current_price": 87.08,
       "avg_cost": 100.6322
     },
     "JD": {
       "shares": 55,
-      "current_price": 25.93,
+      "current_price": 25.925,
       "avg_cost": 27.2137
     },
     "NTES": {
       "shares": 9,
       "avg_cost": 118.155,
-      "current_price": 120.11
+      "current_price": 120.1
     },
     "XPEV": {
       "shares": 7,
       "avg_cost": 9.475,
-      "current_price": 10.005
+      "current_price": 10.095
     },
     "PDD": {
       "shares": 19,
-      "current_price": 77.981,
+      "current_price": 77.91,
       "avg_cost": 77.96
     },
     "BIDU": {
       "shares": 5,
       "avg_cost": 77.2,
-      "current_price": 71.74
+      "current_price": 71.76
     },
     "NIO": {
       "shares": 50,
-      "current_price": 2.835,
+      "current_price": 2.84,
       "avg_cost": 3.061
+    },
+    "AAPL": {
+      "shares": 2,
+      "avg_cost": 350.39,
+      "current_price": 350.39
     }
   },
-  "total_return_pct": -17.07,
+  "total_return_pct": -17.06,
   "total_return_usd": 0.0,
-  "today_pnl": -22.72,
-  "today_pnl_pct": -0.27,
-  "total_trades": 51,
+  "today_pnl": -21.56,
+  "today_pnl_pct": -0.26,
+  "total_trades": 52,
   "today_start_value": 8315.96,
   "today_date": "2026-11-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-17T18:41:37Z",
+  "last_action": "...",
+  "last_updated": "2026-11-17T19:38:32Z",
   "last_session": {
-    "at": "2026-11-17T18:41:37Z",
+    "at": "2026-11-17T19:38:32Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TIGR",
+        -6.58
+      ],
+      [
+        "TME",
+        6.31
+      ],
+      [
+        "JD",
+        -5.86
+      ],
+      [
+        "BILI",
+        -4.94
+      ],
+      [
+        "NIO",
+        4.78
+      ],
+      [
+        "FUTU",
+        -4.41
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "...",
+    "outlook": "...",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -2028,6 +2058,10 @@
     {
       "timestamp": "2026-11-17T18:41:37Z",
       "value": 8293.24
+    },
+    {
+      "timestamp": "2026-11-17T19:38:32Z",
+      "value": 8294.4
     }
   ]
 }
