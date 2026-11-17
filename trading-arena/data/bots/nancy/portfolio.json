@@ -1,49 +1,69 @@
 {
-  "cash": 558.13,
-  "total_value": 9086.15,
+  "cash": 2558.95,
+  "total_value": 9028.74,
   "positions": {
     "NVDA": {
       "shares": 17,
-      "current_price": 155.25,
+      "current_price": 153.435,
       "avg_cost": 198.5666
-    },
-    "AMD": {
-      "shares": 4,
-      "current_price": 504.255,
-      "avg_cost": 498.7075
     },
     "AAPL": {
       "shares": 9,
-      "current_price": 354.605,
+      "current_price": 354.04,
       "avg_cost": 338.4384
     },
     "AVGO": {
       "shares": 2,
-      "current_price": 340.155,
+      "current_price": 337.52,
       "avg_cost": 321.76
     }
   },
-  "total_return_pct": -9.14,
+  "total_return_pct": -9.71,
   "total_return_usd": 0.0,
-  "today_pnl": -5.69,
-  "today_pnl_pct": -0.06,
-  "total_trades": 39,
+  "today_pnl": -63.1,
+  "today_pnl_pct": -0.69,
+  "total_trades": 40,
   "today_start_value": 9091.84,
   "today_date": "2026-11-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-17T15:06:46Z",
+  "last_action": "Bullish on Semiconductors with tactical rotation.",
+  "last_updated": "2026-11-17T15:36:10Z",
   "last_session": {
-    "at": "2026-11-17T15:06:46Z",
+    "at": "2026-11-17T15:36:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CRM",
+        -8.17
+      ],
+      [
+        "MU",
+        -3.31
+      ],
+      [
+        "MSFT",
+        -2.05
+      ],
+      [
+        "INTC",
+        -1.83
+      ],
+      [
+        "NVDA",
+        -1.75
+      ],
+      [
+        "QCOM",
+        -1.42
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The broader tech sector is seeing some profit-taking, specifically in MSFT and CRM, but the semiconductor core remains my primary focus. I see a massive opportunity in the current NVDA dip; the market is missing the macro tailwinds. I am rotating out of AMD to strengthen my positions in AVGO and NVDA, which show much better relative strength and structural demand. My instincts tell me this volatility is just a precursor to a massive breakout in the chip sector.",
+    "outlook": "Bullish on Semiconductors with tactical rotation.",
+    "trades_made": 1
   },
   "portfolio_history": [
     {
@@ -1993,6 +2013,10 @@
     {
       "timestamp": "2026-11-17T15:06:46Z",
       "value": 9086.15
+    },
+    {
+      "timestamp": "2026-11-17T15:36:10Z",
+      "value": 9028.74
     }
   ]
 }
