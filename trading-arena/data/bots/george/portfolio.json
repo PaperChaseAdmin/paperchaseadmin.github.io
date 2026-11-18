@@ -1,49 +1,64 @@
 {
-  "cash": 329.1,
-  "total_value": 9605.44,
+  "cash": 5493.92,
+  "total_value": 9612.58,
   "positions": {
     "UUP": {
       "shares": 47,
-      "current_price": 29.635,
+      "current_price": 29.625,
       "avg_cost": 29.0813
-    },
-    "GLD": {
-      "shares": 13,
-      "current_price": 342.695,
-      "avg_cost": 365.9892
     },
     "TLT": {
       "shares": 34,
-      "current_price": 80.075,
+      "current_price": 80.185,
       "avg_cost": 80.3846
-    },
-    "AAPL": {
-      "shares": 2,
-      "avg_cost": 355.57,
-      "current_price": 352.955
     }
   },
-  "total_return_pct": -3.95,
+  "total_return_pct": -3.87,
   "total_return_usd": 0.0,
-  "today_pnl": -35.87,
-  "today_pnl_pct": -0.37,
-  "total_trades": 65,
+  "today_pnl": -28.73,
+  "today_pnl_pct": -0.3,
+  "total_trades": 67,
   "today_start_value": 9641.31,
   "today_date": "2026-11-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-18T16:39:09Z",
+  "last_action": "Bearish/Volatile. We are seeing a divergence where tech (NVDA) and energy (XLE) are collapsing, while the dollar (UUP) and bonds (TLT) are finding support. This is the classic setup for a flight to qu",
+  "last_updated": "2026-11-18T17:10:11Z",
   "last_session": {
-    "at": "2026-11-18T16:39:09Z",
+    "at": "2026-11-18T17:10:11Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "XLE",
+        -2.87
+      ],
+      [
+        "GLD",
+        -2.61
+      ],
+      [
+        "AMZN",
+        2.52
+      ],
+      [
+        "NVDA",
+        -2.39
+      ],
+      [
+        "BAC",
+        -1.05
+      ],
+      [
+        "FXI",
+        -1.02
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The current market structure is fragile. The weakness in NVDA and the broader tech sector suggests the AI-driven momentum loop is exhausting itself. When the growth narrative breaks, the reflexivity will swing violently toward safety. I am liquidating my underperforming gold position to free up liquidity and doubling down on TLT to capture the inevitable yield compression as risk-off sentiment takes hold.",
+    "outlook": "Bearish/Volatile. We are seeing a divergence where tech (NVDA) and energy (XLE) are collapsing, while the dollar (UUP) and bonds (TLT) are finding support. This is the classic setup for a flight to quality. The equity market is losing its footing, and I am positioning for a systemic deleveraging event.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -2041,6 +2056,10 @@
     {
       "timestamp": "2026-11-18T16:39:09Z",
       "value": 9605.44
+    },
+    {
+      "timestamp": "2026-11-18T17:10:11Z",
+      "value": 9612.58
     }
   ]
 }
