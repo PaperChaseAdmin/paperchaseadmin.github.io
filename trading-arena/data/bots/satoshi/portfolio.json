@@ -1,85 +1,106 @@
 {
   "cash": 579.62,
-  "total_value": 6656.71,
+  "total_value": 6656.31,
   "positions": {
     "MSTR": {
       "shares": 24,
-      "current_price": 92.92,
+      "current_price": 93.08,
       "avg_cost": 117.6329
     },
     "COIN": {
       "shares": 15,
-      "current_price": 112.55,
+      "current_price": 112.4,
       "avg_cost": 159.2003
     },
     "MARA": {
       "shares": 106,
-      "current_price": 6.6102,
+      "current_price": 6.59,
       "avg_cost": 8.7855
     },
     "WULF": {
       "shares": 20,
       "avg_cost": 16.4,
-      "current_price": 12.165
+      "current_price": 12.15
     },
     "BITO": {
       "shares": 40,
       "avg_cost": 10.385,
-      "current_price": 8.371
+      "current_price": 8.38
     },
     "RIOT": {
       "shares": 20,
-      "current_price": 18.23,
+      "current_price": 18.36,
       "avg_cost": 13.5275
     },
     "CIFR": {
       "shares": 6,
       "avg_cost": 8.075,
-      "current_price": 6.825
+      "current_price": 6.8
     },
     "CLSK": {
       "shares": 17,
-      "current_price": 6.32,
+      "current_price": 6.2401,
       "avg_cost": 7.0398
     },
     "IREN": {
       "shares": 10,
       "avg_cost": 16.405,
-      "current_price": 15.455
+      "current_price": 15.3777
     },
     "CORZ": {
       "shares": 15,
       "avg_cost": 14.085,
-      "current_price": 14.16
+      "current_price": 14.145
     }
   },
-  "total_return_pct": -33.43,
+  "total_return_pct": -33.44,
   "total_return_usd": 0.0,
-  "today_pnl": -92.25,
+  "today_pnl": -92.65,
   "today_pnl_pct": -1.37,
   "total_trades": 52,
   "today_start_value": 6748.96,
   "today_date": "2026-11-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-18T18:24:31Z",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-18T18:55:07Z",
   "last_session": {
-    "at": "2026-11-18T18:24:31Z",
+    "at": "2026-11-18T18:55:07Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "HUT",
+        8.58
+      ],
+      [
+        "RIOT",
+        7.65
+      ],
+      [
+        "CIFR",
+        5.76
+      ],
+      [
+        "CORZ",
+        4.66
+      ],
+      [
+        "WULF",
+        4.03
+      ],
+      [
+        "MSTR",
+        -3.5
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-02T14:19:33Z",
-      "value": 10018.0
-    },
     {
       "timestamp": "2026-07-02T14:56:20Z",
       "value": 10001.05
@@ -2075,6 +2096,10 @@
     {
       "timestamp": "2026-11-18T18:24:31Z",
       "value": 6656.71
+    },
+    {
+      "timestamp": "2026-11-18T18:55:07Z",
+      "value": 6656.31
     }
   ]
 }
