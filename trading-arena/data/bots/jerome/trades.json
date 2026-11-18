@@ -1115,6 +1115,42 @@
         "ticker_chg_pct": 0.3,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "XLF",
+      "shares": 5,
+      "price": 56.645,
+      "total_value": 283.23,
+      "reasoning": "Financial sector underperforming with JPM -1.1%, BAC -0.8%, GS -0.5%. Reducing cyclical exposure absent clear VIX signal. Data-dependent approach favors defensive positioning until inflation trajectory clarifies.",
+      "timestamp": "2026-11-18T18:22:00Z",
+      "market_outlook": "Insufficient data for high conviction. VIX and Fear & Greed unavailable. Financial weakness suggests caution. Maintaining defensive bias with TLT/BIL/SHY core. Awaiting inflation prints and labor data for directional clarity.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.74,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 3,
+      "price": 80.1515,
+      "total_value": 240.45,
+      "reasoning": "Long duration Treasuries up 0.8% today. Adding modestly to defensive duration as portfolio hedge. TLT at 19% allocation has room before 25% limit. Prefer quality duration over credit risk in current uncertainty.",
+      "timestamp": "2026-11-18T18:22:00Z",
+      "market_outlook": "Insufficient data for high conviction. VIX and Fear & Greed unavailable. Financial weakness suggests caution. Maintaining defensive bias with TLT/BIL/SHY core. Awaiting inflation prints and labor data for directional clarity.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.76,
+        "trigger_news": null
+      }
     }
   ]
 }

@@ -1,15 +1,15 @@
 {
-  "cash": 1194.21,
-  "total_value": 9678.74,
+  "cash": 1236.98,
+  "total_value": 9680.53,
   "positions": {
     "SHY": {
       "shares": 17,
-      "current_price": 81.365,
+      "current_price": 81.355,
       "avg_cost": 81.7522
     },
     "XLU": {
       "shares": 17,
-      "current_price": 43.57,
+      "current_price": 43.64,
       "avg_cost": 42.5968
     },
     "BIL": {
@@ -18,58 +18,79 @@
       "avg_cost": 91.4361
     },
     "TLT": {
-      "shares": 23,
-      "current_price": 80.185,
-      "avg_cost": 80.6155
+      "shares": 26,
+      "current_price": 80.1515,
+      "avg_cost": 80.562
     },
     "XLF": {
-      "shares": 23,
-      "current_price": 56.63,
+      "shares": 18,
+      "current_price": 56.645,
       "avg_cost": 57.8373
     },
     "BAC": {
       "shares": 4,
       "avg_cost": 50.405,
-      "current_price": 48.925
+      "current_price": 49.035
     },
     "XLRE": {
       "shares": 5,
       "avg_cost": 44.56,
-      "current_price": 43.54
+      "current_price": 43.675
     },
     "TIP": {
       "shares": 4,
       "avg_cost": 104.71,
-      "current_price": 105.015
+      "current_price": 105.035
     }
   },
-  "total_return_pct": -3.21,
+  "total_return_pct": -3.19,
   "total_return_usd": 0.0,
-  "today_pnl": 8.31,
-  "today_pnl_pct": 0.09,
-  "total_trades": 62,
+  "today_pnl": 10.1,
+  "today_pnl_pct": 0.1,
+  "total_trades": 64,
   "today_start_value": 9670.43,
   "today_date": "2026-11-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-18T17:27:03Z",
+  "last_action": "Insufficient data for high conviction. VIX and Fear & Greed unavailable. Financial weakness suggests caution. Maintaining defensive bias with TLT/BIL/SHY core. Awaiting inflation prints and labor data",
+  "last_updated": "2026-11-18T18:22:00Z",
   "last_session": {
-    "at": "2026-11-18T17:27:03Z",
+    "at": "2026-11-18T18:22:00Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "JPM",
+        -1.14
+      ],
+      [
+        "BAC",
+        -0.85
+      ],
+      [
+        "TLT",
+        0.76
+      ],
+      [
+        "XLF",
+        -0.74
+      ],
+      [
+        "XLU",
+        0.53
+      ],
+      [
+        "GS",
+        -0.51
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio -3.21% YTD. Financials (XLF, BAC) dragging returns. BIL near 25% concentration limit. Cash $1194 with $1000 floor leaves minimal dry powder. Rebalancing from cyclicals to duration. No VIX reading prevents aggressive moves. Policy remains data-dependent.",
+    "outlook": "Insufficient data for high conviction. VIX and Fear & Greed unavailable. Financial weakness suggests caution. Maintaining defensive bias with TLT/BIL/SHY core. Awaiting inflation prints and labor data for directional clarity.",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-02T13:39:36Z",
-      "value": 10000
-    },
     {
       "timestamp": "2026-07-02T14:15:54Z",
       "value": 10000
@@ -2065,6 +2086,10 @@
     {
       "timestamp": "2026-11-18T17:27:03Z",
       "value": 9678.74
+    },
+    {
+      "timestamp": "2026-11-18T18:22:00Z",
+      "value": 9680.53
     }
   ]
 }
