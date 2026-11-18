@@ -1,74 +1,99 @@
 {
-  "cash": 728.13,
-  "total_value": 9204.66,
+  "cash": 1154.75,
+  "total_value": 9195.75,
   "positions": {
     "SBUX": {
       "shares": 10,
       "avg_cost": 101.66,
-      "current_price": 108.47
+      "current_price": 108.06
     },
     "VFC": {
       "shares": 40,
       "avg_cost": 16.364,
-      "current_price": 20.84
-    },
-    "PYPL": {
-      "shares": 4,
-      "avg_cost": 58.84,
-      "current_price": 57.91
+      "current_price": 20.95
     },
     "INTC": {
       "shares": 37,
-      "current_price": 54.32,
+      "current_price": 54.2382,
       "avg_cost": 54.2741
     },
     "NOK": {
       "shares": 100,
       "avg_cost": 7.4901,
-      "current_price": 7.57
-    },
-    "CVS": {
-      "shares": 6,
-      "avg_cost": 83.51,
-      "current_price": 83.42
+      "current_price": 7.61
     },
     "AAPL": {
       "shares": 6,
-      "current_price": 353.38,
+      "current_price": 353.0351,
       "avg_cost": 354.145
     },
     "HPQ": {
       "shares": 15,
       "avg_cost": 29.36,
-      "current_price": 29.03
+      "current_price": 28.805
     },
     "CMCSA": {
       "shares": 20,
       "avg_cost": 24.629,
-      "current_price": 25.175
+      "current_price": 25.145
+    },
+    "DIS": {
+      "shares": 1,
+      "avg_cost": 119.78,
+      "current_price": 119.78
+    },
+    "NKE": {
+      "shares": 5,
+      "avg_cost": 36.325,
+      "current_price": 36.325
     }
   },
-  "total_return_pct": -7.95,
+  "total_return_pct": -8.04,
   "total_return_usd": 0.0,
-  "today_pnl": -14.13,
-  "today_pnl_pct": -0.15,
-  "total_trades": 77,
+  "today_pnl": -23.04,
+  "today_pnl_pct": -0.25,
+  "total_trades": 81,
   "today_start_value": 9218.79,
   "today_date": "2026-11-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-18T15:47:18Z",
+  "last_action": "Opportunistic. The market is showing selective weakness in retail and healthcare, which creates the perfect environment for activist plays.",
+  "last_updated": "2026-11-18T16:18:10Z",
   "last_session": {
-    "at": "2026-11-18T15:47:18Z",
+    "at": "2026-11-18T16:18:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CVS",
+        -3.66
+      ],
+      [
+        "VFC",
+        3.07
+      ],
+      [
+        "DIS",
+        2.41
+      ],
+      [
+        "T",
+        -1.63
+      ],
+      [
+        "INTC",
+        -1.61
+      ],
+      [
+        "NKE",
+        1.31
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "My portfolio is currently dragging due to some stagnant positions. I'm purging the losers like CVS and PYPL to consolidate capital into high-conviction, undervalued assets like DIS and NKE. Greed is about knowing when to cut a limb to save the body. I'm looking for companies with massive intrinsic value that are being punished by incompetent leadership.",
+    "outlook": "Opportunistic. The market is showing selective weakness in retail and healthcare, which creates the perfect environment for activist plays.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -2058,6 +2083,10 @@
     {
       "timestamp": "2026-11-18T15:47:18Z",
       "value": 9204.66
+    },
+    {
+      "timestamp": "2026-11-18T16:18:10Z",
+      "value": 9195.75
     }
   ]
 }
