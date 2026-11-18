@@ -1,26 +1,16 @@
 {
-  "cash": 3387.51,
-  "total_value": 9559.39,
+  "cash": 1762.53,
+  "total_value": 9568.74,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 350.635,
+      "current_price": 353.1,
       "avg_cost": 306.8858
-    },
-    "EL": {
-      "shares": 12,
-      "current_price": 104.589,
-      "avg_cost": 85.6584
     },
     "TPR": {
       "shares": 2,
       "avg_cost": 123.865,
-      "current_price": 128.115
-    },
-    "DRI": {
-      "shares": 2,
-      "avg_cost": 231.81,
-      "current_price": 231.52
+      "current_price": 125.895
     },
     "RL": {
       "shares": 2,
@@ -30,30 +20,65 @@
     "CPRI": {
       "shares": 15,
       "avg_cost": 18.93,
-      "current_price": 19.005
+      "current_price": 19.08
+    },
+    "AMZN": {
+      "shares": 10,
+      "avg_cost": 260.49,
+      "current_price": 260.49
+    },
+    "LULU": {
+      "shares": 7,
+      "avg_cost": 104.095,
+      "current_price": 104.095
     }
   },
-  "total_return_pct": -4.41,
+  "total_return_pct": -4.31,
   "total_return_usd": 0.0,
-  "today_pnl": -139.87,
-  "today_pnl_pct": -1.44,
-  "total_trades": 62,
-  "today_start_value": 9699.26,
-  "today_date": "2026-11-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-17T20:24:54Z",
+  "today_pnl": 0.01,
+  "today_pnl_pct": 0.0,
+  "total_trades": 66,
+  "today_start_value": 9568.73,
+  "today_date": "2026-11-18",
+  "last_action": "The market is showing a divergence between utility and prestige. While some sectors are dragging, the high-end consumer remains resilient. I am looking for strength and impeccable branding.",
+  "last_updated": "2026-11-18T14:47:18Z",
   "last_session": {
-    "at": "2026-11-17T20:24:54Z",
+    "at": "2026-11-18T14:47:18Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "DRI",
+        -1.35
+      ],
+      [
+        "HD",
+        -1.32
+      ],
+      [
+        "AMZN",
+        1.26
+      ],
+      [
+        "NKE",
+        -1.23
+      ],
+      [
+        "MGM",
+        -0.96
+      ],
+      [
+        "TPR",
+        -0.9
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "My current return of -4.41% is an embarrassment, likely due to holding onto DRI and RL for too long. I am purging the mediocrity. I am rotating capital into AMZN and LULU to restore the aesthetic and financial superiority of my holdings. My portfolio must look as perfect as a Valentino suit.",
+    "outlook": "The market is showing a divergence between utility and prestige. While some sectors are dragging, the high-end consumer remains resilient. I am looking for strength and impeccable branding.",
+    "trades_made": 4
   },
   "portfolio_history": [
     {
@@ -2031,6 +2056,10 @@
     {
       "timestamp": "2026-11-17T20:24:54Z",
       "value": 9559.39
+    },
+    {
+      "timestamp": "2026-11-18T14:47:18Z",
+      "value": 9568.74
     }
   ]
 }
