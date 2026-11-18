@@ -1,90 +1,111 @@
 {
   "cash": 2029.47,
-  "total_value": 10109.87,
+  "total_value": 10084.91,
   "positions": {
     "OXY": {
       "shares": 15,
-      "current_price": 54.1901,
+      "current_price": 54.11,
       "avg_cost": 59.2767
     },
     "PFE": {
       "shares": 32,
-      "current_price": 28.195,
+      "current_price": 28.135,
       "avg_cost": 28.7307
     },
     "KHC": {
       "shares": 21,
-      "current_price": 25.51,
+      "current_price": 25.535,
       "avg_cost": 23.9845
     },
     "BAC": {
       "shares": 15,
       "avg_cost": 50.325,
-      "current_price": 49.065
+      "current_price": 48.975
     },
     "CVS": {
       "shares": 20,
-      "current_price": 82.9596,
+      "current_price": 82.435,
       "avg_cost": 85.6623
     },
     "CMCSA": {
       "shares": 25,
       "avg_cost": 25.695,
-      "current_price": 25.485
+      "current_price": 25.455
     },
     "NUE": {
       "shares": 3,
       "avg_cost": 258.66,
-      "current_price": 252.7775
+      "current_price": 251.74
     },
     "JD": {
       "shares": 1,
       "avg_cost": 25.7999,
-      "current_price": 25.1
+      "current_price": 25.0699
     },
     "WFC": {
       "shares": 10,
       "avg_cost": 82.8108,
-      "current_price": 81.46
+      "current_price": 81.33
     },
     "KR": {
       "shares": 12,
       "avg_cost": 71.1,
-      "current_price": 70.47
+      "current_price": 70.04
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 355.82,
-      "current_price": 353.63
+      "current_price": 353.47
     }
   },
-  "total_return_pct": 1.1,
+  "total_return_pct": 0.85,
   "total_return_usd": 0.0,
-  "today_pnl": -57.61,
-  "today_pnl_pct": -0.57,
+  "today_pnl": -82.57,
+  "today_pnl_pct": -0.81,
   "total_trades": 74,
   "today_start_value": 10167.48,
   "today_date": "2026-11-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-18T18:41:10Z",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-18T19:09:50Z",
   "last_session": {
-    "at": "2026-11-18T18:41:10Z",
+    "at": "2026-11-18T19:09:50Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "OXY",
+        -4.28
+      ],
+      [
+        "CVS",
+        -3.92
+      ],
+      [
+        "KHC",
+        1.69
+      ],
+      [
+        "WFC",
+        -1.64
+      ],
+      [
+        "INTC",
+        -1.47
+      ],
+      [
+        "JD",
+        -1.44
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-02T14:41:10Z",
-      "value": 9972.32
-    },
     {
       "timestamp": "2026-07-05T03:10:20Z",
       "value": 9938.47
@@ -2080,6 +2101,10 @@
     {
       "timestamp": "2026-11-18T18:41:10Z",
       "value": 10109.87
+    },
+    {
+      "timestamp": "2026-11-18T19:09:50Z",
+      "value": 10084.91
     }
   ]
 }
