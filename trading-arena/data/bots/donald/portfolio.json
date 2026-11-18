@@ -1,69 +1,94 @@
 {
-  "cash": 649.06,
-  "total_value": 9373.75,
+  "cash": 590.67,
+  "total_value": 9366.38,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 586.695
+      "current_price": 582.8389
     },
     "XOM": {
       "shares": 5,
-      "current_price": 166.655,
+      "current_price": 166.2,
       "avg_cost": 156.9871
     },
     "CVX": {
       "shares": 1,
       "avg_cost": 192.8551,
-      "current_price": 215.76
+      "current_price": 213.015
     },
     "NUE": {
-      "shares": 3,
-      "current_price": 252.385,
-      "avg_cost": 255.2817
+      "shares": 4,
+      "current_price": 252.585,
+      "avg_cost": 254.6075
     },
     "AAPL": {
       "shares": 8,
-      "current_price": 350.635,
+      "current_price": 353.1,
       "avg_cost": 336.16
     },
     "LHX": {
       "shares": 1,
       "avg_cost": 247.7225,
-      "current_price": 258.25
+      "current_price": 258.775
     },
     "RTX": {
       "shares": 3,
       "avg_cost": 197.1275,
-      "current_price": 197.31
+      "current_price": 196.69
     },
-    "JPM": {
-      "shares": 1,
-      "avg_cost": 343.8,
-      "current_price": 329.77
+    "GEO": {
+      "shares": 4,
+      "avg_cost": 33.378,
+      "current_price": 33.378
     }
   },
-  "total_return_pct": -6.26,
+  "total_return_pct": -6.34,
   "total_return_usd": 0.0,
-  "today_pnl": -20.04,
-  "today_pnl_pct": -0.21,
-  "total_trades": 46,
-  "today_start_value": 9393.79,
-  "today_date": "2026-11-17",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-17T20:10:49Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 49,
+  "today_start_value": 9366.38,
+  "today_date": "2026-11-18",
+  "last_action": "Bullish on American Industry. The market is currently distracted by global noise, but the real money is in domestic energy, defense, and steel. We are building a fortress economy.",
+  "last_updated": "2026-11-18T14:34:14Z",
   "last_session": {
-    "at": "2026-11-17T20:10:49Z",
+    "at": "2026-11-18T14:34:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GEO",
+        1.68
+      ],
+      [
+        "NOC",
+        -1.54
+      ],
+      [
+        "CVX",
+        -1.44
+      ],
+      [
+        "LMT",
+        -1.27
+      ],
+      [
+        "CAT",
+        0.92
+      ],
+      [
+        "RTX",
+        -0.66
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "I am rotating out of financial services and into hard assets. Defense and infrastructure are the only way forward. I'm adding GEO and CAT because they represent the strength of American security and construction. We are going to win by making America's core industries unbeatable.",
+    "outlook": "Bullish on American Industry. The market is currently distracted by global noise, but the real money is in domestic energy, defense, and steel. We are building a fortress economy.",
+    "trades_made": 3
   },
   "portfolio_history": [
     {
@@ -2041,6 +2066,10 @@
     {
       "timestamp": "2026-11-17T20:10:49Z",
       "value": 9373.75
+    },
+    {
+      "timestamp": "2026-11-18T14:34:14Z",
+      "value": 9366.38
     }
   ]
 }
