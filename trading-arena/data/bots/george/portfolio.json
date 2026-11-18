@@ -1,79 +1,74 @@
 {
-  "cash": 326.0,
-  "total_value": 9641.31,
+  "cash": 329.1,
+  "total_value": 9638.64,
   "positions": {
     "UUP": {
-      "shares": 46,
-      "current_price": 29.612,
-      "avg_cost": 29.07
-    },
-    "FXI": {
-      "shares": 1,
-      "avg_cost": 33.14,
-      "current_price": 32.61
+      "shares": 47,
+      "current_price": 29.6,
+      "avg_cost": 29.0813
     },
     "GLD": {
       "shares": 13,
-      "current_price": 346.03,
+      "current_price": 345.235,
       "avg_cost": 365.9892
     },
     "TLT": {
       "shares": 34,
-      "current_price": 79.881,
+      "current_price": 79.96,
       "avg_cost": 80.3846
     },
     "AAPL": {
       "shares": 2,
       "avg_cost": 355.57,
-      "current_price": 353.1
+      "current_price": 355.82
     }
   },
-  "total_return_pct": -3.59,
+  "total_return_pct": -3.61,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 63,
+  "today_pnl": -2.67,
+  "today_pnl_pct": -0.03,
+  "total_trades": 65,
   "today_start_value": 9641.31,
   "today_date": "2026-11-18",
-  "last_action": "...",
-  "last_updated": "2026-11-18T14:38:53Z",
+  "last_action": "Cautiously Bearish / Volatility Seeking",
+  "last_updated": "2026-11-18T15:11:08Z",
   "last_session": {
-    "at": "2026-11-18T14:38:53Z",
+    "at": "2026-11-18T15:11:08Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
-        "TSLA",
-        1.99
+        "AMZN",
+        2.5
       ],
       [
         "GLD",
-        -1.82
+        -2.07
       ],
       [
-        "NVDA",
-        1.33
+        "XLE",
+        -1.52
       ],
       [
-        "AMZN",
-        1.26
+        "TSLA",
+        1.49
       ],
       [
-        "FXI",
-        -0.82
+        "QQQ",
+        0.7
       ],
       [
-        "BAC",
-        -0.54
+        "XLF",
+        -0.56
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "...",
-    "outlook": "...",
-    "trades_made": 0
+    "ai_analysis": "The market is showing a divergence: tech (AMZN, TSLA) is attempting to push higher, but the weakness in Gold and Energy suggests a rotation out of risk or a precursor to a liquidity squeeze. I am positioning for a flight to safety and dollar strength. I am using the GLD dip to build a larger, more concentrated position in precious metals, anticipating that the current sell-off is a liquidity trap that will soon snap back into a massive rally.",
+    "outlook": "Cautiously Bearish / Volatility Seeking",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -2055,6 +2050,10 @@
     {
       "timestamp": "2026-11-18T14:38:53Z",
       "value": 9641.31
+    },
+    {
+      "timestamp": "2026-11-18T15:11:08Z",
+      "value": 9638.64
     }
   ]
 }

@@ -1133,6 +1133,42 @@
         "ticker_chg_pct": 0.01,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "FXI",
+      "shares": 1,
+      "price": 32.7,
+      "total_value": 32.7,
+      "reasoning": "Exiting this position. It's a tiny, stagnant holding that doesn't fit my macro conviction. I need to consolidate capital into high-conviction moves.",
+      "timestamp": "2026-11-18T15:11:08Z",
+      "market_outlook": "Cautiously Bearish / Volatility Seeking",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.55,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "UUP",
+      "shares": 1,
+      "price": 29.6,
+      "total_value": 29.6,
+      "reasoning": "Strengthening dollar is the primary driver of global liquidity shifts. I am doubling down on the UUP trend to capitalize on the current strength and protect against equity volatility.",
+      "timestamp": "2026-11-18T15:11:08Z",
+      "market_outlook": "Cautiously Bearish / Volatility Seeking",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.2,
+        "trigger_news": null
+      }
     }
   ]
 }
