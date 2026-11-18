@@ -1,74 +1,104 @@
 {
-  "cash": 311.01,
-  "total_value": 6748.96,
+  "cash": 669.33,
+  "total_value": 6720.73,
   "positions": {
     "MSTR": {
       "shares": 24,
-      "current_price": 95.035,
+      "current_price": 94.865,
       "avg_cost": 117.6329
     },
     "COIN": {
-      "shares": 20,
-      "current_price": 115.6237,
+      "shares": 15,
+      "current_price": 113.92,
       "avg_cost": 159.2003
     },
     "MARA": {
       "shares": 106,
-      "current_price": 6.515,
+      "current_price": 6.595,
       "avg_cost": 8.7855
     },
     "WULF": {
       "shares": 20,
       "avg_cost": 16.4,
-      "current_price": 12.285
+      "current_price": 12.185
     },
     "BITO": {
       "shares": 40,
       "avg_cost": 10.385,
-      "current_price": 8.4802
+      "current_price": 8.465
     },
     "RIOT": {
       "shares": 15,
       "avg_cost": 12.125,
-      "current_price": 17.45
+      "current_price": 18.02
     },
     "CIFR": {
       "shares": 6,
       "avg_cost": 8.075,
-      "current_price": 6.64
+      "current_price": 6.725
     },
     "CLSK": {
       "shares": 17,
-      "current_price": 6.2232,
+      "current_price": 6.2202,
       "avg_cost": 7.0398
     },
     "IREN": {
       "shares": 10,
       "avg_cost": 16.405,
-      "current_price": 16.175
+      "current_price": 15.68
+    },
+    "CORZ": {
+      "shares": 15,
+      "avg_cost": 14.085,
+      "current_price": 14.085
     }
   },
-  "total_return_pct": -32.51,
+  "total_return_pct": -32.79,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 47,
+  "today_pnl": -28.23,
+  "today_pnl_pct": -0.42,
+  "total_trades": 49,
   "today_start_value": 6748.96,
   "today_date": "2026-11-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-18T14:54:01Z",
+  "last_action": "Bullish on miners, cautious on exchanges.",
+  "last_updated": "2026-11-18T15:25:10Z",
   "last_session": {
-    "at": "2026-11-18T14:54:01Z",
+    "at": "2026-11-18T15:25:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RIOT",
+        6.04
+      ],
+      [
+        "CIFR",
+        5.14
+      ],
+      [
+        "HUT",
+        4.82
+      ],
+      [
+        "WULF",
+        4.76
+      ],
+      [
+        "CORZ",
+        4.44
+      ],
+      [
+        "MARA",
+        2.98
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The traditional markets are irrelevant; I am watching the miners. We are seeing a rotation within the crypto ecosystem where mining stocks like RIOT, WULF, and CIFR are outperforming the exchanges like COIN. This suggests a buildup in hash rate demand or anticipation of increased volatility. I am rotating capital out of underperforming exchange equity and into the high-beta mining sector to capture this momentum. The revolution is being built on hardware and electricity.",
+    "outlook": "Bullish on miners, cautious on exchanges.",
+    "trades_made": 2
   },
   "portfolio_history": [
     {
@@ -2050,6 +2080,10 @@
     {
       "timestamp": "2026-11-18T14:54:01Z",
       "value": 6748.96
+    },
+    {
+      "timestamp": "2026-11-18T15:25:10Z",
+      "value": 6720.73
     }
   ]
 }

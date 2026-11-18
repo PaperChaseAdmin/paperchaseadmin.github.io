@@ -845,6 +845,42 @@
         "ticker_chg_pct": -9.74,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "COIN",
+      "shares": 5,
+      "price": 113.92,
+      "total_value": 569.6,
+      "reasoning": "COIN is lagging behind the miners today and remains deep in the red. I am trimming this position to free up liquidity for more aggressive mining plays that are showing immediate strength.",
+      "timestamp": "2026-11-18T15:25:10Z",
+      "market_outlook": "Bullish on miners, cautious on exchanges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.87,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "CORZ",
+      "shares": 15,
+      "price": 14.085,
+      "total_value": 211.28,
+      "reasoning": "CORZ is showing strong relative strength (+4.44%). It is a key player in the infrastructure race. I am initiating a position here to diversify my mining exposure.",
+      "timestamp": "2026-11-18T15:25:10Z",
+      "market_outlook": "Bullish on miners, cautious on exchanges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.44,
+        "trigger_news": null
+      }
     }
   ]
 }

@@ -1,99 +1,74 @@
 {
   "cash": 1031.42,
-  "total_value": 11351.65,
+  "total_value": 11335.15,
   "positions": {
     "KO": {
       "shares": 20,
-      "current_price": 98.16,
+      "current_price": 97.85,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 7,
-      "current_price": 415.9,
+      "current_price": 414.19,
       "avg_cost": 361.6657
     },
     "MA": {
       "shares": 4,
-      "current_price": 643.045,
+      "current_price": 641.17,
       "avg_cost": 529.0675
     },
     "WMT": {
       "shares": 3,
       "avg_cost": 118.06,
-      "current_price": 125.92
+      "current_price": 126.8
     },
     "PG": {
       "shares": 4,
       "avg_cost": 159.16,
-      "current_price": 170.105
+      "current_price": 170.485
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 578.225,
-      "current_price": 582.93
+      "current_price": 581.63
     },
     "JNJ": {
       "shares": 2,
       "avg_cost": 281.56,
-      "current_price": 275.8125
+      "current_price": 276.84
     },
     "JPM": {
       "shares": 1,
       "avg_cost": 331.4,
-      "current_price": 327.71
+      "current_price": 329.245
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 353.1,
-      "current_price": 353.1
+      "current_price": 355.82
     }
   },
-  "total_return_pct": 13.52,
+  "total_return_pct": 13.35,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -16.5,
+  "today_pnl_pct": -0.15,
   "total_trades": 47,
   "today_start_value": 11351.65,
   "today_date": "2026-11-18",
-  "last_action": "...",
-  "last_updated": "2026-11-18T14:33:37Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-11-18T15:03:50Z",
   "last_session": {
-    "at": "2026-11-18T14:33:37Z",
+    "at": "2026-11-18T15:03:50Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "CVX",
-        -1.44
-      ],
-      [
-        "WMT",
-        -1.43
-      ],
-      [
-        "BRK-B",
-        -1.03
-      ],
-      [
-        "ABBV",
-        -0.98
-      ],
-      [
-        "JNJ",
-        -0.97
-      ],
-      [
-        "MCD",
-        -0.91
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
-    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
-    "ai_analysis": "...",
-    "outlook": "...",
-    "trades_made": 1
+    "domain_extra": "",
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
+    "trades_made": 0
   },
   "portfolio_history": [
     {
@@ -2075,6 +2050,10 @@
     {
       "timestamp": "2026-11-18T14:33:37Z",
       "value": 11351.65
+    },
+    {
+      "timestamp": "2026-11-18T15:03:50Z",
+      "value": 11335.15
     }
   ]
 }
