@@ -1169,6 +1169,42 @@
         "ticker_chg_pct": 0.2,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GLD",
+      "shares": 13,
+      "price": 343.14,
+      "total_value": 4460.82,
+      "reasoning": "Gold is currently experiencing a sharp dislocation to the downside (-2.61%). While I am a macro bull on precious metals long-term, the immediate momentum is broken and I refuse to catch a falling knife while my capital is tied up in a losing trend. I will wait for the reflexive bottom to re-enter wi",
+      "timestamp": "2026-11-18T17:10:11Z",
+      "market_outlook": "Bearish/Volatile. We are seeing a divergence where tech (NVDA) and energy (XLE) are collapsing, while the dollar (UUP) and bonds (TLT) are finding support. This is the classic setup for a flight to quality. The equity market is losing its footing, and I am positioning for a systemic deleveraging event.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.61,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 2,
+      "price": 352.0,
+      "total_value": 704.0,
+      "reasoning": "This position is a rounding error in my portfolio and is currently underwater. I am cutting the dead weight to preserve capital for the massive macro shifts I see coming in the bond and currency markets.",
+      "timestamp": "2026-11-18T17:10:11Z",
+      "market_outlook": "Bearish/Volatile. We are seeing a divergence where tech (NVDA) and energy (XLE) are collapsing, while the dollar (UUP) and bonds (TLT) are finding support. This is the classic setup for a flight to quality. The equity market is losing its footing, and I am positioning for a systemic deleveraging event.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.05,
+        "trigger_news": null
+      }
     }
   ]
 }
