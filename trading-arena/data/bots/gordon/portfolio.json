@@ -1,80 +1,101 @@
 {
   "cash": 801.8,
-  "total_value": 9248.71,
+  "total_value": 9168.06,
   "positions": {
     "SBUX": {
       "shares": 10,
       "avg_cost": 101.66,
-      "current_price": 107.0
+      "current_price": 106.96
     },
     "VFC": {
       "shares": 40,
       "avg_cost": 16.364,
-      "current_price": 20.545
+      "current_price": 20.345
     },
     "INTC": {
       "shares": 37,
-      "current_price": 57.43,
+      "current_price": 56.14,
       "avg_cost": 54.2741
     },
     "NOK": {
       "shares": 100,
       "avg_cost": 7.4901,
-      "current_price": 7.72
+      "current_price": 7.585
     },
     "AAPL": {
       "shares": 7,
-      "current_price": 349.673,
+      "current_price": 348.65,
       "avg_cost": 353.975
     },
     "HPQ": {
       "shares": 15,
       "avg_cost": 29.36,
-      "current_price": 27.985
+      "current_price": 27.715
     },
     "CMCSA": {
       "shares": 20,
       "avg_cost": 24.629,
-      "current_price": 24.805
+      "current_price": 24.8514
     },
     "DIS": {
       "shares": 1,
       "avg_cost": 119.78,
-      "current_price": 121.74
+      "current_price": 121.85
     },
     "NKE": {
       "shares": 5,
       "avg_cost": 36.325,
-      "current_price": 34.575
+      "current_price": 34.405
     }
   },
-  "total_return_pct": -7.51,
+  "total_return_pct": -8.32,
   "total_return_usd": 0.0,
-  "today_pnl": -81.36,
-  "today_pnl_pct": -0.87,
+  "today_pnl": -162.01,
+  "today_pnl_pct": -1.74,
   "total_trades": 82,
   "today_start_value": 9330.07,
   "today_date": "2026-11-19",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-19T16:45:55Z",
+  "last_action": "...",
+  "last_updated": "2026-11-19T17:14:41Z",
   "last_session": {
-    "at": "2026-11-19T16:45:55Z",
+    "at": "2026-11-19T17:14:41Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NKE",
+        -5.25
+      ],
+      [
+        "HPQ",
+        -3.24
+      ],
+      [
+        "INTC",
+        2.87
+      ],
+      [
+        "VFC",
+        -2.86
+      ],
+      [
+        "BBWI",
+        2.73
+      ],
+      [
+        "CVS",
+        -2.41
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "...",
+    "outlook": "...",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T16:42:27Z",
-      "value": 10135.86
-    },
     {
       "timestamp": "2026-07-06T17:42:08Z",
       "value": 10103.86
@@ -2070,6 +2091,10 @@
     {
       "timestamp": "2026-11-19T16:45:55Z",
       "value": 9248.71
+    },
+    {
+      "timestamp": "2026-11-19T17:14:41Z",
+      "value": 9168.06
     }
   ]
 }

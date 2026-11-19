@@ -1,59 +1,54 @@
 {
-  "cash": 2328.97,
-  "total_value": 9983.92,
+  "cash": 1960.91,
+  "total_value": 9985.57,
   "positions": {
     "DJP": {
       "shares": 10,
-      "current_price": 46.56,
+      "current_price": 46.515,
       "avg_cost": 44.55
     },
     "PDBC": {
-      "shares": 56,
-      "current_price": 17.695,
-      "avg_cost": 16.5267
+      "shares": 71,
+      "current_price": 17.68,
+      "avg_cost": 16.7704
     },
     "GSG": {
       "shares": 30,
-      "current_price": 32.7101,
+      "current_price": 32.74,
       "avg_cost": 32.0725
     },
     "GLD": {
-      "shares": 3,
-      "avg_cost": 373.15,
-      "current_price": 337.12
+      "shares": 5,
+      "current_price": 337.38,
+      "avg_cost": 358.842
     },
     "TLT": {
       "shares": 25,
-      "current_price": 80.0755,
+      "current_price": 80.22,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 90.595
+      "current_price": 90.68
     },
     "IAU": {
       "shares": 17,
-      "current_price": 69.1,
+      "current_price": 69.19,
       "avg_cost": 69.8247
-    },
-    "EEM": {
-      "shares": 10,
-      "avg_cost": 57.62,
-      "current_price": 57.62
     }
   },
-  "total_return_pct": -0.16,
+  "total_return_pct": -0.14,
   "total_return_usd": 0.0,
-  "today_pnl": -10.75,
-  "today_pnl_pct": -0.11,
-  "total_trades": 45,
+  "today_pnl": -9.1,
+  "today_pnl_pct": -0.09,
+  "total_trades": 48,
   "today_start_value": 9994.67,
   "today_date": "2026-11-19",
-  "last_action": "Cautious/Neutral. The significant drop in TIPS suggests a shift in inflation expectations or a repricing of real yields. I am positioning for a regime where volatility in both inflation and growth req",
-  "last_updated": "2026-11-19T16:38:29Z",
+  "last_action": "Cautious/Inflationary Hedge",
+  "last_updated": "2026-11-19T17:08:26Z",
   "last_session": {
-    "at": "2026-11-19T16:38:29Z",
+    "at": "2026-11-19T17:08:26Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -65,36 +60,32 @@
       ],
       [
         "GDX",
-        -1.94
-      ],
-      [
-        "IAU",
-        -1.19
-      ],
-      [
-        "GLD",
-        -1.18
+        -2.5
       ],
       [
         "VWO",
-        -0.99
+        -1.46
       ],
       [
-        "FXI",
-        -0.96
+        "EEM",
+        -1.14
+      ],
+      [
+        "GLD",
+        -1.12
+      ],
+      [
+        "IAU",
+        -1.12
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The portfolio is currently overweight commodities (DJP, PDBC, GSG) which have performed well, but I am underweight in gold due to recent price action. I am rebalancing by deploying cash into gold (IAU) and long-term bonds (TLT) to prepare for a potential transition from an inflation-driven environment to a growth-slowdown environment. I am maintaining a healthy cash reserve above the $1000 limit.",
-    "outlook": "Cautious/Neutral. The significant drop in TIPS suggests a shift in inflation expectations or a repricing of real yields. I am positioning for a regime where volatility in both inflation and growth requires a more robust bond and gold presence.",
+    "ai_analysis": "The market is showing signs of volatility in equities and emerging markets (EEM, VWO). The significant drop in TIPS suggests a shift in inflation expectations or a repricing of real yields. I am pivoting toward physical gold (GLD) and broad commodities (PDBC) to protect against inflation, while trimming emerging market exposure to reduce volatility. My goal is to maintain the All Weather balance by rotating out of weak equity proxies and into hard assets.",
+    "outlook": "Cautious/Inflationary Hedge",
     "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T16:36:30Z",
-      "value": 10016.09
-    },
     {
       "timestamp": "2026-07-06T17:35:10Z",
       "value": 10021.47
@@ -2090,6 +2081,10 @@
     {
       "timestamp": "2026-11-19T16:38:29Z",
       "value": 9983.92
+    },
+    {
+      "timestamp": "2026-11-19T17:08:26Z",
+      "value": 9985.57
     }
   ]
 }

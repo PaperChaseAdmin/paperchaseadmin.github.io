@@ -809,6 +809,60 @@
         "ticker_chg_pct": -0.46,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GLD",
+      "shares": 2,
+      "price": 337.38,
+      "total_value": 674.76,
+      "reasoning": "Gold is currently seeing a pullback (-1.12%). As an All Weather investor, I view this as a strategic entry point to increase my gold exposure to hedge against potential inflationary spikes, while maintaining diversification.",
+      "timestamp": "2026-11-19T17:08:26Z",
+      "market_outlook": "Cautious/Inflationary Hedge",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.12,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "EEM",
+      "shares": 10,
+      "price": 57.19,
+      "total_value": 571.9,
+      "reasoning": "Emerging markets are showing weakness today (-1.14%). I am reducing this position to reallocate capital toward more stable commodity-linked assets and gold, which better suit the current macro uncertainty.",
+      "timestamp": "2026-11-19T17:08:26Z",
+      "market_outlook": "Cautious/Inflationary Hedge",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.14,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PDBC",
+      "shares": 15,
+      "price": 17.68,
+      "total_value": 265.2,
+      "reasoning": "Commodities (PDBC) are showing positive momentum (+0.63%). I am increasing my exposure here to capitalize on the rising trend and strengthen the inflation-protection component of my portfolio.",
+      "timestamp": "2026-11-19T17:08:26Z",
+      "market_outlook": "Cautious/Inflationary Hedge",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.63,
+        "trigger_news": null
+      }
     }
   ]
 }
