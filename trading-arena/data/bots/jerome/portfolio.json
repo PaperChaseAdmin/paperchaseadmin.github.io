@@ -1,59 +1,54 @@
 {
-  "cash": 1300.8,
-  "total_value": 9645.4,
+  "cash": 1554.46,
+  "total_value": 9648.51,
   "positions": {
     "SHY": {
       "shares": 17,
-      "current_price": 81.335,
+      "current_price": 81.34,
       "avg_cost": 81.7522
     },
     "XLU": {
       "shares": 22,
-      "current_price": 42.88,
+      "current_price": 43.002,
       "avg_cost": 42.6612
     },
     "BIL": {
       "shares": 26,
-      "current_price": 91.565,
+      "current_price": 91.5622,
       "avg_cost": 91.4361
     },
     "TLT": {
-      "shares": 26,
-      "current_price": 80.22,
-      "avg_cost": 80.562
+      "shares": 29,
+      "current_price": 80.145,
+      "avg_cost": 80.5189
     },
     "XLF": {
-      "shares": 13,
-      "current_price": 55.6431,
+      "shares": 8,
+      "current_price": 55.79,
       "avg_cost": 57.8373
     },
     "BAC": {
       "shares": 4,
       "avg_cost": 50.405,
-      "current_price": 48.47
-    },
-    "XLRE": {
-      "shares": 5,
-      "avg_cost": 44.56,
-      "current_price": 43.02
+      "current_price": 48.63
     },
     "TIP": {
       "shares": 4,
       "avg_cost": 104.71,
-      "current_price": 104.9499
+      "current_price": 104.89
     }
   },
-  "total_return_pct": -3.55,
+  "total_return_pct": -3.51,
   "total_return_usd": 0.0,
-  "today_pnl": -25.89,
-  "today_pnl_pct": -0.27,
-  "total_trades": 66,
+  "today_pnl": -22.78,
+  "today_pnl_pct": -0.24,
+  "total_trades": 69,
   "today_start_value": 9671.29,
   "today_date": "2026-11-19",
-  "last_action": "Cautious and data-dependent. The current lack of clear direction and downward movement in financials and utilities suggests we should prepare for increased volatility.",
-  "last_updated": "2026-11-19T17:18:48Z",
+  "last_action": "Cautious and data-dependent. The current weakness in financials and real estate warrants a defensive posture.",
+  "last_updated": "2026-11-19T17:53:47Z",
   "last_session": {
-    "at": "2026-11-19T17:18:48Z",
+    "at": "2026-11-19T17:53:47Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,40 +56,36 @@
     "top_movers": [
       [
         "GS",
-        -2.09
-      ],
-      [
-        "XLU",
-        -1.53
+        -1.69
       ],
       [
         "VNQ",
-        -1.42
-      ],
-      [
-        "JPM",
-        -1.4
+        -1.45
       ],
       [
         "XLRE",
-        -1.36
+        -1.38
+      ],
+      [
+        "XLU",
+        -1.27
       ],
       [
         "XLF",
-        -1.36
+        -1.16
+      ],
+      [
+        "JPM",
+        -1.02
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The market is exhibiting signs of weakness across multiple sectors, particularly in financials (GS, JPM, XLF) and real estate (XLRE, VNQ). While the VIX data is currently unavailable, the price action in defensive sectors like utilities suggests a rotation toward safety. I am adjusting the portfolio to increase defensive weightings in XLU and BIL while trimming exposure to the more volatile financial sector to maintain a prudent stance.",
-    "outlook": "Cautious and data-dependent. The current lack of clear direction and downward movement in financials and utilities suggests we should prepare for increased volatility.",
-    "trades_made": 2
+    "ai_analysis": "The market is exhibiting signs of sector-specific weakness, particularly in XLF and XLRE. While the VIX data is currently unavailable, the price action in the watchlist suggests a move toward risk-off sentiment. I am rebalancing toward duration and liquidity to protect the portfolio's principal.",
+    "outlook": "Cautious and data-dependent. The current weakness in financials and real estate warrants a defensive posture.",
+    "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T17:46:56Z",
-      "value": 10000
-    },
     {
       "timestamp": "2026-07-06T18:16:15Z",
       "value": 10000
@@ -2090,6 +2081,10 @@
     {
       "timestamp": "2026-11-19T17:18:48Z",
       "value": 9645.4
+    },
+    {
+      "timestamp": "2026-11-19T17:53:47Z",
+      "value": 9648.51
     }
   ]
 }

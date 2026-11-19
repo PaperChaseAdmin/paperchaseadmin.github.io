@@ -1,100 +1,121 @@
 {
-  "cash": 640.61,
-  "total_value": 9838.32,
+  "cash": 597.58,
+  "total_value": 9858.84,
   "positions": {
     "XLB": {
       "shares": 18,
-      "current_price": 49.66,
+      "current_price": 49.82,
       "avg_cost": 52.5513
     },
     "TLT": {
       "shares": 12,
-      "current_price": 80.22,
+      "current_price": 80.145,
       "avg_cost": 82.4097
     },
     "XLI": {
       "shares": 5,
       "avg_cost": 185.43,
-      "current_price": 162.35
+      "current_price": 162.81
     },
     "GLD": {
       "shares": 2,
-      "current_price": 337.38,
+      "current_price": 337.81,
       "avg_cost": 381.115
     },
     "XLU": {
       "shares": 10,
       "avg_cost": 42.4805,
-      "current_price": 42.88
+      "current_price": 43.002
     },
     "XLP": {
       "shares": 4,
-      "current_price": 89.69,
-      "avg_cost": 84.8565
+      "current_price": 89.79,
+      "avg_cost": 85.8432
     },
     "XLC": {
       "shares": 8,
       "avg_cost": 114.17,
-      "current_price": 104.79
+      "current_price": 105.15
     },
     "XLRE": {
-      "shares": 14,
-      "current_price": 43.02,
-      "avg_cost": 42.8093
+      "shares": 15,
+      "current_price": 43.03,
+      "avg_cost": 42.824
     },
     "XLK": {
       "shares": 7,
-      "current_price": 163.24,
+      "current_price": 163.92,
       "avg_cost": 181.0427
     },
     "XLE": {
       "shares": 17,
-      "current_price": 61.08,
+      "current_price": 61.075,
       "avg_cost": 68.2094
     },
     "XLF": {
       "shares": 5,
       "avg_cost": 54.915,
-      "current_price": 55.6431
+      "current_price": 55.79
     },
     "AAPL": {
       "shares": 2,
-      "current_price": 348.65,
+      "current_price": 350.43,
       "avg_cost": 352.75
     },
     "XLY": {
       "shares": 4,
       "avg_cost": 119.735,
-      "current_price": 117.49
+      "current_price": 117.935
     }
   },
-  "total_return_pct": -1.62,
+  "total_return_pct": -1.41,
   "total_return_usd": 0.0,
-  "today_pnl": -119.31,
-  "today_pnl_pct": -1.2,
-  "total_trades": 52,
+  "today_pnl": -98.79,
+  "today_pnl_pct": -0.99,
+  "total_trades": 55,
   "today_start_value": 9957.63,
   "today_date": "2026-11-19",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-19T17:20:07Z",
+  "last_action": "The universe is in chaos. Most sectors are retreating, creating a vacuum of value that must be filled to achieve equilibrium.",
+  "last_updated": "2026-11-19T17:55:00Z",
   "last_session": {
-    "at": "2026-11-19T17:20:07Z",
+    "at": "2026-11-19T17:55:00Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "XLV",
+        -1.62
+      ],
+      [
+        "XLP",
+        -1.54
+      ],
+      [
+        "XLRE",
+        -1.38
+      ],
+      [
+        "XLB",
+        -1.33
+      ],
+      [
+        "XLU",
+        -1.27
+      ],
+      [
+        "XLF",
+        -1.16
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The portfolio is currently skewed. While I hold most sectors, the weightings are uneven due to recent price fluctuations. XLV and XLP are lagging, creating an imbalance that displeases me. I am deploying a portion of my $640.61 cash to bolster these sectors, ensuring no single sector dominates the cosmic scale of my holdings.",
+    "outlook": "The universe is in chaos. Most sectors are retreating, creating a vacuum of value that must be filled to achieve equilibrium.",
+    "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T17:47:34Z",
-      "value": 10014.66
-    },
     {
       "timestamp": "2026-07-06T18:17:03Z",
       "value": 10012.66
@@ -2090,6 +2111,10 @@
     {
       "timestamp": "2026-11-19T17:20:07Z",
       "value": 9838.32
+    },
+    {
+      "timestamp": "2026-11-19T17:55:00Z",
+      "value": 9858.84
     }
   ]
 }

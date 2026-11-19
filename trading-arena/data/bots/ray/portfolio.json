@@ -1,95 +1,66 @@
 {
   "cash": 1960.91,
-  "total_value": 9985.57,
+  "total_value": 9988.16,
   "positions": {
     "DJP": {
       "shares": 10,
-      "current_price": 46.515,
+      "current_price": 46.37,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 71,
-      "current_price": 17.68,
+      "current_price": 17.7,
       "avg_cost": 16.7704
     },
     "GSG": {
       "shares": 30,
-      "current_price": 32.74,
+      "current_price": 32.77,
       "avg_cost": 32.0725
     },
     "GLD": {
       "shares": 5,
-      "current_price": 337.38,
+      "current_price": 337.81,
       "avg_cost": 358.842
     },
     "TLT": {
       "shares": 25,
-      "current_price": 80.22,
+      "current_price": 80.145,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 90.68
+      "current_price": 90.645
     },
     "IAU": {
       "shares": 17,
-      "current_price": 69.19,
+      "current_price": 69.285,
       "avg_cost": 69.8247
     }
   },
-  "total_return_pct": -0.14,
+  "total_return_pct": -0.12,
   "total_return_usd": 0.0,
-  "today_pnl": -9.1,
-  "today_pnl_pct": -0.09,
+  "today_pnl": -6.51,
+  "today_pnl_pct": -0.07,
   "total_trades": 48,
   "today_start_value": 9994.67,
   "today_date": "2026-11-19",
-  "last_action": "Cautious/Inflationary Hedge",
-  "last_updated": "2026-11-19T17:08:26Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-11-19T17:39:28Z",
   "last_session": {
-    "at": "2026-11-19T17:08:26Z",
+    "at": "2026-11-19T17:39:28Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "TIPS",
-        -12.5
-      ],
-      [
-        "GDX",
-        -2.5
-      ],
-      [
-        "VWO",
-        -1.46
-      ],
-      [
-        "EEM",
-        -1.14
-      ],
-      [
-        "GLD",
-        -1.12
-      ],
-      [
-        "IAU",
-        -1.12
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The market is showing signs of volatility in equities and emerging markets (EEM, VWO). The significant drop in TIPS suggests a shift in inflation expectations or a repricing of real yields. I am pivoting toward physical gold (GLD) and broad commodities (PDBC) to protect against inflation, while trimming emerging market exposure to reduce volatility. My goal is to maintain the All Weather balance by rotating out of weak equity proxies and into hard assets.",
-    "outlook": "Cautious/Inflationary Hedge",
-    "trades_made": 3
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
+    "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T17:35:10Z",
-      "value": 10021.47
-    },
     {
       "timestamp": "2026-07-06T18:06:33Z",
       "value": 10022.81
@@ -2085,6 +2056,10 @@
     {
       "timestamp": "2026-11-19T17:08:26Z",
       "value": 9985.57
+    },
+    {
+      "timestamp": "2026-11-19T17:39:28Z",
+      "value": 9988.16
     }
   ]
 }
