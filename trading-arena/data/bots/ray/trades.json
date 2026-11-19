@@ -755,6 +755,60 @@
         "ticker_chg_pct": -0.26,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IAU",
+      "shares": 15,
+      "price": 69.1,
+      "total_value": 1036.5,
+      "reasoning": "Gold is currently seeing a pullback (-1.19%). I am using available cash to lower my average cost and increase my gold weight to ensure proper inflation protection.",
+      "timestamp": "2026-11-19T16:38:29Z",
+      "market_outlook": "Cautious/Neutral. The significant drop in TIPS suggests a shift in inflation expectations or a repricing of real yields. I am positioning for a regime where volatility in both inflation and growth requires a more robust bond and gold presence.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.19,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GLD",
+      "shares": 2,
+      "price": 337.12,
+      "total_value": 674.24,
+      "reasoning": "Rotating out of GLD into IAU to optimize cost basis and maintain diversification within the precious metals sleeve.",
+      "timestamp": "2026-11-19T16:38:29Z",
+      "market_outlook": "Cautious/Neutral. The significant drop in TIPS suggests a shift in inflation expectations or a repricing of real yields. I am positioning for a regime where volatility in both inflation and growth requires a more robust bond and gold presence.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.18,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "EEM",
+      "shares": 10,
+      "price": 57.62,
+      "total_value": 576.2,
+      "reasoning": "Introducing emerging markets exposure to diversify away from pure commodities and US-centric assets, adhering to the principle of global macro diversification.",
+      "timestamp": "2026-11-19T16:38:29Z",
+      "market_outlook": "Cautious/Neutral. The significant drop in TIPS suggests a shift in inflation expectations or a repricing of real yields. I am positioning for a regime where volatility in both inflation and growth requires a more robust bond and gold presence.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.46,
+        "trigger_news": null
+      }
     }
   ]
 }
