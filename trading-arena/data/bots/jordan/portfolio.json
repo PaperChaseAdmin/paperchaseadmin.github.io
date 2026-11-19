@@ -1,60 +1,76 @@
 {
-  "cash": 273.48,
-  "total_value": 9848.37,
+  "cash": 3510.03,
+  "total_value": 9697.38,
   "positions": {
-    "SOFI": {
-      "shares": 150,
-      "avg_cost": 14.29,
-      "current_price": 14.02
-    },
     "RIOT": {
       "shares": 206,
-      "current_price": 18.375,
+      "current_price": 17.99,
       "avg_cost": 17.5184
     },
-    "AMC": {
-      "shares": 468,
-      "avg_cost": 3.1997,
-      "current_price": 2.93
-    },
     "RBLX": {
-      "shares": 30,
-      "current_price": 49.96,
-      "avg_cost": 46.9633
+      "shares": 31,
+      "current_price": 49.44,
+      "avg_cost": 47.0432
     },
     "GME": {
       "shares": 30,
       "avg_cost": 25.9488,
-      "current_price": 27.22
+      "current_price": 26.9685
+    },
+    "HOOD": {
+      "shares": 2,
+      "avg_cost": 69.855,
+      "current_price": 69.855
     }
   },
-  "total_return_pct": -1.52,
+  "total_return_pct": -3.03,
   "total_return_usd": 0.0,
-  "today_pnl": -224.9,
-  "today_pnl_pct": -2.23,
-  "total_trades": 81,
+  "today_pnl": -375.89,
+  "today_pnl_pct": -3.73,
+  "total_trades": 85,
   "today_start_value": 10073.27,
   "today_date": "2026-11-19",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-19T16:47:18Z",
+  "last_action": "Aggressive and opportunistic. The market is choppy, but where there is blood, there is opportunity. I'm hunting for the runners and cutting the dead weight immediately.",
+  "last_updated": "2026-11-19T17:14:51Z",
   "last_session": {
-    "at": "2026-11-19T16:47:18Z",
+    "at": "2026-11-19T17:14:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RBLX",
+        4.41
+      ],
+      [
+        "UPST",
+        -4.1
+      ],
+      [
+        "AMC",
+        -3.65
+      ],
+      [
+        "RIVN",
+        -3.6
+      ],
+      [
+        "MSTR",
+        -3.18
+      ],
+      [
+        "MARA",
+        -2.59
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The portfolio is currently weighed down by laggards like AMC and SOFI. I'm liquidating those losers to free up cash. RBLX is the only real momentum play on my radar right now, so I'm doubling down on that strength. We need velocity, and we need it now!",
+    "outlook": "Aggressive and opportunistic. The market is choppy, but where there is blood, there is opportunity. I'm hunting for the runners and cutting the dead weight immediately.",
+    "trades_made": 4
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T16:42:46Z",
-      "value": 10050.66
-    },
     {
       "timestamp": "2026-07-06T17:43:43Z",
       "value": 9956.85
@@ -2050,6 +2066,10 @@
     {
       "timestamp": "2026-11-19T16:47:18Z",
       "value": 9848.37
+    },
+    {
+      "timestamp": "2026-11-19T17:14:51Z",
+      "value": 9697.38
     }
   ]
 }
