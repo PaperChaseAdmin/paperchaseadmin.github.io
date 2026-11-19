@@ -1,15 +1,15 @@
 {
   "cash": 1960.91,
-  "total_value": 9980.88,
+  "total_value": 9987.07,
   "positions": {
     "DJP": {
       "shares": 10,
-      "current_price": 46.535,
+      "current_price": 46.465,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 71,
-      "current_price": 17.675,
+      "current_price": 17.6741,
       "avg_cost": 16.7704
     },
     "GSG": {
@@ -19,77 +19,48 @@
     },
     "GLD": {
       "shares": 5,
-      "current_price": 336.94,
+      "current_price": 337.54,
       "avg_cost": 358.842
     },
     "TLT": {
       "shares": 25,
-      "current_price": 80.19,
+      "current_price": 80.27,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 90.685
+      "current_price": 90.7373
     },
     "IAU": {
       "shares": 17,
-      "current_price": 69.095,
+      "current_price": 69.195,
       "avg_cost": 69.8247
     }
   },
-  "total_return_pct": -0.19,
+  "total_return_pct": -0.13,
   "total_return_usd": 0.0,
-  "today_pnl": -13.79,
-  "today_pnl_pct": -0.14,
+  "today_pnl": -7.6,
+  "today_pnl_pct": -0.08,
   "total_trades": 48,
   "today_start_value": 9994.67,
   "today_date": "2026-11-19",
-  "last_action": "Analysed \u2014 no trades",
-  "last_updated": "2026-11-19T18:08:03Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-11-19T18:38:42Z",
   "last_session": {
-    "at": "2026-11-19T18:08:03Z",
+    "at": "2026-11-19T18:38:42Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "TIPS",
-        -12.5
-      ],
-      [
-        "GDX",
-        -2.43
-      ],
-      [
-        "VWO",
-        -1.52
-      ],
-      [
-        "EEM",
-        -1.31
-      ],
-      [
-        "GLD",
-        -1.25
-      ],
-      [
-        "SPY",
-        -1.23
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "",
+    "outlook": "Analysis unavailable",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T18:35:15Z",
-      "value": 10031.72
-    },
     {
       "timestamp": "2026-07-06T19:08:17Z",
       "value": 10033.31
@@ -2085,6 +2056,10 @@
     {
       "timestamp": "2026-11-19T18:08:03Z",
       "value": 9980.88
+    },
+    {
+      "timestamp": "2026-11-19T18:38:42Z",
+      "value": 9987.07
     }
   ]
 }
