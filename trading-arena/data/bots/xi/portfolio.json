@@ -1,75 +1,91 @@
 {
-  "cash": 683.93,
-  "total_value": 8130.09,
+  "cash": 1271.98,
+  "total_value": 8226.44,
   "positions": {
     "BABA": {
       "shares": 27,
-      "current_price": 84.61,
+      "current_price": 84.91,
       "avg_cost": 100.6322
     },
     "JD": {
-      "shares": 55,
-      "current_price": 24.905,
-      "avg_cost": 27.2137
-    },
-    "NTES": {
-      "shares": 9,
-      "avg_cost": 118.155,
-      "current_price": 118.53
+      "shares": 65,
+      "current_price": 25.22,
+      "avg_cost": 26.907
     },
     "XPEV": {
       "shares": 7,
       "avg_cost": 9.475,
-      "current_price": 9.825
+      "current_price": 9.775
     },
     "PDD": {
-      "shares": 19,
-      "current_price": 77.2,
-      "avg_cost": 77.96
+      "shares": 21,
+      "current_price": 83.85,
+      "avg_cost": 78.521
     },
     "BIDU": {
       "shares": 5,
       "avg_cost": 77.2,
-      "current_price": 69.28
+      "current_price": 69.19
     },
     "NIO": {
       "shares": 50,
-      "current_price": 2.79,
+      "current_price": 2.802,
       "avg_cost": 3.061
     },
     "AAPL": {
       "shares": 2,
       "avg_cost": 350.39,
-      "current_price": 351.835
+      "current_price": 353.63
     }
   },
-  "total_return_pct": -18.7,
+  "total_return_pct": -17.74,
   "total_return_usd": 0.0,
-  "today_pnl": -72.15,
-  "today_pnl_pct": -0.88,
-  "total_trades": 52,
-  "today_start_value": 8202.24,
-  "today_date": "2026-11-18",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-18T20:53:19Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 55,
+  "today_start_value": 8226.44,
+  "today_date": "2026-11-19",
+  "last_action": "Bullish on Chinese ADRs. The strength in PDD and JD suggests that the domestic consumption story is gaining traction despite global skepticism.",
+  "last_updated": "2026-11-19T14:51:24Z",
   "last_session": {
-    "at": "2026-11-18T20:53:19Z",
+    "at": "2026-11-19T14:51:24Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PDD",
+        9.36
+      ],
+      [
+        "NTES",
+        -4.58
+      ],
+      [
+        "IQ",
+        3.73
+      ],
+      [
+        "FUTU",
+        3.55
+      ],
+      [
+        "TIGR",
+        2.54
+      ],
+      [
+        "JD",
+        1.69
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing a divergence. While some gaming stocks like NTES face temporary headwinds, the e-commerce giants (PDD, JD) are surging. This confirms my thesis: focus on the platforms that drive the Chinese economy. I am rotating out of laggards to double down on the momentum leaders.",
+    "outlook": "Bullish on Chinese ADRs. The strength in PDD and JD suggests that the domestic consumption story is gaining traction despite global skepticism.",
+    "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T14:13:54Z",
-      "value": 10010.3
-    },
     {
       "timestamp": "2026-07-06T14:44:13Z",
       "value": 9996.54
@@ -2065,6 +2081,10 @@
     {
       "timestamp": "2026-11-18T20:53:19Z",
       "value": 8130.09
+    },
+    {
+      "timestamp": "2026-11-19T14:51:24Z",
+      "value": 8226.44
     }
   ]
 }
