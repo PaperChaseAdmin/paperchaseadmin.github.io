@@ -1,70 +1,96 @@
 {
-  "cash": 400.69,
-  "total_value": 5788.76,
+  "cash": 303.86,
+  "total_value": 5732.3,
   "positions": {
     "TQQQ": {
       "shares": 50,
       "avg_cost": 73.34,
-      "current_price": 53.19
+      "current_price": 52.6901
     },
     "SOXL": {
       "shares": 35,
-      "current_price": 51.42,
+      "current_price": 50.565,
       "avg_cost": 90.01
     },
     "RKLB": {
       "shares": 6,
-      "current_price": 52.565,
+      "current_price": 52.265,
       "avg_cost": 50.52
     },
     "ARM": {
       "shares": 1,
       "avg_cost": 182.525,
-      "current_price": 180.41
+      "current_price": 181.695
     },
     "SMCI": {
       "shares": 5,
       "avg_cost": 30.81,
-      "current_price": 24.79
+      "current_price": 24.785
     },
     "MRVL": {
       "shares": 1,
       "avg_cost": 173.895,
-      "current_price": 148.44
+      "current_price": 148.1595
     },
     "PLTR": {
       "shares": 1,
       "avg_cost": 155.615,
-      "current_price": 160.68
+      "current_price": 159.96
+    },
+    "IONQ": {
+      "shares": 4,
+      "avg_cost": 24.2086,
+      "current_price": 24.2086
     }
   },
-  "total_return_pct": -42.11,
+  "total_return_pct": -42.68,
   "total_return_usd": 0.0,
-  "today_pnl": -204.21,
-  "today_pnl_pct": -3.41,
-  "total_trades": 44,
+  "today_pnl": -260.67,
+  "today_pnl_pct": -4.35,
+  "total_trades": 45,
   "today_start_value": 5992.97,
   "today_date": "2026-11-19",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-19T15:43:43Z",
+  "last_action": "Aggressive Bullish on Tech/AI, Bearish on legacy semiconductor laggards.",
+  "last_updated": "2026-11-19T16:17:37Z",
   "last_session": {
-    "at": "2026-11-19T15:43:43Z",
+    "at": "2026-11-19T16:17:37Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "AMD",
+        -8.24
+      ],
+      [
+        "CRWD",
+        6.21
+      ],
+      [
+        "AXON",
+        5.52
+      ],
+      [
+        "IONQ",
+        3.02
+      ],
+      [
+        "SOXL",
+        2.62
+      ],
+      [
+        "PLTR",
+        2.01
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing a clear divergence. While AMD is bleeding out, the high-growth sectors like Cybersecurity (CRWD) and Quantum (IONQ) are catching fire. My current portfolio is heavily weighted in leveraged tech (TQQQ/SOXL) which is currently underwater, so I'm deploying my remaining cash into high-momentum individual names to stabilize the trajectory while waiting for the macro environment to catch up to my genius.",
+    "outlook": "Aggressive Bullish on Tech/AI, Bearish on legacy semiconductor laggards.",
+    "trades_made": 1
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T15:40:31Z",
-      "value": 10278.29
-    },
     {
       "timestamp": "2026-07-06T16:09:12Z",
       "value": 10268.47
@@ -2060,6 +2086,10 @@
     {
       "timestamp": "2026-11-19T15:43:43Z",
       "value": 5788.76
+    },
+    {
+      "timestamp": "2026-11-19T16:17:37Z",
+      "value": 5732.3
     }
   ]
 }
