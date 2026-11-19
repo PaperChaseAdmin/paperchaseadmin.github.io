@@ -1,80 +1,101 @@
 {
   "cash": 1031.42,
-  "total_value": 11110.34,
+  "total_value": 11112.81,
   "positions": {
     "KO": {
       "shares": 20,
-      "current_price": 96.295,
+      "current_price": 96.335,
       "avg_cost": 82.7215
     },
     "V": {
       "shares": 7,
-      "current_price": 402.259,
+      "current_price": 402.35,
       "avg_cost": 361.6657
     },
     "MA": {
       "shares": 4,
-      "current_price": 628.305,
+      "current_price": 627.925,
       "avg_cost": 529.0675
     },
     "WMT": {
       "shares": 3,
       "avg_cost": 118.06,
-      "current_price": 125.96
+      "current_price": 126.26
     },
     "PG": {
       "shares": 4,
       "avg_cost": 159.16,
-      "current_price": 168.41
+      "current_price": 168.61
     },
     "BRK-B": {
       "shares": 1,
       "avg_cost": 578.225,
-      "current_price": 570.955
+      "current_price": 571.362
     },
     "JNJ": {
       "shares": 2,
       "avg_cost": 281.56,
-      "current_price": 266.235
+      "current_price": 266.325
     },
     "JPM": {
       "shares": 1,
       "avg_cost": 331.4,
-      "current_price": 320.26
+      "current_price": 320.39
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 353.1,
-      "current_price": 348.78
+      "current_price": 348.92
     }
   },
-  "total_return_pct": 11.1,
+  "total_return_pct": 11.13,
   "total_return_usd": 0.0,
-  "today_pnl": -133.75,
-  "today_pnl_pct": -1.19,
+  "today_pnl": -131.28,
+  "today_pnl_pct": -1.17,
   "total_trades": 47,
   "today_start_value": 11244.09,
   "today_date": "2026-11-19",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-19T20:03:38Z",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-19T20:33:42Z",
   "last_session": {
-    "at": "2026-11-19T20:03:38Z",
+    "at": "2026-11-19T20:33:42Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "V",
+        -3.13
+      ],
+      [
+        "MA",
+        -2.4
+      ],
+      [
+        "JNJ",
+        -2.39
+      ],
+      [
+        "KO",
+        -1.81
+      ],
+      [
+        "USB",
+        -1.81
+      ],
+      [
+        "AXP",
+        -1.42
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-07T14:04:42Z",
-      "value": 10039.42
-    },
     {
       "timestamp": "2026-07-07T14:34:14Z",
       "value": 10050.7
@@ -2070,6 +2091,10 @@
     {
       "timestamp": "2026-11-19T20:03:38Z",
       "value": 11110.34
+    },
+    {
+      "timestamp": "2026-11-19T20:33:42Z",
+      "value": 11112.81
     }
   ]
 }
