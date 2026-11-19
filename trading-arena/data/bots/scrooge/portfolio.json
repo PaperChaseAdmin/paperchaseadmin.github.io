@@ -1,120 +1,141 @@
 {
   "cash": 208.07,
-  "total_value": 9632.53,
+  "total_value": 9642.46,
   "positions": {
     "T": {
       "shares": 82,
-      "current_price": 21.74,
+      "current_price": 21.775,
       "avg_cost": 22.4669
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 55.56,
+      "current_price": 55.7099,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 45.63,
+      "current_price": 45.655,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 337.54,
+      "current_price": 336.92,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 186.77,
+      "current_price": 187.59,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 283.0,
+      "current_price": 283.22,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 18.595,
+      "current_price": 18.64,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 34.3086
+      "current_price": 34.275
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 157.85
+      "current_price": 157.65
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 55.85
+      "current_price": 55.75
     },
     "MO": {
       "shares": 5,
-      "current_price": 74.34,
+      "current_price": 74.7,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 57.63,
+      "current_price": 57.62,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 46.655
+      "current_price": 46.6
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 46.111
+      "current_price": 46.0654
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 57.48
+      "current_price": 57.56
     },
     "WPC": {
       "shares": 3,
       "avg_cost": 65.48,
-      "current_price": 65.405
+      "current_price": 65.4
     },
     "HTGC": {
       "shares": 8,
       "avg_cost": 15.975,
-      "current_price": 15.195
+      "current_price": 15.21
     }
   },
-  "total_return_pct": -3.67,
+  "total_return_pct": -3.58,
   "total_return_usd": 0.0,
-  "today_pnl": -61.24,
-  "today_pnl_pct": -0.63,
+  "today_pnl": -51.31,
+  "today_pnl_pct": -0.53,
   "total_trades": 27,
   "today_start_value": 9693.77,
   "today_date": "2026-11-19",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-19T18:50:21Z",
+  "last_action": "Market bleeding red across the board - every watchlist stock down today. PM -2.7%, MO -2.0%, IBM -1.6%. Fear & Greed neutral at 50. This is where fortunes are made, laddie! Quality dividend aristocrat",
+  "last_updated": "2026-11-19T19:20:32Z",
   "last_session": {
-    "at": "2026-11-19T18:50:21Z",
+    "at": "2026-11-19T19:20:32Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "PM",
+        -2.7
+      ],
+      [
+        "MO",
+        -2.02
+      ],
+      [
+        "IBM",
+        -1.64
+      ],
+      [
+        "BTI",
+        -1.64
+      ],
+      [
+        "ENB",
+        -1.53
+      ],
+      [
+        "JEPI",
+        -1.43
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "Portfolio holds 17 positions, all high-yield dividend payers except GLD (me treasure reserve). Yields range 3-10%: HTGC 10%, ARCC 9%, MO/BTI/OHI 8%, JEPI/ENB 7%, T/VZ/MAIN 6%, PM/O/WPC 5%, ABBV/SCHD/VYM 3-4%. GLD down -$174 (-4.4%) but gold never loses its shine - I'll hold forever. Total return -3.67% but dividends keep compounding. Cash constraint prevents buying today. Next dividend payments will fuel DRIP reinvestment. Patience, nephew - the money bin fills one coin at a time.",
+    "outlook": "Market bleeding red across the board - every watchlist stock down today. PM -2.7%, MO -2.0%, IBM -1.6%. Fear & Greed neutral at 50. This is where fortunes are made, laddie! Quality dividend aristocrats on sale. But me coffers are near empty at $208 with $200 reserve locked away. Must wait for dividend rains to fill the vault.",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-06T19:14:57Z",
-      "value": 10010.07
-    },
     {
       "timestamp": "2026-07-06T19:45:02Z",
       "value": 10011.06
@@ -2110,6 +2131,10 @@
     {
       "timestamp": "2026-11-19T18:50:21Z",
       "value": 9632.53
+    },
+    {
+      "timestamp": "2026-11-19T19:20:32Z",
+      "value": 9642.46
     }
   ]
 }
