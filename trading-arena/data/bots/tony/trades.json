@@ -827,6 +827,42 @@
         "ticker_chg_pct": 1.93,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "SOXL",
+      "shares": 10,
+      "price": 40.73,
+      "total_value": 407.3,
+      "reasoning": "SOXL is down nearly 10% today. It's getting messy, and even I know when a trajectory is looking unstable. I'm trimming this position to shore up some liquidity before I make my next big move. We don't catch falling knives unless we have a jetpack.",
+      "timestamp": "2026-11-20T14:44:23Z",
+      "market_outlook": "Aggressive Bearish/Volatility Spike",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -9.78,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PLTR",
+      "shares": 1,
+      "price": 149.29,
+      "total_value": 149.29,
+      "reasoning": "Palantir is essential infrastructure for the modern age. A 2.8% pullback is a gift. I'm adding to my position because data is the new oil, and PLTR is the refinery.",
+      "timestamp": "2026-11-20T14:44:23Z",
+      "market_outlook": "Aggressive Bearish/Volatility Spike",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.83,
+        "trigger_news": null
+      }
     }
   ]
 }

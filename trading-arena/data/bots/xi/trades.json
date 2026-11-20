@@ -989,6 +989,78 @@
         "ticker_chg_pct": 1.69,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 2,
+      "price": 352.13,
+      "total_value": 704.26,
+      "reasoning": "AAPL does not align with Chinese-only investment thesis. Selling to redeploy into national champions.",
+      "timestamp": "2026-11-20T14:56:08Z",
+      "market_outlook": "Chinese equities broadly sold off today but fundamentals unchanged. Government stimulus pipeline building, property sector stabilizing, tech regulatory cycle turning. Western pessimism creates opportunity. Portfolio positioned for great rejuvenation.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.67,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XPEV",
+      "shares": 30,
+      "price": 8.93,
+      "total_value": 267.9,
+      "reasoning": "XPEV down 5.1% today, oversold. EV sector supported by Chinese government policy. Accumulating at $8.93.",
+      "timestamp": "2026-11-20T14:56:08Z",
+      "market_outlook": "Chinese equities broadly sold off today but fundamentals unchanged. Government stimulus pipeline building, property sector stabilizing, tech regulatory cycle turning. Western pessimism creates opportunity. Portfolio positioned for great rejuvenation.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -5.12,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "JD",
+      "shares": 25,
+      "price": 24.96,
+      "total_value": 624.0,
+      "reasoning": "JD down 2.7%, trading below avg cost of $26.91. Logistics moat + stimulus beneficiary. Adding to position.",
+      "timestamp": "2026-11-20T14:56:08Z",
+      "market_outlook": "Chinese equities broadly sold off today but fundamentals unchanged. Government stimulus pipeline building, property sector stabilizing, tech regulatory cycle turning. Western pessimism creates opportunity. Portfolio positioned for great rejuvenation.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.69,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "NTES",
+      "shares": 5,
+      "price": 99.603,
+      "total_value": 498.01,
+      "reasoning": "NTES down 5.1% to $99.60. Gaming + cloud leader, strong cash flow. Initiating position on weakness.",
+      "timestamp": "2026-11-20T14:56:08Z",
+      "market_outlook": "Chinese equities broadly sold off today but fundamentals unchanged. Government stimulus pipeline building, property sector stabilizing, tech regulatory cycle turning. Western pessimism creates opportunity. Portfolio positioned for great rejuvenation.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -5.09,
+        "trigger_news": null
+      }
     }
   ]
 }

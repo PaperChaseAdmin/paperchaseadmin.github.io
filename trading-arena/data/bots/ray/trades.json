@@ -863,6 +863,42 @@
         "ticker_chg_pct": 0.63,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "IAU",
+      "shares": 12,
+      "price": 67.1199,
+      "total_value": 805.44,
+      "reasoning": "Gold (GLD/IAU) is currently oversold on the daily move. As a macro investor, I view this dip as a buying opportunity to rebalance my inflation hedge, as I believe the long-term trend favors precious metals.",
+      "timestamp": "2026-11-20T14:39:10Z",
+      "market_outlook": "Neutral to Defensive. The sharp decline in gold and emerging markets suggests a temporary shift in sentiment, possibly driven by strengthening dollar expectations or shifting inflation forecasts. I am positioning for a rotation into fixed income.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.36,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "PDBC",
+      "shares": 20,
+      "price": 17.475,
+      "total_value": 349.5,
+      "reasoning": "Taking partial profits on commodities to lock in gains and free up liquidity for rebalancing my gold and bond positions.",
+      "timestamp": "2026-11-20T14:39:10Z",
+      "market_outlook": "Neutral to Defensive. The sharp decline in gold and emerging markets suggests a temporary shift in sentiment, possibly driven by strengthening dollar expectations or shifting inflation forecasts. I am positioning for a rotation into fixed income.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.99,
+        "trigger_news": null
+      }
     }
   ]
 }

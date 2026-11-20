@@ -1,15 +1,15 @@
 {
-  "cash": 1960.91,
-  "total_value": 9968.83,
+  "cash": 1504.97,
+  "total_value": 9895.57,
   "positions": {
     "DJP": {
       "shares": 10,
-      "current_price": 46.365,
+      "current_price": 46.0,
       "avg_cost": 44.55
     },
     "PDBC": {
-      "shares": 71,
-      "current_price": 17.635,
+      "shares": 51,
+      "current_price": 17.475,
       "avg_cost": 16.7704
     },
     "GSG": {
@@ -19,52 +19,73 @@
     },
     "GLD": {
       "shares": 5,
-      "current_price": 335.74,
+      "current_price": 327.27,
       "avg_cost": 358.842
     },
     "TLT": {
       "shares": 25,
-      "current_price": 80.365,
+      "current_price": 80.82,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 90.805
+      "current_price": 91.25
     },
     "IAU": {
-      "shares": 17,
-      "current_price": 68.855,
-      "avg_cost": 69.8247
+      "shares": 29,
+      "current_price": 67.1199,
+      "avg_cost": 68.7055
     }
   },
-  "total_return_pct": -0.31,
+  "total_return_pct": -1.04,
   "total_return_usd": 0.0,
-  "today_pnl": -25.84,
-  "today_pnl_pct": -0.26,
-  "total_trades": 48,
-  "today_start_value": 9994.67,
-  "today_date": "2026-11-19",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-19T20:37:31Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 50,
+  "today_start_value": 9895.57,
+  "today_date": "2026-11-20",
+  "last_action": "Neutral to Defensive. The sharp decline in gold and emerging markets suggests a temporary shift in sentiment, possibly driven by strengthening dollar expectations or shifting inflation forecasts. I am",
+  "last_updated": "2026-11-20T14:39:10Z",
   "last_session": {
-    "at": "2026-11-19T20:37:31Z",
+    "at": "2026-11-20T14:39:10Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GLD",
+        -2.37
+      ],
+      [
+        "IAU",
+        -2.36
+      ],
+      [
+        "GDX",
+        -2.03
+      ],
+      [
+        "EEM",
+        -1.95
+      ],
+      [
+        "VWO",
+        -1.56
+      ],
+      [
+        "FXI",
+        -0.99
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The portfolio is currently overweight commodities (DJP, PDBC, GSG) which have performed well, but the recent dip in GLD/IAU creates a tactical opportunity to rebalance. I am moving some commodity gains into TLT to bolster the deflation/recession hedge component of my All Weather strategy.",
+    "outlook": "Neutral to Defensive. The sharp decline in gold and emerging markets suggests a temporary shift in sentiment, possibly driven by strengthening dollar expectations or shifting inflation forecasts. I am positioning for a rotation into fixed income.",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-07T14:41:08Z",
-      "value": 9956.36
-    },
     {
       "timestamp": "2026-07-07T15:11:41Z",
       "value": 9947.82
@@ -2060,6 +2081,10 @@
     {
       "timestamp": "2026-11-19T20:37:31Z",
       "value": 9968.83
+    },
+    {
+      "timestamp": "2026-11-20T14:39:10Z",
+      "value": 9895.57
     }
   ]
 }
