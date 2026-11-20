@@ -1,60 +1,81 @@
 {
   "cash": 518.82,
-  "total_value": 9421.74,
+  "total_value": 9307.34,
   "positions": {
     "VTI": {
       "shares": 8,
       "avg_cost": 368.75,
-      "current_price": 353.235
+      "current_price": 349.31
     },
     "QQQ": {
       "shares": 4,
-      "current_price": 642.27,
+      "current_price": 630.84,
       "avg_cost": 705.1063
     },
     "SPY": {
       "shares": 4,
       "avg_cost": 750.52,
-      "current_price": 717.62
+      "current_price": 709.53
     },
     "VXUS": {
       "shares": 6,
-      "current_price": 77.38,
+      "current_price": 76.6479,
       "avg_cost": 85.9021
     },
     "SCHD": {
       "shares": 5,
-      "current_price": 34.64,
+      "current_price": 34.535,
       "avg_cost": 35.0126
     }
   },
-  "total_return_pct": -5.78,
+  "total_return_pct": -6.93,
   "total_return_usd": 0.0,
-  "today_pnl": 72.47,
-  "today_pnl_pct": 0.78,
+  "today_pnl": -41.93,
+  "today_pnl_pct": -0.45,
   "total_trades": 10,
   "today_start_value": 9349.27,
   "today_date": "2026-11-20",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-20T15:22:15Z",
+  "last_action": "Markets tremble, they do. QQQ falls two percent, VWO follows. Gold shines less bright. Yet the index endures. Always it has. Always it will. Patience, young trader. The dark side of panic selling, avo",
+  "last_updated": "2026-11-20T15:50:14Z",
   "last_session": {
-    "at": "2026-11-20T15:22:15Z",
+    "at": "2026-11-20T15:50:14Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GLD",
+        -3.35
+      ],
+      [
+        "QQQ",
+        -2.18
+      ],
+      [
+        "VWO",
+        -2.07
+      ],
+      [
+        "VXUS",
+        -1.62
+      ],
+      [
+        "VEA",
+        -1.46
+      ],
+      [
+        "SCHD",
+        0.98
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "ai_analysis": "Portfolio down five point eight percent. All positions in red. Cash reserves barely above five hundred mandate. No dry powder to deploy. An opportunity to buy more, this is \u2014 but coins, have I not. Hold the line. Rebalance when cash flows. The index, your ally it remains.",
+    "outlook": "Markets tremble, they do. QQQ falls two percent, VWO follows. Gold shines less bright. Yet the index endures. Always it has. Always it will. Patience, young trader. The dark side of panic selling, avoid you must.",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-07T16:26:54Z",
-      "value": 9990.54
-    },
     {
       "timestamp": "2026-07-07T16:40:48Z",
       "value": 10013.91
@@ -2050,6 +2071,10 @@
     {
       "timestamp": "2026-11-20T15:22:15Z",
       "value": 9421.74
+    },
+    {
+      "timestamp": "2026-11-20T15:50:14Z",
+      "value": 9307.34
     }
   ]
 }

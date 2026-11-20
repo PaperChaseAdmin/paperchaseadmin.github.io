@@ -1,35 +1,35 @@
 {
   "cash": 3146.68,
-  "total_value": 9895.75,
+  "total_value": 9870.24,
   "positions": {
     "DJP": {
       "shares": 10,
-      "current_price": 45.805,
+      "current_price": 45.7094,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 51,
-      "current_price": 17.495,
+      "current_price": 17.39,
       "avg_cost": 16.7704
     },
     "GSG": {
       "shares": 30,
-      "current_price": 32.41,
+      "current_price": 32.26,
       "avg_cost": 32.0725
     },
     "TLT": {
       "shares": 25,
-      "current_price": 80.78,
+      "current_price": 81.11,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 91.21
+      "current_price": 91.435
     },
     "IAU": {
       "shares": 29,
-      "current_price": 67.27,
+      "current_price": 66.44,
       "avg_cost": 68.7055
     },
     "TIPS": {
@@ -38,58 +38,29 @@
       "current_price": 0.0009
     }
   },
-  "total_return_pct": -1.04,
+  "total_return_pct": -1.3,
   "total_return_usd": 0.0,
-  "today_pnl": 0.18,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -25.33,
+  "today_pnl_pct": -0.26,
   "total_trades": 52,
   "today_start_value": 9895.57,
   "today_date": "2026-11-20",
-  "last_action": "Transitioning toward an inflationary regime. While equities and gold are showing weakness, the surge in TIPS suggests the market is pricing in higher inflation expectations. I am shifting weight from ",
-  "last_updated": "2026-11-20T15:09:09Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-11-20T15:38:46Z",
   "last_session": {
-    "at": "2026-11-20T15:09:09Z",
+    "at": "2026-11-20T15:38:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "TIPS",
-        12.5
-      ],
-      [
-        "GLD",
-        -2.03
-      ],
-      [
-        "IAU",
-        -1.99
-      ],
-      [
-        "EEM",
-        -1.35
-      ],
-      [
-        "DJP",
-        -1.15
-      ],
-      [
-        "VWO",
-        -1.01
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The portfolio is currently suffering from a drawdown in gold (GLD/IAU) and commodities (DJP/PDBC). However, the massive spike in TIPS is a clear macro signal. I am rebalancing to favor inflation protection while maintaining a bond cushion to protect against potential growth deceleration. I am keeping cash levels above the $1000 threshold to ensure liquidity for further rebalancing.",
-    "outlook": "Transitioning toward an inflationary regime. While equities and gold are showing weakness, the surge in TIPS suggests the market is pricing in higher inflation expectations. I am shifting weight from precious metals toward inflation-linked bonds and commodities.",
-    "trades_made": 2
+    "ai_analysis": "",
+    "outlook": "Analysis unavailable",
+    "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-07T16:14:33Z",
-      "value": 9941.41
-    },
     {
       "timestamp": "2026-07-07T16:37:46Z",
       "value": 9958.53
@@ -2085,6 +2056,10 @@
     {
       "timestamp": "2026-11-20T15:09:09Z",
       "value": 9895.75
+    },
+    {
+      "timestamp": "2026-11-20T15:38:46Z",
+      "value": 9870.24
     }
   ]
 }
