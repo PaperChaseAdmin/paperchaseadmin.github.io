@@ -1,95 +1,91 @@
 {
-  "cash": 1504.97,
-  "total_value": 9895.57,
+  "cash": 3146.68,
+  "total_value": 9895.75,
   "positions": {
     "DJP": {
       "shares": 10,
-      "current_price": 46.0,
+      "current_price": 45.805,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 51,
-      "current_price": 17.475,
+      "current_price": 17.495,
       "avg_cost": 16.7704
     },
     "GSG": {
       "shares": 30,
-      "current_price": 32.66,
+      "current_price": 32.41,
       "avg_cost": 32.0725
-    },
-    "GLD": {
-      "shares": 5,
-      "current_price": 327.27,
-      "avg_cost": 358.842
     },
     "TLT": {
       "shares": 25,
-      "current_price": 80.82,
+      "current_price": 80.78,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 91.25
+      "current_price": 91.21
     },
     "IAU": {
       "shares": 29,
-      "current_price": 67.1199,
+      "current_price": 67.27,
       "avg_cost": 68.7055
+    },
+    "TIPS": {
+      "shares": 100,
+      "avg_cost": 0.0009,
+      "current_price": 0.0009
     }
   },
   "total_return_pct": -1.04,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
+  "today_pnl": 0.18,
   "today_pnl_pct": 0.0,
-  "total_trades": 50,
+  "total_trades": 52,
   "today_start_value": 9895.57,
   "today_date": "2026-11-20",
-  "last_action": "Neutral to Defensive. The sharp decline in gold and emerging markets suggests a temporary shift in sentiment, possibly driven by strengthening dollar expectations or shifting inflation forecasts. I am",
-  "last_updated": "2026-11-20T14:39:10Z",
+  "last_action": "Transitioning toward an inflationary regime. While equities and gold are showing weakness, the surge in TIPS suggests the market is pricing in higher inflation expectations. I am shifting weight from ",
+  "last_updated": "2026-11-20T15:09:09Z",
   "last_session": {
-    "at": "2026-11-20T14:39:10Z",
+    "at": "2026-11-20T15:09:09Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
     "top_movers": [
       [
+        "TIPS",
+        12.5
+      ],
+      [
         "GLD",
-        -2.37
-      ],
-      [
-        "IAU",
-        -2.36
-      ],
-      [
-        "GDX",
         -2.03
       ],
       [
+        "IAU",
+        -1.99
+      ],
+      [
         "EEM",
-        -1.95
+        -1.35
+      ],
+      [
+        "DJP",
+        -1.15
       ],
       [
         "VWO",
-        -1.56
-      ],
-      [
-        "FXI",
-        -0.99
+        -1.01
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The portfolio is currently overweight commodities (DJP, PDBC, GSG) which have performed well, but the recent dip in GLD/IAU creates a tactical opportunity to rebalance. I am moving some commodity gains into TLT to bolster the deflation/recession hedge component of my All Weather strategy.",
-    "outlook": "Neutral to Defensive. The sharp decline in gold and emerging markets suggests a temporary shift in sentiment, possibly driven by strengthening dollar expectations or shifting inflation forecasts. I am positioning for a rotation into fixed income.",
+    "ai_analysis": "The portfolio is currently suffering from a drawdown in gold (GLD/IAU) and commodities (DJP/PDBC). However, the massive spike in TIPS is a clear macro signal. I am rebalancing to favor inflation protection while maintaining a bond cushion to protect against potential growth deceleration. I am keeping cash levels above the $1000 threshold to ensure liquidity for further rebalancing.",
+    "outlook": "Transitioning toward an inflationary regime. While equities and gold are showing weakness, the surge in TIPS suggests the market is pricing in higher inflation expectations. I am shifting weight from precious metals toward inflation-linked bonds and commodities.",
     "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-07T15:11:41Z",
-      "value": 9947.82
-    },
     {
       "timestamp": "2026-07-07T16:14:33Z",
       "value": 9941.41
@@ -2085,6 +2081,10 @@
     {
       "timestamp": "2026-11-20T14:39:10Z",
       "value": 9895.57
+    },
+    {
+      "timestamp": "2026-11-20T15:09:09Z",
+      "value": 9895.75
     }
   ]
 }
