@@ -899,6 +899,42 @@
         "ticker_chg_pct": -0.99,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TIPS",
+      "shares": 100,
+      "price": 0.0009,
+      "total_value": 0.09,
+      "reasoning": "Inflationary signals are emerging as evidenced by the massive 12.5% move in TIPS. To maintain an All Weather profile, I need to increase my exposure to inflation-protected securities to hedge against rising price levels.",
+      "timestamp": "2026-11-20T15:09:09Z",
+      "market_outlook": "Transitioning toward an inflationary regime. While equities and gold are showing weakness, the surge in TIPS suggests the market is pricing in higher inflation expectations. I am shifting weight from precious metals toward inflation-linked bonds and commodities.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 12.5,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GLD",
+      "shares": 5,
+      "price": 328.3599,
+      "total_value": 1641.8,
+      "reasoning": "Gold is seeing significant downward pressure today (-2.03%). I am trimming this position to reduce the drag on the portfolio and reallocate capital toward more responsive inflation hedges like TIPS.",
+      "timestamp": "2026-11-20T15:09:09Z",
+      "market_outlook": "Transitioning toward an inflationary regime. While equities and gold are showing weakness, the surge in TIPS suggests the market is pricing in higher inflation expectations. I am shifting weight from precious metals toward inflation-linked bonds and commodities.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -2.03,
+        "trigger_news": null
+      }
     }
   ]
 }
