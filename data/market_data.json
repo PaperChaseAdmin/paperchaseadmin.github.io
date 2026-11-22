@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T12:05:11Z",
+  "updated_at": "2026-11-22T20:01:31Z",
   "crypto": {
     "fear_greed": {
       "value": 11,
@@ -11,78 +11,100 @@
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price_usd": 61029,
-        "change_24h": 5.06,
-        "market_cap": 1227738282576,
-        "volume_24h": 36806776004
+        "price_usd": 60653,
+        "change_24h": 0.65,
+        "market_cap": 1220078741616,
+        "volume_24h": 28993694632
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price_usd": 1708.2,
-        "change_24h": 3.53,
-        "market_cap": 208848140859,
-        "volume_24h": 9762699954
+        "price_usd": 1713.12,
+        "change_24h": 1.71,
+        "market_cap": 209415114616,
+        "volume_24h": 7785110884
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price_usd": 552.63,
-        "change_24h": 4.37,
-        "market_cap": 72677626262,
-        "volume_24h": 565962398
+        "price_usd": 555.55,
+        "change_24h": 1.2,
+        "market_cap": 73059962178,
+        "volume_24h": 476512615
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price_usd": 0.928144,
-        "change_24h": 2.95,
-        "market_cap": 58945687036,
-        "volume_24h": 1305606599
+        "price_usd": 0.927361,
+        "change_24h": -0.86,
+        "market_cap": 58902832024,
+        "volume_24h": 1051711542
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price_usd": 70.6,
-        "change_24h": 2.78,
-        "market_cap": 41792968497,
-        "volume_24h": 2313025180
+        "price_usd": 70.19,
+        "change_24h": -0.43,
+        "market_cap": 41553291953,
+        "volume_24h": 1802726079
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price_usd": 0.055376,
-        "change_24h": 3.21,
-        "market_cap": 8683301661,
-        "volume_24h": 417720967
+        "price_usd": 0.055041,
+        "change_24h": -0.29,
+        "market_cap": 8633233435,
+        "volume_24h": 331946004
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price_usd": 8.81,
-        "change_24h": 4.32,
-        "market_cap": 6751433429,
-        "volume_24h": 177299321
+        "price_usd": 8.79,
+        "change_24h": 1.79,
+        "market_cap": 6741924927,
+        "volume_24h": 157386794
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price_usd": 0.145758,
-        "change_24h": 4.0,
-        "market_cap": 5476727339,
-        "volume_24h": 245589979
+        "price_usd": 0.144314,
+        "change_24h": -0.52,
+        "market_cap": 5423186492,
+        "volume_24h": 189312988
       },
       {
         "symbol": "AVAX",
         "name": "Avalanche",
         "price_usd": 6.69,
-        "change_24h": 4.16,
-        "market_cap": 2988762185,
-        "volume_24h": 128025658
+        "change_24h": 0.86,
+        "market_cap": 2986846930,
+        "volume_24h": 109552425
       }
     ],
     "top_mentioned": [],
     "news": [
+      {
+        "title": "More on the pending oversight hearings: State of Crypto",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/",
+        "published": "Sun, 22 Nov 2026 19:30:00 +0000",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
+        "source": "CoinDesk",
+        "url": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins",
+        "published": "Sun, 22 Nov 2026 14:00:00 +0000",
+        "assets": [
+          "BTC"
+        ],
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
+      },
       {
         "title": "Bitcoin rebounds above $60,000 after $1.8 billion crypto liquidation wave",
         "source": "CoinDesk",
@@ -96,27 +118,14 @@
         "color": "green"
       },
       {
-        "title": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
-        "published": "Sat, 21 Nov 2026 16:41:00 +0000",
+        "title": "The future of onchain FX could start with users, not institutional liquidity",
+        "source": "Cointelegraph",
+        "url": "https://cointelegraph.com/opinion/future-onchain-fx-could-start-with-users-not-institutional-liquidity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published": "Sun, 22 Nov 2026 14:30:00 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
-        "source": "CoinDesk",
-        "url": "https://www.coindesk.com/markets/2026/11/21/ether-treasury-firm-btcs-warns-sec-its-usd54-million-aave-loan-could-be-liquidated",
-        "published": "Sat, 21 Nov 2026 12:30:00 +0000",
-        "assets": [
-          "BTC",
-          "ETH"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "Here’s what happened in crypto today",
@@ -141,14 +150,14 @@
         "color": "red"
       },
       {
-        "title": "South Korean exchanges halt CYBER transfers amid suspected bridge exploit",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published": "Sun, 22 Nov 2026 07:24:05 +0000",
+        "title": "Google's Quantum Chip Beats Classical Limits in 'Impossible' Game",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/383743/googles-quantum-chip-beats-classical-limits-in-impossible-game-tests-105-qubits",
+        "published": "Sun, 22 Nov 2026 14:01:02 +0000",
         "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
         "title": "GTA 6 Leaker Dangles a PC Port Behind a $15 Million Crypto Pump",
@@ -171,20 +180,20 @@
         "color": "red"
       },
       {
-        "title": "Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots to Fight It",
-        "source": "Decrypt",
-        "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
-        "published": "Sat, 21 Nov 2026 16:01:02 +0000",
+        "title": "Wagyu’s $13.5 million token crash exposes another coin with 99.9% held by one wallet",
+        "source": "CryptoSlate",
+        "url": "https://cryptoslate.com/wagyus-13-5-million-token-crash-exposes-another-coin-with-99-9-held-by-one-wallet/",
+        "published": "Sun, 22 Nov 2026 19:05:03 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       },
       {
-        "title": "Bitcoin’s $60,000 breakdown puts December Fed decision under the spotlight",
+        "title": "UK to ban crypto exchanges from making markets on their own platforms as Bitcoin rules change",
         "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/bitcoin-below-60000-fed-half-point-cpi/",
-        "published": "Sun, 22 Nov 2026 12:00:04 +0000",
+        "url": "https://cryptoslate.com/uk-to-ban-crypto-exchanges-from-making-markets-on-their-own-platforms-as-bitcoin-rules-change/",
+        "published": "Sun, 22 Nov 2026 18:05:49 +0000",
         "assets": [
           "BTC"
         ],
@@ -193,32 +202,22 @@
         "color": "red"
       },
       {
-        "title": "Bitcoin shorts collapsed 79% in five weeks, then the market turned lower",
+        "title": "XRP’s institutional adoption story has a catch that investors may be overlooking",
         "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/bitcoin-shorts-collapsed-79-in-five-weeks-then-the-market-turned-lower/",
-        "published": "Sun, 22 Nov 2026 09:30:45 +0000",
+        "url": "https://cryptoslate.com/xrps-institutional-adoption-story-has-a-catch-that-investors-may-be-overlooking/",
+        "published": "Sun, 22 Nov 2026 17:05:07 +0000",
         "assets": [
-          "BTC"
+          "XRP"
         ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Hackers replaced a DeepSeek model for 53 hours and stripped away its safety protections",
-        "source": "CryptoSlate",
-        "url": "https://cryptoslate.com/hackers-swapped-a-hosted-deepseek-model-for-53-hours-and-stripped-away-its-safety-protections/",
-        "published": "Sat, 21 Nov 2026 21:30:30 +0000",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       }
     ],
     "news_sentiment": {
-      "score": -0.389,
-      "label": "Bearish",
-      "color": "red"
+      "score": -0.056,
+      "label": "Neutral",
+      "color": "yellow"
     },
     "polymarket": [],
     "polymarket_summary": "",
@@ -229,77 +228,77 @@
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 5 bullish vs 7 bearish signals detected across crypto news data."
+      "summary": "Mixed: 8 bullish vs 6 bearish signals detected across crypto news data."
     },
     "fourchain": {
-      "thread_count": 198,
-      "active_threads": 127,
+      "thread_count": 201,
+      "active_threads": 132,
       "mentions": {
-        "BTC": 18,
-        "XRP": 5,
+        "BTC": 12,
+        "XRP": 7,
         "BNB": 4
       },
-      "bullish_hits": 82,
-      "bearish_hits": 70,
-      "bullish_pct": 54,
+      "bullish_hits": 79,
+      "bearish_hits": 71,
+      "bullish_pct": 53,
       "top_coin": "BTC",
       "top_posts": [
-        "/smg/ - stock market general the big pop edition &gt;links if you got liquidated friday https://suicidepreventionlifelin",
         "/smg/ - stock market general cinema edition &gt;links if you got liquidated friday https://suicidepreventionlifeline.o r",
+        "/smg/ - stock market general discount edition &gt;charts: https://www.tradingview.com https://www.finscreener.com https:",
+        "/smg/ - stock market general the end of the humanoids edition &gt;charts: https://www.tradingview.com https://www.finscr",
         "/pmg/ - precious metals general bargain prices edition &gt;why precious metals? https://youtu.be/i3s4rl6ehii https://you",
-        "/smg/ - stock market general eye of the storm edition &gt;links if you got liquidated friday https://suicidepreventionli",
-        "/smg/ - stock market general an entire year of gains gone edition &gt;links if you got liquidated friday https://suicide"
+        "/smg/ - stock market general east of the rockies, you&#039;re on the air edition &gt;charts: https://www.tradingview.com"
       ]
     },
     "cg_trending": [
       {
-        "symbol": "WASTED",
-        "name": "WASTED",
-        "rank": 913,
+        "symbol": "WSTAR",
+        "name": "Wanted Star",
+        "rank": 943,
         "score": 0,
-        "change_24h": -15.21
+        "change_24h": -39.41
+      },
+      {
+        "symbol": "POPO",
+        "name": "Popo The Turtle",
+        "rank": 752,
+        "score": 1,
+        "change_24h": 76.82
       },
       {
         "symbol": "TRUMP",
         "name": "Official Trump",
         "rank": 135,
-        "score": 1,
-        "change_24h": 6.12
+        "score": 2,
+        "change_24h": 1.38
       },
       {
-        "symbol": "BTC",
-        "name": "Bitcoin",
-        "rank": 1,
-        "score": 2,
-        "change_24h": 4.97
+        "symbol": "NEAR",
+        "name": "NEAR Protocol",
+        "rank": 23,
+        "score": 3,
+        "change_24h": 4.25
       },
       {
         "symbol": "PENGU",
         "name": "Pudgy Penguins",
         "rank": 130,
-        "score": 3,
-        "change_24h": 3.1
-      },
-      {
-        "symbol": "PIEVERSE",
-        "name": "Pieverse",
-        "rank": 61,
         "score": 4,
-        "change_24h": 54.54
+        "change_24h": -0.54
       },
       {
         "symbol": "VVV",
         "name": "Venice Token",
         "rank": 60,
         "score": 5,
-        "change_24h": 14.96
+        "change_24h": 8.64
       },
       {
-        "symbol": "PEARL",
-        "name": "Pearl",
-        "rank": 78,
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "rank": 1,
         "score": 6,
-        "change_24h": 17.24
+        "change_24h": 0.59
       }
     ]
   },
@@ -382,230 +381,226 @@
     "top_mentioned": [],
     "news": [
       {
-        "title": "US Power Advantage Over China Shrinks Further on Iran War Effect",
+        "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-22/us-power-advantage-over-china-shrinks-further-on-iran-war-effect",
-        "published": "Sun, 22 Nov 2026 11:30:00 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-22/goldman-traders-see-entry-point-in-us-stocks-but-warn-of-risks",
+        "published": "Sun, 22 Nov 2026 19:05:02 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "China Lowers Margin Requirement to 80% to Boost Stock Liquidity",
+        "title": "Compass Plans to Move Main Listing to New York, FT Says",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-22/china-lowers-margin-requirement-to-80-to-boost-stock-liquidity",
-        "published": "Sun, 22 Nov 2026 11:06:19 GMT",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-22/compass-plans-to-move-primary-listing-from-london-to-ny-ft-says",
+        "published": "Sun, 22 Nov 2026 17:08:04 GMT",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "From Squeezes to Meltdown, a Week of Mayhem Rocks Metals Markets",
+        "title": "Market Anxiety Over Tech Trade, Governors Release AI Framework, Game On for the Holidays",
         "source": "Bloomberg",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-22/from-squeezes-to-meltdown-a-week-of-mayhem-rocks-metals-markets",
-        "published": "Sun, 22 Nov 2026 11:00:00 GMT",
-        "assets": [
-          "META"
-        ],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "Tech outages are fueling a new doomsday economy",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
-        "published": "Sat, 21 Nov 2026 15:04:56 GMT",
+        "url": "https://www.bloomberg.com/news/videos/2026-11-22/bloomberg-this-weekend-11-22-2026-video",
+        "published": "Sun, 22 Nov 2026 17:27:24 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
+        "title": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
         "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
-        "published": "Sat, 21 Nov 2026 16:57:34 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
-        "source": "CNBC",
-        "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
-        "published": "Sun, 22 Nov 2026 06:00:01 GMT",
-        "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
-      },
-      {
-        "title": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-        "published": "Sun, 22 Nov 2026 01:15:00 GMT",
+        "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+        "published": "Sun, 22 Nov 2026 17:14:03 GMT",
         "assets": [],
         "sentiment": "Bearish",
         "score": -1.0,
         "color": "red"
       },
       {
-        "title": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
-        "published": "Sun, 22 Nov 2026 00:03:00 GMT",
+        "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+        "published": "Sun, 22 Nov 2026 18:55:05 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "I’m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
-        "source": "MarketWatch",
-        "url": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
-        "published": "Sat, 21 Nov 2026 23:05:00 GMT",
-        "assets": [],
-        "sentiment": "Bearish",
-        "score": -1.0,
-        "color": "red"
-      },
-      {
-        "title": "United Airlines Is Torn By Powerful Competing Forces",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4970918-united-airlines-is-torn-by-powerful-competing-forces?source=feed_all_articles",
-        "published": "Sun, 22 Nov 2026 06:51:28 -0500",
+        "title": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html",
+        "published": "Sun, 22 Nov 2026 13:00:01 GMT",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Comcast: The NBCUniversal Spin-Off Is Why I'm Upgrading To Buy (Rating Upgrade)",
-        "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4970917-comcast-stock-nbcuniversal-spin-off-is-why-upgrading-to-buy-rating-upgrade?source=feed_all_articles",
-        "published": "Sun, 22 Nov 2026 06:39:19 -0500",
+        "title": "Medicare beneficiaries could skip the nursing home for cheaper care at home under new bill",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/medicare-beneficiaries-could-skip-the-nursing-home-for-cheaper-care-at-home-under-new-bill-e289c8d0?mod=mw_rss_topstories",
+        "published": "Sun, 22 Nov 2026 19:24:00 GMT",
         "assets": [],
         "sentiment": "Bullish",
         "score": 1.0,
         "color": "green"
       },
       {
-        "title": "Solid Power: Sell This Value Trap (Rating Downgrade)",
+        "title": "These little-known investments could be among the best bargains in a crash",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/these-little-known-investments-could-be-among-the-best-bargains-in-a-crash-78a379b4?mod=mw_rss_topstories",
+        "published": "Sun, 22 Nov 2026 18:23:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 0.333,
+        "color": "green"
+      },
+      {
+        "title": "Private equity has been buying up hospice centers — with striking consequences",
+        "source": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/private-equity-has-been-buying-up-hospice-centers-with-striking-consequences-63642545?mod=mw_rss_topstories",
+        "published": "Sun, 22 Nov 2026 17:22:00 GMT",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "RPV: Why Value May Lose Its Advantage",
         "source": "SeekingAlpha",
-        "url": "https://seekingalpha.com/article/4970916-solid-power-stock-sell-this-value-trap?source=feed_all_articles",
-        "published": "Sun, 22 Nov 2026 06:21:37 -0500",
+        "url": "https://seekingalpha.com/article/4970940-rpv-why-value-may-lose-its-advantage?source=feed_all_articles",
+        "published": "Sun, 22 Nov 2026 14:47:38 -0500",
+        "assets": [],
+        "sentiment": "Neutral",
+        "score": 0.0,
+        "color": "yellow"
+      },
+      {
+        "title": "Wall Street Brunch: Can AI Bulls Get Up Off The Canvas?",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4970939-wall-street-brunch-can-ai-bulls-get-up-off-the-canvas?source=feed_all_articles",
+        "published": "Sun, 22 Nov 2026 13:34:00 -0500",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
+      },
+      {
+        "title": "Take-Two's Guide Implies A Q4 Loss, I'd Wait",
+        "source": "SeekingAlpha",
+        "url": "https://seekingalpha.com/article/4970938-take-two-stock-guide-implies-a-q4-loss-id-wait?source=feed_all_articles",
+        "published": "Sun, 22 Nov 2026 11:44:15 -0500",
         "assets": [],
         "sentiment": "Bearish",
-        "score": -0.333,
+        "score": -1.0,
         "color": "red"
       },
       {
-        "title": "Elon Musk’s SpaceX is betting $74 billion on AI data centers. Texas and Arizona want to know who pays for the power",
+        "title": "Ronald Reagan said you can achieve anything—if you don’t care who gets the credit. Abdul El-Sayed channels that wisdom with ‘TrumpCare for all’",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/11/22/spacex-74-billion-ai-data-centers-texas-arizona-who-pays/",
-        "published": "Sun, 22 Nov 2026 11:25:00 +0000",
+        "url": "https://fortune.com/2026/11/22/ronald-reagan-adbul-el-sayed-trumpcare-for-all-medicare-aca-health-insurance-costs/",
+        "published": "Sun, 22 Nov 2026 19:46:28 +0000",
         "assets": [],
         "sentiment": "Neutral",
         "score": 0.0,
         "color": "yellow"
       },
       {
-        "title": "Jeff Bezos donated $198.9 million in Amazon stock in two days, including shares he’s held since 1994",
+        "title": "High-end genealogy travel is booming, offering luxe journeys to the roots of your family tree",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/11/22/jeff-bezos-amazon-stock-donations-200-million-school-earth-fund/",
-        "published": "Sun, 22 Nov 2026 11:20:00 +0000",
-        "assets": [
-          "AMZN"
-        ],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "url": "https://fortune.com/2026/11/22/high-end-genealogy-travel-luxury-family-tree-italy/",
+        "published": "Sun, 22 Nov 2026 19:45:00 +0000",
+        "assets": [],
+        "sentiment": "Bullish",
+        "score": 1.0,
+        "color": "green"
       },
       {
-        "title": "This 71-year-old cattleman’s farm brings in $30 million a year. He says the cattle cycle that built it is broken",
+        "title": "Alibaba and Tencent put their faith in Chinese chips as U.S. curbs threatens to slow down their AI development",
         "source": "Fortune",
-        "url": "https://fortune.com/2026/11/22/meet-fouth-generation-cattleman-will-harris-cattle-cycle-broken/",
-        "published": "Sun, 22 Nov 2026 11:18:00 +0000",
+        "url": "https://fortune.com/2026/11/20/tencent-alibaba-us-chip-curbs-cloud-ai/",
+        "published": "Fri, 20 Nov 2026 12:44:51 +0000",
         "assets": [],
-        "sentiment": "Neutral",
-        "score": 0.0,
-        "color": "yellow"
+        "sentiment": "Bearish",
+        "score": -1.0,
+        "color": "red"
       }
     ],
     "news_sentiment": {
-      "score": -0.156,
+      "score": 0.089,
       "label": "Neutral",
       "color": "yellow"
     },
     "polymarket": [
       {
-        "title": "Will FC Barcelona win on 2026-11-22?",
-        "volume_24h": 955863,
-        "yes_price": 0.83,
-        "url": "https://polymarket.com/market/lal-bar-vil-2026-11-22-bar"
-      },
-      {
-        "title": "Will Juventus FC win on 2026-11-22?",
-        "volume_24h": 377990,
-        "yes_price": 0.59,
-        "url": "https://polymarket.com/market/sea-juv-ven-2026-11-22-juv"
-      },
-      {
-        "title": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-        "volume_24h": 361515,
-        "yes_price": 0.07,
-        "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635"
-      },
-      {
-        "title": "Will \"Mo Bamba\" by Sheck Wes be on the radio in GTA VI at launch?",
-        "volume_24h": 317596,
-        "yes_price": 0.97,
-        "url": "https://polymarket.com/market/will-mo-bamba-be-on-gta-vi-radio-at-launch"
-      },
-      {
         "title": "Will the U.S. invade Iran before 2027?",
-        "volume_24h": 297774,
+        "volume_24h": 268418,
         "yes_price": 0.06,
         "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
       },
       {
-        "title": "Will Villarreal CF win on 2026-11-22?",
-        "volume_24h": 289843,
-        "yes_price": 0.07,
-        "url": "https://polymarket.com/market/lal-bar-vil-2026-11-22-vil"
-      },
-      {
-        "title": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-        "volume_24h": 216807,
-        "yes_price": 0.9,
-        "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636"
-      },
-      {
-        "title": "Israel x Iran ceasefire continues through November 30?",
-        "volume_24h": 178653,
-        "yes_price": 0.9,
-        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-november-30"
+        "title": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
+        "volume_24h": 260386,
+        "yes_price": 0.13,
+        "url": "https://polymarket.com/market/will-candidate-a-be-the-next-ceo-of-nvidia"
       },
       {
         "title": "Will Club Atlético de Madrid win on 2026-11-22?",
-        "volume_24h": 157733,
+        "volume_24h": 229050,
         "yes_price": 0.64,
         "url": "https://polymarket.com/market/lal-get-mad-2026-11-22-mad"
       },
       {
-        "title": "Will Kamala Harris win the 2028 Democratic presidential nomination?",
-        "volume_24h": 130945,
-        "yes_price": 0.05,
-        "url": "https://polymarket.com/market/will-kamala-harris-win-the-2028-democratic-presidential-nomination-641"
+        "title": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+        "volume_24h": 191605,
+        "yes_price": 0.07,
+        "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635"
+      },
+      {
+        "title": "Will CA Paranaense win on 2026-11-22?",
+        "volume_24h": 160793,
+        "yes_price": 0.96,
+        "url": "https://polymarket.com/market/bra-cap-cre-2026-11-22-cap"
+      },
+      {
+        "title": "Israel x Iran ceasefire continues through November 30?",
+        "volume_24h": 149417,
+        "yes_price": 0.9,
+        "url": "https://polymarket.com/market/israel-x-iran-ceasefire-continues-through-november-30"
+      },
+      {
+        "title": "Will Bitcoin reach $62,000 November 16-22?",
+        "volume_24h": 122631,
+        "yes_price": 0.3,
+        "url": "https://polymarket.com/market/will-bitcoin-reach-62k-november-16-22-2026"
+      },
+      {
+        "title": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+        "volume_24h": 118095,
+        "yes_price": 0.91,
+        "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636"
+      },
+      {
+        "title": "Will the Iranian regime fall before 2027?",
+        "volume_24h": 113174,
+        "yes_price": 0.03,
+        "url": "https://polymarket.com/market/will-the-iranian-regime-fall-by-the-end-of-2026"
+      },
+      {
+        "title": "Will Anthropic announce bankruptcy by December 31, 2027?",
+        "volume_24h": 104838,
+        "yes_price": 0.09,
+        "url": "https://polymarket.com/market/will-anthropic-announce-bankruptcy-by-december-31-2027"
       }
     ],
     "polymarket_summary": {
-      "outlook": "Bullish",
-      "summary": "Bullish: 3 bullish vs 0 bearish signals detected across finance prediction markets data."
+      "outlook": "Bearish",
+      "summary": "Bearish: 2 bullish vs 5 bearish signals detected across finance prediction markets data."
     },
     "reddit": [],
     "reddit_summary": {
@@ -614,7 +609,7 @@
     },
     "news_summary": {
       "outlook": "Mixed",
-      "summary": "Mixed: 6 bullish vs 8 bearish signals detected across stock/finance news data."
+      "summary": "Mixed: 7 bullish vs 6 bearish signals detected across stock/finance news data."
     },
     "macro": [
       {
@@ -709,19 +704,19 @@
       "crypto": [
         {
           "keyword": "Bitcoin",
-          "interest_score": 73
+          "interest_score": 79
         },
         {
           "keyword": "Ethereum",
-          "interest_score": 25
+          "interest_score": 6
         },
         {
           "keyword": "Solana",
-          "interest_score": 13
+          "interest_score": 7
         },
         {
           "keyword": "crypto",
-          "interest_score": 23
+          "interest_score": 35
         }
       ]
     }
