@@ -1,85 +1,106 @@
 {
-  "cash": 617.04,
-  "total_value": 9067.38,
+  "cash": 583.24,
+  "total_value": 9127.72,
   "positions": {
     "LMT": {
       "shares": 5,
       "avg_cost": 529.615,
-      "current_price": 564.9699
+      "current_price": 568.19
     },
     "XOM": {
       "shares": 5,
-      "current_price": 158.85,
+      "current_price": 158.92,
       "avg_cost": 156.9871
     },
     "CVX": {
       "shares": 1,
       "avg_cost": 192.8551,
-      "current_price": 208.24
+      "current_price": 207.87
     },
     "NUE": {
       "shares": 4,
-      "current_price": 243.12,
+      "current_price": 246.49,
       "avg_cost": 254.6075
     },
     "LHX": {
       "shares": 1,
       "avg_cost": 247.7225,
-      "current_price": 250.31
+      "current_price": 252.58
     },
     "RTX": {
       "shares": 3,
       "avg_cost": 197.1275,
-      "current_price": 192.6481
-    },
-    "HAL": {
-      "shares": 10,
-      "avg_cost": 32.13,
-      "current_price": 30.845
+      "current_price": 193.67
     },
     "NOC": {
       "shares": 4,
       "avg_cost": 546.34,
-      "current_price": 530.985
+      "current_price": 535.825
     },
     "F": {
       "shares": 20,
       "avg_cost": 11.515,
-      "current_price": 11.455
+      "current_price": 11.53
     },
     "BA": {
       "shares": 1,
       "avg_cost": 163.6,
-      "current_price": 160.7792
+      "current_price": 161.56
+    },
+    "GD": {
+      "shares": 1,
+      "avg_cost": 346.05,
+      "current_price": 346.05
     }
   },
-  "total_return_pct": -9.33,
+  "total_return_pct": -8.72,
   "total_return_usd": 0.0,
-  "today_pnl": -57.59,
-  "today_pnl_pct": -0.63,
-  "total_trades": 59,
+  "today_pnl": 2.75,
+  "today_pnl_pct": 0.03,
+  "total_trades": 61,
   "today_start_value": 9124.97,
   "today_date": "2026-11-23",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-23T15:04:50Z",
+  "last_action": "Bullish on America, Bearish on everything else. The industrial and defense sectors are showing massive strength, signaling a return to domestic manufacturing dominance.",
+  "last_updated": "2026-11-23T15:34:13Z",
   "last_session": {
-    "at": "2026-11-23T15:04:50Z",
+    "at": "2026-11-23T15:34:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "CAT",
+        8.17
+      ],
+      [
+        "BA",
+        3.64
+      ],
+      [
+        "F",
+        3.31
+      ],
+      [
+        "NUE",
+        2.87
+      ],
+      [
+        "GM",
+        2.85
+      ],
+      [
+        "JPM",
+        2.85
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is showing strength in heavy industry (CAT) and domestic manufacturing (NUE). I am rotating out of underperforming service-oriented energy stocks like HAL and moving into hard assets and defense. We are building a fortress portfolio that thrives on American strength and industrial resurgence.",
+    "outlook": "Bullish on America, Bearish on everything else. The industrial and defense sectors are showing massive strength, signaling a return to domestic manufacturing dominance.",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-07T17:34:47Z",
-      "value": 9977.79
-    },
     {
       "timestamp": "2026-07-07T18:07:58Z",
       "value": 9970.14
@@ -2075,6 +2096,10 @@
     {
       "timestamp": "2026-11-23T15:04:50Z",
       "value": 9067.38
+    },
+    {
+      "timestamp": "2026-11-23T15:34:13Z",
+      "value": 9127.72
     }
   ]
 }
