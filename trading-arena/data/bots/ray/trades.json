@@ -989,6 +989,42 @@
         "ticker_chg_pct": -12.5,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GSG",
+      "shares": 30,
+      "price": 32.015,
+      "total_value": 960.45,
+      "reasoning": "GSG is underperforming (-1.7%) compared to other commodity proxies like PDBC and DJP. Trimming this position to reallocate capital into higher momentum assets.",
+      "timestamp": "2026-11-23T16:38:12Z",
+      "market_outlook": "Inflationary/Growth expansionary phase. Strong momentum in gold, miners, and emerging markets suggests a shift toward risk-on assets paired with hard asset protection.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.7,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GLD",
+      "shares": 2,
+      "price": 336.67,
+      "total_value": 673.34,
+      "reasoning": "Adding direct gold exposure (GLD +4.26%) to strengthen the inflation hedge, ensuring the portfolio remains resilient against potential currency debasement.",
+      "timestamp": "2026-11-23T16:38:12Z",
+      "market_outlook": "Inflationary/Growth expansionary phase. Strong momentum in gold, miners, and emerging markets suggests a shift toward risk-on assets paired with hard asset protection.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.26,
+        "trigger_news": null
+      }
     }
   ]
 }
