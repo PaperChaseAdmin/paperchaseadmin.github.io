@@ -1259,6 +1259,42 @@
         "ticker_chg_pct": -1.08,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 1,
+      "price": 351.5332,
+      "total_value": 351.53,
+      "reasoning": "I am reducing exposure to individual equity stories. My mandate is macro-driven, and single-stock volatility in tech does not align with my preference for broad-based, data-dependent asset allocation.",
+      "timestamp": "2026-11-23T15:50:10Z",
+      "market_outlook": "Cautiously optimistic regarding financial sector stability, pending further clarity on inflation and labor market data.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.63,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "BAC",
+      "shares": 4,
+      "price": 48.395,
+      "total_value": 193.58,
+      "reasoning": "While BAC is showing strength, I am rotating out of this specific position to consolidate capital into higher-conviction financial leaders like GS and JPM, maintaining a cleaner macro-focused profile.",
+      "timestamp": "2026-11-23T15:50:10Z",
+      "market_outlook": "Cautiously optimistic regarding financial sector stability, pending further clarity on inflation and labor market data.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.9,
+        "trigger_news": null
+      }
     }
   ]
 }

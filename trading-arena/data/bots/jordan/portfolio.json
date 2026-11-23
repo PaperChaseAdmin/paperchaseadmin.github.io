@@ -1,45 +1,71 @@
 {
-  "cash": 4748.49,
-  "total_value": 9482.73,
+  "cash": 2990.82,
+  "total_value": 9538.32,
   "positions": {
     "RBLX": {
       "shares": 31,
-      "current_price": 51.58,
+      "current_price": 52.65,
       "avg_cost": 47.8728
     },
     "GME": {
       "shares": 118,
-      "current_price": 26.57,
+      "current_price": 26.76,
       "avg_cost": 26.7679
+    },
+    "AAPL": {
+      "shares": 5,
+      "avg_cost": 351.5332,
+      "current_price": 351.5332
     }
   },
-  "total_return_pct": -5.17,
+  "total_return_pct": -4.62,
   "total_return_usd": 0.0,
-  "today_pnl": -58.84,
-  "today_pnl_pct": -0.62,
-  "total_trades": 96,
+  "today_pnl": -3.25,
+  "today_pnl_pct": -0.03,
+  "total_trades": 97,
   "today_start_value": 9541.57,
   "today_date": "2026-11-23",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-23T15:17:59Z",
+  "last_action": "Traded",
+  "last_updated": "2026-11-23T15:46:30Z",
   "last_session": {
-    "at": "2026-11-23T15:17:59Z",
+    "at": "2026-11-23T15:46:30Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        35.65
+      ],
+      [
+        "MARA",
+        17.19
+      ],
+      [
+        "MSTR",
+        14.0
+      ],
+      [
+        "TSLA",
+        13.5
+      ],
+      [
+        "RBLX",
+        12.71
+      ],
+      [
+        "PLTR",
+        12.07
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "outlook": "",
+    "trades_made": 1
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-07T17:44:23Z",
-      "value": 9126.67
-    },
     {
       "timestamp": "2026-07-07T18:19:59Z",
       "value": 9107.28
@@ -2035,6 +2061,10 @@
     {
       "timestamp": "2026-11-23T15:17:59Z",
       "value": 9482.73
+    },
+    {
+      "timestamp": "2026-11-23T15:46:30Z",
+      "value": 9538.32
     }
   ]
 }
