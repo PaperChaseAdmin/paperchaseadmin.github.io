@@ -1313,6 +1313,42 @@
         "ticker_chg_pct": 1.56,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TLT",
+      "shares": 5,
+      "price": 81.545,
+      "total_value": 407.73,
+      "reasoning": "Taking partial profits on long-term Treasury gains (+3.7%) as equity rally suggests risk-on rotation; reducing duration exposure",
+      "timestamp": "2026-11-23T18:51:59Z",
+      "market_outlook": "Equities surging (SPY +5%, banks +2-5%) suggests aggressive risk-on positioning. Absent VIX and Fear & Greed data, policy remains data-dependent. Rally appears extended; maintaining defensive posture with short-duration bias until inflation and labor data clarify path.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.12,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "XLU",
+      "shares": 5,
+      "price": 43.295,
+      "total_value": 216.48,
+      "reasoning": "Utilities up 1.4% today and +3.3% unrealized; trimming defensive winner after strong relative performance",
+      "timestamp": "2026-11-23T18:51:59Z",
+      "market_outlook": "Equities surging (SPY +5%, banks +2-5%) suggests aggressive risk-on positioning. Absent VIX and Fear & Greed data, policy remains data-dependent. Rally appears extended; maintaining defensive posture with short-duration bias until inflation and labor data clarify path.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.43,
+        "trigger_news": null
+      }
     }
   ]
 }
