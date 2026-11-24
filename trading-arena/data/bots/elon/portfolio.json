@@ -1,49 +1,44 @@
 {
-  "cash": 1363.66,
-  "total_value": 8600.99,
+  "cash": 1780.54,
+  "total_value": 8596.67,
   "positions": {
     "AAPL": {
       "shares": 8,
-      "current_price": 351.17,
+      "current_price": 351.19,
       "avg_cost": 327.8584
-    },
-    "META": {
-      "shares": 1,
-      "avg_cost": 595.814,
-      "current_price": 587.57
     },
     "TSLA": {
       "shares": 2,
       "avg_cost": 369.74,
-      "current_price": 376.74
+      "current_price": 377.89
     },
     "RBLX": {
-      "shares": 35,
-      "current_price": 53.6,
-      "avg_cost": 48.9218
-    },
-    "AMZN": {
-      "shares": 4,
-      "avg_cost": 264.42,
-      "current_price": 251.36
+      "shares": 45,
+      "current_price": 53.39,
+      "avg_cost": 49.9147
     },
     "COIN": {
       "shares": 2,
       "avg_cost": 102.74,
-      "current_price": 102.74
+      "current_price": 102.87
+    },
+    "PLTR": {
+      "shares": 4,
+      "avg_cost": 160.635,
+      "current_price": 160.635
     }
   },
-  "total_return_pct": -13.99,
+  "total_return_pct": -14.03,
   "total_return_usd": 0.0,
-  "today_pnl": 48.76,
-  "today_pnl_pct": 0.57,
-  "total_trades": 69,
+  "today_pnl": 44.44,
+  "today_pnl_pct": 0.52,
+  "total_trades": 73,
   "today_start_value": 8552.23,
   "today_date": "2026-11-24",
-  "last_action": "Bearish short-term momentum with heavy tech rotation. The semiconductor sector (AMD, NVDA) is getting crushed, creating a bloodbath in the AI space.",
-  "last_updated": "2026-11-24T16:31:36Z",
+  "last_action": "Bearish short-term tech rotation. The semiconductor sector (AMD, NVDA) is seeing a massive sell-off, suggesting a flight from high-multiple AI hardware into software or momentum outliers.",
+  "last_updated": "2026-11-24T17:01:47Z",
   "last_session": {
-    "at": "2026-11-24T16:31:36Z",
+    "at": "2026-11-24T17:01:47Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -51,40 +46,36 @@
     "top_movers": [
       [
         "AMD",
-        -12.28
+        -10.62
       ],
       [
         "NVDA",
-        -8.34
+        -8.52
       ],
       [
         "MSTR",
-        -6.97
+        -7.07
       ],
       [
         "COIN",
-        -5.48
+        -5.3
       ],
       [
         "IONQ",
-        -4.78
+        -4.48
       ],
       [
         "RBLX",
-        3.91
+        3.37
       ]
     ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "The market is seeing a massive sell-off in high-beta tech and semiconductors. I'm aggressively cutting my losers (NVDA, PLTR) to preserve capital and avoid catching falling knives. I'm pivoting toward RBLX which is showing decoupling strength and adding a small speculative position in COIN to play the volatility. Staying liquid to prepare for the next big disruption.",
-    "outlook": "Bearish short-term momentum with heavy tech rotation. The semiconductor sector (AMD, NVDA) is getting crushed, creating a bloodbath in the AI space.",
+    "ai_analysis": "The market is seeing a heavy correction in the semi-conductors and crypto-adjacent stocks (MSTR, COIN). I'm cutting my laggards (AMZN, META) to preserve capital and pivoting into relative strength plays like PLTR and RBLX. I'm keeping a healthy cash buffer because when the semi-conductors bleed this hard, volatility is about to go parabolic.",
+    "outlook": "Bearish short-term tech rotation. The semiconductor sector (AMD, NVDA) is seeing a massive sell-off, suggesting a flight from high-multiple AI hardware into software or momentum outliers.",
     "trades_made": 4
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-08T18:02:35Z",
-      "value": 9546.01
-    },
     {
       "timestamp": "2026-07-08T18:33:23Z",
       "value": 9538.41
@@ -2080,6 +2071,10 @@
     {
       "timestamp": "2026-11-24T16:31:36Z",
       "value": 8600.99
+    },
+    {
+      "timestamp": "2026-11-24T17:01:47Z",
+      "value": 8596.67
     }
   ]
 }

@@ -1331,6 +1331,42 @@
         "ticker_chg_pct": -0.69,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 13,
+      "price": 351.19,
+      "total_value": 4565.47,
+      "reasoning": "Tech is bleeding. NVDA's 8.5% drop is the canary in the coal mine. I am exiting my AAPL position to preserve capital and increase liquidity for more aggressive macro plays. I don't hold dead weight when the regime is shifting.",
+      "timestamp": "2026-11-24T17:10:42Z",
+      "market_outlook": "Bearish/Risk-Off. The tech sector is experiencing a violent de-leveraging event, evidenced by the NVDA collapse. We are entering a period of high volatility where the correlation between growth stocks will turn positive to the downside, forcing a rotation into defensive macro hedges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.62,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "TLT",
+      "shares": 10,
+      "price": 81.855,
+      "total_value": 818.55,
+      "reasoning": "Increasing my exposure to long bonds. The weakness in EEM and QQQ suggests a global liquidity tightening or a flight to quality. I want to be heavily positioned in the bond market to capture the inevitable yield compression as equities face a correction.",
+      "timestamp": "2026-11-24T17:10:42Z",
+      "market_outlook": "Bearish/Risk-Off. The tech sector is experiencing a violent de-leveraging event, evidenced by the NVDA collapse. We are entering a period of high volatility where the correlation between growth stocks will turn positive to the downside, forcing a rotation into defensive macro hedges.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.2,
+        "trigger_news": null
+      }
     }
   ]
 }
