@@ -1781,6 +1781,42 @@
         "ticker_chg_pct": -0.44,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "GME",
+      "shares": 118,
+      "price": 27.2258,
+      "total_value": 3212.64,
+      "reasoning": "GME is dead money at -0.15%. No momentum, no squeeze, no rocket. Taking the $54 profit and rotating into the only stock showing real velocity today.",
+      "timestamp": "2026-11-24T15:49:57Z",
+      "market_outlook": "Broad market weakness masking a rotation. Crypto names getting slaughtered (MARA, RIOT, COIN, MSTR all -5% to -9%). Mega-cap tech cracking (NVDA -7.5%). But RBLX showing relative strength at +3.3% - that's where the speculative bid is hiding. Money flows to momentum. The squeeze plays are dead; the momentum plays are alive.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.15,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "RBLX",
+      "shares": 80,
+      "price": 53.245,
+      "total_value": 4259.6,
+      "reasoning": "RBLX is the ONLY name on the watchlist with genuine momentum at +3.29%. While everything else bleeds - MARA -9%, RIOT -9%, NVDA -7.5% - RBLX is acting strong. This is where the fast money flows. Buying 85 shares (~$4,500) to ride the rocket. Price action IS the fundamental.",
+      "timestamp": "2026-11-24T15:49:57Z",
+      "market_outlook": "Broad market weakness masking a rotation. Crypto names getting slaughtered (MARA, RIOT, COIN, MSTR all -5% to -9%). Mega-cap tech cracking (NVDA -7.5%). But RBLX showing relative strength at +3.3% - that's where the speculative bid is hiding. Money flows to momentum. The squeeze plays are dead; the momentum plays are alive.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.29,
+        "trigger_news": null
+      }
     }
   ]
 }
