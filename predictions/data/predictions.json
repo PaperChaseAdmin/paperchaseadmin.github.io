@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-24T00:15:09Z",
+  "updated_at": "2026-11-24T04:52:23Z",
   "last_prediction_date": "2026-11-24",
-  "last_settle_date": "2026-11-21",
+  "last_settle_date": "2026-11-24",
   "tools": {
     "market_sentinel": {
       "label": "Market Sentinel",
-      "total": 90,
-      "correct": 73,
-      "accuracy_pct": 81.1,
+      "total": 92,
+      "correct": 75,
+      "accuracy_pct": 81.5,
       "predictions": [
         {
           "date": "2026-06-22",
@@ -2475,9 +2475,10 @@
           "prediction": "up",
           "confidence": 70,
           "signal": "Strong performance in tech and positive market mood",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 4.73
         },
         {
           "date": "2026-11-24",
@@ -2485,9 +2486,10 @@
           "prediction": "up",
           "confidence": 75,
           "signal": "Tech sector surge led by NVDA and positive AI news",
-          "actual": null,
-          "correct": null,
-          "settled": false
+          "actual": "up",
+          "correct": true,
+          "settled": true,
+          "change_pct": 6.51
         },
         {
           "date": "2026-11-24",
