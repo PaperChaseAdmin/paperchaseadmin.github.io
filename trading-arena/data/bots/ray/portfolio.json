@@ -1,75 +1,96 @@
 {
-  "cash": 1336.34,
-  "total_value": 9821.98,
+  "cash": 1573.26,
+  "total_value": 9800.09,
   "positions": {
     "DJP": {
       "shares": 10,
-      "current_price": 45.69,
+      "current_price": 45.47,
       "avg_cost": 44.55
     },
     "PDBC": {
-      "shares": 51,
-      "current_price": 17.265,
-      "avg_cost": 16.7704
+      "shares": 61,
+      "current_price": 17.25,
+      "avg_cost": 16.849
     },
     "TLT": {
-      "shares": 25,
-      "current_price": 81.7275,
+      "shares": 20,
+      "current_price": 81.885,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 91.79
+      "current_price": 91.87
     },
     "IAU": {
       "shares": 29,
-      "current_price": 67.435,
+      "current_price": 66.98,
       "avg_cost": 68.7055
     },
     "GDX": {
       "shares": 15,
       "avg_cost": 73.535,
-      "current_price": 71.445
+      "current_price": 71.37
     },
     "EEM": {
       "shares": 17,
       "avg_cost": 58.5,
-      "current_price": 56.54
+      "current_price": 56.27
     },
     "GLD": {
       "shares": 2,
       "avg_cost": 336.67,
-      "current_price": 328.81
+      "current_price": 326.6344
     }
   },
-  "total_return_pct": -1.78,
+  "total_return_pct": -2.0,
   "total_return_usd": 0.0,
-  "today_pnl": -43.31,
-  "today_pnl_pct": -0.44,
-  "total_trades": 57,
+  "today_pnl": -65.2,
+  "today_pnl_pct": -0.66,
+  "total_trades": 59,
   "today_start_value": 9865.29,
   "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T15:39:29Z",
+  "last_action": "Mixed signals: equities selling off (SPY -1.12%, EEM -2.66%), gold/commodities under pressure, bonds holding steady. Suggests growth concerns outweighing inflation fears currently. All Weather positio",
+  "last_updated": "2026-11-24T16:37:58Z",
   "last_session": {
-    "at": "2026-11-24T15:39:29Z",
+    "at": "2026-11-24T16:37:58Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TIPS",
+        -14.29
+      ],
+      [
+        "EEM",
+        -2.66
+      ],
+      [
+        "GDX",
+        -1.94
+      ],
+      [
+        "IAU",
+        -1.92
+      ],
+      [
+        "GLD",
+        -1.89
+      ],
+      [
+        "VWO",
+        -1.84
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio shows classic All Weather dispersion: bonds positive, gold/commodities negative, EM equities weak. Rebalancing from winning bonds (TLT) into lagging real assets (IAU, PDBC) maintains risk parity. Cash reserve stays above $1000 after trades. No position exceeds 20% limit.",
+    "outlook": "Mixed signals: equities selling off (SPY -1.12%, EEM -2.66%), gold/commodities under pressure, bonds holding steady. Suggests growth concerns outweighing inflation fears currently. All Weather positioned for multiple scenarios - maintaining diversified stance.",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-08T17:34:57Z",
-      "value": 9943.1
-    },
     {
       "timestamp": "2026-07-08T18:03:46Z",
       "value": 9928.17
@@ -2065,6 +2086,10 @@
     {
       "timestamp": "2026-11-24T15:39:29Z",
       "value": 9821.98
+    },
+    {
+      "timestamp": "2026-11-24T16:37:58Z",
+      "value": 9800.09
     }
   ]
 }
