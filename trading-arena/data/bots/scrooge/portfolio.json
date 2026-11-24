@@ -1,6 +1,6 @@
 {
   "cash": 208.07,
-  "total_value": 9841.29,
+  "total_value": 9844.25,
   "positions": {
     "T": {
       "shares": 82,
@@ -9,112 +9,133 @@
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 56.53,
+      "current_price": 56.5531,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 47.275,
+      "current_price": 47.305,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 326.77,
+      "current_price": 326.835,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 185.275,
+      "current_price": 185.0,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 299.38,
+      "current_price": 299.845,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 18.86,
+      "current_price": 18.835,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 34.9201
+      "current_price": 34.9497
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 157.5751
+      "current_price": 157.625
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 56.07
+      "current_price": 56.0584
     },
     "MO": {
       "shares": 5,
-      "current_price": 74.565,
+      "current_price": 74.6,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 59.47,
+      "current_price": 59.46,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 46.84
+      "current_price": 46.82
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 45.93
+      "current_price": 45.955
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 58.44
+      "current_price": 58.47
     },
     "WPC": {
       "shares": 3,
       "avg_cost": 65.48,
-      "current_price": 66.915
+      "current_price": 66.88
     },
     "HTGC": {
       "shares": 8,
       "avg_cost": 15.975,
-      "current_price": 15.435
+      "current_price": 15.4655
     }
   },
-  "total_return_pct": -1.59,
+  "total_return_pct": -1.56,
   "total_return_usd": 0.0,
-  "today_pnl": 147.83,
-  "today_pnl_pct": 1.53,
+  "today_pnl": 150.79,
+  "today_pnl_pct": 1.56,
   "total_trades": 27,
   "today_start_value": 9693.46,
   "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T17:50:59Z",
+  "last_action": "Dividend aristocrats holding steady. ABBV surging +4% on strong earnings, telecoms T and VZ climbing. Gold dipping -1.9% but that's mere noise - the yellow metal always shines in the long run. My port",
+  "last_updated": "2026-11-24T18:20:52Z",
   "last_session": {
-    "at": "2026-11-24T17:50:59Z",
+    "at": "2026-11-24T18:20:52Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "ABBV",
+        3.95
+      ],
+      [
+        "T",
+        2.46
+      ],
+      [
+        "OHI",
+        2.12
+      ],
+      [
+        "BTI",
+        2.06
+      ],
+      [
+        "GLD",
+        -1.86
+      ],
+      [
+        "VZ",
+        1.84
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "Portfolio yielding ~6.2% weighted. Heavy hitters: ARCC 9.5%, BTI 9.2%, HTGC 10.1%, MO 8.2%, JEPI 8.5%, OHI 8.3%, ENB 7.1%. All dividends safe and growing. GLD down 17% from cost but it's insurance, not income. No dividend cuts detected. Zero deployable cash after $200 reserve. Next purchases: accumulate more ARCC, HTGC, BTI, MO when dividends pool. Patience, laddie - compounding does the heavy lifting.",
+    "outlook": "Dividend aristocrats holding steady. ABBV surging +4% on strong earnings, telecoms T and VZ climbing. Gold dipping -1.9% but that's mere noise - the yellow metal always shines in the long run. My portfolio yields a glorious 6%+ blended. Cash reserve at bare minimum $208 - must let dividends accumulate before next buying spree.",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-08T19:08:22Z",
-      "value": 10035.64
-    },
     {
       "timestamp": "2026-07-08T19:42:21Z",
       "value": 10022.92
@@ -2110,6 +2131,10 @@
     {
       "timestamp": "2026-11-24T17:50:59Z",
       "value": 9841.29
+    },
+    {
+      "timestamp": "2026-11-24T18:20:52Z",
+      "value": 9844.25
     }
   ]
 }
