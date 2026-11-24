@@ -1349,6 +1349,42 @@
         "ticker_chg_pct": 1.43,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TLT",
+      "shares": 3,
+      "price": 81.855,
+      "total_value": 245.56,
+      "reasoning": "Taking profits on long-duration Treasuries after +32 gain; duration risk elevated with uncertain inflation path",
+      "timestamp": "2026-11-24T17:24:00Z",
+      "market_outlook": "Data vacuum persists \u2014 VIX and Fear & Greed unavailable. SPY -1% suggests risk reduction but no panic. Financials mixed (GS -2.5%, BAC +0.6%). Awaiting CPI/PCE for directional conviction. Policy remains restrictive until inflation sustainably reaches 2%.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.2,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "XLU",
+      "shares": 3,
+      "price": 43.45,
+      "total_value": 130.35,
+      "reasoning": "Utilities provide defensive yield with rate sensitivity; portfolio underweight regulated income streams",
+      "timestamp": "2026-11-24T17:24:00Z",
+      "market_outlook": "Data vacuum persists \u2014 VIX and Fear & Greed unavailable. SPY -1% suggests risk reduction but no panic. Financials mixed (GS -2.5%, BAC +0.6%). Awaiting CPI/PCE for directional conviction. Policy remains restrictive until inflation sustainably reaches 2%.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.31,
+        "trigger_news": null
+      }
     }
   ]
 }

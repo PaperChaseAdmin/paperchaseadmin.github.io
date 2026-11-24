@@ -1,55 +1,71 @@
 {
-  "cash": 442.24,
-  "total_value": 9625.61,
+  "cash": 4189.16,
+  "total_value": 9625.44,
   "positions": {
     "UUP": {
       "shares": 60,
-      "current_price": 29.6362,
+      "current_price": 29.645,
       "avg_cost": 29.1955
     },
     "TLT": {
-      "shares": 34,
-      "current_price": 81.885,
-      "avg_cost": 80.3846
+      "shares": 44,
+      "current_price": 81.855,
+      "avg_cost": 80.7188
     },
     "XLF": {
       "shares": 1,
       "avg_cost": 55.6431,
-      "current_price": 55.9
-    },
-    "AAPL": {
-      "shares": 13,
-      "current_price": 351.17,
-      "avg_cost": 349.5218
+      "current_price": 55.96
     }
   },
-  "total_return_pct": -3.74,
+  "total_return_pct": -3.75,
   "total_return_usd": 0.0,
-  "today_pnl": 45.08,
+  "today_pnl": 44.91,
   "today_pnl_pct": 0.47,
-  "total_trades": 74,
+  "total_trades": 76,
   "today_start_value": 9580.53,
   "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T16:40:03Z",
+  "last_action": "Bearish/Risk-Off. The tech sector is experiencing a violent de-leveraging event, evidenced by the NVDA collapse. We are entering a period of high volatility where the correlation between growth stocks",
+  "last_updated": "2026-11-24T17:10:42Z",
   "last_session": {
-    "at": "2026-11-24T16:40:03Z",
+    "at": "2026-11-24T17:10:42Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        -8.52
+      ],
+      [
+        "QQQ",
+        -2.63
+      ],
+      [
+        "EEM",
+        -2.47
+      ],
+      [
+        "BABA",
+        -2.42
+      ],
+      [
+        "GLD",
+        -1.95
+      ],
+      [
+        "TSLA",
+        -1.92
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is currently caught in a feedback loop of selling. When the leaders like NVDA break, the momentum traders are forced to liquidate, which drags down the entire index (QQQ/SPY). This is not a dip; it is a regime shift. I am pivoting my portfolio away from equity beta and toward the 'safety' triad: Gold, Treasuries, and the Dollar. My current cash position is being deployed into these hedges to prepare for a larger systemic dislocation.",
+    "outlook": "Bearish/Risk-Off. The tech sector is experiencing a violent de-leveraging event, evidenced by the NVDA collapse. We are entering a period of high volatility where the correlation between growth stocks will turn positive to the downside, forcing a rotation into defensive macro hedges.",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-08T18:04:06Z",
-      "value": 9743.68
-    },
     {
       "timestamp": "2026-07-08T18:36:07Z",
       "value": 9735.2
@@ -2045,6 +2061,10 @@
     {
       "timestamp": "2026-11-24T16:40:03Z",
       "value": 9625.61
+    },
+    {
+      "timestamp": "2026-11-24T17:10:42Z",
+      "value": 9625.44
     }
   ]
 }

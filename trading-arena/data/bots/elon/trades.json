@@ -1241,6 +1241,78 @@
         "ticker_chg_pct": 0.54,
         "trigger_news": null
       }
+    },
+    {
+      "action": "SELL",
+      "ticker": "AMZN",
+      "shares": 4,
+      "price": 251.47,
+      "total_value": 1005.88,
+      "reasoning": "Cutting the loser. AMZN is down and dragging my total return. I need to redeploy this capital into high-momentum plays or waiting for a better entry in the AI space.",
+      "timestamp": "2026-11-24T17:01:47Z",
+      "market_outlook": "Bearish short-term tech rotation. The semiconductor sector (AMD, NVDA) is seeing a massive sell-off, suggesting a flight from high-multiple AI hardware into software or momentum outliers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.54,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "PLTR",
+      "shares": 4,
+      "price": 160.635,
+      "total_value": 642.54,
+      "reasoning": "PLTR is showing relative strength (+0.84%) while the rest of the tech/semi sector is getting absolutely nuked. This is the kind of disruption and momentum I live for. Buying the divergence.",
+      "timestamp": "2026-11-24T17:01:47Z",
+      "market_outlook": "Bearish short-term tech rotation. The semiconductor sector (AMD, NVDA) is seeing a massive sell-off, suggesting a flight from high-multiple AI hardware into software or momentum outliers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 0.84,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "RBLX",
+      "shares": 10,
+      "price": 53.39,
+      "total_value": 533.9,
+      "reasoning": "RBLX is ripping +3.37% while everything else is red. The momentum is undeniable. Adding to my winner to maximize gains on this breakout.",
+      "timestamp": "2026-11-24T17:01:47Z",
+      "market_outlook": "Bearish short-term tech rotation. The semiconductor sector (AMD, NVDA) is seeing a massive sell-off, suggesting a flight from high-multiple AI hardware into software or momentum outliers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 3.37,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "META",
+      "shares": 1,
+      "price": 587.4374,
+      "total_value": 587.44,
+      "reasoning": "Small position, slight loss, and the sector is cooling off. Clearing the deck to focus on higher conviction momentum plays.",
+      "timestamp": "2026-11-24T17:01:47Z",
+      "market_outlook": "Bearish short-term tech rotation. The semiconductor sector (AMD, NVDA) is seeing a massive sell-off, suggesting a flight from high-multiple AI hardware into software or momentum outliers.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -1.66,
+        "trigger_news": null
+      }
     }
   ]
 }
