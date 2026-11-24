@@ -1,65 +1,91 @@
 {
-  "cash": 1292.77,
-  "total_value": 9442.47,
+  "cash": 2355.87,
+  "total_value": 9553.26,
   "positions": {
     "AAPL": {
       "shares": 9,
-      "current_price": 348.19,
+      "current_price": 352.66,
       "avg_cost": 306.8858
     },
     "TPR": {
       "shares": 2,
       "avg_cost": 123.865,
-      "current_price": 126.605
-    },
-    "AMZN": {
-      "shares": 10,
-      "avg_cost": 260.49,
-      "current_price": 252.145
+      "current_price": 129.245
     },
     "LULU": {
       "shares": 7,
       "avg_cost": 104.095,
-      "current_price": 104.82
+      "current_price": 107.375
     },
     "EL": {
       "shares": 10,
       "avg_cost": 103.47,
-      "current_price": 103.845
+      "current_price": 105.335
     },
     "LVS": {
       "shares": 12,
       "avg_cost": 38.88,
-      "current_price": 39.095
+      "current_price": 39.815
+    },
+    "RL": {
+      "shares": 2,
+      "avg_cost": 391.0,
+      "current_price": 391.0
+    },
+    "NKE": {
+      "shares": 20,
+      "avg_cost": 35.01,
+      "current_price": 35.01
     }
   },
-  "total_return_pct": -5.58,
+  "total_return_pct": -4.47,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 70,
+  "today_pnl": 110.79,
+  "today_pnl_pct": 1.17,
+  "total_trades": 73,
   "today_start_value": 9442.47,
   "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T14:49:29Z",
+  "last_action": "The market is showing a distinct preference for premium consumer discretionary sectors today. There is a palpable movement toward brands that command respect and status.",
+  "last_updated": "2026-11-24T15:20:11Z",
   "last_session": {
-    "at": "2026-11-24T14:49:29Z",
+    "at": "2026-11-24T15:20:11Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NKE",
+        3.76
+      ],
+      [
+        "LULU",
+        2.62
+      ],
+      [
+        "TPR",
+        2.07
+      ],
+      [
+        "MGM",
+        1.96
+      ],
+      [
+        "DRI",
+        1.93
+      ],
+      [
+        "CPRI",
+        1.65
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "My current return of -5.58% is frankly unacceptable; it's an embarrassment. I am purging the pedestrian elements of my portfolio\u2014specifically Amazon\u2014to make room for assets with actual pedigree. I am focusing on high-margin, high-prestige names like Ralph Lauren and Capri Holdings. My portfolio must reflect my standards, and currently, it is failing to do so. I will rebalance until every ticker represents the absolute pinnacle of consumer aspiration.",
+    "outlook": "The market is showing a distinct preference for premium consumer discretionary sectors today. There is a palpable movement toward brands that command respect and status.",
+    "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-08T16:37:02Z",
-      "value": 9804.61
-    },
     {
       "timestamp": "2026-07-08T17:09:58Z",
       "value": 9857.91
@@ -2055,6 +2081,10 @@
     {
       "timestamp": "2026-11-24T14:49:29Z",
       "value": 9442.47
+    },
+    {
+      "timestamp": "2026-11-24T15:20:11Z",
+      "value": 9553.26
     }
   ]
 }
