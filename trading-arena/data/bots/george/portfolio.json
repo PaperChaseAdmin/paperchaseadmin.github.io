@@ -1,55 +1,76 @@
 {
-  "cash": 2420.86,
-  "total_value": 9615.21,
+  "cash": 345.68,
+  "total_value": 9612.17,
   "positions": {
     "UUP": {
       "shares": 60,
-      "current_price": 29.63,
+      "current_price": 29.635,
       "avg_cost": 29.1955
     },
     "TLT": {
       "shares": 44,
-      "current_price": 81.665,
+      "current_price": 81.725,
       "avg_cost": 80.7188
     },
     "XLF": {
       "shares": 1,
       "avg_cost": 55.6431,
-      "current_price": 56.135
+      "current_price": 55.995
     },
-    "AAPL": {
-      "shares": 5,
-      "avg_cost": 353.66,
-      "current_price": 353.43
+    "NVDA": {
+      "shares": 25,
+      "avg_cost": 153.46,
+      "current_price": 153.46
     }
   },
-  "total_return_pct": -3.85,
+  "total_return_pct": -3.88,
   "total_return_usd": 0.0,
-  "today_pnl": 34.68,
-  "today_pnl_pct": 0.36,
-  "total_trades": 77,
+  "today_pnl": 31.64,
+  "today_pnl_pct": 0.33,
+  "total_trades": 79,
   "today_start_value": 9580.53,
   "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T18:40:51Z",
+  "last_action": "NVDA -7% is the dislocation I've been waiting for. The market is pricing in a slowdown that won't happen. AI infrastructure buildout is just beginning. Dollar weakness (UUP -0.5%) with gold pullback (",
+  "last_updated": "2026-11-24T19:09:49Z",
   "last_session": {
-    "at": "2026-11-24T18:40:51Z",
+    "at": "2026-11-24T19:09:49Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        -7.05
+      ],
+      [
+        "GLD",
+        -2.18
+      ],
+      [
+        "EEM",
+        -2.14
+      ],
+      [
+        "BABA",
+        -2.14
+      ],
+      [
+        "QQQ",
+        -2.11
+      ],
+      [
+        "AMZN",
+        -1.48
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio was too diversified, too small. George concentrates. AAPL was a tourist position. NVDA is the epicenter of the reflexive AI boom. Selling 5 AAPL ($1,761) + deploying $2,120 cash = $3,881 into 25 NVDA. Position size: ~40% of portfolio. Maximum conviction on the only stock that matters. Cash reserve maintained at ~$340.",
+    "outlook": "NVDA -7% is the dislocation I've been waiting for. The market is pricing in a slowdown that won't happen. AI infrastructure buildout is just beginning. Dollar weakness (UUP -0.5%) with gold pullback (GLD -2.2%) sets up for next leg higher in both. TLT holding gains confirms rates peaking. This is a risk-on setup masked as risk-off.",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T13:35:20Z",
-      "value": 9828.35
-    },
     {
       "timestamp": "2026-07-09T14:06:09Z",
       "value": 9837.72
@@ -2045,6 +2066,10 @@
     {
       "timestamp": "2026-11-24T18:40:51Z",
       "value": 9615.21
+    },
+    {
+      "timestamp": "2026-11-24T19:09:49Z",
+      "value": 9612.17
     }
   ]
 }

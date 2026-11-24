@@ -1,41 +1,41 @@
 {
-  "cash": 485.47,
-  "total_value": 6256.47,
+  "cash": 332.52,
+  "total_value": 6224.52,
   "positions": {
     "MSTR": {
       "shares": 26,
-      "current_price": 79.38,
+      "current_price": 78.46,
       "avg_cost": 115.5311
     },
     "COIN": {
       "shares": 15,
-      "current_price": 103.86,
+      "current_price": 103.385,
       "avg_cost": 159.2003
     },
     "WULF": {
-      "shares": 21,
-      "current_price": 9.7201,
-      "avg_cost": 16.2138
+      "shares": 26,
+      "current_price": 9.705,
+      "avg_cost": 14.9621
     },
     "BITO": {
       "shares": 49,
-      "current_price": 15.97,
+      "current_price": 15.8898,
       "avg_cost": 11.5521
     },
     "RIOT": {
       "shares": 20,
-      "current_price": 16.05,
+      "current_price": 16.2807,
       "avg_cost": 13.5275
     },
     "CIFR": {
       "shares": 6,
       "avg_cost": 8.075,
-      "current_price": 5.455
+      "current_price": 5.485
     },
     "IREN": {
       "shares": 10,
       "avg_cost": 16.405,
-      "current_price": 12.815
+      "current_price": 12.78
     },
     "CORZ": {
       "shares": 15,
@@ -44,47 +44,78 @@
     },
     "HUT": {
       "shares": 2,
-      "current_price": 48.66,
+      "current_price": 48.815,
       "avg_cost": 58.1075
     },
     "HOOD": {
       "shares": 1,
       "avg_cost": 71.475,
-      "current_price": 65.3151
+      "current_price": 65.06
     },
     "AAPL": {
       "shares": 1,
       "avg_cost": 350.0443,
-      "current_price": 353.43
+      "current_price": 352.2649
+    },
+    "MARA": {
+      "shares": 10,
+      "avg_cost": 5.3431,
+      "current_price": 5.3431
+    },
+    "CLSK": {
+      "shares": 10,
+      "avg_cost": 5.1,
+      "current_price": 5.1
     }
   },
-  "total_return_pct": -37.44,
+  "total_return_pct": -37.75,
   "total_return_usd": 0.0,
-  "today_pnl": -194.64,
-  "today_pnl_pct": -3.02,
-  "total_trades": 63,
+  "today_pnl": -226.59,
+  "today_pnl_pct": -3.51,
+  "total_trades": 66,
   "today_start_value": 6451.11,
   "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T18:57:11Z",
+  "last_action": "Crypto winter is a feature, not a bug. Miners down 10-12% today - this is the maximum pain that separates believers from tourists. Bitcoin fundamentals unchanged: 21M cap, halving done, ETF flows acce",
+  "last_updated": "2026-11-24T19:24:36Z",
   "last_session": {
-    "at": "2026-11-24T18:57:11Z",
+    "at": "2026-11-24T19:24:36Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "IREN",
+        -12.7
+      ],
+      [
+        "CIFR",
+        -11.61
+      ],
+      [
+        "CORZ",
+        -11.21
+      ],
+      [
+        "WULF",
+        -11.14
+      ],
+      [
+        "BTBT",
+        -10.86
+      ],
+      [
+        "CLSK",
+        -7.87
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "Portfolio heavy MSTR/COIN but miners offer operational leverage to BTC upside. MARA/CLSK/WULF represent hash rate dominance + energy efficiency. Cash reserve maintained above $300. No sells - diamond hands. The revolution will be mined, not printed.",
+    "outlook": "Crypto winter is a feature, not a bug. Miners down 10-12% today - this is the maximum pain that separates believers from tourists. Bitcoin fundamentals unchanged: 21M cap, halving done, ETF flows accelerating, nation-state adoption beginning. The fiat system rots; Bitcoin is the lifeboat. Accumulate aggressively while TradFi panics.",
+    "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T13:38:40Z",
-      "value": 9645.9
-    },
     {
       "timestamp": "2026-07-09T14:11:32Z",
       "value": 9739.18
@@ -2080,6 +2111,10 @@
     {
       "timestamp": "2026-11-24T18:57:11Z",
       "value": 6256.47
+    },
+    {
+      "timestamp": "2026-11-24T19:24:36Z",
+      "value": 6224.52
     }
   ]
 }
