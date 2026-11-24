@@ -1,40 +1,61 @@
 {
-  "cash": 6333.23,
-  "total_value": 9591.21,
+  "cash": 5286.27,
+  "total_value": 9545.87,
   "positions": {
-    "GME": {
-      "shares": 118,
-      "current_price": 27.61,
-      "avg_cost": 26.7679
+    "RBLX": {
+      "shares": 80,
+      "avg_cost": 53.245,
+      "current_price": 53.245
     }
   },
-  "total_return_pct": -4.09,
+  "total_return_pct": -4.54,
   "total_return_usd": 0.0,
-  "today_pnl": 26.55,
-  "today_pnl_pct": 0.28,
-  "total_trades": 99,
+  "today_pnl": -18.79,
+  "today_pnl_pct": -0.2,
+  "total_trades": 101,
   "today_start_value": 9564.66,
   "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T15:19:15Z",
+  "last_action": "Broad market weakness masking a rotation. Crypto names getting slaughtered (MARA, RIOT, COIN, MSTR all -5% to -9%). Mega-cap tech cracking (NVDA -7.5%). But RBLX showing relative strength at +3.3% - t",
+  "last_updated": "2026-11-24T15:49:57Z",
   "last_session": {
-    "at": "2026-11-24T15:19:15Z",
+    "at": "2026-11-24T15:49:57Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "MARA",
+        -8.96
+      ],
+      [
+        "RIOT",
+        -8.86
+      ],
+      [
+        "NVDA",
+        -7.53
+      ],
+      [
+        "MSTR",
+        -5.52
+      ],
+      [
+        "COIN",
+        -4.63
+      ],
+      [
+        "HOOD",
+        -4.01
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "GME position was a distraction - flatlining while the real action is elsewhere. RBLX at $53.25 with 3%+ intraday move on a sea of red is a beacon. Volume likely confirming. This is the setup: strength amid weakness. Deploying maximum conviction into the lone leader. Cash reserve maintained above $200. Portfolio now concentrated in the fastest horse.",
+    "outlook": "Broad market weakness masking a rotation. Crypto names getting slaughtered (MARA, RIOT, COIN, MSTR all -5% to -9%). Mega-cap tech cracking (NVDA -7.5%). But RBLX showing relative strength at +3.3% - that's where the speculative bid is hiding. Money flows to momentum. The squeeze plays are dead; the momentum plays are alive.",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-08T17:09:30Z",
-      "value": 8645.36
-    },
     {
       "timestamp": "2026-07-08T17:38:25Z",
       "value": 8743.6
@@ -2030,6 +2051,10 @@
     {
       "timestamp": "2026-11-24T15:19:15Z",
       "value": 9591.21
+    },
+    {
+      "timestamp": "2026-11-24T15:49:57Z",
+      "value": 9545.87
     }
   ]
 }
