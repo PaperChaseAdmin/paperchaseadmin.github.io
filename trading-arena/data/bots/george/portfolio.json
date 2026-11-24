@@ -1,80 +1,51 @@
 {
   "cash": 2420.86,
-  "total_value": 9616.89,
+  "total_value": 9615.21,
   "positions": {
     "UUP": {
       "shares": 60,
-      "current_price": 29.6205,
+      "current_price": 29.63,
       "avg_cost": 29.1955
     },
     "TLT": {
       "shares": 44,
-      "current_price": 81.6894,
+      "current_price": 81.665,
       "avg_cost": 80.7188
     },
     "XLF": {
       "shares": 1,
       "avg_cost": 55.6431,
-      "current_price": 56.165
+      "current_price": 56.135
     },
     "AAPL": {
       "shares": 5,
       "avg_cost": 353.66,
-      "current_price": 353.66
+      "current_price": 353.43
     }
   },
-  "total_return_pct": -3.83,
+  "total_return_pct": -3.85,
   "total_return_usd": 0.0,
-  "today_pnl": 36.36,
-  "today_pnl_pct": 0.38,
+  "today_pnl": 34.68,
+  "today_pnl_pct": 0.36,
   "total_trades": 77,
   "today_start_value": 9580.53,
   "today_date": "2026-11-24",
-  "last_action": "Traded",
-  "last_updated": "2026-11-24T18:10:08Z",
+  "last_action": "Analysis unavailable",
+  "last_updated": "2026-11-24T18:40:51Z",
   "last_session": {
-    "at": "2026-11-24T18:10:08Z",
+    "at": "2026-11-24T18:40:51Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [
-      [
-        "NVDA",
-        -7.05
-      ],
-      [
-        "EEM",
-        -2.06
-      ],
-      [
-        "BABA",
-        -1.87
-      ],
-      [
-        "GLD",
-        -1.86
-      ],
-      [
-        "QQQ",
-        -1.75
-      ],
-      [
-        "BAC",
-        1.09
-      ]
-    ],
+    "top_movers": [],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "",
-    "trades_made": 1
+    "outlook": "Analysis unavailable",
+    "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-08T19:36:53Z",
-      "value": 9773.98
-    },
     {
       "timestamp": "2026-07-09T13:35:20Z",
       "value": 9828.35
@@ -2070,6 +2041,10 @@
     {
       "timestamp": "2026-11-24T18:10:08Z",
       "value": 9616.89
+    },
+    {
+      "timestamp": "2026-11-24T18:40:51Z",
+      "value": 9615.21
     }
   ]
 }
