@@ -1,70 +1,91 @@
 {
-  "cash": 1794.5,
-  "total_value": 9720.61,
+  "cash": 1457.49,
+  "total_value": 9735.44,
   "positions": {
     "SHY": {
       "shares": 17,
-      "current_price": 81.5789,
+      "current_price": 81.695,
       "avg_cost": 81.7522
     },
     "XLU": {
       "shares": 20,
-      "current_price": 43.39,
+      "current_price": 43.37,
       "avg_cost": 42.7795
     },
     "BIL": {
       "shares": 26,
-      "current_price": 91.6111,
+      "current_price": 91.63,
       "avg_cost": 91.4361
     },
     "TLT": {
-      "shares": 21,
-      "current_price": 81.68,
-      "avg_cost": 80.5189
-    },
-    "XLF": {
-      "shares": 8,
-      "current_price": 55.9999,
-      "avg_cost": 57.8373
+      "shares": 26,
+      "current_price": 82.37,
+      "avg_cost": 80.8749
     },
     "TIP": {
       "shares": 4,
       "avg_cost": 104.71,
-      "current_price": 105.545
+      "current_price": 105.93
     },
     "AAPL": {
       "shares": 2,
       "avg_cost": 347.915,
-      "current_price": 352.06
+      "current_price": 352.39
+    },
+    "IEF": {
+      "shares": 4,
+      "avg_cost": 92.31,
+      "current_price": 92.31
     }
   },
-  "total_return_pct": -2.79,
+  "total_return_pct": -2.65,
   "total_return_usd": 0.0,
-  "today_pnl": 19.81,
-  "today_pnl_pct": 0.2,
-  "total_trades": 77,
-  "today_start_value": 9700.8,
-  "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T20:52:55Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 80,
+  "today_start_value": 9735.44,
+  "today_date": "2026-11-25",
+  "last_action": "Cautious / Defensive",
+  "last_updated": "2026-11-25T14:59:29Z",
   "last_session": {
-    "at": "2026-11-24T20:52:55Z",
+    "at": "2026-11-25T14:59:29Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GS",
+        -4.02
+      ],
+      [
+        "BAC",
+        -3.13
+      ],
+      [
+        "SPY",
+        -2.27
+      ],
+      [
+        "JPM",
+        -2.24
+      ],
+      [
+        "XLF",
+        -1.07
+      ],
+      [
+        "TLT",
+        1.06
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The current market data shows a notable contraction in the financial sector, with major institutions like Goldman Sachs and Bank of America seeing significant outflows. This weakness in XLF and SPY suggests that the market may be pricing in heightened uncertainty. While the VIX is not explicitly provided, the price action in equities versus Treasuries suggests a shift toward defensive assets. I am moving to increase duration via TLT and IEF while reducing exposure to the cyclical banking sector.",
+    "outlook": "Cautious / Defensive",
+    "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T15:37:17Z",
-      "value": 10000
-    },
     {
       "timestamp": "2026-07-09T16:11:34Z",
       "value": 10000
@@ -2060,6 +2081,10 @@
     {
       "timestamp": "2026-11-24T20:52:55Z",
       "value": 9720.61
+    },
+    {
+      "timestamp": "2026-11-25T14:59:29Z",
+      "value": 9735.44
     }
   ]
 }

@@ -1,26 +1,26 @@
 {
-  "cash": 1168.65,
-  "total_value": 10125.17,
+  "cash": 1956.25,
+  "total_value": 10116.7,
   "positions": {
     "MA": {
       "shares": 4,
-      "current_price": 645.9792,
+      "current_price": 645.63,
       "avg_cost": 539.4013
     },
     "MET": {
       "shares": 1,
       "avg_cost": 90.02,
-      "current_price": 99.27
+      "current_price": 97.805
     },
     "PGR": {
       "shares": 5,
       "avg_cost": 209.88,
-      "current_price": 235.6
+      "current_price": 238.125
     },
     "V": {
       "shares": 2,
       "avg_cost": 366.48,
-      "current_price": 416.12
+      "current_price": 416.77
     },
     "BRK-B": {
       "shares": 1,
@@ -30,27 +30,17 @@
     "TRV": {
       "shares": 1,
       "avg_cost": 380.16,
-      "current_price": 400.85
+      "current_price": 403.27
     },
     "AXP": {
       "shares": 1,
       "avg_cost": 306.4804,
-      "current_price": 308.19
+      "current_price": 304.375
     },
     "PRU": {
       "shares": 5,
       "avg_cost": 115.965,
       "current_price": 118.795
-    },
-    "BAC": {
-      "shares": 10,
-      "current_price": 48.33,
-      "avg_cost": 50.884
-    },
-    "WFC": {
-      "shares": 4,
-      "avg_cost": 85.825,
-      "current_price": 80.94
     },
     "MS": {
       "shares": 1,
@@ -60,36 +50,57 @@
     "AAPL": {
       "shares": 4,
       "avg_cost": 353.67,
-      "current_price": 352.06
+      "current_price": 352.39
     }
   },
-  "total_return_pct": 1.25,
+  "total_return_pct": 1.17,
   "total_return_usd": 0.0,
-  "today_pnl": 140.9,
-  "today_pnl_pct": 1.41,
-  "total_trades": 37,
-  "today_start_value": 9984.27,
-  "today_date": "2026-11-24",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-24T20:42:33Z",
+  "today_pnl": 0.0,
+  "today_pnl_pct": 0.0,
+  "total_trades": 39,
+  "today_start_value": 10116.7,
+  "today_date": "2026-11-25",
+  "last_action": "Cautiously Bullish on Financials",
+  "last_updated": "2026-11-25T14:44:58Z",
   "last_session": {
-    "at": "2026-11-24T20:42:33Z",
+    "at": "2026-11-25T14:44:58Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "GS",
+        -4.02
+      ],
+      [
+        "BAC",
+        -3.13
+      ],
+      [
+        "C",
+        -2.84
+      ],
+      [
+        "JPM",
+        -2.24
+      ],
+      [
+        "WFC",
+        -2.24
+      ],
+      [
+        "COF",
+        -1.89
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The financial sector is experiencing a healthy correction today, with major players like GS and BAC seeing significant pullbacks. This is not a systemic failure; it is a buying opportunity for those who understand the bedrock of the American economy. I am rotating out of weaker performers like BAC and WFC to increase my exposure to the absolute titans of the industry, JPM and GS. Stability and scale are what matter when the market gets noisy.",
+    "outlook": "Cautiously Bullish on Financials",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T15:34:57Z",
-      "value": 9918.02
-    },
     {
       "timestamp": "2026-07-09T16:09:35Z",
       "value": 9946.39
@@ -2085,6 +2096,10 @@
     {
       "timestamp": "2026-11-24T20:42:33Z",
       "value": 10125.17
+    },
+    {
+      "timestamp": "2026-11-25T14:44:58Z",
+      "value": 10116.7
     }
   ]
 }

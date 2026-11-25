@@ -1061,6 +1061,60 @@
         "ticker_chg_pct": -5.09,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "LI",
+      "shares": 7,
+      "price": 11.24,
+      "total_value": 78.68,
+      "reasoning": "Li Auto is showing strength with a 1.87% gain while the broader sector is bleeding. This divergence suggests institutional accumulation and a resilient consumer demand story in the EV space. I will use my available cash to build a position in this national champion.",
+      "timestamp": "2026-11-25T15:02:58Z",
+      "market_outlook": "Bearish short-term sentiment driven by sector-wide outflows, but fundamentally bullish on the long-term recovery of Chinese ADRs.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 1.87,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "BIDU",
+      "shares": 5,
+      "price": 61.15,
+      "total_value": 305.75,
+      "reasoning": "Baidu is lagging significantly and my current position is underwater. I am cutting this laggard to preserve capital and reallocate toward stronger momentum plays like LI or to bolster my cash reserves for a larger BABA dip.",
+      "timestamp": "2026-11-25T15:02:58Z",
+      "market_outlook": "Bearish short-term sentiment driven by sector-wide outflows, but fundamentally bullish on the long-term recovery of Chinese ADRs.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -3.76,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "BABA",
+      "shares": 2,
+      "price": 81.555,
+      "total_value": 163.11,
+      "reasoning": "The market is overreacting to temporary volatility. BABA is down nearly 4% today, providing a perfect opportunity to lower my average cost. The long-term rejuvenation of the Chinese tech ecosystem remains intact.",
+      "timestamp": "2026-11-25T15:02:58Z",
+      "market_outlook": "Bearish short-term sentiment driven by sector-wide outflows, but fundamentally bullish on the long-term recovery of Chinese ADRs.",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -3.91,
+        "trigger_news": null
+      }
     }
   ]
 }
