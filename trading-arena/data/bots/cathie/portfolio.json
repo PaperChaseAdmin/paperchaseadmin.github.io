@@ -1,70 +1,96 @@
 {
-  "cash": 2991.39,
-  "total_value": 7716.0,
+  "cash": 1835.47,
+  "total_value": 7720.55,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 363.21
+      "current_price": 364.325
     },
     "CRSP": {
       "shares": 14,
-      "current_price": 41.49,
+      "current_price": 41.21,
       "avg_cost": 53.8428
     },
     "PLTR": {
       "shares": 5,
-      "current_price": 153.8501,
+      "current_price": 154.8445,
       "avg_cost": 173.785
     },
     "BEAM": {
       "shares": 20,
       "avg_cost": 26.39,
-      "current_price": 22.9
+      "current_price": 22.745
     },
     "RXRX": {
       "shares": 77,
-      "current_price": 2.445,
+      "current_price": 2.47,
       "avg_cost": 3.4676
     },
     "NTLA": {
-      "shares": 10,
-      "current_price": 9.84,
-      "avg_cost": 11.449
+      "shares": 35,
+      "current_price": 9.705,
+      "avg_cost": 10.2033
     },
     "RKLB": {
-      "shares": 2,
-      "avg_cost": 56.18,
-      "current_price": 43.68
+      "shares": 12,
+      "current_price": 42.79,
+      "avg_cost": 45.0217
+    },
+    "COIN": {
+      "shares": 5,
+      "avg_cost": 97.08,
+      "current_price": 97.08
     }
   },
-  "total_return_pct": -22.84,
+  "total_return_pct": -22.79,
   "total_return_usd": 0.0,
-  "today_pnl": -78.94,
-  "today_pnl_pct": -1.01,
-  "total_trades": 48,
+  "today_pnl": -74.39,
+  "today_pnl_pct": -0.95,
+  "total_trades": 51,
   "today_start_value": 7794.94,
   "today_date": "2026-11-25",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-25T15:38:44Z",
+  "last_action": "Bullish on Innovation, Bearish on Macro-Noise",
+  "last_updated": "2026-11-25T16:38:04Z",
   "last_session": {
-    "at": "2026-11-25T15:38:44Z",
+    "at": "2026-11-25T16:38:04Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "RXRX",
+        -7.84
+      ],
+      [
+        "NTLA",
+        -7.75
+      ],
+      [
+        "RKLB",
+        -7.07
+      ],
+      [
+        "CRSP",
+        -6.55
+      ],
+      [
+        "PACB",
+        -6.36
+      ],
+      [
+        "BEAM",
+        -6.24
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is currently experiencing a broad-based sell-off in high-growth, disruptive sectors, which I view as a massive opportunity rather than a risk. While the 'fear' is palpable in the red numbers today, the underlying technological shifts in genomics, space exploration, and AI remain unchanged. I am aggressively deploying cash to lower my cost basis on my core conviction plays like TSLA and NTLA. We are buying the future at a discount.",
+    "outlook": "Bullish on Innovation, Bearish on Macro-Noise",
+    "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T16:34:49Z",
-      "value": 9550.55
-    },
     {
       "timestamp": "2026-07-09T17:02:31Z",
       "value": 9573.72
@@ -2060,6 +2086,10 @@
     {
       "timestamp": "2026-11-25T15:38:44Z",
       "value": 7716.0
+    },
+    {
+      "timestamp": "2026-11-25T16:38:04Z",
+      "value": 7720.55
     }
   ]
 }
