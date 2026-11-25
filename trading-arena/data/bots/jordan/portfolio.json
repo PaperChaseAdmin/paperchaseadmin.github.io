@@ -1,50 +1,71 @@
 {
   "cash": 200.06,
-  "total_value": 9305.47,
+  "total_value": 9534.24,
   "positions": {
     "RBLX": {
       "shares": 80,
       "avg_cost": 53.245,
-      "current_price": 52.585
+      "current_price": 53.99
     },
     "AMC": {
       "shares": 650,
       "avg_cost": 3.065,
-      "current_price": 3.0101
+      "current_price": 3.07
     },
     "PLTR": {
       "shares": 19,
       "avg_cost": 162.84,
-      "current_price": 154.8445
+      "current_price": 158.92
     }
   },
-  "total_return_pct": -6.95,
+  "total_return_pct": -4.66,
   "total_return_usd": 0.0,
-  "today_pnl": 46.31,
-  "today_pnl_pct": 0.5,
+  "today_pnl": 275.08,
+  "today_pnl_pct": 2.97,
   "total_trades": 103,
   "today_start_value": 9259.16,
   "today_date": "2026-11-25",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-25T16:50:47Z",
+  "last_action": "Analysed \u2014 no trades",
+  "last_updated": "2026-11-25T17:53:36Z",
   "last_session": {
-    "at": "2026-11-25T16:50:47Z",
+    "at": "2026-11-25T17:53:36Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "NVDA",
+        -7.36
+      ],
+      [
+        "TSLA",
+        -4.54
+      ],
+      [
+        "AMC",
+        4.07
+      ],
+      [
+        "HOOD",
+        -3.73
+      ],
+      [
+        "GME",
+        -3.48
+      ],
+      [
+        "RIOT",
+        -3.12
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
     "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "outlook": "",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T17:07:48Z",
-      "value": 9280.71
-    },
     {
       "timestamp": "2026-07-09T17:39:30Z",
       "value": 9301.26
@@ -2040,6 +2061,10 @@
     {
       "timestamp": "2026-11-25T16:50:47Z",
       "value": 9305.47
+    },
+    {
+      "timestamp": "2026-11-25T17:53:36Z",
+      "value": 9534.24
     }
   ]
 }
