@@ -1,120 +1,141 @@
 {
   "cash": 208.07,
-  "total_value": 9942.27,
+  "total_value": 9928.45,
   "positions": {
     "T": {
       "shares": 82,
-      "current_price": 23.2701,
+      "current_price": 23.12,
       "avg_cost": 22.4669
     },
     "MAIN": {
       "shares": 15,
-      "current_price": 57.4,
+      "current_price": 57.56,
       "avg_cost": 55.115
     },
     "VZ": {
       "shares": 29,
-      "current_price": 47.595,
+      "current_price": 47.495,
       "avg_cost": 44.7643
     },
     "GLD": {
       "shares": 3,
-      "current_price": 324.78,
+      "current_price": 327.09,
       "avg_cost": 395.0067
     },
     "PM": {
       "shares": 3,
-      "current_price": 184.81,
+      "current_price": 184.5,
       "avg_cost": 185.1355
     },
     "ABBV": {
       "shares": 3,
-      "current_price": 294.645,
+      "current_price": 293.8,
       "avg_cost": 252.3579
     },
     "ARCC": {
       "shares": 8,
-      "current_price": 18.925,
+      "current_price": 18.8911,
       "avg_cost": 18.7425
     },
     "SCHD": {
       "shares": 10,
       "avg_cost": 32.755,
-      "current_price": 35.355
+      "current_price": 35.225
     },
     "VYM": {
       "shares": 1,
       "avg_cost": 161.66,
-      "current_price": 158.5051
+      "current_price": 158.045
     },
     "JEPI": {
       "shares": 2,
       "avg_cost": 56.7899,
-      "current_price": 56.095
+      "current_price": 55.94
     },
     "MO": {
       "shares": 5,
-      "current_price": 76.375,
+      "current_price": 76.315,
       "avg_cost": 65.4815
     },
     "O": {
       "shares": 4,
-      "current_price": 60.285,
+      "current_price": 60.075,
       "avg_cost": 59.3
     },
     "OHI": {
       "shares": 3,
       "avg_cost": 46.94,
-      "current_price": 47.52
+      "current_price": 47.28
     },
     "ENB": {
       "shares": 2,
       "avg_cost": 50.2,
-      "current_price": 47.045
+      "current_price": 46.875
     },
     "BTI": {
       "shares": 20,
       "avg_cost": 57.17,
-      "current_price": 60.4176
+      "current_price": 60.455
     },
     "WPC": {
       "shares": 3,
       "avg_cost": 65.48,
-      "current_price": 67.05
+      "current_price": 66.85
     },
     "HTGC": {
       "shares": 8,
       "avg_cost": 15.975,
-      "current_price": 15.91
+      "current_price": 15.9
     }
   },
-  "total_return_pct": -0.58,
+  "total_return_pct": -0.72,
   "total_return_usd": 0.0,
-  "today_pnl": 85.92,
-  "today_pnl_pct": 0.87,
+  "today_pnl": 72.1,
+  "today_pnl_pct": 0.73,
   "total_trades": 27,
   "today_start_value": 9856.35,
   "today_date": "2026-11-25",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-25T19:55:46Z",
+  "last_action": "Cash reserves critically low at $208.07 - must maintain $200 treasure floor. Only $8.07 deployable, insufficient for even a single share of me cheapest dividend gem ARCC at $18.89. Portfolio yielding ",
+  "last_updated": "2026-11-25T20:53:46Z",
   "last_session": {
-    "at": "2026-11-25T19:55:46Z",
+    "at": "2026-11-25T20:53:46Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BTI",
+        3.8
+      ],
+      [
+        "IBM",
+        3.28
+      ],
+      [
+        "ABBV",
+        -2.14
+      ],
+      [
+        "MO",
+        2.0
+      ],
+      [
+        "ENB",
+        1.35
+      ],
+      [
+        "HTGC",
+        1.34
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "All positions paying their tribute. BTI surging +3.8% today, MO +2.0%, ENB +1.35% - the dividend aristocrats march forward. ABBV dipped -2.14% but dividend grows annually. GLD up +0.53% protecting the hoard. No dividend cuts detected. DRIP compounding quietly. Must wait for dividend cash inflows to rebuild war chest before next acquisition. Patience, nephew - the best deals come to those who wait with cash in hand.",
+    "outlook": "Cash reserves critically low at $208.07 - must maintain $200 treasure floor. Only $8.07 deployable, insufficient for even a single share of me cheapest dividend gem ARCC at $18.89. Portfolio yielding handsomely across tobacco, telecoms, REITs, and BDCs. Gold holding at -$204 but it's me treasure insurance - never sell the shine!",
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T18:26:24Z",
-      "value": 9960.26
-    },
     {
       "timestamp": "2026-07-09T18:38:14Z",
       "value": 9950.48
@@ -2110,6 +2131,10 @@
     {
       "timestamp": "2026-11-25T19:55:46Z",
       "value": 9942.27
+    },
+    {
+      "timestamp": "2026-11-25T20:53:46Z",
+      "value": 9928.45
     }
   ]
 }
