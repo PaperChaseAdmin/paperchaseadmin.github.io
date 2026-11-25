@@ -1,105 +1,121 @@
 {
-  "cash": 511.53,
-  "total_value": 10141.62,
+  "cash": 529.75,
+  "total_value": 10153.07,
   "positions": {
     "T": {
-      "shares": 76,
-      "avg_cost": 20.83,
-      "current_price": 23.265
+      "shares": 82,
+      "current_price": 23.325,
+      "avg_cost": 21.0126
     },
     "VZ": {
       "shares": 22,
-      "current_price": 47.8,
+      "current_price": 47.755,
       "avg_cost": 44.0557
     },
     "PM": {
       "shares": 1,
       "avg_cost": 184.11,
-      "current_price": 185.31
+      "current_price": 184.9
     },
     "KO": {
       "shares": 10,
       "avg_cost": 82.215,
-      "current_price": 98.365
+      "current_price": 98.34
     },
     "CVX": {
       "shares": 6,
-      "current_price": 211.105,
+      "current_price": 211.59,
       "avg_cost": 193.7867
     },
     "MO": {
       "shares": 6,
-      "current_price": 76.57,
+      "current_price": 76.46,
       "avg_cost": 70.4883
     },
     "ABBV": {
       "shares": 7,
       "avg_cost": 250.6,
-      "current_price": 297.19
+      "current_price": 296.84
     },
     "SCHD": {
       "shares": 12,
-      "current_price": 35.2,
+      "current_price": 35.345,
       "avg_cost": 33.5879
     },
     "O": {
       "shares": 4,
-      "current_price": 60.365,
+      "current_price": 60.395,
       "avg_cost": 55.985
     },
     "MAIN": {
       "shares": 4,
-      "current_price": 57.15,
+      "current_price": 57.315,
       "avg_cost": 54.75
     },
     "WPC": {
       "shares": 1,
       "avg_cost": 63.895,
-      "current_price": 67.17
-    },
-    "VYM": {
-      "shares": 1,
-      "avg_cost": 164.75,
-      "current_price": 157.29
+      "current_price": 67.145
     },
     "ENB": {
       "shares": 5,
       "avg_cost": 46.6,
-      "current_price": 46.89
+      "current_price": 47.05
     },
     "IBM": {
       "shares": 2,
       "avg_cost": 231.9376,
-      "current_price": 241.82
+      "current_price": 244.1
     }
   },
-  "total_return_pct": 1.42,
+  "total_return_pct": 1.53,
   "total_return_usd": 0.0,
-  "today_pnl": 48.65,
-  "today_pnl_pct": 0.48,
-  "total_trades": 52,
+  "today_pnl": 60.1,
+  "today_pnl_pct": 0.6,
+  "total_trades": 54,
   "today_start_value": 10092.97,
   "today_date": "2026-11-25",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-25T17:49:14Z",
+  "last_action": "Neutral sentiment (Fear & Greed 50) means stick to fundamentals. Dividend aristocrats and high-yield REITs/tobacco/telecoms remain the only game in town for serious income investors. Growth stocks wit",
+  "last_updated": "2026-11-25T18:49:40Z",
   "last_session": {
-    "at": "2026-11-25T17:49:14Z",
+    "at": "2026-11-25T18:49:40Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "BTI",
+        3.79
+      ],
+      [
+        "IBM",
+        3.6
+      ],
+      [
+        "MO",
+        2.19
+      ],
+      [
+        "T",
+        1.97
+      ],
+      [
+        "ENB",
+        1.75
+      ],
+      [
+        "O",
+        1.42
+      ]
+    ],
     "news_read": [],
-    "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "domain_extra": "VALUE CONTEXT: Fear&Greed=50 (Neutral) \u2014 Moderate sentiment \u2014 stick to fundamentals",
+    "ai_analysis": "Portfolio is 100% dividend payers - exactly how I like it. VYM was the sole underperformer; swapping into T increases yield concentration in a name I trust. Cash reserve stays above $500. Every share of T is another quarterly check in the mail. That's the only metric that matters.",
+    "outlook": "Neutral sentiment (Fear & Greed 50) means stick to fundamentals. Dividend aristocrats and high-yield REITs/tobacco/telecoms remain the only game in town for serious income investors. Growth stocks without dividends are dead money.",
+    "trades_made": 2
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T17:37:48Z",
-      "value": 9877.95
-    },
     {
       "timestamp": "2026-07-09T18:08:16Z",
       "value": 9877.66
@@ -2095,6 +2111,10 @@
     {
       "timestamp": "2026-11-25T17:49:14Z",
       "value": 10141.62
+    },
+    {
+      "timestamp": "2026-11-25T18:49:40Z",
+      "value": 10153.07
     }
   ]
 }
