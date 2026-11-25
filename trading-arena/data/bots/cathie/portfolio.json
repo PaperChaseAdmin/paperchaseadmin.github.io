@@ -1,35 +1,35 @@
 {
   "cash": 2991.39,
-  "total_value": 7794.94,
+  "total_value": 7716.0,
   "positions": {
     "TSLA": {
       "shares": 7,
       "avg_cost": 402.185,
-      "current_price": 366.9
+      "current_price": 363.21
     },
     "CRSP": {
       "shares": 14,
-      "current_price": 43.13,
+      "current_price": 41.49,
       "avg_cost": 53.8428
     },
     "PLTR": {
       "shares": 5,
-      "current_price": 154.63,
+      "current_price": 153.8501,
       "avg_cost": 173.785
     },
     "BEAM": {
       "shares": 20,
       "avg_cost": 26.39,
-      "current_price": 23.785
+      "current_price": 22.9
     },
     "RXRX": {
       "shares": 77,
-      "current_price": 2.51,
+      "current_price": 2.445,
       "avg_cost": 3.4676
     },
     "NTLA": {
       "shares": 10,
-      "current_price": 10.195,
+      "current_price": 9.84,
       "avg_cost": 11.449
     },
     "RKLB": {
@@ -38,17 +38,17 @@
       "current_price": 43.68
     }
   },
-  "total_return_pct": -22.05,
+  "total_return_pct": -22.84,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
+  "today_pnl": -78.94,
+  "today_pnl_pct": -1.01,
   "total_trades": 48,
   "today_start_value": 7794.94,
   "today_date": "2026-11-25",
   "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-25T14:38:35Z",
+  "last_updated": "2026-11-25T15:38:44Z",
   "last_session": {
-    "at": "2026-11-25T14:38:35Z",
+    "at": "2026-11-25T15:38:44Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
@@ -61,10 +61,6 @@
     "trades_made": 0
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T16:08:19Z",
-      "value": 9587.49
-    },
     {
       "timestamp": "2026-07-09T16:34:49Z",
       "value": 9550.55
@@ -2060,6 +2056,10 @@
     {
       "timestamp": "2026-11-25T14:38:35Z",
       "value": 7794.94
+    },
+    {
+      "timestamp": "2026-11-25T15:38:44Z",
+      "value": 7716.0
     }
   ]
 }
