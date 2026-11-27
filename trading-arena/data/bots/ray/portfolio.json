@@ -1,75 +1,96 @@
 {
-  "cash": 1573.26,
-  "total_value": 9994.11,
+  "cash": 1827.17,
+  "total_value": 9991.56,
   "positions": {
     "DJP": {
       "shares": 10,
-      "current_price": 46.058,
+      "current_price": 46.6,
       "avg_cost": 44.55
     },
     "PDBC": {
       "shares": 61,
-      "current_price": 17.66,
+      "current_price": 17.665,
       "avg_cost": 16.849
     },
     "TLT": {
-      "shares": 20,
-      "current_price": 81.815,
+      "shares": 10,
+      "current_price": 81.45,
       "avg_cost": 81.799
     },
     "IEF": {
       "shares": 5,
       "avg_cost": 89.255,
-      "current_price": 91.8912
+      "current_price": 91.775
     },
     "IAU": {
       "shares": 29,
-      "current_price": 68.315,
+      "current_price": 68.19,
       "avg_cost": 68.7055
     },
     "GDX": {
-      "shares": 15,
-      "avg_cost": 73.535,
-      "current_price": 77.2499
+      "shares": 20,
+      "current_price": 77.4186,
+      "avg_cost": 74.5059
     },
     "EEM": {
-      "shares": 17,
-      "avg_cost": 58.5,
-      "current_price": 57.71
+      "shares": 20,
+      "current_price": 57.835,
+      "avg_cost": 58.4003
     },
     "GLD": {
       "shares": 2,
       "avg_cost": 336.67,
-      "current_price": 333.15
+      "current_price": 332.435
     }
   },
-  "total_return_pct": -0.06,
+  "total_return_pct": -0.08,
   "total_return_usd": 0.0,
-  "today_pnl": 0.0,
-  "today_pnl_pct": 0.0,
-  "total_trades": 59,
+  "today_pnl": -2.55,
+  "today_pnl_pct": -0.03,
+  "total_trades": 62,
   "today_start_value": 9994.11,
   "today_date": "2026-11-27",
-  "last_action": "Analysis unavailable",
-  "last_updated": "2026-11-27T14:39:12Z",
+  "last_action": "Inflationary/Rising Growth",
+  "last_updated": "2026-11-27T15:44:13Z",
   "last_session": {
-    "at": "2026-11-27T14:39:12Z",
+    "at": "2026-11-27T15:44:13Z",
     "fear_greed": null,
     "fear_greed_label": null,
     "sp500_change": null,
     "vix": null,
-    "top_movers": [],
+    "top_movers": [
+      [
+        "TIPS",
+        -14.29
+      ],
+      [
+        "GDX",
+        4.78
+      ],
+      [
+        "EEM",
+        2.54
+      ],
+      [
+        "FXI",
+        2.3
+      ],
+      [
+        "VWO",
+        2.08
+      ],
+      [
+        "GLD",
+        1.58
+      ]
+    ],
     "news_read": [],
     "domain_extra": "",
-    "ai_analysis": "",
-    "outlook": "Analysis unavailable",
-    "trades_made": 0
+    "ai_analysis": "The market is signaling a shift toward higher inflation, evidenced by the sharp drop in TIPS and the surge in gold miners (GDX) and commodities (PDBC/DJP). I am pivoting my All Weather strategy to overweight commodities and precious metals while trimming long-duration bonds (TLT) which are sensitive to rising rates. Emerging markets (EEM) are also showing strength, suggesting a rotation out of defensive US assets into growth-oriented international equities.",
+    "outlook": "Inflationary/Rising Growth",
+    "trades_made": 3
   },
   "portfolio_history": [
-    {
-      "timestamp": "2026-07-09T19:03:08Z",
-      "value": 9983.6
-    },
     {
       "timestamp": "2026-07-09T19:38:09Z",
       "value": 9977.92
@@ -2065,6 +2086,10 @@
     {
       "timestamp": "2026-11-27T14:39:12Z",
       "value": 9994.11
+    },
+    {
+      "timestamp": "2026-11-27T15:44:13Z",
+      "value": 9991.56
     }
   ]
 }
