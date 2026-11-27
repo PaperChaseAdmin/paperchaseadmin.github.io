@@ -1061,6 +1061,60 @@
         "ticker_chg_pct": 0.23,
         "trigger_news": null
       }
+    },
+    {
+      "action": "BUY",
+      "ticker": "GDX",
+      "shares": 5,
+      "price": 77.4186,
+      "total_value": 387.09,
+      "reasoning": "Gold miners are showing strong momentum (+4.78%) as inflation expectations rise. Increasing exposure to precious metals to hedge against potential currency debasement.",
+      "timestamp": "2026-11-27T15:44:13Z",
+      "market_outlook": "Inflationary/Rising Growth",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 4.78,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "BUY",
+      "ticker": "EEM",
+      "shares": 3,
+      "price": 57.835,
+      "total_value": 173.5,
+      "reasoning": "Emerging markets are showing strength (+2.54%). Diversifying away from US-centric assets to capture growth in different economic cycles.",
+      "timestamp": "2026-11-27T15:44:13Z",
+      "market_outlook": "Inflationary/Rising Growth",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": 2.54,
+        "trigger_news": null
+      }
+    },
+    {
+      "action": "SELL",
+      "ticker": "TLT",
+      "shares": 10,
+      "price": 81.45,
+      "total_value": 814.5,
+      "reasoning": "Taking partial profits/reducing exposure to long-term treasuries as yields appear to be rising (TLT down 0.95%), signaling a shift toward an inflationary regime.",
+      "timestamp": "2026-11-27T15:44:13Z",
+      "market_outlook": "Inflationary/Rising Growth",
+      "signal_context": {
+        "fg_value": null,
+        "fg_label": null,
+        "sp500_chg": null,
+        "vix": null,
+        "ticker_chg_pct": -0.95,
+        "trigger_news": null
+      }
     }
   ]
 }
